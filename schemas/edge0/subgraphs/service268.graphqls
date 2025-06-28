@@ -1,0 +1,63 @@
+type Type2347 @key(fields: "field2") {
+  field2: ID!
+  field5: String!
+  field5451: Scalar11!
+  field6083: Type6440!
+  field6082: String!
+  field8770: String!
+  field5247: Float!
+  field13647: [Type6441]
+  field8190: [String]!
+  field94: Scalar14!
+  field96: Scalar14!
+}
+
+type Type6440 {
+  field2: ID!
+  field5: String!
+}
+
+type Type6441 {
+  field5: String!
+  field285: Enum1484!
+  field13648: Scalar11!
+  field8119: Scalar11
+}
+
+enum Enum1484 {
+  VALUE_5374
+  VALUE_5375
+  VALUE_5376
+  VALUE_5377
+  VALUE_5378
+}
+
+input Input2622 {
+  inputField57: String!
+  inputField2257: Scalar11!
+  inputField4860: ID!
+  inputField2258: String!
+  inputField3242: String!
+  inputField1987: Float!
+}
+
+input Input2623 {
+  inputField57: String!
+  inputField108: Enum1484!
+  inputField4861: Scalar11!
+  inputField2953: Scalar11!
+}
+
+type Query @extends {
+  field13649: [Type2347!]!
+  field13650(arg4: ID!): Type2347
+  field13651(arg58: String!): [Type2347!]!
+  field13652(arg591: ID!): [Type6441]
+}
+
+type Mutation @extends {
+  field13653(arg1: Input2622!): Type2347
+  field13654(arg591: ID!, arg1: Input2622!): Type2347
+  field13655(arg591: ID!): Boolean
+  field13656(arg591: ID!, arg1: Input2623!): Type6441
+}

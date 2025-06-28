@@ -1,0 +1,160 @@
+"""
+This is an anonymized description
+"""
+interface Interface12 {
+  """
+  This is an anonymized description
+  """
+  field496: Interface20
+}
+
+type Type1318 implements Interface12 {
+  field496: Interface20
+}
+
+type Type1319 implements Interface12 {
+  field496: Interface20
+  field120: String
+}
+
+type Type1320 implements Interface12 {
+  field442: Interface20
+  field496: Interface20
+}
+
+type Type1321 implements Interface12 {
+  field442: Interface20
+  field496: Interface20
+}
+
+union Union106 = Type1328 | Type1318 | Type1319
+
+input Input485 {
+  """
+  This is an anonymized description
+  """
+  inputField854: ID!
+  """
+  This is an anonymized description
+  """
+  inputField855: ID
+  """
+  This is an anonymized description
+  """
+  inputField61: Input487!
+  """
+  This is an anonymized description
+  """
+  inputField856: String
+  """
+  This is an anonymized description
+  """
+  inputField857: Scalar9
+  """
+  This is an anonymized description
+  """
+  inputField164: String
+}
+
+union Union107 = Type1323 | Type1324 | Type1322 | Type1318 | Type1321 | Type1325 | Type1319
+
+type Type1322 implements Interface12 {
+  """
+  This is an anonymized description
+  """
+  field496: Interface20
+  """
+  This is an anonymized description
+  """
+  field2413: Type1329
+  """
+  This is an anonymized description
+  """
+  field2414: Boolean!
+}
+
+type Type1323 {
+  field2415: Type1328!
+}
+
+type Type1324 implements Interface12 {
+  field120: String
+  field496: Interface20
+}
+
+type Type1325 implements Interface12 {
+  field120: String
+  field496: Interface20
+}
+
+input Input486 {
+  inputField854: ID!
+  inputField855: ID
+}
+
+union Union108 = Type1326 | Type1318 | Type1322 | Type1319
+
+type Type1326 {
+  field2416: ID!
+  field2417: ID!
+}
+
+input Input487 {
+  inputField858: String!
+}
+
+type Type1327 {
+  field2418: String!
+}
+
+interface Interface20 @extends {
+  field12(arg12: String): String @external
+}
+
+type Type33 implements Interface20 @key(fields: "field45 field173") @extends {
+  field45: ID! @external
+  field173: String! @external
+  field12(arg12: String): String @external
+}
+
+type Mutation @extends {
+  field2419(arg104: Input485): Union107
+  field2420(arg104: Input486): Union108
+}
+
+type Query @extends {
+  field2421(arg266: ID!): Union106
+  field2422: [Type1328!]!
+}
+
+type Type1328 {
+  field2416: ID!
+  field2413: Type1329!
+}
+
+type Type1329 {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field2423: Type1327!
+  """
+  This is an anonymized description
+  """
+  field2424: Scalar9!
+  """
+  This is an anonymized description
+  """
+  field2425: Scalar9
+  """
+  This is an anonymized description
+  """
+  field120: String
+}
+
+scalar _FieldSet
+
+directive @directive8(arg72: String!, arg124: _FieldSet!, arg96: String) on OBJECT | INTERFACE | FIELD_DEFINITION

@@ -1,0 +1,57 @@
+type Type185 @key(fields: "field422 field423") @extends {
+  field422: ID! @external
+  field423: ID! @external
+  field415: Type188 @external
+  field24962: Type11542 @requires(fields: "field415 { field120 { field107 field285 } field426 { field2 } }")
+}
+
+type Type188 @key(fields: "field426 { field2 } field120 { field107 }") @extends {
+  field426: Type187 @external
+  field120: Type32 @external
+}
+
+type Type32 @key(fields: "field107") @extends {
+  field107: ID! @external
+  field285: Enum384 @external
+}
+
+type Type187 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+enum Enum384 {
+  VALUE_1749
+  VALUE_1750
+  VALUE_874
+  VALUE_1751
+  VALUE_1752
+  VALUE_875
+  VALUE_1753
+  VALUE_876
+  VALUE_877
+  VALUE_878
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field24963(
+  arg107: ID!
+  arg177: ID!): Type11542
+}
+
+"""
+This is an anonymized description
+"""
+type Type11542 {
+  field6425: [Type11543!]
+}
+
+"""
+This is an anonymized description
+"""
+type Type11543 {
+  field2: ID!
+  field5: String
+}

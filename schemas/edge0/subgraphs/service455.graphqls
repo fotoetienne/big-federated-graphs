@@ -1,0 +1,83 @@
+type Mutation @extends {
+  field23177(arg1605: Input4919!): Type10670!
+}
+
+input Input4919 {
+  inputField3079: String!
+  inputField680: String!
+  inputField7158: String!
+  inputField7159: String!
+}
+
+type Query @extends {
+  field23178(arg4: String!): Type2620
+  """
+  This is an anonymized description
+  """
+  field23179(
+  arg296: String!): String
+  """
+  This is an anonymized description
+  """
+  field23180(
+  arg1915: ID!): [Type2620!]!
+  """
+  This is an anonymized description
+  """
+  field23181(
+  arg1916: String!): [Type2620!]!
+  """
+  This is an anonymized description
+  """
+  field23182(
+  arg10: String!
+  arg1917: Int): [Type2620!]!
+}
+
+scalar Scalar1
+
+type Type2620 @key(fields: "field450") {
+  field5008: Scalar1!
+  field450: String!
+  field279: String
+  field3325: String
+  field23183: Scalar1
+  field23184: Scalar1
+  field1466: Scalar11
+  field1122: String!
+  field58: String
+  field1233: String
+  field8612: Boolean!
+  field20975: Type10669
+  field1512: Type10669
+  field9240: Boolean!
+  field18698: String
+  field2492: [String!]!
+  field2332: Scalar11
+}
+
+type Type10669 {
+  field3237: String
+  field1491: String
+  """
+  This is an anonymized description
+  """
+  field7549: String
+  field932: Boolean
+}
+
+type Type5 @key(fields: "field2") @extends {
+  field2: Scalar1! @external
+  field23185: [Type2620!]
+}
+
+type Type2655 @key(fields: "field5011 field5012") @extends {
+  field5011: Scalar1 @external
+  field5012: String @external
+  field11945: Type2620
+}
+
+type Type10670 {
+  field1142: String!
+  field23186: String!
+}

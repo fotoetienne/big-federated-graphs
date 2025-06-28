@@ -1,0 +1,66 @@
+type Mutation {
+  field31399(arg1: Input7381!): Type15633!
+  field31400(arg1: Input7382!): Type15634!
+}
+
+input Input7381 {
+  inputField5310: ID!
+  inputField803: Scalar11!
+  inputField6: Int!
+}
+
+type Type15633 {
+  field9257: Boolean!
+}
+
+input Input7382 {
+  inputField5313: ID!
+  inputField1263: Int!
+  inputField1264: Int!
+  inputField10823: [Input7383!]!
+}
+
+input Input7383 {
+  inputField5310: ID!
+  inputField6: Int!
+  inputField803: Scalar11!
+}
+
+type Type15634 {
+  field9257: Boolean!
+  field6260: Type15635
+}
+
+type Type15635 {
+  field2: ID!
+  field29132: ID!
+  field58: String!
+  field10439: Type1887!
+  field21368: String!
+  field31401: String!
+  field28589: String!
+  field31402: ID
+  field31403: Float!
+  field31404: Float
+  field31405: Float
+  field31406: Int!
+  field31407: Int
+  field31408: Int
+  field31409: Scalar14
+  field31410: [Type15636!]!
+}
+
+type Type15636 {
+  field26007: ID!
+  field6260: Type15635!
+  field52: Int!
+  field4149: Float!
+  field31411: Int!
+  field28992: String!
+  field31412: Float!
+  field31413: Int!
+}
+
+type Type1887 @key(fields: "field2") @extends {
+  field2: ID! @external
+}

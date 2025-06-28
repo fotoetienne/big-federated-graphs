@@ -1,0 +1,134 @@
+type Query @extends {
+  field15759(arg26: ID!): Union320 @experimental
+  field15760(arg1467: String!): Union320 @experimental
+  field15761(arg1468: ID!): Union320 @experimental
+}
+
+type Mutation @extends {
+  field15762(arg306: ID!, arg1469: ID!, arg1467: String!): Union321 @experimental
+  field15763(arg306: ID!, arg1469: ID!, arg1467: String!): Union321 @experimental
+}
+
+union Union320 = Type7545 | Type7543
+
+type Type7543 {
+  field5975: ID
+  field12367: String
+}
+
+type Type7544 {
+  field2: ID!
+  field4932: ID!
+}
+
+type Type7545 {
+  field2: ID!
+  field4932: ID!
+  field98: ID!
+  field2452: Type7544!
+  field15764: Type7546
+  field15765: Union323
+}
+
+type Type7546 {
+  field12367: Type7547
+}
+
+type Type7547 {
+  field15766: String
+}
+
+union Union321 = Type7548 | Type7549 | Type7550 | Type7551 | Type7552 | Type7553
+
+type Type7548 {
+  field12367: Type7547
+}
+
+interface Interface312 {
+  field1654: String
+}
+
+type Type7549 implements Interface312 {
+  field1654: String
+}
+
+type Type7550 implements Interface312 {
+  field1654: String
+}
+
+type Type7551 implements Interface312 {
+  field1654: String
+}
+
+type Type7552 implements Interface312 {
+  field1654: String
+}
+
+type Type7553 implements Interface312 {
+  field1654: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type3085 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  field12367: Type7554
+}
+
+union Union322 = Type3085 | Type7555 | Type7556
+
+type Type7554 {
+  """
+  This is an anonymized description
+  """
+  field15767: String
+}
+
+type Type7555 {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+}
+
+type Type7556 {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+}
+
+type Type2360 @key(fields: "field4984 field3260") @extends {
+  """
+  This is an anonymized description
+  """
+  field4984: ID! @external
+  field3260: ID! @external
+  field15768: Union322
+}
+
+type Type2361 @key(fields: "field4984") @extends {
+  """
+  This is an anonymized description
+  """
+  field4984: ID! @external
+  field15768: Union322
+}
+
+union Union323 = Type7557
+
+type Type7557 {
+  field15769: Union324
+}
+
+union Union324 = Type7558
+
+type Type7558 {
+  field15770: Int
+  field15771: Int
+  field15772: String
+}

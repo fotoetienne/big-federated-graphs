@@ -1,0 +1,83 @@
+"""
+This is an anonymized description
+"""
+type Type2446 @key(fields: "field4995") {
+  field4995: ID!
+  field8803: String
+  field4996: String
+  field8804: Type2447
+}
+
+"""
+This is an anonymized description
+"""
+type Type2447 @key(fields: "field4996") {
+  field4996: ID!
+  field8805: String
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field8806(
+  arg4: ID!): Type2446
+  """
+  This is an anonymized description
+  """
+  field8807(
+  arg4: ID!): Type2447
+}
+
+"""
+This is an anonymized description
+"""
+input Input1716 {
+  inputField3159: String
+  inputField7: Int
+  inputField3160: String
+  inputField3161: String
+  inputField2047: String
+  inputField8: Int
+}
+
+"""
+This is an anonymized description
+"""
+type Type4669 {
+  field2: ID
+  field2145: Int
+  field44: Int
+  field3322: Scalar14
+  field8808: Scalar14
+  field260: String
+  field4963: String
+  field5: String
+  field2480: String
+  field622: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type4670 {
+  """
+  This is an anonymized description
+  """
+  field584: ID
+  field8809: String
+  field2017: Scalar14
+  field8810: String
+  field2145: Int
+  field423: Int
+  field44: Int
+  field2480: String
+  field4963: String
+  field5950: String
+  field8811: String
+  field7219: String
+}
+
+schema {
+  query: Query
+}

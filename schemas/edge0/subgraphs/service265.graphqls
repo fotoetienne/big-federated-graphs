@@ -1,0 +1,131 @@
+type Type2064 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+"This is an anonymized description"
+type Type2065 @key(fields: "field2 field4935 { field2 }") @extends {
+  field2: ID! @external
+  field4935: Type2064! @external
+  "This is an anonymized description"
+  field13515: Type6423 @experimental
+}
+
+"This is an anonymized description"
+type Type6423 {
+  "This is an anonymized description"
+  field13516: [Type6424!] @experimental
+  "This is an anonymized description"
+  field13517: [Type6424!] @experimental
+  "This is an anonymized description"
+  field13518: Type6424 @experimental
+  "This is an anonymized description"
+  field13519: Type6424 @experimental
+}
+
+"This is an anonymized description"
+type Type6424 {
+  "This is an anonymized description"
+  field2618: String!
+  "This is an anonymized description"
+  field1491: String
+  "This is an anonymized description"
+  field285: Enum2441!
+  "This is an anonymized description"
+  field253: String
+  "This is an anonymized description"
+  field13520: Enum1476 @experimental
+  "This is an anonymized description"
+  field13521: Enum1474 @experimental
+  "This is an anonymized description"
+  field13522: Enum1475 @experimental
+}
+
+"This is an anonymized description"
+enum Enum1474 {
+  VALUE_5347
+  VALUE_5348
+  VALUE_5349
+  VALUE_5350
+  VALUE_5351
+  VALUE_5352
+  VALUE_5353
+  VALUE_5354
+}
+
+"This is an anonymized description"
+enum Enum1475 {
+  VALUE_5355
+  VALUE_5356
+}
+
+"This is an anonymized description"
+enum Enum1476 {
+  "This is an anonymized description"
+  VALUE_761
+  "This is an anonymized description"
+  VALUE_762
+  "This is an anonymized description"
+  VALUE_763
+}
+
+type Mutation {
+  """
+  This is an anonymized description
+  """
+  field13523(
+  arg1: Input2612!): Type6425
+  """
+  This is an anonymized description
+  """
+  field13524(
+  arg1: Input2613!): Type6425
+  """
+  This is an anonymized description
+  """
+  field13525(
+  arg1: Input2614!): Type6425
+}
+
+input Input2612 {
+  inputField248: String!
+  inputField303: String!
+  inputField327: ID!
+  inputField4835: Input2615
+  inputField2265: Boolean
+}
+
+input Input2613 {
+  inputField327: ID!
+  inputField2265: Boolean
+}
+
+type Type6425 {
+  field3764: Boolean!
+  field427: String
+}
+
+input Input2614 {
+  inputField327: ID!
+  inputField4836: Boolean!
+}
+
+input Input2615 {
+  inputField3015: Enum1477
+  inputField4837: String
+  inputField4838: String
+  inputField4839: String
+  inputField102: String
+}
+
+enum Enum1477 {
+  VALUE_5357
+  VALUE_5358
+  VALUE_5359
+  VALUE_5360
+  VALUE_5361
+  VALUE_5362
+  VALUE_5363
+  VALUE_5364
+  VALUE_5365
+  VALUE_141
+}

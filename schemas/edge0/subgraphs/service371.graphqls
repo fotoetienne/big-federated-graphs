@@ -1,0 +1,648 @@
+scalar Scalar4
+
+input Input4020 {
+  inputField7268: String!
+  inputField55: String
+}
+
+input Input4021 {
+  inputField7268: String!
+  inputField55: [Input4022]
+}
+
+input Input4022 {
+  inputField7269: String!
+  inputField55: String
+}
+
+input Input4023 {
+  inputField108: Enum2083
+  inputField123: String
+  inputField7270: Boolean
+}
+
+type Type8700 {
+  field5: String
+  field253: String
+  field3676: String
+  field8443: [Type8739]
+  field945: [Type8703]
+  field5953: [Type8704]
+  field19230: [Scalar4]
+  field903: Type8748
+}
+
+type Type8701 {
+  field5: String
+  field253: String
+  field3778: [Type8702]
+}
+
+type Type8702 {
+  field5: String
+  field1491: String
+  field19231: Scalar4
+}
+
+type Type8703 {
+  field285: Enum2084
+  field5: String
+  field253: String
+  field8443: [Type8739]
+  field6506: Scalar4
+  field600: [Scalar4]
+  field5619: [Scalar4]
+  field19232: String
+  field2396: String
+}
+
+type Type8704 {
+  field5: String
+  field253: String
+  field19233: String
+  field19234: Enum2079
+  field631: [Type8707]
+  field19235: [Type8703]
+  field19236: [Type8706]
+  field14364: [Type8705]
+  field1351: String
+  field3676: String
+  field19237: String
+}
+
+type Type8705 {
+  field6506: Scalar4
+  field600: [Scalar4]
+}
+
+type Type8706 {
+  field6506: Scalar4
+  field600: [Scalar4]
+}
+
+enum Enum2079 {
+  VALUE_5379
+  VALUE_1231
+}
+
+type Type8707 {
+  field19238: String
+  field19239: String
+  field115: String
+  field19240: Boolean
+  field19241: Boolean
+  field19242: Scalar4
+}
+
+type Type8708 {
+  field2: ID
+  field5: String
+  field253: String
+  field19243: String
+  field19244: [Type8739]
+  field19232: String
+  field2396: Boolean
+  field19245: Type8709
+}
+
+type Type8709 {
+  field341: String
+  field87: String
+  field3882: Boolean
+  field19246: String
+  field19247: String
+  field19248: Boolean
+}
+
+type Type8710 {
+  field19249: Type8713
+  field19250: [Type8711]
+  field15743: [Type8712]
+}
+
+type Type8711 {
+  field2227: Int
+  field3044: Int
+  field19251: [Type8717]
+  field133: [Type8720]
+}
+
+type Type8712 {
+  field2227: Int
+  field134: String
+  field19252: String
+  field2737: [Type8719]
+  field19253: Int
+  field19254: Boolean
+  field19255: Boolean
+}
+
+type Type8713 {
+  field5: String
+  field1697: [Type8714]
+}
+
+type Type8714 {
+  field5: String
+  field19251: [Type8717]
+}
+
+type Type8715 {
+  field19256: String
+  field19257: String
+  field5199: Type8717
+  field2391: Type8716
+  field13626: Type8716
+}
+
+type Type8716 {
+  field5: String
+  field285: String
+  field5199: Type8717
+  field3025: [Type8716]
+  field2565: [Type8716]
+  field36: [Type8715]
+  field2257: Int
+}
+
+type Type8717 {
+  field5: String
+  field19258: String
+  field6712: Type8714
+  field2830: [Type8716]
+  field36: [Type8715]
+  field19259: [Type8718]
+}
+
+type Type8718 {
+  field513: Int
+  field5: String
+  field5199: Type8717
+  field2737: [Type8719]
+}
+
+type Type8719 {
+  field5: String
+  field19258: String
+  field285: String
+  field5199: Type8717
+  field2257: Type8718
+  field2830: Type8716
+  field2391: Type8719
+  field2463: [Type8719]
+  field19260: Int
+  field19241: Int
+}
+
+type Type8720 {
+  field2227: Int
+  field2737: [Type8719]
+}
+
+type Type8721 {
+  field2: ID
+  field164: Type8700
+  field8443: [Type8740]
+  field945: [Type8708]
+  field484(arg10: String): [Type8738]
+  field19230: [Type8701]
+  field19231: Scalar4
+}
+
+type Type8722 {
+  field2: ID
+  field5: String
+  field341: String
+  field3043: Enum2080
+  field2737: [Interface379] @directive12
+  field445: String
+  field3882: Boolean
+  field2147: Boolean
+  field19261: Boolean
+  field19262: Boolean
+  field15250: [Type8708]
+  field19263: String
+  field19231: Scalar4
+}
+
+type Type8723 {
+  field2: ID
+  field5: String
+  field2737: [Interface379] @directive12
+  field1310: String
+  field341: String
+  field8329: String
+  field15250: [Type8708]
+  field19263: String
+  field19264: String
+  field19231: Scalar4
+}
+
+enum Enum2080 {
+  VALUE_3004
+  VALUE_848
+  VALUE_4617
+  VALUE_1231
+  VALUE_6927
+  VALUE_6928
+  VALUE_850
+  VALUE_4842
+  VALUE_208
+  VALUE_1668
+  VALUE_6929
+  VALUE_145
+  VALUE_2207
+  VALUE_5876
+  VALUE_4699
+}
+
+union Union431 = Type8738 | Type8721 | Type8724 | Type8731 | Type8730 | Type8732 | Type8725 | Type8728 | Type8727 | Type8729 | Type8726 | Type8733 | Type8734 | Type8735 | Type8736 | Type8737 | Type8722 | Type8723
+
+interface Interface379 {
+  field2: ID
+  field5182: String
+  field15250: [Type8708]
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+type Type8724 implements Interface379 {
+  field2: ID
+  field5182: String
+  field285: String
+  field19266: Type8712
+  field7268: Type8719
+  field19267: String
+  field19268: String
+  field19269: String
+  field134: String
+  field19252: String
+  field19235: Type8708 @deprecated(reason: "Anonymized deprecation reason")
+  field15250: [Type8708]
+  field600: Type8742
+  field770: Type8743
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+type Type8725 implements Interface379 {
+  field2: ID
+  field5182: String
+  field19270: String
+  field770: Type8743
+  field15250: [Type8708]
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+type Type8726 implements Interface379 {
+  field2: ID
+  field5182: String
+  field19271: String
+  field15250: [Type8708]
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+type Type8727 implements Interface379 {
+  field2: ID
+  field5182: String
+  field10182: Scalar9
+  field15250: [Type8708]
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+type Type8728 implements Interface379 {
+  field2: ID
+  field5182: String
+  field19272: Scalar9
+  field4141: String
+  field15250: [Type8708]
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+type Type8729 implements Interface379 {
+  field2: ID
+  field5182: String
+  field19273: Scalar9
+  field15250: [Type8708]
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+type Type8730 implements Interface379 {
+  field2: ID
+  field5182: String
+  field3441: Scalar14
+  field15250: [Type8708]
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+type Type8731 implements Interface379 {
+  field2: ID
+  field5182: String
+  field139: Boolean
+  field15250: [Type8708]
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+type Type8732 implements Interface379 {
+  field2: ID
+  field5182: String
+  field10184: [Interface379] @directive12
+  field15250: [Type8708]
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+type Type8733 implements Interface379 {
+  field2: ID
+  field5182: String
+  field15250: [Type8708]
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+type Type8734 implements Interface379 {
+  field2: ID
+  field5182: String
+  field15250: [Type8708]
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+type Type8735 implements Interface379 {
+  field2: ID
+  field5182: String
+  field19274: Type29
+  field15250: [Type8708]
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+type Type8736 implements Interface379 {
+  field2: ID
+  field5182: String
+  field19275: String
+  field901: String
+  field15250: [Type8708]
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+type Type8737 implements Interface379 {
+  field2: ID
+  field5182: String
+  field7136: Scalar8
+  field15250: [Type8708]
+  field19231: Scalar4
+  field19230: [Type8701]
+  field3882: Boolean
+  field2147: Boolean
+  field19265: Type8724
+}
+
+directive @directive12 on FIELD_DEFINITION
+
+directive @directive13 on FIELD
+
+directive @directive14 on FIELD_DEFINITION
+
+type Type8738 {
+  field2: ID
+  field5: String
+  field253: String
+  field4035: [Type8722]
+  field19276: [Type8723]
+  field1455: [[Interface379]] @directive12 @deprecated(reason: "Anonymized deprecation reason")
+  field13046: [Type8741]
+  field19230: [Type8701]
+  field19277: String
+  field19278: String
+}
+
+type Type8739 {
+  field5: String
+  field253: String
+  field2251: Boolean
+  field115: String
+  field134: String
+  field19230: Scalar4
+  field19242: Scalar4
+  field2439: [String]
+  field19279: Boolean
+}
+
+type Type8740 {
+  field5: String
+  field253: String
+  field2251: Boolean
+  field134: String
+  field19279: Boolean
+  field19230(arg10: [Input4024]): Type8701
+  field19231: Scalar4
+}
+
+input Input4024 {
+  inputField57: String
+  inputField106: String
+}
+
+type Type8741 {
+  field2: ID
+  field1455: [Interface379] @directive12
+  field19231: Scalar4
+}
+
+type Type8742 {
+  field58: String
+  field87: String
+  field19230: String
+  field2257: Int
+  field928: String
+  field3043: Enum2080
+  field2147: Boolean
+  field3882: Boolean
+  field19231: Scalar4
+}
+
+type Type8743 {
+  field19280: Int
+  field19281: Int
+  field19282: Int
+  field2391: Boolean
+  field19283: Boolean
+  field19284: Boolean
+  field19285: Boolean
+  field19286: Boolean
+}
+
+type Type8744 {
+  field19243: String
+  field19287: ID
+  field19244: Scalar4
+  field19288: Scalar4
+  field1153: ID
+  field19289: String
+  field7035: Scalar4
+  field6796: Boolean
+  field5619: [Type8745]
+}
+
+type Type8745 {
+  field2: ID
+  field5: String
+  field253: String
+  field945: Enum2081
+  field164: Scalar4
+  field1455: [Union431] @directive12
+}
+
+enum Enum2081 {
+  VALUE_6930
+  VALUE_1243
+}
+
+type Type8746 {
+  field15250: [Type8744]
+  field5619: [Type8745]
+}
+
+type Type8747 {
+  field285: Enum2083
+  field279: String
+}
+
+enum Enum2082 {
+  VALUE_6931
+  VALUE_6932
+  VALUE_6933
+  VALUE_1223
+  VALUE_6934
+}
+
+enum Enum2083 {
+  VALUE_3090
+  VALUE_6935
+}
+
+enum Enum2084 {
+  VALUE_6936
+  VALUE_6937
+  VALUE_6938
+}
+
+enum Enum2085 {
+  VALUE_6936
+  VALUE_6939
+  VALUE_6940
+  VALUE_6941
+  VALUE_1668
+  VALUE_6942
+  VALUE_6937
+  VALUE_6938
+}
+
+type Type8748 {
+  field2: ID
+  field19290: Type8749
+}
+
+type Type8749 {
+  field285: Enum2083
+  field341: String
+  field994: Boolean
+  field1359: [Type8750]
+}
+
+type Type8750 {
+  field285: Enum2086
+  field7549: String
+  field2309: Enum2087
+}
+
+enum Enum2086 {
+  VALUE_145
+  VALUE_3071
+  VALUE_3892
+  VALUE_6943
+}
+
+enum Enum2087 {
+  VALUE_863
+  VALUE_5147
+  VALUE_6944
+  VALUE_4807
+  VALUE_5149
+  VALUE_6945
+}
+
+type Query @extends {
+  field19291: Type8721
+  field19292(arg32: String!, arg1624: String): Type8721
+  field19293(arg1625: String!, arg152: [Input4022]): Type8721
+  field19294(arg1625: String!): Type8700
+  field19295: [Type8700]
+  field19296(arg47: Enum2082!): Scalar4
+  field19297(arg47: Enum2082!): Scalar4
+  field19298(arg47: Enum2082!, arg58: String!): Scalar4
+  field19299(arg47: Enum2082!): [Scalar4]
+}
+
+type Mutation @extends {
+  field19300(arg1626: [Input4020]): Type8746
+  field19301(arg1626: [Input4021]): Type8746
+  field19302(arg47: Enum2082!, arg1625: Scalar4!): String
+  field19303(arg47: Enum2082!, arg58: String!): String
+  field19304(arg41: [String!]!, arg87: Input4023): Type8747
+}
+
+type Type29 @extends @key(fields: "field98") {
+  field98: ID! @external
+}

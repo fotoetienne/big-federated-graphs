@@ -1,0 +1,116 @@
+type Query @extends {
+  field32672(arg60: Input7726): Type16310
+}
+
+enum Enum3933 {
+  VALUE_2979
+  VALUE_854
+  VALUE_852
+  VALUE_11308
+  VALUE_1065
+}
+
+input Input7722 {
+  inputField130: String!
+  inputField237: Enum3933!
+}
+
+type Type16305 {
+  field423: String!
+  field741: Enum3933!
+}
+
+enum Enum3934 {
+  VALUE_11309
+  VALUE_11310
+  VALUE_11311
+  VALUE_11312
+  VALUE_11313
+  VALUE_11314
+  VALUE_11315
+  VALUE_11316
+  VALUE_1065
+}
+
+enum Enum3935 {
+  VALUE_879
+  VALUE_11317
+  VALUE_11318
+  VALUE_11319
+  VALUE_1065
+}
+
+type Type16306 {
+  field2: String
+  field15223: String
+  field32673: Int
+  field32674: String
+  field58: Enum3934
+  field742: Type16305
+  field8466: [Type16305]
+  field3345: Enum3935
+  field32675: String
+  field218: String
+  field1072: Scalar1
+  field3323: Scalar1
+  field32676: Scalar1
+}
+
+input Input7723 {
+  inputField1319: Int
+  inputField388: String
+}
+
+type Type16307 {
+  field594: Int
+  field38: Int
+  field593: String
+}
+
+scalar Scalar1
+
+type Mutation @extends {
+  field32677(arg60: Input7725): Type16309
+  field32678(arg60: Input7724): Type16308
+}
+
+input Input7724 {
+  inputField236: Input7722!
+}
+
+input Input7725 {
+  inputField236: Input7722!
+  inputField11240: Boolean = false
+  inputField11241: Scalar1
+}
+
+type Type16308 {
+  field244: Boolean
+}
+
+type Type16309 {
+  field244: Boolean
+}
+
+input Input7726 {
+  inputField378: Input7727
+  inputField11242: Input7723
+}
+
+input Input7727 {
+  inputField11243: [String]
+  inputField3902: [String]
+  inputField11244: [String]
+  inputField419: [Enum3934]
+  inputField8889: [Enum3933]
+  inputField1330: [Enum3935]
+  inputField11245: Scalar1
+  inputField11246: Scalar1
+  inputField5491: [String]
+  inputField66: [Input7722]
+}
+
+type Type16310 {
+  field32679: [Type16306]
+  field32680: Type16307
+}

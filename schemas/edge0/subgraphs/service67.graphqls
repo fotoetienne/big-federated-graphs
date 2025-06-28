@@ -1,0 +1,121 @@
+type Type766 {
+  field108: String!
+  field2377: Int
+}
+
+input Input382 {
+  inputField50: String!
+  inputField8: String
+}
+
+type Type35 @key(fields: "field2 field44") @extends {
+  field2: String! @external
+  field44: String @external
+}
+
+type Type34 @key(fields: "field108 { field2 field44 }") @extends {
+  field108: Type35 @external
+  field2378: [Type767!]
+}
+
+type Type767 {
+  field2: ID!
+  field285: Type768!
+  field2379: Type772!
+  field56: String
+  field1251: String
+  field94: Scalar14!
+  field57: String
+  field1274: String
+  field96: Scalar14!
+  field585: [Type34!]
+}
+
+type Type768 {
+  field2: ID!
+  field5: String!
+  field253: String
+  field56: String
+  field1251: String
+  field94: Scalar14!
+}
+
+input Input383 {
+  inputField546: [Input382!]!
+  inputField108: String!
+}
+
+input Input384 {
+  inputField108: String!
+  inputField103: String
+}
+
+input Input385 {
+  inputField231: ID!
+  """
+  This is an anonymized description
+  """
+  inputField927: String
+}
+
+type Type769 {
+  field2380: Type768!
+}
+
+input Input386 {
+  inputField231: ID!
+  inputField928: [Input382!] = []
+  inputField929: [Input382!] = []
+  """
+  This is an anonymized description
+  """
+  inputField930: [Input382!] = []
+}
+
+input Input387 {
+  inputField931: [ID!]!
+}
+
+input Input388 {
+  inputField932: String
+  inputField546: [Input382!]
+}
+
+input Input389 {
+  inputField933: Input382!
+  inputField108: String!
+  inputField934: Boolean = false
+}
+
+type Type770 {
+  field2381: Type767!
+}
+
+type Type771 {
+  field2378: [Type767]
+  field108: ID
+}
+
+type Mutation @extends {
+  field2382(arg60: Input383!): Type770!
+  field2383(arg60: Input385!): Type770!
+  field2384(arg60: Input386!): Type770!
+  field2385(arg60: Input387!): [Type770!]!
+  field2386(arg253: ID!): ID
+  field2387(arg60: Input384!): Type769!
+}
+
+type Query @extends {
+  field2388(arg4: ID!): Type767!
+  field2389(arg60: Input389!): [Type770!]!
+  field2390(arg254: [Input389!]): [Type771]!
+}
+
+type Type772 {
+  field2: ID!
+  field56: String
+  field1251: String
+  field94: Scalar14!
+  field2391: Type772
+  field585: [Type34!]
+}

@@ -1,0 +1,73 @@
+"""
+This is an anonymized description
+"""
+type Type32 @extends @key(fields: "field107") {
+  field107: Int! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type2102 @extends @key(fields: "field4951") {
+  field4951: Int! @external
+}
+
+"""
+This is an anonymized description
+"""
+union Union47 = Type32 | Type2102
+
+"""
+This is an anonymized description
+"""
+type Type3320 {
+  """
+  This is an anonymized description
+  """
+  field5787: Float
+  field5788: Union47
+}
+
+type Type3321 {
+  field40: Type3320
+  field41: String
+}
+
+type Type3322 {
+  field36: [Type3321]
+  field37: Type122
+}
+
+"""
+This is an anonymized description
+"""
+type Type3323 {
+  field5: String
+  field545: [String]
+}
+
+"""
+This is an anonymized description
+"""
+input Input1036 {
+  """
+  This is an anonymized description
+  """
+  inputField2141: String!
+  """
+  This is an anonymized description
+  """
+  inputField2142: Int
+  """
+  This is an anonymized description
+  """
+  inputField2143: Boolean
+}
+
+"""
+This is an anonymized description
+"""
+type Query @extends {
+  field5789(arg579: Input1036, arg7: Int = 0, arg6: String): Type3322!
+  field5790(arg580: String!): [Type3323]
+}

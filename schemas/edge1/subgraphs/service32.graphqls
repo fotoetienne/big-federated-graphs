@@ -1,0 +1,60 @@
+directive @directive7(arg24: String = "default") on ARGUMENT_DEFINITION
+
+type Mutation @extends {
+  field105(arg11: String, arg103: String, arg48: String): Union28
+  field744: Union29
+  field745: Union30
+}
+
+union Union28 = Type199 | Type495
+
+type Type495 {
+  field109: Enum154!
+  field108: Type33
+}
+
+type Type199 @key(fields: "field2") {
+  field2: ID!
+  field746: Int!
+  field747: String
+  field748: Type496
+  field749: Type496
+}
+
+type Type496 {
+  field415: String!
+}
+
+enum Enum154 {
+  VALUE_1151
+  VALUE_1152
+  VALUE_1153
+  VALUE_1154
+  VALUE_1155
+  VALUE_1156
+}
+
+type Type33 @key(fields: "field45 field173") @extends {
+  field173: String! @external
+  field45: ID! @external
+}
+
+union Union29 = Type497 | Type498
+
+type Type497 {
+  field442: String!
+}
+
+type Type498 {
+  field5: String!
+}
+
+union Union30 = Type499 | Type500
+
+type Type499 {
+  field442: String!
+}
+
+type Type500 {
+  field5: String!
+}

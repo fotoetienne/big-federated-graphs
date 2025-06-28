@@ -1,0 +1,165 @@
+enum Enum1765 {
+  VALUE_1066
+  VALUE_1069
+  VALUE_1068
+  VALUE_6151
+  VALUE_6152
+  VALUE_6153
+  VALUE_6154
+  VALUE_6155
+  VALUE_6156
+  VALUE_6157
+  VALUE_6158
+  VALUE_6159
+  VALUE_289
+  VALUE_6160
+  VALUE_6161
+  VALUE_6162
+  VALUE_6163
+  VALUE_6164
+  VALUE_6165
+  VALUE_6166
+  VALUE_6167
+  VALUE_6168
+  VALUE_6169
+  VALUE_6170
+  VALUE_6171
+  VALUE_6172
+  VALUE_141
+}
+
+type Type7470 {
+  field244: Boolean!
+  field410: Enum1765!
+  field2454: String
+}
+
+type Type7471 {
+  field44: Int!
+  field94: Scalar14!
+  field96: Scalar14!
+  field56: String!
+  field57: String!
+}
+
+extend type Query {
+  field15637(arg151: String, arg317: Enum1766!): Type7472
+  field15638(arg151: String): [Type7472]
+}
+
+extend type Mutation {
+  field15639(arg151: String, arg317: Enum1766!, arg1457: [String!]!): Type7470
+  field15640(arg151: String, arg317: Enum1766!, arg1457: [String!]!): Type7470
+  field15641(arg151: String, arg317: Enum1766!, arg919: Boolean!): Type7470
+}
+
+type Type7472 {
+  field2257: Enum1766
+  field15642: [String]
+  field2534: Boolean
+}
+
+enum Enum1766 {
+  VALUE_6173
+  VALUE_5976
+  VALUE_3013
+  VALUE_3014
+}
+
+type Query @extends {
+  field15643(arg151: String, arg4: ID!): Type7473
+  field15644(arg151: String): [Type7475]
+  field15645(arg151: String, arg4: ID!): Type7474
+}
+
+type Mutation @extends {
+  field15646(arg151: String, arg1: Input3296): Type7470
+  field15647(arg151: String, arg1: Input3296): Type7470
+  field15648(arg151: String, arg4: String!): Type7470
+}
+
+type Type7473 {
+  field110: Type7475
+  field5619: Type7470
+}
+
+type Type7474 {
+  field15649: [Type7475]
+  field5619: Type7470
+}
+
+input Input3296 {
+  inputField7: ID!
+  inputField57: String!
+  inputField103: String!
+}
+
+type Type7475 {
+  field2: ID!
+  field5: String!
+  field524: Type7471!
+  field15650: ID
+  field253: String!
+}
+
+extend type Query {
+  field15651(arg151: String, arg4: ID!): Type7476
+  field15652(arg151: String): [Type7477]
+  field15653(arg151: String, arg4: ID!): Type7480
+}
+
+extend type Mutation {
+  field15654(arg151: String, arg1: Input3298, arg1458: ID!, arg1459: Boolean!): Type7470
+  field15655(arg151: String, arg1: Input3298, arg1459: Boolean!): Type7470
+  field15656(arg151: String, arg1: Input3298, arg1458: ID!, arg1460: String!): Type7470
+  field15657(arg151: String, arg1: Input3298, arg1460: String!): Type7470
+  field15658(arg151: String, arg4: String!): Type7470
+}
+
+input Input3297 {
+  inputField858: [Input3298]
+}
+
+type Type7476 {
+  field1587: Type7477
+  field5619: Type7470
+}
+
+input Input3298 {
+  inputField7: ID!
+  inputField57: String!
+  inputField103: String
+}
+
+type Type7477 {
+  field2: ID!
+  field5: String
+  field253: String
+  field524: Type7471!
+  field15659: String!
+  field2468: Enum1767!
+  field15660: Union313!
+}
+
+union Union313 = Type7478 | Type7479
+
+type Type7478 {
+  field134: Boolean!
+}
+
+type Type7479 {
+  """
+  This is an anonymized description
+  """
+  field15661: String!
+}
+
+enum Enum1767 {
+  VALUE_6174
+  VALUE_6175
+}
+
+type Type7480 {
+  field15662: [Type7477]
+  field5619: Type7470
+}

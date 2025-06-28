@@ -1,0 +1,78 @@
+scalar Scalar1
+
+"""
+This is an anonymized description
+"""
+type Type32 @key(fields: "field107") @extends {
+  field107: Int! @external
+  field24982(arg2064: Boolean): [Type11578]
+}
+
+type Query {
+  field24983(arg196: [Scalar1], arg2064: Boolean): [Type11577] @deprecated(reason: "Anonymized deprecation reason")
+  field24984(arg196: [Scalar1], arg2064: Boolean): [Type11577]
+  field24985(arg196: [Scalar1!], arg2065: [Enum2825!]): [Type11576]
+}
+
+type Mutation {
+  field24986(arg2066: Input5201): [Type11576]
+}
+
+type Type11575 {
+  field450: String!
+  field134: String!
+}
+
+type Type11576 {
+  field2: ID!
+  field107: Scalar1!
+  field24987: Enum2825!
+  field24988: [String!]
+  field24989: [String!]
+  field524: [Type11575!]
+  field94: Scalar14
+  field56: String
+}
+
+input Input5201 {
+  inputField218: [Scalar1!]
+  inputField8699: Enum2825!
+  inputField8700: [String!]
+  inputField8701: [String!]
+  inputField432: [Input5202!]
+}
+
+input Input5202 {
+  inputField148: String!
+  inputField55: String!
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum2825 {
+  """
+  This is an anonymized description
+  """
+  VALUE_9005
+  """
+  This is an anonymized description
+  """
+  VALUE_9006
+}
+
+type Type11577 {
+  field120: Type32
+  field24982: [Type11578]
+}
+
+type Type11578 {
+  field1527: Scalar7
+  field1246: [Enum516]
+  field24990: [Type11579]
+}
+
+type Type11579 {
+  field311: Enum517
+  field20500: Scalar14
+}

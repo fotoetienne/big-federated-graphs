@@ -1,0 +1,86 @@
+type Type2163 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+type Type32 @key(fields: "field107") @extends {
+  field107: Int! @external
+}
+
+type Type90 @key(fields: "field163") @extends {
+  field163: String! @external
+}
+
+type Type371 @key(fields: "field959") @extends {
+  field959: ID! @external
+}
+
+type Type15765 {
+  field285: Enum3803!
+  field87: String!
+}
+
+enum Enum3803 {
+  VALUE_3484
+  VALUE_1069
+  VALUE_141
+}
+
+type Query {
+  field31515(arg2109: Input7438, arg11: [ID!]): Type15766! @experimental
+}
+
+type Type15766 {
+  field31516: [Type15769!]
+  field90: [Type15765]
+}
+
+type Type15767 {
+  field423: ID!
+  field741: Enum3804!
+  field58: Enum3805!
+  field31517: Union888!
+}
+
+enum Enum3804 {
+  VALUE_7818
+  VALUE_201
+  VALUE_202
+  VALUE_9193
+  VALUE_4346
+}
+
+enum Enum3805 {
+  VALUE_9
+  VALUE_4697
+  VALUE_746
+  VALUE_11025
+}
+
+type Type15768 {
+  field423: ID!
+  field285: Enum3804!
+}
+
+union Union888 = Type2163 | Type32 | Type90 | Type371 | Type15768
+
+type Type15769 {
+  field2: ID!
+  field285: Enum3806!
+  field58: Enum3807!
+  field2737: [Type15767!]
+}
+
+enum Enum3806 {
+  VALUE_1615
+}
+
+enum Enum3807 {
+  VALUE_1108
+  VALUE_327
+  VALUE_11025
+}
+
+input Input7438 {
+  inputField130: ID!
+  inputField237: Enum3804!
+}

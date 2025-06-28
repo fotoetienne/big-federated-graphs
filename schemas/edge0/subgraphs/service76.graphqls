@@ -1,0 +1,52 @@
+type Query {
+  field3031(arg10: Input602!, arg293: Input603!): Type1193!
+}
+
+input Input602 {
+  "This is an anonymized description"
+  inputField1271: String
+  inputField171: Int
+}
+
+input Input603 {
+  inputField29: String
+  inputField28: String
+  inputField211: Int
+  inputField1272: Int
+}
+
+type Type1193 {
+  field37: Type122!
+  field36: [Type1194!]!
+}
+
+type Type1194 {
+  field41: String!
+  field40: Type1195!
+}
+
+type Type1195 {
+  field120: Type32!
+  field56: Type29!
+  field58: Enum303!
+}
+
+enum Enum303 {
+  VALUE_158
+  VALUE_1383
+  VALUE_1384
+  VALUE_1385
+  VALUE_1386
+  VALUE_777
+  VALUE_1387
+  VALUE_151
+  VALUE_1220
+}
+
+type Type32 @extends @key(fields: "field107") {
+  field107: Int! @external
+}
+
+type Type29 @extends @key(fields: "field98") {
+  field98: ID! @external
+}

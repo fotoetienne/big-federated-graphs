@@ -1,0 +1,167 @@
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+type Type2181 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID
+  """
+  This is an anonymized description
+  """
+  field5: String
+  """
+  This is an anonymized description
+  """
+  field4141: Scalar8
+  field2081: Boolean
+}
+
+type Type32 @key(fields: "field107") @extends {
+  field107: Int! @external
+}
+
+type Type1733 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  field5: String
+  """
+  This is an anonymized description
+  """
+  field120: Type32
+  field8521: String
+  field2081: Boolean
+}
+
+type Type2349 @key(fields: "field2") {
+  field8522: String
+  field8523: String
+  field2: ID!
+  field8524: String
+  field8525: String
+  field8526: String
+  field8527: String
+  field8528: String
+  field8529: String
+  field8530: String
+  field8531: String
+  field8532: String
+  field8533: String
+  field8534: String
+  field8535: String
+  field8536: String
+  field8537: String
+}
+
+enum Enum940 {
+  """
+  This is an anonymized description
+  """
+  VALUE_9
+  """
+  This is an anonymized description
+  """
+  VALUE_212
+  """
+  This is an anonymized description
+  """
+  VALUE_3924
+  VALUE_141
+}
+
+enum Enum941 {
+  """
+  This is an anonymized description
+  """
+  VALUE_1275
+  """
+  This is an anonymized description
+  """
+  VALUE_3925
+  """
+  This is an anonymized description
+  """
+  VALUE_141
+}
+
+type Type1732 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  field5: String
+  field8538: [String]
+  """
+  This is an anonymized description
+  """
+  field58: Enum940
+  field2391: Type1732
+  field4078: String
+  """
+  This is an anonymized description
+  """
+  field166: String
+  """
+  This is an anonymized description
+  """
+  field8539: String
+  """
+  This is an anonymized description
+  """
+  field8540: [Scalar8]
+  """
+  This is an anonymized description
+  """
+  field4302: String
+  """
+  This is an anonymized description
+  """
+  field4303: Scalar9
+  field8541: String
+  """
+  This is an anonymized description
+  """
+  field8542: String
+  """
+  This is an anonymized description
+  """
+  field8543: String
+  """
+  This is an anonymized description
+  """
+  field8544: String
+  field8545: [String]
+  field4304: [Type2181]
+  field8546: [String]
+  field8547: [String]
+  field741: Enum941
+  field8548: Scalar14
+  field8537: Scalar14
+  field8549: String
+  field8550: String
+}
+
+type Query @extends @directive1(arg31: "anonymous-string") {
+  field8551: [Type2181]
+  field8552(arg853: ID!): Type2181
+  field8553: [Type1733]
+  field8554(arg196: [ID!]!): [Type1733]
+  field8555: [Type2349!]
+  field8556(arg4: ID!): Type2349
+  field8557(arg854: [ID!]!): [Type2349!]
+  field8558(arg855: [ID!]!): [Type1732]
+  """
+  This is an anonymized description
+  """
+  field8559(
+  arg415: ID!): Type1732
+  """
+  This is an anonymized description
+  """
+  field8560(
+  arg856: Enum940): [Type1732]
+}

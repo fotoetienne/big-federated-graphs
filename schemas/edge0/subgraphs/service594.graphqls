@@ -1,0 +1,17 @@
+type Query @extends {
+  field29734(arg37: ID!): Type14630
+}
+
+type Type35 @key(fields: "field2 field44") @extends {
+  field2: String! @external
+  field44: String @external
+}
+
+type Type34 @key(fields: "field108 { field2 field44 }") @extends {
+  field108: Type35 @external
+}
+
+type Type14630 {
+  field1388: Type34
+  field29735: ID!
+}

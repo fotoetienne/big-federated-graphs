@@ -1,0 +1,110 @@
+scalar Scalar1
+
+scalar String
+
+scalar ID
+
+scalar Scalar3
+
+directive @directive1(arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Query @extends {
+  field24128: [Type11146] @directive1(arg31: "anonymous-string")
+  field24129(arg670: ID): [Type11147] @directive1(arg31: "anonymous-string")
+}
+
+type Mutation @extends {
+  field24130(arg1: Input5006): Type11142 @directive1(arg31: "anonymous-string")
+  field24131(arg1: Input5006): Type11142 @directive1(arg31: "anonymous-string")
+  field24132(arg1: [String]): Type11143 @directive1(arg31: "anonymous-string")
+}
+
+type Type11142 {
+  field24133: [Type11148]
+  field24134: [Type11145]
+}
+
+type Type11143 {
+  field24133: [String]
+  field24134: [Type11144]
+}
+
+type Type11144 {
+  field24135: String
+  field410: String
+}
+
+type Type11145 {
+  field24135: Type11148
+  field410: String
+}
+
+type Type11146 @directive1(arg31: "anonymous-string") {
+  field285: Enum2694
+  field5934: Scalar3
+}
+
+type Type11147 @directive1(arg31: "anonymous-string") {
+  field285: Enum2694
+  field2493: [Type11148]
+}
+
+type Type11148 {
+  field4982: ID!
+  field107: Scalar1!
+  field1154: Scalar1!
+  field165: String
+  field285: String
+  field1749: Scalar1
+  field1750: Scalar1
+  field1455: [Type11149]
+  field24136: Scalar1
+  field24137: Scalar1
+  field1497: Type29
+}
+
+type Type11149 {
+  field5: String
+  field134: Scalar3
+}
+
+input Input5005 {
+  inputField57: String
+  inputField55: Scalar3
+}
+
+input Input5006 {
+  inputField8514: Boolean @directive1(arg31: "anonymous-string")
+  inputField8515: [Input5007] @directive1(arg31: "anonymous-string")
+}
+
+input Input5007 {
+  inputField8293: ID
+  inputField171: Scalar1!
+  inputField540: Scalar1!
+  inputField576: String
+  inputField108: String
+  inputField697: [Input5005]
+  inputField8516: Scalar1
+  inputField8517: Scalar1
+}
+
+enum Enum2694 {
+  VALUE_8756
+  VALUE_8757
+  VALUE_8758
+  VALUE_8759
+  VALUE_8760
+  VALUE_8761
+  VALUE_8762
+  VALUE_8763
+}
+
+"""
+This is an anonymized description
+"""
+type Type29 @key(fields: "field98") @extends {
+  field98: ID! @external
+}

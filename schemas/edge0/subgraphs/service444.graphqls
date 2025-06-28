@@ -1,0 +1,86 @@
+"""
+This is an anonymized description
+"""
+type Type10598 {
+  field23077: String
+  field23078: Scalar14
+  field120: Type32
+  field11005: String
+  field23079: String
+  field23080: String
+  field44: String
+}
+
+type Type10599 {
+  field11787: String
+  field23081: Int
+  field11786: String
+  field23082: Int
+  field94: String
+  field56: Type29
+  field426: Type187
+  field23083: Int
+  field120: Type32
+  field366: Type162
+  field2772: Type1182
+  field96: String
+  field57: Type29
+}
+
+type Type10600 {
+  field23084: Int
+  field94: Scalar14
+  field56: Type29
+  field23085: Scalar14
+  field4950: Type2102
+  field3532: Type162
+  field23086: [Type1182!]
+  field96: String
+  field57: Type29
+}
+
+type Type10601 {
+  field23087: [Type32!]
+  field23088: [Type162!]
+  field23089: [Type29!]
+  field23090: [Type2102!]
+}
+
+union Union536 = Type32 | Type162 | Type29 | Type2102
+
+type Type162 @key(fields: "field2") @extends {
+  "This is an anonymized description"
+  field2: ID! @external
+}
+
+type Type29 @key(fields: "field98") @extends {
+  "This is an anonymized description"
+  field98: ID! @external
+}
+
+type Type32 @key(fields: "field107") @extends {
+  "This is an anonymized description"
+  field107: Int! @external
+}
+
+type Type1182 @key(fields: "field2") @extends {
+  "This is an anonymized description"
+  field2: ID! @external
+}
+
+type Type187 @extends @key(fields: "field2") {
+  "This is an anonymized description"
+  field2: Int! @external
+}
+
+type Type2102 @extends @key(fields: "field4951") {
+  "This is an anonymized description"
+  field4951: Int! @external
+}
+
+type Query @extends {
+  field23091(arg1801: [String!]!): [Type10599!]
+  field23092(arg1910: [Int!]!): [Type10598!]
+  field23093(arg1911: [String!]!): [Type10600!]
+  field23094(arg102: Int!): Type10601!
+}

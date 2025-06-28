@@ -1,0 +1,13 @@
+type Type2180 @extends @key(fields: "field2") {
+  field2: String! @external
+}
+
+type Type8751 {
+  field2585: Type2180
+  field19305: Type2180
+}
+
+type Query @extends {
+  field19306("This is an anonymized description"
+  arg899: String!): Type8751
+}

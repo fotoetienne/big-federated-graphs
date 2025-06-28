@@ -1,0 +1,136 @@
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+type Type29 @key(fields: "field98") @extends {
+  field98: ID! @external
+}
+
+type Type32 @key(fields: "field107") @extends {
+  field107: Int! @external
+  field18773: [Type8506!]
+}
+
+type Type2159 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Query @directive1(arg31: "anonymous-string") {
+  field18774: [Type8509!]
+  field18775: [Type8510!]
+  """
+  This is an anonymized description
+  """
+  field18776(
+  arg196: [Int!]
+  arg779: [Int!]): [Type8508!]
+  field18773(arg196: [Int!]): [Type8506!]
+  field18777(arg12: Int!): Type8507
+}
+
+"""
+This is an anonymized description
+"""
+type Type8506 {
+  field2: ID!
+  field18778: Scalar13
+  field4701: Type8509
+  field1472: Type8510
+  """
+  This is an anonymized description
+  """
+  field120: Type32
+  """
+  This is an anonymized description
+  """
+  field18779: [Type29!]
+  """
+  This is an anonymized description
+  """
+  field57: Type29!
+}
+
+"""
+This is an anonymized description
+"""
+type Type8507 {
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field120: Type32!
+  field194: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type8508 {
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field120: Type32!
+  """
+  This is an anonymized description
+  """
+  field4411: Type2159!
+  """
+  This is an anonymized description
+  """
+  field2393: Int
+  field76: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type8509 {
+  field2: ID!
+  field5: String!
+  field932: Boolean!
+}
+
+"""
+This is an anonymized description
+"""
+type Type8510 {
+  field2: ID!
+  field5: String!
+  field932: Boolean!
+}
+
+type Mutation @directive1(arg31: "anonymous-string") {
+  field18780(arg1: Input3902): Type8507
+  field18781(arg4: ID!, arg1: Input3902): Type8507
+  field18782(arg1: Input3903): Type8506
+  field18783(arg4: ID!, arg1: Input3903): Type8506
+  field18784(arg1: Input3904): Type8508
+  field18785(arg4: ID!, arg1: Input3904): Type8508
+  field18786(arg4: ID!): Boolean
+}
+
+input Input3902 {
+  inputField171: Int!
+  inputField102: String
+}
+
+input Input3903 {
+  inputField7138: Scalar13
+  inputField7139: Int
+  inputField7140: Int!
+  inputField171: Int!
+  inputField7141: [String!]
+}
+
+input Input3904 {
+  inputField171: Int!
+  inputField1748: Int!
+  inputField7142: Int!
+  inputField1912: Int
+  inputField109: String
+}

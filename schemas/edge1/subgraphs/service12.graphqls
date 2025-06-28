@@ -1,0 +1,30 @@
+type Query @extends {
+  field110(arg13: String!, arg14: String): [Type3!]!
+}
+
+type Type2 {
+  field111: [Type5!]!
+}
+
+type Type3 {
+  field42: String!
+  field112: Union1!
+}
+
+type Type4 {
+  field2: ID!
+  field42: String
+  field113: Type5
+}
+
+type Type5 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+type Type6 {
+  field114: Int!
+  field7: [Type5!]!
+  field115(arg15: String): [Type4!]!
+}
+
+union Union1 = Type6 | Type2

@@ -1,0 +1,117 @@
+type Mutation @extends {
+  field8184(arg1: Input1618!): Type4452! @experimental
+}
+
+input Input1618 {
+  inputField81: ID!
+  inputField2996: String!
+}
+
+type Type4452 {
+  field163: ID!
+  """
+  This is an anonymized description
+  """
+  field8185: String!
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field8186(
+  arg1: Input1619): [Type4453!]!
+  """
+  This is an anonymized description
+  """
+  field8187(
+  arg1: Input1620): [Type4456!]!
+}
+
+scalar Scalar3
+
+enum Enum902 {
+  VALUE_955
+  VALUE_149
+  VALUE_151
+  VALUE_152
+  VALUE_298
+}
+
+input Input1619 {
+  inputField81: ID
+  inputField2997: Enum902
+}
+
+input Input1620 {
+  inputField81: ID
+  inputField2997: Enum902
+}
+
+type Type90 @key(fields: "field163") @extends {
+  field163: String! @external
+  """
+  This is an anonymized description
+  """
+  field8186(
+  arg1: Input1619): [Type4453!]!
+  """
+  This is an anonymized description
+  """
+  field8187(
+  arg1: Input1620): [Type4456!]!
+}
+
+type Type29 @key(fields: "field98") @extends {
+  field98: ID! @external
+}
+
+type Type4453 {
+  field2612: Type90!
+  field8185: String!
+  field8188: Type4453
+  field5: String!
+  field8189: Enum902!
+  field8190(arg1: Input1620): [Type4456!]!
+  field56: Type29!
+  field94: Scalar14!
+  field57: Type29!
+  field96: Scalar14!
+}
+
+type Type4454 {
+  field89: String!
+  field8188: Type4453!
+  field56: Type29!
+  field94: Scalar14!
+  field57: Type29!
+  field96: Scalar14!
+}
+
+type Type4455 {
+  field2: String!
+  field5510: String!
+  field56: Type29!
+  field94: Scalar14!
+  field57: Type29!
+  field96: Scalar14!
+}
+
+type Type4456 {
+  field2: ID!
+  field5: String!
+  field8189: Enum902!
+  field8191: String
+  field8192: Type4453
+  field8193: Type4454
+  field8194: Type4455
+  field2612: Type90!
+  """
+  This is an anonymized description
+  """
+  field524: Scalar3!
+  field56: Type29!
+  field94: Scalar14!
+  field57: Type29!
+  field96: Scalar14!
+}

@@ -1,0 +1,25 @@
+"""
+This is an anonymized description
+"""
+scalar Scalar1
+
+type Type3481 {
+  field6063: String
+  field6064: Scalar1
+  field6065: [String]
+  field6066: String
+}
+
+type Query @extends {
+  field6067(arg589: [String!]!): [Type3481!]
+}
+
+type Type1959 @extends @key(fields: "field2") {
+  field2: ID! @external
+  field6068(arg590: String): [Type3481!]
+}
+
+type Type1963 @extends @key(fields: "field2") {
+  field2: ID! @external
+  field6068(arg590: String): [Type3481!]
+}

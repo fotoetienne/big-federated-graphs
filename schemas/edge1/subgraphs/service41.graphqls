@@ -1,0 +1,56 @@
+type Query {
+  field1652(arg2: [Input222!]!): [Type251]!
+}
+
+input Input222 {
+  inputField473: ID!
+  inputField123: Enum245
+}
+
+enum Enum245 {
+  VALUE_591
+  VALUE_1328
+  VALUE_590
+  VALUE_1329
+  VALUE_1243
+  VALUE_1330
+}
+
+type Type251 @key(fields: "field2") {
+  field2: ID!
+  field1653: Type251
+  field1654: Boolean!
+  field112: Union61!
+  field1655: Boolean!
+}
+
+union Union61 = Type895 | Type897 | Type898 | Type899 | Type900 | Type901
+
+type Type895 {
+  field2: Type896!
+}
+
+type Type896 {
+  field18: ID!
+  field1656: Enum245
+}
+
+type Type897 {
+  field2: Type896!
+}
+
+type Type898 {
+  field2: Type896!
+}
+
+type Type899 {
+  field2: Type896!
+}
+
+type Type900 {
+  field2: Type896!
+}
+
+type Type901 {
+  field2: Type896!
+}

@@ -1,0 +1,66 @@
+scalar Scalar1
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Query {
+  field13494(arg1: Input2607): [Type6395!]! @directive1(arg31: "anonymous-string")
+  field13495(arg1: Input2607): [Type6396!]! @directive1(arg31: "anonymous-string")
+  field13496(arg1: Input2608!): [String!]! @directive1(arg31: "anonymous-string")
+}
+
+enum Enum1470 {
+  VALUE_5138
+  VALUE_5137
+}
+
+input Input2607 {
+  inputField540: ID!
+  inputField4827: [Scalar1!]!
+  inputField179: Enum1470!
+  """
+  This is an anonymized description
+  """
+  inputField199: Int
+  inputField4828: Int!
+  inputField4639: Boolean = false
+  """
+  This is an anonymized description
+  """
+  inputField4829: Boolean = false
+}
+
+interface Interface261 {
+  field4943: Scalar1!
+  """
+  This is an anonymized description
+  """
+  field13497: Scalar1!
+  field379: Scalar1!
+  field75: Scalar1!
+}
+
+type Type6395 implements Interface261 {
+  field279: String!
+  field4943: Scalar1!
+  field13497: Scalar1!
+  field379: Scalar1!
+  field75: Scalar1!
+}
+
+type Type6396 implements Interface261 {
+  field13498: String!
+  field4943: Scalar1!
+  field13497: Scalar1!
+  field379: Scalar1!
+  field75: Scalar1!
+}
+
+input Input2608 {
+  inputField171: ID!
+  inputField108: String!
+}

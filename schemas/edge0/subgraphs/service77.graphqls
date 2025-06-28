@@ -1,0 +1,23 @@
+type Type1196 {
+  field2: ID!
+  field253: String!
+  field3032: String
+  field3033: String
+  field3034: String
+}
+
+type Mutation @extends {
+  field3035(arg269: String!): Type1196
+  field3036(arg4: ID!, arg269: String, arg294: String): Type1196
+  field3037(arg4: ID!): ID
+  field3038(arg295: ID!, arg12: Int!): Type32
+}
+
+type Query @extends {
+  field3039(arg4: ID!): Type1196
+}
+
+type Type32 @extends @key(fields: "field107") {
+  field107: Int! @external
+  field3039: Type1196
+}

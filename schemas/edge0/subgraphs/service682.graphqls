@@ -1,0 +1,150 @@
+type Query {
+  """
+  This is an anonymized description
+  """
+  field32074(
+  arg2323: ID!
+  arg564: ID!): [Type15995!]
+  "This is an anonymized description"
+  field32075(
+  arg11: [ID!]!): [Type2149!] @experimental
+  "This is an anonymized description"
+  field32076(
+  arg4: ID!
+  arg77: Enum3856): Type2150
+}
+
+type Type861 @extends @key(fields: "field279") {
+  field279: Scalar16 @external
+  field32077: [Type15995!]
+}
+
+type Type876 @extends @key(fields: "field1099 field1125") {
+  field1099: ID! @external
+  field1125: Enum543 @external
+  field27576: [Type2149!]
+}
+
+type Type2064 @extends @key(fields: "field2") {
+  field2: ID! @external
+}
+
+type Type2065 @extends @key(fields: "field2 field4935{ field2 }") {
+  field2: ID! @external
+  field4935: Type2064! @external
+  field32077: [Type15995!]
+}
+
+enum Enum3855 {
+  VALUE_1000
+  VALUE_1217
+  VALUE_3476
+  VALUE_1218
+  VALUE_149
+  VALUE_1608
+  VALUE_270
+}
+
+type Type15995 {
+  field3218: ID!
+  field570: String!
+  field1210: Scalar14!
+  field2248: String!
+  field12930: String
+  field26258: String!
+  field27676: Enum3857
+  field58: Enum3855!
+  field908: [Type15997!]
+  field32078: Type15996!
+  field6665: [Type15998!]
+  field32079: Scalar17
+}
+
+type Type15996 {
+  field32080: String
+  field32081: String
+  field32082: String!
+}
+
+type Type15997 {
+  field25906: String!
+  field87: String!
+}
+
+type Type15998 {
+  field32083: ID!
+  field26092: Boolean!
+  field14107: Enum3858! @deprecated
+  field32084: Enum3237
+  field912: Scalar9!
+  field1210: Scalar14!
+}
+
+type Type2149 @key(fields: "field2") {
+  field2: ID!
+  field5005: Enum3856!
+  field285: Enum3857!
+  field5: String!
+  field570: String!
+  field2248: String
+  field32085: Boolean!
+  field32086: Type2150
+  field7849(arg10: Input7577): [Type2150!] @experimental
+}
+
+"This is an anonymized description"
+input Input7577 {
+  "This is an anonymized description"
+  inputField5238: Int
+  inputField135: Enum3855
+}
+
+type Type2150 @key(fields: "field2") {
+  field2: ID!
+  field32087: String!
+  field14107: Enum3237
+  field1072: Scalar14!
+  field32088: Type852!
+  field58: Enum3855!
+}
+
+type Type852 @extends @key(fields: "field2") @key(fields: "field2517") {
+  field2: ID @external
+  field2517: String @external
+}
+
+enum Enum3856 {
+  VALUE_18
+  VALUE_20
+}
+
+enum Enum3857 {
+  VALUE_9717
+  VALUE_2808
+  VALUE_11118
+  VALUE_11119
+  VALUE_11120
+  VALUE_11121
+  VALUE_11122
+  VALUE_11123
+  VALUE_1030
+  VALUE_1940
+  VALUE_11124
+  VALUE_11125
+  VALUE_11126
+  VALUE_5996
+}
+
+enum Enum3237 {
+  VALUE_141
+  VALUE_152
+  VALUE_1327
+  VALUE_9716
+}
+
+enum Enum3858 {
+  VALUE_141
+  VALUE_152
+  VALUE_1327
+  VALUE_9716
+}

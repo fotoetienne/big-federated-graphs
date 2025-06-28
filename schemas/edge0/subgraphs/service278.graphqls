@@ -1,0 +1,40 @@
+enum Enum1563 {
+  VALUE_1822
+  VALUE_5576
+  VALUE_5577
+  VALUE_5578
+  VALUE_5579
+  VALUE_5580
+}
+
+type Type6648 {
+  field3456: String
+  field14235: Scalar13
+}
+
+type Type6649 {
+  field3676: String
+  field194: Type6648
+}
+
+type Type6650 {
+  field5: String
+  field194: Type6648
+  field2463: [Type6650]
+}
+
+type Type6651 {
+  field3676: String
+  field58: String
+}
+
+type Query @extends {
+  field14236(arg47: Enum1563!, arg1336: String!, arg970: String!): Type6648
+  field14237(arg47: Enum1563!, arg1337: [String!], arg970: String!): [Type6649]
+  field14238(arg47: Enum1563!, arg1336: String!, arg970: String): Type6650
+}
+
+type Mutation @extends {
+  field14239(arg47: Enum1563!, arg1336: String!, arg970: String, arg1338: String): Type6651
+  field14240(arg47: Enum1563!, arg1336: String!, arg970: String): Type6651
+}

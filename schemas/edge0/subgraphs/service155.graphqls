@@ -1,0 +1,291 @@
+type Query
+
+scalar Scalar1
+
+extend type Query {
+  field7439(arg725: Enum796!, arg726: String = null): Boolean
+  field7440(arg727: Input1481!): String
+}
+
+extend type Query {
+  field7441: String @experimental
+}
+
+enum Enum796 {
+  VALUE_21
+  VALUE_3468
+  VALUE_1443
+}
+
+input Input1481 {
+  inputField2801: Enum796!
+  inputField1880: Enum797!
+  inputField1326: String
+}
+
+enum Enum797 {
+  VALUE_2010
+  VALUE_2016
+  VALUE_2013
+  VALUE_2011
+}
+
+extend type Query {
+  """
+  This is an anonymized description
+  """
+  field7442(
+  arg728: Enum796!
+  arg244: Int
+  arg245: Int
+  arg729: [String!]): [Type4081] @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field7443(
+  "This is an anonymized description"
+  arg10: Input1482!
+  "This is an anonymized description"
+  arg293: Input849!
+  "This is an anonymized description"
+  arg730: [Input1483!]! = []): Type4079
+  """
+  This is an anonymized description
+  """
+  field7444(
+  arg728: Enum796!
+  arg731: String!
+  arg732: String
+  arg244: Int
+  arg245: Int
+  arg733: Boolean
+  arg729: [String!]): Type4087
+  """
+  This is an anonymized description
+  """
+  field7445(
+  arg728: Enum796!
+  arg731: String!
+  arg244: Int
+  arg245: Int
+  arg733: Boolean
+  arg729: [String!]): Type4088
+  """
+  This is an anonymized description
+  """
+  field7446(
+  arg728: Enum796!
+  arg732: String!
+  arg244: Int
+  arg245: Int
+  arg733: Boolean
+  arg729: [String!]): Type4089
+}
+
+"""
+This is an anonymized description
+"""
+input Input1482 {
+  inputField2802: Enum796!
+  inputField2803: Int
+  inputField2804: Int
+  inputField2805: [String!]
+  "This is an anonymized description"
+  inputField2806: String
+}
+
+input Input1483 {
+  inputField1116: Enum798!
+  inputField26: Enum799! = VALUE_2
+}
+
+enum Enum798 {
+  VALUE_3469
+  VALUE_3470
+  VALUE_3471
+}
+
+enum Enum799 {
+  VALUE_2
+  VALUE_3
+}
+
+type Type4079 implements Interface107 {
+  field36: [Type4080!]
+  field37: Type122
+  """
+  This is an anonymized description
+  """
+  field38: Int
+}
+
+type Type4080 {
+  field40: Type4081
+  field41: String
+}
+
+type Type4081 {
+  field5: String!
+  "This is an anonymized description"
+  field7447: String
+  field7448: Union77
+  field7449: Scalar1
+  field7450: [Type4085]
+  field7451(arg734: Enum800): [Type4086]
+}
+
+"""
+This is an anonymized description
+"""
+union Union77 = Type4083 | Type4082 | Type4084
+
+type Type4082 {
+  """
+  This is an anonymized description
+  """
+  field109: Type869
+}
+
+type Type4083 {
+  """
+  This is an anonymized description
+  """
+  field7452: Type869
+}
+
+type Type4084 {
+  """
+  This is an anonymized description
+  """
+  field256: String
+  """
+  This is an anonymized description
+  """
+  field7453: String
+  """
+  This is an anonymized description
+  """
+  field4069: String
+  """
+  This is an anonymized description
+  """
+  field3173: String
+  """
+  This is an anonymized description
+  """
+  field1211: String
+  """
+  This is an anonymized description
+  """
+  field7454: String
+  """
+  This is an anonymized description
+  """
+  field7455: String
+}
+
+type Type869 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+type Type4085 {
+  field5: String
+  field7456: String
+  field7449: Scalar1
+  field7457: Boolean
+}
+
+type Type4086 {
+  field7458: Scalar1
+  field7449: Scalar1
+}
+
+enum Enum800 {
+  VALUE_3472
+  VALUE_3473
+  VALUE_3474
+  VALUE_3475
+}
+
+type Type4087 {
+  field5: String!
+  "This is an anonymized description"
+  field7447: String
+  field7448: Union77
+  field7449: Scalar1
+  field7459: [Type4090]
+  field7451(arg734: Enum800): [Type4086]
+}
+
+type Type4088 {
+  field5: String!
+  field7448: Union77
+  field7449: Scalar1
+  field7459: [Type4090]
+  field7451(arg734: Enum800): [Type4086]
+  "This is an anonymized description"
+  field7460: [String!]
+}
+
+type Type4089 {
+  field7447: String!
+  field7449: Scalar1
+  field7459: [Type4090]
+  field7451(arg734: Enum800): [Type4086]
+  "This is an anonymized description"
+  field7461: [String!]
+}
+
+type Type4090 {
+  field5: String!
+  field7456: String
+  field7449: Scalar1
+  field7457: Boolean
+  field7451(arg734: Enum800): [Type4086]
+  field7462: [Type4091]
+  field7463: [Type4092]
+  field7464: [Type4091]
+  field7465: [Type4091]
+}
+
+type Type4091 {
+  field5: String!
+  field7449: Scalar1
+  field7466: [Interface159]
+  field7467: [Type4096]
+  field7451(arg734: Enum800): [Type4086]
+}
+
+type Type4092 {
+  field5: String!
+  field7449: Scalar1
+  field7466: [Interface159]
+  field7468: [Type4093]
+  field7451(arg734: Enum800): [Type4086]
+}
+
+type Type4093 {
+  field7469: String!
+  field5: String!
+  field7449: Scalar1
+  field7466: [Interface159]
+  field7467: [Type4096]
+}
+
+interface Interface159 {
+  field5: String
+}
+
+type Type4094 implements Interface159 {
+  field5: String
+}
+
+type Type4095 implements Interface159 {
+  field5: String
+  field410: String
+}
+
+type Type4096 {
+  field5: String
+  field7449: Scalar1
+}

@@ -1,0 +1,214 @@
+"""
+This is an anonymized description
+"""
+type Type468 {
+  """
+  This is an anonymized description
+  """
+  field42: Interface20
+  """
+  This is an anonymized description
+  """
+  field442: Interface20
+  """
+  This is an anonymized description
+  """
+  field692: String
+  """
+  This is an anonymized description
+  """
+  field693: Interface19
+  """
+  This is an anonymized description
+  """
+  field694: Interface19
+}
+
+"""
+This is an anonymized description
+"""
+interface Interface19 {
+  """
+  This is an anonymized description
+  """
+  field695: Interface20
+}
+
+"""
+This is an anonymized description
+"""
+type Type469 implements Interface19 {
+  """
+  This is an anonymized description
+  """
+  field695: Interface20
+}
+
+type Type28 @key(fields: "field172") @extends {
+  field172: ID! @external
+  field973: Type597
+  field974: Union49
+}
+
+type Mutation @extends {
+  field975(arg112: String!, arg113: String): Union48
+  """
+  This is an anonymized description
+  """
+  field976: Union44 @experimental
+}
+
+union Union44 = Type586
+
+type Type586 {
+  field496: Interface20
+}
+
+type Query @extends {
+  field977(arg112: String): Union45
+  field978(arg114: [ID!]!): [Union46!]
+  field979(arg115: [ID!]!): [Union47!]
+  field980(arg16: Input207!): Union47
+}
+
+input Input207 {
+  inputField101: ID
+  inputField522: String
+}
+
+union Union45 = Type591 | Type592 | Type595
+
+union Union46 = Type250 | Type589 | Type590
+
+union Union47 = Type14 | Type587 | Type588
+
+type Type587 implements Interface12 {
+  field151: ID!
+  field496: Interface20
+}
+
+type Type588 implements Interface12 {
+  field151: ID!
+  field496: Interface20
+}
+
+type Type589 implements Interface12 {
+  field981: ID!
+  field496: Interface20
+}
+
+type Type590 implements Interface12 {
+  field981: ID!
+  field496: Interface20
+}
+
+type Type591 {
+  field496: Interface20
+}
+
+type Type592 implements Interface12 {
+  field496: Interface20 @deprecated(reason: "Anonymized deprecation reason")
+}
+
+union Union48 = Type593 | Type594 | Type595 | Type596
+
+interface Interface23 {
+  field982: Type468
+}
+
+type Type593 {
+  field775: Type598
+}
+
+interface Interface12 {
+  field496: Interface20
+}
+
+type Type594 implements Interface12 & Interface23 {
+  field496: Interface20 @deprecated(reason: "Anonymized deprecation reason")
+  field982: Type468
+}
+
+type Type595 implements Interface12 & Interface23 {
+  field496: Interface20
+  field982: Type468
+}
+
+type Type596 implements Interface12 & Interface23 {
+  field496: Interface20 @deprecated(reason: "Anonymized deprecation reason")
+  field982: Type468
+}
+
+type Type32 @key(fields: "field45") @extends {
+  field45: ID! @external
+}
+
+type Type597 {
+  field775: Type598
+  field983: Type32
+}
+
+type Type598 {
+  field773: String
+}
+
+type Type204 @key(fields: "field2") @extends {
+  field2: ID! @external
+  field973: Type597
+}
+
+interface Interface20 @extends {
+  field12(arg12: String): String @external
+}
+
+type Type33 implements Interface20 @key(fields: "field45 field173") @extends {
+  field45: ID! @external
+  field173: String! @external
+  field12(arg12: String): String @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type250 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  field973: Type597
+}
+
+"""
+This is an anonymized description
+"""
+type Type14 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field151: ID! @deprecated(reason: "Anonymized deprecation reason")
+  field973: Type597
+  field2: ID!
+}
+
+union Union49 = Type599 | Type600
+
+type Type599 {
+  field984: Union50
+}
+
+type Type600 {
+  field5: String
+}
+
+union Union50 = Type200 | Type601
+
+type Type200 @key(fields: "field193") {
+  field193: ID!
+  field985: Int
+  field986: Int
+  field987: String
+}
+
+type Type601 {
+  field5: String
+}

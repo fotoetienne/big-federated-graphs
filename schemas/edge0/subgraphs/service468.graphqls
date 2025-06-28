@@ -1,0 +1,433 @@
+"""
+This is an anonymized description
+"""
+type Type11187 {
+  """
+  This is an anonymized description
+  """
+  field8034: Type11188
+  """
+  This is an anonymized description
+  """
+  field24210: Type11188
+  """
+  This is an anonymized description
+  """
+  field24211: Type11188
+  """
+  This is an anonymized description
+  """
+  field799: Type2777
+  """
+  This is an anonymized description
+  """
+  field58: Enum2709
+}
+
+"""
+This is an anonymized description
+"""
+type Type2777 @key(fields: "field799") {
+  """
+  This is an anonymized description
+  """
+  field799: ID
+  """
+  This is an anonymized description
+  """
+  field24211: Type11188
+  """
+  This is an anonymized description
+  """
+  field24212: Boolean
+  """
+  This is an anonymized description
+  """
+  field2380: Enum2708
+  """
+  This is an anonymized description
+  """
+  field24213: Boolean
+  """
+  This is an anonymized description
+  """
+  field24214: Boolean
+}
+
+"""
+This is an anonymized description
+"""
+type Type11188 {
+  """
+  This is an anonymized description
+  """
+  field20010: String!
+  """
+  This is an anonymized description
+  """
+  field786: Int
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum2708 {
+  """
+  This is an anonymized description
+  """
+  VALUE_3773
+  """
+  This is an anonymized description
+  """
+  VALUE_3774
+  """
+  This is an anonymized description
+  """
+  VALUE_798
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum2709 {
+  """
+  This is an anonymized description
+  """
+  VALUE_8769
+  """
+  This is an anonymized description
+  """
+  VALUE_3779
+  """
+  This is an anonymized description
+  """
+  VALUE_4461
+  """
+  This is an anonymized description
+  """
+  VALUE_1000
+}
+
+"""
+This is an anonymized description
+"""
+type Type11189 {
+  """
+  This is an anonymized description
+  """
+  field793: String
+  """
+  This is an anonymized description
+  """
+  field5021: String
+  """
+  This is an anonymized description
+  """
+  field5749: Scalar1
+  """
+  This is an anonymized description
+  """
+  field285: String
+  """
+  This is an anonymized description
+  """
+  field3455: String
+  """
+  This is an anonymized description
+  """
+  field10163: Enum2710
+  """
+  This is an anonymized description
+  """
+  field109: String
+  """
+  This is an anonymized description
+  """
+  field945: String
+  """
+  This is an anonymized description
+  """
+  field484: String
+  """
+  This is an anonymized description
+  """
+  field155: String
+  """
+  This is an anonymized description
+  """
+  field5619: String
+  """
+  This is an anonymized description
+  """
+  field24215: String
+  """
+  This is an anonymized description
+  """
+  field1153: String
+  """
+  This is an anonymized description
+  """
+  field15121: String
+  """
+  This is an anonymized description
+  """
+  field24216: String
+  """
+  This is an anonymized description
+  """
+  field15622: Scalar17
+  """
+  This is an anonymized description
+  """
+  field24217: String
+  """
+  This is an anonymized description
+  """
+  field2481: [Type11190!]
+}
+
+type Type11190 {
+  field450: String!
+  field134: String
+}
+
+enum Enum2710 {
+  """
+  This is an anonymized description
+  """
+  VALUE_8770
+  """
+  This is an anonymized description
+  """
+  VALUE_8771
+  """
+  This is an anonymized description
+  """
+  VALUE_145
+  """
+  This is an anonymized description
+  """
+  VALUE_119
+  """
+  This is an anonymized description
+  """
+  VALUE_8772
+}
+
+enum Enum2711 {
+  """
+  This is an anonymized description
+  """
+  VALUE_6673
+  """
+  This is an anonymized description
+  """
+  VALUE_8773
+  """
+  This is an anonymized description
+  """
+  VALUE_798
+}
+
+type Type331 @extends @key(fields: "field2") {
+  field2: ID! @external
+  field808: Interface30 @external
+  field24218: Type2778 @requires(fields: "field808 { field810, field811 }")
+  field24219(arg10: Enum2711 = VALUE_798): [Type11189!] @requires(fields: "field808 { field810, field811 }")
+}
+
+interface Interface30 @extends {
+  field810: String @external
+  field811: String @external
+}
+
+type Type332 implements Interface30 @extends @key(fields: "field2") {
+  field2: ID @external
+  field810: String @external
+  field811: String @external
+}
+
+type Type335 implements Interface30 @extends @key(fields: "field2") {
+  field2: ID @external
+  field810: String @external
+  field811: String @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type11191 {
+  """
+  This is an anonymized description
+  """
+  field786: Int
+  """
+  This is an anonymized description
+  """
+  field791: Int
+  """
+  This is an anonymized description
+  """
+  field4141: String
+  """
+  This is an anonymized description
+  """
+  field24220: Enum2712
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum2712 {
+  """
+  This is an anonymized description
+  """
+  VALUE_327
+  """
+  This is an anonymized description
+  """
+  VALUE_1927
+  """
+  This is an anonymized description
+  """
+  VALUE_443
+}
+
+"""
+This is an anonymized description
+"""
+type Type2778 @key(fields: "field5021") {
+  """
+  This is an anonymized description
+  """
+  field5021: ID!
+  """
+  This is an anonymized description
+  """
+  field793: Type2779
+  """
+  This is an anonymized description
+  """
+  field3117: [Enum2713]
+  """
+  This is an anonymized description
+  """
+  field24221: Type11191
+  """
+  This is an anonymized description
+  """
+  field2381: Type11187
+  """
+  This is an anonymized description
+  """
+  field8005: [Type2780]
+  """
+  This is an anonymized description
+  """
+  field10237: [Type11192]
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum2713 {
+  """
+  This is an anonymized description
+  """
+  VALUE_8774
+  """
+  This is an anonymized description
+  """
+  VALUE_3638
+  """
+  This is an anonymized description
+  """
+  VALUE_3635
+}
+
+"""
+This is an anonymized description
+"""
+type Type11192 {
+  """
+  This is an anonymized description
+  """
+  field76: String
+  """
+  This is an anonymized description
+  """
+  field10896: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type2779 @key(fields: "field5") {
+  """
+  This is an anonymized description
+  """
+  field5: ID!
+  """
+  This is an anonymized description
+  """
+  field1491: String
+  """
+  This is an anonymized description
+  """
+  field84: [Enum517!]
+  """
+  This is an anonymized description
+  """
+  field24222: Boolean
+  """
+  This is an anonymized description
+  """
+  field8049: [Type2777]
+  """
+  This is an anonymized description
+  """
+  field24223: [Type11188]
+  """
+  This is an anonymized description
+  """
+  field24224: Boolean
+  """
+  This is an anonymized description
+  """
+  field24225: Boolean
+  """
+  This is an anonymized description
+  """
+  field24226: Boolean
+  """
+  This is an anonymized description
+  """
+  field24227: Boolean
+  """
+  This is an anonymized description
+  """
+  field13928: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type2780 @key(fields: "field5022") {
+  """
+  This is an anonymized description
+  """
+  field5022: ID
+  """
+  This is an anonymized description
+  """
+  field24228: Scalar14
+}
+
+type Query @extends {
+  field24229(arg1132: String!, arg1969: ID!, arg10: Enum2711 = VALUE_798, arg965: Scalar14, arg966: Scalar14): [Type11189!]
+  field24230(arg58: ID, arg1970: Boolean, arg1971: Boolean): [Type2779!]
+  field24231(arg1132: String!, arg1969: ID!): Type2778
+  field24232(arg1972: String!, arg965: Scalar14, arg966: Scalar14): [Type11189!]
+}
+
+scalar Scalar1

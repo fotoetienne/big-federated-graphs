@@ -1,0 +1,132 @@
+interface Interface8 {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field131: Enum43!
+  """
+  This is an anonymized description
+  """
+  field332: Scalar9!
+  """
+  This is an anonymized description
+  """
+  field150: Scalar9!
+  """
+  This is an anonymized description
+  """
+  field333: Scalar9
+}
+
+type Type288 implements Interface8 {
+  field2: ID!
+  field131: Enum43!
+  field332: Scalar9!
+  field150: Scalar9!
+  """
+  This is an anonymized description
+  """
+  field334(
+  arg42: String!): String
+  field333: Scalar9
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum43 {
+  """
+  This is an anonymized description
+  """
+  VALUE_388
+  VALUE_441
+  """
+  This is an anonymized description
+  """
+  VALUE_442
+  """
+  This is an anonymized description
+  """
+  VALUE_10
+  VALUE_443
+  VALUE_381
+  """
+  This is an anonymized description
+  """
+  VALUE_444
+  """
+  This is an anonymized description
+  """
+  VALUE_445
+  """
+  This is an anonymized description
+  """
+  VALUE_446
+  """
+  This is an anonymized description
+  """
+  VALUE_447
+  """
+  This is an anonymized description
+  """
+  VALUE_448
+  """
+  This is an anonymized description
+  """
+  VALUE_449
+  """
+  This is an anonymized description
+  """
+  VALUE_450
+  VALUE_451
+}
+
+type Mutation @extends {
+  field335: Type288
+}
+
+scalar Scalar13
+
+type Query @extends {
+  field336(arg25: ID!): Type288
+}
+
+input Input34 {
+  inputField19: String
+  inputField17: String
+  inputField16: Int
+  inputField18: Int
+}
+
+type Type289 {
+  field100: String!
+  field79: Type288!
+}
+
+type Type290 {
+  field93: Int!
+  field89: [Type289]
+  field164: Type25!
+}
+
+extend type Mutation {
+  field337(arg25: ID!): Type288
+  field338(arg16: Input36): Type288
+}
+
+input Input35 {
+  inputField46: String!
+}
+
+input Input36 {
+  inputField46: String!
+  inputField47: String!
+  inputField48: String!
+}
+
+extend type Query {
+  field339(arg43: Input34): Type290
+}

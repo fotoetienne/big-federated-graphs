@@ -1,0 +1,77 @@
+type Mutation @extends {
+  field6400(arg11: [Scalar1!]!): [Type2694!]!
+  field6401: [Type2694!]!
+}
+
+type Query @extends {
+  field6402: [Type2694!]!
+  field6403(arg6: String = null, arg7: Int = 0, arg8: String, arg9: Int = 0, arg5: Input1258, arg10: String = "default"): Type3661
+  field6404(arg11: [Scalar1!]!): [Type2694!]!
+  field6405(arg642: [String!]!): [Type2694!]!
+}
+
+type Type3661 {
+  field36: [Type3662!]
+  field37: Type122!
+  field38: Scalar1!
+  field39: Int!
+}
+
+type Type3662 {
+  field40: Type2694!
+  field41: String!
+}
+
+input Input1258 {
+  inputField25: Enum674!
+  inputField26: Enum675!
+}
+
+enum Enum674 {
+  VALUE_2908
+  VALUE_2909
+  VALUE_942
+  VALUE_2910
+}
+
+enum Enum675 {
+  VALUE_2
+  VALUE_3
+}
+
+scalar Scalar1
+
+enum Enum676 {
+  VALUE_2911
+  VALUE_1201
+  VALUE_2912
+  VALUE_2913
+  VALUE_1567
+}
+
+type Type11 @key(fields: "field2") @extends {
+  field2: Scalar1! @external
+}
+
+type Type2650 @key(fields: "field2") @extends {
+  field2: Scalar1 @external
+}
+
+type Type2694 @key(fields: "field2") {
+  field2: Scalar1!
+  field44: Scalar1
+  field94: String
+  field96: String
+  field4877: String
+  field77: String
+  field6406: String
+  field6407: String
+  field6408: String
+  field58: String
+  field260: Enum676
+  field6409: String
+  field946: String
+  field109: String
+  field6410: Type11
+  field1655: Type2650
+}

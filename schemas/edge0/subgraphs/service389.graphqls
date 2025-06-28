@@ -1,0 +1,211 @@
+extend type Query {
+  """
+  This is an anonymized description
+  """
+  field20360(
+  arg60: Input4183!): Union438
+}
+
+input Input4183 {
+  inputField7532: Scalar1!
+  inputField118: Scalar1!
+  inputField7533: Boolean
+}
+
+type Type9214 {
+  field20361: Scalar1!
+  field1303: Scalar1!
+  """
+  This is an anonymized description
+  """
+  field11061: Type1804!
+  """
+  This is an anonymized description
+  """
+  field20362: Type9215!
+  """
+  This is an anonymized description
+  """
+  field11064: [Type9216!]!
+}
+
+type Type9215 {
+  """
+  This is an anonymized description
+  """
+  field11058: [Type9226]!
+  """
+  This is an anonymized description
+  """
+  field11059: [Type9225]!
+  """
+  This is an anonymized description
+  """
+  field11060: [Type9224]!
+}
+
+type Type9216 {
+  field11065: Type9227!
+  """
+  This is an anonymized description
+  """
+  field11061: Type1804!
+  """
+  This is an anonymized description
+  """
+  field20362: Type9215!
+}
+
+type Type9217 implements Interface394 {
+  field87: String!
+  field20363: [Type9222!]!
+}
+
+type Type9218 implements Interface394 {
+  field87: String!
+}
+
+type Type9219 implements Interface394 {
+  field87: String!
+  field20364: [Type9220!]!
+}
+
+type Type9220 {
+  field87: String!
+  field20365: Type9222!
+}
+
+type Type9221 implements Interface394 {
+  field87: String!
+}
+
+union Union438 = Type9214 | Type9217 | Type9221 | Type9219 | Type9218
+
+scalar Scalar1
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field20366(
+  arg60: Input4186!): [Union439!]!
+}
+
+input Input4184 {
+  inputField7534: Int!
+  inputField1263: Int!
+}
+
+input Input4185 {
+  inputField5022: Scalar1!
+  inputField118: Scalar1!
+}
+
+input Input4186 {
+  inputField2245: Enum2209
+  inputField7535: Input4184!
+  inputField7536: [Input4185]!
+}
+
+enum Enum2209 {
+  VALUE_2523
+  VALUE_7496
+}
+
+type Type9222 {
+  field4305: Scalar1!
+  field1303: Scalar1!
+}
+
+type Type9223 {
+  field4305: Scalar1!
+  field1303: Scalar1!
+  field4223: Scalar1!
+}
+
+enum Enum2210 {
+  VALUE_2831
+  VALUE_7497
+  VALUE_7498
+  VALUE_7499
+}
+
+interface Interface394 {
+  field87: String!
+}
+
+interface Interface395 {
+  field3002: Int!
+  field236: Type1804!
+}
+
+type Type9224 implements Interface395 {
+  field3002: Int!
+  field3003: Enum520!
+  field236: Type1804!
+}
+
+type Type9225 implements Interface395 {
+  field3002: Int!
+  field5381: Enum2211!
+  field236: Type1804!
+}
+
+type Type9226 implements Interface395 {
+  field3002: Int!
+  field236: Type1804!
+}
+
+enum Enum2211 {
+  VALUE_2477
+  VALUE_2478
+  VALUE_2479
+  VALUE_2480
+}
+
+type Type9227 {
+  field20367: String!
+}
+
+type Type9228 implements Interface395 {
+  field3002: Int!
+  field3003: Enum520!
+  field236: Type1804!
+  field20368: Enum2210!
+}
+
+interface Interface396 {
+  field20365: Type9222!
+  """
+  This is an anonymized description
+  """
+  field20369: [Type9228!]!
+}
+
+type Type9229 {
+  field20365: Type9222!
+}
+
+type Type9230 implements Interface396 {
+  field20365: Type9222!
+  """
+  This is an anonymized description
+  """
+  field20369: [Type9228!]!
+  """
+  This is an anonymized description
+  """
+  field20370: [Type9231!]!
+}
+
+type Type9231 {
+  field20371: Type9223!
+  field20372: [Type9228!]!
+}
+
+type Type9232 implements Interface396 {
+  field20365: Type9222!
+  field20369: [Type9228!]!
+}
+
+union Union439 = Type9230 | Type9232 | Type9229

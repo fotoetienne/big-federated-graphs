@@ -1,0 +1,110 @@
+type Type6907 {
+  field14832: Type6911!
+  field252: Float!
+  field253: String
+  field87: Type6916!
+  field254: ID
+  field255: ID!
+  field256: String!
+  field257: String!
+  field258: ID
+  field259: ID!
+  field260: Enum1642!
+  field44: String
+}
+
+type Type6908 {
+  field36: [Type6909!]
+  field37: Type122!
+}
+
+type Type6909 {
+  field41: String
+  field40: Type6907!
+}
+
+type Mutation @extends {
+  field14833(arg1: Input2981!): Type6914!
+}
+
+type Type122 {
+  field269: String
+  field270: Boolean!
+  field271: Boolean!
+  field272: String
+}
+
+type Query @extends {
+  field14834(arg33: ID!): Type6907
+  field14835(arg1: Input48!): Type6908!
+}
+
+type Type6910 {
+  field908: [Type6915!]!
+}
+
+type Type6911 {
+  field36: [Type6912!]
+  field37: Type122!
+}
+
+type Type6912 {
+  field41: String
+  field40: Type6910!
+}
+
+type Type6913 {
+  field5619: Type6915!
+}
+
+type Type6914 {
+  field263: String!
+  field264: Type6913
+  field260: String!
+}
+
+type Type6915 {
+  field5779: String!
+  field2309: Enum1643!
+}
+
+type Type6916 {
+  field36: [Type6917!]
+  field37: Type122!
+}
+
+type Type6917 {
+  field41: String
+  field40: Type6915!
+}
+
+enum Enum1642 {
+  VALUE_199
+  VALUE_5818
+  VALUE_151
+  VALUE_158
+  VALUE_152
+  VALUE_149
+}
+
+enum Enum1643 {
+  VALUE_5819
+  VALUE_5820
+  VALUE_1227
+}
+
+input Input48 {
+  inputField106: String!
+  inputField107: Boolean! = false
+}
+
+input Input2981 {
+  inputField103: String
+  inputField104: String
+  inputField333: Input2982!
+  inputField105: String!
+}
+
+input Input2982 {
+  inputField248: String!
+}

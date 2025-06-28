@@ -1,0 +1,29 @@
+type Query {
+  """
+  This is an anonymized description
+  """
+  field26443: [Type2402]
+  """
+  This is an anonymized description
+  """
+  field26444: [Type2402]
+  """
+  This is an anonymized description
+  """
+  field26445: [Type2402]
+}
+
+type Type959 @key(fields: "field2") @extends {
+  field2: Scalar7 @external
+}
+
+type Type2402 @key(fields: "field1527 { field2 }") {
+  field1527: Type959
+  field26446: Enum3030
+}
+
+enum Enum3030 {
+  VALUE_9318
+  VALUE_9319
+  VALUE_9320
+}

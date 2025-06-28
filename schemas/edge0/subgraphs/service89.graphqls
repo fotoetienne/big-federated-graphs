@@ -1,0 +1,69 @@
+"This is an anonymized description"
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Type1590 @key(fields: "field2") @directive1(arg31: "anonymous-string") {
+  field2: ID! @directive2
+  field44: Int
+  field341: String
+  field4106: String
+  field538: Int
+}
+
+input Input746 {
+  inputField123: String
+  inputField1678: String
+  inputField581: Int
+}
+
+input Input747 {
+  inputField7: ID!
+  inputField8: Int
+  inputField123: String
+  inputField1678: String
+  inputField581: Int
+}
+
+type Type1591 {
+  field2660: [Interface101]
+}
+
+type Type1592 implements Interface101 {
+  field388: String
+  field3325: String
+  field2454: String
+}
+
+type Type1593 implements Interface101 {
+  field388: String
+  field3325: String
+  field2454: String
+}
+
+type Type1594 implements Interface101 {
+  field388: String
+  field3325: String
+  field2454: String
+}
+
+interface Interface101 {
+  field388: String
+  field3325: String
+  field2454: String
+}
+
+type Query @extends {
+  field4107(arg58: String): String @directive1(arg31: "anonymous-string")
+  field4108(arg11: [ID!]!): [Type1590] @directive1(arg31: "anonymous-string")
+}
+
+type Mutation @extends {
+  field4109(arg1: Input746!): Type1590! @directive1(arg31: "anonymous-string")
+  field4110(arg1: Input747!): Type1590! @directive1(arg31: "anonymous-string")
+}
+
+union Union31 = Type1590 | Type1591

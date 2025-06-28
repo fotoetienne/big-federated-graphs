@@ -1,0 +1,210 @@
+type Type848 @key(fields: "field2489 field2510") @extends {
+  field2489: Enum254 @external
+  field2510: String @external
+}
+
+type Type844 @key(fields: "field5 field2452 { field2510 field2489 }") @extends {
+  field2452: Type848! @external
+  field5: String! @external
+}
+
+type Type869 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+enum Enum254 {
+  VALUE_1160
+  VALUE_853
+  VALUE_1242
+}
+
+type Type2089 @key(fields: "field4934 { field1099 field1125 }") @extends {
+  "This is an anonymized description"
+  field4934: Type412 @external
+}
+
+type Type412 @key(fields: "field1099 field1125") @extends {
+  field1125: Enum543 @external
+  field1099: ID @external
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field33724(
+  arg1687: ID!): Interface886 @experimental
+  """
+  This is an anonymized description
+  """
+  field33725(
+  arg264: String!
+  "This is an anonymized description"
+  arg16: String!
+  arg77: String!
+  arg2760: String
+  arg2891: String): [Interface886!]! @experimental
+  """
+  This is an anonymized description
+  """
+  field33726(
+  arg264: String!
+  arg2892: String!
+  arg77: String!
+  arg2760: String
+  arg2891: String
+  arg2893: Int
+  arg2894: Int
+  arg2895: Scalar14
+  arg2896: Scalar14): Type16848 @experimental
+}
+
+"""
+This is an anonymized description
+"""
+type Type16848 {
+  field33727: [Type16849!]!
+}
+
+type Type16849 {
+  field33728: Scalar14!
+  field33729: Scalar14!
+  field4073: [Interface884!]!
+  field2439: [Interface885!]!
+}
+
+"""
+This is an anonymized description
+"""
+interface Interface884 {
+  field4077: ID!
+  field570: String
+}
+
+type Type16850 implements Interface884 {
+  field4077: ID!
+  field5006: String!
+  field5005: String!
+  field2248: String!
+  field2452: String
+  field15008: String!
+  field33730: Int @deprecated(reason: "Anonymized deprecation reason")
+  field2556(arg2895: Scalar14, arg2896: Scalar14): Type16852!
+  field570: String
+  field33731: Type16851!
+  field3205: Type844
+  field33732: Type2089
+}
+
+type Type16851 {
+  field33733: Scalar14
+  field33734: Boolean!
+  field33730: Int
+}
+
+type Type16852 {
+  field6345: String
+  field33735: String
+  field33736: String
+  field33737: String
+  field33738: String
+  field33739: String
+  field33740: String
+  field33741: String
+  field33742: String
+}
+
+interface Interface885 {
+  field33349: ID!
+  field33743: ID!
+}
+
+type Type16853 implements Interface885 {
+  field33349: ID!
+  field33743: ID!
+  """
+  This is an anonymized description
+  """
+  field33730: Int
+  field5766: Scalar1
+  field33744: [Type16854!]!
+}
+
+type Type16854 {
+  field33730: Int
+  field33745: String!
+}
+
+"""
+This is an anonymized description
+"""
+interface Interface886 {
+  field2: ID!
+  field570: String!
+  field5005: String!
+  field2452: String
+  field15008: String!
+  field33746(arg1477: String = "default", arg1478: String = "default"): [Interface887!]!
+  field33747(arg1477: String = "default", arg1478: String = "default"): [Interface887!]!
+  field2556(arg1477: String = "default", arg1478: String = "default"): Type16852!
+}
+
+type Type2479 implements Interface886 @key(fields: "field5005 field570") {
+  field2: ID!
+  field570: String!
+  field5005: String!
+  field2452: String
+  field15008: String!
+  field33746(arg1477: String = "default", arg1478: String = "default"): [Interface887!]!
+  field33747(arg1477: String = "default", arg1478: String = "default"): [Interface887!]!
+  field2556(arg1477: String = "default", arg1478: String = "default"): Type16852!
+  """
+  This is an anonymized description
+  """
+  field22471: Type869
+  field33732: Type2089
+}
+
+type Type2480 implements Interface886 @key(fields: "field5005 field2248 field5006") {
+  field2: ID!
+  field570: String!
+  field5005: String!
+  field2452: String
+  field15008: String!
+  field33746(arg1477: String = "default", arg1478: String = "default"): [Interface887!]!
+  field33747(arg1477: String = "default", arg1478: String = "default"): [Interface887!]!
+  field33731(arg1477: String = "default", arg1478: String = "default"): [Type16851!]!
+  field2556(arg1477: String = "default", arg1478: String = "default"): Type16852!
+  field2248: String!
+  field5006: String!
+  field3205: Type844
+  field33732: Type2089
+}
+
+interface Interface887 {
+  field113: Interface886!
+  field1114: Interface886!
+}
+
+type Type16855 implements Interface887 {
+  field113: Interface886!
+  field1114: Interface886!
+}
+
+type Type16856 implements Interface887 {
+  field113: Interface886!
+  field1114: Interface886!
+  field33748(arg1477: String = "default", arg1478: String = "default"): [Type16857!]!
+  field5766: Scalar1
+}
+
+type Type16857 {
+  field33733: Scalar14!
+  """
+  This is an anonymized description
+  """
+  field33730: Int
+  field33744: [Type16854!]!
+}
+
+scalar Scalar1

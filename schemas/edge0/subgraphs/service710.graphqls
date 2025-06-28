@@ -1,0 +1,45 @@
+type Query @extends {
+  field33264: [Type2091]
+  field33265: [Type16601]
+}
+
+type Mutation @extends {
+  field33266(arg2847: Input7845): Type16599
+}
+
+input Input7845 {
+  inputField11343: String!
+  inputField980: ID!
+}
+
+type Type16599 {
+  field2: ID
+  field244: Boolean
+}
+
+type Type2091 @key(fields: "field2") {
+  field2: ID!
+  field16184: String
+  field58: String
+  field8323: [Type16600!]!
+  field33267: String
+  field5942: Type29!
+  field94: Scalar14!
+  field96: Scalar14!
+  field2424: String
+}
+
+type Type29 @key(fields: "field957") @extends {
+  field957: String @external
+}
+
+type Type16600 {
+  field393: String
+  field33268: String
+  field58: String
+}
+
+type Type16601 {
+  field2: ID!
+  field5: String
+}

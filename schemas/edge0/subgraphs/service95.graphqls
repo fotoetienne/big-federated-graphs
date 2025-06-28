@@ -1,0 +1,261 @@
+type Query @extends {
+  field4776(arg496: ID!): Type1784 @experimental
+  field4777(arg53: String!): Type1784 @experimental
+  field4778(arg16: String, arg7: Int, arg6: String, arg9: Int, arg8: String, arg10: Enum515 = VALUE_261): Type1785 @experimental
+}
+
+type Mutation @extends {
+  field4779(arg1: Input830!): Type1783 @experimental
+  field4780(arg1: Input831!): Type1781 @experimental
+  field4781(arg1: Input832!): Type1782 @experimental
+  field4782(arg1: Input828!): Type1779 @experimental
+  field4783(arg1: Input829!): Type1780 @experimental
+}
+
+interface Interface105 {
+  field4784: ID!
+}
+
+type Type1775 implements Interface105 {
+  field4784: ID!
+  field4785: Type1797
+}
+
+type Type1776 implements Interface105 {
+  field4784: ID!
+  field4786: Type1798
+}
+
+type Type1777 {
+  field37: Type122!
+  field38: Int!
+  field36: [Type1778!]
+  field4073: [Interface105!]
+}
+
+type Type1778 {
+  field40: Interface105!
+  field41: String!
+}
+
+input Input827 {
+  inputField1875: ID!
+}
+
+input Input828 {
+  inputField1875: ID!
+  inputField546: [Input827!]!
+}
+
+type Type1779 {
+  field585: [Interface105!]!
+}
+
+input Input829 {
+  inputField1875: ID!
+  inputField546: [Input827!]!
+}
+
+type Type1780 {
+  field585: [Interface105!]!
+}
+
+input Input830 {
+  inputField57: String!
+  inputField103: String!
+  inputField1876: [Input834!]
+}
+
+input Input831 {
+  inputField1875: ID!
+  inputField1876: [Input834!]!
+}
+
+type Type1781 {
+  field4787: Scalar5
+}
+
+input Input832 {
+  inputField1875: ID!
+  inputField1876: [Input834!]!
+}
+
+type Type1782 {
+  field4787: Scalar5
+}
+
+input Input833 {
+  inputField1875: ID!
+  inputField1877: Input835
+  inputField1878: Input836
+}
+
+input Input834 {
+  inputField1875: ID!
+  inputField1877: Input835
+  inputField1878: Input836
+  inputField516: Enum513
+}
+
+input Input835 {
+  inputField1879: String
+  inputField1880: String
+}
+
+input Input836 {
+  inputField576: String
+}
+
+"""
+This is an anonymized description
+"""
+scalar Scalar5
+
+type Type1783 {
+  field4787: Scalar5
+  field4788: Type1784
+}
+
+type Type1784 @key(fields: "field4784") {
+  field4784: ID!
+  field486: String!
+  field5: String!
+  field253: String!
+  field4789(arg7: Int!): Type1788
+  field585(arg16: String, arg7: Int, arg6: String, arg9: Int, arg8: String): Type1777
+  field4790: Type1795
+  field4791: Enum514
+}
+
+type Type1785 {
+  field37: Type122!
+  field36: [Type1786!]
+  field4073: [Type1784!]
+}
+
+type Type1786 {
+  field41: String!
+  field40: Type1784
+}
+
+type Type1787 {
+  field37: Type122!
+  field36: [Type1789!]
+  field4073: [Type1791!]
+}
+
+type Type1788 {
+  field37: Type122!
+  field36: [Type1790!]
+  field4073: [Type1792!]
+}
+
+type Type1789 {
+  field40: Type1791!
+  field41: String!
+}
+
+type Type1790 {
+  field40: Type1792!
+  field41: String!
+}
+
+type Type1791 {
+  """
+  This is an anonymized description
+  """
+  field4784: ID!
+  field4792: Type1794
+}
+
+type Type1792 {
+  """
+  This is an anonymized description
+  """
+  field4784: ID!
+  field4793: Type1794
+  field1355: Enum513
+}
+
+enum Enum513 {
+  VALUE_797
+  VALUE_2221
+}
+
+enum Enum514 {
+  VALUE_863
+  VALUE_797
+  VALUE_2221
+  VALUE_261
+}
+
+enum Enum515 {
+  VALUE_2222
+  VALUE_2223
+  VALUE_2224
+  VALUE_261
+}
+
+type Type1793 @key(fields: "field4784") {
+  """
+  This is an anonymized description
+  """
+  field4784: ID!
+  field4794: Type1784
+}
+
+type Type1794 @key(fields: "field4784") @extends {
+  field4784: ID! @external
+}
+
+type Type1795 @key(fields: "field5") @key(fields: "field4784") @extends {
+  field4784: ID @external
+  field5: ID @external
+}
+
+type Type1796 @key(fields: "field4784") @extends {
+  field4784: ID! @external
+  field4795: Type1793
+}
+
+type Type1797 @key(fields: "field4784") @extends {
+  field4784: ID! @external
+}
+
+type Type1798 @key(fields: "field4784") @extends {
+  field4784: ID! @external
+}
+
+extend type Mutation {
+  field4796(arg1: Input837!): Type1799 @experimental
+  field4797(arg1: Input838!): Type1800 @experimental
+  field4798(arg1: Input839!): Type1801 @experimental
+}
+
+input Input837 {
+  inputField35: String!
+  inputField1881: String!
+}
+
+input Input838 {
+  inputField35: String!
+  inputField1881: String!
+}
+
+input Input839 {
+  inputField35: String!
+  inputField1881: String!
+}
+
+type Type1799 {
+  field87: String
+}
+
+type Type1800 {
+  field87: String
+}
+
+type Type1801 {
+  field4799: Boolean
+  field87: String
+}

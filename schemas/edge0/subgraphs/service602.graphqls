@@ -1,0 +1,46 @@
+type Query @extends {
+  field29942(arg60: Input6810): Type90
+  field29943(arg60: Input6811): Type90
+}
+
+input Input6810 {
+  inputField10259: String!
+  inputField10260: ID!
+}
+
+input Input6811 {
+  inputField8131: String!
+}
+
+type Type90 @key(fields: "field163") @extends {
+  field163: String! @external
+  field29944: Type14756
+}
+
+type Type1967 @key(fields: "field2") @extends {
+  field2: ID! @external
+  field29945: Type14757 @deprecated
+}
+
+interface Interface779 {
+  field2: ID!
+  field1634: String!
+  field279: String!
+}
+
+type Type14756 implements Interface779 {
+  field2: ID!
+  field1634: String!
+  field279: String!
+  field5093: String
+  field29946: String
+  field341: String
+  field2612: Type90
+}
+
+type Type14757 implements Interface779 {
+  field2: ID!
+  field1634: String!
+  field279: String!
+  field18768: Type1967
+}

@@ -1,0 +1,98 @@
+enum Enum1935 {
+  VALUE_1099
+  VALUE_1100
+  VALUE_1984
+  VALUE_6581
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum1936 {
+  VALUE_6582
+  VALUE_6583
+  VALUE_6584
+  VALUE_6585
+  VALUE_6586
+}
+
+"""
+This is an anonymized description
+"""
+type Type8328 {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field5: String!
+  """
+  This is an anonymized description
+  """
+  field13414: String!
+  """
+  This is an anonymized description
+  """
+  field253: String!
+  """
+  This is an anonymized description
+  """
+  field16862: Enum1936
+  """
+  This is an anonymized description
+  """
+  field16863: Int
+}
+
+"""
+This is an anonymized description
+"""
+type Type8329 {
+  """
+  This is an anonymized description
+  """
+  field16864: Type8328!
+  field16865: Int
+  field16866: Int
+  field16867: Int
+  field16868: Int
+}
+
+type Type412 @key(fields: "field1099 field1125") @extends {
+  field1099: ID @external
+  field1125: Enum543 @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type8330 {
+  field205: Enum2440!
+  field16869: Boolean
+  field16870: Boolean
+  field10570: Boolean
+  field16871: Boolean
+  field16872: Boolean
+  field16873: Boolean
+  field16874: Boolean
+  field16875: Boolean
+  field16876: Boolean
+  field16877: Boolean @deprecated(reason: "Anonymized deprecation reason")
+  field14517: Boolean
+  field16878: Boolean @deprecated(reason: "Anonymized deprecation reason")
+  field1557: Scalar14
+}
+
+"""
+This is an anonymized description
+"""
+type Type2063 @key(fields: "field4934 { field1099 field1125 }") @extends {
+  field4934: Type412 @external
+  field16879: Type8330 @external
+  """
+  This is an anonymized description
+  """
+  field16880: [Type8329] @requires(fields: "field16879 { field205 }")
+}

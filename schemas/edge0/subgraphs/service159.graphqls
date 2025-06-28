@@ -1,0 +1,63 @@
+type Type4134 {
+  field2: ID!
+  field120: Type32
+  field370: Scalar17
+  field58: Enum808!
+  field5942: Type29!
+}
+
+enum Enum808 {
+  VALUE_326
+  VALUE_149
+  VALUE_289
+  VALUE_1099
+  VALUE_3488
+}
+
+input Input1496 {
+  inputField171: Int!
+  inputField2828: String
+  inputField2829: Boolean
+}
+
+type Type4135 {
+  field2: ID
+  field1654: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type32 @key(fields: "field107") @extends {
+  field107: Int! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type29 @key(fields: "field98") @extends {
+  field98: ID! @external
+}
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field7529(
+  arg4: ID!): Type4134! @directive1(arg31: "anonymous-string")
+}
+
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field7530(
+  arg60: Input1496!): Type4135! @directive1(arg31: "anonymous-string")
+}

@@ -1,0 +1,160 @@
+type Type9233 {
+  field1131: String!
+  field1132: String!
+  field576: String!
+  field1133: [Type9235!]!
+}
+
+type Type9234 {
+  field1139: [Type9233!]!
+  field1140: String!
+}
+
+type Type9235 {
+  field1134: String!
+  field154: String
+  field1135: String!
+  field382: String!
+  field1136: Int!
+  field1137: String
+}
+
+type Type9236 {
+  field5721: [Type9237!]
+  field7672: String
+}
+
+type Type9237 {
+  field1142: String!
+  field8512: Int!
+}
+
+type Type2974 @key(fields: "field255") {
+  field252: Float!
+  field253: String
+  field20373: Type2148
+  field1420: Type9236
+  field4073: Type5819!
+  field254: ID
+  field255: ID!
+  field256: String!
+  field257: String!
+  field258: ID
+  field259: ID!
+  field19208: Type5819!
+  field8520: Type2148
+  field260: Enum2212!
+  field1138: Type9234
+  field44: String
+}
+
+type Type9238 {
+  field36: [Type9239!]
+  field37: Type122!
+}
+
+type Type9239 {
+  field41: String
+  field40: Type2974!
+}
+
+type Type2148 @extends @key(fields: "field2") {
+  field2: ID! @external
+}
+
+type Mutation @extends {
+  field20374(arg1: Input4189!): Type9240!
+}
+
+type Type122 {
+  field269: String
+  field270: Boolean!
+  field271: Boolean!
+  field272: String
+}
+
+type Query @extends {
+  field20375(arg33: ID!): Type2974
+  field20376(arg1: Input48!): Type9238!
+}
+
+type Type5819 {
+  field36: [Type5820!]
+  field37: Type122!
+}
+
+type Type5820 {
+  field41: String
+  field40: Type2148!
+}
+
+type Type9240 {
+  field275: Type2974
+}
+
+enum Enum2212 {
+  VALUE_199
+  VALUE_151
+  VALUE_158
+  VALUE_152
+  VALUE_149
+  VALUE_1449
+  VALUE_775
+  VALUE_6681
+}
+
+enum Enum31 {
+  VALUE_201
+  VALUE_202
+}
+
+input Input4187 {
+  inputField680: String!
+  inputField3091: Int!
+}
+
+input Input4188 {
+  inputField334: [Input4187!]!
+  inputField6121: String
+}
+
+input Input48 {
+  inputField106: String!
+  inputField107: Boolean! = false
+}
+
+input Input49 {
+  inputField7: String!
+  "This is an anonymized description"
+  inputField108: Enum31!
+}
+
+input Input50 {
+  "This is an anonymized description"
+  inputField109: String
+  "This is an anonymized description"
+  inputField110: Int!
+  "This is an anonymized description"
+  inputField111: Int!
+  "This is an anonymized description"
+  inputField112: Int!
+}
+
+input Input4189 {
+  inputField113: String
+  inputField103: String
+  "This is an anonymized description"
+  inputField104: String
+  inputField114: String
+  inputField128: Input4188!
+  "This is an anonymized description"
+  inputField115: Input49
+  "This is an anonymized description"
+  inputField116: Input50
+  "This is an anonymized description"
+  inputField117: String
+  "This is an anonymized description"
+  inputField118: String
+  "This is an anonymized description"
+  inputField119: String
+}

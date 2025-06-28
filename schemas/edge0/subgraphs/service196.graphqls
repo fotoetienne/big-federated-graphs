@@ -1,0 +1,196 @@
+type Query @extends {
+  field8812(arg878: [ID!]!): [Type2215]
+  field4969(arg879: ID!): Type2215
+  field7068(arg879: ID!, arg12: Int!): Type2216
+}
+
+type Mutation @extends {
+  field8813(arg880: Input1717!, arg196: [Int!]): Type2215
+  field8814(arg879: ID!, arg880: Input1717!): Type2215
+  field8815(arg878: [ID!]!): Boolean
+  field8816(arg881: [Input1722!]!): [Type4675]
+  field8817(arg11: [ID!]!): Boolean
+}
+
+"""
+This is an anonymized description
+"""
+type Type2215 @key(fields: "field4968") {
+  field4968: ID!
+  field341: String!
+  field8818: String
+  field8819: String
+  field8820: String
+  field8821: String
+  field8822: Enum964
+  field8823: Enum965
+  field8824: Enum966
+  field218: String
+  field3131: Boolean
+  field8825: [Type4673]
+  field8826: [Type4671]
+  field8827: [Type4672]
+  field8828: [Type4674]
+  field252: Scalar14
+  field1160: Scalar14
+  field95: Type29
+  field97: Type29
+  field8829: [Type2216]
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum964 {
+  VALUE_1916
+  VALUE_4004
+  VALUE_1634
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum965 {
+  VALUE_4005
+  VALUE_4006
+  VALUE_4007
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum966 {
+  VALUE_4008
+  VALUE_4009
+  VALUE_4010
+  VALUE_4011
+}
+
+"""
+This is an anonymized description
+"""
+type Type4671 {
+  field7072: Type83
+  field7070: Float!
+}
+
+"""
+This is an anonymized description
+"""
+type Type4672 {
+  field76: Type83
+  field7070: Float!
+}
+
+"""
+This is an anonymized description
+"""
+type Type4673 {
+  field7069: Type162
+  field7070: Float!
+}
+
+"""
+This is an anonymized description
+"""
+type Type4674 {
+  field8830: Type162
+  field5: String!
+  field7070: Float!
+}
+
+type Type2216 @key(fields: "field4969 { field4968 } field120 { field107 }") {
+  field4969: Type2215
+  field120: Type32
+  field8831: Boolean
+  field8832: [Type4675]
+}
+
+type Type4675 {
+  field2: ID!
+  field4968: ID!
+  field107: ID!
+  field8833: Type2214
+  field8821: String
+}
+
+type Type83 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+type Type162 @key(fields: "field2") @extends {
+  field2: ID! @external
+  field8834: [Type2215]
+}
+
+type Type29 @key(fields: "field98") @extends {
+  field98: ID! @external
+}
+
+type Type32 @key(fields: "field107") @extends {
+  field107: Int! @external
+  field8829: [Type2216]
+}
+
+type Type2214 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+"""
+This is an anonymized description
+"""
+input Input1717 {
+  inputField123: String!
+  inputField3162: String
+  inputField3163: String
+  inputField3164: String
+  inputField3165: String
+  inputField3166: Enum964
+  inputField3167: Enum965
+  inputField3168: Enum966
+  inputField86: String
+  inputField3169: [Input1720]
+  inputField3170: [Input1718]
+  inputField3171: [Input1719]
+  inputField3172: [Input1721]
+}
+
+"""
+This is an anonymized description
+"""
+input Input1718 {
+  inputField3173: ID!
+  inputField3174: Float!
+}
+
+"""
+This is an anonymized description
+"""
+input Input1719 {
+  inputField3175: ID!
+  inputField3174: Float!
+}
+
+"""
+This is an anonymized description
+"""
+input Input1720 {
+  inputField3176: ID!
+  inputField3174: Float!
+}
+
+"""
+This is an anonymized description
+"""
+input Input1721 {
+  inputField3177: ID!
+  inputField57: String
+  inputField3174: Float!
+}
+
+input Input1722 {
+  inputField3178: ID!
+  inputField171: ID!
+  inputField3179: ID
+  inputField3165: String
+}

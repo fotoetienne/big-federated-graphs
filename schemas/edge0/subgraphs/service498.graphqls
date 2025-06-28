@@ -1,0 +1,200 @@
+scalar Scalar1
+
+"""
+This is an anonymized description
+"""
+interface Interface472 @key(fields: "field2") {
+  field2: ID!
+  field675: Scalar11
+  field5622: Scalar13 @deprecated
+  field25628: Scalar14
+  field676: Scalar11
+  field5623: Scalar13 @deprecated
+  field25629: Scalar14
+  field25630: Boolean
+  field25631: Enum2860
+  field25632: Boolean
+  field120: Type32
+}
+
+type Type2343 implements Interface472 @key(fields: "field2") {
+  field2: ID!
+  field120: Type32
+  field10983: [Type2159]
+  field675: Scalar11
+  field5622: Scalar13 @deprecated
+  field25628: Scalar14
+  field676: Scalar11
+  field5623: Scalar13 @deprecated
+  field25629: Scalar14
+  field7105: [Type187]
+  field25630: Boolean
+  field25631: Enum2860
+  field25632: Boolean
+}
+
+type Type2344 implements Interface472 @key(fields: "field2") {
+  field2: ID!
+  field120: Type32
+  field25633: Type2159
+  field675: Scalar11
+  field5622: Scalar13 @deprecated
+  field25628: Scalar14
+  field676: Scalar11
+  field25629: Scalar14
+  field5623: Scalar13 @deprecated
+  field426: Type187
+  field25630: Boolean
+  field25631: Enum2860
+  field25632: Boolean
+}
+
+type Type2345 implements Interface472 @key(fields: "field2") {
+  field2: ID!
+  field120: Type32
+  field10983: [Type2159]
+  field675: Scalar11
+  field5622: Scalar13 @deprecated
+  field25628: Scalar14
+  field676: Scalar11
+  field5623: Scalar13 @deprecated
+  field25629: Scalar14
+  field7105: [Type187]
+  field25630: Boolean
+  field25631: Enum2860
+  field25632: Boolean
+  field4959: Type2173
+}
+
+type Type2338 implements Interface472 @key(fields: "field2") {
+  field2: ID!
+  field675: Scalar11
+  field5622: Scalar13 @deprecated
+  field25628: Scalar14
+  field676: Scalar11
+  field5623: Scalar13 @deprecated
+  field25629: Scalar14
+  field25630: Boolean
+  field25631: Enum2860
+  field312: Scalar15
+  field25632: Boolean
+  field120: Type32
+  field10: Type25
+  field10983: [Type2159]
+  field7105: [Type187]
+}
+
+"""
+This is an anonymized description
+"""
+type Type2339 @key(fields: "field2") @key(fields: "field4979") {
+  field2: ID!
+  field4979: String!
+  field10: Type25
+}
+
+"""
+This is an anonymized description
+"""
+interface Interface473 {
+  field2: ID!
+  field120: Type32
+  field25634: [Interface472]
+  field25632: Boolean
+}
+
+"""
+This is an anonymized description
+"""
+type Type11688 implements Interface473 {
+  field2: ID!
+  field311: Type25
+  field312: Scalar15
+  field120: Type32
+  field25634: [Type2344]
+  field25632: Boolean
+}
+
+"""
+This is an anonymized description
+"""
+type Type11689 implements Interface473 {
+  field2: ID!
+  field120: Type32
+  field25634: [Type2343]
+  field25632: Boolean
+  field7105: [Type187]
+}
+
+"""
+This is an anonymized description
+"""
+type Type11690 implements Interface473 {
+  field2: ID!
+  field4959: Type2173
+  field120: Type32
+  field25634: [Type2345]
+  field25632: Boolean
+}
+
+union Union568 = Type11689 | Type11690 | Type11688
+
+type Type32 @extends @key(fields: "field107") {
+  field107: Int! @external
+  """
+  This is an anonymized description
+  """
+  field25635(
+  arg1: Input5325!): [Union568]
+}
+
+input Input5325 {
+  """
+  This is an anonymized description
+  """
+  inputField8830: [Enum2859!]
+  """
+  This is an anonymized description
+  """
+  inputField729: [String!]
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum2859 {
+  VALUE_1016
+  VALUE_5586
+  VALUE_1084
+}
+
+enum Enum2860 {
+  VALUE_4306
+  VALUE_9
+  VALUE_4305
+}
+
+type Type187 @extends @key(fields: "field2") {
+  field2: Int! @external
+}
+
+type Type25 @key(fields: "field2") @key(fields: "field2 field165 field1767") @extends {
+  field2: Enum517! @external
+  field165: String @external
+  field1767: String @external
+}
+
+type Type2173 @key(fields: "field2") @key(fields: "field2 field165 field1767 field4959") @extends {
+  field2: ID! @external
+  field165: String @external
+  field4959: String @external
+  field1767: String @external
+}
+
+type Query @extends {
+  field25636(arg196: [Scalar1!]!): [Union568]
+}
+
+type Type2159 @extends @key(fields: "field2") {
+  field2: ID! @external
+}

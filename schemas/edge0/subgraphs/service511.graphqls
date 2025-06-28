@@ -1,0 +1,175 @@
+scalar Scalar1
+
+scalar String
+
+scalar Int
+
+scalar Boolean
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field26091(
+  arg12: Int): Type32
+}
+
+type Type32 @extends @key(fields: "field107") @directive1(arg31: "anonymous-string") {
+  field107: Int! @external
+  "This is an anonymized description"
+  field314: Boolean @override(from: "service4")
+  "This is an anonymized description"
+  field334(
+  arg247: String): Boolean @override(from: "service4")
+  "This is an anonymized description"
+  field335(
+  arg247: String): Boolean @override(from: "service4")
+  "This is an anonymized description"
+  field336(
+  arg247: String): Boolean @override(from: "service4")
+  "This is an anonymized description"
+  field3807(
+  arg247: String!): Enum354 @override(from: "service4")
+  "This is an anonymized description"
+  field3808(
+  arg327: Boolean): Type1420 @override(from: "service4")
+  "This is an anonymized description"
+  field315(
+  arg247: String!): Type1495 @override(from: "service4")
+  "This is an anonymized description"
+  field3833(
+  arg247: String!): Type1495 @override(from: "service4")
+  "This is an anonymized description"
+  field3814(
+  arg244: Int
+  arg245: Int): [Type1495] @override(from: "service4")
+  "This is an anonymized description"
+  field3812(
+  arg244: Int
+  arg245: Int): [Type1495] @override(from: "service4")
+  field3813: Type1480 @override(from: "service4")
+}
+
+type Type1495 @extends @key(fields: "field107 field10") @directive1(arg31: "anonymous-string") {
+  "This is an anonymized description"
+  field316(
+  arg244: Int
+  arg245: Int): [Type1493] @override(from: "service4")
+  "This is an anonymized description"
+  field3795: Type1493 @override(from: "service4")
+  "This is an anonymized description"
+  field3796(
+  arg325: String!): Type1493 @override(from: "service4")
+  field10: String @external
+  field107: Scalar1 @external
+}
+
+type Type1480 @directive1(arg31: "anonymous-string") {
+  field3766: Boolean
+  field3767(arg244: Int, arg245: Int): [Type1479]
+  field107: Scalar1
+  field327(arg244: Int, arg245: Int): [String]
+}
+
+type Type1479 @directive1(arg31: "anonymous-string") {
+  field3762(arg244: Int, arg245: Int): [String]
+  field251: String
+  field3763: Boolean
+  field3764: Boolean
+  field3765: Scalar14
+  field3361: String
+}
+
+type Type1420 @directive1(arg31: "anonymous-string") {
+  """
+  This is an anonymized description
+  """
+  field3381: Boolean!
+  "This is an anonymized description"
+  field3382(
+  arg244: Int
+  arg245: Int): [Enum517]!
+  "This is an anonymized description"
+  field3383: Boolean!
+  "This is an anonymized description"
+  field3384(
+  arg244: Int
+  arg245: Int): [Enum517]!
+}
+
+type Type1493 @directive1(arg31: "anonymous-string") {
+  field3784(arg244: Int, arg245: Int): [String]
+  field318: String
+  field10: String
+  field3785: Type1455
+  field324: Scalar1
+  "This is an anonymized description"
+  field3786(
+  arg324: Boolean): Type1493
+  field325: Scalar1
+  field321: Boolean
+  field322: Boolean
+  field320: Boolean
+  "This is an anonymized description"
+  field323: Boolean
+  field319: Boolean
+  field3787: Boolean
+  field3788: Scalar1
+  field326: Scalar1
+  field107: Scalar1
+  field327(arg244: Int, arg245: Int): [String]
+  field328(arg244: Int, arg245: Int): [Type1496]
+}
+
+type Type1455 @directive1(arg31: "anonymous-string") {
+  field3543(arg244: Int, arg245: Int): [String]
+  field3544(arg244: Int, arg245: Int): [String]
+  field3545(arg244: Int, arg245: Int): [String]
+  field3546(arg244: Int, arg245: Int): [String]
+  field3547(arg292: String!): Boolean
+  field3548(arg292: String!): Boolean
+  field3549(arg292: String!): Boolean
+  field3550(arg292: String!): Boolean
+  field3551(arg292: String!): Boolean
+  field3552(arg292: String!): Boolean
+  field3553(arg292: String!): Boolean
+  field3554(arg244: Int, arg245: Int): [String]
+  field3555(arg244: Int, arg245: Int): [String]
+}
+
+type Type1496 @directive1(arg31: "anonymous-string") {
+  field3789(arg244: Int, arg245: Int): [Scalar1]
+  field330: Scalar1
+  field3797: Boolean
+  field333: Boolean
+  field331: Boolean
+  field332: Boolean
+  field3311(arg244: Int, arg245: Int): [Type1494]
+  field3798: Boolean
+  field329: Scalar1
+  field3799: Boolean
+}
+
+type Type1494 @directive1(arg31: "anonymous-string") {
+  field3789(arg244: Int, arg245: Int): [Scalar1]
+  field3790: Boolean
+  field3791: Boolean
+  field3792: Boolean
+  field321: Boolean
+  field1154: Scalar1
+  field3793(arg244: Int, arg245: Int): [Type1431]
+  field3794(arg244: Int, arg292: String, arg245: Int): [Type1431]
+}
+
+type Type1431 @directive1(arg31: "anonymous-string") {
+  "This is an anonymized description"
+  field3398: String
+  field3361: String
+}

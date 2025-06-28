@@ -1,0 +1,91 @@
+type Query @extends {
+  field1990(arg199: [Enum206], arg11: [String], arg196: [Int], arg200: [String]): [Type627]
+  field1991(arg199: [Enum206], arg11: [String], arg196: [Int]): [Type627]
+  field1992: [Type29]
+}
+
+type Mutation @extends {
+  field1993(arg201: [Input306]): Type632
+  field1994(arg202: [Input307]): Type632
+  field1995(arg11: [String]): Type632
+  field1996(arg11: [String]): Type632
+  field1997(arg11: [String]): Type632
+  field1998(arg11: [String]): Type632
+}
+
+type Subscription @extends {
+  field1999: Type628
+}
+
+type Type32 @key(fields: "field107") @extends {
+  field107: Int! @external
+}
+
+type Type29 @key(fields: "field957") @extends {
+  field957: String @external
+}
+
+type Type627 {
+  field2: ID!
+  field252: Scalar13!
+  field1160: Scalar13!
+  field1466: Scalar13
+  field285: Enum206
+  field260: Enum207
+  field107: Int
+  field1512: String
+  field120: Type32
+}
+
+type Type628 {
+  field2: ID!
+  field285: Enum206
+  field260: Enum207
+  field107: Int
+  field1512: String
+}
+
+type Type629 {
+  field155: Type627
+}
+
+type Type630 {
+  field87: String!
+}
+
+type Type631 {
+  field155: [Type627]
+}
+
+type Type632 {
+  field244: Type631
+  field245: [Type630]
+}
+
+input Input306 {
+  inputField108: Enum206
+  inputField171: Int
+  inputField672: String
+  inputField597: Scalar13!
+}
+
+input Input307 {
+  inputField7: ID!
+  inputField672: String
+}
+
+enum Enum206 {
+  VALUE_1101
+  VALUE_1102
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum207 {
+  VALUE_975
+  VALUE_149
+  VALUE_1103
+  VALUE_1104
+  VALUE_199
+}

@@ -1,0 +1,112 @@
+type Type1882 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+type Type25 @key(fields: "field2") @extends {
+  field2: Enum517! @external
+}
+
+type Type1922 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+type Type1923 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+scalar Scalar1
+
+type Query {
+  field32605(arg11: [ID!]!): [Type16257]
+}
+
+type Type1882 {
+  field32606: Type16255 @directive1(arg31: "anonymous-string")
+}
+
+type Type16255 @directive1(arg31: "anonymous-string") {
+  field32607: Type16256
+  field58: String!
+  field12092: String
+  field21553: Enum3919
+  field32608: Scalar14
+  field20063: Scalar14
+  field13440: Scalar14
+  field44: Int!
+}
+
+type Type16256 {
+  field4973: String
+  field32609: Type16259
+  field32610: [Type16259]
+  field32611: [String]
+  field32612: [String]
+  field21366: Type5164
+  field21511: Int
+  field21531: Type5164
+  field7105: [Type1922]
+  field16805: [Type1923]
+}
+
+type Type5164 {
+  field10474: Scalar1!
+  field236: Scalar9!
+  field4141: Scalar8!
+}
+
+enum Enum3919 {
+  VALUE_11269
+  VALUE_11270
+}
+
+type Type16257 @directive1(arg31: "anonymous-string") {
+  field2: ID!
+  field32613: String
+  field15632: String
+  field32607: Type16258
+  field32614: String
+  field21193: String
+  field21192: String
+  field58: String
+  field12092: String
+  field20063: Scalar14
+  field13440: Scalar14
+  field44: Int!
+}
+
+type Type16258 {
+  field32613: String!
+  field21193: String
+  field21192: String
+  field21194: String
+  field5: String
+  field538: Int
+  field84: [Type25]
+  field10448: [String]
+  field15632: String
+  field32615: String
+  field108: String
+  field4973: String
+  field32609: Type16259
+  field3789: [String]
+  field32616: [String]
+  field342: Scalar7
+  field32617: [String]
+}
+
+type Type16259 {
+  field2: String
+  field32618: String
+  field285: String
+  field4649: Int
+  field379: Int
+  field75: Int
+  field279: String
+}

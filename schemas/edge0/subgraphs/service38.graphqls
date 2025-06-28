@@ -1,0 +1,263 @@
+type Query @extends {
+  field885(arg81: String!): Type352
+  field886(arg82: String!, arg83: String, arg81: String, arg84: Input116, arg85: Enum101 = VALUE_491, arg86: Enum102, arg87: Input117): Type342!
+  field887(arg88: String, arg81: String, arg89: String, arg86: Enum102 = VALUE_493, arg87: Input117): Type351!
+  """
+  This is an anonymized description
+  """
+  field888(
+  arg7: Int
+  arg6: ID
+  arg1: Input119): Type356 @experimental
+  field889(arg89: String!, arg90: Enum103 = VALUE_496): Type354 @experimental
+}
+
+type Subscription @extends {
+  field890(arg43: String!): Type353
+}
+
+type Mutation @extends {
+  field891(arg81: String!, arg91: String!, arg92: Input118!): Type342!
+}
+
+input Input116 {
+  inputField130: String!
+  inputField237: Enum96!
+}
+
+input Input117 {
+  inputField238: Boolean = false
+  inputField239: Boolean = false
+  inputField240: Boolean
+}
+
+type Type341 {
+  field423: String!
+  field741: Enum96!
+  "This is an anonymized description"
+  field892: String
+  field893: String
+}
+
+enum Enum96 {
+  VALUE_202
+  VALUE_485
+  VALUE_175
+}
+
+type Type342 {
+  field894: String!
+  field895: String!
+  field742: Type341
+  field244: Interface31
+  field896: Interface32
+}
+
+interface Interface31 {
+  field897: Enum101!
+  field524: Type345
+}
+
+"""
+This is an anonymized description
+"""
+type Type343 implements Interface31 {
+  "This is an anonymized description"
+  field87: String!
+  "This is an anonymized description"
+  field897: Enum101!
+  field524: Type345
+}
+
+"""
+This is an anonymized description
+"""
+type Type344 implements Interface31 {
+  """
+  This is an anonymized description
+  """
+  field432: String!
+  "This is an anonymized description"
+  field897: Enum101!
+  field524: Type345
+}
+
+type Type345 {
+  field898: [Type346!]
+}
+
+type Type346 {
+  field899: String!
+  field900: Enum97!
+  field901: String!
+  field902: String
+}
+
+enum Enum97 {
+  VALUE_486
+  VALUE_487
+}
+
+interface Interface32 {
+  field87: String!
+}
+
+type Type347 implements Interface32 {
+  field87: String!
+  field903: [Type348!]!
+}
+
+type Type348 {
+  field423: String!
+  field741: Enum98!
+  field904: String
+}
+
+enum Enum98 {
+  VALUE_202
+  VALUE_485
+  VALUE_175
+}
+
+type Type349 implements Interface32 {
+  field87: String!
+}
+
+type Type350 implements Interface32 {
+  field87: String!
+}
+
+input Input118 {
+  inputField241: Enum99!
+  inputField242: [Enum100!]
+  inputField243: String
+}
+
+enum Enum99 {
+  VALUE_179
+  VALUE_180
+}
+
+enum Enum100 {
+  VALUE_488
+  VALUE_489
+  VALUE_490
+}
+
+type Type351 {
+  field905: String
+  field906: String!
+  field894: String
+  field907: String!
+  field895: String!
+  field87: String!
+}
+
+type Type352 {
+  field894: String!
+  field908: [Type351!]
+  field909: [Type342!]
+}
+
+enum Enum101 {
+  "This is an anonymized description"
+  VALUE_491
+  "This is an anonymized description"
+  VALUE_492
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum102 {
+  "This is an anonymized description"
+  VALUE_493
+  "This is an anonymized description"
+  VALUE_494
+  "This is an anonymized description"
+  VALUE_495
+}
+
+type Type353 {
+  field894: String!
+  field895: String!
+  field432: String!
+  """
+  This is an anonymized description
+  """
+  field910: String
+  field156: [Type341!]
+}
+
+enum Enum103 {
+  VALUE_496
+  VALUE_497
+}
+
+directive @key(fields: String!, resolvable: Boolean = true) repeatable on OBJECT | INTERFACE
+
+directive @extends on OBJECT
+
+directive @external on FIELD_DEFINITION
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Type354 {
+  field156: [Type355!]
+}
+
+type Type355 {
+  field742: String
+  field911: [String!]
+  field912: Float
+  field913: String
+  field914: Enum103
+}
+
+"""
+This is an anonymized description
+"""
+input Input119 {
+  inputField244: String
+  inputField245: String
+  inputField246: String
+  inputField247: Input120
+  inputField81: [String]
+  inputField248: String
+  inputField249: String
+  inputField250: Enum99
+  inputField242: Enum100
+  inputField251: String
+  inputField252: String
+  inputField253: [String]
+  inputField254: String
+}
+
+type Type356 {
+  field524: Type359
+  field915: Type357!
+}
+
+type Type357 {
+  field36: [Type358!]
+  field37: Type122!
+}
+
+type Type358 {
+  field41: String!
+  field40: Type352
+}
+
+type Type359 {
+  field916: Int!
+}
+
+input Input120 {
+  inputField255: Scalar14
+  inputField256: Scalar14
+}

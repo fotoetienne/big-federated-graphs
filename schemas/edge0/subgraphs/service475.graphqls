@@ -1,0 +1,98 @@
+type Type412 @key(fields: "field1099 field1125") @extends {
+  field1099: ID @external
+  field1125: Enum543 @external
+}
+
+type Type2063 @key(fields: "field4934 { field1099 field1125 }") @extends {
+  field4934: Type412 @external
+  field16879: Type8330
+}
+
+type Type2064 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+type Type2065 @key(fields: "field2 field4935{ field2 }") @extends {
+  field2: ID! @external
+  field4935: Type2064! @external
+  """
+  This is an anonymized description
+  """
+  field24376: Type11270
+}
+
+"""
+This is an anonymized description
+"""
+interface Interface455 {
+  """
+  This is an anonymized description
+  """
+  field1557: Scalar14
+}
+
+"""
+This is an anonymized description
+"""
+type Type8330 implements Interface455 {
+  """
+  This is an anonymized description
+  """
+  field205: Enum2440!
+  """
+  This is an anonymized description
+  """
+  field16869: Boolean
+  """
+  This is an anonymized description
+  """
+  field16870: Boolean
+  """
+  This is an anonymized description
+  """
+  field10570: Boolean
+  """
+  This is an anonymized description
+  """
+  field16871: Boolean
+  """
+  This is an anonymized description
+  """
+  field16872: Boolean
+  """
+  This is an anonymized description
+  """
+  field16873: Boolean
+  """
+  This is an anonymized description
+  """
+  field16874: Boolean
+  """
+  This is an anonymized description
+  """
+  field16875: Boolean
+  """
+  This is an anonymized description
+  """
+  field16876: Boolean
+  """
+  This is an anonymized description
+  """
+  field16877: Boolean @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field14517: Boolean
+  """
+  This is an anonymized description
+  """
+  field16878: Boolean @deprecated(reason: "Anonymized deprecation reason")
+  field1557: Scalar14
+}
+
+type Type11270 {
+  """
+  This is an anonymized description
+  """
+  field24377: String @experimental
+}

@@ -1,0 +1,169 @@
+type Type16606 {
+  field252: Float!
+  field253: String
+  field254: ID
+  field255: ID!
+  field256: String!
+  field257: String!
+  field258: ID
+  field33274: Type16617!
+  field259: ID!
+  field260: Enum4030!
+  field44: String
+}
+
+type Type16607 {
+  field36: [Type16608!]
+  field37: Type122!
+}
+
+type Type16608 {
+  field41: String
+  field40: Type16606!
+}
+
+type Mutation @extends {
+  field33275(arg1: Input7848!): Type431!
+  field33276(arg1: Input7850!): Type431!
+  field33277(arg1: Input7851!): Type16621!
+}
+
+type Type122 {
+  field269: String
+  field270: Boolean!
+  field271: Boolean!
+  field272: String
+}
+
+type Type16609 {
+  field2153: [Float]
+  field21037: [Float]
+  field14066: [Float]
+}
+
+type Type16610 {
+  field33278: Float
+  field33279: Type16609
+}
+
+type Type16611 {
+  field17853: String
+}
+
+type Type16612 {
+  field8177: Int
+  field8176: Int
+}
+
+type Type16613 {
+  field538: Int
+  field33280: Type16612
+  field543: String
+  field1210: Int
+  field544: String
+}
+
+type Type16614 {
+  field8770: String
+  field33281: Type16613
+  field5: String
+}
+
+type Type16615 {
+  field528: Type16610
+  field17058: String
+  field33282: Type16611
+  field33283: Boolean
+  field17853: String
+}
+
+type Type16616 {
+  field530: String
+  field33284: [Type16614]
+  field524: Type16615
+  field33285: Type16619
+  field2202: String
+}
+
+type Type16617 {
+  field36: [Type16618!]
+  field37: Type122!
+}
+
+type Type16618 {
+  field41: String
+  field40: Type16616!
+}
+
+type Type16619 {
+  field538: Int
+  field33280: Type16612
+  field543: String
+  field1210: Int
+  field544: String
+}
+
+type Type16620 {
+  field33286: String!
+  field33287: String!
+}
+
+type Type16621 {
+  field263: String!
+  field264: Type16620
+  field260: String!
+}
+
+type Query @extends {
+  field33288(arg33: ID!): Type16606
+  field33289(arg1: Input48!): Type16607!
+}
+
+type Type431 {
+  field263: String!
+  field260: String!
+}
+
+enum Enum4030 {
+  VALUE_199
+  VALUE_151
+  VALUE_158
+  VALUE_152
+  VALUE_149
+}
+
+input Input7848 {
+  inputField103: String
+  inputField104: String
+  inputField333: Input7849!
+  inputField105: String!
+}
+
+input Input7849 {
+  inputField170: String!
+}
+
+input Input7850 {
+  inputField103: String
+  inputField104: String
+  inputField105: String!
+}
+
+input Input7851 {
+  inputField103: String
+  inputField104: String
+  inputField333: Input7852!
+  inputField105: String!
+}
+
+input Input7852 {
+  inputField11346: String!
+  inputField11347: String!
+  inputField11348: String!
+  inputField11349: String
+}
+
+input Input48 {
+  inputField106: String!
+  inputField107: Boolean! = false
+}

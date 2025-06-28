@@ -1,0 +1,264 @@
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field750(
+  arg104: Input116!): Union33! @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field751(
+  arg104: Input117!): Union32!
+  """
+  This is an anonymized description
+  """
+  field752(
+  arg104: [Input116!]!): [Union33!]! @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field753(
+  arg104: [Input117!]!): [Union32!]!
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field754(
+  arg105: ID!): Union34
+  """
+  This is an anonymized description
+  """
+  field755(
+  arg105: ID!): Union34
+  """
+  This is an anonymized description
+  """
+  field756(
+  arg106: ID!): Union31
+}
+
+union Union31 = Type502 | Type505 | Type501
+
+"""
+This is an anonymized description
+"""
+type Type501 {
+  field108: Type33
+}
+
+type Type502 {
+  """
+  This is an anonymized description
+  """
+  field757: ID!
+  """
+  This is an anonymized description
+  """
+  field758: Scalar14! @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field759: Int!
+}
+
+input Input116 {
+  """
+  This is an anonymized description
+  """
+  inputField276: ID!
+  """
+  This is an anonymized description
+  """
+  inputField277: Scalar14!
+  """
+  This is an anonymized description
+  """
+  inputField278: String!
+}
+
+input Input117 {
+  """
+  This is an anonymized description
+  """
+  inputField276: ID!
+  """
+  This is an anonymized description
+  """
+  inputField277: Int!
+  """
+  This is an anonymized description
+  """
+  inputField278: String!
+}
+
+union Union32 = Type503 | Type505 | Type506
+
+union Union33 = Type504 | Type505 | Type506
+
+type Type503 {
+  """
+  This is an anonymized description
+  """
+  field757: ID!
+  """
+  This is an anonymized description
+  """
+  field760: Int!
+  """
+  This is an anonymized description
+  """
+  field758: Int!
+  """
+  This is an anonymized description
+  """
+  field761: String!
+}
+
+type Type504 {
+  """
+  This is an anonymized description
+  """
+  field757: ID!
+  """
+  This is an anonymized description
+  """
+  field760: Scalar14!
+  """
+  This is an anonymized description
+  """
+  field758: Scalar14!
+  """
+  This is an anonymized description
+  """
+  field761: String!
+}
+
+"""
+This is an anonymized description
+"""
+type Type505 {
+  field108: Type33
+}
+
+"""
+This is an anonymized description
+"""
+type Type506 {
+  field108: Type33
+}
+
+union Union34 = Type510 | Type507 | Type508 | Type509
+
+"""
+This is an anonymized description
+"""
+type Type507 {
+  field108: Type33
+}
+
+"""
+This is an anonymized description
+"""
+type Type508 {
+  field108: Type33
+}
+
+"""
+This is an anonymized description
+"""
+type Type509 {
+  field108: Type33
+}
+
+type Type510 {
+  field70: ID!
+  """
+  This is an anonymized description
+  """
+  field762: Int
+  """
+  This is an anonymized description
+  """
+  field763(
+  arg9: Int): Type513
+  """
+  This is an anonymized description
+  """
+  field764(
+  arg9: Int
+  arg107: Int
+  arg91: String
+  arg8: String): Type513
+  """
+  This is an anonymized description
+  """
+  field765: Union35
+  """
+  This is an anonymized description
+  """
+  field766(
+  arg108: Int): Union36
+  """
+  This is an anonymized description
+  """
+  field767: Type511
+}
+
+type Type511 {
+  """
+  This is an anonymized description
+  """
+  field768: Scalar9
+  """
+  This is an anonymized description
+  """
+  field243: Scalar9!
+}
+
+union Union35 = Type515 | Type512
+
+union Union36 = Type513 | Type512
+
+"""
+This is an anonymized description
+"""
+type Type512 {
+  field108: Type33
+}
+
+type Type513 {
+  field164: Type25!
+  field89: [Type514!]!
+}
+
+type Type514 {
+  field100: String!
+  field79: Type515!
+}
+
+type Type515 {
+  """
+  This is an anonymized description
+  """
+  field769: Int!
+  """
+  This is an anonymized description
+  """
+  field770: Int!
+  field396: Type14!
+  field760: Scalar14! @deprecated(reason: "Anonymized deprecation reason")
+  field771: Int!
+}
+
+type Type33 @key(fields: "field45 field173") @extends {
+  field173: String! @external
+  field45: ID! @external
+}
+
+type Type14 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+scalar Scalar14

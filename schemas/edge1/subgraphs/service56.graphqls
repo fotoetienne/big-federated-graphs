@@ -1,0 +1,137 @@
+type Type1251 {
+  """
+  This is an anonymized description
+  """
+  field2179: Scalar9!
+  """
+  This is an anonymized description
+  """
+  field2180: String!
+  """
+  This is an anonymized description
+  """
+  field2181: Scalar9
+}
+
+type Type1252 {
+  """
+  This is an anonymized description
+  """
+  field2182: Boolean!
+}
+
+union Union96 = Type1251 | Type1252
+
+type Type1253 {
+  field42: String!
+  field2183: String!
+  field2184: Scalar12
+  field2185: String!
+  field2186: Scalar12
+  field332: Scalar9
+  """
+  This is an anonymized description
+  """
+  field2187: Int
+}
+
+type Type1254 {
+  field70: ID!
+  field131: Union96!
+  field2188: Type1253
+}
+
+input Input439 {
+  """
+  This is an anonymized description
+  """
+  inputField1: Int!
+}
+
+type Query {
+  """
+  This is an anonymized description
+  """
+  field2189: [Type1254!]!
+  """
+  This is an anonymized description
+  """
+  field2190(
+  arg16: Input439): [Type1254!]!
+}
+
+input Input440 {
+  inputField811: ID!
+  """
+  This is an anonymized description
+  """
+  inputField278: String!
+}
+
+union Union97 = Type1255 | Type1257 | Type1258
+
+type Type1255 {
+  field2191: ID!
+  field761: String!
+  field2179: Scalar9!
+}
+
+input Input441 {
+  inputField811: ID!
+  """
+  This is an anonymized description
+  """
+  inputField278: String!
+}
+
+input Input442 {
+  """
+  This is an anonymized description
+  """
+  inputField1: Int!
+  """
+  This is an anonymized description
+  """
+  inputField812: [Input441!]!
+}
+
+union Union98 = Type1256 | Type1257 | Type1259
+
+type Type1256 {
+  field2191: ID!
+  field761: String!
+  field397: Scalar9!
+}
+
+type Type1257 {
+  field2191: ID!
+  field442: String
+}
+
+type Type1258 {
+  field2191: ID!
+  field442: String
+}
+
+type Type1259 {
+  field2191: ID!
+  field442: String
+}
+
+type Mutation {
+  """
+  This is an anonymized description
+  """
+  field2192(
+  arg16: [Input440!]!): [Union97!]!
+  """
+  This is an anonymized description
+  """
+  field2193(
+  arg16: [Input441!]!): [Union98!]!
+  """
+  This is an anonymized description
+  """
+  field2194(
+  arg16: [Input442!]!): [Union98!]!
+}

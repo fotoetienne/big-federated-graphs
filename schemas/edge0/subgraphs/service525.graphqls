@@ -1,0 +1,126 @@
+type Type32 @extends @key(fields: "field107") {
+  field107: Int! @external
+}
+
+type Mutation @extends {
+  field26410(arg1: Input5857!): Type13122!
+}
+
+type Type122 {
+  field269: String
+  field270: Boolean!
+  field271: Boolean!
+  field272: String
+}
+
+type Type13114 {
+  field120: Type32
+}
+
+type Type13115 {
+  field36: [Type13116!]
+  field37: Type122!
+}
+
+type Type13116 {
+  field41: String
+  field40: Type13114!
+}
+
+type Type13117 {
+  field252: Float!
+  field3350: Float
+  field3351: Float
+  field3352: ID
+  field255: ID!
+  field3354: ID!
+  field7025: Type13114!
+  field7026: String!
+}
+
+type Type13118 {
+  field36: [Type13119!]
+  field37: Type122!
+}
+
+type Type13119 {
+  field41: String
+  field40: Type13117!
+}
+
+type Type3043 @key(fields: "field255") {
+  field252: Float!
+  field253: String
+  field26411: Type13115!
+  field26412: Type13118!
+  field254: ID
+  field255: ID!
+  field256: String!
+  field257: String!
+  field258: ID
+  field259: ID!
+  field260: Enum3026!
+  field44: String
+}
+
+type Type13120 {
+  field36: [Type13121!]
+  field37: Type122!
+}
+
+type Type13121 {
+  field41: String
+  field40: Type3043!
+}
+
+type Query @extends {
+  field26413(arg33: ID!): Type3043
+  field26414(arg1: Input48!): Type13120!
+}
+
+type Type13122 {
+  field275: Type3043
+}
+
+enum Enum3026 {
+  VALUE_199
+  VALUE_151
+  VALUE_158
+  VALUE_152
+  VALUE_149
+}
+
+input Input5855 {
+  inputField171: Input5856!
+}
+
+input Input5856 {
+  inputField171: Int!
+}
+
+input Input48 {
+  inputField106: String!
+  inputField107: Boolean! = false
+}
+
+input Input50 {
+  "This is an anonymized description"
+  inputField109: String
+  "This is an anonymized description"
+  inputField110: Int!
+  "This is an anonymized description"
+  inputField111: Int!
+  "This is an anonymized description"
+  inputField112: Int!
+}
+
+input Input5857 {
+  inputField113: String
+  inputField103: String
+  inputField104: String
+  inputField114: String
+  inputField128: Input5855!
+  inputField116: Input50
+  inputField118: String
+  inputField119: String
+}

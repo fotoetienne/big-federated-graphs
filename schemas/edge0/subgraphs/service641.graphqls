@@ -1,0 +1,90 @@
+type Type1876 @key(fields: "field2") @extends {
+  field2: ID @external
+}
+
+type Type1875 @key(fields: "field2") @extends {
+  field2: ID @external
+}
+
+type Type15503 {
+  field2: ID!
+  field14925: String
+  field4106: Type1869
+  field7268: Type15508
+}
+
+type Type15504 {
+  field2: ID!
+  field5: String
+  field10440: Type15503
+  field7268: Type15508
+}
+
+type Type1952 @key(fields: "field2") {
+  field285: String
+  field2: ID!
+  field5: String
+  field31207: Float
+  field31208: String
+  field4141: String
+  field31209: Scalar14
+  field31210: Scalar14
+  field10440: Type15503
+  field29155: [Type15504]
+  field10837: [Type15505]
+  field7105: [Type15507]
+  field7268: Type15508
+  """
+  This is an anonymized description
+  """
+  field4741: Enum3763
+}
+
+enum Enum3763 {
+  VALUE_10983
+  VALUE_10984
+  VALUE_10985
+  VALUE_9184
+  VALUE_10986
+}
+
+type Type15505 {
+  field2: ID!
+  field5: String
+  field10440: Type15503
+  field31211: Type1876
+  field7268: Type15508
+}
+
+type Type1869 @key(fields: "field2") {
+  field2: ID!
+  field5: String
+  field166: Type15506
+}
+
+type Type15506 {
+  field2: ID!
+  field5: String
+}
+
+type Type15507 {
+  field2: ID!
+  field5: String
+  field253: String
+  field932: Boolean
+  field31212: Type15508
+}
+
+type Type15508 {
+  field2: ID!
+  field5: String
+}
+
+type Query {
+  field31213(arg11: [ID!]!): [Type15503]
+  field31214(arg11: [ID!]!): [Type15504]
+  field31215(arg11: [ID!]!): [Type1952]
+  field31216(arg11: [ID!]!): [Type15505]
+  field31217: [Type1869]
+  field31218(arg11: [ID!]!): [Type1869]
+}

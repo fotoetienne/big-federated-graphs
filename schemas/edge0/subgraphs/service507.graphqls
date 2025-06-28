@@ -1,0 +1,68 @@
+type Query @extends {
+  field25997(arg1: Input5735): [Type12876] @deprecated
+  field25998(arg1: Input5735): [Type12876]
+  field25999(arg1: Input5734): [Type12877]
+}
+
+type Mutation @extends {
+  field26000(arg1: Input5736): Type12879
+}
+
+input Input5734 {
+  inputField2253: String!
+}
+
+input Input5735 {
+  inputField2253: String!
+  inputField897: String
+  inputField356: Scalar14
+  inputField970: Scalar14
+}
+
+type Type12876 {
+  field3237: String
+  field10339: String
+  field3066: String
+  field2348: String
+  field4927: String
+  field285: Enum2935
+  field7733: Scalar14
+  field26001: Int
+}
+
+type Type1370 @key(fields: "field2348") @extends {
+  """
+  This is an anonymized description
+  """
+  field2348: ID! @external
+}
+
+type Type12877 {
+  field2305: Type1370 @external
+  field26002: Type12878
+}
+
+type Type12878 {
+  field3237: String
+  field26003: Scalar14
+  field1340: Scalar14
+}
+
+enum Enum2935 {
+  VALUE_9165
+  VALUE_9166
+  VALUE_9167
+  VALUE_9168
+  VALUE_9169
+}
+
+input Input5736 {
+  inputField2253: String!
+  inputField897: String!
+}
+
+type Type12879 {
+  field3237: String
+  field2348: String
+  field244: Boolean
+}

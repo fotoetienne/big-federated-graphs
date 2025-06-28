@@ -1,0 +1,63 @@
+"""
+This is an anonymized description
+"""
+input Input6511 {
+  """
+  This is an anonymized description
+  """
+  inputField3142: [ID!] = []
+}
+
+type Type2162 @extends @key(fields: "field81") {
+  """
+  This is an anonymized description
+  """
+  field81: ID! @external
+  """
+  This is an anonymized description
+  """
+  field253: String! @override(from: "service16")
+  """
+  This is an anonymized description
+  """
+  field932: Boolean! @override(from: "service16")
+}
+
+"""
+This is an anonymized description
+"""
+type Type2348 @key(fields: "field81") {
+  """
+  This is an anonymized description
+  """
+  field81: ID!
+  """
+  This is an anonymized description
+  """
+  field253: String
+}
+
+"""
+This is an anonymized description
+"""
+input Input6512 {
+  """
+  This is an anonymized description
+  """
+  inputField3142: [ID!] = []
+}
+
+type Query @extends {
+  field28369(arg12: ID!): Type2348
+  field28370(arg12: ID!): Type2162
+  field28371(arg1: Input6511): [Type2162!]
+  field28372(arg1: Input6512): [Type2348!]
+}
+
+type Type32 @key(fields: "field107") @extends {
+  field107: Int! @external
+  """
+  This is an anonymized description
+  """
+  field27423: Type2348
+}

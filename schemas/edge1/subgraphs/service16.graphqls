@@ -1,0 +1,168 @@
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field141(
+  arg16: Input6!): Boolean! @experimental
+}
+
+input Input6 {
+  inputField10: Enum7!
+}
+
+enum Enum7 {
+  """
+  This is an anonymized description
+  """
+  VALUE_20
+  """
+  This is an anonymized description
+  """
+  VALUE_21
+}
+
+"""
+This is an anonymized description
+"""
+type Type14 @key(fields: "field2") @extends {
+  """
+  This is an anonymized description
+  """
+  field2: ID! @external
+  """
+  This is an anonymized description
+  """
+  field142: Type17
+}
+
+type Type15 @key(fields: "field2") @extends {
+  field2: ID! @external
+  """
+  This is an anonymized description
+  """
+  field142: Enum7!
+}
+
+"""
+This is an anonymized description
+"""
+type Type16 @key(fields: "field91") @extends {
+  field91: Int! @external
+}
+
+type Type17 {
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field131: Enum8
+  """
+  This is an anonymized description
+  """
+  field143: Scalar9
+  """
+  This is an anonymized description
+  """
+  field144: Type18
+  """
+  This is an anonymized description
+  """
+  field145: Boolean
+  field146: Type19
+}
+
+type Type18 {
+  field66: Enum9
+  field42: String @deprecated
+  field147: Type16
+}
+
+enum Enum8 {
+  VALUE_22
+  VALUE_21
+}
+
+enum Enum9 {
+  VALUE_23
+}
+
+interface Interface1 @key(fields: "field70 field148") @extends {
+  """
+  This is an anonymized description
+  """
+  field70: String! @external
+  """
+  This is an anonymized description
+  """
+  field148: String @external
+  """
+  This is an anonymized description
+  """
+  field149: Boolean! @external
+  "This is an anonymized description"
+  field12: Interface2! @external
+}
+
+interface Interface2 {
+  field150: Scalar16!
+}
+
+interface Interface3 implements Interface2 {
+  """
+  This is an anonymized description
+  """
+  field151: ID!
+  """
+  This is an anonymized description
+  """
+  field152: ID
+  """
+  This is an anonymized description
+  """
+  field153: String
+  field150: Scalar16!
+}
+
+type Type19 implements Interface1 @key(fields: "field70 field148") {
+  """
+  This is an anonymized description
+  """
+  field70: String!
+  """
+  This is an anonymized description
+  """
+  field148: String
+  """
+  This is an anonymized description
+  """
+  field149: Boolean!
+  "This is an anonymized description"
+  field12: Type20!
+}
+
+type Type20 implements Interface3 & Interface2 {
+  """
+  This is an anonymized description
+  """
+  field91: ID
+  """
+  This is an anonymized description
+  """
+  field151: ID!
+  """
+  This is an anonymized description
+  """
+  field154: Enum8
+  """
+  This is an anonymized description
+  """
+  field152: ID
+  """
+  This is an anonymized description
+  """
+  field153: String
+  """
+  This is an anonymized description
+  """
+  field150: Scalar16!
+}

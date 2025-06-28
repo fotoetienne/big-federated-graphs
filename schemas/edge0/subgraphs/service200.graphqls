@@ -1,0 +1,81 @@
+type Query @extends {
+  field9456(arg899: String!): Type4811! @experimental
+  field9457(arg900: Boolean): [Type4811!]! @experimental
+  field9458(arg10: Input1815, arg5: Enum1029, arg901: Boolean): [Type4812!]! @experimental
+  field9459(arg16: String!, arg7: Int, arg9: Int, arg6: String, arg8: String): Type4813 @experimental
+}
+
+type Mutation @extends {
+  field9460(arg4: String!): Boolean @experimental
+  field9461(arg4: String!): Boolean @experimental
+}
+
+type Type4811 {
+  field2: String!
+  field9462: Type34
+  field9463: Type34
+  field9464: Type34
+  field9465: Type34
+  field9466: Type34
+  field2585: Type4812!
+}
+
+enum Enum1028 {
+  VALUE_158
+  VALUE_149
+  VALUE_4267
+  VALUE_750
+  VALUE_992
+  VALUE_152
+  VALUE_151
+}
+
+type Type4812 {
+  field255: String!
+  field256: String!
+  field257: String!
+  field260: Enum1028!
+  field56: Type29
+  field252: Scalar14!
+}
+
+type Type4813 {
+  field36: [Type4814]
+  field37: Type122!
+}
+
+type Type4814 {
+  field41: String!
+  field40: Type4812!
+}
+
+input Input1815 {
+  inputField339: Enum1028
+}
+
+enum Enum1029 {
+  VALUE_4268
+  VALUE_4269
+}
+
+"""
+This is an anonymized description
+"""
+type Type35 @key(fields: "field2 field44") @extends {
+  field2: String! @external
+  field44: String @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type34 @key(fields: "field108 { field2 field44 }") @extends {
+  field108: Type35 @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type29 @extends @key(fields: "field98") {
+  field98: ID! @external
+}

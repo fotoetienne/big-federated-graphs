@@ -1,0 +1,148 @@
+type Query {
+  field26927(arg2265: String, arg145: Int, arg780: String): Type13361
+}
+
+type Mutation {
+  field26928(arg675: String, arg2266: ID): String
+  field26929(arg746: String, arg263: [Input6001!]): [Type2423!]
+}
+
+input Input6001 {
+  inputField2830: ID!
+  inputField103: String
+  inputField2831: String
+  inputField9263: String
+}
+
+type Type13360 {
+  """
+  This is an anonymized description
+  """
+  field5: String
+  """
+  This is an anonymized description
+  """
+  field524: Type2423!
+  """
+  This is an anonymized description
+  """
+  field26930: Type2424
+}
+
+type Type13361 {
+  field37: Type122!
+  field36: [Type13362!]
+  field1086: Int
+}
+
+type Type13362 {
+  field40: Type13360!
+}
+
+"""
+This is an anonymized description
+"""
+type Type2423 implements Interface421 @key(fields: "field1099") @extends {
+  """
+  This is an anonymized description
+  """
+  field1099: ID! @external
+  """
+  This is an anonymized description
+  """
+  field1103: Boolean @override(from: "service2")
+  """
+  This is an anonymized description
+  """
+  field1104: Scalar16 @override(from: "service2")
+  """
+  This is an anonymized description
+  """
+  field5: String @override(from: "service2")
+  """
+  This is an anonymized description
+  """
+  field253: String @override(from: "service2")
+  """
+  This is an anonymized description
+  """
+  field1105: Interface419 @override(from: "service2")
+  """
+  This is an anonymized description
+  """
+  field1100: Type394 @override(from: "service2")
+  """
+  This is an anonymized description
+  """
+  field1101: Type409 @override(from: "service2")
+  """
+  This is an anonymized description
+  """
+  field1102: Type411 @override(from: "service2")
+  """
+  This is an anonymized description
+  """
+  field1108: [Type397!] @override(from: "service2")
+  field2394: [Type13364!]
+}
+
+type Type13363 implements Interface419 {
+  """
+  This is an anonymized description
+  """
+  field94: Scalar14
+  """
+  This is an anonymized description
+  """
+  field1109: Scalar14
+  """
+  This is an anonymized description
+  """
+  field606: Scalar14
+}
+
+type Type13364 {
+  field2248: Enum3119
+  field2458: Enum3120
+  field2625: String
+  field2627: String
+}
+
+enum Enum3119 {
+  VALUE_1245
+  VALUE_1246
+  VALUE_1247
+  VALUE_1248
+}
+
+enum Enum3120 {
+  VALUE_421
+  VALUE_422
+  VALUE_1249
+}
+
+type Type394 @extends @key(fields: "field2") {
+  field2: ID @external
+}
+
+type Type409 @extends @key(fields: "field285 field1122 field5 field1123") {
+  field285: Enum548! @external
+  field1122: String! @external
+  field5: String! @external
+  field1123: String @external
+}
+
+type Type397 @extends @key(fields: "field1088") {
+  field1088: String @external
+}
+
+type Type411 @key(fields: "field1099 field1125") @extends {
+  field1099: ID! @external
+  field1125: Enum543 @external
+}
+
+type Type2424 @extends @key(fields: "field1099 field1125") {
+  field1099: ID! @external
+  field1125: Enum543 @external
+  field524: Interface421 @external
+}

@@ -1,0 +1,170 @@
+type Type15237 {
+  field15054: [Type15239!]
+}
+
+union Union799 = Type15237 | Type15245
+
+type Type15238 {
+  field73: Type15239!
+}
+
+union Union800 = Type15238 | Type15247 | Type15245
+
+union Union801 = Type15242 | Type15246 | Type15245
+
+union Union802 = Type15243 | Type15246 | Type15248 | Type15250 | Type15249 | Type15245
+
+union Union803 = Type15244 | Type15246 | Type15247 | Type15250 | Type15245
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field30742(
+  arg2650: ID!
+  arg308: ID!
+  arg2281: ID): Union799 @experimental
+  """
+  This is an anonymized description
+  """
+  field30743(
+  arg2650: ID!
+  arg308: ID!
+  arg2651: ID!
+  arg2281: ID): Union800 @experimental
+}
+
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field30744(
+  arg2652: ID!
+  arg308: ID): Union801
+  """
+  This is an anonymized description
+  """
+  field30745(
+  arg170: Input7055!): Union802
+  """
+  This is an anonymized description
+  """
+  field30746(
+  arg170: Input7056!): Union803
+}
+
+input Input7055 {
+  inputField5342: ID!
+  inputField1332: ID!
+  inputField3060: ID
+  inputField10520: ID!
+  """
+  This is an anonymized description
+  """
+  inputField10521: ID
+  """
+  This is an anonymized description
+  """
+  inputField10522: Input7057!
+  """
+  This is an anonymized description
+  """
+  inputField10523: Scalar14
+  """
+  This is an anonymized description
+  """
+  inputField103: String
+}
+
+input Input7056 {
+  inputField5342: ID!
+  inputField1332: ID!
+  inputField3060: ID
+  inputField10520: ID!
+  inputField10521: ID
+}
+
+type Type15239 {
+  field6007: ID!
+  field3260: ID!
+  field30747: ID!
+  field30748: ID!
+  field16671: Type15240!
+}
+
+type Type15240 {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field30749: Scalar14!
+  """
+  This is an anonymized description
+  """
+  field30750: Type15241
+  """
+  This is an anonymized description
+  """
+  field30751: Scalar14
+  """
+  This is an anonymized description
+  """
+  field253: String
+}
+
+type Type15241 {
+  field13498: String!
+}
+
+input Input7057 {
+  inputField10524: String!
+}
+
+type Type15242 {
+  field244: Boolean!
+}
+
+type Type15243 {
+  field73: Type15239!
+}
+
+type Type15244 {
+  field30747: ID!
+  field30752: ID!
+}
+
+interface Interface788 {
+  field427: String
+}
+
+type Type15245 implements Interface788 {
+  field427: String
+}
+
+type Type15246 implements Interface788 {
+  field427: String
+}
+
+type Type15247 implements Interface788 {
+  field427: String
+}
+
+type Type15248 implements Interface788 {
+  field427: String
+}
+
+type Type15249 implements Interface788 {
+  field427: String
+}
+
+type Type15250 implements Interface788 {
+  field427: String
+  field16671: Type15240
+}
+
+scalar _FieldSet
+
+directive @directive21(arg47: String!, arg29: _FieldSet!, arg2343: String) on OBJECT | INTERFACE | FIELD_DEFINITION

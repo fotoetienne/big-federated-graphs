@@ -1,0 +1,314 @@
+scalar Scalar1
+
+type Type1909 @key(fields: "field2") {
+  field2: ID!
+  field44: Int!
+  field26004: Scalar1!
+  field26005: Scalar1!
+  field285: Enum2936!
+  field26006: Int!
+  field2057: String!
+  field1652: String!
+  field26007: String!
+  field26008: Int!
+  field10851: Type12880!
+  field10837: [Type12881!]!
+  field16751: Type12894
+  field16752: Type12884!
+  field6066: String!
+  field10: String!
+  field7105: [Type12890!]
+  field4930: Enum2942!
+  field5270: Boolean!
+  field26009: Enum2944!
+  field26010: [Enum2945!]
+  field2432: Type12895!
+}
+
+enum Enum2936 {
+  VALUE_9170
+  VALUE_9171
+  VALUE_9172
+  VALUE_9173
+  VALUE_9174
+  VALUE_9175
+  VALUE_9176
+  VALUE_9177
+}
+
+type Type12880 {
+  field26011: Scalar1!
+  field26012: Scalar1!
+}
+
+type Type12881 {
+  field2: ID!
+  field9575: Type12882
+  field26013: [Type12883!]!
+}
+
+type Type12882 {
+  field26014: Int!
+  field13434: Int!
+}
+
+type Type12883 {
+  field2: ID!
+  field285: Enum2937!
+}
+
+enum Enum2937 {
+  VALUE_4274
+  VALUE_4564
+  VALUE_4565
+  VALUE_4562
+  VALUE_4563
+  VALUE_1019
+  VALUE_9178
+  VALUE_9179
+}
+
+type Type12884 {
+  field16776: Type12886
+  field26015: Type12887
+  field26016: [Type12885!]!
+  field26017: Boolean!
+  field16774: Enum2939!
+}
+
+type Type12885 {
+  field26018: Enum2938!
+  field1193: Enum2943!
+  field26019: Int
+  field26020: Type12888
+  field26021: Float
+}
+
+enum Enum2938 {
+  VALUE_6560
+  VALUE_9180
+  VALUE_9181
+  VALUE_9182
+  VALUE_9183
+}
+
+type Type12886 {
+  field16771: Int
+  field16772: Type12888
+  field26017: Boolean!
+  field16774: Enum2939!
+}
+
+type Type12887 {
+  field517: Float!
+  field16775: Int!
+}
+
+type Type12888 {
+  field10474: Scalar1!
+  field4141: Scalar8!
+}
+
+enum Enum2939 {
+  VALUE_6540
+  VALUE_6541
+}
+
+type Type12889 {
+  field10843: Int!
+  field7684: String!
+}
+
+type Type12890 {
+  field2: ID!
+  field285: Enum2941!
+  field10445: Type12892!
+  field10446: Type12893!
+  field16751: Type12891!
+  field10851: Type12880
+  field16771: Int
+  field2432: Type12895!
+}
+
+type Type12891 {
+  field134: Type12888!
+  field285: Enum2940!
+}
+
+enum Enum2940 {
+  VALUE_1923
+  VALUE_4169
+}
+
+type Type12892 {
+  field2: ID!
+  field5: String!
+}
+
+type Type12893 {
+  field2: ID!
+  field10445: Type12892!
+  field26022: String!
+}
+
+enum Enum2941 {
+  VALUE_9172
+  VALUE_9173
+  VALUE_9184
+  VALUE_9174
+}
+
+enum Enum2942 {
+  VALUE_20
+  VALUE_2322
+  VALUE_18
+}
+
+type Type12894 {
+  field134: Type12888!
+  field4947: Enum2943
+}
+
+enum Enum2943 {
+  VALUE_6561
+}
+
+enum Enum2944 {
+  VALUE_2000
+  VALUE_158
+  VALUE_327
+  VALUE_328
+}
+
+input Input5737 {
+  inputField2330: Boolean!
+}
+
+type Query @extends {
+  field26023(arg1: Input5737!): [Type1909!]!
+  field26024(arg11: [ID!]!): [Type1909!]!
+  field26025: [Type1910!]!
+  field26026(arg2133: [ID!]!): [Type1910!]!
+  field26027: [Type1911!]!
+  field26028(arg2134: [ID!]!): [Type1911!]!
+  field26029(arg2133: [ID!]!): [Type1911!]!
+}
+
+type Mutation @extends {
+  field26030(arg2135: [Input5738!]!): [ID!]!
+  field26031(arg2133: [ID!]!): [ID!]!
+  field26032(arg2135: [Input5739!]!): [ID!]!
+  field26033(arg2136: [Input5743!]!): [Type1911!]!
+  field26034(arg2134: [ID!]!): [ID!]!
+  field26035(arg2133: [ID!]!): [ID!]!
+}
+
+enum Enum2945 {
+  VALUE_9185
+}
+
+type Type12895 {
+  field2432: [Type12901!]!
+}
+
+type Type12896 {
+  field138: String!
+}
+
+type Type12897 {
+  field136: Int!
+}
+
+type Type12898 {
+  field139: Boolean!
+}
+
+type Type12899 {
+  field10117: Scalar1!
+}
+
+type Type12900 {
+  field137: Float!
+}
+
+union Union670 = Type12896 | Type12897 | Type12898 | Type12899 | Type12900
+
+type Type12901 {
+  field450: String!
+  field134: Union670!
+}
+
+type Type1910 @key(fields: "field3894") {
+  field3894: ID!
+  field25299: String!
+  field56: String!
+  field57: String!
+  field45: Scalar1!
+  field46: Scalar1!
+  field26036: Type12902!
+}
+
+type Type1911 @key(fields: "field4927") {
+  field4927: ID!
+  field3894: ID!
+  field56: String!
+  field45: Scalar1!
+}
+
+type Type12902 {
+  field7679: [Type12903!]!
+}
+
+type Type12903 {
+  field5: String!
+  field134: Union671!
+}
+
+union Union671 = Type12896 | Type12897 | Type12899 | Type12900 | Type12904 | Type12905 | Type12906
+
+type Type12904 {
+  field26037: [Union671!]!
+}
+
+type Type12905 {
+  field26037: [Union671!]!
+}
+
+type Type12906 {
+  field133: [Type12905!]!
+}
+
+input Input5738 {
+  inputField8784: String!
+  inputField715: String!
+  inputField8929: Input5740!
+}
+
+input Input5739 {
+  inputField1721: ID!
+  inputField8784: String
+  inputField325: String!
+  inputField8929: Input5740
+}
+
+input Input5740 {
+  inputField8930: [Input5741!]!
+}
+
+input Input5741 {
+  inputField57: String!
+  inputField55: Input5742!
+}
+
+input Input5742 {
+  inputField538: String
+  inputField3573: Int
+  inputField3574: Scalar1
+  inputField5179: Float
+}
+
+input Input5743 {
+  inputField8931: [ID!]!
+  inputField1721: String!
+  inputField715: String!
+}

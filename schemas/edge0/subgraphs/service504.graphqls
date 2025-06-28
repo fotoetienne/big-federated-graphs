@@ -1,0 +1,39 @@
+enum Enum2918 {
+  VALUE_2827
+  VALUE_222
+  VALUE_2838
+  VALUE_2788
+  VALUE_1006
+  VALUE_6997
+}
+
+type Query @extends {
+  field25960(arg4: ID!, arg47: Enum2918, arg2131: String): Type12859
+}
+
+type Type12857 {
+  field5: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type12858 {
+  field285: Enum2918
+  """
+  This is an anonymized description
+  """
+  field2224: [Type12857]
+  field882: ID!
+}
+
+type Type331 @extends @key(fields: "field2") {
+  field2: ID! @external
+}
+
+type Type12859 {
+  field5953: String
+  field3347: String
+  field7449: [Type12858]
+  field25961: [Type331]
+}

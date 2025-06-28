@@ -1,0 +1,123 @@
+type Mutation @extends {
+  field26415(arg60: Input5858!): Type13123
+  field26416(arg60: Input5859!): Type13123
+  field26417(arg60: Input5860!): Type13123
+  field26418(arg60: Input5862): [Type13123]
+}
+
+type Query @extends {
+  field26419(arg60: Input5861!): Type13124
+  field26420: [String] @experimental
+  field26421(arg16: String, arg10: String, arg1293: String, arg307: String): [Type13128!] @experimental
+  field26422(arg16: String, arg307: String): Type13126 @experimental
+  field26423(arg16: String, arg307: String): Type13126 @experimental
+}
+
+scalar Scalar1
+
+input Input5858 {
+  inputField1032: String!
+  inputField9053: String!
+  inputField955: String!
+  inputField9054: String!
+}
+
+input Input5859 {
+  inputField674: ID!
+  inputField218: [Scalar1!]!
+}
+
+input Input5860 {
+  inputField674: ID!
+  inputField218: [Scalar1!]
+  inputField1032: String
+}
+
+input Input5861 {
+  inputField135: Enum3027
+  inputField955: String!
+  inputField912: Enum3028! = VALUE_9316
+  inputField207: Int
+  inputField332: Int
+}
+
+input Input5862 {
+  inputField220: [String!]!
+  inputField218: [Scalar1!]!
+  inputField955: String!
+}
+
+type Type13123 {
+  field2: ID
+  field410: String
+  field630: [Scalar1]
+  field26424: [Scalar1]
+  field5953: String
+  field21505: String
+  field58: Enum3027
+  field14861: String
+  field5661: String
+  field94: Scalar14
+  field56: String
+  field96: Scalar14
+  field57: String
+}
+
+enum Enum3027 {
+  VALUE_326
+  VALUE_750
+  VALUE_992
+}
+
+enum Enum3028 {
+  VALUE_9316
+  VALUE_1936
+}
+
+type Type13124 {
+  field1626: [Type13123]
+  field37: Type13125!
+}
+
+type Type13125 {
+  field1086: Int
+  field1083: Int
+  field1085: Int
+  field270: Boolean
+  field271: Boolean
+}
+
+type Type13126 {
+  field6232: [Type13127]
+}
+
+type Type13127 {
+  field107: String
+  field290: String
+  field338: Int
+  field285: String
+}
+
+"This is an anonymized description"
+type Type13128 {
+  "This is an anonymized description"
+  field1280: Int!
+  "This is an anonymized description"
+  field742: Type32
+  "This is an anonymized description"
+  field7260: String!
+  "This is an anonymized description"
+  field251: String!
+  "This is an anonymized description"
+  field4365: String!
+  "This is an anonymized description"
+  field21626: [String!]
+  "This is an anonymized description"
+  field21627: String!
+  "This is an anonymized description"
+  field21237: String!
+}
+
+type Type32 @extends @key(fields: "field107") {
+  field107: Int! @external
+}

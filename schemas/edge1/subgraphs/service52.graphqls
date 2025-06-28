@@ -1,0 +1,43 @@
+union Union94 = Type1192 | Type1193
+
+type Type1192 {
+  field107: String!
+  field1977: Int @deprecated
+}
+
+type Type1193 {
+  field5: Enum298
+  field108: Type33
+}
+
+enum Enum298 {
+  VALUE_1533
+  VALUE_1534
+  VALUE_1535
+}
+
+type Type199 @key(fields: "field2") @extends {
+  field2: ID! @external
+  field747: String @external
+  field746: Int! @external
+  field106: Union94! @requires(fields: "field747 field746")
+}
+
+type Mutation @extends {
+  field1978: Union95 @deprecated
+}
+
+union Union95 = Type1194 | Type1195
+
+type Type1194 {
+  field442: String!
+}
+
+type Type1195 {
+  field442: String!
+}
+
+type Type33 @key(fields: "field45 field173") @extends {
+  field173: String! @external
+  field45: ID! @external
+}

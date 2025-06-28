@@ -1,0 +1,771 @@
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+"""
+This is an anonymized description
+"""
+type Type90 @key(fields: "field163") @extends {
+  field163: String! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type29 @key(fields: "field98") @extends {
+  field98: ID! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type32 @key(fields: "field107") @extends {
+  field107: Int! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type1732 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type83 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+type Type5806 {
+  field285: String
+  field513: String
+}
+
+type Type5807 {
+  field5430: String
+  field5431: String
+  field280: String
+  field2248: String
+  field17: String
+  field10: String
+  field311: String
+}
+
+input Input2337 {
+  inputField108: String
+  inputField191: String
+}
+
+input Input2338 {
+  inputField4445: String
+  inputField4446: String
+  inputField338: String
+  inputField1880: String
+  inputField1018: String
+  inputField340: String
+  inputField807: String
+}
+
+enum Enum1302 {
+  VALUE_1099
+  VALUE_1100
+}
+
+type Type5808 @directive1(arg31: "anonymous-string") {
+  field2: ID
+  field58: Enum1302
+  field87: String
+}
+
+type Type5809 {
+  field4141: String
+  field5303: String
+  field5538: String
+  field12121: String
+  field220: Scalar9
+  field12122: Scalar9
+  field12123: Scalar9
+  field219: Scalar9
+  field12124: String
+  field12125: Scalar9
+  field12126: Scalar9
+  field12127: String
+  field12128: String
+  field5304: String
+  field4319: String
+  field5501: String
+  field12129: String
+  field12130: String
+  field12131: String
+  field12132: String
+  field12133: String
+  field4258: String
+  field5442: Scalar11
+  field5536: Scalar9
+  field12134: Scalar9
+  field12135: Scalar9
+  field5537: Scalar9
+  field12136: Scalar9
+  field12137: Scalar9
+  field12138: Scalar9
+  field12139: Scalar9
+  field12140: Scalar9
+  field12141: Scalar9
+  field12142: Scalar9
+  field12143: Scalar9
+  field77: String
+  field2248: String
+  field10: String
+  field12144: String
+  field12145: String
+}
+
+type Type5810 {
+  field4141: String
+  field12146: String
+  field4320: String
+  field557: String
+  field4258: String
+  field12147: String
+  field12148: String
+  field12149: Scalar11
+  field12150: String
+  field12151: String
+  field12152: Scalar9
+  field12153: Scalar9
+  field12154: String
+  field12155: Scalar9
+  field12156: String
+  field11165: String
+  field12127: String
+  field12128: String
+  field5304: String
+  field4319: String
+  field5501: String
+  field12129: String
+  field4302: String
+  field12131: String
+  field12132: String
+  field12133: String
+  field12157: String
+  field12158: String
+  field5512: String
+  field12159: String
+  field12160: String
+  field12161: String
+  field12162: String
+  field5442: Scalar11
+  field77: String
+  field2248: String
+  field10: String
+  field12144: String
+  field12145: String
+}
+
+type Type5811 {
+  field4319: String!
+  field5500: String
+  field5502: Int!
+  field5503: Int!
+}
+
+type Type2855 @key(fields: "field5032") @extends {
+  field5032: String! @external
+  field12163(arg1068: [String!]): [Type5810]
+  field12164(arg1068: [String!]): [Type5809]
+  field5580: [Type5811]
+}
+
+type Type5812 {
+  field120: Type32
+  field12165: [Type5813]
+}
+
+type Type5813 {
+  field4319: String
+  field8027: Type1804
+}
+
+extend type Query {
+  field12166(arg553: String!): [Type5810]
+  field12167(arg12: Int): [Type5812]
+}
+
+enum Enum1303 {
+  VALUE_2140
+  VALUE_2141
+  VALUE_2142
+  VALUE_2143
+  VALUE_4944
+  VALUE_2145
+  VALUE_2150
+  VALUE_2153
+  VALUE_2155
+  VALUE_2156
+  VALUE_2157
+  VALUE_2158
+  VALUE_4945
+}
+
+enum Enum1304 {
+  VALUE_2217
+  VALUE_750
+  VALUE_992
+  VALUE_1944
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum1305 {
+  VALUE_2212
+  VALUE_2213
+  VALUE_2214
+}
+
+input Input2339 {
+  """
+  This is an anonymized description
+  """
+  inputField7: ID!
+  """
+  This is an anonymized description
+  """
+  inputField314: String!
+}
+
+input Input2340 {
+  """
+  This is an anonymized description
+  """
+  inputField1867: Input2341!
+  """
+  This is an anonymized description
+  """
+  inputField672: String!
+}
+
+input Input2341 {
+  """
+  This is an anonymized description
+  """
+  inputField60: String!
+  """
+  This is an anonymized description
+  """
+  inputField1868: ID!
+  """
+  This is an anonymized description
+  """
+  inputField1869: Enum1305!
+  """
+  This is an anonymized description
+  """
+  inputField1870: ID
+  """
+  This is an anonymized description
+  """
+  inputField314: String!
+}
+
+type Type5814 {
+  field1268: [Type5815!]
+}
+
+type Type5815 {
+  """
+  This is an anonymized description
+  """
+  field4733: Enum1305!
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+}
+
+input Input2342 {
+  """
+  This is an anonymized description
+  """
+  inputField1867: Input2341!
+  """
+  This is an anonymized description
+  """
+  inputField1871: Enum1304!
+}
+
+"""
+This is an anonymized description
+"""
+input Input2343 {
+  inputField4447: ID
+  inputField4448: String!
+  inputField237: String
+  inputField57: String
+  inputField4449: String
+  inputField4450: String
+  inputField1692: String
+  inputField2696: Input2338
+}
+
+extend type Mutation {
+  """
+  This is an anonymized description
+  """
+  field12168(
+  arg60: Input2340!): Type5814
+  """
+  This is an anonymized description
+  """
+  field12169(
+  arg60: Input2339!): Type5814
+  """
+  This is an anonymized description
+  """
+  field12170(
+  arg60: Input2342!): Type5814
+}
+
+"""
+This is an anonymized description
+"""
+interface Interface243 {
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field12171: ID @deprecated(reason: "Anonymized deprecation reason")
+  field12172: Type83
+  """
+  This is an anonymized description
+  """
+  field12173: String @deprecated(reason: "Anonymized deprecation reason")
+  field12174: Type1732
+  """
+  This is an anonymized description
+  """
+  field5519: String
+  """
+  This is an anonymized description
+  """
+  field12175: String
+  """
+  This is an anonymized description
+  """
+  field932: Boolean
+  """
+  This is an anonymized description
+  """
+  field9476: Boolean
+  """
+  This is an anonymized description
+  """
+  field12176: Boolean
+  """
+  This is an anonymized description
+  """
+  field741: Enum1306
+  """
+  This is an anonymized description
+  """
+  field5: String
+  """
+  This is an anonymized description
+  """
+  field5525: String
+  """
+  This is an anonymized description
+  """
+  field5514: String
+  field4141: String
+  """
+  This is an anonymized description
+  """
+  field2618: Type5807
+  """
+  This is an anonymized description
+  """
+  field5515: Type5807
+  field5521: String
+  """
+  This is an anonymized description
+  """
+  field12177: Boolean
+  """
+  This is an anonymized description
+  """
+  field5520: Boolean
+  """
+  This is an anonymized description
+  """
+  field12178: Scalar11
+  field5517: Scalar11
+  """
+  This is an anonymized description
+  """
+  field2901: [Type5806]
+  field94: Scalar13
+  field56: String
+  field96: Scalar13
+  field57: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type2856 implements Interface243 @key(fields: "field2") @directive1(arg31: "anonymous-string") {
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field12171: ID @deprecated(reason: "Anonymized deprecation reason")
+  field12172: Type83
+  """
+  This is an anonymized description
+  """
+  field12173: String @deprecated(reason: "Anonymized deprecation reason")
+  field12174: Type1732
+  """
+  This is an anonymized description
+  """
+  field5519: String @directive1(arg31: "anonymous-string")
+  """
+  This is an anonymized description
+  """
+  field12175: String
+  """
+  This is an anonymized description
+  """
+  field932: Boolean
+  """
+  This is an anonymized description
+  """
+  field9476: Boolean
+  """
+  This is an anonymized description
+  """
+  field12176: Boolean
+  """
+  This is an anonymized description
+  """
+  field741: Enum1306
+  """
+  This is an anonymized description
+  """
+  field5: String
+  """
+  This is an anonymized description
+  """
+  field5525: String
+  """
+  This is an anonymized description
+  """
+  field5514: String
+  field4141: String
+  """
+  This is an anonymized description
+  """
+  field2618: Type5807
+  """
+  This is an anonymized description
+  """
+  field5515: Type5807
+  field5521: String
+  """
+  This is an anonymized description
+  """
+  field12177: Boolean
+  """
+  This is an anonymized description
+  """
+  field5520: Boolean
+  """
+  This is an anonymized description
+  """
+  field12178: Scalar11
+  field5517: Scalar11
+  """
+  This is an anonymized description
+  """
+  field2901: [Type5806]
+  """
+  This is an anonymized description
+  """
+  field793: Type5816
+  """
+  This is an anonymized description
+  """
+  field12179: [Enum1307]
+  """
+  This is an anonymized description
+  """
+  field12180: Int
+  field94: Scalar13
+  field56: String
+  field96: Scalar13
+  field57: String
+  """
+  This is an anonymized description
+  """
+  field12181: [Type90]
+}
+
+"""
+This is an anonymized description
+"""
+type Type5816 {
+  field2: ID!
+  field5: String!
+  field1491: String
+  field56: String
+  field94: Scalar14!
+  field57: String
+  field96: Scalar14!
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum1306 {
+  VALUE_4946
+  VALUE_2867
+  VALUE_4947
+  VALUE_1082
+}
+
+"""
+This is an anonymized description
+"""
+input Input2344 {
+  """
+  This is an anonymized description
+  """
+  inputField340: String!
+  """
+  This is an anonymized description
+  """
+  inputField2020: String!
+  """
+  This is an anonymized description
+  """
+  inputField57: String
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum1307 {
+  """
+  This is an anonymized description
+  """
+  VALUE_4948
+  """
+  This is an anonymized description
+  """
+  VALUE_1026
+}
+
+"""
+This is an anonymized description
+"""
+input Input2345 {
+  inputField7: ID!
+  inputField4447: ID
+  inputField4448: String!
+  inputField4451: String!
+  inputField820: Boolean
+  inputField237: Enum1306
+  inputField57: String
+  inputField4449: String
+  inputField4450: String
+  inputField4452: Input2338
+  inputField1692: String
+  inputField2696: Input2338
+  inputField4453: String
+  inputField4454: Boolean
+  inputField4455: String
+  inputField4456: String
+  inputField4457: String
+  inputField1060: [Input2337]
+  inputField3405: Boolean
+  inputField4458: [Enum1307]
+}
+
+"""
+This is an anonymized description
+"""
+type Type1823 implements Interface243 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field12182: ID
+  """
+  This is an anonymized description
+  """
+  field12171: ID @deprecated(reason: "Anonymized deprecation reason")
+  field12172: Type83
+  """
+  This is an anonymized description
+  """
+  field12173: String @deprecated(reason: "Anonymized deprecation reason")
+  field12174: Type1732
+  """
+  This is an anonymized description
+  """
+  field5519: String
+  """
+  This is an anonymized description
+  """
+  field12175: String
+  """
+  This is an anonymized description
+  """
+  field932: Boolean
+  """
+  This is an anonymized description
+  """
+  field9476: Boolean
+  """
+  This is an anonymized description
+  """
+  field12176: Boolean
+  """
+  This is an anonymized description
+  """
+  field741: Enum1306
+  """
+  This is an anonymized description
+  """
+  field5: String
+  """
+  This is an anonymized description
+  """
+  field5525: String
+  """
+  This is an anonymized description
+  """
+  field5514: String
+  field4141: String
+  """
+  This is an anonymized description
+  """
+  field2618: Type5807
+  """
+  This is an anonymized description
+  """
+  field5515: Type5807
+  field5521: String
+  """
+  This is an anonymized description
+  """
+  field12177: Boolean
+  """
+  This is an anonymized description
+  """
+  field5520: Boolean
+  """
+  This is an anonymized description
+  """
+  field12178: Scalar11
+  field5517: Scalar11
+  """
+  This is an anonymized description
+  """
+  field2901: [Type5806]
+  field94: Scalar13
+  field56: String
+  field96: Scalar13
+  field57: String
+  """
+  This is an anonymized description
+  """
+  field90: String
+  """
+  This is an anonymized description
+  """
+  field12183: Type5807
+}
+
+"""
+This is an anonymized description
+"""
+input Input2346 {
+  inputField4448: String
+  inputField4451: String
+  inputField237: Enum1306
+  inputField2696: Input2338
+  inputField4450: String
+  inputField4452: Input2338
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field12184: [Type5816]
+  """
+  This is an anonymized description
+  """
+  field12185(
+  arg1069: String): [Type2856] @directive1(arg31: "anonymous-string")
+  """
+  This is an anonymized description
+  """
+  field12186(
+  arg4: ID): Type2856 @directive1(arg31: "anonymous-string")
+  """
+  This is an anonymized description
+  """
+  field12187(
+  arg4: ID): Type1823
+  """
+  This is an anonymized description
+  """
+  field12188(
+  arg1070: String!): String
+}
+
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field12189(
+  arg1071: ID
+  arg1072: [Input2344]
+  arg1073: Int): Type5808 @directive1(arg31: "anonymous-string")
+  """
+  This is an anonymized description
+  """
+  field12190(
+  arg1074: Input2345): Type5808 @directive1(arg31: "anonymous-string")
+  """
+  This is an anonymized description
+  """
+  field12191(
+  arg1075: ID!): Type5808
+  """
+  This is an anonymized description
+  """
+  field12192(
+  arg1075: ID!
+  arg1076: Input2346!): Type5808
+  """
+  This is an anonymized description
+  """
+  field12193(
+  arg1075: ID!): Type5808
+  """
+  This is an anonymized description
+  """
+  field12194(
+  arg1077: ID!
+  arg40: [Enum1307]!): Type5808 @directive1(arg31: "anonymous-string")
+}

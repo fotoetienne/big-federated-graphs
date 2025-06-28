@@ -1,0 +1,133 @@
+input Input4872 {
+  inputField1903: Int
+  inputField1319: Int
+}
+
+input Input4873 {
+  "This is an anonymized description"
+  inputField8325: String!
+  "This is an anonymized description"
+  inputField967: String!
+}
+
+input Input4874 {
+  "This is an anonymized description"
+  inputField7761: [String]
+  "This is an anonymized description"
+  inputField339: [String]
+}
+
+input Input4875 {
+  "This is an anonymized description"
+  inputField339: [String]
+  inputField2228: [ID!]
+  inputField8326: Boolean
+  inputField8327: Boolean
+  inputField8328: Boolean
+  inputField8329: Boolean
+  inputField8330: Boolean
+  inputField8331: Boolean
+}
+
+type Query @extends {
+  field23048(arg293: Input4872, arg533: Input4873!, arg10: Input4874): Type10594
+  field23049(arg293: Input4872, arg533: Input4873!, arg10: Input4875): Type10596
+  field23050(arg4: ID!, arg533: Input4873!): Type2939
+  field23051(arg533: Input4873!, arg915: String): [Type10597]
+}
+
+scalar Scalar3
+
+interface Interface444 {
+  field2469: ID!
+  field1559: String
+  field23052: String
+  field2453: String
+  field260: String
+  field23053: Boolean
+  field16167: Scalar14
+}
+
+type Type10594 {
+  field1280: Int!
+  field12825: [Type2938!]
+}
+
+type Type2938 implements Interface444 @key(fields: "field2469") {
+  "This is an anonymized description"
+  field2469: ID!
+  "This is an anonymized description"
+  field1559: String
+  "This is an anonymized description"
+  field23052: String
+  "This is an anonymized description"
+  field2453: String
+  "This is an anonymized description"
+  field260: String
+  "This is an anonymized description"
+  field23053: Boolean
+  "This is an anonymized description"
+  field16167: Scalar14
+  field23054: String
+  field21756: String
+  field23055: String
+  field23056: String
+  field23057: String
+  field23058: String
+  field23059: Type10595
+  field367: [String!]
+  field2423: Type2939!
+  "This is an anonymized description"
+  field23060: String
+  "This is an anonymized description"
+  field23061: String
+  field23062: String
+  field23063: String
+}
+
+type Type10595 {
+  field23064: [String!]
+  field23065: Boolean
+  field23066: String
+  field23067: Scalar3
+  field23068: [String!]
+}
+
+type Type10596 {
+  field1280: Int!
+  field4102: [Type2939!]
+}
+
+type Type29 @key(fields: "field98") @extends {
+  field98: ID! @external
+  field23049(arg293: Input4872, arg533: Input4873!, arg10: Input4875): Type10596
+}
+
+type Type2939 implements Interface444 @key(fields: "field2469") {
+  field2469: ID!
+  field1559: String
+  field23052: String
+  field2453: String
+  field260: String
+  field23053: Boolean
+  field16167: Scalar14
+  field23069: Scalar14
+  field23070: Boolean
+  field23071: Boolean
+  field23072: Boolean
+  field23073: String
+  field23074: Boolean
+  field1451: [Type29!]
+  field23075: String
+  field2433: String
+  field3188: String
+  field2581: String
+  field388: String
+  field23076: Boolean
+  field12825: [Type2938!]
+}
+
+type Type10597 {
+  field1559: String!
+  field18711: String!
+}

@@ -1,0 +1,86 @@
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+type Query {
+  field23095(arg60: Input4876!): Type10602 @directive1(arg31: "anonymous-string")
+}
+
+input Input4876 {
+  inputField8332: String!
+  inputField8333: String!
+  inputField8334: [Input4881!]!
+  inputField8335: Input4877!
+}
+
+input Input4877 {
+  inputField8336: Input4878!
+}
+
+input Input4878 {
+  inputField8337: Enum2590
+  inputField8338: Enum2589
+}
+
+enum Enum2589 {
+  VALUE_8465
+  VALUE_1031
+  VALUE_8466
+}
+
+enum Enum2590 {
+  VALUE_8467
+  VALUE_8468
+  VALUE_8469
+}
+
+input Input4879 {
+  inputField171: Int
+  inputField8339: [Input4880!]
+  inputField8340: [Input4880!]
+  inputField8341: Input4880
+  inputField8342: Input4880
+  inputField8343: [Input4880!]
+  inputField8344: [Input4880!]
+}
+
+input Input4880 {
+  inputField184: Int!
+  inputField2500: Int!
+  inputField44: String
+  inputField713: String
+  inputField8345: [String!]
+  inputField8346: Boolean
+  inputField8347: Boolean
+}
+
+input Input4881 {
+  inputField7: ID!
+  inputField44: String!
+  inputField2084: Input4879
+}
+
+type Type10602 {
+  field23096: [Type10603!]!
+}
+
+type Type10603 {
+  field23097: ID!
+  field23098: Type10604!
+}
+
+type Type10604 {
+  field12784: ID!
+  field7030: [Type10605!]!
+}
+
+type Type10605 {
+  field2: ID!
+  field23099: String!
+}
+
+type Type10606 {
+  field81: Enum1274
+  field87: String!
+}

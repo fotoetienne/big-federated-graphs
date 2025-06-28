@@ -1,0 +1,399 @@
+type Type2482 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+type Type2645 @key(fields: "field2") @extends {
+  field2: Scalar1! @external
+  field15037: Type2481 @external
+  field31278: Type2712 @requires(fields: "field15037 { field18861 { field2 } }")
+}
+
+type Type2481 @key(fields: "field2") @extends {
+  field2: Scalar1! @external
+  field18861: Type2482 @external
+}
+
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field31279(
+  arg1: Input7332!): Type2712!
+  field31280(arg1: Input7333!): Type2712!
+  field31281(arg1: Input7334!): Type2712!
+}
+
+input Input7332 {
+  """
+  This is an anonymized description
+  """
+  inputField8036: Scalar1!
+  """
+  This is an anonymized description
+  """
+  inputField319: String!
+}
+
+input Input7333 {
+  inputField7: Scalar1!
+  """
+  This is an anonymized description
+  """
+  inputField319: String!
+}
+
+input Input7334 {
+  inputField7: Scalar1!
+  """
+  This is an anonymized description
+  """
+  inputField319: String!
+}
+
+type Query @extends {
+  field31282(arg4: Scalar1, arg2673: Scalar1): Type2712
+  field31283(arg193: [Enum3774] = [], arg2674: Scalar1): [Type2712!]
+}
+
+scalar Scalar1
+
+scalar Scalar2
+
+type Type2712 @key(fields: "field2") {
+  field2: Scalar1!
+  field44: Scalar1
+  field45: Scalar13
+  field56: String
+  field46: Scalar13
+  field57: String
+  field58: Enum3774!
+  field31284: Scalar13
+  field31285: Scalar13
+  """
+  This is an anonymized description
+  """
+  field2599: Type2713!
+  """
+  This is an anonymized description
+  """
+  field14470: Scalar13 @deprecated
+  """
+  This is an anonymized description
+  """
+  field31286: Scalar13 @deprecated
+  field31287: Type2719 @experimental
+  field18877: Type2645
+}
+
+enum Enum3774 {
+  VALUE_326
+  VALUE_2905
+  VALUE_196
+  VALUE_4247
+  VALUE_11003
+  VALUE_11004
+  VALUE_11005
+  VALUE_199
+  VALUE_1104
+  VALUE_152
+}
+
+"""
+This is an anonymized description
+"""
+type Type2713 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field18877: Type2645
+  """
+  This is an anonymized description
+  """
+  field11225: [Interface798!]
+  """
+  This is an anonymized description
+  """
+  field31288: Type2714
+  """
+  This is an anonymized description
+  """
+  field31289: Type2715
+  """
+  This is an anonymized description
+  """
+  field31290: Type2716
+  """
+  This is an anonymized description
+  """
+  field31291: Type2717
+  """
+  This is an anonymized description
+  """
+  field18825: Type2718
+}
+
+"""
+This is an anonymized description
+"""
+interface Interface798 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field18877: Type2645
+  """
+  This is an anonymized description
+  """
+  field113: Enum3774
+  """
+  This is an anonymized description
+  """
+  field18807: Scalar13
+  """
+  This is an anonymized description
+  """
+  field1114: Enum3774
+  """
+  This is an anonymized description
+  """
+  field18808: Scalar13
+  """
+  This is an anonymized description
+  """
+  field18809: Scalar13
+  """
+  This is an anonymized description
+  """
+  field18810: Boolean
+  """
+  This is an anonymized description
+  """
+  field7122: Boolean
+}
+
+"""
+This is an anonymized description
+"""
+type Type2714 implements Interface798 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field18877: Type2645
+  """
+  This is an anonymized description
+  """
+  field113: Enum3774
+  """
+  This is an anonymized description
+  """
+  field18807: Scalar13
+  """
+  This is an anonymized description
+  """
+  field1114: Enum3774
+  """
+  This is an anonymized description
+  """
+  field18808: Scalar13
+  """
+  This is an anonymized description
+  """
+  field18809: Scalar13
+  """
+  This is an anonymized description
+  """
+  field18810: Boolean
+  """
+  This is an anonymized description
+  """
+  field7122: Boolean
+}
+
+"""
+This is an anonymized description
+"""
+type Type2715 implements Interface798 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field18877: Type2645
+  """
+  This is an anonymized description
+  """
+  field113: Enum3774
+  """
+  This is an anonymized description
+  """
+  field18807: Scalar13
+  """
+  This is an anonymized description
+  """
+  field1114: Enum3774
+  """
+  This is an anonymized description
+  """
+  field18808: Scalar13
+  """
+  This is an anonymized description
+  """
+  field18809: Scalar13
+  """
+  This is an anonymized description
+  """
+  field18810: Boolean
+  """
+  This is an anonymized description
+  """
+  field7122: Boolean
+}
+
+"""
+This is an anonymized description
+"""
+type Type2716 implements Interface798 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field18877: Type2645
+  """
+  This is an anonymized description
+  """
+  field113: Enum3774
+  """
+  This is an anonymized description
+  """
+  field18807: Scalar13
+  """
+  This is an anonymized description
+  """
+  field1114: Enum3774
+  """
+  This is an anonymized description
+  """
+  field18808: Scalar13
+  """
+  This is an anonymized description
+  """
+  field18809: Scalar13
+  """
+  This is an anonymized description
+  """
+  field18810: Boolean
+  """
+  This is an anonymized description
+  """
+  field7122: Boolean
+}
+
+"""
+This is an anonymized description
+"""
+type Type2717 implements Interface798 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field18877: Type2645
+  """
+  This is an anonymized description
+  """
+  field113: Enum3774
+  """
+  This is an anonymized description
+  """
+  field18807: Scalar13
+  """
+  This is an anonymized description
+  """
+  field1114: Enum3774
+  """
+  This is an anonymized description
+  """
+  field18808: Scalar13
+  """
+  This is an anonymized description
+  """
+  field18809: Scalar13
+  """
+  This is an anonymized description
+  """
+  field18810: Boolean
+  """
+  This is an anonymized description
+  """
+  field7122: Boolean
+}
+
+"""
+This is an anonymized description
+"""
+type Type2718 implements Interface798 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field18877: Type2645
+  """
+  This is an anonymized description
+  """
+  field113: Enum3774
+  """
+  This is an anonymized description
+  """
+  field18807: Scalar13
+  """
+  This is an anonymized description
+  """
+  field1114: Enum3774
+  """
+  This is an anonymized description
+  """
+  field18808: Scalar13
+  """
+  This is an anonymized description
+  """
+  field18809: Scalar13
+  """
+  This is an anonymized description
+  """
+  field18810: Boolean
+  """
+  This is an anonymized description
+  """
+  field7122: Boolean
+}
+
+type Type2719 @key(fields: "field2") {
+  field2: Scalar1!
+  field58: String
+  field31292: String
+  field31293: String
+  field31294: String
+  field31295: String
+  field31296: String
+}

@@ -1,0 +1,195 @@
+type Type25 @key(fields: "field2") @extends {
+  field2: Enum517! @external
+}
+
+type Type1889 @directive1(arg31: "anonymous-string") @key(fields: "field2") {
+  field2: ID!
+  field4963: String!
+  field6343: String
+  field3237: String
+  field33685: String
+  field29165: Enum3438
+  field33686: String
+  field33192: Scalar11
+  field33191: Scalar11
+  field20049: Enum4121
+  field10461: Enum4123
+  field312: Scalar15
+  field84: [Type25]
+  field928: Scalar8
+  field3789: [ID]
+  field33687: Float
+  field33688: Float
+  field33689: Float
+  field33690: Float
+  field44: Int
+  field94: Scalar14
+  field96: Scalar14
+  field33691: Type16841
+  field33692: Type16841
+  field33693: [Type16839]
+  field28589: Enum4122
+  field33694: ID
+  field33695: [ID]
+  field33696: ID
+  field7726: Int
+  field33697: Boolean
+  field33698: String
+  field33699: Enum4124
+  field33700: Scalar14 @deprecated(reason: "Anonymized deprecation reason")
+  field33701: Scalar14 @deprecated(reason: "Anonymized deprecation reason")
+  field33702: Scalar14 @deprecated(reason: "Anonymized deprecation reason")
+  field29143: Enum3447
+}
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Query @extends {
+  field33703(arg11: [ID!]!): [Type1889] @directive1(arg31: "anonymous-string")
+  field33704: [Type1889!]! @directive1(arg31: "anonymous-string")
+  field33705: Type16837 @directive1(arg31: "anonymous-string")
+  field33706(arg101: Int = 0): [Type1889!]! @directive1(arg31: "anonymous-string")
+  field33707: [Type16838!]! @directive1(arg31: "anonymous-string")
+  field33708(arg2205: [ID!]!): String @directive1(arg31: "anonymous-string")
+  field33709(arg11: [ID!]!): [Type1889] @directive1(arg31: "anonymous-string")
+}
+
+type Mutation {
+  field33710(arg2206: ID!, arg259: Enum4121): Union940! @directive1(arg31: "anonymous-string")
+  field33711(arg2206: ID!, arg2888: String!): Union940! @directive1(arg31: "anonymous-string")
+  field33712(arg2889: [Input8052!]!): Type16845! @directive1(arg31: "anonymous-string")
+  field33713(arg2890: Input8053): Type16847! @directive1(arg31: "anonymous-string")
+}
+
+input Input8052 {
+  inputField3728: Enum4123!
+  inputField9091: ID!
+  inputField11531: String!
+}
+
+input Input8053 {
+  inputField11532: [ID]
+  inputField11533: Enum4124!
+  inputField11534: String!
+}
+
+type Type16837 @directive1(arg31: "anonymous-string") {
+  field33714: String
+  field20046: [Type1889]
+}
+
+type Type16838 @directive1(arg31: "anonymous-string") {
+  field33715: String
+  field33686: String
+  field33716: [Type1889!]!
+}
+
+type Type16839 {
+  field29132: String!
+  field33717: String
+  field29137: [Type16840]
+}
+
+type Type16840 {
+  field33718: String!
+  field33719: String
+  field33720: Enum4120
+}
+
+enum Enum4120 {
+  VALUE_2000
+  VALUE_11547
+  VALUE_11548
+  VALUE_11549
+  VALUE_4
+  VALUE_1065
+}
+
+enum Enum3438 {
+  VALUE_10109
+  VALUE_10110
+}
+
+enum Enum4121 {
+  VALUE_327
+  VALUE_1910
+  VALUE_750
+  VALUE_11550
+  VALUE_11551
+  VALUE_11552
+  VALUE_11553
+  VALUE_1000
+}
+
+enum Enum4122 {
+  VALUE_1694
+  VALUE_11554
+  VALUE_2320
+  VALUE_11555
+}
+
+enum Enum4123 {
+  VALUE_4518
+  VALUE_4519
+}
+
+enum Enum3447 {
+  VALUE_4256
+  VALUE_1108
+}
+
+enum Enum4124 {
+  VALUE_11556
+  VALUE_11557
+}
+
+type Type16841 {
+  field25498: String
+  field18778: Scalar14
+}
+
+type Type16842 {
+  field2660: [Interface883]
+}
+
+type Type16843 implements Interface883 {
+  field388: String
+  field3325: String
+  field2454: String
+}
+
+type Type16844 implements Interface883 {
+  field388: String
+  field3325: String
+  field2454: String
+}
+
+interface Interface883 {
+  field388: String
+  field3325: String
+  field2454: String
+}
+
+union Union940 = Type1889 | Type16842
+
+type Type16845 {
+  field33721: [Union940!]!
+  field22224: [String]
+}
+
+type Type16846 {
+  field33722: String
+  field33695: [String]
+  field33696: String
+  field427: String
+}
+
+type Type16847 {
+  field33723: [Type16846!]!
+  field22224: [String]
+}

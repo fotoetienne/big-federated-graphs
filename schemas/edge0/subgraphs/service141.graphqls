@@ -1,0 +1,34 @@
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+"""
+This is an anonymized description
+"""
+type Type3931 @directive1(arg31: "anonymous-string") {
+  field4031: ID!
+  field1716: String!
+  field6454: ID!
+  field3074: [Type3932!]!
+}
+
+"""
+This is an anonymized description
+"""
+type Type3932 {
+  field2: ID!
+  field5: String!
+  field253: String!
+  field285: String!
+  field134: Float!
+  field7051: String!
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field7052(
+  arg711: ID!): [Type3931!]! @directive1(arg31: "anonymous-string")
+}

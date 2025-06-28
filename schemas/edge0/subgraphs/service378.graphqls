@@ -1,0 +1,75 @@
+type Query @extends {
+  field19614: Type2333! @deprecated @directive1(arg31: "anonymous-string")
+  field19615(arg1647: String!): [Type2333!]! @deprecated @directive1(arg31: "anonymous-string")
+  field19616: Type2334! @deprecated @directive1(arg31: "anonymous-string")
+  field19617(arg1648: ID!): Type8968! @deprecated @directive1(arg31: "anonymous-string")
+  field19618: Type2332! @directive1(arg31: "anonymous-string")
+  field19619(arg1648: ID!): Type2332! @directive1(arg31: "anonymous-string")
+}
+
+type Type2333 @key(fields: "field4975") {
+  field4975: ID!
+  field76: String!
+  field6227: Boolean!
+  field19620: String
+  field2263: Boolean!
+  field19621: Boolean!
+  field545: [Type8966!]!
+}
+
+type Type8966 {
+  field4998: String!
+  field76: String!
+  field2463: [Type2333!]!
+}
+
+type Type2334 @key(fields: "field4029") {
+  field4029: ID!
+  field76: String!
+  field6227: Boolean!
+  field19620: String
+  field2263: Boolean!
+  field19621: Boolean!
+  field19622: Boolean!
+  field164: String
+  field2463: [Type2334!]
+}
+
+type Type2332 @key(fields: "field4029") {
+  field4029: ID
+  field76: String
+  field6227: Boolean
+  field19620: String
+  field2263: Boolean
+  field19621: Boolean
+  field19622: Boolean
+  field164: String
+  field2463: [Type2332!]
+  field4077: Type8967
+  field19623: [Type2332!]
+  field19624: String
+}
+
+type Type8967 {
+  field19625: String
+  field19626: String
+  field19627: String
+}
+
+type Type8968 {
+  field40: Type2334
+  field19623: [Type2334!]
+  field427: Enum2127
+}
+
+enum Enum2127 {
+  VALUE_141
+  VALUE_7061
+}
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION

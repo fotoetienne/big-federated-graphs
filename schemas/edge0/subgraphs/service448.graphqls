@@ -1,0 +1,47 @@
+type Type10618 {
+  field252: Float!
+  field253: String
+  field254: ID
+  field255: ID!
+  field256: String!
+  field257: String!
+  field258: ID
+  field259: ID!
+  field260: Enum2593!
+  field44: String
+}
+
+type Type10619 {
+  field36: [Type10620!]
+  field37: Type122!
+}
+
+type Type10620 {
+  field41: String
+  field40: Type10618!
+}
+
+type Type122 {
+  field269: String
+  field270: Boolean!
+  field271: Boolean!
+  field272: String
+}
+
+type Query @extends {
+  field23118(arg33: ID!): Type10618
+  field23119(arg1: Input48!): Type10619!
+}
+
+enum Enum2593 {
+  VALUE_199
+  VALUE_151
+  VALUE_158
+  VALUE_152
+  VALUE_149
+}
+
+input Input48 {
+  inputField106: String!
+  inputField107: Boolean! = false
+}

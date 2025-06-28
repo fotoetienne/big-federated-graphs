@@ -1,0 +1,307 @@
+"""
+This is an anonymized description
+"""
+enum Enum2360 {
+  VALUE_3472
+  VALUE_3473
+  VALUE_3474
+  VALUE_3475
+}
+
+enum Enum2361 {
+  VALUE_1547
+  VALUE_1548
+  VALUE_1814
+}
+
+input Input4363 {
+  inputField1332: ID!
+  inputField224: Scalar13
+  inputField225: Scalar13
+  inputField4758: Enum2360
+  inputField7754: Enum2361
+  inputField4792: String
+  inputField7755: String
+  inputField4466: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type9659 {
+  field5843: String
+  field12358: String
+  field21695: String
+  field21696: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type9660 {
+  field5843: String!
+  field12358: String!
+  field21695: String!
+  field21696: String!
+  field13039: String!
+}
+
+"""
+This is an anonymized description
+"""
+type Type9661 {
+  field5843: String!
+  field12358: String!
+  field21695: String!
+  field21696: String!
+  field21697: String!
+}
+
+"""
+This is an anonymized description
+"""
+type Type9662 {
+  field5843: String!
+  field12358: String!
+  field21695: String!
+  field21696: String!
+  field21698: String!
+}
+
+extend type Query {
+  """
+  This is an anonymized description
+  """
+  field21699(
+  arg308: ID!
+  arg61: Scalar13!
+  arg62: Scalar13!
+  arg1797: Enum2360!
+  arg1798: Enum2361): [Type9659]
+  """
+  This is an anonymized description
+  """
+  field21700(
+  arg10: Input4363!): [Type9660]
+  """
+  This is an anonymized description
+  """
+  field21701(
+  arg10: Input4363!): [Type9661]
+  """
+  This is an anonymized description
+  """
+  field21702(
+  arg10: Input4363!): [Type9662]
+}
+
+scalar Scalar1
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field21703(
+  arg16: Input4364!): Union464!
+}
+
+input Input4364 {
+  """
+  This is an anonymized description
+  """
+  inputField5342: ID
+  """
+  This is an anonymized description
+  """
+  inputField7756: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type9663 {
+  """
+  This is an anonymized description
+  """
+  field87: String!
+}
+
+input Input4365 {
+  inputField7757: Scalar14
+  inputField7758: Scalar14
+}
+
+union Union464 = Type9665 | Type9663
+
+"""
+This is an anonymized description
+"""
+type Type9664 {
+  field2: ID!
+  field341: String!
+  field21657: String!
+  field12301: String!
+}
+
+"""
+This is an anonymized description
+"""
+type Type9665 {
+  """
+  This is an anonymized description
+  """
+  field2: String!
+  """
+  This is an anonymized description
+  """
+  field12367: String
+  """
+  This is an anonymized description
+  """
+  field21704: Boolean
+  """
+  This is an anonymized description
+  """
+  field21705(
+  arg308: String!
+  arg721: Input4365
+  arg74: Int
+  arg6: String): [Type9667]
+  """
+  This is an anonymized description
+  """
+  field21706(
+  arg308: String!): Type9666
+  """
+  This is an anonymized description
+  """
+  field90(
+  arg308: String!
+  arg721: Input4365
+  arg74: Int
+  arg6: String): Type9670
+}
+
+"""
+This is an anonymized description
+"""
+type Type9666 {
+  field3261: Type9664
+  """
+  This is an anonymized description
+  """
+  field21707: String
+  """
+  This is an anonymized description
+  """
+  field21708: Scalar14
+  """
+  This is an anonymized description
+  """
+  field21709: String
+  """
+  This is an anonymized description
+  """
+  field21710: Int
+}
+
+"""
+This is an anonymized description
+"""
+type Type9667 {
+  "This is an anonymized description"
+  field2: ID!
+  "This is an anonymized description"
+  field3261: Type9664!
+  "This is an anonymized description"
+  field1210: Scalar14
+  "This is an anonymized description"
+  field2462: Scalar14
+  "This is an anonymized description"
+  field7797: Type9668
+}
+
+type Type9668 {
+  field37: Type9675!
+  field36: [Type9669!]!
+}
+
+type Type9669 {
+  field41: Type9674!
+  field40: Interface403!
+}
+
+type Type9670 {
+  field37: Type9675!
+  field36: [Type9671!]!
+}
+
+type Type9671 {
+  field41: Type9674!
+  field40: Type9673!
+}
+
+"""
+This is an anonymized description
+"""
+interface Interface403 {
+  field2017: Scalar14!
+  """
+  This is an anonymized description
+  """
+  field253: String!
+  """
+  This is an anonymized description
+  """
+  field21711: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type9672 implements Interface403 {
+  field2017: Scalar14!
+  """
+  This is an anonymized description
+  """
+  field253: String!
+  """
+  This is an anonymized description
+  """
+  field21711: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type9673 {
+  field2017: Scalar14!
+  """
+  This is an anonymized description
+  """
+  field253: String!
+  """
+  This is an anonymized description
+  """
+  field21711: String
+}
+
+enum Enum2362 {
+  VALUE_7938
+  VALUE_7939
+  VALUE_7940
+  VALUE_7941
+}
+
+type Type9674 {
+  field2250: Enum2362!
+  field41: String!
+}
+
+type Type9675 {
+  """
+  This is an anonymized description
+  """
+  field269: String
+  field270: Boolean!
+}

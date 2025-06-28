@@ -1,0 +1,206 @@
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field31435(
+  arg1: Input7394!): Type15680! @directive1(arg31: "anonymous-string")
+  """
+  This is an anonymized description
+  """
+  field31436(
+  arg43: ID!): Boolean! @directive1(arg31: "anonymous-string")
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field31437: Type15680 @directive1(arg31: "anonymous-string")
+  field31438: [Type15683!]! @directive1(arg31: "anonymous-string")
+}
+
+input Input7394 {
+  """
+  This is an anonymized description
+  """
+  inputField131: ID
+  inputField67: String!
+  inputField4744: String!
+  inputField10826: [Input7395!]!
+}
+
+input Input7395 {
+  inputField81: ID!
+  inputField10827: [String!]!
+}
+
+type Type15680 {
+  field432: ID!
+  field98: String!
+  field13190: String!
+  field12181: [Type15681!]!
+}
+
+type Type15681 {
+  field163: ID!
+  field31439: [String!]
+}
+
+directive @key(fields: String!) on OBJECT | INTERFACE
+
+directive @extends on OBJECT
+
+directive @external on OBJECT | FIELD_DEFINITION
+
+directive @requires(fields: String!) on FIELD_DEFINITION
+
+directive @provides(fields: String!) on FIELD_DEFINITION
+
+type Type15682 {
+  field5: String @deprecated(reason: "Anonymized deprecation reason")
+  field7549: String
+  field253: String @deprecated(reason: "Anonymized deprecation reason")
+  field965: String @deprecated(reason: "Anonymized deprecation reason")
+}
+
+"""
+This is an anonymized description
+"""
+type Type15683 {
+  field5: String
+  field1491: String
+  field31440: String @deprecated(reason: "Anonymized deprecation reason")
+  field253: String
+  field932: Boolean
+  field2474(arg2685: [String!]): [Type15684]
+}
+
+type Type15684 {
+  field450: String
+  field31441: String
+  field13733: String
+  field134: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type15685 {
+  """
+  This is an anonymized description
+  """
+  field24402: Boolean!
+  """
+  This is an anonymized description
+  """
+  field31442: [Type15686!]
+  """
+  This is an anonymized description
+  """
+  field31443: String
+  """
+  This is an anonymized description
+  """
+  field7039: String
+  """
+  This is an anonymized description
+  """
+  field5093: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type15686 {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field5: String!
+  """
+  This is an anonymized description
+  """
+  field29620: Boolean!
+  """
+  This is an anonymized description
+  """
+  field31444: String!
+}
+
+"""
+This is an anonymized description
+"""
+type Type2405 @key(fields: "field107 field163") @extends {
+  field107: Int! @external
+  field163: String! @external
+  """
+  This is an anonymized description
+  """
+  field31445: Type15685
+  field15915: Type15683
+  field27479: [Type15682!]
+}
+
+"""
+This is an anonymized description
+"""
+type Type2864 @key(fields: "field2") @extends {
+  field2: ID! @external
+  field107: Int @external
+  field163: String @external
+  """
+  This is an anonymized description
+  """
+  field12828: [Type6090!] @override(from: "service17") @requires(fields: "field107 field163")
+}
+
+"""
+This is an anonymized description
+"""
+type Type29 @key(fields: "field98") @extends {
+  field98: ID! @external
+  """
+  This is an anonymized description
+  """
+  field12828(
+  arg12: Int
+  arg32: String): [Type6090!]
+}
+
+enum Enum1373 {
+  VALUE_804
+  VALUE_3629
+  VALUE_863
+  VALUE_5147
+  VALUE_5148
+  VALUE_5149
+  VALUE_261
+}
+
+"""
+This is an anonymized description
+"""
+type Type6090 {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field5: String!
+  """
+  This is an anonymized description
+  """
+  field12829: [Enum1373!]
+}

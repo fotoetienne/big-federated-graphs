@@ -1,0 +1,40 @@
+scalar Scalar4
+
+scalar Scalar1
+
+input Input4735 {
+  inputField8212: ID @experimental
+  inputField8213: Scalar1 @experimental
+  inputField8214: ID @experimental
+  inputField8215: [String!] @experimental
+  inputField8216: [String!] @experimental
+  inputField8217: [Input4736!] @experimental
+}
+
+input Input4736 {
+  inputField8218: String!
+  inputField8219: String!
+  inputField55: Scalar4!
+}
+
+union Union522 = Type10408 | Type10409
+
+type Mutation {
+  """
+  This is an anonymized description
+  """
+  field22767(
+  arg187: Input4735!): Union522 @experimental
+}
+
+type Type10408 {
+  field2432: Type10410 @experimental
+}
+
+type Type10409 {
+  field6262: [String!] @experimental
+}
+
+type Type10410 {
+  field22768: Scalar4! @experimental
+}

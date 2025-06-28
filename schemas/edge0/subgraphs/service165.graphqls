@@ -1,0 +1,132 @@
+directive @directive1(arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field8195(
+  arg1: Input1624!): Type4461 @directive1(arg31: "anonymous-string")
+  """
+  This is an anonymized description
+  """
+  field8196(
+  arg1: Input1622!): Type4457 @directive1(arg31: "anonymous-string")
+  """
+  This is an anonymized description
+  """
+  field8197(
+  arg1: Input1623!): Type4458 @directive1(arg31: "anonymous-string")
+}
+
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field8198(
+  arg1: Input1621!): Type4460 @directive1(arg31: "anonymous-string")
+}
+
+"""
+This is an anonymized description
+"""
+input Input1621 {
+  """
+  This is an anonymized description
+  """
+  inputField2264: Boolean = false
+  """
+  This is an anonymized description
+  """
+  inputField417: [String!]!
+}
+
+input Input1622 {
+  """
+  This is an anonymized description
+  """
+  inputField81: ID!
+  """
+  This is an anonymized description
+  """
+  inputField2996: String
+}
+
+input Input1623 {
+  inputField81: ID!
+}
+
+type Type4457 {
+  field8199: [Type4462!]!
+}
+
+type Type4458 {
+  field8200: Type4459
+}
+
+type Type4459 {
+  field163: String
+  field8201: Scalar14
+}
+
+"""
+This is an anonymized description
+"""
+type Type4460 @directive1(arg31: "anonymous-string") {
+  """
+  This is an anonymized description
+  """
+  field8202: [String!]!
+}
+
+enum Enum903 {
+  VALUE_3800
+  VALUE_3801
+  VALUE_3802
+  VALUE_3803
+  VALUE_3804
+}
+
+enum Enum904 {
+  VALUE_141
+  VALUE_978
+  VALUE_158
+}
+
+enum Enum905 {
+  VALUE_3805
+  VALUE_3806
+  VALUE_3807
+  VALUE_3808
+}
+
+input Input1624 {
+  inputField819: Enum903!
+  inputField2998: String!
+}
+
+type Type4461 {
+  field2202: Enum903!
+  field8203: String!
+  field8204: String
+  field8205: String
+  field382: String
+  field163: String
+  field107: Int
+  field4951: Int
+  field8206: String
+  field1636: String
+  field8207: Enum904
+  field8208: String
+  field8209: Enum905 @deprecated
+  field8210: String @deprecated
+  field8211: Scalar14
+}
+
+type Type4462 {
+  field2: String
+  field4078: String
+  field5: String
+  field8212: Boolean
+}

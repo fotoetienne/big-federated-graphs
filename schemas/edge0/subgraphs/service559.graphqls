@@ -1,0 +1,134 @@
+type Type394 @extends @key(fields: "field2") {
+  field2: ID @external
+}
+
+type Type411 @key(fields: "field1099 field1125") @extends {
+  field1099: ID! @external
+  field1125: Enum543 @external
+}
+
+type Type397 @extends @key(fields: "field1088") {
+  field1088: String @external
+}
+
+type Type409 @key(fields: "field285 field1122 field5 field1123") @extends {
+  field285: Enum548! @external
+  field1122: String! @external
+  field5: String! @external
+  field1123: String @external
+}
+
+type Type13893 {
+  field2: String!
+  field524: Type2900
+}
+
+enum Enum3282 {
+  VALUE_141
+  VALUE_7926
+  VALUE_8817
+}
+
+enum Enum3283 {
+  VALUE_9789
+  VALUE_1182
+}
+
+type Type2900 implements Interface421 @extends @key(fields: "field1099 field285") {
+  field1099: ID! @external
+  field285: Enum547! @external
+  field5: String @override(from: "service2")
+  field253: String @override(from: "service2")
+  field1105: Interface419 @override(from: "service2")
+  field1100: Type394 @override(from: "service2")
+  field1101: Type409 @override(from: "service2")
+  field1102: Type411 @override(from: "service2")
+  field1103: Boolean @override(from: "service2")
+  field1104: Scalar16 @override(from: "service2")
+  field1108: [Type397!] @override(from: "service2")
+  field27891: [Interface752!]!
+}
+
+interface Interface752 {
+  field5: String!
+  field113: Enum3283!
+  field166: Enum3282!
+  field932: Boolean!
+  field8641: String
+  field27892: String
+  field1105: Type13897
+}
+
+type Type13894 implements Interface752 {
+  field5: String!
+  field113: Enum3283!
+  field166: Enum3282!
+  field932: Boolean!
+  field8641: String
+  field27892: String
+  field1105: Type13897
+}
+
+type Type13895 implements Interface752 {
+  field5: String!
+  field113: Enum3283!
+  field166: Enum3282!
+  field932: Boolean!
+  field8641: String
+  field27892: String
+  field1105: Type13897
+}
+
+type Type13896 implements Interface752 {
+  field5: String!
+  field113: Enum3283!
+  field166: Enum3282!
+  field932: Boolean!
+  field8641: String
+  field27892: String
+  field1105: Type13897
+}
+
+type Type13897 implements Interface419 {
+  field94: Scalar14 @external
+  field1109: Scalar14 @external
+  field606: Scalar14 @external
+}
+
+type Type13898 {
+  field1083: Int
+  field1084: Int
+  field1085: Int
+  field1086: Int
+  field37: Type122!
+  field36: [Type13899!]
+}
+
+type Type13899 {
+  field40: Type13893
+}
+
+input Input6325 {
+  inputField320: [String] = []
+  inputField253: [Enum3282] = []
+}
+
+input Input6326 {
+  inputField53: Enum3284
+  inputField26: Enum3285
+}
+
+enum Enum3284 {
+  VALUE_1005
+  VALUE_9790
+  VALUE_9791
+}
+
+enum Enum3285 {
+  VALUE_2
+  VALUE_3
+}
+
+type Query {
+  field27893(arg101: Int = 0, arg74: Int = 0, arg17: Input6325, arg5: Input6326): Type13898
+}

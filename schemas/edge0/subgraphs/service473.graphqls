@@ -1,0 +1,482 @@
+type Type35 @key(fields: "field2 field44") @extends {
+  field2: String! @external
+  field44: String @external
+}
+
+type Type34 @key(fields: "field108 { field2 field44 }") @extends {
+  field108: Type35 @external
+  field3793: Type11253 @directive1(arg31: "anonymous-string")
+}
+
+input Input5043 {
+  inputField7: ID!
+  inputField8: String!
+}
+
+type Type2071 @key(fields: "field450 { field285 field81 }") @directive1(arg31: "anonymous-string") {
+  field450: Type2072!
+  field5: String!
+  field84: [Type2073]
+}
+
+type Type2073 @key(fields: "field81") @directive1(arg31: "anonymous-string") {
+  field81: String!
+  field5: String!
+}
+
+input Input5044 {
+  inputField108: String!
+  inputField309: String!
+}
+
+type Type2072 @key(fields: "field285 field81") {
+  field285: String!
+  field81: String!
+}
+
+type Type32 @key(fields: "field107") @extends {
+  field107: Int! @external
+}
+
+input Input5045 {
+  inputField8565: ID!
+  inputField3178: ID!
+}
+
+input Input5046 {
+  inputField7: ID!
+  inputField8565: String!
+  inputField3178: ID!
+}
+
+type Type11232 @directive1(arg31: "anonymous-string") {
+  field8812: [Type11234!]!
+}
+
+type Type11233 @directive1(arg31: "anonymous-string") {
+  field4969: Type11234!
+}
+
+type Type11234 @directive1(arg31: "anonymous-string") {
+  field4968: ID!
+  field14007: String!
+  field8830: String!
+  field8819: String
+  field8820: String
+  field14011: String
+  field14010: String
+  field14012: String
+  field24292: [Type11235!]!
+}
+
+type Type11235 {
+  field2: ID!
+  field14039: String
+  field14045: String
+  field14048: String
+  field4693: String
+  field76: String
+  field2492: [String!]!
+  field14010: String
+  field14011: String
+  field24293: [String!]!
+  field988: [String!]!
+  field24294: [Type11236!]!
+}
+
+type Type11236 {
+  field2: ID!
+  field675: String
+  field796: String
+  field5825: String
+  field10584: String
+  field11065: String
+}
+
+type Mutation @extends {
+  field24295(arg1985: Input5060): Type11254 @directive1(arg31: "anonymous-string")
+  field24296(arg1986: Input5061): Type11254 @directive1(arg31: "anonymous-string")
+  field24297(arg1987: Input5062): Type11254 @directive1(arg31: "anonymous-string")
+  field24298(arg1988: Input5047): Interface454 @directive1(arg31: "anonymous-string")
+  field24299(arg1988: Input5048): Interface454 @directive1(arg31: "anonymous-string")
+  field24300(arg1988: Input5049): Interface454 @directive1(arg31: "anonymous-string")
+  field24301(arg1988: Input5045): Interface454 @directive1(arg31: "anonymous-string")
+  field24302(arg1989: Input5046): Interface454 @directive1(arg31: "anonymous-string")
+  field24303(arg1990: ID!): Type11255 @directive1(arg31: "anonymous-string")
+  field24304(arg1989: Input5057): Interface454 @directive1(arg31: "anonymous-string")
+  field24305(arg1989: Input5058): Interface454 @directive1(arg31: "anonymous-string")
+  field24306(arg1989: Input5059): Interface454 @directive1(arg31: "anonymous-string")
+}
+
+type Type162 @key(fields: "field2") @extends {
+  field2: ID! @external
+  field24307: String! @directive1(arg31: "anonymous-string")
+}
+
+type Query @extends {
+  field24308: [Type2071!] @directive1(arg31: "anonymous-string")
+  field24309(arg41: [Input5044!]): [Type2071!] @directive1(arg31: "anonymous-string")
+  field24310: [Type2073!] @directive1(arg31: "anonymous-string")
+  field24311(arg1991: [String!]): [Type2073!] @directive1(arg31: "anonymous-string")
+  field24312(arg1992: String!): Type11254! @directive1(arg31: "anonymous-string")
+  field24313(arg1993: [String!]): [Type11254!] @directive1(arg31: "anonymous-string")
+  field24314(arg296: String!): String! @directive1(arg31: "anonymous-string")
+  field24315(arg4: ID!): Interface454! @directive1(arg31: "anonymous-string")
+  field24316(arg11: [ID!]): [Interface454!] @directive1(arg31: "anonymous-string")
+  field24317: Type11244 @directive1(arg31: "anonymous-string")
+  field24318(arg37: Input5043!): Type34! @directive1(arg31: "anonymous-string")
+  field24319(arg35: [Input5043!]!): [Type34!] @directive1(arg31: "anonymous-string")
+  field24320(arg1994: String!, arg12: Int!): [Type11234!]! @directive1(arg31: "anonymous-string") @deprecated
+  "This is an anonymized description"
+  field24321(
+  arg12: Int!): Type11232! @directive1(arg31: "anonymous-string")
+  field24322(arg879: ID!): Type11233! @directive1(arg31: "anonymous-string")
+}
+
+input Input5047 {
+  inputField8565: ID!
+  inputField82: ID!
+  inputField394: Input5054
+  inputField2178: Input5050
+  inputField8566: [Input5051!]!
+  inputField600: [Input5052!]!
+  inputField8567: Input5053
+}
+
+input Input5048 {
+  inputField8565: ID!
+  inputField8568: ID!
+  inputField394: Input5055
+  inputField2178: Input5050
+  inputField8566: [Input5051!]!
+  inputField600: [Input5052!]!
+  inputField8567: Input5053
+}
+
+input Input5049 {
+  inputField8565: ID!
+  inputField394: Input5056
+  inputField2178: Input5050
+  inputField8566: [Input5051!]!
+  inputField600: [Input5052!]!
+  inputField8567: Input5053
+}
+
+input Input5050 {
+  inputField224: Scalar14!
+  inputField225: Scalar14!
+}
+
+input Input5051 {
+  inputField148: Input5044
+  inputField142: Boolean!
+}
+
+input Input5052 {
+  inputField309: String!
+  inputField142: Boolean!
+}
+
+input Input5053 {
+  inputField321: [ID!]!
+}
+
+input Input5054 {
+  inputField8569: Enum2726
+  inputField8570: String
+  inputField8571: [Enum2727!]!
+  inputField8572: String
+}
+
+input Input5055 {
+  inputField8573: Enum2724!
+  inputField8569: Enum2726
+  """
+  This is an anonymized description
+  """
+  inputField8574: Enum2725
+  inputField8575: Boolean!
+  inputField8570: String
+  inputField8571: [Enum2727!]!
+  inputField8572: String
+}
+
+input Input5056 {
+  inputField8576: String
+  inputField8577: String
+}
+
+type Type11237 {
+  field1587: Type11254
+  field2: ID!
+  field285: String
+  field113: String!
+  field24323: Type11238
+  field24324: [Type11239!]!
+  field24325: [Type11240!]!
+  field24326: [Type11242!]!
+  field24327: [Type11241!]!
+}
+
+type Type11238 {
+  field2: ID!
+  field675: Scalar14!
+  field676: Scalar14!
+}
+
+type Type11239 {
+  field2: ID!
+  field11065: Type2071
+  field443: Boolean
+}
+
+type Type11240 {
+  field2: ID!
+  field10: Type2073
+  field443: Boolean
+}
+
+type Type11241 {
+  field2: ID!
+  field5: String!
+  field134: String!
+}
+
+type Type11242 {
+  field2: ID!
+  field24328: ID!
+  field2307: Type11243!
+}
+
+type Type11243 {
+  field2: ID!
+  field5: String!
+  field24329: Boolean!
+  field24330: Boolean!
+  field2463: [Type11243!]!
+}
+
+type Type11244 @directive1(arg31: "anonymous-string") {
+  field24331: Type11243!
+  field24332: [Type11243!]!
+  field24333: [Type11243!]!
+}
+
+enum Enum2724 {
+  VALUE_8797
+  VALUE_8798
+  VALUE_8799
+  VALUE_8800
+}
+
+enum Enum2725 {
+  VALUE_8801
+  VALUE_8802
+}
+
+enum Enum2726 {
+  VALUE_8803
+  VALUE_8804
+}
+
+enum Enum2727 {
+  VALUE_8805
+  VALUE_8806
+  VALUE_8807
+}
+
+input Input5057 {
+  inputField7: ID!
+  inputField8565: String!
+  inputField82: ID!
+  inputField394: Input5054
+  inputField2178: Input5050
+  inputField8566: [Input5051!]!
+  inputField600: [Input5052!]!
+  inputField8567: Input5053
+}
+
+input Input5058 {
+  inputField7: ID!
+  inputField8565: String!
+  inputField8568: ID!
+  inputField394: Input5055
+  inputField2178: Input5050
+  inputField8566: [Input5051!]!
+  inputField600: [Input5052!]!
+  inputField8567: Input5053
+}
+
+input Input5059 {
+  inputField7: ID!
+  inputField8565: String!
+  inputField394: Input5056
+  inputField2178: Input5050
+  inputField8566: [Input5051!]!
+  inputField600: [Input5052!]!
+  inputField8567: Input5053
+}
+
+interface Interface454 {
+  field2: ID!
+  field24334: Type11254!
+  field113: String!
+  field5825: Type11238
+  field21612: [Type11239!]!
+  field84: [Type11240!]!
+  field10584: [Type11242!]!
+}
+
+type Type11245 implements Interface454 @directive1(arg31: "anonymous-string") {
+  field2: ID!
+  field24334: Type11254!
+  field113: String!
+  field5825: Type11238
+  field21612: [Type11239!]!
+  field84: [Type11240!]!
+  field10584: [Type11242!]!
+  field600: Type11249!
+}
+
+type Type11246 implements Interface454 @directive1(arg31: "anonymous-string") {
+  field2: ID!
+  field24334: Type11254!
+  field113: String!
+  field5825: Type11238
+  field21612: [Type11239!]!
+  field84: [Type11240!]!
+  field10584: [Type11242!]!
+  field600: Type11250!
+}
+
+type Type11247 implements Interface454 @directive1(arg31: "anonymous-string") {
+  field2: ID!
+  field24334: Type11254!
+  field113: String!
+  field5825: Type11238
+  field21612: [Type11239!]!
+  field84: [Type11240!]!
+  field10584: [Type11242!]!
+  field600: Type11251
+}
+
+type Type11248 implements Interface454 @directive1(arg31: "anonymous-string") {
+  field2: ID!
+  field24334: Type11254!
+  field113: String!
+  field4968: ID!
+  field5825: Type11238
+  field21612: [Type11239!]!
+  field84: [Type11240!]!
+  field10584: [Type11242!]!
+  field600: Type11252
+}
+
+type Type11249 {
+  field2: ID
+  field3532: Type162!
+  field24335: Enum2726
+  field24336: String
+  field24337: [Enum2727]
+  field24338: String
+}
+
+type Type11250 {
+  field2: ID!
+  field14048: Type83!
+  field24339: Enum2724
+  field24335: Enum2726
+  field24340: Enum2725 @deprecated
+  field24341: Boolean!
+  field24336: String
+  field24337: [Enum2727!]!
+  field24338: String
+}
+
+type Type11251 {
+  field24342: String
+  field24343: String
+}
+
+type Type11252 {
+  field24342: String
+}
+
+type Type11253 {
+  field3325: Enum2728!
+  field12931: [Type11254!]!
+}
+
+enum Enum2728 {
+  VALUE_141
+  VALUE_4087
+  VALUE_4786
+  VALUE_1353
+}
+
+input Input5060 {
+  inputField546: [Input5043!]!
+  inputField171: ID
+  inputField327: ID
+  inputField8578: String
+  inputField8579: Boolean!
+}
+
+input Input5061 {
+  inputField7: String!
+  inputField171: ID
+  inputField327: ID
+  inputField8578: String
+  inputField8579: Boolean!
+}
+
+input Input5062 {
+  inputField8565: String!
+}
+
+type Type11254 @directive1(arg31: "anonymous-string") {
+  field2: String!
+  field58: Enum2730!
+  field260: Enum2729
+  field120: Type32
+  field959: ID
+  field24344: String
+  field24345: Boolean!
+  field14040: [Interface454!]!
+  field585: [Type34!]!
+}
+
+enum Enum2729 {
+  VALUE_4087
+  VALUE_4786
+  VALUE_1353
+}
+
+enum Enum2730 {
+  VALUE_158
+  VALUE_2870
+}
+
+type Type11255 @directive1(arg31: "anonymous-string") {
+  field244: Boolean!
+}
+
+type Type11256 {
+  field24346: Type34!
+  field12931: [Type11254]!
+}
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Type29 @key(fields: "field98") @extends {
+  field98: ID! @external
+}
+
+type Type83 @key(fields: "field2") @extends {
+  field2: ID! @external
+}

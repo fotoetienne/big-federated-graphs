@@ -1,0 +1,188 @@
+type Type6091 {
+  field270: Boolean!
+  field271: Boolean!
+  field272: String
+  field269: String
+  field7272: Int
+  field7273: Int
+}
+
+type Type2283 @key(fields: "field5") @extends {
+  field5: ID! @external
+  """
+  This is an anonymized description
+  """
+  field12834(
+  arg7: Int
+  arg6: String
+  arg777: Enum1376): Type6094
+}
+
+type Type1795 @key(fields: "field5") @extends {
+  field5: ID! @external
+}
+
+scalar Scalar4
+
+"""
+This is an anonymized description
+"""
+type Type6092 {
+  "This is an anonymized description"
+  field4784: ID!
+  "This is an anonymized description"
+  field2: ID!
+  "This is an anonymized description"
+  field5: String
+  "This is an anonymized description"
+  field253: String
+  "This is an anonymized description"
+  field12835(
+  arg7: Int
+  arg6: String
+  arg777: Enum1376): Type6094
+}
+
+"""
+This is an anonymized description
+"""
+type Type2862 @key(fields: "field4784 field2") {
+  "This is an anonymized description"
+  field4784: ID!
+  "This is an anonymized description"
+  field2: ID!
+  "This is an anonymized description"
+  field260: Enum1376
+  "This is an anonymized description"
+  field94: Scalar14
+  "This is an anonymized description"
+  field3143: Type6092
+  "This is an anonymized description"
+  field12836: Type1795
+  "This is an anonymized description"
+  field7035(
+  arg7: Int
+  arg6: String
+  arg777: Enum1377): Type6096
+}
+
+type Type6093 {
+  "This is an anonymized description"
+  field41: String!
+  "This is an anonymized description"
+  field40: Type2862
+}
+
+type Type6094 {
+  "This is an anonymized description"
+  field36: [Type6093]
+  "This is an anonymized description"
+  field37: Type6091!
+}
+
+type Type2863 @key(fields: "field5 field4784") {
+  "This is an anonymized description"
+  field5: ID
+  "This is an anonymized description"
+  field4784: ID
+  "This is an anonymized description"
+  field4794: Type2862
+}
+
+"""
+This is an anonymized description
+"""
+type Type6095 {
+  "This is an anonymized description"
+  field4784: ID!
+  "This is an anonymized description"
+  field2: ID!
+  "This is an anonymized description"
+  field94: Scalar14
+  "This is an anonymized description"
+  field253: String
+  "This is an anonymized description"
+  field3345: String
+  "This is an anonymized description"
+  field12837: Scalar4
+  "This is an anonymized description"
+  field12838: Enum1377
+  "This is an anonymized description"
+  field12839: Type6098
+  "This is an anonymized description"
+  field12840: Type2862
+}
+
+type Type6096 {
+  "This is an anonymized description"
+  field36: [Type6097]
+  "This is an anonymized description"
+  field37: Type6091!
+}
+
+type Type6097 {
+  "This is an anonymized description"
+  field41: String!
+  "This is an anonymized description"
+  field40: Type6095
+}
+
+type Type6098 {
+  "This is an anonymized description"
+  field3: Scalar14
+  "This is an anonymized description"
+  field253: String
+  "This is an anonymized description"
+  field12841: String
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum1376 {
+  VALUE_1001
+  VALUE_766
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum1377 {
+  VALUE_1000
+  VALUE_5146
+  VALUE_152
+  VALUE_149
+  VALUE_327
+  VALUE_1220
+  VALUE_1030
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field12842: [Type6092!]
+  """
+  This is an anonymized description
+  """
+  field12843(
+  arg496: ID!): Type6092
+  """
+  This is an anonymized description
+  """
+  field12844(
+  arg1129: ID!
+  arg7: Int
+  arg6: ID
+  arg777: Enum1376): Type6094!
+  """
+  This is an anonymized description
+  """
+  field12845(
+  arg496: ID!): Type2862
+  """
+  This is an anonymized description
+  """
+  field12846(
+  arg496: ID!): Type6095
+}

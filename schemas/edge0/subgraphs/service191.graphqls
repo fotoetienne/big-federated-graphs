@@ -1,0 +1,51 @@
+type Type4648 {
+  field252: Float!
+  field253: String
+  field254: ID
+  field255: ID!
+  field256: String!
+  field257: String!
+  field258: ID
+  field259: ID!
+  field260: Enum955!
+  field44: String
+}
+
+type Type4649 {
+  field263: String!
+  field260: String!
+}
+
+type Mutation @extends {
+  field8720(arg1: Input1705!): Type4649!
+}
+
+type Query @extends {
+  field8721(arg33: ID!): Type4648
+  field8722(arg1: Input1707!): [Type4648]
+}
+
+enum Enum955 {
+  VALUE_199
+  VALUE_151
+  VALUE_158
+  VALUE_152
+  VALUE_149
+}
+
+input Input1705 {
+  inputField103: String
+  inputField104: String
+  inputField333: Input1706!
+  inputField105: String!
+}
+
+input Input1706 {
+  inputField3145: Int!
+  inputField3146: Int!
+}
+
+input Input1707 {
+  inputField106: String!
+  inputField107: Boolean! = false
+}

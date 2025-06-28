@@ -1,0 +1,116 @@
+input Input1678 {
+  inputField231: ID!
+  inputField444: [Input1679!]!
+}
+
+input Input1679 {
+  inputField2152: String
+  inputField2712: String
+  inputField3086: Enum934
+}
+
+input Input1680 {
+  inputField931: [ID!]!
+}
+
+type Type4592 @directive1(arg31: "anonymous-string") {
+  field799: ID!
+}
+
+type Type4593 {
+  field3957: String
+  field3958: String
+  field8485: Enum934
+}
+
+enum Enum934 {
+  VALUE_851
+  VALUE_1827
+  VALUE_3911
+}
+
+type Type4594 @directive1(arg31: "anonymous-string") {
+  field799: ID!
+  field2474: [Type4593!]!
+}
+
+type Type4595 @directive1(arg31: "anonymous-string") {
+  field8486: [Type4594!]!
+}
+
+input Input1681 {
+  inputField207: Input1683!
+  """
+  This is an anonymized description
+  """
+  inputField2902: String!
+  inputField52: [Input1682!]!
+}
+
+input Input1682 {
+  inputField364: Enum935!
+  inputField2152: String!
+  """
+  This is an anonymized description
+  """
+  inputField2712: String!
+}
+
+type Type4596 @directive1(arg31: "anonymous-string") {
+  field37: Type4597!
+  field8486: [Type4594!]!
+}
+
+input Input1683 {
+  inputField211: Int!
+  inputField28: String
+}
+
+type Type4597 @directive1(arg31: "anonymous-string") {
+  field7892: Int!
+  field7991: String
+  field271: Boolean
+  field270: Boolean
+}
+
+enum Enum935 {
+  VALUE_3912
+  VALUE_3913
+  """
+  This is an anonymized description
+  """
+  VALUE_3914
+  VALUE_3915
+}
+
+"""
+This is an anonymized description
+"""
+type Type960 @key(fields: "field2") @extends {
+  field2: ID! @external
+  field2474: [Type4593!]! @directive1(arg31: "anonymous-string")
+}
+
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field8487(
+  arg60: Input1678!): Type4592! @directive1(arg31: "anonymous-string")
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field8488(
+  arg60: Input1680!): Type4595! @directive1(arg31: "anonymous-string")
+  field8489(arg60: Input1681!): Type4596! @directive1(arg31: "anonymous-string")
+}
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION

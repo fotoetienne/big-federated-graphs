@@ -1,0 +1,59 @@
+directive @directive1(arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Query {
+  field2605: [Type937] @directive1(arg31: "anonymous-string")
+  field2606(arg273: [String!]!): [Type937] @directive1(arg31: "anonymous-string")
+  field2607: [Type937] @directive1(arg31: "anonymous-string")
+  field2608: [Type940!] @directive1(arg31: "anonymous-string")
+  field2609: [Type941!]
+}
+
+type Mutation @directive1(arg31: "anonymous-string") {
+  field2610(arg274: ID!, arg275: ID!): Type937
+}
+
+type Type937 @directive1(arg31: "anonymous-string") {
+  field2: ID @directive2
+  field5: String!
+  field2611: String @directive1(arg31: "anonymous-string")
+  field2612: Type938
+  field2613: Type939
+  field2614: Boolean
+  field2615: Type940
+}
+
+type Type938 {
+  field163: ID
+}
+
+type Type939 {
+  field2: ID
+}
+
+type Type940 @directive1(arg31: "anonymous-string") {
+  field2: ID
+  field5: String
+  field2616: [Type937!]
+}
+
+type Type941 @directive1(arg31: "anonymous-string") {
+  field2: ID @directive2
+  field5: String!
+  field2612: Type938
+  field2617: [Type942]
+}
+
+type Type942 @directive1(arg31: "anonymous-string") {
+  field2: ID! @directive2
+  field5: String
+  field2618: Type943
+  field2619: Boolean
+}
+
+type Type943 {
+  field2620: String
+  field280: String
+  field17: String
+}

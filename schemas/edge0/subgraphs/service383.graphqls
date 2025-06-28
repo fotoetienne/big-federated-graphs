@@ -1,0 +1,82 @@
+"""
+This is an anonymized description
+"""
+type Mutation @extends {
+  field19994(arg1689: ID!, arg1690: ID!, arg1691: Boolean!): Enum2165
+}
+
+enum Enum2165 {
+  VALUE_1099
+  VALUE_1100
+  VALUE_1984
+  VALUE_6581
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum2166 {
+  VALUE_6582
+  VALUE_6583
+  VALUE_6584
+  VALUE_6585
+  VALUE_6586
+}
+
+"""
+This is an anonymized description
+"""
+type Type9101 {
+  field2: ID!
+  field5: String!
+  field13414: String!
+  field253: String!
+  field16862: Enum2166
+  field19995: Boolean
+  field19996: Boolean
+}
+
+"""
+This is an anonymized description
+"""
+type Type9102 {
+  field16864: Type9101
+  field480: Boolean
+}
+
+type Type412 @key(fields: "field1099 field1125") @extends {
+  field1099: ID @external
+  field1125: Enum543 @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type8330 {
+  field205: Enum2440!
+  field16869: Boolean
+  field16870: Boolean
+  field10570: Boolean
+  field16871: Boolean
+  field16872: Boolean
+  field16873: Boolean
+  field16874: Boolean
+  field16875: Boolean
+  field16876: Boolean
+  field16877: Boolean @deprecated(reason: "Anonymized deprecation reason")
+  field14517: Boolean
+  field16878: Boolean @deprecated(reason: "Anonymized deprecation reason")
+  field1557: Scalar14
+}
+
+"""
+This is an anonymized description
+"""
+type Type2063 @key(fields: "field4934 { field1099 field1125 }") @extends {
+  field4934: Type412 @external
+  field16879: Type8330 @external
+  """
+  This is an anonymized description
+  """
+  field19997: [Type9102] @requires(fields: "field16879 { field205 }")
+}

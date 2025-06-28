@@ -1,0 +1,84 @@
+"""
+This is an anonymized description
+"""
+enum Enum384 {
+  VALUE_1749
+  VALUE_1750
+  VALUE_874
+  VALUE_1751
+  VALUE_1752
+  VALUE_875
+  VALUE_1753
+  VALUE_876
+  VALUE_877
+  VALUE_878
+}
+
+enum Enum582 {
+  VALUE_2509
+  VALUE_2510
+  VALUE_2511
+  VALUE_2512
+  VALUE_2513
+  VALUE_1234
+}
+
+enum Enum583 {
+  VALUE_2514
+  VALUE_2515
+  VALUE_2516
+}
+
+"""
+This is an anonymized description
+"""
+type Type32 @key(fields: "field107") @extends {
+  field107: Int! @external
+  field5397: [Type3219]
+  field5398: Type3217
+}
+
+type Query @extends {
+  field5397(arg12: Int!): [Type3219]
+  field5398(arg12: Int!): Type3217
+  field5399(arg12: Int!, arg47: Enum384!): Type3217
+}
+
+type Mutation @extends {
+  field5400(arg12: Int!): Type3218
+  field5401(arg12: Int!, arg47: Enum384!): Type3125
+}
+
+type Type3217 {
+  field5402: [Enum384]
+  field5403: [Type3219]
+}
+
+type Type3218 {
+  field5403: [Type3219]
+}
+
+type Type3125 @key(fields: "field107") {
+  field107: Int!
+  field120: Type32
+  field5402: [Enum384]
+  field5403: [Type3219]
+}
+
+type Type3219 {
+  """
+  This is an anonymized description
+  """
+  field109: Enum582
+  """
+  This is an anonymized description
+  """
+  field5404: [Type3220]
+}
+
+type Type3220 {
+  field4450: String
+  field410: String
+  field5405: Enum583
+  field3386: [String]
+}

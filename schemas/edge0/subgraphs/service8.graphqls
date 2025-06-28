@@ -1,0 +1,109 @@
+type Query @extends {
+  field14330(arg1: Input2858): Type6677
+  field14331(arg1: Input2858): Type6678
+  field14328(arg1: Input2859): Type6677
+  field14329(arg1: Input2859): Type6678
+}
+
+scalar Scalar1
+
+input Input2858 {
+  """
+  This is an anonymized description
+  """
+  inputField378: String!
+  """
+  This is an anonymized description
+  """
+  inputField224: Scalar11!
+  """
+  This is an anonymized description
+  """
+  inputField225: Scalar11!
+  """
+  This is an anonymized description
+  """
+  inputField5153: ID
+  """
+  This is an anonymized description
+  """
+  inputField807: Enum517
+  """
+  This is an anonymized description
+  """
+  inputField5170: Boolean = false @experimental
+}
+
+input Input2859 {
+  """
+  This is an anonymized description
+  """
+  inputField378: String!
+  """
+  This is an anonymized description
+  """
+  inputField5153: ID!
+  """
+  This is an anonymized description
+  """
+  inputField224: Scalar11!
+  """
+  This is an anonymized description
+  """
+  inputField225: Scalar11!
+  """
+  This is an anonymized description
+  """
+  inputField807: Enum517
+  """
+  This is an anonymized description
+  """
+  inputField5170: Boolean = false @experimental
+  """
+  This is an anonymized description
+  """
+  inputField5154: ID @experimental
+  """
+  This is an anonymized description
+  """
+  inputField5169: ID @experimental
+}
+
+interface Interface276 {
+  field3002: Int!
+  field134: Scalar9!
+}
+
+type Type6673 implements Interface276 {
+  field3002: Int!
+  field3003: Int
+  field675: Scalar11
+  field134: Scalar9!
+}
+
+type Type6674 implements Interface276 {
+  field3002: Int!
+  field134: Scalar9!
+  field3003: Int!
+}
+
+type Type6675 implements Interface276 {
+  field3002: Int!
+  field134: Scalar9!
+  field5381: Int!
+}
+
+type Type6676 implements Interface276 {
+  field3002: Int!
+  field134: Scalar9!
+}
+
+type Type6677 {
+  field11058: [Type6676]!
+  field11059: [Type6675]!
+  field11060: [Type6674]!
+}
+
+type Type6678 {
+  field14295: [Type6673]!
+}

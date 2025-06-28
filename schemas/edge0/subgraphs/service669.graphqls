@@ -1,0 +1,157 @@
+scalar Scalar1
+
+scalar Int
+
+scalar String
+
+scalar Boolean
+
+directive @extends on OBJECT | INTERFACE
+
+directive @key(fields: String) on OBJECT | INTERFACE
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Query @extends {
+  field31552(arg2565: [Scalar1!]!): [Union891] @directive1(arg31: "anonymous-string")
+  field31553(arg847: [Input7444]!, arg1783: Int!, arg2703: Boolean!): Type15799 @directive1(arg31: "anonymous-string")
+  field31554(arg847: [Input7444]!, arg1783: Int!): Type15800 @directive1(arg31: "anonymous-string")
+  field31555(arg12: Scalar1!): [Type2151] @directive1(arg31: "anonymous-string")
+  field31556(arg196: [Scalar1!]!): [Type2152] @directive1(arg31: "anonymous-string")
+  field31557(arg2565: [Scalar1!]!): [Type2152] @directive1(arg31: "anonymous-string")
+  field31558(arg2704: [Scalar1!]!): [Type2152] @directive1(arg31: "anonymous-string")
+  field31559(arg2562: Scalar1!, arg2705: String): [Type15802] @directive1(arg31: "anonymous-string")
+}
+
+type Mutation @extends {
+  field31560(arg2706: [Input7446]): Type15803! @directive1(arg31: "anonymous-string")
+  field31561(arg2562: Scalar1!, arg2707: [Input7448!]!): Scalar1 @directive1(arg31: "anonymous-string")
+  field31562(arg2565: [Scalar1]): Type15804 @directive1(arg31: "anonymous-string")
+  field31563(arg12: Scalar1!, arg2708: Scalar1, arg34: Scalar1): Type15803 @directive1(arg31: "anonymous-string")
+  field31564(arg2709: Input7445!): Type2151 @directive1(arg31: "anonymous-string")
+}
+
+input Input7444 {
+  inputField364: Enum3810
+  inputField10867: String
+}
+
+input Input7445 {
+  inputField713: Scalar1
+  inputField57: Input7447!
+  inputField2690: [Input7447]
+  inputField752: String
+  inputField10868: String
+}
+
+input Input7446 {
+  inputField713: Scalar1
+  inputField10869: Scalar1
+  inputField57: Input7447!
+  inputField2690: [Input7447]
+  inputField171: Scalar1
+  inputField122: Scalar1
+  inputField752: String
+  inputField10868: String
+}
+
+enum Enum3810 {
+  VALUE_1014
+  VALUE_11026
+  VALUE_333
+  VALUE_301
+}
+
+union Union891 = Type2151 | Type2152
+
+type Type15799 @directive1(arg31: "anonymous-string") {
+  field31565: Int
+  field27087: [Union891]
+}
+
+type Type15800 @directive1(arg31: "anonymous-string") {
+  field31565: Int
+  field27087: [Type2151]
+}
+
+type Type2151 @key(fields: "field1651") @directive1(arg31: "anonymous-string") {
+  field1651: Scalar1!
+  field5: Type15801!
+  field2921: [Type15801]
+  field5436: String
+  field31566: String
+  field2922: [Type15802]
+  field31567: [Type2153]
+}
+
+type Type2152 @key(fields: "field1651") @directive1(arg31: "anonymous-string") {
+  field1651: Scalar1!
+  field31568: Scalar1!
+  field5: Type15801!
+  field2704: Scalar1
+  field107: Scalar1!
+  field2921: [Type15801]
+  field2922(arg2710: String): [Type15802]
+  field5436: String
+  field31566: String
+}
+
+type Type2153 @key(fields: "field1651") @directive1(arg31: "anonymous-string") {
+  field1651: Scalar1!
+  field2704: Scalar1
+  field107: Scalar1!
+  field9474: String
+  field5: Type15801
+  field5436: String
+}
+
+input Input7447 {
+  inputField2268: String
+  inputField2269: String
+  inputField10141: String
+}
+
+type Type15801 @directive1(arg31: "anonymous-string") {
+  field3128: String
+  field3129: String
+  field29602: String
+}
+
+input Input7448 {
+  inputField57: Input7447
+  inputField10870: String!
+}
+
+type Type15802 @directive1(arg31: "anonymous-string") {
+  field5: Type15801
+  field31569: String!
+}
+
+type Type15803 @directive1(arg31: "anonymous-string") {
+  field31570: [Type2152]
+  field31571: [Type15806]
+}
+
+type Type15804 @directive1(arg31: "anonymous-string") {
+  field31570: [Scalar1]
+  field31571: [Type15805]
+}
+
+type Type15805 @directive1(arg31: "anonymous-string") {
+  field1651: Scalar1
+  field427: String
+}
+
+type Type15806 @directive1(arg31: "anonymous-string") {
+  field31568: Scalar1
+  field5: Type15801
+  field2921: [Type15801]
+  field107: Scalar1
+  field2704: Scalar1
+  field427: String
+}

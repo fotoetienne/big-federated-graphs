@@ -1,0 +1,55 @@
+type Type1939 @key(fields: "field2") {
+  field2: ID!
+  field5: String!
+}
+
+type Type1940 @key(fields: "field2") {
+  field2: ID!
+  field5: String!
+  field27643: String!
+  field27644: Type1939!
+}
+
+input Input6261 {
+  inputField9585: String
+}
+
+type Query @extends {
+  field27645: [Type1939!]!
+  field27646(arg1: Input6261!): [Type1940!]!
+}
+
+input Input6262 {
+  inputField57: String!
+  inputField9585: String!
+  inputField9586: String!
+}
+
+input Input6263 {
+  inputField1061: [Input6262!]!
+}
+
+input Input6264 {
+  inputField7: ID!
+  inputField57: String!
+  inputField9585: String!
+  inputField9586: String!
+}
+
+type Type13710 {
+  field27647: [Type1940!]!
+}
+
+type Type13711 {
+  field427: String!
+}
+
+union Union698 = Type1940 | Type13711
+
+union Union699 = Type13710 | Type13711
+
+type Mutation @extends {
+  field27648(arg1: Input6262!): Union698!
+  field27649(arg1: Input6263!): Union699!
+  field27650(arg1: Input6264!): Union698!
+}

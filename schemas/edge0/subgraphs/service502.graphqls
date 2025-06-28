@@ -1,0 +1,193 @@
+scalar Scalar4
+
+scalar Scalar1
+
+type Type12821 {
+  field2: ID
+  field5: String
+  field25884: String
+  field7672: String
+  field58: String
+  field94: Scalar14
+  field25885: Scalar14
+  field25886: Boolean
+  field25887: Scalar14
+  field25888: Scalar14
+  field25889: Scalar14
+  field25890: Scalar14
+  field25891: Scalar14
+  field25892: Scalar1
+  field25893: String
+  field25894: Boolean
+  field2248: String
+  field22381: String
+  field24734: String
+  field25895: String
+  field25896: String
+  field25897: String
+  field9974: Int
+  field25898: Boolean
+  field25793: String
+  field5957: String
+  field9228: String
+  field13607: String
+  field15121: String
+  field25899: String
+  field6321: String
+  field2556: [Type12822]
+  field25900: Type12828
+}
+
+enum Enum2915 {
+  VALUE_1389
+  VALUE_8191
+  VALUE_2873
+  VALUE_2871
+}
+
+type Type12822 {
+  field13414: String
+  field12083: String
+  field279: String
+  field1491: String
+  field12513: Enum2915
+}
+
+enum Enum2916 {
+  VALUE_261
+  VALUE_9134
+  VALUE_9135
+}
+
+type Type12823 {
+  field25901: Enum2916
+  field1340: Scalar14
+}
+
+type Type12824 {
+  field2248: String
+  field25896: String
+  field25897: String
+  field9974: Int
+  field10493: String
+  field25902: Boolean
+  field25903: Boolean
+  field25904: Boolean
+}
+
+type Type12825 {
+  field2: ID
+  field94: Scalar14
+  field25905: String
+  field25906: String
+  field1464: String
+  field264: String
+}
+
+type Type12826 {
+  field2: ID
+  field94: Scalar14
+  field2427: Scalar14
+  field489: Scalar14
+  field58: String
+}
+
+type Type12827 {
+  field2: ID
+  field58: String
+  field13929: String
+}
+
+type Type12828 {
+  field2: ID
+  field94: Scalar14
+  field96: Scalar14
+  field4080: ID
+  field25907: String
+  field3332: Int
+  field4900: String
+  field25908: String
+  field2429: Type12826
+  field25909: Type12827
+}
+
+type Type12829 {
+  field2: ID
+  field94: Scalar14
+  field25906: String
+  field264: String
+}
+
+type Type12830 {
+  field2: ID
+  field2248: String
+  field260: String
+  field25907: String
+  field4080: String
+  field94: Scalar14
+  field1340: Scalar14
+  field13029: String
+}
+
+input Input5718 {
+  inputField8901: String
+  inputField1880: String
+  inputField7365: Boolean
+  inputField2960: Scalar11
+  inputField2961: Scalar11
+}
+
+type Query {
+  field25910(arg16: String): [Type12821]
+  field25911: Type12823
+  field25912(arg2124: String, arg301: String): Type12824
+  field25913(arg1193: ID): Type12828
+  field25914(arg979: ID): [Type12828]
+  field25915(arg10: Input5718): [Type12830]
+}
+
+type Subscription {
+  field25916(arg1193: ID, arg2125: Int): Type12825
+  field25917(arg2126: ID, arg2125: Int): Type12829
+}
+
+input Input5719 {
+  inputField57: String
+  inputField55: String
+}
+
+input Input5720 {
+  inputField57: String
+  inputField7984: String
+  inputField7891: String
+  inputField8902: String
+  inputField8903: String
+  inputField3558: Int
+  inputField1880: String
+  inputField8904: String
+  inputField1306: [Input5719]
+  inputField8905: String
+  inputField8906: Boolean
+}
+
+input Input5721 {
+  inputField8902: String
+  inputField8903: String
+  inputField3558: Int
+  inputField1306: [Input5719]
+  inputField8906: Boolean
+}
+
+type Mutation {
+  field25918(arg4: ID, arg263: Input5721): Type12828
+  field25919(arg4: ID): Type12828
+  field25920(arg60: Input5720): Type12828
+  field25921(arg4: ID): Type12828
+  field25922(arg4: ID): Type12821
+  field25923(arg4: ID, arg1034: Boolean): Boolean
+  field25924(arg4: ID): Type12828
+  field25925(arg4: ID, arg228: String): Boolean
+  field25926(arg4: ID, arg2127: Int): Boolean
+  field25927(arg4: ID, arg2128: Scalar14): Boolean
+  field25928(arg58: String, arg2129: String, arg1483: Scalar4): Boolean
+}

@@ -1,0 +1,189 @@
+type Type8970 {
+  field3: Scalar13!
+  field396: Enum517!
+  field312: Scalar15
+  field397: Boolean
+  field398: Boolean
+  field399: Boolean
+}
+
+type Type8971 {
+  field3: Scalar13!
+  field397: Boolean
+  field398: Boolean
+  field399: Boolean
+}
+
+union Union435 = Type8970 | Type8971
+
+type Type8972 {
+  field3: Scalar13!
+  field396: Enum517!
+  field312: Scalar15
+}
+
+type Type8973 {
+  field3: Scalar13!
+}
+
+type Type8974 {
+  field400: Boolean
+}
+
+union Union436 = Type8972 | Type8973 | Type8974
+
+type Type8975 {
+  field19635: Type8978!
+  field19636: Union435!
+}
+
+type Type8976 {
+  field19635: Type8978!
+  field19636: Union435!
+  field19637: Type8978!
+  field19638: Union436!
+}
+
+type Type8977 {
+  field308: Type8978
+  field307: Type8978
+}
+
+type Type8978 {
+  field3: Scalar13!
+  field10: Enum517
+  field312: Scalar15!
+}
+
+"""
+This is an anonymized description
+"""
+type Type8979 {
+  """
+  This is an anonymized description
+  """
+  field19639: Type8977
+  """
+  This is an anonymized description
+  """
+  field19640: Type8975
+  """
+  This is an anonymized description
+  """
+  field100: Type8978
+  """
+  This is an anonymized description
+  """
+  field19641: Type8978
+  """
+  This is an anonymized description
+  """
+  field19642: Type8978
+  """
+  This is an anonymized description
+  """
+  field19643: Type8978
+  """
+  This is an anonymized description
+  """
+  field19644: Type8978
+  """
+  This is an anonymized description
+  """
+  field19645: Type8978
+  """
+  This is an anonymized description
+  """
+  field4370: Type8976
+  """
+  This is an anonymized description
+  """
+  field19646: Type8981
+  """
+  This is an anonymized description
+  """
+  field19647: Type8980
+}
+
+type Type8980 {
+  field19648: Type8978
+  field19649: Type8978
+  field19650: Type8978
+  field19651: Type8978
+  field19652: Type8978
+  field19653: Type8978
+}
+
+type Type8981 {
+  field19648: Type8978
+  field19649: Type8978
+  field19650: Type8978
+}
+
+interface Interface388 implements Interface26 {
+  field2: ID! @external
+  """
+  This is an anonymized description
+  """
+  field19654: Type8979
+}
+
+interface Interface389 implements Interface26 @key(fields: "field2") {
+  field2: ID! @external
+  field19655: Enum2128
+}
+
+enum Enum2128 {
+  VALUE_7062
+  VALUE_1108
+  VALUE_7063
+  VALUE_7064
+  VALUE_141
+}
+
+directive @directive1(arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+interface Interface26 @extends {
+  field2: ID! @external
+}
+
+type Type139 implements Interface388 & Interface390 & Interface389 & Interface26 @extends @key(fields: "field2") @directive1(arg31: "anonymous-string") {
+  field2: ID! @external
+  field19654: Type8979
+  field19656: [ID!]
+  field19655: Enum2128
+}
+
+type Type143 implements Interface388 & Interface390 & Interface389 & Interface26 @extends @key(fields: "field2") @directive1(arg31: "anonymous-string") {
+  field2: ID! @external
+  field19654: Type8979
+  field19656: [ID!]
+  field19655: Enum2128
+}
+
+type Type140 implements Interface388 & Interface390 & Interface26 @extends @key(fields: "field2") @directive1(arg31: "anonymous-string") {
+  field2: ID! @external
+  field19654: Type8979
+  field19656: [ID!]
+}
+
+type Type141 implements Interface388 & Interface390 & Interface26 @extends @key(fields: "field2") @directive1(arg31: "anonymous-string") {
+  field2: ID! @external
+  field19654: Type8979
+  field19656: [ID!]
+}
+
+type Type142 implements Interface390 & Interface26 @extends @key(fields: "field2") @directive1(arg31: "anonymous-string") {
+  field2: ID! @external
+  field19656: [ID!]
+}
+
+interface Interface390 implements Interface26 {
+  field2: ID! @external
+  """
+  This is an anonymized description
+  """
+  field19656: [ID!]
+}

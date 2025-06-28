@@ -1,0 +1,117 @@
+"""
+This is an anonymized description
+"""
+interface Interface5 {
+  "This is an anonymized description"
+  field250: String
+}
+
+"This is an anonymized description"
+type Type13518 implements Interface5 {
+  "This is an anonymized description"
+  field250: String
+}
+
+"This is an anonymized description"
+type Type13519 implements Interface5 {
+  "This is an anonymized description"
+  field250: String
+}
+
+"This is an anonymized description"
+type Type13520 implements Interface5 {
+  "This is an anonymized description"
+  field250: String
+}
+
+type Type13521 implements Interface5 {
+  "This is an anonymized description"
+  field250: String
+}
+
+type Type13522 implements Interface5 {
+  "This is an anonymized description"
+  field250: String
+}
+
+type Type13523 implements Interface5 {
+  "This is an anonymized description"
+  field250: String
+}
+
+union Union695 = Type13522 | Type13518 | Type13519 | Type13520 | Type13521 | Type13523
+
+input Input6121 {
+  inputField81: String!
+  inputField9366: Int
+}
+
+type Type13524 {
+  field58: Type13529
+}
+
+type Type13525 {
+  field244: Type13524
+  field245: [Union695!]
+}
+
+type Mutation {
+  field27208(arg1: Input6121!): Type13525!
+}
+
+type Query @extends {
+  field27209(arg2283: Int!): [Type13528!]!
+  field27210: [Type13526!]!
+}
+
+type Type13526 {
+  field6681: String!
+  field27211: Int!
+  field1481: [Type13528!]!
+}
+
+type Type13527 {
+  field6681: String!
+  field1481: [Type13528!]!
+}
+
+type Type13528 {
+  field2: Int!
+  field5: String!
+  field253: String!
+  field16058: Int!
+  field27212: Boolean!
+}
+
+type Type13529 {
+  field2: Int!
+  field5: String!
+  field27213: String!
+  field16058: Int!
+  field7266: Boolean!
+  field253: String!
+  field6681: String!
+  field27214: Enum3168!
+  field27215: Scalar13
+}
+
+enum Enum3168 {
+  """
+  This is an anonymized description
+  """
+  VALUE_3118
+  """
+  This is an anonymized description
+  """
+  VALUE_9604
+  """
+  This is an anonymized description
+  """
+  VALUE_9605
+}
+
+type Type90 @key(fields: "field163") @extends {
+  field163: String! @external
+  field27216: Type13527
+  field27217: Type13529
+}

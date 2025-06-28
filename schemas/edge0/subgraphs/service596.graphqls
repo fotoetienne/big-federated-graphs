@@ -1,0 +1,164 @@
+input Input6788 {
+  inputField50: String!
+  inputField8: String
+}
+
+type Type35 @key(fields: "field2 field44") @extends {
+  field2: String! @external
+  field44: String @external
+}
+
+type Type34 @key(fields: "field108 { field2 field44 }") @extends {
+  field108: Type35 @external
+}
+
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field29842(
+  arg60: Input6789!): Type14704! @directive1(arg31: "anonymous-string")
+  """
+  This is an anonymized description
+  """
+  field29843(
+  arg60: Input6790!): Type14704! @directive1(arg31: "anonymous-string")
+  """
+  This is an anonymized description
+  """
+  field29844(
+  arg71: ID!): Type14704! @directive1(arg31: "anonymous-string")
+  """
+  This is an anonymized description
+  """
+  field29845(
+  arg71: ID!): ID @directive1(arg31: "anonymous-string")
+}
+
+type Query @extends {
+  field29846(arg71: String!): Type14704! @directive1(arg31: "anonymous-string")
+}
+
+type Type14704 @directive1(arg31: "anonymous-string") {
+  field587: Type14705
+}
+
+type Type14705 @directive1(arg31: "anonymous-string") {
+  field674: ID!
+  field5: String
+  field675: Scalar14!
+  field676: Scalar14!
+  field678: Boolean!
+  field677: String
+  field965: String
+  field492: Type29
+  field29847: String
+  field94: Scalar14!
+  field56: String!
+  field96: Scalar14!
+  field57: String!
+  field29848: [Type35!]!
+  field29849: [Type35!]!
+  field260: Type14707
+  field29850: Type14706
+}
+
+input Input6789 {
+  """
+  This is an anonymized description
+  """
+  inputField7327: ID
+  """
+  This is an anonymized description
+  """
+  inputField57: String
+  """
+  This is an anonymized description
+  """
+  inputField200: [Input6788!] @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  inputField231: ID
+  """
+  This is an anonymized description
+  """
+  inputField224: Scalar14!
+  """
+  This is an anonymized description
+  """
+  inputField225: Scalar14!
+  """
+  This is an anonymized description
+  """
+  inputField434: String
+  """
+  This is an anonymized description
+  """
+  inputField4413: ID
+  """
+  This is an anonymized description
+  """
+  inputField10226: String
+  """
+  This is an anonymized description
+  """
+  inputField7325: Boolean! = false
+  """
+  This is an anonymized description
+  """
+  inputField227: String
+  """
+  This is an anonymized description
+  """
+  inputField234: Boolean! = false
+  """
+  This is an anonymized description
+  """
+  inputField7923: Boolean! = false
+}
+
+input Input6790 {
+  """
+  This is an anonymized description
+  """
+  inputField7327: ID!
+  """
+  This is an anonymized description
+  """
+  inputField2264: Boolean! = false
+}
+
+type Type14706 @directive1(arg31: "anonymous-string") {
+  field1559: ID!
+  field260: String
+  field94: Scalar14!
+  field96: Scalar14!
+}
+
+type Type14707 @directive1(arg31: "anonymous-string") {
+  field8261: [Type14708!]!
+  field483: Int!
+}
+
+type Type14708 {
+  field285: Enum3573!
+  field1280: Int!
+}
+
+enum Enum3573 {
+  VALUE_149
+  VALUE_151
+  VALUE_1606
+}
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Type29 @key(fields: "field98") @extends {
+  field98: ID! @external
+}

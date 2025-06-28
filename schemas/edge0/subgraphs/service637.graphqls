@@ -1,0 +1,90 @@
+scalar Scalar1
+
+type Type15321 {
+  field30860: [Type15322]!
+}
+
+type Type15322 {
+  field16921: Type15323
+  field30861: Type15324
+}
+
+type Type15323 {
+  field1153: String!
+  field1154: Scalar1
+  field30862: String
+  field9808: String
+  field30863: Type15325
+}
+
+type Type15324 {
+  field1559: String!
+  field23073: String
+  field58: String
+  field2462: String
+  field264: String
+  field11290: String
+}
+
+type Type15325 {
+  field107: Scalar1!
+  field285: String
+  field4409: String
+  field9474: String
+  field290: String
+}
+
+type Type15326 {
+  field30864: [Type15327]!
+}
+
+type Type15327 {
+  field30865: Type15328
+  field30866: Type15328
+  field30867: [String]
+}
+
+type Type15328 {
+  field107: Scalar1!
+  field1154: Scalar1
+  field341: String
+  field30868: String
+  field30869: [String]
+}
+
+type Type15329 {
+  field30870: [Type15330]!
+}
+
+type Type15330 {
+  field12794: String
+  field1559: String
+}
+
+input Input7099 {
+  inputField335: [Scalar1!]!
+}
+
+input Input7100 {
+  inputField335: [Scalar1!]!
+}
+
+input Input7101 {
+  inputField335: [Scalar1!]!
+}
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Query {
+  field30871(arg1: Input7099!): Type15321 @directive1(arg31: "anonymous-string")
+  field30872(arg1: Input7100!): Type15326 @directive1(arg31: "anonymous-string")
+}
+
+type Mutation {
+  field30873(arg1: Input7101!): Type15329 @directive1(arg31: "anonymous-string")
+}

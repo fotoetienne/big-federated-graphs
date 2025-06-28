@@ -1,0 +1,166 @@
+type Query @extends {
+  field12489(arg496: ID!): Type2226 @external
+  field12490(arg1097: String!): Type2252
+  field12491(arg4: ID!): Type2251
+  field12492(arg7: Int, arg6: String, arg9: Int, arg8: String): Type5965
+  field12493(arg7: Int, arg16: String!, arg18: Input2397, arg1098: String): [Type5968] @experimental
+  field12494: [Type5976!]
+  field12495(arg4: ID!): Type5976
+}
+
+"This is an anonymized description"
+type Type2250 @key(fields: "field4784") {
+  "This is an anonymized description"
+  field4784: ID!
+  "This is an anonymized description"
+  field4794: Type2251
+}
+
+type Type2251 @key(fields: "field2") {
+  field2: ID!
+  field341: String!
+  field388: String!
+  field4880: Type2252
+  field94: Scalar14!
+  field96: Scalar14!
+  field12496: Type5964!
+}
+
+type Type5964 {
+  field12497: Scalar16!
+  field12498: String!
+}
+
+type Type5965 {
+  field38: Int!
+  field37: Type5966
+  field4073: [Type2251!]!
+  field36: [Type5967!]!
+}
+
+type Type5966 {
+  field270: Boolean!
+  field271: Boolean!
+  field272: String
+  field269: String
+}
+
+type Type5967 {
+  field40: Type2251!
+  field41: String!
+}
+
+enum Enum1333 {
+  VALUE_2908
+  VALUE_5012
+}
+
+enum Enum1334 {
+  VALUE_2
+  VALUE_3
+}
+
+input Input2397 {
+  inputField26: Enum1334!
+  inputField53: Enum1333!
+}
+
+type Type5968 {
+  field2: String!
+  field388: String!
+  field439: String!
+  field1109: Scalar14!
+  field94: Scalar14!
+  field12499: String!
+}
+
+type Type2252 @key(fields: "field2") {
+  field2: ID!
+  field1490: String!
+  field5: String!
+  field559: String!
+  field1088: String!
+  field701: String
+  field12492(arg7: Int, arg6: String, arg9: Int, arg8: String, arg18: Input2397): Type5965
+  field12491(arg970: String!): Type2251
+}
+
+type Type2226 @key(fields: "field4784") @extends {
+  field4784: ID! @external
+  field12493(arg7: Int, arg16: String!, arg18: Input2397, arg1098: String): [Type5968] @experimental
+}
+
+type Type5969 {
+  field5: String!
+  field134: String!
+}
+
+type Type5970 {
+  field3196: Int!
+  field7298: Int!
+  field12500: Int!
+  field12501: Int!
+  field9989: Int!
+  field12502: Int!
+  field12503: [Type5969]
+  field12504: String
+}
+
+enum Enum1335 {
+  VALUE_5013
+  VALUE_5014
+  VALUE_5015
+  VALUE_5016
+  VALUE_5017
+  VALUE_5018
+  VALUE_5019
+  VALUE_5020
+}
+
+enum Enum1336 {
+  VALUE_5021
+  VALUE_5022
+  VALUE_5023
+}
+
+type Type5971 {
+  field260: Enum1336!
+  field279: String!
+  field9082: String
+}
+
+type Type5972 {
+  field12505: Type5971!
+  field12506: Type5971
+  field10198: Type5971!
+}
+
+type Type5973 {
+  field12507: Scalar14!
+  field12508: Type5972!
+}
+
+type Type5974 {
+  field3209: String!
+  field3210: String!
+}
+
+type Type5975 {
+  field12509: Scalar14!
+  field12510: Scalar14!
+  field12511: Int!
+}
+
+type Type5976 {
+  field2: String!
+  field5015: String!
+  field12512: String!
+  field2475: Type5970!
+  field94: Scalar14!
+  field260: Enum1335!
+  field12513: Type5973!
+  field12514: Int!
+  field12515: Scalar14!
+  field12516: Type5974!
+  field12517: Type5975!
+}

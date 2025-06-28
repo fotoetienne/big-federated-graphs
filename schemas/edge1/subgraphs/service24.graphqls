@@ -1,0 +1,60 @@
+scalar Scalar14
+
+enum Enum61 {
+  VALUE_493
+  VALUE_494
+  VALUE_495
+}
+
+input Input58 {
+  inputField60: String!
+  inputField61: Input59
+}
+
+input Input59 {
+  inputField62: String
+  inputField63: String
+  inputField64: String
+  inputField65: Enum61
+}
+
+type Type359 {
+  field45: String
+}
+
+type Type360 {
+  field409: String
+}
+
+type Type361 {
+  field410: String
+  field411: String
+}
+
+union Union22 = Type359 | Type360 | Type361
+
+type Type362 {
+  field412: String
+  field413: String
+  field414: Union22
+}
+
+type Type363 {
+  field415: String
+  field416: Int
+  field412: String
+  field417: Scalar14
+  field418: Scalar14
+  field419: Type362
+}
+
+input Input60 {
+  inputField66: Int!
+  inputField60: String!
+  inputField44: String!
+  inputField67: Input58!
+}
+
+type Query @extends {
+  field420(arg61: Input60!): Type363
+}

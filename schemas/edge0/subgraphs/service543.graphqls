@@ -1,0 +1,136 @@
+"""
+This is an anonymized description
+"""
+type Type11 @key(fields: "field2") @extends {
+  field2: Scalar1! @external
+  field27177: Type13495
+}
+
+"""
+This is an anonymized description
+"""
+type Type2650 @key(fields: "field2") @extends {
+  field2: Scalar1 @external
+  """
+  This is an anonymized description
+  """
+  field59: String @external
+  """
+  This is an anonymized description
+  """
+  field18861: Type2482 @external
+  """
+  This is an anonymized description
+  """
+  field27178: Boolean @requires(fields: "field59 field18861 { field2 }")
+}
+
+"""
+This is an anonymized description
+"""
+type Type2482 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type4 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+type Mutation {
+  field27179(arg2282: ID!): Type13491
+}
+
+type Type13491 {
+  """
+  This is an anonymized description
+  """
+  field244: Boolean
+  """
+  This is an anonymized description
+  """
+  field87: String
+  """
+  This is an anonymized description
+  """
+  field27180: [Scalar1!]
+  field27181: [String!]
+}
+
+type Query {
+  """
+  This is an anonymized description
+  """
+  field27182(
+  arg961: String!): Type2693
+  """
+  This is an anonymized description
+  """
+  field27183(
+  arg1298: Scalar1!): Type2693
+  """
+  This is an anonymized description
+  """
+  field27184(
+  arg1298: Scalar1!): Type13492
+  """
+  This is an anonymized description
+  """
+  field27185(
+  arg961: String!): Type13492
+  """
+  This is an anonymized description
+  """
+  field27186(
+  arg961: String!): Type13493
+}
+
+scalar Scalar1
+
+"""
+This is an anonymized description
+"""
+type Type2693 @key(fields: "field2") {
+  field2: Scalar1!
+  field13787: String
+  field5: String
+  field253: String
+  field166: Type13494
+}
+
+type Type13492 {
+  field2: Scalar1!
+  field9376: String!
+  field27187: Scalar1
+  field166: Type13494
+}
+
+"""
+This is an anonymized description
+"""
+type Type13493 {
+  field9376: String!
+  field5116: Type2482
+  field2365: Type4
+}
+
+type Type13494 {
+  field2: Scalar1!
+  field5: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type13495 {
+  """
+  This is an anonymized description
+  """
+  field27188: Type2693
+  """
+  This is an anonymized description
+  """
+  field27189: Type13493
+}

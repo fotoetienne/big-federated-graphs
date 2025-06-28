@@ -1,0 +1,611 @@
+"""
+This is an anonymized description
+"""
+type Type4 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type5 @key(fields: "field2") @extends {
+  field2: Scalar1! @external
+  """
+  This is an anonymized description
+  """
+  field18: Type21
+}
+
+"""
+This is an anonymized description
+"""
+type Type6 @key(fields: "field2") @extends {
+  field2: Int! @external
+  """
+  This is an anonymized description
+  """
+  field18: Type21
+}
+
+"""
+This is an anonymized description
+"""
+type Type7 @key(fields: "field2") @extends {
+  field2: Int! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type8 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type9 @key(fields: "field2") @extends {
+  field2: Int! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type10 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type11 @key(fields: "field2") @extends {
+  field2: Scalar1! @external
+  """
+  This is an anonymized description
+  """
+  field18: Type21
+}
+
+"""
+This is an anonymized description
+"""
+type Type12 @key(fields: "field2") @extends {
+  field2: ID! @external
+  """
+  This is an anonymized description
+  """
+  field18: Type21
+}
+
+"""
+This is an anonymized description
+"""
+type Type13 @key(fields: "field2") @extends {
+  field2: Scalar1 @external
+}
+
+type Mutation @extends {
+  field19(arg2: Input2!): Type17!
+  field20(arg2: Input3!): Type17!
+  field21(arg2: Input4!): String!
+  field22(arg3: Input5!): [Type17!]
+  field23(arg1: Input7!): Scalar1!
+  """
+  This is an anonymized description
+  """
+  field24(
+  arg1: Input8!): Type21!
+  """
+  This is an anonymized description
+  """
+  field25(
+  arg4: ID!
+  arg1: Input9!): Type21!
+  """
+  This is an anonymized description
+  """
+  field26(
+  arg4: ID!): Type1805
+  """
+  This is an anonymized description
+  """
+  field27(
+  arg1: Input12!): Type21!
+  """
+  This is an anonymized description
+  """
+  field28(
+  arg1: Input13!): Type21!
+}
+
+input Input2 {
+  inputField2: Int!
+  inputField3: Int!
+  inputField4: Scalar11!
+  inputField5: Scalar11!
+  inputField6: Int
+}
+
+input Input3 {
+  inputField7: String!
+  inputField4: Scalar11!
+  inputField5: Scalar11!
+  inputField6: Int
+}
+
+input Input4 {
+  inputField7: String!
+  inputField8: Scalar1!
+}
+
+input Input5 {
+  inputField9: [Input6!]
+}
+
+input Input6 {
+  inputField7: String
+  inputField8: Scalar1
+  inputField10: Boolean = false
+  inputField2: Int
+  inputField3: Int
+  inputField4: Scalar11
+  inputField5: Scalar11
+  inputField6: Int
+}
+
+input Input7 {
+  inputField11: Scalar1!
+  inputField12: String!
+}
+
+"""
+This is an anonymized description
+"""
+input Input8 {
+  """
+  This is an anonymized description
+  """
+  inputField13: Scalar1!
+  """
+  This is an anonymized description
+  """
+  inputField14: Input11!
+  """
+  This is an anonymized description
+  """
+  inputField15: Input10
+}
+
+"""
+This is an anonymized description
+"""
+input Input9 {
+  """
+  This is an anonymized description
+  """
+  inputField13: Scalar1
+  """
+  This is an anonymized description
+  """
+  inputField14: Input11
+  """
+  This is an anonymized description
+  """
+  inputField15: Input10
+}
+
+"""
+This is an anonymized description
+"""
+input Input10 {
+  """
+  This is an anonymized description
+  """
+  inputField16: String
+  """
+  This is an anonymized description
+  """
+  inputField17: Scalar1
+  """
+  This is an anonymized description
+  """
+  inputField18: ID
+}
+
+"""
+This is an anonymized description
+"""
+input Input11 {
+  """
+  This is an anonymized description
+  """
+  inputField19: Scalar1
+  """
+  This is an anonymized description
+  """
+  inputField20: Int
+  """
+  This is an anonymized description
+  """
+  inputField21: Int
+  """
+  This is an anonymized description
+  """
+  inputField22: Int
+}
+
+input Input12 {
+  inputField23: Scalar1!
+  inputField24: String!
+}
+
+input Input13 {
+  inputField23: Scalar1!
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field29(
+  arg5: Input14): [Type16!]
+  """
+  This is an anonymized description
+  """
+  field30(
+  arg1: Input17!): Type16
+  field31(arg4: String!): Type17
+  field32(arg6: String = null, arg7: Int = 0, arg8: String, arg9: Int = 0, arg5: Input15, arg10: String = "default"): Type14
+  field33(arg1: Input16!): [Type20!]
+  """
+  This is an anonymized description
+  """
+  field34(
+  arg11: [ID!] = []): [Type21!]
+  """
+  This is an anonymized description
+  """
+  field35(
+  arg4: ID!): Type21
+}
+
+enum Enum1 {
+  VALUE_1
+}
+
+input Input14 {
+  inputField25: Enum1!
+  inputField26: Enum2!
+}
+
+enum Enum2 {
+  VALUE_2
+  VALUE_3
+}
+
+type Type14 {
+  field36: [Type15!]
+  field37: Type122!
+  field38: Scalar1
+  field39: Int
+}
+
+type Type15 {
+  field40: Type17!
+  field41: String!
+}
+
+enum Enum3 {
+  VALUE_4
+  VALUE_5
+}
+
+enum Enum4 {
+  VALUE_6
+}
+
+input Input15 {
+  inputField25: Enum4!
+  inputField26: Enum2!
+}
+
+input Input16 {
+  inputField27: Input17!
+  inputField28: Scalar11!
+  inputField29: Scalar11!
+}
+
+input Input17 {
+  """
+  This is an anonymized description
+  """
+  inputField3: ID!
+}
+
+scalar Scalar1
+
+scalar Scalar2
+
+type Type16 @key(fields: "field2") {
+  field2: String!
+  """
+  This is an anonymized description
+  """
+  field42: Type4
+  """
+  This is an anonymized description
+  """
+  field43: [Type23!]
+}
+
+interface Interface2 @key(fields: "field2") {
+  field2: String!
+  field44: Scalar1
+  field45: Scalar13
+  field46: Scalar13
+  field47: Type16
+}
+
+type Type17 @key(fields: "field2") {
+  field2: String!
+  field48: Interface2
+}
+
+type Type18 implements Interface2 @key(fields: "field2") {
+  field2: String!
+  field44: Scalar1
+  field45: Scalar13
+  field46: Scalar13
+  field47: Type16
+  field49: Scalar11
+  field50: Scalar11
+}
+
+type Type19 implements Interface2 @key(fields: "field2") {
+  field2: String!
+  field44: Scalar1
+  field45: Scalar13
+  field46: Scalar13
+  field47: Type16
+  field51: Scalar11
+  field52: Int
+}
+
+type Type20 @key(fields: "field2") {
+  field2: String!
+  field47: Type16
+  field51: Scalar11
+  field53: Scalar11
+  field54: Int
+  field55: [Interface2!]
+}
+
+"""
+This is an anonymized description
+"""
+type Type21 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field44: Scalar1
+  """
+  This is an anonymized description
+  """
+  field56: String
+  """
+  This is an anonymized description
+  """
+  field57: String
+  """
+  This is an anonymized description
+  """
+  field45: Scalar14
+  """
+  This is an anonymized description
+  """
+  field46: Scalar14
+  """
+  This is an anonymized description
+  """
+  field58: Enum5
+  """
+  This is an anonymized description
+  """
+  field59: String
+  """
+  This is an anonymized description
+  """
+  field60: Type13
+  """
+  This is an anonymized description
+  """
+  field61: Type11 @deprecated
+  """
+  This is an anonymized description
+  """
+  field62: Type12
+  """
+  This is an anonymized description
+  """
+  field63: Type6
+  """
+  This is an anonymized description
+  """
+  field64: Type7
+  """
+  This is an anonymized description
+  """
+  field65: Type8
+  """
+  This is an anonymized description
+  """
+  field66: Type9 @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field67: Type10
+  """
+  This is an anonymized description
+  """
+  field68: Type5
+  """
+  This is an anonymized description
+  """
+  field69: Type22
+  """
+  This is an anonymized description
+  """
+  field70: Boolean @override(from: "service1")
+  """
+  This is an anonymized description
+  """
+  field71: Boolean @override(from: "service1")
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum5 {
+  """
+  This is an anonymized description
+  """
+  VALUE_7
+  """
+  This is an anonymized description
+  """
+  VALUE_8
+  """
+  This is an anonymized description
+  """
+  VALUE_9
+  """
+  This is an anonymized description
+  """
+  VALUE_10
+  """
+  This is an anonymized description
+  """
+  VALUE_11
+}
+
+"""
+This is an anonymized description
+"""
+type Type22 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID
+  """
+  This is an anonymized description
+  """
+  field44: Scalar1
+  """
+  This is an anonymized description
+  """
+  field56: String
+  """
+  This is an anonymized description
+  """
+  field57: String
+  """
+  This is an anonymized description
+  """
+  field45: Scalar14
+  """
+  This is an anonymized description
+  """
+  field46: Scalar14
+  """
+  This is an anonymized description
+  """
+  field72: Type23
+  """
+  This is an anonymized description
+  """
+  field73: Type21
+  """
+  This is an anonymized description
+  """
+  field74: Int
+  """
+  This is an anonymized description
+  """
+  field75: Int
+  """
+  This is an anonymized description
+  """
+  field76: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type23 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID
+  """
+  This is an anonymized description
+  """
+  field44: Scalar1
+  """
+  This is an anonymized description
+  """
+  field56: String
+  """
+  This is an anonymized description
+  """
+  field57: String
+  """
+  This is an anonymized description
+  """
+  field45: Scalar14
+  """
+  This is an anonymized description
+  """
+  field46: Scalar14
+  """
+  This is an anonymized description
+  """
+  field47: Type16
+  """
+  This is an anonymized description
+  """
+  field77: Int
+  """
+  This is an anonymized description
+  """
+  field78: Enum6
+  """
+  This is an anonymized description
+  """
+  field75: Int
+  """
+  This is an anonymized description
+  """
+  field79: Int
+  """
+  This is an anonymized description
+  """
+  field80: [Type22!]
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum6 {
+  """
+  This is an anonymized description
+  """
+  VALUE_2
+  """
+  This is an anonymized description
+  """
+  VALUE_12
+}

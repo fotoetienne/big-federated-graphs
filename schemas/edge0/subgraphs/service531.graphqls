@@ -1,0 +1,100 @@
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+scalar Scalar1
+
+"""
+This is an anonymized description
+"""
+type Type1501 @key(fields: "field3802") @directive1(arg31: "anonymous-string") {
+  field26632: String
+  field56: String
+  field26633: Enum3071
+  field1556: Scalar1
+  field3565: Boolean
+  field26634: Boolean
+  field1557: Scalar1
+  field26635: Enum3070
+  field3802: Scalar1!
+  field3566: String
+  field107: Scalar1
+  field1747: String
+  field2202: String
+  field3567: String
+  field26636: String
+  field26637: Enum3072
+  field3390: String
+  field26638: String
+  field1949: String
+  field285: String
+  field57: String
+  field13161: String
+}
+
+type Type32 @extends @key(fields: "field107") @directive1(arg31: "anonymous-string") {
+  field107: Int! @external
+  "This is an anonymized description"
+  field26639: [Type13223!]
+  field20502(arg244: Int, arg245: Int, arg10: Input5922): [Type1501] @override(from: "service4")
+}
+
+input Input5922 {
+  inputField9163: Boolean @experimental
+}
+
+type Type13223 {
+  field3564: String!
+  field6615: String
+}
+
+enum Enum3070 {
+  VALUE_9422
+  VALUE_9423
+  VALUE_9424
+  VALUE_9425
+  VALUE_9426
+}
+
+enum Enum3071 {
+  VALUE_9427
+  VALUE_750
+}
+
+enum Enum3072 {
+  VALUE_149
+  VALUE_160
+  VALUE_955
+}
+
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field26640(
+  arg2210: Input5923!): Type1501 @directive1(arg31: "anonymous-string")
+}
+
+input Input5923 {
+  inputField9164: ID!
+  inputField9165: String
+  inputField9166: Enum3070
+  inputField9167: Enum3071
+}
+
+type Query @extends {
+  "This is an anonymized description"
+  field26641(
+  arg196: [ID!]): [Type13224!] @directive1(arg31: "anonymous-string")
+  "This is an anonymized description"
+  field26642(
+  arg196: [ID!]): [Type32!] @directive1(arg31: "anonymous-string")
+}
+
+type Type13224 {
+  field107: Scalar1!
+  field20502: [Type1501!]
+}

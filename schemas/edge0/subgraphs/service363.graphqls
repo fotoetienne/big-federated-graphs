@@ -1,0 +1,999 @@
+type Type2146 @key(fields: "field2") @extends {
+  field2: ID! @external
+  field5: String @override(from: "service11")
+  field285: Enum1033 @override(from: "service11")
+  field120: Type32 @override(from: "service11")
+  field9474: String @override(from: "service11")
+  field9475: String @override(from: "service11")
+  field3516: String @override(from: "service11")
+  field94: Scalar14 @override(from: "service11")
+  field56: Type29 @override(from: "service11")
+  field96: Scalar14 @override(from: "service11")
+  field57: Type29 @override(from: "service11")
+  field2233: Scalar11 @override(from: "service11")
+  field9476: Boolean @override(from: "service11")
+  field9477: Scalar11 @override(from: "service11")
+  field5842: String @override(from: "service11")
+  field9478: Boolean @override(from: "service11")
+  field380: Enum1034 @override(from: "service11")
+  field1233: Enum1036 @override(from: "service11")
+  field9479: String @override(from: "service11")
+  field9480: Int @override(from: "service11")
+  field9481: Int @override(from: "service11")
+  field9482: Int @override(from: "service11")
+  field9483: String @override(from: "service11")
+  field9484: String @override(from: "service11")
+  field9485: String @override(from: "service11")
+  field9491: Type4823 @override(from: "service11")
+  field9490: Type4825 @override(from: "service11")
+  field9492: Type4822 @override(from: "service11")
+  field9528: Type4853
+  field9500: Type4917 @override(from: "service11")
+  field9496: Type4854 @override(from: "service11")
+  field9506: Type4840 @override(from: "service11")
+}
+
+enum Enum1033 {
+  VALUE_4272
+  VALUE_4273
+  VALUE_2554
+  VALUE_4274
+  VALUE_4275
+}
+
+enum Enum1034 {
+  VALUE_4276
+  VALUE_1625
+  VALUE_3447
+  VALUE_4277
+  VALUE_4278
+  VALUE_4279
+  VALUE_2554
+  VALUE_1743
+  VALUE_4280
+  VALUE_4281
+}
+
+enum Enum1035 {
+  VALUE_4282
+  VALUE_4283
+  VALUE_4284
+  VALUE_4285
+  VALUE_4286
+  VALUE_4287
+  VALUE_4288
+  VALUE_4289
+  VALUE_4290
+  VALUE_4291
+  VALUE_4292
+  VALUE_4293
+  VALUE_4294
+  VALUE_4295
+  VALUE_4296
+  VALUE_1545
+  VALUE_4297
+  VALUE_4298
+  VALUE_4299
+  VALUE_4300
+  VALUE_4301
+  VALUE_4302
+  VALUE_4303
+}
+
+enum Enum1036 {
+  VALUE_763
+  VALUE_762
+  VALUE_761
+}
+
+type Type4822 {
+  field9508: Boolean!
+  field87: String!
+}
+
+type Type4823 {
+  field5494: [Type4824!]
+}
+
+type Type4824 {
+  field2: ID!
+  field5: String!
+  field393: Scalar17!
+  field2251: Boolean!
+}
+
+type Type4825 {
+  field3114: [Type4826!]
+}
+
+type Type4826 {
+  field2: ID
+  field439: Type29
+  field2309: Enum1035
+  field2248: Enum1037
+  field5628: Boolean
+}
+
+enum Enum1037 {
+  VALUE_1084
+  VALUE_4125
+  VALUE_3482
+  VALUE_3481
+  VALUE_3480
+  VALUE_568
+}
+
+input Input1819 {
+  inputField314: String!
+  inputField1292: [Enum1035!]!
+}
+
+input Input1820 {
+  inputField3406: [Input1821!]!
+}
+
+input Input1821 {
+  inputField57: String!
+  inputField2886: String!
+  inputField3407: Boolean!
+}
+
+input Input3976 {
+  inputField44: String
+  inputField207: Int
+  inputField332: Int
+  inputField378: Enum2069
+  inputField452: Enum2070
+}
+
+type Type8636 {
+  field9527: [Type2146!]
+  field37: Type4901
+}
+
+enum Enum2069 {
+  VALUE_4304
+  VALUE_4305
+  VALUE_4306
+}
+
+enum Enum2070 {
+  VALUE_4307
+  VALUE_4308
+}
+
+input Input1817 {
+  inputField57: String!
+  inputField3397: String
+  inputField2080: String
+  inputField108: Enum1033!
+  inputField3398: Boolean!
+  inputField171: Int!
+  inputField3399: String
+  inputField3400: String
+  inputField3401: String
+  inputField3402: String
+  inputField1292: [Input1819!]!
+  inputField124: Enum1034!
+  inputField2063: Enum1036
+  inputField2609: Scalar11
+  inputField3403: Scalar11
+  inputField3404: Scalar11
+}
+
+input Input1818 {
+  inputField57: String!
+  inputField2080: String
+  inputField108: Enum1033!
+  inputField3398: Boolean!
+  inputField171: Int!
+  inputField3399: String
+  inputField3400: String
+  inputField1292: [Input1819!]
+  inputField3404: Scalar11
+  inputField3405: Boolean! = false
+  inputField124: Enum1034!
+  inputField2063: Enum1036
+  inputField2609: Scalar11
+  inputField3403: Scalar11
+}
+
+input Input1824 {
+  inputField7: ID
+  inputField214: String!
+  inputField912: Enum1035!
+  inputField1880: Enum1037
+  inputField3423: Boolean!
+}
+
+input Input1825 {
+  inputField1292: [Input1824!]!
+}
+
+type Type4840 {
+  field9556: [String!]
+  field6607: [String!] @deprecated(reason: "Anonymized deprecation reason")
+  field6419: [String!]
+  field9557: [Enum1058!] @deprecated(reason: "Anonymized deprecation reason")
+  field9558: [String!]
+  field84: [String!]
+  field7645: [Enum1057!] @deprecated(reason: "Anonymized deprecation reason")
+  field9559: [ID!]
+  field9560: [String!]
+  field1481: [Enum1041!]
+  field9561: [String!]
+  field1705: [String!]
+  field9553: [String!]
+  field9562: [Enum1060!]
+  field9563: [Enum1062!]
+  field9564: [Boolean!]
+  field9565: [Boolean!]
+}
+
+enum Enum1041 {
+  VALUE_4310
+  VALUE_750
+  VALUE_992
+}
+
+type Type29 @key(fields: "field957") @extends {
+  field957: String @external
+}
+
+type Type32 @key(fields: "field107") @extends {
+  field107: Int! @external
+}
+
+type Type4845 {
+  field9570: [Type4846!]
+  field9571: Type4847
+  field9572: Boolean
+}
+
+type Type4846 {
+  field2: ID
+  field285: Enum1043
+  field58: String
+  field9573: String
+  field1154: String
+  field9574: Boolean
+  field94: Scalar14
+  field96: Scalar14
+}
+
+enum Enum1043 {
+  VALUE_1893
+  VALUE_1894
+  VALUE_2248
+}
+
+type Type4847 {
+  field9575: [Type4849!]
+  field9576: [Type4849!]
+  field9577: Type4849
+  field9578: Type4849
+  field2648: Type4849
+  field9579: [Type4849!]
+}
+
+type Type4849 {
+  field58: Enum1044
+  field87: String
+  field279: String
+  field9580: [Type4850!]
+}
+
+enum Enum1044 {
+  VALUE_179
+  VALUE_180
+  VALUE_289
+}
+
+type Type4850 {
+  field2: ID
+  field5: String
+  field279: Scalar17
+}
+
+type Type4851 {
+  field908: [Type4852!]
+  field37: Type4901
+}
+
+type Type4852 {
+  field2: ID!
+  field94: Scalar14
+  field3456: String @deprecated(reason: "Anonymized deprecation reason")
+  field2257: Enum1047
+  field9581: String
+  field285: Enum1049
+  field1464: Enum1061
+  field166: Enum1046!
+  field341: String!
+  field9582: String
+  field113: Enum1045!
+  field9583: String
+}
+
+enum Enum1045 {
+  VALUE_330
+  VALUE_1122
+  VALUE_4335
+  VALUE_4336
+  VALUE_4337
+  VALUE_4338
+  VALUE_1309
+}
+
+enum Enum1046 {
+  VALUE_141
+  VALUE_4339
+  VALUE_4340
+  VALUE_4341
+  VALUE_4342
+}
+
+enum Enum1047 {
+  VALUE_3050
+  VALUE_289
+  VALUE_1099
+}
+
+type Type4853 {
+  field483: Scalar1!
+  field9584: Scalar1!
+  field9585: Scalar1!
+  field9586: Scalar1!
+  field9587: Scalar1!
+}
+
+type Type4854 {
+  field9556: [String!]!
+  field9561: [String!]!
+  field1246: [String!]!
+  field6419: [String!]!
+  field2641: [Type4899!]!
+  field9557: [Enum1058!]! @deprecated(reason: "Anonymized deprecation reason")
+  field9558: [String!]!
+  field6607: [String!]! @deprecated(reason: "Anonymized deprecation reason")
+  field84: [String!]!
+  field8110: [Enum1057!]! @deprecated(reason: "Anonymized deprecation reason")
+  field9559: [ID!]!
+  field9560: [String!]!
+  field1705: [String!]!
+  field9564: [Boolean!]!
+  field9565: [Boolean!]!
+}
+
+type Type4855 {
+  field9588: [Type4857!]
+}
+
+type Type4857 {
+  field2: ID!
+  field94: Scalar14
+  field96: Scalar14
+  field56: Type29
+  field57: Type29
+  field9534: String!
+  field285: String!
+  field5: String!
+  field1491: String!
+  field5246: String
+  field1519: String
+  field1527: String
+  field9589: String
+  field9590: String
+  field9591: String
+  field9592: String
+  field9593: String
+  field9594: String
+  field9595: Boolean
+  field9596: String
+  field5942: [Type4899!]
+  field6607: [String!] @deprecated(reason: "Anonymized deprecation reason")
+  field84: [String!]
+  field9597: Type4860
+  field9598: Type4860
+  field9599: Type4860
+  field9600: Type4860
+  field9601: Type4860
+  field9602: [Type4859!] @deprecated(reason: "Anonymized deprecation reason")
+  field4102: [Type4859!]
+  field7645: [Type4858!]
+  field9603: [Enum1059!]
+  field9604: Type4920
+  field9605: Type4845
+  field9606(arg101: Int = 0, arg74: Int = 0): Type4851
+}
+
+type Type4858 {
+  field2: ID!
+  field94: Scalar14
+  field96: Scalar14
+  field56: Type29
+  field57: Type29
+  field285: Enum1057 @deprecated(reason: "Anonymized deprecation reason")
+  field732: ID
+  field733: String
+  field9541: Boolean
+  field9542: Boolean
+  field9607: Boolean
+  field9548: String
+  field9549: String
+  field9550: String
+  field58: Enum1060
+  field2012: Enum1058 @deprecated(reason: "Anonymized deprecation reason")
+  field9608: String
+  field9539: Boolean
+  field9544: String
+  field9540: String @deprecated(reason: "Anonymized deprecation reason")
+  field10: String
+  field5942: [Type4899!]
+  field2649: Enum265
+  field2648: Boolean
+  field1521: String
+  field1544: String
+  field9546: Boolean
+  field9553: [String!]
+  field9555: Boolean
+  field2647: Boolean
+}
+
+type Type4859 {
+  field285: Enum1048
+  field1464: Enum1061
+  field58: Enum1060
+  field9609: Boolean
+  field9610: Boolean
+  field9611: [Enum1061!]
+  field9612: Boolean
+}
+
+enum Enum1048 {
+  VALUE_1895
+  VALUE_1896
+  VALUE_4343
+  VALUE_3827
+  VALUE_4344
+  VALUE_4345
+}
+
+type Type4860 {
+  field9613: String
+  field9614: String
+  field58: Enum1060
+  field1464: Enum1061
+  field9615: Boolean
+  field9612: Boolean
+}
+
+enum Enum1049 {
+  VALUE_1895
+  VALUE_1896
+  VALUE_3827
+  VALUE_4344
+  VALUE_4345
+}
+
+input Input1841 {
+  inputField340: String!
+  inputField692: String!
+}
+
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field9622(
+  arg60: Input1817!): Type2146 @override(from: "service11")
+  """
+  This is an anonymized description
+  """
+  field9623(
+  arg564: ID!
+  arg60: Input1818!): Type2146 @override(from: "service11")
+  """
+  This is an anonymized description
+  """
+  field9626(
+  arg564: ID!
+  arg60: Input1820!): Type2146 @override(from: "service11")
+  """
+  This is an anonymized description
+  """
+  field9628(
+  arg564: ID!
+  arg60: Input1825): Type2146 @override(from: "service11")
+}
+
+type Type4871 {
+  field8333: [Type4872!]
+  field37: Type4901
+}
+
+type Type4872 {
+  field2: ID!
+  field959: ID
+  field9689: String
+  field4947: Enum1052
+  field3456: String
+  field741: Enum1051
+  field423: String
+  field94: Scalar14
+  field96: Scalar14
+  field9690: Boolean
+  field9691: Boolean
+}
+
+enum Enum1051 {
+  VALUE_4346
+  VALUE_4347
+  VALUE_4348
+  VALUE_4349
+  VALUE_4350
+  VALUE_4351
+  VALUE_4352
+  VALUE_754
+}
+
+enum Enum1052 {
+  VALUE_4353
+  VALUE_3835
+  VALUE_4354
+  VALUE_4355
+  VALUE_4356
+  VALUE_4357
+  VALUE_4358
+  VALUE_4359
+  VALUE_4360
+  VALUE_4361
+  VALUE_1110
+  VALUE_4362
+  VALUE_4363
+  VALUE_4364
+  VALUE_4365
+  VALUE_4366
+  VALUE_4367
+  VALUE_4368
+  VALUE_4369
+  VALUE_4370
+  VALUE_4371
+}
+
+type Type4878 {
+  field2147: Boolean!
+  field9528: Type4853!
+  field9694: String!
+  field9695: [Type4882!]!
+}
+
+type Type4881 {
+  field1272: [String!]
+}
+
+type Type4882 {
+  field285: String!
+  field9698: Boolean
+  field585: [Type4884!]!
+}
+
+enum Enum1054 {
+  VALUE_4374
+  VALUE_4375
+  VALUE_4376
+  VALUE_4377
+  VALUE_4378
+  VALUE_4379
+  VALUE_4292
+  VALUE_4380
+}
+
+type Type2147 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+type Type4884 {
+  field2: ID!
+  field959: ID!
+  field94: Scalar14
+  field96: Scalar14
+  field56: Type29
+  field57: Type29
+  field5: String
+  field1491: String
+  field2013: String
+  field285: String
+  field9712: String
+  field9706: String
+  field218: String
+  field2147: Boolean
+  field9711: Boolean
+  field5246: String
+  field1519: String
+  field58: Enum1055
+  field6686: String
+  field9702: String
+  field9722: String
+  field9723: String
+  field9710: String
+  field9709: String
+  field9528: Type4853
+  field4078: String
+  field9718: Boolean
+  field9717: Boolean
+  field9719: [Type4887!]
+  field9734: Type4885
+  field9735: Type4886
+  field9701: [String!]
+  field1527: String
+  field9620: Enum1054 @deprecated
+  field10: String
+  field9705: Boolean
+  field9704: Boolean
+  field9703: String
+  field9721: Boolean
+  field9736: [String!]
+  field9603: Boolean
+  field611: String
+  field9720: Boolean!
+  field9737: Scalar11
+  field9738: Scalar11
+  field9731: String
+  field7401: String
+  field9732: String
+  field9733: String
+  field4029: String
+  field4963: String @deprecated
+  field7406: String
+  field9547: String
+}
+
+type Type4885 {
+  field9739: Int
+  field9740: Int
+}
+
+type Type4886 {
+  field9741: String
+  field9742: String
+}
+
+type Type4887 {
+  field2: String!
+  field5246: String
+  field9706: String
+  field58: Enum1055
+}
+
+type Type4888 {
+  field2: ID!
+  field5246: String
+  field218: String
+  field9706: String
+  field58: Enum1055
+}
+
+enum Enum1055 {
+  VALUE_4381
+  VALUE_4382
+  VALUE_4383
+  VALUE_4384
+  VALUE_196
+  VALUE_4385
+  VALUE_1272
+}
+
+type Type4889 {
+  field5: [String!]!
+  field285: [String!]!
+  field5246: [String!]!
+  field1519: [String!]!
+  field1527: [String!]!
+  field58: [Enum1055!]!
+  field10: [String!]!
+  field9620: [Enum1054!]! @deprecated
+  field9743: [String!]!
+  field611: [String!]!
+  field9744: [String!]!
+  field9731: String @deprecated
+  field7401: String @deprecated
+  field9732: String @deprecated
+  field9733: String @deprecated
+  field4029: String @deprecated
+  field4963: String @deprecated
+  field9547: String @deprecated
+}
+
+type Type4893 {
+  field9745: Boolean
+  field903: [Type4894!]
+}
+
+type Type4894 {
+  field1527: String
+  field9746: Boolean
+}
+
+type Type4895 {
+  field2: Scalar1
+  field9747: [Scalar1!]
+  field6419: [String!]
+  field2460: [Enum1059!]
+  field3456: String
+  field5373: Boolean
+  field56: String
+  field94: Scalar14
+  field96: Scalar14
+}
+
+input Input1850 {
+  inputField7: ID
+  inputField3474: String
+  inputField86: String
+  inputField2334: String!
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field9753(
+  arg4: ID!): Type2146 @override(from: "service11")
+  """
+  This is an anonymized description
+  """
+  field19152(
+  arg1: Input3976): Type8636
+}
+
+scalar Scalar1
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+type Type4899 {
+  field1088: String!
+  field5: String
+}
+
+type Type4900 {
+  field9793: [String!]!
+}
+
+enum Enum1059 {
+  VALUE_1893
+  VALUE_1894
+  VALUE_1713
+}
+
+enum Enum265 {
+  VALUE_1263
+  VALUE_1264
+  VALUE_1265
+  VALUE_1266
+}
+
+enum Enum1060 {
+  VALUE_1691
+  VALUE_955
+  VALUE_4398
+  VALUE_149
+  VALUE_4399
+  VALUE_196
+  VALUE_4400
+  VALUE_213
+}
+
+enum Enum1061 {
+  VALUE_1691
+  VALUE_979
+  VALUE_4401
+  VALUE_1894
+  VALUE_4402
+}
+
+type Type4901 {
+  field1086: Int
+  field1083: Int
+  field1085: Int
+  field270: Boolean
+  field271: Boolean
+}
+
+enum Enum1062 {
+  VALUE_2870
+  VALUE_4403
+  VALUE_4404
+  VALUE_272
+}
+
+enum Enum1058 {
+  VALUE_3824
+  VALUE_3825
+  VALUE_4393
+  VALUE_4394
+  VALUE_1940
+  VALUE_584
+  VALUE_4379
+  VALUE_4395
+  VALUE_4396
+  VALUE_4397
+}
+
+enum Enum1057 {
+  VALUE_754
+  VALUE_4386
+  VALUE_4387
+  VALUE_4388
+  VALUE_415
+  VALUE_758
+  VALUE_4389
+  VALUE_4390
+  VALUE_4391
+  VALUE_4392
+}
+
+type Type4920 {
+  field9824: [Type4921!]
+  field9825: [Type4921!]
+  field9577: [Type4921!]
+  field9826: [Type4921!]
+  field9827: [Type4921!]
+}
+
+type Type4921 {
+  field2: ID
+  field9535: String
+  field5: String
+  field279: Scalar17
+  field582: Enum1069
+  field56: Type29
+}
+
+type Type4911 {
+  field9813: [Type4913!]
+  field9814: [Type4919!]
+  field2481: String
+}
+
+type Type4913 {
+  field2: ID
+  field9817: Type4912
+  field1527: String
+  field3456: String
+  field94: Scalar14
+  field96: Scalar14
+  field260: Enum1068
+  field9818: Type4919
+}
+
+type Type4912 {
+  field2: ID
+  field959: String
+  field9534: String
+  field1527: String
+  field9815: String
+  field3456: String
+  field94: Scalar14
+  field96: Scalar14
+  field260: Enum1066
+  field9816: Boolean
+  field6419: [String!]
+}
+
+type Type4919 {
+  field2: ID!
+  field9821: String
+  field9822: String
+  field1466: String
+  field94: Scalar14
+  field96: Scalar14
+  field6419: [String!]
+  field9823: [String!]
+  field2293: Int
+}
+
+type Type4914 {
+  field959: String
+  field9802: String
+  field7030: [Type4916!]
+  field9819: [Type4915!]
+}
+
+type Type4916 {
+  field1527: String
+  field2293: Int
+  field285: Enum1067
+  field58: Enum1068
+}
+
+type Type4915 {
+  field9534: String!
+  field9820: String
+  field9811: String
+  field7030: [Type4916!]
+}
+
+type Type4917 {
+  field9556: [String!]
+  field6419: [String!]
+  field58: [Enum1068!]
+}
+
+type Type4907 {
+  field959: String!
+  field9799: String
+  field9800: String
+  field9801: String
+  field9802: String
+  field9501: [Type4912!]
+  field6419: [Type4909!]
+  field9798: [Type4910!]
+  field9803: Boolean
+  field9804: [Type4908!]
+}
+
+type Type4909 {
+  field1527: String
+  field9807: Enum1068
+}
+
+type Type4908 {
+  field9805: String!
+  field9806: Boolean!
+}
+
+type Type4910 {
+  field2: ID!
+  field5: String
+  field9808: String
+  field9809: String
+  field9705: Boolean
+  field9810: String
+  field9811: String
+  field6419: [Type4909!]
+  field9812: [Type4912!]
+}
+
+type Type4906 {
+  field9798: [String!]
+  field6419: [String!]
+}
+
+type Type4918 {
+  field9814: [Type4919!]
+}
+
+enum Enum1067 {
+  VALUE_158
+  VALUE_955
+  VALUE_4409
+  VALUE_149
+  VALUE_151
+  VALUE_4410
+  VALUE_4346
+}
+
+enum Enum1069 {
+  VALUE_1895
+  VALUE_1896
+  VALUE_3827
+  VALUE_205
+  VALUE_3828
+}
+
+enum Enum1068 {
+  VALUE_158
+  VALUE_955
+  VALUE_4409
+  VALUE_149
+  VALUE_151
+}
+
+enum Enum1066 {
+  VALUE_158
+  VALUE_1356
+}

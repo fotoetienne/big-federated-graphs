@@ -1,0 +1,77 @@
+"""
+This is an anonymized description
+"""
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+type Type2335 @key(fields: "field4976") {
+  field4976: Int!
+  field21719: String
+  field120: Type32
+  field21720: Boolean
+  field21721: Int
+  field21722: Int
+  field21723: String
+  field21724: String
+  field21725: Scalar9
+  field21726: Scalar9
+  field21727: Int
+  field21728: Boolean
+  field21729: Int
+  field21730: String
+  field21731: Scalar9
+  field21732: String
+  field21733: Int
+  field21734: String
+  field3032: String
+  field3145: Scalar14
+  field13926: Int
+  field21735: Int
+  field21736: Int
+  field21737: Int
+  field1950: String
+  field21738: String
+  field21739: String
+  field21740: [Type2336]
+  field21741: [Type2336]
+  field11369: String
+}
+
+type Type2336 @key(fields: "field4977") {
+  field4977: Int!
+  field21742: String
+  field366: Type162
+  field21743: Scalar14
+  field21744: Int
+  field5842: String
+  field21745: String
+  field21746: String
+  field21747: String
+  field21748: String
+  field21721: Int
+  field21722: Int
+  field21749: String
+  field21750: [String]
+}
+
+"This is an anonymized description"
+scalar Scalar1
+
+type Query @extends @directive1(arg31: "anonymous-string") {
+  field21751(arg1799: [Int!]!): [Type2335]
+  field21752(arg1800: [Int!]!): [Type2336]
+  field21753(arg108: [Int!]!): [Type2335]
+  field21754(arg1801: [ID!]!): [Type2336]
+}
+
+type Type32 @extends @key(fields: "field107") {
+  field107: Int! @external
+  field21751: [Type2335!]
+}
+
+type Type162 @extends @key(fields: "field2") {
+  field2: ID! @external
+  field21752: [Type2336!]
+}

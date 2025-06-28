@@ -1,0 +1,66 @@
+directive @directive1("""
+This is an anonymized description
+"""
+arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Type1908 @directive1(arg31: "anonymous-string") @key(fields: "field2") {
+  field2: ID! @directive2
+  field5825: String!
+  field253: String!
+  field5270: Boolean!
+  field1072: Scalar14!
+  field10478: Scalar14!
+  field44: Int!
+}
+
+type Query {
+  field10711(arg11: [ID!]!): [Type1908]
+  field10712(arg506: [String!]!): [Type1908]
+}
+
+type Mutation @extends {
+  field10713(arg1: Input2043!): Union105! @directive1(arg31: "anonymous-string")
+  field10714(arg1: Input2044!): Union105! @directive1(arg31: "anonymous-string")
+}
+
+input Input2043 {
+  inputField2178: String!
+  inputField103: String!
+}
+
+input Input2044 {
+  inputField7: ID!
+  inputField2178: String!
+  inputField103: String!
+  inputField1992: Boolean
+  inputField8: Int
+}
+
+interface Interface215 {
+  field3325: String
+  field2454: String
+}
+
+type Type5234 {
+  field2660: [Interface215]
+}
+
+type Type5235 implements Interface215 {
+  field388: String
+  field3325: String
+  field2454: String
+}
+
+type Type5236 implements Interface215 {
+  field3325: String
+  field2454: String
+}
+
+type Type5237 implements Interface215 {
+  field3325: String
+  field2454: String
+}
+
+union Union105 = Type1908 | Type5234

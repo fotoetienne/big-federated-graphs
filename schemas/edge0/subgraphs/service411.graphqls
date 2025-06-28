@@ -1,0 +1,55 @@
+type Query @extends {
+  field21947(arg1811: ID!): Type9934 @experimental
+  field13982: String @experimental @override(from: "service12", label: "service410")
+}
+
+type Mutation @extends {
+  field21948(arg1811: ID!): Type9934 @experimental
+  field21949(arg1: Input4463): Type9937 @experimental
+  field21950: Type9937 @experimental
+}
+
+type Subscription @extends {
+  field21951(arg1811: ID!, arg1812: ID, arg1813: Int): Interface412 @experimental
+}
+
+type Type9934 {
+  field2: ID
+  field5: String
+}
+
+type Type9935 {
+  field2: ID
+  field5: String
+  field58: Enum2401
+}
+
+enum Enum2401 {
+  VALUE_9
+  VALUE_212
+}
+
+interface Interface412 {
+  field584: ID
+}
+
+type Type9936 implements Interface412 {
+  field584: ID
+  field87: String
+  field14499: ID
+}
+
+type Type9937 {
+  field58: Enum2402
+}
+
+enum Enum2402 {
+  VALUE_991
+  VALUE_152
+}
+
+input Input4463 {
+  inputField5237: ID!
+  inputField4838: ID!
+  inputField248: String!
+}

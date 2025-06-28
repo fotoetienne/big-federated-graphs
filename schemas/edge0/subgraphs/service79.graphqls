@@ -1,0 +1,37 @@
+schema {
+  query: Query
+}
+
+type Query {
+  field3148: [Type1315!]!
+  field3149: [Type1316!]!
+  field3150(arg7: Int, arg6: String): Type1318
+}
+
+type Type1315 @key(fields: "field1088") {
+  field1088: String!
+  field2309: String!
+  field439: Type852
+}
+
+type Type852 @key(fields: "field2") @extends {
+  field2: ID @external
+}
+
+type Type1316 @key(fields: "field2") {
+  field2: ID!
+  field3151: String!
+  field3152: String!
+  field3153: String!
+  field3154: String!
+}
+
+type Type1317 {
+  field41: String!
+  field40: Type1315
+}
+
+type Type1318 {
+  field37: Type122!
+  field36: [Type1317]!
+}

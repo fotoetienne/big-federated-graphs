@@ -1,0 +1,178 @@
+type Query {
+  field23141: [Type10641]
+  field23142(arg151: String!): [Type10640]
+  field23143(arg151: String!, arg153: String): Type10642
+}
+
+type Mutation {
+  field23144(arg1912: Input4897): Type10642
+  field23145(arg151: String!, arg261: String!, arg957: [Input4905]): Type10642
+  field23146(arg187: Input4900!): Type10642
+  field23147(arg261: Input4896!): Type10642
+  field23148(arg1913: Input4893!): Type10642
+  field23149(arg1914: Input4898!): Type10642
+  field23150(arg151: String!): String
+  field23151(arg151: String!): [Type29]
+}
+
+input Input4893 {
+  inputField576: String!
+  inputField144: Input4894!
+}
+
+input Input4894 {
+  inputField4757: String!
+  inputField8354: [Input4895]
+}
+
+input Input4895 {
+  inputField25: String!
+  inputField8355: Boolean
+  inputField8356: Input4904
+}
+
+input Input4896 {
+  inputField576: String!
+  inputField144: Input4901!
+}
+
+input Input4897 {
+  inputField576: String!
+  inputField8357: [String!]
+}
+
+input Input4898 {
+  inputField576: String!
+  inputField56: [Input4899!]
+}
+
+input Input4899 {
+  inputField25: String!
+  inputField1482: Int!
+}
+
+input Input4900 {
+  inputField576: String
+  inputField147: [Input4901]
+}
+
+input Input4901 {
+  inputField4757: String
+  inputField8358: Input4902
+}
+
+input Input4902 {
+  inputField8359: String
+  inputField56: [Input4903]
+}
+
+input Input4903 {
+  inputField25: String
+  inputField8356: Input4904
+}
+
+input Input4904 {
+  inputField8360: Enum2598
+  inputField8361: Enum2599
+  inputField8362: Boolean
+  inputField8363: String
+}
+
+input Input4905 {
+  inputField3140: String
+  inputField8364: String
+  inputField8365: Boolean
+}
+
+type Type10640 {
+  field165: String
+  field44: String
+  field23152: Scalar14
+}
+
+type Type10641 {
+  field165: String
+  field2481: Type10642
+}
+
+type Type10642 {
+  field4924: ID!
+  field165: String
+  field44: String
+  field23153: String
+  field23154: String
+  field449: [Type10643]
+  field6781: Type29
+  field23152: Scalar14
+  field3138: [Type29]
+}
+
+type Type10643 {
+  field4924: ID!
+  field1716: String
+  field5934: Type10644
+  field13046: [Type10646]
+  field23155: Scalar14
+}
+
+type Type10644 {
+  field2: String
+  field23156: String
+  field128: [Type10645]
+  field12261: Type10648
+  field2237: Int
+}
+
+type Type10645 {
+  field2237: Int
+  field251: String
+  field21236: Type10647
+  field10651: Boolean
+}
+
+type Type10646 {
+  field8697: String
+  field22608: String
+  field23157: [String]
+  field2253: Boolean
+  field10651: Boolean
+  field6790: String
+  field12261: Type10648
+}
+
+type Type10647 {
+  field23158: Enum2598
+  field23159: Enum2599
+  field23160: String
+  field23161: Boolean
+}
+
+enum Enum2598 {
+  VALUE_848
+  VALUE_1167
+  VALUE_3526
+  VALUE_851
+  VALUE_1838
+}
+
+enum Enum2599 {
+  VALUE_201
+  VALUE_4193
+  VALUE_913
+  VALUE_931
+  VALUE_8489
+  VALUE_208
+  VALUE_848
+  VALUE_8490
+}
+
+type Type10648 {
+  field56: Type29
+  field20236: Scalar14
+  field57: Type29
+  field23162: Scalar14
+}
+
+type Type29 @extends @key(fields: "field98") {
+  field98: ID! @external
+}

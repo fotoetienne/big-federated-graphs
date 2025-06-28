@@ -1,0 +1,92 @@
+type Mutation {
+  field14495: Type6744
+  field14496(arg1: Input2890): Type6746
+  field14497: Type6746
+}
+
+extend type Subscription {
+  field14498(arg1369: ID!): [Union206]
+}
+
+type Type6744 {
+  field2: ID
+  field5: String
+}
+
+union Union206 = Type6745
+
+type Type6745 {
+  field87: String!
+  field14499: ID!
+}
+
+type Type6746 {
+  field58: Enum1586
+}
+
+enum Enum1586 {
+  VALUE_991
+  VALUE_152
+}
+
+input Input2890 {
+  inputField5237: ID!
+  inputField4838: ID!
+  inputField248: String!
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field14500(
+  arg58: String = "default"): String @experimental
+  """
+  This is an anonymized description
+  """
+  field13982: String @experimental
+  """
+  This is an anonymized description
+  """
+  field14501(
+  arg16: String!
+  arg652: String
+  arg1370: String
+  arg1371: String
+  arg511: String
+  arg5: String
+  arg7: Int = 0): [Type6748] @experimental
+  field14502(arg1372: Int): [Type6747] @experimental
+}
+
+type Type6747 {
+  field14502(arg1372: Int): [Type6747] @experimental
+  field14503(arg100: String = "default"): String @experimental
+}
+
+type Type6748 {
+  field341: String
+  field253: String
+  field279: String
+  field5016: String @deprecated
+  field2414: String
+  field8654: String
+  field7569: String @deprecated
+  field6750: String @deprecated
+  field14504: String
+  field5779: String
+  field113: Type6749
+}
+
+type Type6749 {
+  field2: ID
+  field5: String
+}
+
+type Subscription {
+  field14505: Type6750
+}
+
+type Type6750 {
+  field5749: String
+}

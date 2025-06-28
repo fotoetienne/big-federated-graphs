@@ -1,0 +1,117 @@
+type Type14169 {
+  field1131: String!
+  field1132: String!
+  field576: String!
+  field1133: [Type14170!]!
+}
+
+type Type14170 {
+  field1134: String!
+  field154: String!
+  field1135: String!
+  field382: String!
+  field1136: Float!
+  field1137: String
+}
+
+type Type14171 {
+  field252: Float!
+  field253: String
+  field254: ID
+  field255: ID!
+  field256: String!
+  field257: String!
+  field258: ID
+  field259: ID!
+  field260: Enum3395!
+  field1138: Type14175!
+  field44: String
+}
+
+type Type14172 {
+  field36: [Type14173!]
+  field37: Type122!
+}
+
+type Type14173 {
+  field41: String
+  field40: Type14171!
+}
+
+type Type14174 {
+  field1139: [Type14169!]!
+  field1140: String!
+}
+
+type Type14175 {
+  field36: [Type14176!]
+  field37: Type122!
+}
+
+type Type14176 {
+  field41: String
+  field40: Type14174!
+}
+
+type Mutation @extends {
+  field28704(arg1: Input6580!): Type14177!
+}
+
+type Type122 {
+  field269: String
+  field270: Boolean!
+  field271: Boolean!
+  field272: String
+}
+
+type Query @extends {
+  field28705(arg33: ID!): Type14171
+  field28706(arg1: Input48!): Type14172!
+}
+
+type Type14177 {
+  field275: Type14171
+}
+
+enum Enum3395 {
+  VALUE_772
+  VALUE_199
+  VALUE_151
+  VALUE_773
+  VALUE_158
+  VALUE_152
+  VALUE_149
+  VALUE_774
+  VALUE_775
+}
+
+input Input6579 {
+  inputField171: Int!
+}
+
+input Input48 {
+  inputField106: String!
+  inputField107: Boolean! = false
+}
+
+input Input50 {
+  "This is an anonymized description"
+  inputField109: String
+  "This is an anonymized description"
+  inputField110: Int!
+  "This is an anonymized description"
+  inputField111: Int!
+  "This is an anonymized description"
+  inputField112: Int!
+}
+
+input Input6580 {
+  inputField113: String
+  inputField103: String
+  inputField104: String
+  inputField114: String
+  inputField128: Input6579!
+  inputField116: Input50
+  inputField118: String
+  inputField119: String
+}

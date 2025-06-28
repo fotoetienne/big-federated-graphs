@@ -1,0 +1,33 @@
+type Type625 {
+  field949: Enum204!
+  field87: String!
+}
+
+enum Enum204 {
+  VALUE_1097
+  VALUE_1098
+}
+
+interface Interface39 {
+  field427: Type625
+  field58: Enum205!
+}
+
+enum Enum205 {
+  VALUE_1099
+  VALUE_1100
+}
+
+input Input305 {
+  inputField739: Int
+}
+
+type Type626 implements Interface39 {
+  field427: Type625
+  field58: Enum205!
+  field484: Int
+}
+
+type Query {
+  field1989(arg197: Input305, arg198: String): Type626
+}

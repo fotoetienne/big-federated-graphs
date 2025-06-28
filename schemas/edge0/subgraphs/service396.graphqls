@@ -1,0 +1,63 @@
+type Query @extends {
+  field21199: Type9569
+}
+
+type Subscription @extends {
+  field21200: Interface399
+}
+
+type Type32 @key(fields: "field107") @extends {
+  field107: Int! @external
+  field21201: Type9569
+}
+
+type Type9569 {
+  field37: Type122!
+  field36: [Type9570]
+}
+
+type Type9570 {
+  field41: String!
+  field40: Interface399
+}
+
+interface Interface399 {
+  field120: Type32
+  field2: ID
+  field7931: String
+  field1079: Scalar13
+}
+
+type Type9571 implements Interface399 {
+  field120: Type32
+  field2: ID
+  field21202: Int
+  field7931: String
+  field1079: Scalar13
+  field253: String
+}
+
+type Type9572 implements Interface399 {
+  field120: Type32
+  field2: ID
+  field118: Float
+  field7931: String
+  field1079: Scalar13
+  field113: Enum2346
+  field393: String
+}
+
+enum Enum2346 {
+  VALUE_7741
+  VALUE_7742
+}
+
+type Mutation @extends {
+  field21203(arg1776: Input4317): Type9569
+}
+
+input Input4317 {
+  inputField171: Int!
+  inputField7681: Int
+  inputField103: String
+}

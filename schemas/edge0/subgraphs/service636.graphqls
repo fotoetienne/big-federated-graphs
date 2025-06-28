@@ -1,0 +1,78 @@
+type Query {
+  field30848(arg4: ID!): Type2254
+  field30849(arg11: [ID!]): [Type2254!]
+  field30850(arg4: ID!): Type2796
+  field30851(arg11: ID!): [Type2796]!
+  field30852(arg146: String = "default", arg74: Int! = 0): Type15314
+}
+
+type Type15314 {
+  field36: [Type15315!]
+}
+
+type Type15315 {
+  field40: Type2254
+}
+
+type Type2254 @key(fields: "field2") {
+  field2: ID!
+  field5: String
+  """
+  This is an anonymized description
+  """
+  field1087: String
+  field279: String
+  field3325: String
+  field9697: [Type15317!]
+  field19473: [Type15316!]
+  field30853: [Type15318!]
+}
+
+type Type15316 {
+  field2: ID!
+  field1087: ID!
+  field285: String
+}
+
+type Type15317 {
+  field2: ID!
+  field2737: [Type2796!]
+  field3325: String
+  field279: String
+}
+
+type Type2796 @key(fields: "field2") {
+  field2: ID!
+  field1088: String
+  field439: Type852
+  field279: String
+  field312: String
+  field9697: [Type15317!]
+  field3325: String
+  field30854: [Type15319!]
+  field30855: [Type15320!]
+}
+
+type Type15318 {
+  field30856: Int
+  field30857: Type2796
+}
+
+type Type852 @key(fields: "field2517") @extends {
+  field2517: String @external
+}
+
+type Type15319 {
+  field2: ID!
+  field480: Boolean
+  field3325: String
+  field285: String
+}
+
+type Type15320 {
+  field2: ID!
+  field30858: Int
+  field285: String
+  field3325: String
+  field30859: Type15319
+}

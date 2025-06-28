@@ -1,0 +1,124 @@
+type Query @extends {
+  field28315(arg4: ID!): Type2110
+  field28316(arg7: Int, arg9: Int, arg8: String, arg6: String): Type14036
+  field28317: Type14034
+  field28318: [Type14035]
+  field28319(arg40: [String]): [Type14035]
+}
+
+type Mutation @extends {
+  field28320(arg1: Input6493!): Type2110
+  field28321(arg4: ID!): Boolean
+  field28322(arg1: Input6494!): String
+  field28323(arg1: Input6495!): String
+  field28324(arg1: Input6498!): Boolean
+  field28325(arg1: Input6499!): Boolean
+  field28326(arg4: ID!): Boolean
+  field28327(arg4: ID!): Boolean
+  field28328(arg4: String): Type14035
+  field28329(arg1: Input6492): Type14035
+}
+
+type Type14034 {
+  field367: [String]
+}
+
+type Type14035 {
+  field28330: Type2110
+  field367: [String]
+}
+
+input Input6492 {
+  inputField7: String
+  inputField121: [String]
+}
+
+type Type2110 @key(fields: "field2") {
+  field2: ID!
+  field2612: Type90
+  field28331: String
+  field28332: String
+  field28333: [String!]! @experimental
+  field28334: Type29
+  field56: Type29
+  field94: Scalar14
+  field5161: Type29
+  field1109: Scalar14
+  field28335: Type14039!
+  field3194: [Type14039!]!
+  field367: Type14034!
+}
+
+type Type14036 {
+  field36: [Type14037]!
+  """
+  This is an anonymized description
+  """
+  field37: Type122!
+}
+
+type Type14037 {
+  field41: String!
+  field40: Type2110!
+}
+
+type Type14038 {
+  field450: String
+  field134: String
+}
+
+type Type14039 {
+  field4077: String!
+  field28336: String!
+  field524: [Type14038!]!
+}
+
+input Input6493 {
+  inputField81: String!
+  inputField9834: [String!]!
+}
+
+input Input6494 {
+  inputField9835: ID!
+  inputField9836: String!
+}
+
+input Input6495 {
+  inputField9835: ID!
+  inputField427: String!
+}
+
+input Input6496 {
+  inputField148: String
+  inputField55: String
+}
+
+input Input6497 {
+  inputField3847: String!
+  inputField9837: String!
+  inputField432: [Input6496!]!
+}
+
+input Input6498 {
+  inputField9835: ID!
+  inputField652: [Input6497!]!
+}
+
+input Input6499 {
+  inputField9835: ID!
+  inputField9838: [String!]!
+}
+
+"""
+This is an anonymized description
+"""
+type Type29 @extends @key(fields: "field98") {
+  field98: ID! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type90 @extends @key(fields: "field163") {
+  field163: String! @external
+}

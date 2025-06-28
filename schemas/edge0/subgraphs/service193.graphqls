@@ -1,0 +1,51 @@
+interface Interface201 {
+  field2: ID!
+  field5: String!
+}
+
+type Type2420 implements Interface201 @key(fields: "field2") {
+  field2: ID!
+  field5: String!
+  field8739: String!
+  field8740: String
+}
+
+type Type2421 implements Interface201 @key(fields: "field2") {
+  field2: ID!
+  field81: String!
+  field5: String!
+  field10: Type2420!
+  field8741: String
+}
+
+type Type2422 implements Interface201 @key(fields: "field2") {
+  field2: ID!
+  field5: String!
+  field12: Float
+  field11: Float
+  field8742: String
+  field931: String
+  field8743: Type2421
+  field10: Type2420!
+}
+
+enum Enum958 {
+  VALUE_1016
+  VALUE_3985
+}
+
+input Input1708 {
+  inputField2084: Enum958
+  inputField3147: Int
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field8744(
+  arg58: String
+  arg871: [Input1708]
+  arg102: Int
+  arg872: Int): [Interface201!]!
+}

@@ -1,0 +1,126 @@
+interface Interface126 {
+  field2: ID
+  field5773: ID!
+  field5774: Boolean
+  field5775: Boolean
+  field94: String
+  field96: String
+  field56: String
+  field57: String
+}
+
+type Type3316 {
+  field5776: String!
+  field5777: Boolean
+}
+
+type Type2355 implements Interface126 @key(fields: "field450") {
+  field2: ID!
+  field5773: ID!
+  field450: String
+  field3041: String
+  field253: String
+  field965: String
+  field3074: [Type3316]
+  field58: String
+  field5778: String
+  field5779: String
+  field2569: String
+  field367: [String]
+  field5: String
+  field5780: String
+  field3119: String
+  field5774: Boolean
+  field5775: Boolean
+  field94: String
+  field96: String
+  field56: String
+  field57: String
+}
+
+interface Interface127 {
+  field41: String!
+  field40: Interface126!
+}
+
+interface Interface128 {
+  field36: [Interface127]
+  field37: Type122!
+}
+
+type Type3317 implements Interface128 {
+  field36: [Type3318]
+  field37: Type122!
+}
+
+type Type3318 implements Interface127 {
+  field40: Type2355!
+  field41: String!
+}
+
+enum Enum617 {
+  VALUE_2623
+  VALUE_2624
+  VALUE_2625
+  VALUE_2626
+  VALUE_2627
+  VALUE_2628
+  VALUE_2629
+}
+
+input Input1030 {
+  inputField38: Enum617!
+  inputField55: String!
+}
+
+input Input1031 {
+  inputField53: String!
+  inputField38: Input1030
+}
+
+input Input1032 {
+  inputField52: [Input1031]
+}
+
+type Type3319 {
+  field5781: Type2355!
+  field5782: [String!]!
+}
+
+input Input1033 {
+  inputField211: Int = 0
+  inputField28: String
+  inputField1116: String
+  inputField2133: Boolean = false
+}
+
+input Input1034 {
+  inputField148: String
+  inputField2134: String
+  inputField103: String
+  inputField434: String
+  inputField2135: [String]
+  inputField135: String
+  inputField2136: String
+  inputField2079: String
+  inputField2137: String
+  inputField121: [String]
+  inputField57: String
+  inputField2138: String
+  inputField1282: String
+}
+
+input Input1035 {
+  inputField2139: [Input1034!]!
+  inputField2140: [String!]!
+}
+
+type Mutation {
+  field5783(arg1: Input1035!): [Type2355!]!
+}
+
+type Query @extends {
+  field5784(arg65: String!): Type2355
+  field5785(arg577: Input1033): Type3317
+  field5786(arg578: Input1032!, arg577: Input1033): Type3317
+}

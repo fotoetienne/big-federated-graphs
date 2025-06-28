@@ -1,0 +1,93 @@
+type Type3964 {
+  field2: String!
+}
+
+type Type3965 {
+  field252: Float!
+  field3350: Float
+  field3351: Float
+  field3352: ID
+  field255: ID!
+  field3354: ID!
+  field7025: Type3964!
+  field7026: String!
+}
+
+type Type3966 {
+  field36: [Type3967!]
+  field37: Type122!
+}
+
+type Type3967 {
+  field41: String
+  field40: Type3965!
+}
+
+type Type3968 {
+  field5: String!
+  field40: Type3964!
+}
+
+type Type3969 {
+  field1455: [Type3968!]!
+}
+
+type Type3970 {
+  field36: [Type3971!]
+  field37: Type122!
+}
+
+type Type3971 {
+  field41: String
+  field40: Type3969!
+}
+
+type Type3972 {
+  field252: Float!
+  field253: String
+  field254: ID
+  field255: ID!
+  field256: String!
+  field257: String!
+  field258: ID
+  field259: ID!
+  field7027: Type3970!
+  field7028: Type3966!
+  field260: Enum752!
+  field44: String
+}
+
+type Type3973 {
+  field36: [Type3974!]
+  field37: Type122!
+}
+
+type Type3974 {
+  field41: String
+  field40: Type3972!
+}
+
+type Type122 {
+  field269: String
+  field270: Boolean!
+  field271: Boolean!
+  field272: String
+}
+
+type Query @extends {
+  field7160(arg33: ID!): Type3972
+  field7161(arg1: Input48!): Type3973!
+}
+
+enum Enum752 {
+  VALUE_199
+  VALUE_151
+  VALUE_158
+  VALUE_152
+  VALUE_149
+}
+
+input Input48 {
+  inputField106: String!
+  inputField107: Boolean! = false
+}

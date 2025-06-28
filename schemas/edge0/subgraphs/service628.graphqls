@@ -1,0 +1,178 @@
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field30681(
+  arg308: ID!
+  arg7: Int @deprecated
+  arg9: Int @deprecated
+  arg8: String @deprecated
+  arg6: String @deprecated): Type15211
+}
+
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field30682(
+  arg1: Input7041!): Union793
+  """
+  This is an anonymized description
+  """
+  field30683(
+  arg1: Input7042!): Union794
+  """
+  This is an anonymized description
+  """
+  field30684(
+  arg2281: ID!): Union795
+  """
+  This is an anonymized description
+  """
+  field30685(
+  arg1: Input7043!): Union796 @experimental
+  """
+  This is an anonymized description
+  """
+  field30686(
+  arg1: Input7044!): Union797 @experimental
+}
+
+interface Interface787 {
+  field4984: ID!
+}
+
+type Type2360 implements Interface787 @key(fields: "field4984 field3260") {
+  field4984: ID!
+  field3260: ID!
+  field10354: Scalar14!
+  """
+  This is an anonymized description
+  """
+  field1088: String
+}
+
+type Type2361 implements Interface787 @key(fields: "field4984") {
+  field4984: ID!
+}
+
+type Type15208 {
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field5: String!
+  field253: String
+  field94: Scalar14
+  field96: Scalar14
+  field30687(arg7: Int @deprecated, arg9: Int @deprecated, arg8: String @deprecated, arg6: String @deprecated): Type15209
+  field30688: Int
+  field3563: Boolean
+}
+
+type Type15209 {
+  field37: Type122! @deprecated
+  field36: [Type15210!]!
+}
+
+type Type15210 {
+  field41: String! @deprecated
+  field40: Interface787!
+}
+
+type Type15211 {
+  field37: Type122! @deprecated
+  field36: [Type15212!]!
+}
+
+type Type15212 {
+  field41: String! @deprecated
+  field40: Type15208!
+}
+
+type Type15213 {
+  field2458: Type15208!
+}
+
+union Union793 = Type15213 | Type15215
+
+union Union794 = Type15213 | Type15217 | Type15215
+
+union Union795 = Type15213 | Type15219 | Type15217
+
+union Union796 = Type15217 | Type15214
+
+union Union797 = Type15217 | Type15214
+
+type Type15214 {
+  field2458: Type15208!
+  field7238: [Union798!]!
+}
+
+union Union798 = Type2360 | Type15216 | Type15218
+
+input Input7041 {
+  inputField1332: ID!
+  inputField57: String!
+  inputField103: String!
+}
+
+input Input7042 {
+  inputField3060: ID!
+  """
+  This is an anonymized description
+  """
+  inputField57: String @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  inputField103: String
+}
+
+input Input7043 {
+  inputField3060: ID!
+  """
+  This is an anonymized description
+  """
+  inputField10499: Int!
+  inputField227: String!
+  inputField340: String!
+  inputField692: Scalar7!
+  """
+  This is an anonymized description
+  """
+  inputField4821: Boolean = false
+  """
+  This is an anonymized description
+  """
+  inputField10500: String
+}
+
+input Input7044 {
+  inputField3060: ID!
+  inputField10501: [ID!]!
+}
+
+type Type15215 implements Interface788 {
+  field427: String
+}
+
+type Type15216 implements Interface788 {
+  field427: String
+}
+
+type Type15217 implements Interface788 {
+  field427: String
+}
+
+type Type15218 implements Interface788 {
+  field427: String
+}
+
+type Type15219 implements Interface788 {
+  field427: String
+}
+
+interface Interface788 {
+  field427: String
+}

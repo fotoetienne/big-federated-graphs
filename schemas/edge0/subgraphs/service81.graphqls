@@ -1,0 +1,200 @@
+type Type1353 {
+  field1131: String!
+  field1132: String!
+  field576: String!
+  field1133: [Type1354!]!
+}
+
+type Type1354 {
+  field1134: String!
+  field154: String!
+  field1135: String!
+  field382: String!
+  field1136: Float!
+  field1137: String
+}
+
+type Type1355 {
+  field252: Float!
+  field253: String
+  field254: ID
+  field255: ID!
+  field256: String!
+  field257: String!
+  field258: ID
+  field259: ID!
+  field260: Enum327!
+  field1138: Type1359!
+  field44: String
+  field261: Type1362!
+}
+
+type Type1356 {
+  field36: [Type1357!]
+  field37: Type122!
+}
+
+type Type1357 {
+  field41: String
+  field40: Type1355!
+}
+
+type Type1358 {
+  field1139: [Type1353!]!
+  field1140: String!
+}
+
+type Type1359 {
+  field36: [Type1360!]
+  field37: Type122!
+}
+
+type Type1360 {
+  field41: String
+  field40: Type1358!
+}
+
+type Type1361 {
+  field3228: String!
+  field3229: String!
+  field3230: Enum326!
+  field382: String!
+  field1141: Int!
+  field3231: String!
+  field3232: Enum330!
+}
+
+type Type1362 {
+  field36: [Type1363!]
+  field37: Type122!
+}
+
+type Type1363 {
+  field41: String
+  field40: Type1361!
+}
+
+type Mutation @extends {
+  field3233(arg1: Input643!): Type431!
+  field3234(arg1: Input647!): Type1364!
+}
+
+type Type122 {
+  field269: String
+  field270: Boolean!
+  field271: Boolean!
+  field272: String
+}
+
+type Query @extends {
+  field3235(arg33: ID!): Type1355
+  field3236(arg1: Input48!): Type1356!
+}
+
+type Type431 {
+  field263: String!
+  field260: String!
+}
+
+type Type1364 {
+  field275: Type1355
+}
+
+enum Enum326 {
+  VALUE_151
+  VALUE_1446
+  VALUE_152
+  VALUE_1447
+}
+
+enum Enum327 {
+  VALUE_1448
+  VALUE_199
+  VALUE_151
+  VALUE_1446
+  VALUE_152
+  VALUE_149
+  VALUE_975
+  VALUE_1449
+  VALUE_1450
+  VALUE_775
+  VALUE_777
+}
+
+enum Enum328 {
+  VALUE_9
+  VALUE_213
+  VALUE_212
+  VALUE_1451
+}
+
+enum Enum329 {
+  VALUE_859
+  VALUE_860
+  VALUE_1452
+  VALUE_1453
+  VALUE_861
+  VALUE_1454
+  VALUE_769
+}
+
+enum Enum330 {
+  VALUE_151
+  VALUE_152
+  VALUE_212
+  VALUE_777
+}
+
+input Input642 {
+  inputField57: String!
+  inputField332: Int!
+  inputField135: Enum328
+  inputField1316: String
+  inputField108: Enum329!
+}
+
+input Input643 {
+  inputField103: String
+  inputField104: String
+  inputField333: Input644!
+  inputField105: String!
+}
+
+input Input644 {
+  inputField334: [Input642!]!
+}
+
+input Input645 {
+  inputField579: Input646
+}
+
+input Input646 {
+  inputField171: Int!
+}
+
+input Input48 {
+  inputField106: String!
+  inputField107: Boolean! = false
+}
+
+input Input50 {
+  "This is an anonymized description"
+  inputField109: String
+  "This is an anonymized description"
+  inputField110: Int!
+  "This is an anonymized description"
+  inputField111: Int!
+  "This is an anonymized description"
+  inputField112: Int!
+}
+
+input Input647 {
+  inputField113: String
+  inputField103: String
+  inputField104: String
+  inputField114: String
+  inputField128: Input645!
+  inputField116: Input50
+  inputField118: String
+  inputField119: String
+}

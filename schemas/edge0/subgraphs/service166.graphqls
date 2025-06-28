@@ -1,0 +1,115 @@
+type Type4463 {
+  field98: String
+}
+
+type Type4464 {
+  field98: String
+}
+
+type Type2984 @key(fields: "field255") {
+  field252: Float!
+  field253: String
+  field1420: Type4463
+  field1421: Type4464
+  field254: ID
+  field255: ID!
+  field256: String!
+  field257: String!
+  field258: ID
+  field8213: Type29!
+  field259: ID!
+  field260: Enum906!
+  field44: String
+}
+
+type Type4465 {
+  field36: [Type4466!]
+  field37: Type122!
+}
+
+type Type4466 {
+  field41: String
+  field40: Type2984!
+}
+
+type Mutation @extends {
+  field8214(arg1: Input1626!): Type4467!
+}
+
+type Type122 {
+  field269: String
+  field270: Boolean!
+  field271: Boolean!
+  field272: String
+}
+
+type Query @extends {
+  field8215(arg33: ID!): Type2984
+  field8216(arg1: Input48!): Type4465!
+}
+
+type Type4467 {
+  field275: Type2984
+}
+
+type Type29 @extends @key(fields: "field98") {
+  field98: ID! @external
+}
+
+enum Enum906 {
+  VALUE_199
+  VALUE_151
+  VALUE_158
+  VALUE_152
+  VALUE_149
+}
+
+enum Enum31 {
+  VALUE_201
+  VALUE_202
+}
+
+input Input1625 {
+  inputField67: String
+}
+
+input Input48 {
+  inputField106: String!
+  inputField107: Boolean! = false
+}
+
+input Input49 {
+  inputField7: String!
+  "This is an anonymized description"
+  inputField108: Enum31!
+}
+
+input Input50 {
+  "This is an anonymized description"
+  inputField109: String
+  "This is an anonymized description"
+  inputField110: Int!
+  "This is an anonymized description"
+  inputField111: Int!
+  "This is an anonymized description"
+  inputField112: Int!
+}
+
+input Input1626 {
+  inputField113: String
+  inputField103: String
+  "This is an anonymized description"
+  inputField104: String
+  inputField114: String
+  inputField128: Input1625!
+  "This is an anonymized description"
+  inputField115: Input49
+  "This is an anonymized description"
+  inputField116: Input50
+  "This is an anonymized description"
+  inputField117: String
+  "This is an anonymized description"
+  inputField118: String
+  "This is an anonymized description"
+  inputField119: String
+}

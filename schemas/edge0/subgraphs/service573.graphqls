@@ -1,0 +1,133 @@
+type Query {
+  field28375(arg101: Int = 0, arg74: Int = 0): Type14073
+  field28376(arg101: Int = 0, arg74: Int = 0): Type14078
+}
+
+"""
+This is an anonymized description
+"""
+type Type14070 {
+  field2: ID!
+  field5: String
+  field13713: Boolean
+  field524: Type2404
+  field6390: [Type14071!]
+  field24732(arg101: Int, arg74: Int): Type14078
+}
+
+"""
+This is an anonymized description
+"""
+type Type14071 {
+  field5773: Int
+  field570: String
+  field2453: String
+  field2248: String
+  field2452: String
+  field260: String
+  field6321: String
+  field28377: Int
+  field28378: Int
+  field28379: String
+  field28380: String
+  field28381: String
+  field28382: String
+}
+
+type Type14072 {
+  field40: Type14070
+}
+
+type Type14073 {
+  field1083: Int
+  field1084: Int
+  field1085: Int
+  field1086: Int
+  field37: Type122!
+  field36: [Type14072!]
+}
+
+type Type14074 {
+  field450: String
+  field134: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type14075 {
+  field2: ID!
+  field5: String
+  field2250: String
+  field6390: [Type14076!]
+  field524: Type2404
+}
+
+"""
+This is an anonymized description
+"""
+type Type14076 {
+  field28383: String
+  field28384: String
+  field2248: String
+  field2452: String
+  field260: String
+  field28385: Int
+  field9343: Int
+  field28386: [Type14074!]
+}
+
+"""
+This is an anonymized description
+"""
+type Type14077 {
+  field40: Type14075
+}
+
+type Type14078 {
+  field1083: Int
+  field1084: Int
+  field1085: Int
+  field1086: Int
+  field37: Type122!
+  field36: [Type14077!]
+}
+
+type Type2404 implements Interface421 @extends @key(fields: "field1099 field285") {
+  field1099: ID! @external
+  field285: Enum547! @external
+  field5: String @override(from: "service2")
+  field253: String @override(from: "service2")
+  field1105: Interface419 @override(from: "service2")
+  field1100: Type394 @override(from: "service2")
+  field1101: Type409 @override(from: "service2")
+  field1103: Boolean @override(from: "service2")
+  field1104: Scalar16 @override(from: "service2")
+  field1106: [Type396!] @override(from: "service2")
+  field1107: [Type395!] @override(from: "service2")
+  field1108: [Type397!] @override(from: "service2")
+}
+
+type Type394 @key(fields: "field2") @extends {
+  field2: ID @external
+}
+
+type Type409 @extends @key(fields: "field285 field1122 field5 field1123") {
+  field285: Enum548! @external
+  field1122: String! @external
+  field5: String! @external
+  field1123: String @external
+}
+
+type Type397 @extends @key(fields: "field1088") {
+  field1088: String @external
+}
+
+type Type395 @extends @key(fields: "field2 field285") {
+  field2: ID @external
+  field285: Enum541 @external
+}
+
+type Type396 @extends @key(fields: "field1087") {
+  field1087: String @external
+}

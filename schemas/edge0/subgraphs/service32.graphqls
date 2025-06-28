@@ -1,0 +1,189 @@
+type Query @extends {
+  field395(arg41: [Input58!]): [Type185!]
+}
+
+input Input58 {
+  inputField129: ID!
+  inputField130: ID!
+}
+
+type Type171 {
+  field3: Scalar13!
+  field396: Enum517!
+  field312: Scalar15
+  field397: Boolean
+  field398: Boolean
+  field399: Boolean
+}
+
+type Type172 {
+  field3: Scalar13!
+  field397: Boolean
+  field398: Boolean
+  field399: Boolean
+}
+
+union Union6 = Type171 | Type172
+
+type Type173 {
+  field3: Scalar13!
+  field396: Enum517!
+  field312: Scalar15
+  field399: Boolean
+}
+
+type Type174 {
+  field3: Scalar13!
+  field399: Boolean
+}
+
+type Type175 {
+  field400: Boolean
+}
+
+union Union7 = Type173 | Type174 | Type175
+
+type Type176 {
+  field401: Boolean!
+  field402: [Enum517!]
+  field403: Boolean!
+  field404: [Enum517!]
+}
+
+type Type177 {
+  field405: Scalar14!
+  field3: Union6!
+  field84: [Enum517!] @deprecated(reason: "Anonymized deprecation reason")
+  field406: [Type180!] @deprecated(reason: "Anonymized deprecation reason")
+  field407: Type176! @deprecated(reason: "Anonymized deprecation reason")
+  field408: Type179!
+  field409: Type179!
+}
+
+type Type178 {
+  field405: Scalar14!
+  field3: Union7!
+  field408: Type179!
+  field409: Type179!
+}
+
+type Type179 {
+  field84: [Enum517!]
+  field407: Type176!
+  field406: [Type180!]
+}
+
+type Type180 {
+  field410: String!
+  field84: [Enum517!]
+}
+
+interface Interface28 {
+  field411: Type177
+  field412: Type177
+  field413: Type178
+}
+
+type Type181 implements Interface28 {
+  field414: [Type182!]
+  field411: Type177
+  field412: Type177
+  field413: Type178
+}
+
+type Type182 implements Interface28 {
+  field415: Type188!
+  field411: Type177
+  field412: Type177
+  field413: Type178
+}
+
+type Type183 implements Interface28 {
+  field411: Type177
+  field412: Type177
+  field413: Type178
+}
+
+type Type184 {
+  field416: Type181
+  field417: Type181
+  field418: Type181
+  field419: Type181
+  field420: Type181
+  field421: Type181
+}
+
+type Type185 @key(fields: "field422 field423") {
+  field422: ID!
+  field423: ID!
+  field415: Type188!
+  field424: Type186!
+}
+
+type Type186 {
+  field416: Type183
+  field417: Type183
+  field418: Type183
+  field419: Type183
+  field420: Type183
+  field421: Type183
+}
+
+"""
+This is an anonymized description
+"""
+type Type32 @extends @key(fields: "field107") {
+  field107: Int! @external
+  """
+  This is an anonymized description
+  """
+  field425: Type184 @directive4
+}
+
+interface Interface29 {
+  field425: Type184
+}
+
+interface Interface26 @extends {
+  field2: ID! @external
+}
+
+type Type139 implements Interface29 & Interface26 @extends @key(fields: "field2") {
+  field2: ID! @external
+  field425: Type184
+}
+
+type Type141 implements Interface29 & Interface26 @extends @key(fields: "field2") {
+  field2: ID! @external
+  field425: Type184
+}
+
+type Type142 implements Interface29 & Interface26 @extends @key(fields: "field2") {
+  field2: ID! @external
+  field425: Type184
+}
+
+type Type140 implements Interface29 & Interface26 @extends @key(fields: "field2") {
+  field2: ID! @external
+  field425: Type184
+}
+
+type Type143 implements Interface29 & Interface26 @extends @key(fields: "field2") {
+  field2: ID! @external
+  field425: Type184
+}
+
+"""
+This is an anonymized description
+"""
+type Type187 @extends @key(fields: "field2") {
+  field2: Int! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type188 @key(fields: "field426 { field2 } field120 { field107 }") @extends {
+  field426: Type187 @external
+  field120: Type32 @external
+}

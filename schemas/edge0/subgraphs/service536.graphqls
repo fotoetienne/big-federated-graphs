@@ -1,0 +1,187 @@
+type Query {
+  """
+  This is an anonymized description
+  """
+  field26918(
+  arg60: Input6000!): Interface705
+  """
+  This is an anonymized description
+  """
+  field26919(
+  arg60: Input6000!): Interface705
+  """
+  This is an anonymized description
+  """
+  field26920(
+  arg429: ID!
+  arg2263: Scalar8!
+  arg2264: Scalar8!): Type13359
+  """
+  This is an anonymized description
+  """
+  field26921(
+  arg429: ID!): [Type13359]
+  """
+  This is an anonymized description
+  """
+  field26922(
+  arg965: Scalar14!): [Type13359]
+  """
+  This is an anonymized description
+  """
+  field26923(
+  arg60: Input6000!): Type13357
+  """
+  This is an anonymized description
+  """
+  field26924(
+  arg60: Input6000!): Type13356
+}
+
+interface Interface705 {
+  field4150: Scalar8
+  field4151: Scalar8
+  field4149: Scalar9
+  """
+  This is an anonymized description
+  """
+  field285: Enum3117
+  """
+  This is an anonymized description
+  """
+  field26925: ID!
+  """
+  This is an anonymized description
+  """
+  field44: Int!
+}
+
+enum Enum3117 {
+  VALUE_1094
+  VALUE_4665
+  VALUE_4664
+  VALUE_4666
+}
+
+"""
+This is an anonymized description
+"""
+type Type13356 implements Interface705 {
+  field4150: Scalar8
+  field4151: Scalar8
+  field4149: Scalar9
+  field3003: Enum520
+  field3002: Int
+  """
+  This is an anonymized description
+  """
+  field285: Enum3117
+  """
+  This is an anonymized description
+  """
+  field26925: ID!
+  """
+  This is an anonymized description
+  """
+  field44: Int!
+}
+
+"""
+This is an anonymized description
+"""
+type Type13357 implements Interface705 {
+  field4150: Scalar8
+  field4151: Scalar8
+  field4149: Scalar9
+  field3003: Enum520
+  field3002: Int
+  """
+  This is an anonymized description
+  """
+  field285: Enum3117
+  """
+  This is an anonymized description
+  """
+  field26925: ID!
+  """
+  This is an anonymized description
+  """
+  field44: Int!
+}
+
+"""
+This is an anonymized description
+"""
+type Type13358 implements Interface705 {
+  field4150: Scalar8
+  field4151: Scalar8
+  field4149: Scalar9
+  """
+  This is an anonymized description
+  """
+  field285: Enum3117
+  """
+  This is an anonymized description
+  """
+  field26925: ID!
+  """
+  This is an anonymized description
+  """
+  field44: Int!
+}
+
+"""
+This is an anonymized description
+"""
+type Type13359 implements Interface705 {
+  field4150: Scalar8
+  field4151: Scalar8
+  field4149: Scalar9
+  field58: Enum3118
+  field4284: Type1733
+  """
+  This is an anonymized description
+  """
+  field285: Enum3117
+  """
+  This is an anonymized description
+  """
+  field26925: ID!
+  """
+  This is an anonymized description
+  """
+  field44: Int!
+  """
+  This is an anonymized description
+  """
+  field5775: Boolean
+}
+
+enum Enum3118 {
+  """
+  This is an anonymized description
+  """
+  VALUE_4663
+  """
+  This is an anonymized description
+  """
+  VALUE_160
+}
+
+input Input6000 {
+  inputField9262: Scalar8!
+  inputField7873: Scalar8!
+  inputField1264: Enum520!
+  inputField1263: Int!
+}
+
+"""
+This is an anonymized description
+"""
+type Type1733 @key(fields: "field2") @extends {
+  field2: ID! @external
+  """
+  This is an anonymized description
+  """
+  field26926: [Type13359]
+}

@@ -1,0 +1,64 @@
+extend type Query {
+  field1707(arg181: Int = 0): [Type930] @experimental
+}
+
+type Type930 {
+  field1707(arg181: Int = 0): [Type930]
+  field1708(arg16: String = "default"): String
+  field122(arg182: Int = 0): Type930
+}
+
+type Query @extends {
+  field1709(arg183: ID!): Type931 @experimental
+}
+
+type Mutation @extends {
+  field1710(arg183: ID!): Type931 @experimental
+  field1711(arg16: Input226): Type934 @experimental
+  field1712: Type934 @experimental
+}
+
+type Subscription @extends {
+  field1713(arg183: ID!, arg184: ID, arg185: Int): Interface54 @experimental
+}
+
+type Type931 {
+  field2: ID
+  field70: String
+}
+
+type Type932 {
+  field2: ID
+  field70: String
+  field131: Enum255
+}
+
+enum Enum255 {
+  VALUE_8
+  VALUE_1360
+}
+
+interface Interface54 {
+  field1714: ID
+}
+
+type Type933 implements Interface54 {
+  field1714: ID
+  field442: String
+  field368: ID
+}
+
+type Type934 {
+  field131: Enum256
+}
+
+enum Enum256 {
+  VALUE_439
+  VALUE_1361
+}
+
+input Input226 {
+  inputField553: ID!
+  inputField55: ID!
+  inputField554: String!
+}

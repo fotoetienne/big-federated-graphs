@@ -1,0 +1,54 @@
+type Query @extends {
+  field32210(arg12: String): [Type2478!]! @experimental
+  field32211(arg1: Input7623): Type2478 @experimental
+}
+
+type Type2478 @key(fields: "field2") {
+  field2: ID!
+  field44: String
+  field32212: Type16083
+  field9464: Type16083
+  field32213: Type16083
+  field9465: Type16083
+  field32214: Type16083
+  field1388: Type34
+}
+
+type Type16083 {
+  field6330: [String!]
+  field15382: String
+  field1388: Type34
+}
+
+type Type16084 {
+  field36: [Type16085]!
+  """
+  This is an anonymized description
+  """
+  field37: Type122!
+}
+
+type Type16085 {
+  field41: String!
+  field40: Type2478!
+}
+
+input Input7623 {
+  inputField7: ID!
+  inputField8: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type35 @key(fields: "field2 field44") @extends {
+  field2: String! @external
+  field44: String @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type34 @key(fields: "field108 { field2 field44 }") @extends {
+  field108: Type35 @external
+}

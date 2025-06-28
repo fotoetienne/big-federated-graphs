@@ -1,0 +1,111 @@
+type Mutation @extends {
+  field28119(arg1: Input6456!): Type14003!
+}
+
+type Type122 {
+  field269: String
+  field270: Boolean!
+  field271: Boolean!
+  field272: String
+}
+
+type Type3042 @key(fields: "field255") {
+  field252: Float!
+  field253: String
+  field254: ID
+  field255: ID!
+  field256: String!
+  field257: String!
+  field258: ID
+  field259: ID!
+  field260: Enum3339!
+  field44: String
+}
+
+type Type14001 {
+  field36: [Type14002!]
+  field37: Type122!
+}
+
+type Type14002 {
+  field41: String
+  field40: Type3042!
+}
+
+type Query @extends {
+  field28120(arg33: ID!): Type3042
+  field28121(arg1: Input48!): Type14001!
+}
+
+type Type14003 {
+  field275: Type3042
+}
+
+enum Enum3339 {
+  VALUE_199
+  VALUE_151
+  VALUE_158
+  VALUE_152
+  VALUE_149
+}
+
+enum Enum31 {
+  VALUE_201
+  VALUE_202
+}
+
+input Input6453 {
+  inputField9760: Input6455
+  inputField9761: [Input6454!]
+}
+
+input Input6454 {
+  inputField171: Int!
+  inputField655: [String!]!
+}
+
+input Input6455 {
+  inputField218: [Int!]!
+  inputField655: [String!]!
+}
+
+input Input48 {
+  inputField106: String!
+  inputField107: Boolean! = false
+}
+
+input Input49 {
+  inputField7: String!
+  "This is an anonymized description"
+  inputField108: Enum31!
+}
+
+input Input50 {
+  "This is an anonymized description"
+  inputField109: String
+  "This is an anonymized description"
+  inputField110: Int!
+  "This is an anonymized description"
+  inputField111: Int!
+  "This is an anonymized description"
+  inputField112: Int!
+}
+
+input Input6456 {
+  inputField113: String
+  inputField103: String
+  "This is an anonymized description"
+  inputField104: String
+  inputField114: String
+  inputField128: Input6453!
+  "This is an anonymized description"
+  inputField115: Input49
+  "This is an anonymized description"
+  inputField116: Input50
+  "This is an anonymized description"
+  inputField117: String
+  "This is an anonymized description"
+  inputField118: String
+  "This is an anonymized description"
+  inputField119: String
+}

@@ -1,0 +1,255 @@
+type Type2054 @key(fields: "field4932") @extends {
+  field4932: String! @external
+}
+
+type Type1974 @key(fields: "field4932") @extends {
+  field4932: String! @external
+}
+
+type Type1971 @key(fields: "field4932") @extends {
+  field4932: String! @external
+}
+
+type Type1972 @key(fields: "field4932") @extends {
+  field4932: String! @external
+}
+
+type Type1968 @key(fields: "field4932") @extends {
+  field4932: String! @external
+}
+
+type Type1975 @key(fields: "field4932") @extends {
+  field4932: String! @external
+}
+
+type Type1987 @key(fields: "field4932") @extends {
+  field4932: String! @external
+}
+
+type Type1970 @key(fields: "field4932") @extends {
+  field4932: String! @external
+}
+
+type Type1976 @key(fields: "field2757") @extends {
+  field2757: String! @external
+}
+
+type Type35 @key(fields: "field2 field44") @extends {
+  field2: String! @external
+  field44: String @external
+}
+
+type Type34 @key(fields: "field108 { field2 field44 }") @extends {
+  field108: Type35 @external
+}
+
+type Type29 @key(fields: "field98") @extends {
+  field98: ID! @external
+}
+
+extend type Query {
+  field5715(arg1: Input1021!): [Type3298]
+  field5716(arg10: Input1021!, arg101: Input1020): Type3296!
+  field5717(arg4: ID!): Type3298
+}
+
+extend type Mutation {
+  field5718(arg1: Input1022!): Type3298
+  field5719(arg4: ID!, arg1: Input1023!): Type3298
+}
+
+enum Enum612 {
+  VALUE_777
+  VALUE_2617
+  VALUE_151
+  VALUE_152
+}
+
+input Input1020 {
+  inputField211: Int
+  inputField28: String
+  inputField1272: Int
+  inputField29: String
+}
+
+input Input1021 {
+  inputField715: ID
+  inputField135: Enum612
+  inputField81: ID
+}
+
+input Input1022 {
+  inputField2114: ID!
+  inputField2115: Enum2434!
+  inputField81: ID!
+  inputField2116: ID!
+  inputField2117: String!
+  inputField2118: String
+  inputField147: [Input1024!]
+  inputField334: [Input1025!] @deprecated(reason: "Anonymized deprecation reason")
+}
+
+input Input1023 {
+  inputField135: Enum612
+  inputField2118: String
+}
+
+input Input1024 {
+  inputField2119: ID!
+  inputField2120: String
+  inputField334: [Input1025!]!
+}
+
+input Input1025 {
+  inputField57: String!
+  inputField2121: String!
+  inputField113: String!
+  inputField2122: String!
+  inputField2123: String!
+  inputField2119: ID @deprecated(reason: "Anonymized deprecation reason")
+  inputField2120: String
+  inputField2124: String!
+}
+
+type Type3296 {
+  field37: Type122!
+  field36: [Type3297]
+}
+
+type Type3297 {
+  field41: String!
+  field40: Type3298
+}
+
+type Type3298 {
+  field2: ID!
+  field5720: ID!
+  field1131: ID!
+  field576: String!
+  field449: [Type3300!]!
+  field5721: [Type3301!]!
+  field58: Enum612!
+  field5722: Enum2434!
+  field163: ID!
+  field56: String!
+  field95: Type29
+  field94: Scalar14!
+  field57: String
+  field5723: Type29
+  field96: Scalar14
+  field255: ID
+}
+
+type Type3299 {
+  field5724: ID!
+  field5725: String
+}
+
+type Type3300 {
+  field2: ID!
+  field5726: Type3299!
+  field2257: Type1976!
+  field5721: [Type3301!]!
+}
+
+type Type3301 {
+  field2: ID!
+  field5: String!
+  field1135: String!
+  field5727: ID!
+  field4031: ID!
+  field154: String!
+  field1636: String!
+  field1134: String!
+  field1136: String!
+  field5725: String
+  field5728: Int
+  field5729: Type1975
+  field5730: ID
+  field1388: Type34
+  field5731: ID
+  field56: String!
+  field95: Type29
+  field94: Scalar14!
+  field57: String
+  field5723: Type29
+  field96: Scalar14
+}
+
+type Mutation
+
+type Query
+
+type Type3302 {
+  field5732: Type1968!
+  field1247: [String!]!
+}
+
+type Type3303 {
+  field1247: [String!]!
+  field5733: [Type1968!]
+  field5734: [Type3302!]
+}
+
+extend type Query {
+  field5735(arg1: Input1026!): [Type3304]
+  field5736: Type3303
+}
+
+extend type Mutation {
+  field5737(arg1: Input1027): [Type3304]
+  field5738(arg1: [Input1028]): [Type3304]
+  field5739(arg4: ID!, arg1: Input1028): Type3304
+}
+
+type Type3304 {
+  field2: ID!
+  field148: Int!
+  field149: Int!
+  field1581: Int!
+  field5740: Type2054
+  field5741: Type1974
+  field5742: Enum2434!
+  field5743: Type1971
+  field5744: Type1972
+  field58: Enum613!
+  field56: ID!
+  field94: Scalar14!
+  field57: ID
+  field96: Scalar14
+}
+
+input Input1026 {
+  inputField2125: ID
+  inputField2126: ID
+}
+
+input Input1027 {
+  inputField321: [ID]!
+}
+
+input Input1028 {
+  inputField2127: Int!
+  inputField2128: Int!
+  inputField711: Int!
+  inputField2125: ID!
+  inputField2129: ID!
+  inputField2126: ID
+  inputField2130: ID
+  inputField2131: Enum2434!
+  inputField135: Enum613
+}
+
+enum Enum613 {
+  VALUE_213
+  VALUE_9
+}
+
+enum Enum614 {
+  VALUE_2618 @deprecated(reason: "Anonymized deprecation reason")
+  VALUE_1743 @deprecated(reason: "Anonymized deprecation reason")
+  VALUE_2619 @deprecated(reason: "Anonymized deprecation reason")
+  VALUE_2620 @deprecated(reason: "Anonymized deprecation reason")
+  VALUE_2621 @deprecated(reason: "Anonymized deprecation reason")
+  VALUE_2622 @deprecated(reason: "Anonymized deprecation reason")
+}

@@ -1,0 +1,214 @@
+type Mutation @extends {
+  field1657(arg169: ID!, arg170: String, arg48: String): Union63
+  field1658: String!
+  field4(arg1: String!): Union64
+  field1659(arg1: String!): Union65
+  field1660: Type915 @directive3(arg25: "anonymous-string")
+  field1661(arg171: Enum251!): String!
+  field1662(arg172: Boolean): Type920!
+  field1663(arg173: String!): Type907! @experimental
+  field1664(arg174: String!): Type27! @experimental
+  field1665: Type904!
+  field1666(arg175: String, arg176: String): Type905!
+  field1667(arg177: Enum247!, arg178: String, arg176: String): Type906!
+  field1668(arg179: String!): Union66!
+  field1669: Union67!
+  field1670: Union62 @experimental
+}
+
+union Union62 = Type902 | Type903
+
+type Type902 {
+  field494: Type27!
+}
+
+type Type903 {
+  field1055: Enum246!
+  field108: Interface20
+}
+
+enum Enum246 {
+  VALUE_1331
+  VALUE_1332
+}
+
+type Type904 {
+  field1671: String!
+  field286: String
+  field1672: String
+}
+
+type Type905 {
+  field1673: String
+  field286: String
+}
+
+type Type906 {
+  field494: Type27!
+}
+
+enum Enum247 {
+  VALUE_1333
+}
+
+type Type907 {
+  field1674: String!
+  field1675: String!
+}
+
+union Union63 = Type908 | Type910 | Type909
+
+type Type908 {
+  field5: Enum248!
+  field108: Interface20
+}
+
+type Type909 {
+  field1676: Type910! @deprecated(reason: "Anonymized deprecation reason")
+  field1677: Type496!
+  field1678: Type204
+  field1679: Boolean!
+}
+
+type Type496 {
+  field415: String!
+}
+
+enum Enum248 {
+  VALUE_1334
+  VALUE_1335
+  VALUE_1336
+  VALUE_1337 @deprecated
+  VALUE_1338
+  VALUE_1332
+  VALUE_1339
+  VALUE_1340
+  VALUE_1341
+  VALUE_1342
+  VALUE_1343
+  VALUE_1344
+  VALUE_1345
+  VALUE_1346
+  VALUE_1347
+}
+
+type Type910 {
+  field2: ID! @deprecated(reason: "Anonymized deprecation reason")
+  field1680: String! @deprecated(reason: "Anonymized deprecation reason")
+  field1681: String @deprecated(reason: "Anonymized deprecation reason")
+}
+
+interface Interface20 @extends {
+  field12(arg12: String): String @external
+}
+
+type Type33 implements Interface20 @key(fields: "field45 field173") @extends {
+  field45: ID! @external
+  field173: String! @external
+  field12(arg12: String): String @external
+}
+
+type Type204 @key(fields: "field2") {
+  field2: ID!
+}
+
+union Union64 = Type911 | Type912
+
+type Type911 {
+  field6: String!
+}
+
+type Type912 {
+  field5: Enum249
+}
+
+enum Enum249 {
+  VALUE_1348
+  VALUE_1349
+}
+
+union Union65 = Type913 | Type914
+
+type Type913 {
+  field494: Type27!
+}
+
+type Type914 {
+  field1055: Enum250!
+  field108: Interface20
+}
+
+enum Enum250 {
+  VALUE_382
+  VALUE_1153
+  VALUE_1348
+}
+
+type Type27 @key(fields: "field166") @extends {
+  field166: ID! @external
+}
+
+type Type915 {
+  field1682: ID! @deprecated(reason: "Anonymized deprecation reason")
+  field981: ID! @deprecated(reason: "Anonymized deprecation reason")
+  field151: ID!
+}
+
+enum Enum251 {
+  VALUE_1350
+  VALUE_1351
+  VALUE_1352
+  VALUE_1353
+  VALUE_1354
+  VALUE_1355
+  VALUE_1356
+  VALUE_1357
+  VALUE_1358
+}
+
+union Union66 = Type916 | Type917
+
+type Type916 {
+  field1683: String!
+  field1684: String!
+  field1685: Scalar9!
+}
+
+type Type917 {
+  field5: Enum252!
+}
+
+enum Enum252 {
+  VALUE_1335
+  VALUE_1332
+  VALUE_1359
+}
+
+union Union67 = Type918 | Type919
+
+type Type918 {
+  field1686: String!
+  field1685: Scalar9!
+}
+
+type Type919 {
+  field5: Enum253!
+}
+
+enum Enum253 {
+  VALUE_1335
+  VALUE_1332
+}
+
+type Type920 {
+  field494: Type27!
+}
+
+type Query @extends {
+  field1687(arg180: Int): [Type921]
+}
+
+type Type921 {
+  field1688: String
+  field1689: Scalar9
+}

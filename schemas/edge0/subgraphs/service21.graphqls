@@ -1,0 +1,13 @@
+type Type24 @key(fields: "field2") @key(fields: "field81") {
+  field2: ID!
+  field81: String!
+  field5: String!
+  field82: Type24
+  field83: [Type24!]!
+  field84: [Type25!]!
+}
+
+type Type25 @key(fields: "field2") @extends {
+  field2: Enum517! @external
+  field85: Type24
+}

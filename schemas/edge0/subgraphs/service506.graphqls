@@ -1,0 +1,100 @@
+scalar Scalar1
+
+type Query {
+  field25989: [Type12875!]!
+  field25990(arg4: Scalar1!): Type12873!
+  field25991: [Type12874]
+}
+
+type Type2481 @key(fields: "field2") @extends {
+  field2: Scalar1! @external
+  field18861: Type2482 @external
+  field18865: Type2482 @external
+  field15043: Type12873 @requires(fields: "field18861 { field2 } field18865 { field2 }")
+}
+
+type Type2482 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+enum Enum2930 {
+  VALUE_1424
+  VALUE_1149
+}
+
+enum Enum2931 {
+  VALUE_6843
+  VALUE_1185
+  VALUE_5960
+  VALUE_1084
+}
+
+enum Enum2932 {
+  VALUE_3480
+  VALUE_3481
+  VALUE_3482
+  VALUE_4125
+}
+
+type Type12872 {
+  field58: Enum2933!
+  field25992: String!
+  field2017: Scalar14!
+  field8617: Float!
+  field25993: Float
+  field253: String
+  field25994: Boolean
+  field490: [String!]
+}
+
+type Type12873 {
+  field16987: [Type12872]!
+  field7765: [Type12872]!
+}
+
+enum Enum2933 {
+  VALUE_326
+  VALUE_1356
+  VALUE_750
+  VALUE_4076
+  VALUE_6854
+  VALUE_9160
+  VALUE_4073
+  VALUE_196
+  VALUE_9161
+  VALUE_9162
+  VALUE_9163
+  VALUE_1104
+  VALUE_199
+  VALUE_6842
+  VALUE_9164
+  VALUE_152
+  VALUE_4074
+  VALUE_213
+  VALUE_141
+}
+
+enum Enum2934 {
+  VALUE_1006
+  VALUE_4161
+  VALUE_4043
+  VALUE_1919
+}
+
+type Type12874 {
+  field58: Enum2933!
+  field253: String!
+  field13382: Boolean!
+  field25992: [String!]
+  field25995: Boolean!
+}
+
+type Type12875 {
+  field25996: Float!
+  field13382: Enum2933!
+  field18907: Enum2931!
+  field13595: Enum2930!
+  field2248: Enum2932!
+  field311: String!
+  field12010: Scalar1!
+}

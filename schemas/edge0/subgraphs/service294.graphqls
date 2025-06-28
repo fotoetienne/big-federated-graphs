@@ -1,0 +1,543 @@
+type Type1952 @key(fields: "field2") @extends {
+  field2: ID! @external
+  field14726: Type6867
+  field14727: Type6869
+}
+
+type Type1944 @key(fields: "field2") @extends {
+  field2: ID! @external
+  field14728: [Type1945!]!
+}
+
+type Type32 @key(fields: "field107") @extends {
+  field107: Int! @external
+}
+
+type Type25 @key(fields: "field2") @extends {
+  field2: Enum517! @external
+}
+
+type Type29 @key(fields: "field98") @extends {
+  field98: ID! @external
+}
+
+type Type869 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+type Type1931 @key(fields: "field2") {
+  field2: ID!
+  field5: Enum1629
+  field14729: String
+  field14730: [Enum1630!]!
+  field14731: [String!]!
+  field14732: [Enum517!]!
+  field14733: String
+  field14734: [Enum1624!]!
+  field94: Scalar14
+  field96: Scalar14
+}
+
+enum Enum1624 {
+  VALUE_4
+  VALUE_5759
+}
+
+type Type1953 @key(fields: "field2") {
+  field2: ID!
+  field3327: Enum1629
+  field14735: Enum1630
+  field14736: Enum1626
+  field14737: [Enum1625!]!
+  field14738: Enum1627!
+  field14739: [Enum517!]!
+  field14740: [Enum1628!]!
+}
+
+enum Enum1625 {
+  VALUE_5760
+  VALUE_5761
+  VALUE_5762
+  VALUE_5763
+  VALUE_5764
+  VALUE_5765
+}
+
+enum Enum1626 {
+  VALUE_5766
+  VALUE_5767
+  VALUE_5768
+}
+
+enum Enum1627 {
+  VALUE_1132
+  VALUE_5769
+  VALUE_5770
+}
+
+enum Enum1628 {
+  VALUE_4519
+  VALUE_4518
+}
+
+enum Enum1629 {
+  VALUE_5771
+  VALUE_5772
+  VALUE_5773
+  VALUE_5774
+  VALUE_5775
+  VALUE_5776
+  VALUE_5777
+  VALUE_5778
+  VALUE_5779
+  VALUE_5780
+  VALUE_5781
+  VALUE_5782
+  VALUE_4352
+  VALUE_5783
+  VALUE_5784
+  VALUE_5785
+  VALUE_5786
+  VALUE_5787
+  VALUE_5788
+  VALUE_5789
+  VALUE_5790
+  VALUE_5791
+  VALUE_5792
+  VALUE_5793
+  VALUE_5794
+  VALUE_5795
+  VALUE_5796
+  VALUE_5797
+  VALUE_5798
+}
+
+enum Enum1630 {
+  VALUE_5799
+  VALUE_5800
+  VALUE_5801
+  VALUE_5802
+  VALUE_4554
+  VALUE_5803
+  VALUE_5804
+  VALUE_5805
+  VALUE_5806
+}
+
+type Type6867 {
+  """
+  This is an anonymized description
+  """
+  field14741(
+  arg10: Input2960): [Type6868!]!
+  """
+  This is an anonymized description
+  """
+  field14742: Boolean
+}
+
+input Input2960 {
+  """
+  This is an anonymized description
+  """
+  inputField2330: Boolean
+}
+
+type Type6868 {
+  field2: ID!
+  field1310: String!
+  field5: String
+  field56: Union210
+  field94: Scalar14
+  field14743: Union210
+  field8391: Scalar14
+}
+
+union Union210 = Type29 | Type869
+
+type Mutation {
+  field14744(arg1: [Input2961!]!): [Union211!]!
+  field14745(arg1: [ID!]!): [Type6871!]
+}
+
+input Input2961 {
+  inputField922: String!
+  inputField5310: ID!
+  inputField57: String
+}
+
+union Union211 = Type1952 | Type6871
+
+type Type6869 {
+  field14746: Type6870
+  field14747: Boolean
+  field14748: Type6873
+  field14749: Boolean
+  field14750: Type6876
+  field14751: Boolean
+  field14752: Type6874
+  field14753: Boolean
+  field14754: Type6877
+  field14755: Boolean
+  field14756: Type6875
+  field14757: Boolean
+}
+
+type Type6870 {
+  field2: ID!
+  field56: Union210!
+  field94: Scalar14!
+  field14743: Union210
+  field8391: Scalar14
+}
+
+extend type Mutation {
+  field14758(arg1: Input2962!): Union212!
+  field14759(arg1: ID!): Type6871
+  field14760(arg1: Input2963!): Union213!
+  field14761(arg1: ID!): Type6871
+  field14762(arg1: Input2966!): Union216!
+  field14763(arg1: ID!): Type6871
+  field14764(arg1: Input2964!): Union214!
+  field14765(arg1: ID!): Type6871
+  field14766(arg1: Input2967!): Union217!
+  field14767(arg1: ID!): Type6871
+  field14768(arg1: Input2965!): Union215!
+  field14769(arg1: ID!): Type6871
+}
+
+input Input2962 {
+  inputField5310: ID!
+}
+
+union Union212 = Type1952 | Type6871
+
+type Type6871 {
+  field2660: [Type6872!]!
+}
+
+type Type6872 {
+  field388: String!
+  field285: Enum1631!
+  field87: String!
+}
+
+enum Enum1631 {
+  VALUE_1285
+  VALUE_1286
+  VALUE_1287
+  VALUE_1288
+  VALUE_1289
+  VALUE_263
+  VALUE_2604
+}
+
+type Type6873 {
+  field2: ID!
+  field56: Union210!
+  field94: Scalar14!
+  field14743: Union210
+  field8391: Scalar14
+}
+
+input Input2963 {
+  inputField5310: ID!
+}
+
+union Union213 = Type1952 | Type6871
+
+type Type6874 {
+  field2: ID!
+  field56: Union210!
+  field94: Scalar14!
+  field14743: Union210
+  field8391: Scalar14
+}
+
+input Input2964 {
+  inputField5310: ID!
+}
+
+union Union214 = Type1952 | Type6871
+
+type Type6875 {
+  field2: ID!
+  field56: Union210!
+  field94: Scalar14!
+  field14743: Union210
+  field8391: Scalar14
+}
+
+input Input2965 {
+  inputField5310: ID!
+}
+
+union Union215 = Type1952 | Type6871
+
+type Type6876 {
+  field2: ID!
+  field56: Union210!
+  field94: Scalar14!
+  field14743: Union210
+  field8391: Scalar14
+}
+
+input Input2966 {
+  inputField5310: ID!
+}
+
+union Union216 = Type1952 | Type6871
+
+type Type6877 {
+  field2: ID!
+  field56: Union210!
+  field94: Scalar14!
+  field14743: Union210
+  field8391: Scalar14
+}
+
+input Input2967 {
+  inputField5310: ID!
+}
+
+union Union217 = Type1952 | Type6871
+
+type Query {
+  field14770(arg11: [ID!]!): [Union218!]!
+  field14771(arg11: [ID!]!): [Union219!]!
+  field14772(arg1399: Boolean, arg7: Int, arg6: String, arg1: [Input2968]): Type6878
+  field14773(arg11: [ID!]!): [Union221!]!
+}
+
+union Union218 = Type1931 | Type6871
+
+union Union219 = Type1953 | Type6871
+
+input Input2968 {
+  inputField5311: String!
+  inputField1257: String!
+  inputField340: Enum517
+}
+
+type Type6878 {
+  field37: Type122!
+  field36: [Type6879]
+}
+
+type Type6879 {
+  field41: String!
+  field40: Type6880
+}
+
+type Type6880 {
+  field14774: String!
+  field14775: [Union220!]!
+  field2660: [Type6872!]!
+}
+
+union Union220 = Type6881 | Type6882 | Type6883 | Type6884 | Type6885
+
+type Type6881 {
+  field14776: String!
+}
+
+type Type6882 {
+  field87: String!
+}
+
+type Type6883 {
+  field14731: [String!]!
+}
+
+type Type6884 {
+  field14777: [Enum517!]!
+}
+
+type Type6885 {
+  field87: String!
+}
+
+extend type Mutation {
+  """
+  This is an anonymized description
+  """
+  field14778(
+  arg1: Input2969!): Union222!
+  """
+  This is an anonymized description
+  """
+  field14779(
+  arg1: Input2970!): Union223!
+  """
+  This is an anonymized description
+  """
+  field14780(
+  arg1: Input2971!): [Union225!]!
+  """
+  This is an anonymized description
+  """
+  field14781(
+  arg1: Input2972!): Union224!
+}
+
+enum Enum1632 {
+  VALUE_2318
+  VALUE_2007
+  VALUE_2008
+  VALUE_3629
+}
+
+enum Enum1633 {
+  VALUE_327
+  VALUE_750
+  VALUE_992
+}
+
+enum Enum1634 {
+  VALUE_5807
+  VALUE_5808
+  VALUE_5809
+  VALUE_209
+}
+
+input Input2969 {
+  inputField5312: ID!
+  inputField5313: ID!
+  inputField5314: Boolean!
+  inputField5315: [Input2973!]
+  inputField5316: [Enum517!]!
+}
+
+input Input2970 {
+  inputField7: ID!
+}
+
+input Input2971 {
+  inputField5317: ID
+  inputField5313: ID
+}
+
+input Input2972 {
+  inputField7: ID!
+  inputField489: Enum1632!
+  inputField593: ID
+  inputField5315: [Input2973]
+  inputField5318: Input2974
+}
+
+input Input2973 {
+  inputField25: Enum1625
+  inputField55: String
+}
+
+input Input2974 {
+  inputField689: String!
+  inputField5319: [Enum1634!]!
+}
+
+union Union221 = Type1945 | Type6871
+
+union Union222 = Type1945 | Type6871
+
+union Union223 = Type1945 | Type6871
+
+union Union224 = Type1945 | Type6871
+
+union Union225 = Type1945 | Type6871
+
+type Type1945 @key(fields: "field2") {
+  field2: ID!
+  field14782: Type1953
+  field14783: Type1944
+  field14784: [Enum517!]!
+  field58: Enum1633
+  field1512: Type29
+  field14785: [Type6886]
+  field14786: Type6887
+  field14787: Boolean
+  field94: Scalar14!
+  field56: Union210
+  field96: Scalar14!
+  field57: Union210
+  field8391: Scalar14
+  field14743: Union210
+}
+
+type Type6886 {
+  field251: Enum1625!
+  field134: String
+}
+
+type Type6887 {
+  field1532: String!
+  field14788: [Enum1634!]
+}
+
+extend type Query {
+  field14789(arg11: [ID!]!): [Union226!]!
+  field14790(arg1400: ID!): Union227!
+}
+
+union Union226 = Type1946 | Type6871
+
+type Type1946 @key(fields: "field2") {
+  field2: ID!
+  field96: Scalar14!
+  field120: Type32!
+  field10: Type25!
+  field58: Enum1635!
+  field1512: Type29
+  field14791: [Type6888!]
+  field221: [Type6889!]
+}
+
+enum Enum1635 {
+  VALUE_1447
+  VALUE_1910
+  VALUE_750
+}
+
+type Type6888 {
+  field450: String!
+  field134: String!
+  field14792: String!
+  field5757: String!
+  field253: String!
+}
+
+type Type6889 {
+  field450: String!
+  field134: Float!
+  field253: String!
+  field14793: Enum1636
+}
+
+enum Enum1636 {
+  VALUE_5810
+  VALUE_5811
+}
+
+union Union227 = Type6890 | Type6871
+
+type Type6890 {
+  field279: String!
+}
+
+extend type Mutation {
+  field14794(arg1401: ID!): Union228
+  field14795(arg1: Input2975!): Union229!
+}
+
+union Union228 = Type6891 | Type6871
+
+type Type6891 {
+  field14796: ID!
+}
+
+input Input2975 {
+  inputField7: ID!
+  inputField135: Enum1635
+  inputField5320: ID
+}
+
+union Union229 = Type1946 | Type6871

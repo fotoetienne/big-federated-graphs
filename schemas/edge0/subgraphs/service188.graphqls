@@ -1,0 +1,236 @@
+type Query @extends {
+  field8620(arg58: String!, arg47: String!, arg153: String): Type4627
+  field8621(arg58: String!, arg47: String): Type4629
+  field8622(arg58: String!): Type4636!
+  field8623(arg450: String!): Type4637
+  field8624(arg1: Input1695): [Type4626]!
+  field8625(arg58: String!, arg47: String, arg153: String): Type4626!
+}
+
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field8626(
+  arg866: String!
+  arg867: Scalar16!): Type4637
+}
+
+"""
+This is an anonymized description
+"""
+input Input1695 {
+  "This is an anonymized description"
+  inputField3102: String!
+  "This is an anonymized description"
+  inputField3103: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type4626 {
+  "This is an anonymized description"
+  field5: ID
+  "This is an anonymized description"
+  field7624: Type4628
+  "This is an anonymized description"
+  field1091(
+  arg47: String
+  arg153: String): [Type4627!]!
+}
+
+type Type4627 {
+  "This is an anonymized description"
+  field2: ID
+  "This is an anonymized description"
+  field524: Type4630
+  "This is an anonymized description"
+  field8627: Scalar17!
+}
+
+type Type4628 {
+  "This is an anonymized description"
+  field2: ID
+  "This is an anonymized description"
+  field524: Type4630
+  "This is an anonymized description"
+  field8628: Type4636
+  "This is an anonymized description"
+  field8627: Scalar17!
+  "This is an anonymized description"
+  field8629: Scalar17!
+}
+
+type Type4629 {
+  "This is an anonymized description"
+  field7624: Type4628!
+  "This is an anonymized description"
+  field1091: [Type4627!]!
+}
+
+"""
+This is an anonymized description
+"""
+type Type4630 {
+  field8630: String
+  "This is an anonymized description"
+  field965: String
+  "This is an anonymized description"
+  field1491: String
+  "This is an anonymized description"
+  field253: String
+  "This is an anonymized description"
+  field8631: Type4631
+  "This is an anonymized description"
+  field2202: String
+  "This is an anonymized description"
+  field8632: Scalar17
+  "This is an anonymized description"
+  field8633: Boolean
+  "This is an anonymized description"
+  field8634: Type4633
+  "This is an anonymized description"
+  field8635: Type4632
+  "This is an anonymized description"
+  field8636: Scalar1 @deprecated(reason: "Anonymized deprecation reason")
+  "This is an anonymized description"
+  field96: Scalar14
+}
+
+enum Enum950 {
+  VALUE_3982
+  VALUE_2373
+  VALUE_826
+}
+
+type Type4631 {
+  "This is an anonymized description"
+  field8637: Enum950
+  "This is an anonymized description"
+  field8638: String
+  "This is an anonymized description"
+  field8639: String
+  "This is an anonymized description"
+  field8640: String
+  "This is an anonymized description"
+  field8641: Scalar17
+  "This is an anonymized description"
+  field8642: String
+  "This is an anonymized description"
+  field2581: String
+  "This is an anonymized description"
+  field8643: String
+  "This is an anonymized description"
+  field8644: Scalar1
+}
+
+"""
+This is an anonymized description
+"""
+type Type4632 {
+  "This is an anonymized description"
+  field8645: Boolean
+  "This is an anonymized description"
+  field8646: Scalar1 @deprecated(reason: "Anonymized deprecation reason")
+  "This is an anonymized description"
+  field8647: Scalar14!
+}
+
+"""
+This is an anonymized description
+"""
+type Type4633 {
+  "This is an anonymized description"
+  field8648: String
+  "This is an anonymized description"
+  field8649: String
+  "This is an anonymized description"
+  field8650: String
+  "This is an anonymized description"
+  field8651: String
+  "This is an anonymized description"
+  field8652: String
+  "This is an anonymized description"
+  field8653: Scalar1 @deprecated(reason: "Anonymized deprecation reason")
+  "This is an anonymized description"
+  field8654: Scalar14
+}
+
+"""
+This is an anonymized description
+"""
+type Type4634 {
+  "This is an anonymized description"
+  field1083: Scalar17
+  "This is an anonymized description"
+  field2556: [String]
+}
+
+"""
+This is an anonymized description
+"""
+type Type4635 {
+  "This is an anonymized description"
+  field8655: Boolean
+  "This is an anonymized description"
+  field8656: Boolean
+  "This is an anonymized description"
+  field8657: Boolean
+  "This is an anonymized description"
+  field8658: Boolean
+  "This is an anonymized description"
+  field8659: Boolean
+  "This is an anonymized description"
+  field8660: Boolean
+  "This is an anonymized description"
+  field8661: Boolean @deprecated(reason: "Anonymized deprecation reason")
+  "This is an anonymized description"
+  field8662: Boolean
+  "This is an anonymized description"
+  field8663: Boolean
+}
+
+"""
+This is an anonymized description
+"""
+type Type4636 {
+  "This is an anonymized description"
+  field8664: Type4635
+  "This is an anonymized description"
+  field8665: [Type4634]
+  "This is an anonymized description"
+  field8666: Scalar1 @deprecated(reason: "Anonymized deprecation reason")
+  "This is an anonymized description"
+  field8667: Scalar14
+}
+
+type Type4637 {
+  field279: Scalar16
+}
+
+type Type411 @key(fields: "field1099 field1125") @extends {
+  field1099: ID! @external
+  field1125: Enum543 @external
+  """
+  This is an anonymized description
+  """
+  field8668: Type4637 @override(from: "service6")
+}
+
+type Type409 @key(fields: "field285 field1122 field5 field1123") @extends {
+  field285: Enum548! @external
+  field1122: String! @external
+  field5: String! @external
+  field1123: String @external
+  """
+  This is an anonymized description
+  """
+  field8669: String @external
+  """
+  This is an anonymized description
+  """
+  field8668: Type4637 @override(from: "service6") @requires(fields: "field8669")
+}
+
+scalar Scalar1
