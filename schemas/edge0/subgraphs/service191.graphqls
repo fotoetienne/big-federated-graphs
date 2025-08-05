@@ -1,51 +1,81 @@
-type Type4648 {
-  field252: Float!
-  field253: String
-  field254: ID
-  field255: ID!
-  field256: String!
-  field257: String!
-  field258: ID
-  field259: ID!
-  field260: Enum955!
-  field44: String
-}
-
-type Type4649 {
-  field263: String!
-  field260: String!
+type Query @extends {
+  field9916(arg927: String!): Type4960! @experimental
+  field9917(arg928: Boolean): [Type4960!]! @experimental
+  field9918(arg7: Input1832, arg24: Enum1072, arg929: Boolean): [Type4961!]! @experimental
+  field9919(arg6: String!, arg26: Int, arg28: Int, arg25: String, arg27: String): Type4962 @experimental
 }
 
 type Mutation @extends {
-  field8720(arg1: Input1705!): Type4649!
+  field9920(arg23: String!): Boolean @experimental
+  field9921(arg23: String!): Boolean @experimental
 }
 
-type Query @extends {
-  field8721(arg33: ID!): Type4648
-  field8722(arg1: Input1707!): [Type4648]
+type Type4960 {
+  field2: String!
+  field9922: Type31
+  field9923: Type31
+  field9924: Type31
+  field9925: Type31
+  field9926: Type31
+  field2897: Type4961!
 }
 
-enum Enum955 {
-  VALUE_199
-  VALUE_151
-  VALUE_158
-  VALUE_152
-  VALUE_149
+enum Enum1071 {
+  VALUE_171
+  VALUE_162
+  VALUE_4213
+  VALUE_763
+  VALUE_1012
+  VALUE_165
+  VALUE_164
 }
 
-input Input1705 {
-  inputField103: String
-  inputField104: String
-  inputField333: Input1706!
-  inputField105: String!
+type Type4961 {
+  field556: String!
+  field557: String!
+  field558: String!
+  field100: Enum1071!
+  field321: Type26
+  field554: Scalar14!
 }
 
-input Input1706 {
-  inputField3145: Int!
-  inputField3146: Int!
+type Type4962 {
+  field176: [Type4963]
+  field366: Type119!
 }
 
-input Input1707 {
-  inputField106: String!
-  inputField107: Boolean! = false
+type Type4963 {
+  field369: String!
+  field177: Type4961!
+}
+
+input Input1832 {
+  inputField356: Enum1071
+}
+
+enum Enum1072 {
+  VALUE_4214
+  VALUE_4215
+}
+
+"""
+This is an anonymized description
+"""
+type Type32 @key(fields: "field2 field58") @extends {
+  field2: String! @external
+  field58: String @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type31 @key(fields: "field422 { field2 field58 }") @extends {
+  field422: Type32 @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type26 @extends @key(fields: "field132") {
+  field132: ID! @external
 }

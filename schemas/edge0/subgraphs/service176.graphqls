@@ -1,42 +1,281 @@
+enum Enum983 {
+  VALUE_1442
+  VALUE_3866
+  VALUE_301
+  VALUE_3458
+  VALUE_302
+  VALUE_3867
+}
+
+enum Enum984 {
+  VALUE_1221
+  VALUE_3868
+  VALUE_3869
+  VALUE_1188
+  VALUE_1187
+  VALUE_2534
+  VALUE_3870
+  VALUE_3871
+  VALUE_1886
+  VALUE_3872
+  VALUE_3873
+  VALUE_3874
+  VALUE_1222
+  VALUE_3875
+  VALUE_10
+  VALUE_3876
+  VALUE_1213
+  VALUE_3877
+  VALUE_3878
+  VALUE_3879
+  VALUE_3880
+  VALUE_3839
+  VALUE_3881
+  VALUE_3882
+  VALUE_3883
+  VALUE_3884
+  VALUE_3885
+  VALUE_3886
+  VALUE_3887
+  VALUE_3888
+  VALUE_3889
+  VALUE_3890
+  VALUE_3891
+  VALUE_3892
+  VALUE_3893
+  VALUE_3894
+  VALUE_3895
+  VALUE_3896
+  VALUE_3897
+  VALUE_3898
+  VALUE_3899
+  VALUE_3900
+}
+
+type Type4764 {
+  field2: ID!
+  field1037: Type4771!
+  field9009: String!
+  field826: Enum983!
+  field2229: String!
+  field9010: Scalar1
+  field3669: Scalar1!
+  field9011: Scalar1
+  field1369: String
+  field9012: String
+  field9013: Boolean
+  field9014: String
+  field9015: String
+  field656: [Type4773]!
+}
+
+type Mutation {
+  field9016(arg882: Input1708): Type4765
+  field9017(arg598: Input1710): Type4765
+}
+
+type Type4765 {
+  field9018: Boolean
+  field9019: String
+}
+
+input Input1708 {
+  inputField228: String
+  inputField137: String
+  inputField255: String
+  inputField3185: String
+  inputField3186: [Input1709]
+}
+
+input Input1709 {
+  inputField64: Enum985
+  inputField128: [Int]
+  inputField3187: Int
+  inputField336: String
+  inputField331: String
+}
+
+enum Enum985 {
+  VALUE_3901
+  VALUE_3902
+  VALUE_3903
+  VALUE_3904
+  VALUE_3905
+  VALUE_3906
+  VALUE_3907
+  VALUE_3908
+  VALUE_3909
+}
+
+enum Enum986 {
+  VALUE_3910
+  VALUE_775
+  VALUE_2764
+  VALUE_774
+}
+
+enum Enum987 {
+  VALUE_3911
+  VALUE_3912
+  VALUE_3913
+  VALUE_3914
+  VALUE_3915
+}
+
+enum Enum988 {
+  VALUE_3916
+  VALUE_3917
+  VALUE_987
+}
+
+enum Enum989 {
+  VALUE_3918
+  VALUE_3919
+}
+
+type Type4766 {
+  field2: Scalar1!
+  field7736: String
+  field9009: String!
+  field1720: String!
+  field1522: Enum986!
+  field1037: Type4771!
+  field9020: Boolean
+  field9021: Boolean
+  field9022: Int
+  field9023: Int
+  field9024: Enum989!
+  field9025: String
+  field5494: Int
+  field9026: Boolean
+  field9027: String
+  field9028: String
+  field9029: Scalar14
+  field9030: Enum988
+  field9031: Int
+  field9032: String
+  field9033: Scalar14
+  field9034: Scalar14
+  field9035: Scalar14
+  field9036: Scalar14
+}
+
+type Type4767 {
+  field2: Scalar1!
+  field80: Enum987!
+  field1744: Scalar14!
+  field9027: String
+  field9028: String
+  field9031: Int
+  field9032: String
+}
+
+type Type4768 {
+  field2: Scalar1!
+  field9037: Type4766!
+  field9038: String!
+  field9039: Boolean!
+  field9040: Int
+  field5494: Int @deprecated(reason: "Anonymized deprecation reason")
+  field9041: String
+  field1043: [Type4767!]!
+}
+
+input Input1710 {
+  inputField3188: Scalar1!
+  inputField3185: String!
+  inputField11: Scalar1!
+  inputField507: Enum988!
+  inputField336: String!
+  inputField3189: String
+  inputField3190: Int!
+}
+
 type Query @extends {
+  field9042(arg883: Scalar1!): Type4769!
+  field9043(arg884: Scalar1!): [Type4769!]!
+  field9044(arg884: Scalar1!, arg885: Scalar1): [Type4766!]!
+  field9045(arg884: Scalar1!, arg886: Scalar1!): Type4768!
+  field9046(arg545: String!): [Type2801!]!
+  field9047(arg887: [String!]!, arg6: String, arg888: [Enum984], arg595: Int, arg889: Boolean, arg890: String): [Type4764]!
   """
   This is an anonymized description
   """
-  field8465(
-  arg1: Input1672): Type4582!
+  field9048(
+  arg887: [String!]!): [Enum984!]!
 }
 
-input Input1672 {
-  inputField576: String!
-  inputField236: Input1673!
-  inputField356: Scalar14!
-  inputField970: Scalar14!
-  inputField1319: Int
-  inputField388: String
+scalar Scalar1
+
+interface Interface202 @key(fields: "field2") {
+  field2: Scalar1!
+  field9009: String!
+  field826: Enum983!
+  field1369: String
+  field9049: Scalar14
+  field9034: Scalar14
+  field9035: Scalar14
+  field1037: Type4771!
 }
 
-input Input1673 {
-  inputField237: String!
-  inputField130: String!
+type Type2800 implements Interface202 @key(fields: "field2") {
+  field2: Scalar1!
+  field9009: String!
+  field1720: String!
+  field826: Enum983!
+  field1369: String
+  field9049: Scalar14
+  field9034: Scalar14
+  field9035: Scalar14
+  field1037: Type4771!
 }
 
-type Type4582 {
-  field7797: [Type4583!]!
-  field4832: String
+type Type2801 implements Interface202 @key(fields: "field2") {
+  field2: Scalar1!
+  field9009: String!
+  field826: Enum983!
+  field1369: String
+  field9050: String
+  field9049: Scalar14
+  field9034: Scalar14
+  field9035: Scalar14
+  field1037: Type4771!
+  field2229: String!
+  field9051: String!
+  field9052: String
+  field9053: Type4772
 }
 
-type Type4583 {
-  field945: String!
-  field741: String!
-  field423: String!
-  field94: Scalar14
-  field56: String
-  field524: String
-  field8466: [Type4584!]
-  field1351: String
+type Type4769 {
+  field126: Scalar1!
+  field3648: Type4770
+  field169: [Type2800!]
 }
 
-type Type4584 {
-  field741: String!
-  field423: String!
+type Type4770 {
+  field9054: Scalar1!
+  field9055: Scalar1!
+  field730: Scalar1!
+  field9056: Scalar1!
+  field9057: Scalar1!
+}
+
+type Type4771 {
+  field2: ID!
+  field80: Enum984!
+  field337: String!
+  field9058: Scalar1
+  field2613: Scalar1
+  field2612: Scalar1
+}
+
+type Type4772 {
+  field9021: Boolean
+  field1571: Scalar1
+  field9059: Scalar1
+}
+
+type Type4773 {
+  field2: Scalar1!
+  field11: String!
 }

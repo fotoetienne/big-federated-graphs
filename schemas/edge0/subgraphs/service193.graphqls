@@ -1,51 +1,44 @@
-interface Interface201 {
-  field2: ID!
-  field5: String!
+type Query {
+  field9931(arg76: Input1833): Union100
 }
 
-type Type2420 implements Interface201 @key(fields: "field2") {
-  field2: ID!
-  field5: String!
-  field8739: String!
-  field8740: String
+input Input1833 {
+  inputField3476: String!
+  inputField3477: Enum1075! = VALUE_15
 }
 
-type Type2421 implements Interface201 @key(fields: "field2") {
-  field2: ID!
-  field81: String!
-  field5: String!
-  field10: Type2420!
-  field8741: String
+type Type4965 {
+  field2901: Type4969!
+  field3078: Type4968!
+  field9932: [Type4966]!
 }
 
-type Type2422 implements Interface201 @key(fields: "field2") {
-  field2: ID!
-  field5: String!
-  field12: Float
-  field11: Float
-  field8742: String
-  field931: String
-  field8743: Type2421
-  field10: Type2420!
+type Type4966 {
+  field3: Scalar14
+  field9933: Float
 }
 
-enum Enum958 {
-  VALUE_1016
-  VALUE_3985
+union Union100 = Type4967 | Type4965
+
+type Type4967 {
+  field80: Enum1074!
+  field405: String!
 }
 
-input Input1708 {
-  inputField2084: Enum958
-  inputField3147: Int
+enum Enum1074 {
+  VALUE_4217
+  VALUE_2526
 }
 
-type Query @extends {
-  """
-  This is an anonymized description
-  """
-  field8744(
-  arg58: String
-  arg871: [Input1708]
-  arg102: Int
-  arg872: Int): [Interface201!]!
+enum Enum1075 {
+  VALUE_15
+  VALUE_16
+}
+
+type Type4968 {
+  field11: String!
+}
+
+type Type4969 {
+  field11: String!
 }

@@ -1,0 +1,107 @@
+type Mutation @extends {
+  field34377(arg20: Input8211!): Type17560!
+}
+
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
+}
+
+type Type17557 {
+  field34378: Int
+  field34379: String
+}
+
+type Type3157 @key(fields: "field556") {
+  field554: Float!
+  field198: String
+  field723: Type17557
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field100: Enum4212!
+  field58: String
+}
+
+type Type17558 {
+  field176: [Type17559!]
+  field366: Type119!
+}
+
+type Type17559 {
+  field369: String
+  field177: Type3157!
+}
+
+type Query @extends {
+  field34380(arg49: ID!): Type3157
+  field34381(arg20: Input48!): Type17558!
+}
+
+type Type17560 {
+  field575: Type3157
+}
+
+enum Enum4212 {
+  VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
+}
+
+enum Enum31 {
+  VALUE_214
+  VALUE_215
+}
+
+input Input8210 {
+  inputField11672: Int!
+  inputField11673: String!
+}
+
+input Input48 {
+  inputField113: String!
+  inputField114: Boolean! = false
+}
+
+input Input49 {
+  inputField16: String!
+  "This is an anonymized description"
+  inputField115: Enum31!
+}
+
+input Input50 {
+  "This is an anonymized description"
+  inputField116: String
+  "This is an anonymized description"
+  inputField117: Int!
+  "This is an anonymized description"
+  inputField118: Int!
+  "This is an anonymized description"
+  inputField119: Int!
+}
+
+input Input8211 {
+  inputField120: String
+  inputField110: String
+  "This is an anonymized description"
+  inputField111: String
+  inputField121: String
+  inputField135: Input8210!
+  "This is an anonymized description"
+  inputField122: Input49
+  "This is an anonymized description"
+  inputField123: Input50
+  "This is an anonymized description"
+  inputField124: String
+  "This is an anonymized description"
+  inputField125: String
+  "This is an anonymized description"
+  inputField126: String
+}

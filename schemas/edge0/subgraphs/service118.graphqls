@@ -1,7 +1,202 @@
-type Type3305 {
-  field2: ID
+scalar Scalar1
+
+type Query @extends {
+  field6502(arg347: [String], arg348: [String], arg349: [String], arg350: [String], arg351: [Scalar1], arg352: Scalar1, arg353: Scalar1, arg354: [String], arg630: [String], arg631: [String], arg355: [String], arg356: [String], arg357: Scalar1, arg358: Scalar1, arg412: [Scalar1], arg359: Boolean, arg360: [String], arg35: Enum410, arg632: Boolean, arg413: Int!, arg160: Int!, arg414: Int, arg24: Enum424, arg415: Enum425, arg361: String): Type3675
 }
 
-type Query {
-  field5745: Type3305
+enum Enum410 {
+  VALUE_1799
+  VALUE_1800
+}
+
+enum Enum424 {
+  VALUE_1875
+  VALUE_1876
+}
+
+enum Enum425 {
+  VALUE_1877
+  VALUE_1878
+}
+
+type Type2171 @extends @key(fields: "field2") {
+  field2: ID @external
+}
+
+type Type3675 {
+  field4496(arg257: Int, arg258: Int): [Type2171]
+  field6503(arg257: Int, arg258: Int): [String]
+  field4107(arg257: Int, arg258: Int): [Scalar1]
+  field3333(arg257: Int, arg258: Int): [Type3676]
+  field1375: Int
+}
+
+type Type3676 {
+  field3723: Type1488
+  field108: Type29
+  field109: Int
+  "This is an anonymized description"
+  field3724: Type3677 @deprecated(reason: "Anonymized deprecation reason")
+  field6504: Type3677
+}
+
+type Type29 @extends @key(fields: "field109") {
+  field109: Int! @external
+  field6504(arg347: [String], arg33: [String], arg348: [String], arg349: [String], arg350: [String], arg351: [Scalar1], arg352: Scalar1, arg353: Scalar1, arg354: [String], arg630: [String], arg631: [String], arg355: [String], arg356: [String], arg357: Scalar1, arg358: Scalar1, arg359: Boolean, arg360: [String], arg35: Enum410, arg632: Boolean, arg361: String): Type3677
+}
+
+type Type1488 {
+  field3727: Boolean
+  field3728: Boolean
+  field3729: Boolean
+  field3730(arg257: Int, arg258: Int): [Type1625]
+}
+
+type Type3677 {
+  field3904(arg257: Int, arg258: Int): [Type1490]
+  field3723: Type1488
+  field4496(arg257: Int, arg258: Int): [Type2171]
+  field3906: Scalar14
+  field4370(arg257: Int, arg258: Int): [Type1515]
+  field2526: Scalar14
+  field108: Type29
+  field109: Scalar1
+  field3834: String
+  field1799(arg257: Int, arg258: Int): [Type1571]
+  field21: String
+  field6505: Enum692
+  field4371: Scalar1
+  field4372: String
+  field3648(arg257: Int, arg258: Int): [Type1590]
+  field3907: Scalar1
+}
+
+type Type1590 {
+  field751(arg257: Int, arg258: Int): [Type1537]
+  field21: String
+}
+
+type Type1537 {
+  field4096(arg257: Int, arg258: Int): [Type1541]
+  field11: String
+  field21: String
+}
+
+type Type1541 {
+  field11: String
+  field21: String
+}
+
+type Type1571 {
+  field11: String
+  field4274: Boolean
+  field789: String
+}
+
+type Type1515 {
+  field3903(arg257: Int, arg258: Int): [Type1480]
+  field3904(arg257: Int, arg258: Int): [Type1490]
+  field3905(arg257: Int, arg258: Int): [Type1505]
+  field337: String
+  field3906: Scalar1
+  field11: String
+  field1799(arg257: Int, arg258: Int): [Type1571]
+  field21: String
+  field3648(arg257: Int, arg258: Int): [Type1590]
+  field80: String
+  field3907: Scalar1
+}
+
+type Type1505 {
+  field3860: Scalar1
+  field11: String
+}
+
+type Type1483 {
+  field883: String
+  field3722(arg257: Int, arg258: Int): [Type1481]
+  field21: String
+}
+
+type Type1481 {
+  field883: String
+  field3718(arg257: Int, arg258: Int): [Type1578]
+  field3719: String
+  field21: String
+  field3720(arg257: Int, arg258: Int): [Type1624]
+}
+
+type Type1624 {
+  field3363: String
+  field94: String
+  field317(arg257: Int, arg258: Int): [String]
+  field4396: Type1575
+  field21: String
+}
+
+type Type1578 {
+  field4098: String
+  field4308(arg257: Int, arg258: Int): [Type1540]
+  field4307: Boolean
+}
+
+type Type1540 {
+  field4098: String
+  field4099: String
+  field11: String
+  field146(arg257: Int, arg258: Int): [String]
+}
+
+type Type1575 {
+  field4098: String
+  field4298: Boolean
+  field4299: Type1577
+  field4300(arg257: Int, arg258: Int): [Type1577]
+  field4301(arg257: Int, arg258: Int): [Type1578]
+  field4302: Type1577
+}
+
+type Type1576 {
+  field4098: String
+  field4298: Boolean
+  field4303: Int
+  field4304: Int
+}
+
+type Type1577 {
+  field4098: String
+  field4305(arg257: Int, arg258: Int): [Type1576]
+  field4306: String
+  field4307: Boolean
+}
+
+type Type1480 {
+  field3716(arg257: Int, arg258: Int): [Type1483]
+  field67: String
+  field3717: String
+  field747: String
+  field109: Scalar1
+  field21: String
+}
+
+type Type1490 {
+  field11: String
+  field21: String
+}
+
+type Type1625 {
+  field4397(arg257: Int, arg258: Int): [Type1507]
+  field2: String
+  field11: String
+}
+
+type Type1507 {
+  field402(arg257: Int, arg258: Int): [String]
+  field711: Scalar1
+}
+
+enum Enum692 {
+  VALUE_2805
+  VALUE_2806
+  VALUE_984
 }

@@ -1,13 +1,21 @@
-type Type24 @key(fields: "field2") @key(fields: "field81") {
-  field2: ID!
-  field81: String!
-  field5: String!
-  field82: Type24
-  field83: [Type24!]!
-  field84: [Type25!]!
+type Query {
+  field868: [Type245]
+  field869(arg70: String!, arg71: String!, arg72: Enum64!): String
+  field870: String
 }
 
-type Type25 @key(fields: "field2") @extends {
-  field2: Enum517! @external
-  field85: Type24
+enum Enum64 {
+  VALUE_321
+  VALUE_322
+}
+
+type Type245 {
+  field871: String!
+  field872: [Type246]
+}
+
+type Type246 {
+  field871: String!
+  field873: String!
+  field21: String!
 }

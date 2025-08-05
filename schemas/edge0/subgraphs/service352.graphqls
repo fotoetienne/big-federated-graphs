@@ -1,135 +1,52 @@
-type Type8511 {
-  field2: String!
-  field44: String
+input Input3995 {
+  inputField7334: ID
+  inputField7335: String!
+  inputField7336: String!
+  inputField7337: Int!
+  inputField7338: ID!
 }
 
-type Type8512 {
-  field36: [Type8513!]
-  field37: Type122!
+type Type8812 {
+  "This is an anonymized description"
+  field19465: ID!
+  "This is an anonymized description"
+  field19466: String!
+  "This is an anonymized description"
+  field19467: String!
+  "This is an anonymized description"
+  field19468: Int!
+  "This is an anonymized description"
+  field19469: ID!
 }
 
-type Type8513 {
-  field41: String
-  field40: Type8511!
-}
-
-type Type2985 @key(fields: "field255") {
-  field9462: Type8512!
-  field252: Float!
-  field253: String
-  field254: ID
-  field255: ID!
-  field256: String!
-  field257: String!
-  field258: ID
-  field259: ID!
-  field260: Enum2004!
-  field44: String
-}
-
-type Type8514 {
-  field36: [Type8515!]
-  field37: Type122!
-}
-
-type Type8515 {
-  field41: String
-  field40: Type2985!
-}
-
-type Mutation @extends {
-  field18787(arg1: Input3905!): Type431!
-  field18788(arg1: Input3909!): Type431!
-  field18789(arg1: Input3910!): Type8516!
-}
-
-type Type122 {
-  field269: String
-  field270: Boolean!
-  field271: Boolean!
-  field272: String
+type Type8813 {
+  field19469: ID!
+  field11: String!
+  field198: String
+  field265: String!
 }
 
 type Query @extends {
-  field18790(arg33: ID!): Type2985
-  field18791(arg1: Input48!): Type8514!
-}
-
-type Type431 {
-  field263: String!
-  field260: String!
-}
-
-type Type8516 {
-  field275: Type2985
-}
-
-enum Enum2004 {
-  VALUE_750
-  VALUE_199
-  VALUE_151
-  VALUE_158
-  VALUE_152
-  VALUE_149
-  VALUE_992
-  VALUE_4267
-}
-
-input Input3905 {
-  inputField103: String
-  inputField104: String
-  inputField105: String!
-}
-
-input Input3906 {
-  inputField5438: String!
-  inputField57: String!
-  inputField5440: String!
-  inputField5441: String!
-  inputField5442: [String!]!
-  inputField5443: [String!]!
-}
-
-input Input3907 {
-  inputField579: Input3908
-}
-
-input Input3908 {
-  inputField5444: Input3906!
-  inputField170: String!
-  inputField5446: String!
-  inputField172: String!
-}
-
-input Input3909 {
-  inputField103: String
-  inputField104: String
-  inputField105: String!
-}
-
-input Input48 {
-  inputField106: String!
-  inputField107: Boolean! = false
-}
-
-input Input50 {
   "This is an anonymized description"
-  inputField109: String
+  field19470(
+  arg1640: String
+  arg1641: String
+  arg1642: ID): [Type8812]
   "This is an anonymized description"
-  inputField110: Int!
-  "This is an anonymized description"
-  inputField111: Int!
-  "This is an anonymized description"
-  inputField112: Int!
+  field19471(
+  arg1642: ID): [Type8813]
 }
 
-input Input3910 {
-  inputField113: String
-  inputField103: String
-  inputField104: String
-  inputField114: String
-  inputField128: Input3907!
-  inputField116: Input50
-  inputField118: String
-  inputField119: String
+type Mutation @extends {
+  "This is an anonymized description"
+  field19472(
+  arg20: Input3995): Type8812
+  "This is an anonymized description"
+  field19473(
+  arg1642: ID
+  arg74: String!
+  arg282: String): Type8813
+  "This is an anonymized description"
+  field19474(
+  arg1643: ID): Boolean
 }

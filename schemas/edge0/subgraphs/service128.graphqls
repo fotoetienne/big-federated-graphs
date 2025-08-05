@@ -1,137 +1,133 @@
-type Type3566 {
-  field2: String!
-}
-
-type Type3567 {
-  field36: [Type3568!]
-  field37: Type122!
-}
-
-type Type3568 {
-  field41: String
-  field40: Type3566!
-}
-
-type Type2986 @key(fields: "field255") {
-  field6204: Type3567!
-  field252: Float!
-  field253: String
-  field896: Type3572!
-  field254: ID
-  field255: ID!
-  field256: String!
-  field257: String!
-  field258: ID
-  field259: ID!
-  field260: Enum658!
-  field44: String
-}
-
-type Type3569 {
-  field36: [Type3570!]
-  field37: Type122!
-}
-
-type Type3570 {
-  field41: String
-  field40: Type2986!
-}
-
-type Type3571 {
-  field6205: [String!]
-  field5: String!
-  field3325: String!
-}
-
-type Type3572 {
-  field36: [Type3573!]
-  field37: Type122!
-}
-
-type Type3573 {
-  field41: String
-  field40: Type3571!
-}
-
 type Mutation @extends {
-  field6206(arg1: Input1185!): Type3574!
+  field7343(arg20: Input1374!): Type4009!
 }
 
-type Type122 {
-  field269: String
-  field270: Boolean!
-  field271: Boolean!
-  field272: String
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
 }
 
 type Query @extends {
-  field6207(arg33: ID!): Type2986
-  field6208(arg1: Input48!): Type3569!
+  field7344(arg49: ID!): Type4014
+  field7345(arg20: Input48!): Type4015!
 }
 
-type Type3574 {
-  field275: Type2986
+type Type4009 {
+  field575: Type4014
 }
 
-enum Enum658 {
-  VALUE_199
-  VALUE_151
-  VALUE_158
-  VALUE_152
-  VALUE_149
+type Type4010 {
+  field2: String!
 }
 
-enum Enum31 {
-  VALUE_201
-  VALUE_202
+type Type4011 {
+  field554: Float!
+  field3673: Float
+  field3674: Float
+  field3675: ID
+  field556: ID!
+  field3677: ID!
+  field7346: Type4010!
+  field7347: String!
 }
 
-input Input1183 {
-  inputField579: Input1184
+type Type4012 {
+  field176: [Type4013!]
+  field366: Type119!
 }
 
-input Input1184 {
-  inputField2332: String!
-  inputField2333: String!
+type Type4013 {
+  field369: String
+  field177: Type4011!
+}
+
+type Type4014 {
+  field554: Float!
+  field198: String
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field7348: Type4020!
+  field7349: Type4012!
+  field100: Enum783!
+  field58: String
+}
+
+type Type4015 {
+  field176: [Type4016!]
+  field366: Type119!
+}
+
+type Type4016 {
+  field369: String
+  field177: Type4014!
+}
+
+type Type4017 {
+  field11: String!
+  field636: Type4018!
+  field7350: [String!]!
+  field7351: [Type4018!]!
+}
+
+type Type4018 {
+  field7352: Type4010
+  field7353: String
+  field2742: Type4010!
+  field94: String!
+  field7354: Type4010!
+  field7355: String!
+}
+
+type Type4019 {
+  field1775: [Type4017!]!
+}
+
+type Type4020 {
+  field176: [Type4021!]
+  field366: Type119!
+}
+
+type Type4021 {
+  field369: String
+  field177: Type4019!
+}
+
+enum Enum783 {
+  VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
 }
 
 input Input48 {
-  inputField106: String!
-  inputField107: Boolean! = false
-}
-
-input Input49 {
-  inputField7: String!
-  "This is an anonymized description"
-  inputField108: Enum31!
+  inputField113: String!
+  inputField114: Boolean! = false
 }
 
 input Input50 {
   "This is an anonymized description"
-  inputField109: String
+  inputField116: String
   "This is an anonymized description"
-  inputField110: Int!
+  inputField117: Int!
   "This is an anonymized description"
-  inputField111: Int!
+  inputField118: Int!
   "This is an anonymized description"
-  inputField112: Int!
+  inputField119: Int!
 }
 
-input Input1185 {
-  inputField113: String
-  inputField103: String
-  "This is an anonymized description"
-  inputField104: String
-  inputField114: String
-  inputField128: Input1183!
-  "This is an anonymized description"
-  inputField115: Input49
-  "This is an anonymized description"
-  inputField116: Input50
-  "This is an anonymized description"
-  inputField117: String
-  "This is an anonymized description"
-  inputField118: String
-  "This is an anonymized description"
-  inputField119: String
+input Input1374 {
+  inputField120: String
+  inputField110: String
+  inputField111: String
+  inputField121: String
+  inputField123: Input50
+  inputField125: String
+  inputField126: String
 }

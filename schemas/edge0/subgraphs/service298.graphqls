@@ -1,110 +1,256 @@
-type Type6907 {
-  field14832: Type6911!
-  field252: Float!
-  field253: String
-  field87: Type6916!
-  field254: ID
-  field255: ID!
-  field256: String!
-  field257: String!
-  field258: ID
-  field259: ID!
-  field260: Enum1642!
-  field44: String
-}
+directive @oneOf on INPUT_OBJECT | INPUT_FIELD_DEFINITION
 
-type Type6908 {
-  field36: [Type6909!]
-  field37: Type122!
-}
+directive @directive1("""
+This is an anonymized description
+"""
+arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
 
-type Type6909 {
-  field41: String
-  field40: Type6907!
+directive @directive2 on FIELD_DEFINITION
+
+scalar Scalar1
+
+type Query @extends {
+  field15461(arg1: [ID!]!): [Type1985] @override(from: "service603")
+  field15462(arg1: [ID!]!): [Type2016!]! @override(from: "service603")
+  field15463(arg1: [ID!]!): [Type1958] @override(from: "service583")
+  field15464(arg1: [ID!]!): [Type1959] @override(from: "service583")
+  field15465: [Type1958] @override(from: "service583")
+  field15466(arg1441: Enum575!): [Type1958] @override(from: "service583")
 }
 
 type Mutation @extends {
-  field14833(arg1: Input2981!): Type6914!
+  field15467(arg20: Input3051!): Union238! @directive1(arg47: "anonymous-string")
+  field15468(arg20: Input3052!): Union238! @directive1(arg47: "anonymous-string")
+  field15469(arg20: Input3053!): Union238! @directive1(arg47: "anonymous-string")
+  field15470(arg20: Input3054!): Union239! @directive1(arg47: "anonymous-string")
+  field15471(arg20: Input3055!): Union239! @directive1(arg47: "anonymous-string")
 }
 
-type Type122 {
-  field269: String
-  field270: Boolean!
-  field271: Boolean!
-  field272: String
+type Type1958 @extends @key(fields: "field2") @directive1(arg47: "anonymous-string") {
+  field2: ID! @external
+  field11: String! @override(from: "service583")
+  field15472: Enum1731
+  field58: Int! @override(from: "service583")
+  field9: Scalar14! @override(from: "service583")
+  field10: Scalar14! @override(from: "service583")
+  field22: Boolean! @override(from: "service583")
+  field15473: [Enum575!]! @override(from: "service583")
+  field15474: Boolean! @override(from: "service583")
+  field15475: Scalar9 @override(from: "service583")
 }
 
-type Query @extends {
-  field14834(arg33: ID!): Type6907
-  field14835(arg1: Input48!): Type6908!
+type Type1959 @extends @key(fields: "field2") @directive1(arg47: "anonymous-string") {
+  field2: ID! @external
+  field11: String! @override(from: "service583")
+  field121: ID! @override(from: "service583")
+  field119: Type1958 @override(from: "service583")
+  field58: Int! @override(from: "service583")
+  field9: Scalar14! @override(from: "service583")
+  field10: Scalar14! @override(from: "service583")
+  field22: Boolean! @override(from: "service583")
+  field15473: [Enum575!]! @override(from: "service583")
 }
 
-type Type6910 {
-  field908: [Type6915!]!
+type Type2016 @extends @key(fields: "field2") @directive1(arg47: "anonymous-string") {
+  field2: ID! @external
+  field1449: ID @override(from: "service603")
+  field11: String! @override(from: "service603")
+  field15476: Type7173! @override(from: "service603")
+  field58: Int! @override(from: "service603")
+  field22: Boolean! @override(from: "service603")
 }
 
-type Type6911 {
-  field36: [Type6912!]
-  field37: Type122!
+type Type1985 @extends @key(fields: "field2") @directive1(arg47: "anonymous-string") {
+  field2: ID! @external
+  field11: String! @override(from: "service603")
+  field119: Type1958! @override(from: "service603")
+  field120: Type1959 @override(from: "service603")
+  field118: Enum1727! @override(from: "service603")
+  field122: Type7172! @override(from: "service603")
+  field317: String @override(from: "service603")
+  field58: Int! @override(from: "service603")
+  field22: Boolean! @override(from: "service603")
+  field9: Scalar14! @override(from: "service603")
+  field10: Scalar14! @override(from: "service603")
+  field61: Enum575 @override(from: "service603")
+  field57: Boolean @override(from: "service603")
+  field15477: [Type2016!] @override(from: "service603")
+  field15478: String! @override(from: "service603")
+  field52: Type7174 @override(from: "service603")
+  field44: Int @override(from: "service603")
+  field80: Enum1729! @override(from: "service603")
+  field31: Enum1730! @override(from: "service603")
+  field15479: [Type1959!] @override(from: "service603")
 }
 
-type Type6912 {
-  field41: String
-  field40: Type6910!
+type Type5342 {
+  field39: Scalar1!
+  field38: Scalar9!
+  field37: Scalar8!
 }
 
-type Type6913 {
-  field5619: Type6915!
+type Type7172 {
+  field123: Enum1728!
+  field124: Type5342!
 }
 
-type Type6914 {
-  field263: String!
-  field264: Type6913
-  field260: String!
+type Type7173 {
+  field124: Type5342
+  field15480: Scalar9
 }
 
-type Type6915 {
-  field5779: String!
-  field2309: Enum1643!
+type Type7174 {
+  field53: Scalar13!
+  field54: Scalar13
+  field55: Scalar15!
 }
 
-type Type6916 {
-  field36: [Type6917!]
-  field37: Type122!
+type Type1642 {
+  field2971: [Interface103]
 }
 
-type Type6917 {
-  field41: String
-  field40: Type6915!
+type Type1643 implements Interface103 {
+  field677: String
+  field3648: String
+  field2768: String
 }
 
-enum Enum1642 {
-  VALUE_199
-  VALUE_5818
-  VALUE_151
-  VALUE_158
-  VALUE_152
-  VALUE_149
+type Type1644 implements Interface103 {
+  field677: String
+  field3648: String
+  field2768: String
 }
 
-enum Enum1643 {
-  VALUE_5819
-  VALUE_5820
-  VALUE_1227
+type Type1645 implements Interface103 {
+  field677: String
+  field3648: String
+  field2768: String
 }
 
-input Input48 {
-  inputField106: String!
-  inputField107: Boolean! = false
+input Input3050 {
+  inputField692: ID
 }
 
-input Input2981 {
-  inputField103: String
-  inputField104: String
-  inputField333: Input2982!
-  inputField105: String!
+input Input3051 {
+  inputField64: String!
+  inputField5501: ID
+  inputField5502: ID
+  inputField5503: Enum1727!
+  inputField5504: Input3057!
+  inputField93: String
+  inputField3857: Enum575
+  inputField5505: Boolean
+  inputField3960: Input3058
+  inputField3957: Int
+  inputField115: Enum1729!
+  inputField5506: Input3050 @deprecated(reason: "Anonymized deprecation reason")
+  inputField5507: [ID!]
 }
 
-input Input2982 {
-  inputField248: String!
+input Input3052 {
+  inputField16: ID!
+  inputField64: String!
+  inputField5501: ID
+  inputField5502: ID
+  inputField5503: Enum1727!
+  inputField5504: Input3057!
+  inputField93: String
+  inputField17: Int!
+  inputField2025: Boolean!
+  inputField3857: Enum575
+  inputField5505: Boolean
+  inputField3960: Input3058
+  inputField3957: Int
+  inputField115: Enum1729!
+  inputField5506: Input3050 @deprecated(reason: "Anonymized deprecation reason")
+  inputField5507: [ID!]
 }
+
+input Input3053 {
+  inputField16: ID!
+  inputField149: Enum1727!
+}
+
+input Input3054 {
+  inputField1275: ID
+  inputField64: String!
+  inputField5508: Input3056!
+}
+
+input Input3055 {
+  inputField16: ID!
+  inputField1275: ID
+  inputField64: String!
+  inputField5508: Input3056!
+  inputField17: Int!
+  inputField2025: Boolean!
+}
+
+input Input3056 @oneOf {
+  inputField292: Input857
+  inputField5509: Scalar9
+}
+
+input Input3057 {
+  inputField5510: Enum1728!
+  inputField292: Input857!
+}
+
+input Input3058 {
+  inputField239: Scalar13!
+  inputField240: Scalar13
+  inputField1509: Scalar15!
+}
+
+enum Enum575 {
+  VALUE_2393
+  VALUE_33
+  VALUE_31
+}
+
+enum Enum1727 {
+  VALUE_171
+  VALUE_763
+  VALUE_5844
+  VALUE_5845
+  VALUE_5846
+  VALUE_5847
+  VALUE_5848
+  VALUE_22
+  VALUE_225
+  VALUE_164
+}
+
+enum Enum1728 {
+  VALUE_5849
+  VALUE_5850
+}
+
+enum Enum1729 {
+  VALUE_5851
+  VALUE_584
+  VALUE_4475
+}
+
+enum Enum1730 {
+  VALUE_1250
+  VALUE_1251
+}
+
+enum Enum1731 {
+  VALUE_5852
+  VALUE_5853
+  VALUE_5321
+  VALUE_5854
+  VALUE_5855
+}
+
+interface Interface103 {
+  field677: String
+  field3648: String
+  field2768: String
+}
+
+union Union238 = Type1985 | Type1642
+
+union Union239 = Type2016 | Type1642

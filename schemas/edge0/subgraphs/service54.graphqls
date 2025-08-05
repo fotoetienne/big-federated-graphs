@@ -1,114 +1,121 @@
-type Query {
-  field1432(arg154: String!): Type524
-  field1433(arg155: String!, arg101: Int!, arg74: Int!): Type529
-  field1434(arg155: String, arg101: Int!, arg74: Int!, arg5: String, arg156: String): Type527
-  field1435(arg154: String!): Type524
-  field1436(arg155: String, arg101: Int!, arg74: Int!): Type526
-  field1437(arg155: String!, arg101: Int!, arg74: Int!): Type529
-  field1438: Boolean!
+type Type796 {
+  field422: String!
+  field2677: Int
 }
 
-type Mutation {
-  field1439(arg154: String!): String
-  field1440(arg157: Input243!): Type524
-  field1441(arg157: Input241!): Type524
-  field1442(arg154: String!): String
-  field1443(arg157: Input243!): Type524
-  field1444(arg157: Input242!): Type524
-  field1445(arg158: Input245!): String
-  field1446(arg158: Input245!): String
-  field1447(arg154: String!): Type531
-  field1448: String
+input Input393 {
+  inputField57: String!
+  inputField17: String
 }
 
-type Type524 {
-  field279: String!
-  field1449: String!
-  field113: String
-  field1450: Type530
-  field1451: [Type528]
-  field1452: Scalar13!
-  field1453: Scalar13!
+type Type32 @key(fields: "field2 field58") @extends {
+  field2: String! @external
+  field58: String @external
 }
 
-type Type525 {
-  field279: String!
-  field1449: String!
-  field1451: [String]
-  field1450: Type530
-  field1452: Scalar13!
-  field1453: Scalar13!
+type Type31 @key(fields: "field422 { field2 field58 }") @extends {
+  field422: Type32 @external
+  field2678: [Type797!]
 }
 
-type Type526 {
-  field1084: Int
-  field1083: Int
-  field1454: Int
-  field483: Float
-  field1455: [Type524!]!
+type Type797 {
+  field2: ID!
+  field80: Type798!
+  field2679: Type802!
+  field321: String
+  field1540: String
+  field265: Scalar14!
+  field294: String
+  field1565: String
+  field266: Scalar14!
+  field111: [Type31!]
 }
 
-type Type527 {
-  field1084: Int
-  field1083: Int
-  field1454: Int
-  field483: Float
-  field1455: [Type525!]!
+type Type798 {
+  field2: ID!
+  field11: String!
+  field198: String
+  field321: String
+  field1540: String
+  field265: Scalar14!
 }
 
-type Type528 {
-  field1449: String
-  field965: String
-  field1452: Scalar13
-  field1453: Scalar13
+input Input394 {
+  inputField566: [Input393!]!
+  inputField115: String!
 }
 
-type Type529 {
-  field1084: Int
-  field1083: Int
-  field1454: Int
-  field483: Float
-  field1455: [Type528!]!
+input Input395 {
+  inputField115: String!
+  inputField110: String
 }
 
-type Type530 {
-  field1449: String!
-  field483: Float!
-  field1456: Float!
-  field1457: Float!
-  field1458: Float!
+input Input396 {
+  inputField246: ID!
+  """
+  This is an anonymized description
+  """
+  inputField941: String
 }
 
-type Type531 {
-  field1449: String!
-  field1450: Float!
-  field94: Scalar13!
+type Type799 {
+  field2680: Type798!
 }
 
-input Input241 {
-  inputField304: String!
-  inputField587: String!
-  inputField415: [String!]!
+input Input397 {
+  inputField246: ID!
+  inputField942: [Input393!] = []
+  inputField943: [Input393!] = []
+  """
+  This is an anonymized description
+  """
+  inputField944: [Input393!] = []
 }
 
-input Input242 {
-  inputField304: String!
-  inputField587: String
-  inputField415: [String!]!
+input Input398 {
+  inputField945: [ID!]!
 }
 
-input Input243 {
-  inputField304: String
-  inputField587: String!
-  inputField588: String
-  inputField415: [String!]
+input Input399 {
+  inputField946: String
+  inputField566: [Input393!]
 }
 
-input Input244 {
-  inputField434: String!
+input Input400 {
+  inputField947: Input393!
+  inputField115: String!
+  inputField948: Boolean = false
 }
 
-input Input245 {
-  inputField434: String!
-  inputField589: String
+type Type800 {
+  field2681: Type797!
+}
+
+type Type801 {
+  field2678: [Type797]
+  field422: ID
+}
+
+type Mutation @extends {
+  field2682(arg76: Input394!): Type800!
+  field2683(arg76: Input396!): Type800!
+  field2684(arg76: Input397!): Type800!
+  field2685(arg76: Input398!): [Type800!]!
+  field2686(arg266: ID!): ID
+  field2687(arg76: Input395!): Type799!
+}
+
+type Query @extends {
+  field2688(arg23: ID!): Type797!
+  field2689(arg76: Input400!): [Type800!]!
+  field2690(arg267: [Input400!]): [Type801]!
+}
+
+type Type802 {
+  field2: ID!
+  field321: String
+  field1540: String
+  field265: Scalar14!
+  field2691: Type802
+  field111: [Type31!]
 }

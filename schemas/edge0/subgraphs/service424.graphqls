@@ -1,33 +1,115 @@
-type Query @extends {
-  field22411: [Type10184]
-  field22412(arg12: ID!): Type10185
+type Type10394 {
+  field2: String!
+}
+
+type Type10395 {
+  field176: [Type10396!]
+  field366: Type119!
+}
+
+type Type10396 {
+  field369: String
+  field177: Type10394!
+}
+
+type Type10397 {
+  field131: String!
+}
+
+type Type10398 {
+  field563: String!
+  field564: Type10397
+  field100: String!
+}
+
+type Type10399 {
+  field554: Float!
+  field198: String
+  field4385: Type10395!
+  field23020: Type10395!
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field100: Enum2553!
+  field58: String
+}
+
+type Type10400 {
+  field176: [Type10401!]
+  field366: Type119!
+}
+
+type Type10401 {
+  field369: String
+  field177: Type10399!
 }
 
 type Mutation @extends {
-  field22413(arg1: Input4597!): Type10187
+  field23021(arg20: Input4638!): Type10398!
+  field23022(arg20: Input4638!): Type446!
+  field23023(arg20: Input4639!): Type10402!
 }
 
-type Type10184 {
-  field2: ID!
-  field5: String!
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
 }
 
-type Type10185 {
-  field393: String!
-  field22414: [Type10186]
+type Query @extends {
+  field23024(arg49: ID!): Type10399
+  field23025(arg20: Input48!): Type10400!
 }
 
-type Type10186 {
-  field2: ID!
-  field5: String
+type Type446 {
+  field563: String!
+  field100: String!
 }
 
-input Input4597 {
-  inputField2241: ID!
-  inputField171: ID!
+type Type10402 {
+  field575: Type10399
 }
 
-type Type10187 {
-  field9920: ID!
-  field107: ID!
+enum Enum2553 {
+  VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
+}
+
+input Input4638 {
+  inputField110: String
+  inputField111: String
+  inputField112: String!
+}
+
+input Input48 {
+  inputField113: String!
+  inputField114: Boolean! = false
+}
+
+input Input50 {
+  "This is an anonymized description"
+  inputField116: String
+  "This is an anonymized description"
+  inputField117: Int!
+  "This is an anonymized description"
+  inputField118: Int!
+  "This is an anonymized description"
+  inputField119: Int!
+}
+
+input Input4639 {
+  inputField120: String
+  inputField110: String
+  inputField111: String
+  inputField121: String
+  inputField123: Input50
+  inputField125: String
+  inputField126: String
 }

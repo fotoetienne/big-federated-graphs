@@ -1,21 +1,41 @@
-type Query {
-  field567: [Type230]
-  field568(arg54: String!, arg55: String!, arg56: Enum62!): String
-  field569: String
+"""
+This is an anonymized description
+"""
+type Query @extends {
+  field1511(arg121: Int!, arg29: Int!): Type459
+  field1512(arg122: [Int!]!): Type458
+  field1513(arg122: [Int!]!): Type457
 }
 
-enum Enum62 {
-  VALUE_308
-  VALUE_309
+type Type185 @key(fields: "field714 { field2 } field108 { field109 }") @extends {
+  field714: Type184 @external
+  field108: Type29 @external
+  field1514: Type459
 }
 
-type Type230 {
-  field570: String!
-  field571: [Type231]
+type Type29 @key(fields: "field109") @extends {
+  field109: Int! @external
+  field1515: Type458
+  field1516: Type457
 }
 
-type Type231 {
-  field570: String!
-  field572: String!
-  field58: String!
+type Type184 @key(fields: "field2") @extends {
+  field2: Int! @external
+}
+
+type Type457 {
+  field1517: String
+  field1518: String
+  field1519: String
+  field1520: String
+  field1521: String
+}
+
+type Type458 {
+  field1522: Boolean
+}
+
+type Type459 {
+  field1523: String
+  field1524: Scalar11
 }

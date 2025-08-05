@@ -1,87 +1,20 @@
-type Query {
-  field3344(arg60: Input652!): Type1395!
+type Type31 @key(fields: "field422 { field2 field58 }") @extends {
+  field422: Type32 @external
+  field5134: Type32 @requires(fields: "field422 { field2 field58 }") @directive1(arg47: "anonymous-string")
 }
 
-enum Enum347 {
-  VALUE_1574
-  VALUE_1575
-  VALUE_1576
-  VALUE_1577
-  VALUE_1578
-  VALUE_1579
-  VALUE_1580
-  VALUE_1581
-  VALUE_1582
-  VALUE_1583
-  VALUE_1584
-  VALUE_1585
-  VALUE_1586
-  VALUE_1587
-  VALUE_1588
-  VALUE_1589
-  VALUE_1590
-  VALUE_1591
-  VALUE_1592
-  VALUE_1593
-  VALUE_1594
-  VALUE_1595
-  VALUE_1596
-}
-
-input Input652 {
-  inputField50: ID
-  inputField67: ID
-  inputField171: ID
-  inputField1328: ID
-  inputField1329: ID
-  inputField209: ID
-  inputField1330: [Enum347!]
-  inputField401: [String!]
-  inputField211: Int
-  inputField28: String
-}
-
-type Type32 @key(fields: "field107") @extends {
-  field107: Int! @external
-}
-
-type Type29 @key(fields: "field98") @extends {
-  field98: ID! @external
-}
-
-type Type475 @extends @key(fields: "field108 { field2 field44 }") {
-  field108: Type35 @external
-}
-
-type Type35 @extends @key(fields: "field2 field44") {
+type Type32 @key(fields: "field2 field58") @extends {
   field2: String! @external
-  field44: String @external
+  field58: String @external
 }
 
-type Type1393 {
-  field126: Type475
-  field120: Type32
-  field439: Type29
-  field3345: Enum347!
-  field3346: Scalar14!
-  field584: ID!
-  field3347: String
-  field1243: [Type1394!]
-  field1351: String
+type Query @extends {
+  field5135(arg23: ID!, arg168: String): Type32 @directive1(arg47: "anonymous-string")
 }
 
-type Type1394 {
-  field632: String
-  field3348: String
-}
+directive @directive1("""
+This is an anonymized description
+"""
+arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
 
-type Type1395 {
-  field37: Type122!
-  field36: [Type1396]
-  field38: Int!
-}
-
-type Type1396 {
-  field41: String!
-  field40: Type1393
-}
+directive @directive2 on FIELD_DEFINITION

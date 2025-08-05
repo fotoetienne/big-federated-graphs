@@ -1,200 +1,944 @@
-scalar Scalar1
+directive @oneOf on INPUT_OBJECT
 
 """
 This is an anonymized description
 """
-interface Interface472 @key(fields: "field2") {
-  field2: ID!
-  field675: Scalar11
-  field5622: Scalar13 @deprecated
-  field25628: Scalar14
-  field676: Scalar11
-  field5623: Scalar13 @deprecated
-  field25629: Scalar14
-  field25630: Boolean
-  field25631: Enum2860
-  field25632: Boolean
-  field120: Type32
-}
-
-type Type2343 implements Interface472 @key(fields: "field2") {
-  field2: ID!
-  field120: Type32
-  field10983: [Type2159]
-  field675: Scalar11
-  field5622: Scalar13 @deprecated
-  field25628: Scalar14
-  field676: Scalar11
-  field5623: Scalar13 @deprecated
-  field25629: Scalar14
-  field7105: [Type187]
-  field25630: Boolean
-  field25631: Enum2860
-  field25632: Boolean
-}
-
-type Type2344 implements Interface472 @key(fields: "field2") {
-  field2: ID!
-  field120: Type32
-  field25633: Type2159
-  field675: Scalar11
-  field5622: Scalar13 @deprecated
-  field25628: Scalar14
-  field676: Scalar11
-  field25629: Scalar14
-  field5623: Scalar13 @deprecated
-  field426: Type187
-  field25630: Boolean
-  field25631: Enum2860
-  field25632: Boolean
-}
-
-type Type2345 implements Interface472 @key(fields: "field2") {
-  field2: ID!
-  field120: Type32
-  field10983: [Type2159]
-  field675: Scalar11
-  field5622: Scalar13 @deprecated
-  field25628: Scalar14
-  field676: Scalar11
-  field5623: Scalar13 @deprecated
-  field25629: Scalar14
-  field7105: [Type187]
-  field25630: Boolean
-  field25631: Enum2860
-  field25632: Boolean
-  field4959: Type2173
-}
-
-type Type2338 implements Interface472 @key(fields: "field2") {
-  field2: ID!
-  field675: Scalar11
-  field5622: Scalar13 @deprecated
-  field25628: Scalar14
-  field676: Scalar11
-  field5623: Scalar13 @deprecated
-  field25629: Scalar14
-  field25630: Boolean
-  field25631: Enum2860
-  field312: Scalar15
-  field25632: Boolean
-  field120: Type32
-  field10: Type25
-  field10983: [Type2159]
-  field7105: [Type187]
-}
-
-"""
-This is an anonymized description
-"""
-type Type2339 @key(fields: "field2") @key(fields: "field4979") {
-  field2: ID!
-  field4979: String!
-  field10: Type25
-}
-
-"""
-This is an anonymized description
-"""
-interface Interface473 {
-  field2: ID!
-  field120: Type32
-  field25634: [Interface472]
-  field25632: Boolean
-}
-
-"""
-This is an anonymized description
-"""
-type Type11688 implements Interface473 {
-  field2: ID!
-  field311: Type25
-  field312: Scalar15
-  field120: Type32
-  field25634: [Type2344]
-  field25632: Boolean
-}
-
-"""
-This is an anonymized description
-"""
-type Type11689 implements Interface473 {
-  field2: ID!
-  field120: Type32
-  field25634: [Type2343]
-  field25632: Boolean
-  field7105: [Type187]
-}
-
-"""
-This is an anonymized description
-"""
-type Type11690 implements Interface473 {
-  field2: ID!
-  field4959: Type2173
-  field120: Type32
-  field25634: [Type2345]
-  field25632: Boolean
-}
-
-union Union568 = Type11689 | Type11690 | Type11688
-
-type Type32 @extends @key(fields: "field107") {
-  field107: Int! @external
+type Type26 @extends @key(fields: "field1251") {
   """
   This is an anonymized description
   """
-  field25635(
-  arg1: Input5325!): [Union568]
+  field1251: String @external
 }
 
-input Input5325 {
+type Type1926 @extends @key(fields: "field2 field80") {
   """
   This is an anonymized description
   """
-  inputField8830: [Enum2859!]
-  """
-  This is an anonymized description
-  """
-  inputField729: [String!]
-}
-
-"""
-This is an anonymized description
-"""
-enum Enum2859 {
-  VALUE_1016
-  VALUE_5586
-  VALUE_1084
-}
-
-enum Enum2860 {
-  VALUE_4306
-  VALUE_9
-  VALUE_4305
-}
-
-type Type187 @extends @key(fields: "field2") {
-  field2: Int! @external
-}
-
-type Type25 @key(fields: "field2") @key(fields: "field2 field165 field1767") @extends {
-  field2: Enum517! @external
-  field165: String @external
-  field1767: String @external
-}
-
-type Type2173 @key(fields: "field2") @key(fields: "field2 field165 field1767 field4959") @extends {
   field2: ID! @external
-  field165: String @external
-  field4959: String @external
-  field1767: String @external
+  """
+  This is an anonymized description
+  """
+  field80: Enum574 @external
 }
 
-type Query @extends {
-  field25636(arg196: [Scalar1!]!): [Union568]
+enum Enum574 {
+  VALUE_239
 }
 
-type Type2159 @extends @key(fields: "field2") {
-  field2: ID! @external
+type Query {
+  field25853(arg23: Int!): Type1927 @experimental
+  """
+  This is an anonymized description
+  """
+  field25854(
+  arg1574: Input5353
+  arg1573: Input5353
+  """
+  This is an anonymized description
+  """
+  arg26: Int! = 0
+  """
+  This is an anonymized description
+  """
+  arg25: String
+  """
+  This is an anonymized description
+  """
+  arg2111: Int
+  """
+  This is an anonymized description
+  """
+  arg415: Enum2949): Type11933 @experimental
+  field25855(arg23: ID!): Type1928 @experimental
+  """
+  This is an anonymized description
+  """
+  field25856(
+  arg1574: Input5354
+  arg1573: Input5354
+  """
+  This is an anonymized description
+  """
+  arg26: Int! = 0
+  """
+  This is an anonymized description
+  """
+  arg25: String
+  """
+  This is an anonymized description
+  """
+  arg2111: Int
+  """
+  This is an anonymized description
+  """
+  arg415: Enum2950): Type11942 @experimental
+}
+
+type Mutation {
+  """
+  This is an anonymized description
+  """
+  field25857(
+  arg2112: Input5355!
+  arg2113: Enum2948!): Type1927 @experimental
+  """
+  This is an anonymized description
+  """
+  field25858(
+  arg2114: Input5361!
+  arg2113: Enum2948!): Type1928 @experimental
+  """
+  This is an anonymized description
+  """
+  field25859(
+  arg2115: Input5377!
+  arg2113: Enum2948!): Type11959 @experimental
+}
+
+input Input5353 {
+  inputField338: [Int!] @experimental
+  inputField454: [Enum2951!] @experimental
+  inputField64: String @experimental
+  inputField8948: [Enum2952!] @experimental
+  inputField437: [Enum2953!] @experimental
+  inputField1762: Boolean @experimental
+  inputField8949: Boolean @experimental
+  inputField8950: [String!] @experimental
+  inputField2502: [String!] @experimental
+  inputField412: [String!] @experimental
+  inputField8951: [String!] @experimental
+  inputField8952: [String!] @experimental
+  inputField8953: [String!] @experimental
+  inputField8954: [String!] @experimental
+  inputField433: [String!] @experimental
+  inputField8955: [String!] @deprecated(reason: "Anonymized deprecation reason")
+  inputField1303: [String!] @experimental
+  inputField8494: [String!] @experimental
+  inputField8956: [String!] @experimental
+  inputField8957: [Enum2962!] @experimental
+}
+
+input Input5354 {
+  inputField8958: [Int!] @experimental
+  inputField8959: [String!] @experimental
+  inputField454: [Enum2959!] @experimental
+  inputField437: [Enum2958!] @experimental
+}
+
+"""
+This is an anonymized description
+"""
+type Type11933 {
+  """
+  This is an anonymized description
+  """
+  field367: Int @experimental
+  """
+  This is an anonymized description
+  """
+  field176: [Type11934!] @experimental
+  """
+  This is an anonymized description
+  """
+  field366: Type119 @experimental
+}
+
+type Type11934 {
+  """
+  This is an anonymized description
+  """
+  field369: String! @experimental
+  field177: Type1927! @experimental
+}
+
+type Type1927 @key(fields: "field2") {
+  field2: Int! @experimental
+  """
+  This is an anonymized description
+  """
+  field11: String @experimental
+  """
+  This is an anonymized description
+  """
+  field198: String @experimental
+  """
+  This is an anonymized description
+  """
+  field80: Enum2951 @experimental
+  """
+  This is an anonymized description
+  """
+  field25860: Enum2952 @experimental
+  """
+  This is an anonymized description
+  """
+  field21: Enum2953 @experimental
+  """
+  This is an anonymized description
+  """
+  field265: Scalar14 @experimental
+  """
+  This is an anonymized description
+  """
+  field784: Boolean @experimental
+  """
+  This is an anonymized description
+  """
+  field25861: Scalar14 @experimental
+  """
+  This is an anonymized description
+  """
+  field25862: Boolean @experimental
+  """
+  This is an anonymized description
+  """
+  field25863: Scalar14 @experimental
+  field25864: Int @experimental
+  field148: [Type1927!] @experimental
+  field2807: Type11935 @experimental
+  """
+  This is an anonymized description
+  """
+  field25865: [Type11938!] @experimental
+  field25866: Enum2962 @experimental
+  field1500: Type1926 @experimental
+  field25867: String @deprecated(reason: "Anonymized deprecation reason")
+  field3359: String @experimental
+  field85: Type11939 @experimental
+  field25868: Boolean @experimental
+  field25869: Boolean @experimental
+  field25870: String @experimental
+  """
+  This is an anonymized description
+  """
+  field16455: [Type11940!] @experimental
+  """
+  This is an anonymized description
+  """
+  field8556: [Type1928!] @experimental
+}
+
+input Input5355 {
+  """
+  This is an anonymized description
+  """
+  inputField16: Int @experimental
+  inputField64: String @experimental
+  inputField110: String @experimental
+  inputField115: Enum2951 @experimental
+  inputField8960: Enum2952 @experimental
+  inputField149: Enum2953 @experimental
+  inputField1762: Boolean @experimental
+  inputField8961: Int @experimental
+  inputField3849: [Int!] @experimental
+  inputField8799: Input5356 @experimental
+  inputField8962: [String!] @experimental
+  inputField8963: Enum2962 @experimental
+  inputField8964: String @experimental
+  inputField1300: String @experimental
+  inputField2257: String @experimental
+  inputField8965: Boolean @experimental
+  inputField8966: Boolean @experimental
+  inputField8967: String @experimental
+  inputField8968: [Input5359!] @experimental
+}
+
+type Type11935 {
+  field23091: String @experimental
+  field25871: Boolean @experimental
+  field25872: Boolean @experimental
+  field25873: Boolean @experimental
+  field25874: String @experimental
+  """
+  This is an anonymized description
+  """
+  field25875: Scalar14 @experimental
+  field25876: [Type1927!] @experimental
+  field25877: [Type11936!] @experimental
+  field2869: [Type11937!] @experimental
+  """
+  This is an anonymized description
+  """
+  field25878: Scalar14 @experimental
+  field25879: [Int!] @experimental
+  field25880: [Enum2955!] @experimental
+  field25881: String @experimental
+  field25882: [Type26!] @experimental
+  field25883: [Type26!] @experimental
+  field25884: [Type26!] @experimental
+  field25885: [Type11938!] @experimental
+  field6728: [Type11938!] @experimental
+  field900: [Type11938!] @experimental
+  field25886: [String!] @experimental
+}
+
+input Input5356 {
+  inputField8969: String @experimental
+  inputField8970: Boolean @experimental
+  inputField8971: Boolean @experimental
+  inputField8972: Boolean @experimental
+  inputField8973: String @experimental
+  inputField8974: Scalar14 @experimental
+  inputField8975: [Int!] @experimental
+  inputField8976: [Input5357!] @experimental
+  inputField955: [Input5358!] @experimental
+  inputField8977: Scalar14 @experimental
+  inputField8978: [Int!] @experimental
+  inputField8979: [Enum2955!] @experimental
+  inputField8980: String @experimental
+  inputField8951: [String!] @experimental
+  inputField8952: [String!] @experimental
+  inputField8953: [String!] @experimental
+  inputField8950: [String!] @experimental
+  inputField2502: [String!] @experimental
+  inputField412: [String!] @experimental
+  inputField8981: [String!] @experimental
+}
+
+type Type11936 {
+  field6081: String @experimental
+  field9217: Enum2954 @experimental
+}
+
+input Input5357 {
+  inputField5261: String!
+  inputField8982: Enum2954 @experimental
+}
+
+type Type11937 {
+  field396: String @experimental
+  field36: String @experimental
+}
+
+input Input5358 {
+  inputField116: String!
+  inputField62: String!
+}
+
+type Type11938 {
+  field11: String! @experimental
+  field396: String! @experimental
+}
+
+type Type11939 {
+  field2: ID! @experimental
+}
+
+type Type11940 {
+  field816: Int! @experimental
+  field11: String @experimental
+  field784: Boolean @experimental
+  field25887: [Type11941!] @experimental
+}
+
+input Input5359 {
+  inputField204: Int!
+  inputField64: String @experimental
+  inputField1762: Boolean @experimental
+  inputField8983: [Input5360!] @experimental
+}
+
+"""
+This is an anonymized description
+"""
+type Type11941 {
+  field553: String! @experimental
+  field36: Enum2961! @experimental
+}
+
+input Input5360 {
+  inputField32: String!
+  inputField62: Enum2961!
+}
+
+"""
+This is an anonymized description
+"""
+type Type11942 {
+  """
+  This is an anonymized description
+  """
+  field367: Int @experimental
+  """
+  This is an anonymized description
+  """
+  field176: [Type11943!] @experimental
+  """
+  This is an anonymized description
+  """
+  field366: Type119 @experimental
+}
+
+type Type11943 {
+  """
+  This is an anonymized description
+  """
+  field369: String! @experimental
+  field177: Type1928! @experimental
+}
+
+type Type1928 @key(fields: "field2") {
+  field2: ID! @experimental
+  """
+  This is an anonymized description
+  """
+  field10629: Type1927 @experimental
+  """
+  This is an anonymized description
+  """
+  field11: String @experimental
+  """
+  This is an anonymized description
+  """
+  field1239: Enum2956 @experimental
+  """
+  This is an anonymized description
+  """
+  field699: Enum2957 @experimental
+  """
+  This is an anonymized description
+  """
+  field21: Enum2958 @experimental
+  """
+  This is an anonymized description
+  """
+  field80: Enum2959 @experimental
+  """
+  This is an anonymized description
+  """
+  field207: Boolean @experimental
+  field25888: Boolean @experimental
+  """
+  This is an anonymized description
+  """
+  field265: Scalar14 @experimental
+  """
+  This is an anonymized description
+  """
+  field25889: Int @experimental
+  """
+  This is an anonymized description
+  """
+  field233: Scalar14 @experimental
+  """
+  This is an anonymized description
+  """
+  field237: Scalar14 @experimental
+  """
+  This is an anonymized description
+  """
+  field25890: [Type11944!] @experimental
+  """
+  This is an anonymized description
+  """
+  field25891: [Type11945!] @experimental
+  field20437: Type11946 @experimental
+  field2749: Union584 @experimental
+}
+
+input Input5361 {
+  """
+  This is an anonymized description
+  """
+  inputField16: ID @experimental
+  """
+  This is an anonymized description
+  """
+  inputField38: Int @experimental
+  inputField64: String @experimental
+  inputField507: Enum2956 @experimental
+  inputField1046: Enum2957 @experimental
+  inputField149: Enum2958 @experimental
+  inputField115: Enum2959 @experimental
+  inputField8984: Boolean @experimental
+  inputField8985: Boolean @experimental
+  """
+  This is an anonymized description
+  """
+  inputField265: Scalar14 @experimental
+  """
+  This is an anonymized description
+  """
+  inputField2139: Int @experimental
+  inputField8986: [Input5362!] @experimental
+  inputField3108: Input5363 @experimental
+}
+
+type Type11944 {
+  field816: Int! @experimental
+  field5578: Int! @experimental
+}
+
+input Input5362 {
+  inputField204: Int!
+  inputField2349: Int!
+}
+
+type Type11945 {
+  """
+  This is an anonymized description
+  """
+  field816: Int! @experimental
+  """
+  This is an anonymized description
+  """
+  field1571: Int! @experimental
+  """
+  This is an anonymized description
+  """
+  field25892: Int @experimental
+}
+
+type Type11946 {
+  field21: Enum2960 @experimental
+  """
+  This is an anonymized description
+  """
+  field25893: Type11947 @experimental
+  field25894: String @experimental
+  field25895: String @experimental
+  field25896: Int @experimental
+  field25897: String @experimental
+  field25898: String @experimental
+  field25899: String @experimental
+}
+
+type Type11947 {
+  """
+  This is an anonymized description
+  """
+  field546: Int @experimental
+  """
+  This is an anonymized description
+  """
+  field730: Int @experimental
+  """
+  This is an anonymized description
+  """
+  field25900: Int @experimental
+  """
+  This is an anonymized description
+  """
+  field25901: Int @experimental
+  """
+  This is an anonymized description
+  """
+  field25902: Int @experimental
+  """
+  This is an anonymized description
+  """
+  field67: Int @experimental
+  """
+  This is an anonymized description
+  """
+  field25903: Int @experimental
+  """
+  This is an anonymized description
+  """
+  field25028: Int @experimental
+  """
+  This is an anonymized description
+  """
+  field25904: Int @experimental
+}
+
+union Union584 = Type11948 | Type11949 | Type11950 | Type11951 | Type11952 | Type11953
+
+input Input5363 @oneOf {
+  inputField8987: Input5364 @experimental
+  inputField8988: Input5365 @experimental
+  inputField8989: Input5366 @experimental
+  inputField8990: Input5367 @experimental
+  inputField8991: Input5368 @experimental
+  inputField8992: Input5369 @experimental
+}
+
+type Type11948 {
+  """
+  This is an anonymized description
+  """
+  field1906: String @experimental
+  """
+  This is an anonymized description
+  """
+  field25905: Float @experimental
+  """
+  This is an anonymized description
+  """
+  field25906: Int @experimental
+  """
+  This is an anonymized description
+  """
+  field25907: Boolean @experimental
+}
+
+input Input5364 {
+  """
+  This is an anonymized description
+  """
+  inputField272: Scalar14 @experimental
+  """
+  This is an anonymized description
+  """
+  inputField273: Scalar14 @experimental
+  """
+  This is an anonymized description
+  """
+  inputField684: String @experimental
+  """
+  This is an anonymized description
+  """
+  inputField8993: Float @experimental
+  """
+  This is an anonymized description
+  """
+  inputField8994: Int @experimental
+  """
+  This is an anonymized description
+  """
+  inputField8995: Boolean @experimental
+}
+
+type Type11949 {
+  field25908: [Enum2963!] @experimental
+  field25909: Int @experimental
+  field402: [String!] @experimental
+}
+
+input Input5365 {
+  inputField8996: [Enum2963!] @experimental
+  inputField8997: Int @experimental
+  inputField620: [String!] @experimental
+}
+
+type Type11950 {
+  field7702: String @experimental
+  field25909: Int @experimental
+  field402: [String!] @experimental
+}
+
+input Input5366 {
+  inputField8998: String @experimental
+  inputField8997: Int @experimental
+  inputField620: [String!] @experimental
+}
+
+type Type11951 {
+  field3709: [String!] @experimental
+  field402: [String!] @experimental
+}
+
+input Input5367 {
+  inputField338: [String!] @experimental
+  inputField620: [String!] @experimental
+}
+
+type Type11952 {
+  field406: Int @experimental
+  field16455: [Int!] @experimental
+  field25910: [String!] @experimental
+  field402: [String!] @experimental
+}
+
+input Input5368 {
+  inputField38: Int @experimental
+  inputField8968: [Int!] @experimental
+  inputField8959: [String!] @experimental
+  inputField620: [String!] @experimental
+}
+
+type Type11953 {
+  """
+  This is an anonymized description
+  """
+  field25905: Float @experimental
+  """
+  This is an anonymized description
+  """
+  field25906: Int @experimental
+  field25911: [Type11954!] @experimental
+}
+
+input Input5369 {
+  """
+  This is an anonymized description
+  """
+  inputField272: Scalar14 @experimental
+  """
+  This is an anonymized description
+  """
+  inputField273: Scalar14 @experimental
+  """
+  This is an anonymized description
+  """
+  inputField8993: Float @experimental
+  """
+  This is an anonymized description
+  """
+  inputField8994: Int @experimental
+  inputField8999: [Input5370!] @experimental
+}
+
+type Type11954 {
+  field25912: String @experimental
+  field25913: [Type11955!] @experimental
+}
+
+input Input5370 {
+  inputField9000: String @experimental
+  inputField9001: [Input5371!] @experimental
+}
+
+type Type11955 {
+  field752: String @experimental
+  field36: String @experimental
+  field80: Union585 @experimental
+}
+
+input Input5371 {
+  inputField162: String @experimental
+  inputField62: String @experimental
+  inputField115: Input5372 @experimental
+}
+
+union Union585 = Type11956 | Type11957
+
+input Input5372 @oneOf {
+  inputField9002: Input5373 @experimental
+  inputField9003: Input5374 @experimental
+}
+
+type Type11956 {
+  field80: Enum2964! @experimental
+  field807: Enum2965 @experimental
+}
+
+input Input5373 {
+  inputField115: Enum2964!
+  inputField195: Enum2965 @experimental
+}
+
+type Type11957 {
+  field80: Enum2964! @experimental
+  field4096: Union586 @experimental
+}
+
+input Input5374 {
+  inputField115: Enum2964 @experimental
+  inputField958: Input5375 @experimental
+}
+
+union Union586 = Type11956 | Type11958
+
+input Input5375 @oneOf {
+  inputField9002: Input5373 @experimental
+  inputField9004: Input5376 @experimental
+}
+
+type Type11958 {
+  field25914: [Type11956!] @experimental
+}
+
+input Input5376 {
+  inputField9005: [Input5373!] @experimental
+}
+
+input Input5377 {
+  """
+  This is an anonymized description
+  """
+  inputField16: ID @experimental
+  """
+  This is an anonymized description
+  """
+  inputField9006: String @experimental
+  """
+  This is an anonymized description
+  """
+  inputField9007: Scalar14 @experimental
+  """
+  This is an anonymized description
+  """
+  inputField9008: Int @experimental
+}
+
+type Type11959 {
+  field2: ID! @experimental
+  """
+  This is an anonymized description
+  """
+  field1080: Type1928 @experimental
+  """
+  This is an anonymized description
+  """
+  field8120: Scalar14 @experimental
+  """
+  This is an anonymized description
+  """
+  field25915: Int @experimental
+  """
+  This is an anonymized description
+  """
+  field21: Enum2947 @experimental
+  """
+  This is an anonymized description
+  """
+  field265: Scalar14 @experimental
+  """
+  This is an anonymized description
+  """
+  field266: Scalar14 @experimental
+}
+
+enum Enum2947 {
+  VALUE_9054 @experimental
+  VALUE_9055 @experimental
+  VALUE_9056 @experimental
+}
+
+enum Enum2948 {
+  VALUE_1468 @experimental
+  VALUE_1469 @experimental
+  VALUE_6582 @experimental
+  VALUE_9057 @experimental
+}
+
+enum Enum2949 {
+  VALUE_9058 @experimental
+  VALUE_9059 @experimental
+}
+
+enum Enum2950 {
+  VALUE_9060 @experimental
+  VALUE_9061 @experimental
+}
+
+enum Enum2951 {
+  VALUE_7011 @experimental
+  VALUE_9062 @experimental
+  VALUE_9063 @experimental
+}
+
+enum Enum2952 {
+  VALUE_9064 @experimental
+  VALUE_9065 @experimental
+  VALUE_9066 @experimental
+  VALUE_9067 @experimental
+  VALUE_9068 @experimental
+  VALUE_9069 @experimental
+  VALUE_9070 @experimental
+  VALUE_9071 @experimental
+  VALUE_9072 @experimental
+  VALUE_9073 @experimental
+  VALUE_9074 @experimental
+  VALUE_9075 @experimental
+  VALUE_5915 @experimental
+}
+
+enum Enum2953 {
+  VALUE_171 @experimental
+  VALUE_9076 @experimental
+  VALUE_9077 @experimental
+  VALUE_5533 @experimental
+  VALUE_224 @experimental
+  VALUE_9078 @experimental
+}
+
+enum Enum2954 {
+  VALUE_9079 @experimental
+  VALUE_9080 @experimental
+  VALUE_9081 @experimental
+  VALUE_9082 @experimental
+}
+
+enum Enum2955 {
+  VALUE_9083 @experimental
+  VALUE_9084 @experimental
+  VALUE_9085 @experimental
+  VALUE_9086 @experimental
+  VALUE_9087 @experimental
+  VALUE_10 @experimental
+}
+
+enum Enum2956 {
+  VALUE_9088 @experimental
+  VALUE_9089 @experimental
+  VALUE_812 @experimental
+  VALUE_9090 @experimental
+  VALUE_9091 @experimental
+}
+
+enum Enum2957 {
+  VALUE_3762 @experimental
+  VALUE_1044 @experimental
+  VALUE_9092 @experimental
+  VALUE_9093 @experimental
+}
+
+enum Enum2958 {
+  VALUE_340 @experimental
+  VALUE_1281 @experimental
+  VALUE_5139 @experimental
+  VALUE_1460 @experimental
+  VALUE_2946 @experimental
+}
+
+enum Enum2959 {
+  VALUE_9094 @experimental
+  VALUE_9095 @experimental
+  VALUE_9096 @experimental
+  VALUE_9097 @experimental
+  VALUE_9098 @experimental
+  VALUE_9099 @experimental
+  VALUE_4644 @deprecated
+  VALUE_9100 @deprecated
+  VALUE_9101 @deprecated
+  VALUE_3684 @deprecated
+  VALUE_9102 @deprecated
+}
+
+enum Enum2960 {
+  VALUE_9103 @experimental
+  VALUE_9104 @experimental
+  VALUE_9105 @experimental
+  VALUE_9106 @experimental
+  VALUE_9107 @experimental
+  VALUE_9108 @experimental
+  VALUE_9109 @experimental
+  VALUE_9110 @experimental
+  VALUE_9111 @experimental
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum2961 {
+  VALUE_9112 @experimental
+  VALUE_9113 @experimental
+}
+
+enum Enum2962 {
+  VALUE_4942 @experimental
+  VALUE_5243 @experimental
+}
+
+enum Enum2963 {
+  VALUE_9114 @experimental
+  VALUE_9115 @experimental
+  VALUE_9116 @experimental
+  VALUE_9117 @experimental
+}
+
+enum Enum2964 {
+  VALUE_9118 @experimental
+  VALUE_9119 @experimental
+  VALUE_9120 @experimental
+  VALUE_9121 @experimental
+  VALUE_9122 @experimental
+}
+
+enum Enum2965 {
+  VALUE_9123 @experimental
+  VALUE_1611 @experimental
+  VALUE_1612 @experimental
 }

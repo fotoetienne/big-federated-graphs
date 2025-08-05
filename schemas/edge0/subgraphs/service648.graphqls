@@ -2,124 +2,177 @@ type Query @extends {
   """
   This is an anonymized description
   """
-  field31344(
-  arg1565: [ID!]!): [Type15584!] @experimental
-  """
-  This is an anonymized description
-  """
-  field31345(
-  arg196: [ID!]!): [Type15585!] @experimental
+  field31660(
+  arg318: ID!
+  arg26: Int @deprecated
+  arg28: Int @deprecated
+  arg27: String @deprecated
+  arg25: String @deprecated): Type16098
 }
 
-"""
-This is an anonymized description
-"""
-type Type33 @key(fields: "field2") @extends {
-  field2: ID! @external
+type Mutation @extends {
   """
   This is an anonymized description
   """
-  field31346: Type15584
+  field31661(
+  arg20: Input7370!): Union878
+  """
+  This is an anonymized description
+  """
+  field31662(
+  arg20: Input7371!): Union879
+  """
+  This is an anonymized description
+  """
+  field31663(
+  arg1469: ID!): Union880
+  """
+  This is an anonymized description
+  """
+  field31664(
+  arg20: Input7372!): Union881 @experimental
+  """
+  This is an anonymized description
+  """
+  field31665(
+  arg20: Input7373!): Union882 @experimental
 }
 
-"""
-This is an anonymized description
-"""
-type Type15584 {
-  """
-  This is an anonymized description
-  """
-  field107: ID!
-  """
-  This is an anonymized description
-  """
-  field1154: ID!
-  """
-  This is an anonymized description
-  """
-  field3789: [ID!]
-  """
-  This is an anonymized description
-  """
-  field84: [String!]
-  """
-  This is an anonymized description
-  """
-  field31347: Scalar14
-  """
-  This is an anonymized description
-  """
-  field31348: Scalar14
-  """
-  This is an anonymized description
-  """
-  field7941: Boolean!
-  """
-  This is an anonymized description
-  """
-  field1592: Boolean!
-  """
-  This is an anonymized description
-  """
-  field29402: Boolean!
-  """
-  This is an anonymized description
-  """
-  field29401: Boolean!
+interface Interface902 {
+  field5309: ID!
 }
 
-"""
-This is an anonymized description
-"""
-type Type15585 {
+type Type2434 implements Interface902 @key(fields: "field5309 field3585") {
+  field5309: ID!
+  field3585: ID!
+  field10824: Scalar14!
   """
   This is an anonymized description
   """
-  field107: ID!
-  """
-  This is an anonymized description
-  """
-  field26598: Type15586
+  field1379: String
 }
 
-"""
-This is an anonymized description
-"""
-type Type15586 {
+type Type2435 implements Interface902 @key(fields: "field5309") {
+  field5309: ID!
+}
+
+type Type2436 @key(fields: "field2") {
+  field2: ID!
   """
   This is an anonymized description
   """
-  field31349: String
+  field11: String!
+  field198: String
+  field265: Scalar14
+  field266: Scalar14
+  field31666(arg26: Int @deprecated, arg28: Int @deprecated, arg27: String @deprecated, arg25: String @deprecated): Type16096
+  field31667: Int
+  field3881: Boolean
+}
+
+type Type16096 {
+  field366: Type119! @deprecated
+  field176: [Type16097!]!
+}
+
+type Type16097 {
+  field369: String! @deprecated
+  field177: Interface902!
+}
+
+type Type16098 {
+  field366: Type119! @deprecated
+  field176: [Type16099!]!
+}
+
+type Type16099 {
+  field369: String! @deprecated
+  field177: Type2436!
+}
+
+type Type16100 {
+  field2772: Type2436!
+}
+
+union Union878 = Type16100 | Type16102
+
+union Union879 = Type16100 | Type16104 | Type16102
+
+union Union880 = Type16100 | Type16106 | Type16104
+
+union Union881 = Type16104 | Type16101
+
+union Union882 = Type16104 | Type16101
+
+type Type16101 {
+  field2772: Type2436!
+  field7630: [Union883!]!
+}
+
+union Union883 = Type2434 | Type16103 | Type16105
+
+input Input7370 {
+  inputField1362: ID!
+  inputField64: String!
+  inputField110: String!
+}
+
+input Input7371 {
+  inputField3149: ID!
   """
   This is an anonymized description
   """
-  field31350: String
+  inputField64: String @deprecated(reason: "Anonymized deprecation reason")
   """
   This is an anonymized description
   """
-  field31351: Int
+  inputField110: String
+}
+
+input Input7372 {
+  inputField3149: ID!
   """
   This is an anonymized description
   """
-  field22193: String
+  inputField10794: Int!
+  inputField242: String!
+  inputField357: String!
+  inputField712: Scalar7!
   """
   This is an anonymized description
   """
-  field11165: Int
+  inputField4990: Boolean = false
   """
   This is an anonymized description
   """
-  field31352: String
-  """
-  This is an anonymized description
-  """
-  field5304: Int
-  """
-  This is an anonymized description
-  """
-  field31353: String
-  """
-  This is an anonymized description
-  """
-  field31354: Int
+  inputField10795: String
+}
+
+input Input7373 {
+  inputField3149: ID!
+  inputField10796: [ID!]!
+}
+
+type Type16102 implements Interface903 {
+  field730: String
+}
+
+type Type16103 implements Interface903 {
+  field730: String
+}
+
+type Type16104 implements Interface903 {
+  field730: String
+}
+
+type Type16105 implements Interface903 {
+  field730: String
+}
+
+type Type16106 implements Interface903 {
+  field730: String
+}
+
+interface Interface903 {
+  field730: String
 }

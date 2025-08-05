@@ -1,138 +1,110 @@
-type Mutation @extends {
-  field14829(arg1: Input2978!): Type6898!
+type Type7161 {
+  field15457: Type7165!
+  field554: Float!
+  field198: String
+  field405: Type7170!
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field100: Enum1725!
+  field58: String
 }
 
-type Type122 {
-  field269: String
-  field270: Boolean!
-  field271: Boolean!
-  field272: String
+type Type7162 {
+  field176: [Type7163!]
+  field366: Type119!
+}
+
+type Type7163 {
+  field369: String
+  field177: Type7161!
+}
+
+type Mutation @extends {
+  field15458(arg20: Input3048!): Type7168!
+}
+
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
 }
 
 type Query @extends {
-  field14830(arg33: ID!): Type3067
-  field14831(arg1: Input48!): Type6902!
+  field15459(arg49: ID!): Type7161
+  field15460(arg20: Input48!): Type7162!
 }
 
-type Type6898 {
-  field275: Type3067
+type Type7164 {
+  field1202: [Type7169!]!
 }
 
-type Type6899 {
-  field2: String!
+type Type7165 {
+  field176: [Type7166!]
+  field366: Type119!
 }
 
-type Type6900 {
-  field36: [Type6901!]
-  field37: Type122!
+type Type7166 {
+  field369: String
+  field177: Type7164!
 }
 
-type Type6901 {
-  field41: String
-  field40: Type6899!
+type Type7167 {
+  field5943: Type7169!
 }
 
-type Type3067 @key(fields: "field255") {
-  field6204: Type6900!
-  field252: Float!
-  field253: String
-  field896: Type6905!
-  field254: ID
-  field255: ID!
-  field256: String!
-  field257: String!
-  field258: ID
-  field259: ID!
-  field260: Enum1641!
-  field44: String
+type Type7168 {
+  field563: String!
+  field564: Type7167
+  field100: String!
 }
 
-type Type6902 {
-  field36: [Type6903!]
-  field37: Type122!
+type Type7169 {
+  field6103: String!
+  field2609: Enum1726!
 }
 
-type Type6903 {
-  field41: String
-  field40: Type3067!
+type Type7170 {
+  field176: [Type7171!]
+  field366: Type119!
 }
 
-type Type6904 {
-  field6205: [String!]
-  field5: String!
-  field3325: String!
+type Type7171 {
+  field369: String
+  field177: Type7169!
 }
 
-type Type6905 {
-  field36: [Type6906!]
-  field37: Type122!
+enum Enum1725 {
+  VALUE_212
+  VALUE_5841
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
 }
 
-type Type6906 {
-  field41: String
-  field40: Type6904!
-}
-
-enum Enum31 {
-  VALUE_201
-  VALUE_202
-}
-
-enum Enum1641 {
-  VALUE_199
-  VALUE_151
-  VALUE_158
-  VALUE_152
-  VALUE_149
+enum Enum1726 {
+  VALUE_5842
+  VALUE_5843
+  VALUE_1284
 }
 
 input Input48 {
-  inputField106: String!
-  inputField107: Boolean! = false
+  inputField113: String!
+  inputField114: Boolean! = false
 }
 
-input Input49 {
-  inputField7: String!
-  "This is an anonymized description"
-  inputField108: Enum31!
+input Input3048 {
+  inputField110: String
+  inputField111: String
+  inputField350: Input3049!
+  inputField112: String!
 }
 
-input Input50 {
-  "This is an anonymized description"
-  inputField109: String
-  "This is an anonymized description"
-  inputField110: Int!
-  "This is an anonymized description"
-  inputField111: Int!
-  "This is an anonymized description"
-  inputField112: Int!
-}
-
-input Input2978 {
-  inputField113: String
-  inputField103: String
-  "This is an anonymized description"
-  inputField104: String
-  inputField114: String
-  inputField128: Input2979!
-  "This is an anonymized description"
-  inputField115: Input49
-  "This is an anonymized description"
-  inputField116: Input50
-  "This is an anonymized description"
-  inputField117: String
-  "This is an anonymized description"
-  inputField118: String
-  "This is an anonymized description"
-  inputField119: String
-}
-
-input Input2979 {
-  inputField579: Input2980
-}
-
-input Input2980 {
-  inputField2007: String!
-  inputField2332: String!
-  inputField2333: String!
+input Input3049 {
+  inputField266: String!
 }

@@ -1,15 +1,63 @@
-type Type6439 {
-  field5015: String!
-  field1455: String!
-  field94: Scalar14
-  field96: Scalar14
-  field13190: String
+type Type2419 @key(fields: "field2") {
+  field2: ID!
+  field11: String!
+  field5777: Scalar11!
+  field6383: Type6661!
+  field6382: String!
+  field9211: String!
+  field5579: Float!
+  field14221: [Type6662]
+  field8638: [String]!
+  field265: Scalar14!
+  field266: Scalar14!
+}
+
+type Type6661 {
+  field2: ID!
+  field11: String!
+}
+
+type Type6662 {
+  field11: String!
+  field80: Enum1553!
+  field14222: Scalar11!
+  field8562: Scalar11
+}
+
+enum Enum1553 {
+  VALUE_5381
+  VALUE_5382
+  VALUE_5383
+  VALUE_5384
+  VALUE_5385
+}
+
+input Input2683 {
+  inputField64: String!
+  inputField2274: Scalar11!
+  inputField5030: ID!
+  inputField2275: String!
+  inputField3323: String!
+  inputField2015: Float!
+}
+
+input Input2684 {
+  inputField64: String!
+  inputField115: Enum1553!
+  inputField5031: Scalar11!
+  inputField3042: Scalar11!
 }
 
 type Query @extends {
-  field13645(arg956: String): Type6439
+  field14223: [Type2419!]!
+  field14224(arg23: ID!): Type2419
+  field14225(arg74: String!): [Type2419!]!
+  field14226(arg603: ID!): [Type6662]
 }
 
 type Mutation @extends {
-  field13646(arg170: String): Type6439
+  field14227(arg20: Input2683!): Type2419
+  field14228(arg603: ID!, arg20: Input2683!): Type2419
+  field14229(arg603: ID!): Boolean
+  field14230(arg603: ID!, arg20: Input2684!): Type6662
 }

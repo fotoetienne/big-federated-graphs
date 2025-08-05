@@ -1,226 +1,168 @@
-schema {
-  query: Query
-  mutation: Mutation
-}
-
 type Query @extends {
-  """
-  This is an anonymized description
-  """
-  field31260(
-  arg11: [ID!]!): [Type15557!]!
-  """
-  This is an anonymized description
-  """
-  field31261(
-  arg176: Enum3769!
-  arg177: Int!): [Type15557!]!
-  """
-  This is an anonymized description
-  """
-  field31262(
-  arg176: Enum3769!
-  arg1698: [Int!]!): [Type15560!]!
+  field16392(arg1306: [Int]): [Type16078] @experimental
+  field3437(arg1249: Int!): Type16079 @experimental
 }
 
 type Mutation @extends {
-  """
-  This is an anonymized description
-  """
-  field31263(
-  arg2671: Input7330!): Type15558!
-  """
-  This is an anonymized description
-  """
-  field31264(
-  arg2672: Input7331!): Type15559!
+  field31635(arg29: Int!, arg1194: [Enum3856]): Type16078 @experimental
+  field31636(arg29: Int!, arg2677: String!, arg1288: Enum3854!): Type16078 @experimental
+  field31637(arg1249: Int!, arg2678: Input7356): Type16078 @experimental
+  field31638(arg1249: Int!, arg2679: [Enum3856]): Type16078 @experimental
+  field31639(arg23: Int!, arg2680: Boolean, arg185: Input7358): Type16078 @experimental
+  field31640(arg23: Int!, arg2680: Boolean, arg185: Input7359): Type16078 @experimental
+  field31641(arg23: Int!, arg2680: Boolean, arg185: Input7360): Type16078 @experimental
+  field31642(arg29: Int!): [Type16078] @experimental
 }
 
-scalar Scalar1
-
-"""
-This is an anonymized description
-"""
-enum Enum3769 {
-  VALUE_201
-  VALUE_1071
-  VALUE_485
+type Type29 @key(fields: "field109") @extends {
+  field109: Int! @external
+  field3653(arg272: Enum3857): [Type16079] @experimental
 }
 
-"""
-This is an anonymized description
-"""
-enum Enum3770 {
-  VALUE_1123
-  VALUE_1124
+type Type16078 {
+  field109: Int!
+  field3653: [Type16079]
 }
 
-"""
-This is an anonymized description
-"""
-enum Enum3771 {
-  VALUE_1023
-  VALUE_11000
-  VALUE_11001
-  VALUE_11002
+type Type16079 {
+  field2: Int!
+  field631: String!
+  field80: Enum3854!
+  field1384: Enum3855!
+  field108: Type29
+  field606: Boolean
+  field31643: [Type16088]
+  field16386: Type16079
+  field16387: Type16079
+  field3913: Type16081!
+  field6728: Type16080
 }
 
-"""
-This is an anonymized description
-"""
-enum Enum3772 {
-  VALUE_1084
-  VALUE_4419
+type Type16080 {
+  field16390: Type16082
+  field16389: Type16084
+  field16388: Type16086
 }
 
-"""
-This is an anonymized description
-"""
-enum Enum3773 {
-  VALUE_2166
-  VALUE_9421
+enum Enum3854 {
+  VALUE_5287
+  VALUE_10922
+  VALUE_10923
+  VALUE_2482
+  VALUE_2483
 }
 
-"""
-This is an anonymized description
-"""
-type Type15555 {
-  field5: String
-  field8770: String
+enum Enum3855 {
+  VALUE_22
+  VALUE_1122
+  VALUE_225
 }
 
-"""
-This is an anonymized description
-"""
-type Type15556 {
-  field450: String!
-  field134: String
+enum Enum3856 {
+  VALUE_1618
+  VALUE_1619
+  VALUE_1885
 }
 
-"""
-This is an anonymized description
-"""
-input Input7328 {
-  inputField148: String!
-  inputField55: String
+enum Enum3857 {
+  VALUE_6016
+  VALUE_1126
+  VALUE_314
 }
 
-"""
-This is an anonymized description
-"""
-type Type15557 {
-  field2: ID!
-  field31265: Enum3773
-  field5: String!
-  field741: Enum3769
-  field423: Scalar1
-  field675: Scalar11
-  field1210: Scalar12
-  field676: Scalar11
-  field2462: Scalar12
-  field21984: Scalar1
-  field23390: Scalar1
-  field31266: Enum3771 @deprecated
-  field31267: Enum3771
-  field31268: Enum3771
-  field1909: Enum3772
-  field2474: [Type15556!]
-  """
-  This is an anonymized description
-  """
-  field931: Scalar15
-  field31269: Scalar15
-  field31270: Scalar15
-  field76: Type15555
+type Type16081 {
+  field31644: Boolean
+  field3966: Boolean
+  field3968: String
+  field3969: String
 }
 
-"""
-This is an anonymized description
-"""
-input Input7329 {
-  inputField57: String
-  inputField3242: String
+type Type16082 {
+  field2: Int!
+  field108: Type29
+  field606: Boolean
+  field31645: Type16083!
+  field7077: [Int!]
+  field31643: [Type16088]
+  field6039: Type16082
+  field31646: Type16082
 }
 
-"""
-This is an anonymized description
-"""
-input Input7330 {
-  inputField57: String!
-  inputField10778: Enum3773 = VALUE_2166
-  inputField237: Enum3769
-  inputField130: Scalar1
-  inputField224: Scalar11
-  inputField356: Scalar12
-  inputField225: Scalar11
-  inputField970: Scalar12
-  inputField9265: Scalar1
-  inputField9303: Scalar1
-  inputField10779: Enum3771 @deprecated
-  inputField10780: Enum3771
-  inputField10781: Enum3771
-  inputField213: Enum3772
-  inputField444: [Input7328!]
-  """
-  This is an anonymized description
-  """
-  inputField805: Scalar15
-  inputField10782: Scalar15
-  inputField10783: Scalar15
-  inputField109: Input7329
+type Type16083 {
+  field1093: String
+  field16420: String
+  field31647: String
+  field31648: String
 }
 
-"""
-This is an anonymized description
-"""
-type Type15558 {
-  field2: ID
-  field90: [String]
+type Type16084 {
+  field2: Int!
+  field108: Type29
+  field606: Boolean
+  field31649: Type16085!
+  field31643: [Type16088]
+  field7077: [Int!]
+  field6039: Type16084
+  field31646: Type16084
 }
 
-"""
-This is an anonymized description
-"""
-input Input7331 {
-  inputField7: ID!
-  inputField57: String
-  inputField10778: Enum3773 = VALUE_2166
-  inputField237: Enum3769
-  inputField130: Scalar1
-  inputField224: Scalar11
-  inputField356: Scalar12
-  inputField225: Scalar11
-  inputField970: Scalar12
-  inputField9265: Scalar1
-  inputField9303: Scalar1
-  inputField10779: Enum3771 @deprecated
-  inputField10780: Enum3771
-  inputField10781: Enum3771
-  inputField213: Enum3772
-  inputField444: [Input7328!]
-  """
-  This is an anonymized description
-  """
-  inputField805: Scalar15
-  inputField10782: Scalar15
-  inputField10783: Scalar15
-  inputField109: Input7329
-  inputField10784: Boolean
+type Type16085 {
+  field13869: String
+  field16422: String
+  field31648: String
 }
 
-"""
-This is an anonymized description
-"""
-type Type15559 {
-  field2: ID!
-  field90: [String]
+type Type16086 {
+  field2: Int!
+  field108: Type29
+  field606: Boolean
+  field31650: Type16087!
+  field31643: [Type16088]
+  field7077: [Int!]
+  field6039: Type16086
+  field31646: Type16086
 }
 
-"""
-This is an anonymized description
-"""
-type Type15560 {
-  field741: Enum3769
-  field423: Scalar1
-  field31271: [Type15557]
+type Type16087 {
+  field3929: String
+  field31651: String
+}
+
+type Type16088 {
+  field2: Int!
+  field108: Type29
+}
+
+input Input7356 {
+  inputField130: String
+  inputField6310: Enum3855
+  inputField10784: Input7357
+  inputField10785: Input7358
+  inputField10786: Input7359
+  inputField10787: Input7360
+}
+
+input Input7357 {
+  inputField10788: Boolean
+  inputField1518: Boolean
+  inputField1520: String
+  inputField1369: String
+}
+
+input Input7358 {
+  inputField246: String
+  inputField5897: String
+  inputField10789: String
+  inputField10790: String
+}
+
+input Input7359 {
+  inputField10791: String
+  inputField1353: String
+  inputField10790: String
+}
+
+input Input7360 {
+  inputField1517: String
+  inputField10792: String
 }

@@ -1,0 +1,207 @@
+type Type22 @key(fields: "field2") @extends {
+  field2: Enum550! @external
+}
+
+type Type1946 @key(fields: "field2") @extends {
+  field2: ID! @external
+}
+
+type Type1948 @directive1(arg47: "anonymous-string") @key(fields: "field2") {
+  field2: ID!
+  field5288: String!
+  field6650: String
+  field3562: String
+  field34807: String
+  field22250: Enum3600
+  field22300: String
+  field34300: Scalar11
+  field34299: Scalar11
+  field20918: Enum4306
+  field26: Enum4308
+  field55: Scalar15
+  field402: [Type22]
+  field1222: Scalar8
+  field4107: [ID]
+  field34808: Float
+  field34809: Float
+  field34810: Float
+  field34811: Float
+  field58: Int
+  field265: Scalar14
+  field266: Scalar14
+  field34812: Type17804
+  field34813: Type17804
+  field34814: [Type17802]
+  field22339: Enum4307
+  field34815: ID
+  field34816: [ID]
+  field34817: ID
+  field8168: Int
+  field34818: Boolean
+  field34819: String
+  field34820: Enum4309
+  field34821: Scalar14 @deprecated(reason: "Anonymized deprecation reason")
+  field34822: Scalar14 @deprecated(reason: "Anonymized deprecation reason")
+  field34823: Scalar14 @deprecated(reason: "Anonymized deprecation reason")
+  field23: Enum3609
+  field29: Type1946
+  field61: Enum575
+}
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Query @extends {
+  field34824(arg1: [ID!]!): [Type1948] @directive1(arg47: "anonymous-string")
+  field34825(arg1441: Enum575 = VALUE_31): [Type1948!]! @directive1(arg47: "anonymous-string")
+  field34826: Type17800 @directive1(arg47: "anonymous-string")
+  field34827(arg8: Int = 0): [Type1948!]! @directive1(arg47: "anonymous-string")
+  field34828: [Type17801!]! @directive1(arg47: "anonymous-string")
+  field34829(arg2263: [ID!]!): String @directive1(arg47: "anonymous-string")
+  field34830(arg1: [ID!]!): [Type1948] @directive1(arg47: "anonymous-string")
+}
+
+type Mutation {
+  field34831(arg2264: ID!, arg272: Enum4306): Union1031! @directive1(arg47: "anonymous-string")
+  field34832(arg2264: ID!, arg2937: String!): Union1031! @directive1(arg47: "anonymous-string")
+  field34833(arg2938: [Input8424!]!): Type17808! @directive1(arg47: "anonymous-string")
+  field34834(arg2939: Input8425): Type17810! @directive1(arg47: "anonymous-string")
+}
+
+input Input8424 {
+  inputField3855: Enum4308!
+  inputField9429: ID!
+  inputField11871: String!
+}
+
+input Input8425 {
+  inputField11872: [ID]
+  inputField11873: Enum4309!
+  inputField11874: String!
+}
+
+type Type17800 @directive1(arg47: "anonymous-string") {
+  field34835: String
+  field20915: [Type1948]
+}
+
+type Type17801 @directive1(arg47: "anonymous-string") {
+  field34836: String
+  field22300: String
+  field34837: [Type1948!]!
+}
+
+type Type17802 {
+  field30072: String!
+  field34838: String
+  field30073: [Type17803]
+}
+
+type Type17803 {
+  field34839: String!
+  field34840: String
+  field22419: Enum4305
+}
+
+enum Enum4305 {
+  VALUE_2072
+  VALUE_11702
+  VALUE_11703
+  VALUE_11704
+  VALUE_17
+  VALUE_1083
+}
+
+enum Enum3600 {
+  VALUE_10257
+  VALUE_10258
+}
+
+enum Enum4306 {
+  VALUE_340
+  VALUE_1981
+  VALUE_763
+  VALUE_11705
+  VALUE_11706
+  VALUE_11707
+  VALUE_11708
+  VALUE_986
+}
+
+enum Enum4307 {
+  VALUE_1764
+  VALUE_11709
+  VALUE_2391
+  VALUE_11710
+}
+
+enum Enum4308 {
+  VALUE_1249
+  VALUE_1248
+}
+
+enum Enum3609 {
+  VALUE_4202
+  VALUE_1126
+}
+
+enum Enum4309 {
+  VALUE_11711
+  VALUE_11712
+}
+
+type Type17804 {
+  field26459: String
+  field19494: Scalar14
+}
+
+type Type17805 {
+  field2971: [Interface1007]
+}
+
+type Type17806 implements Interface1007 {
+  field677: String
+  field3648: String
+  field2768: String
+}
+
+type Type17807 implements Interface1007 {
+  field677: String
+  field3648: String
+  field2768: String
+}
+
+interface Interface1007 {
+  field677: String
+  field3648: String
+  field2768: String
+}
+
+union Union1031 = Type1948 | Type17805
+
+type Type17808 {
+  field34841: [Union1031!]!
+  field23110: [String]
+}
+
+type Type17809 {
+  field34842: String
+  field34816: [String]
+  field34817: String
+  field730: String
+}
+
+type Type17810 {
+  field34843: [Type17809!]!
+  field23110: [String]
+}
+
+enum Enum575 {
+  VALUE_2393
+  VALUE_33
+  VALUE_31
+}

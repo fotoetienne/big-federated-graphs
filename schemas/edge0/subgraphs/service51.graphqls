@@ -1,136 +1,26 @@
-type Type504 {
-  field1413: Type505
-}
-
-type Type505 {
-  field1414: String
-  field538: Float
-  field1415: String
-  field107: String
-  field1416: String!
-  field1417: String!
-  field1418: Float
-}
-
-type Type506 {
-  field108: Type507
-  field1419: [String!]
-}
-
-type Type507 {
-  field2: String!
-  field44: String
-}
-
-type Type508 @key(fields: "field255") {
-  field252: Float!
-  field253: String
-  field1420: Type504
-  field1421: Type506
-  field254: ID
-  field255: ID!
-  field256: String!
-  field257: String!
-  field258: ID
-  field259: ID!
-  field260: Enum161!
-  field44: String
-}
-
-type Type509 {
-  field36: [Type510!]
-  field37: Type122!
-}
-
-type Type510 {
-  field41: String
-  field40: Type508!
-}
-
-type Mutation @extends {
-  field1422(arg1: Input235!): Type511!
-}
-
-type Type122 {
-  field269: String
-  field270: Boolean!
-  field271: Boolean!
-  field272: String
-}
-
+"""
+This is an anonymized description
+"""
 type Query @extends {
-  field1423(arg33: ID!): Type508
-  field1424(arg1: Input48!): Type509!
+  field2574(arg20: Input378!): [Type774!]!
+  field2575(arg20: [Input378!]!): [Type774!]!
 }
 
-type Type511 {
-  field275: Type508
+"""
+This is an anonymized description
+"""
+type Type774 @key(fields: "field423 field671 field94 field752") {
+  field752: String!
+  field36: String!
+  field94: Scalar7!
+  field671: String!
+  field423: String!
 }
 
-enum Enum161 {
-  VALUE_199
-  VALUE_151
-  VALUE_158
-  VALUE_152
-  VALUE_149
-}
-
-enum Enum31 {
-  VALUE_201
-  VALUE_202
-}
-
-input Input233 {
-  inputField579: Input234
-}
-
-input Input234 {
-  inputField580: String
-  inputField581: Float
-  inputField582: String
-  inputField171: String
-  inputField583: String!
-  inputField584: String!
-  inputField585: Float
-}
-
-input Input48 {
-  inputField106: String!
-  inputField107: Boolean! = false
-}
-
-input Input49 {
-  inputField7: String!
-  "This is an anonymized description"
-  inputField108: Enum31!
-}
-
-input Input50 {
-  "This is an anonymized description"
-  inputField109: String
-  "This is an anonymized description"
-  inputField110: Int!
-  "This is an anonymized description"
-  inputField111: Int!
-  "This is an anonymized description"
-  inputField112: Int!
-}
-
-input Input235 {
-  inputField113: String
-  inputField103: String
-  "This is an anonymized description"
-  inputField104: String
-  inputField114: String
-  inputField128: Input233!
-  "This is an anonymized description"
-  inputField115: Input49
-  "This is an anonymized description"
-  inputField116: Input50
-  "This is an anonymized description"
-  inputField117: String
-  "This is an anonymized description"
-  inputField118: String
-  "This is an anonymized description"
-  inputField119: String
+input Input378 {
+  inputField67: String!
+  inputField712: Scalar7 @deprecated(reason: "Anonymized deprecation reason")
+  inputField907: [Scalar7!]
+  inputField429: [String!]
+  inputField908: [String!]
 }

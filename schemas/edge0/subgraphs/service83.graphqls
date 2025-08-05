@@ -1,38 +1,263 @@
-type Type1376 @key(fields: "field3263") {
-  field3263: Int
-  field3264: String
-  field3265: String
-  field3266: [String]
-  field3267: [Type29]
-  field3268: [String]
-  field3269: [Type29]
-  field3270: [String]
-  field3271: [Type29]
-  field3272: [String]
-  field3273: [String]
-  field3274: [String]
-  field3275: [String]
-  field3276: [String]
-  field3277: [Type29]
-  field3278: [String]
-  field3279: [String]
-  field3280: [Type29]
-  field3281: String
-  field3282: [String]
-  field3283: [String]
-  field3284: [Type29]
-  field3285: [String]
-  field3286: [String]
-  field3287: [Type29]
-  field3288: String
-  field3289: String
-  field3290: String
-  field3291: String
-  field3292: String
-  field3293: String
-  field3294: String
+type Query @extends {
+  field5109(arg508: ID!): Type1844 @experimental
+  field5110(arg69: String!): Type1844 @experimental
+  field5111(arg6: String, arg26: Int, arg25: String, arg28: Int, arg27: String, arg7: Enum548 = VALUE_2): Type1845 @experimental
 }
 
-type Type29 @extends @key(fields: "field957") {
-  field957: String @external
+type Mutation @extends {
+  field5112(arg20: Input847!): Type1843 @experimental
+  field5113(arg20: Input848!): Type1841 @experimental
+  field5114(arg20: Input849!): Type1842 @experimental
+  field5115(arg20: Input845!): Type1839 @experimental
+  field5116(arg20: Input846!): Type1840 @experimental
+}
+
+interface Interface107 {
+  field5117: ID!
+}
+
+type Type1835 implements Interface107 {
+  field5117: ID!
+  field5118: Type1857
+}
+
+type Type1836 implements Interface107 {
+  field5117: ID!
+  field5119: Type1858
+}
+
+type Type1837 {
+  field366: Type119!
+  field367: Int!
+  field176: [Type1838!]
+  field4385: [Interface107!]
+}
+
+type Type1838 {
+  field177: Interface107!
+  field369: String!
+}
+
+input Input844 {
+  inputField1904: ID!
+}
+
+input Input845 {
+  inputField1904: ID!
+  inputField566: [Input844!]!
+}
+
+type Type1839 {
+  field111: [Interface107!]!
+  field5120: Scalar5
+}
+
+input Input846 {
+  inputField1904: ID!
+  inputField566: [Input844!]!
+}
+
+type Type1840 {
+  field111: [Interface107!]!
+  field5120: Scalar5
+}
+
+input Input847 {
+  inputField64: String!
+  inputField110: String!
+  inputField1905: [Input851!]
+}
+
+input Input848 {
+  inputField1904: ID!
+  inputField1905: [Input851!]!
+}
+
+type Type1841 {
+  field5120: Scalar5
+}
+
+input Input849 {
+  inputField1904: ID!
+  inputField1905: [Input851!]!
+}
+
+type Type1842 {
+  field5120: Scalar5
+}
+
+input Input850 {
+  inputField1904: ID!
+  inputField1906: Input852
+  inputField1907: Input853
+}
+
+input Input851 {
+  inputField1904: ID!
+  inputField1906: Input852
+  inputField1907: Input853
+  inputField536: Enum546
+}
+
+input Input852 {
+  inputField1908: String
+  inputField1909: String
+}
+
+input Input853 {
+  inputField596: String
+}
+
+"""
+This is an anonymized description
+"""
+scalar Scalar5
+
+type Type1843 {
+  field5120: Scalar5
+  field5121: Type1844
+}
+
+type Type1844 @key(fields: "field5117") {
+  field5117: ID!
+  field789: String!
+  field11: String!
+  field198: String!
+  field5122(arg26: Int!): Type1848
+  field111(arg6: String, arg26: Int, arg25: String, arg28: Int, arg27: String): Type1837
+  field5123: Type1855
+  field5124: Enum547
+}
+
+type Type1845 {
+  field366: Type119!
+  field176: [Type1846!]
+  field4385: [Type1844!]
+}
+
+type Type1846 {
+  field369: String!
+  field177: Type1844
+}
+
+type Type1847 {
+  field366: Type119!
+  field176: [Type1849!]
+  field4385: [Type1851!]
+}
+
+type Type1848 {
+  field366: Type119!
+  field176: [Type1850!]
+  field4385: [Type1852!]
+}
+
+type Type1849 {
+  field177: Type1851!
+  field369: String!
+}
+
+type Type1850 {
+  field177: Type1852!
+  field369: String!
+}
+
+type Type1851 {
+  """
+  This is an anonymized description
+  """
+  field5117: ID!
+  field5125: Type1854
+}
+
+type Type1852 {
+  """
+  This is an anonymized description
+  """
+  field5117: ID!
+  field5126: Type1854
+  field1644: Enum546
+}
+
+enum Enum546 {
+  VALUE_810
+  VALUE_2292
+}
+
+enum Enum547 {
+  VALUE_875
+  VALUE_810
+  VALUE_2292
+  VALUE_2
+}
+
+enum Enum548 {
+  VALUE_2293
+  VALUE_2294
+  VALUE_2295
+  VALUE_2
+}
+
+type Type1853 @key(fields: "field5117") {
+  """
+  This is an anonymized description
+  """
+  field5117: ID!
+  field5127: Type1844
+}
+
+type Type1854 @key(fields: "field5117") @extends {
+  field5117: ID! @external
+}
+
+type Type1855 @key(fields: "field11") @key(fields: "field5117") @extends {
+  field5117: ID @external
+  field11: ID @external
+}
+
+type Type1856 @key(fields: "field5117") @extends {
+  field5117: ID! @external
+  field5128: Type1853
+}
+
+type Type1857 @key(fields: "field5117") @extends {
+  field5117: ID! @external
+}
+
+type Type1858 @key(fields: "field5117") @extends {
+  field5117: ID! @external
+}
+
+extend type Mutation {
+  field5129(arg20: Input854!): Type1859 @experimental
+  field5130(arg20: Input855!): Type1860 @experimental
+  field5131(arg20: Input856!): Type1861 @experimental
+}
+
+input Input854 {
+  inputField42: String!
+  inputField1910: String!
+}
+
+input Input855 {
+  inputField42: String!
+  inputField1910: String!
+}
+
+input Input856 {
+  inputField42: String!
+  inputField1910: String!
+}
+
+type Type1859 {
+  field405: String
+}
+
+type Type1860 {
+  field405: String
+}
+
+type Type1861 {
+  field5132: Boolean
+  field405: String
 }

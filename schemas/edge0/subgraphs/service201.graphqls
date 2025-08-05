@@ -1,35 +1,143 @@
 type Query @extends {
-  field9467(arg902: String!): Type502
+  field10821(arg316: ID!): [Interface216!]
 }
 
-"This is an anonymized description"
-scalar Scalar1
-
-type Type502 @key(fields: "field1315") {
-  field1315: String!
-  field1313: String
-  field9468: String
-  field1072: Scalar1
-  field3323: Scalar1
-  field584: String
-  field9469: Scalar1
-  field9470: Enum1030
-  field1654: String
-  field7035: [Type4815]
+"""
+This is an anonymized description
+"""
+interface Interface216 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field1729: Type1416
+  """
+  This is an anonymized description
+  """
+  field10822: [Type1416!]
+  """
+  This is an anonymized description
+  """
+  field265: Scalar14
+  """
+  This is an anonymized description
+  """
+  field10823: Scalar14
 }
 
-type Type4815 {
-  field3345: String
-  field154: String
-  field9470: Enum1030
-  field87: String
+"""
+This is an anonymized description
+"""
+type Type2474 implements Interface216 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field1729: Type1416
+  """
+  This is an anonymized description
+  """
+  field10822: [Type1416!]
+  """
+  This is an anonymized description
+  """
+  field265: Scalar14
+  """
+  This is an anonymized description
+  """
+  field10823: Scalar14
+  """
+  This is an anonymized description
+  """
+  field427: Enum1162
+  """
+  This is an anonymized description
+  """
+  field10824: Scalar14
 }
 
-enum Enum1030 {
-  VALUE_955
-  VALUE_149
-  VALUE_152
-  VALUE_151
-  VALUE_298
-  VALUE_4270
+"""
+This is an anonymized description
+"""
+enum Enum1162 {
+  """
+  This is an anonymized description
+  """
+  VALUE_2534
+  """
+  This is an anonymized description
+  """
+  VALUE_4438
+}
+
+"""
+This is an anonymized description
+"""
+type Type2475 implements Interface216 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field1729: Type1416
+  """
+  This is an anonymized description
+  """
+  field10822: [Type1416!]
+  """
+  This is an anonymized description
+  """
+  field265: Scalar14
+  """
+  This is an anonymized description
+  """
+  field10823: Scalar14
+}
+
+"""
+This is an anonymized description
+"""
+type Type2476 implements Interface216 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field1729: Type1416
+  """
+  This is an anonymized description
+  """
+  field10822: [Type1416!]
+  """
+  This is an anonymized description
+  """
+  field265: Scalar14
+  """
+  This is an anonymized description
+  """
+  field10823: Scalar14
+}
+
+"""
+This is an anonymized description
+"""
+type Type1416 @key(fields: "field3562 field3384") @extends {
+  """
+  This is an anonymized description
+  """
+  field3562: ID! @external
+  """
+  This is an anonymized description
+  """
+  field3384: ID! @external
 }

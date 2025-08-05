@@ -1,83 +1,110 @@
-"""
-This is an anonymized description
-"""
-type Type2446 @key(fields: "field4995") {
-  field4995: ID!
-  field8803: String
-  field4996: String
-  field8804: Type2447
+type Type5074 {
+  field10291: String
 }
 
-"""
-This is an anonymized description
-"""
-type Type2447 @key(fields: "field4996") {
-  field4996: ID!
-  field8805: String
+type Type5075 {
+  field10292: Float
+}
+
+type Type3114 @key(fields: "field556") {
+  field554: Float!
+  field198: String
+  field723: Type5074
+  field724: Type5075
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field100: Enum1113!
+  field58: String
+}
+
+type Type5076 {
+  field176: [Type5077!]
+  field366: Type119!
+}
+
+type Type5077 {
+  field369: String
+  field177: Type3114!
+}
+
+type Mutation @extends {
+  field10293(arg20: Input1878!): Type5078!
+}
+
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
 }
 
 type Query @extends {
-  """
-  This is an anonymized description
-  """
-  field8806(
-  arg4: ID!): Type2446
-  """
-  This is an anonymized description
-  """
-  field8807(
-  arg4: ID!): Type2447
+  field10294(arg49: ID!): Type3114
+  field10295(arg20: Input48!): Type5076!
 }
 
-"""
-This is an anonymized description
-"""
-input Input1716 {
-  inputField3159: String
-  inputField7: Int
-  inputField3160: String
-  inputField3161: String
-  inputField2047: String
-  inputField8: Int
+type Type5078 {
+  field575: Type3114
 }
 
-"""
-This is an anonymized description
-"""
-type Type4669 {
-  field2: ID
-  field2145: Int
-  field44: Int
-  field3322: Scalar14
-  field8808: Scalar14
-  field260: String
-  field4963: String
-  field5: String
-  field2480: String
-  field622: String
+enum Enum1113 {
+  VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
 }
 
-"""
-This is an anonymized description
-"""
-type Type4670 {
-  """
-  This is an anonymized description
-  """
-  field584: ID
-  field8809: String
-  field2017: Scalar14
-  field8810: String
-  field2145: Int
-  field423: Int
-  field44: Int
-  field2480: String
-  field4963: String
-  field5950: String
-  field8811: String
-  field7219: String
+enum Enum31 {
+  VALUE_214
+  VALUE_215
 }
 
-schema {
-  query: Query
+input Input1877 {
+  inputField3576: String!
+}
+
+input Input48 {
+  inputField113: String!
+  inputField114: Boolean! = false
+}
+
+input Input49 {
+  inputField16: String!
+  "This is an anonymized description"
+  inputField115: Enum31!
+}
+
+input Input50 {
+  "This is an anonymized description"
+  inputField116: String
+  "This is an anonymized description"
+  inputField117: Int!
+  "This is an anonymized description"
+  inputField118: Int!
+  "This is an anonymized description"
+  inputField119: Int!
+}
+
+input Input1878 {
+  inputField120: String
+  inputField110: String
+  "This is an anonymized description"
+  inputField111: String
+  inputField121: String
+  inputField135: Input1877!
+  "This is an anonymized description"
+  inputField122: Input49
+  "This is an anonymized description"
+  inputField123: Input50
+  "This is an anonymized description"
+  inputField124: String
+  "This is an anonymized description"
+  inputField125: String
+  "This is an anonymized description"
+  inputField126: String
 }

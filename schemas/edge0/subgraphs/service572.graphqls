@@ -1,20 +1,55 @@
-"""
-This is an anonymized description
-"""
-scalar Scalar1
-
-type Type14069 {
-  field28373: Int
-  field423: String
-  field20085: Scalar1
-  field89: String
-  field1459: String
-  field342: String
-  field5: String
-  field1751: String
-  field486: String
+type Type2001 @key(fields: "field2") {
+  field2: ID!
+  field11: String!
 }
 
-type Query {
-  field28374(arg2370: [Int]!, arg2371: [String]): [Type14069]
+type Type2002 @key(fields: "field2") {
+  field2: ID!
+  field11: String!
+  field28725: String!
+  field28726: Type2001!
+}
+
+input Input6590 {
+  inputField9879: String
+}
+
+type Query @extends {
+  field28727: [Type2001!]!
+  field28728(arg20: Input6590!): [Type2002!]!
+}
+
+input Input6591 {
+  inputField64: String!
+  inputField9879: String!
+  inputField9880: String!
+}
+
+input Input6592 {
+  inputField1075: [Input6591!]!
+}
+
+input Input6593 {
+  inputField16: ID!
+  inputField64: String!
+  inputField9879: String!
+  inputField9880: String!
+}
+
+type Type14566 {
+  field28729: [Type2002!]!
+}
+
+type Type14567 {
+  field730: String!
+}
+
+union Union783 = Type2002 | Type14567
+
+union Union784 = Type14566 | Type14567
+
+type Mutation @extends {
+  field28730(arg20: Input6591!): Union783!
+  field28731(arg20: Input6592!): Union784!
+  field28732(arg20: Input6593!): Union783!
 }

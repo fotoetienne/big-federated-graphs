@@ -1,98 +1,17 @@
-type Type29 @key(fields: "field98") @extends {
-  field98: ID! @external
-  """
-  This is an anonymized description
-  """
-  field29851: String! @directive1(arg31: "anonymous-string")
-}
-
 """
 This is an anonymized description
 """
-input Input6791 {
+type Query @extends {
   """
   This is an anonymized description
   """
-  inputField57: String!
-  """
-  This is an anonymized description
-  """
-  inputField55: String!
+  field29643: String @deprecated(reason: "Anonymized deprecation reason")
 }
 
-type Type14709 {
-  field244: Boolean!
-  field87: String
-  field6147: String
-  field1088: String
+type Type15033 {
+  field25870: String!
 }
 
-type Mutation {
-  """
-  This is an anonymized description
-  """
-  field29852(
-  arg2545: [Input6791]): Type14709! @directive1(arg31: "anonymous-string")
-}
-
-type Query {
-  field29853(arg935: String): Type1802 @directive1(arg31: "anonymous-string")
-}
-
-directive @directive1("""
-This is an anonymized description
-"""
-arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
-
-directive @directive2 on FIELD_DEFINITION
-
-"""
-This is an anonymized description
-"""
-type Type2405 @key(fields: "field107 field163") {
-  """
-  This is an anonymized description
-  """
-  field2: ID!
-  """
-  This is an anonymized description
-  """
-  field107: Int!
-  """
-  This is an anonymized description
-  """
-  field163: String!
-  field29854(arg2546: Input6792): Type14710 @directive1(arg31: "anonymous-string")
-}
-
-type Type32 @key(fields: "field107") @extends {
-  field107: Int! @external
-  field29855: Type2405 @directive1(arg31: "anonymous-string")
-}
-
-type Type90 @key(fields: "field163") @extends {
-  field163: String! @external
-  field29855: Type2405 @directive1(arg31: "anonymous-string")
-  field29856: Type2406 @directive1(arg31: "anonymous-string")
-}
-
-type Type2406 @key(fields: "field163") {
-  """
-  This is an anonymized description
-  """
-  field2: ID!
-  """
-  This is an anonymized description
-  """
-  field163: String!
-}
-
-input Input6792 {
-  inputField198: Int
-  inputField199: Int
-  inputField10227: Boolean
-}
-
-type Type14710 {
-  field279: String
+type Subscription @extends {
+  field29644(arg2453: String!): Type15033
 }

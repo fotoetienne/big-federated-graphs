@@ -1,189 +1,93 @@
-type Query @extends {
-  """
-  This is an anonymized description
-  """
-  field6229(
-  arg102: Int): Type3586
+type Type4068 {
+  field2: String!
 }
 
-type Mutation @extends {
-  """
-  This is an anonymized description
-  """
-  field6230(
-  arg623: Input1207!): Type3585
-  """
-  This is an anonymized description
-  """
-  field6231: Int
+type Type4069 {
+  field554: Float!
+  field3673: Float
+  field3674: Float
+  field3675: ID
+  field556: ID!
+  field3677: ID!
+  field7346: Type4068!
+  field7347: String!
 }
 
-type Type3585 {
-  field1559: String
+type Type4070 {
+  field176: [Type4071!]
+  field366: Type119!
 }
 
-type Type3586 {
-  field6232: [Type3587]
+type Type4071 {
+  field369: String
+  field177: Type4069!
 }
 
-type Type3587 {
-  field439: String
-  field109: String
+type Type4072 {
+  field11: String!
+  field177: Type4068!
+}
+
+type Type4073 {
+  field1775: [Type4072!]!
+}
+
+type Type4074 {
+  field176: [Type4075!]
+  field366: Type119!
+}
+
+type Type4075 {
+  field369: String
+  field177: Type4073!
+}
+
+type Type4076 {
+  field554: Float!
+  field198: String
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field7348: Type4074!
+  field7349: Type4070!
+  field100: Enum787!
   field58: String
-  field3372: String
-  field1559: String
-  field1210: Scalar13
-  field6233: String
-  field120: Type32
 }
 
-input Input1190 {
-  inputField2336: String!
-  inputField1664: String!
-  inputField1641: Int!
-  inputField2337: [Enum517]
-  inputField1471: Scalar7 = "default"
+type Type4077 {
+  field176: [Type4078!]
+  field366: Type119!
 }
 
-type Type32 @key(fields: "field107") @extends {
-  field107: Int! @external
+type Type4078 {
+  field369: String
+  field177: Type4076!
 }
 
-input Input1191 {
-  inputField2338: Enum1337
-  inputField1476: Input1192
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
 }
 
-input Input1192 {
-  inputField1670: String
-  inputField1669: [Input1193]
+type Query @extends {
+  field7478(arg49: ID!): Type4076
+  field7479(arg20: Input48!): Type4077!
 }
 
-input Input1193 {
-  inputField1672: String
-  inputField1673: [String]
+enum Enum787 {
+  VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
 }
 
-input Input1194 {
-  inputField803: Scalar13
-  inputField2339: Boolean
-  inputField2340: Enum517
-  inputField1478: Scalar15
-}
-
-input Input1195 {
-  inputField224: Input1194!
-  inputField225: Input1194
-  inputField405: [Enum517]
-  inputField2341: Boolean
-}
-
-input Input1196 {
-  inputField129: Int!
-}
-
-input Input1197 {
-  inputField2342: Enum1338
-  inputField44: String!
-}
-
-input Input1198 {
-  inputField2343: String!
-  inputField309: Int!
-}
-
-input Input1199 {
-  inputField1664: String!
-  inputField1075: [Input1200]
-}
-
-input Input1200 {
-  inputField1664: String!
-  inputField2344: Input1205!
-  inputField969: Input1195!
-}
-
-input Input1201 {
-  inputField1789: Input1190!
-  inputField2344: Input1205
-  inputField2345: Input1196!
-  inputField969: Input1195!
-  inputField1668: [Input1191]
-  inputField2346: [Input1197]
-  inputField2347: [Input1198]
-}
-
-input Input1202 {
-  inputField2348: Enum662
-  inputField180: Enum663
-  inputField2349: Enum664
-  inputField2350: Enum665
-}
-
-input Input1203 {
-  inputField1350: Input1204!
-  inputField1347: Input1204!
-}
-
-input Input1204 {
-  inputField803: Scalar13!
-  inputField807: Enum517!
-  inputField1478: Scalar15!
-}
-
-input Input1205 {
-  inputField541: Enum666!
-  inputField2351: Boolean
-  inputField2352: Input1202
-  inputField2353: Input1203
-  inputField2354: Boolean
-  inputField2355: Boolean
-}
-
-enum Enum662 {
-  VALUE_2877
-  VALUE_2878
-}
-
-enum Enum663 {
-  VALUE_2275
-  VALUE_2277
-  VALUE_2278
-  VALUE_2280
-  VALUE_2285
-  VALUE_2286
-  VALUE_2288
-}
-
-enum Enum664 {
-  VALUE_2879
-  VALUE_2880
-}
-
-enum Enum665 {
-  VALUE_2881
-  VALUE_2882
-}
-
-enum Enum666 {
-  VALUE_882
-  VALUE_1108
-  VALUE_261
-}
-
-input Input1206 {
-  inputField1789: Input1190!
-  inputField2345: Input1196!
-  inputField1668: [Input1191]
-  inputField2346: [Input1197]
-  inputField2347: [Input1198]
-  inputField1806: [Input1199]
-}
-
-"""
-This is an anonymized description
-"""
-input Input1207 {
-  inputField2356: Input1201
-  inputField2357: Input1206
+input Input48 {
+  inputField113: String!
+  inputField114: Boolean! = false
 }

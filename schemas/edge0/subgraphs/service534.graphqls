@@ -1,159 +1,18 @@
-type Query {
-  """
-  This is an anonymized description
-  """
-  field26735(
-  arg2242: Input5963!): Type13291
-  """
-  This is an anonymized description
-  """
-  field26736(
-  arg2242: Input5963!
-  arg7: Int
-  arg2243: Int): Type13297
+type Type2013 @key(fields: "field2") @extends {
+  field2: ID! @external
+  field27455: [Type13929!]!
 }
 
-"""
-This is an anonymized description
-"""
-input Input5963 {
-  inputField3583: Scalar1!
-  inputField9191: Int
-  inputField378: Input5964
-  inputField9192: Boolean
-  inputField9193: Boolean
-  inputField9194: Boolean
-  inputField9195: Boolean
-  inputField9196: Boolean
-  inputField9197: Boolean
-  inputField9198: Boolean
-  inputField9199: Boolean
+type Type13929 {
+  field11896: Enum3180
+  field2381: String
+  field27456: String
+  field27063: String
+  field27457: String
 }
 
-"""
-This is an anonymized description
-"""
-input Input5964 {
-  inputField9200: Input5965
-  inputField9201: Input5966
-  inputField218: Input5967
+enum Enum3180 {
+  VALUE_9451
+  VALUE_9452
+  VALUE_9453
 }
-
-"""
-This is an anonymized description
-"""
-input Input5965 {
-  inputField9202: Scalar1
-  inputField9203: Scalar1
-  inputField9204: Int
-  inputField807: String
-  inputField9205: Enum3088
-  inputField9206: Enum3089
-}
-
-"""
-This is an anonymized description
-"""
-input Input5966 {
-  inputField9207: Int
-}
-
-"""
-This is an anonymized description
-"""
-input Input5967 {
-  inputField9208: [Int]
-}
-
-type Type13291 {
-  field26737: Type13292
-  field26738: Type13296
-}
-
-type Type13292 {
-  field4927: String
-  field5932: [Type13294]
-}
-
-type Type13293 {
-  field24386: Scalar1
-  field4575: Int
-  field3066: String
-  field10: String
-  field24389: Int
-  field24390: Int
-  field24391: Int
-  field6183: Boolean
-  field7270: Int
-  field4968: Int
-  field26739: Type13295
-  field24392: Scalar1
-  field24393: Boolean
-  field24394: Enum3088
-  field3325: Boolean
-  field1154: Scalar1
-  field26740: Int
-  field26741: Boolean
-  field19055: String
-  field24395: String
-  field26742: Enum3089
-}
-
-type Type13294 {
-  field107: Int
-  field24384: Int
-  field2454: [Type13293]
-  field4623: String
-  field24385: Int
-}
-
-type Type13295 {
-  field4630: Enum3087
-}
-
-type Type13296 {
-  field26743: Boolean
-  field26744: Boolean
-}
-
-type Type13297 {
-  field36: [Type13298]
-  field37: Type13299!
-}
-
-type Type13298 {
-  field41: String!
-  field40: Type13294
-}
-
-type Type13299 {
-  field270: Boolean
-  field12273: Int
-  field1085: Int
-  field26745: Int
-}
-
-enum Enum3087 {
-  VALUE_1748
-  VALUE_1234
-  VALUE_9437
-  VALUE_9438
-  VALUE_9439
-}
-
-enum Enum3088 {
-  VALUE_882
-  VALUE_9440
-  VALUE_1108
-}
-
-enum Enum3089 {
-  VALUE_9441
-  VALUE_9442
-  VALUE_9443
-  VALUE_9444
-}
-
-scalar Scalar1
-
-scalar Scalar3

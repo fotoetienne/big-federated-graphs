@@ -1,55 +1,113 @@
-type Query @extends {
-  field21947(arg1811: ID!): Type9934 @experimental
-  field13982: String @experimental @override(from: "service12", label: "service410")
+type Type3148 @key(fields: "field556") {
+  field1731: Type539
+  field554: Float!
+  field198: String
+  field1732: String
+  field1733: Type539
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field100: Enum2478!
+  field58: String
+}
+
+type Type10043 {
+  field176: [Type10044!]
+  field366: Type119!
+}
+
+type Type10044 {
+  field369: String
+  field177: Type3148!
 }
 
 type Mutation @extends {
-  field21948(arg1811: ID!): Type9934 @experimental
-  field21949(arg1: Input4463): Type9937 @experimental
-  field21950: Type9937 @experimental
+  field22581(arg20: Input4516!): Type10045!
 }
 
-type Subscription @extends {
-  field21951(arg1811: ID!, arg1812: ID, arg1813: Int): Interface412 @experimental
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
 }
 
-type Type9934 {
-  field2: ID
-  field5: String
+type Query @extends {
+  field22582(arg49: ID!): Type3148
+  field22583(arg20: Input48!): Type10043!
 }
 
-type Type9935 {
-  field2: ID
-  field5: String
-  field58: Enum2401
+type Type539 {
+  field1737: String
+  field1738: String
+  field1739: Type26
+  field1740: String
+  field1741: String
+  field1742: Type26
+  field1743: String
+  field1744: Float
 }
 
-enum Enum2401 {
-  VALUE_9
+type Type10045 {
+  field575: Type3148
+}
+
+type Type26 @extends @key(fields: "field132") {
+  field132: ID! @external
+}
+
+enum Enum2478 {
   VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
 }
 
-interface Interface412 {
-  field584: ID
+enum Enum31 {
+  VALUE_214
+  VALUE_215
 }
 
-type Type9936 implements Interface412 {
-  field584: ID
-  field87: String
-  field14499: ID
+input Input48 {
+  inputField113: String!
+  inputField114: Boolean! = false
 }
 
-type Type9937 {
-  field58: Enum2402
+input Input49 {
+  inputField16: String!
+  "This is an anonymized description"
+  inputField115: Enum31!
 }
 
-enum Enum2402 {
-  VALUE_991
-  VALUE_152
+input Input50 {
+  "This is an anonymized description"
+  inputField116: String
+  "This is an anonymized description"
+  inputField117: Int!
+  "This is an anonymized description"
+  inputField118: Int!
+  "This is an anonymized description"
+  inputField119: Int!
 }
 
-input Input4463 {
-  inputField5237: ID!
-  inputField4838: ID!
-  inputField248: String!
+input Input4516 {
+  inputField120: String
+  inputField110: String
+  "This is an anonymized description"
+  inputField111: String
+  inputField121: String
+  "This is an anonymized description"
+  inputField122: Input49
+  "This is an anonymized description"
+  inputField123: Input50
+  "This is an anonymized description"
+  inputField124: String
+  "This is an anonymized description"
+  inputField125: String
+  "This is an anonymized description"
+  inputField126: String
 }

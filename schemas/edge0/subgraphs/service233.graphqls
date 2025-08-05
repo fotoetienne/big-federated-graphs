@@ -1,45 +1,90 @@
-scalar Scalar1
-
+"""
+This is an anonymized description
+"""
 type Query @extends {
-  field12086(arg308: ID!, arg1063: ID!): Type3124!
-  field12087(arg1064: ID!): Type5803
-  field12088(arg311: Scalar14!, arg312: Scalar14!, arg306: ID, arg1065: ID): [Type5804!]
+  field12745(arg76: Input2402): Type6039
+  field12746: [String]
+  field12747(arg204: String!): [String]
+  field12748(arg204: String!, arg29: Int!): [String]
 }
 
-type Mutation @extends {
-  field12089: Boolean
+type Mutation {
+  field12749(arg204: String!, arg597: String!, arg854: String, arg446: String): Boolean
+  field12750(arg204: String!, arg597: String!, arg854: String): Boolean
+  field12751(arg204: String!, arg29: Int!, arg597: String!, arg854: String): Boolean
+  field12752(arg204: String!, arg29: Int!, arg597: String!, arg854: String): Boolean
 }
 
-type Type3124 @key(fields: "field2 field3261 { field3260 } ") {
-  field2: ID!
-  field3261: Type1374!
+"""
+This is an anonymized description
+"""
+input Input2402 {
+  inputField4604: Boolean!
+  inputField712: String!
+  inputField59: [Enum1364]
+  inputField233: [String]
+  inputField839: Enum1365!
+  inputField560: Int
+  inputField4605: [Input2403]
+  inputField4606: [Input2404]
+  inputField187: Int
+  inputField4607: Boolean!
 }
 
-type Type1374 @key(fields: "field3260") @extends {
-  """
-  This is an anonymized description
-  """
-  field3260: Scalar1! @external
+enum Enum1364 {
+  VALUE_4916
+  VALUE_4917
+  VALUE_4918
 }
 
-type Type5803 {
-  field12090: ID!
-  field834: ID!
-  field10339: String!
+enum Enum1365 {
+  VALUE_811
+  VALUE_4919
+  VALUE_4920
 }
 
-type Type5804 {
-  field12091: Scalar1!
-  field3066: ID
-  field4927: ID
-  field3237: ID
-  field1193: String!
-  field1153: ID!
-  field109: String!
-  field3140: String
-  field244: Boolean!
-  field12092: String
-  field12093: String
-  field12094: String
-  field4633: ID
+input Input2403 {
+  inputField16: String
+  inputField51: String
+  inputField4608: Boolean
+}
+
+input Input2404 {
+  inputField4609: [String]
+  inputField2535: String
+  inputField4610: [String]
+}
+
+"""
+This is an anonymized description
+"""
+type Type6039 {
+  field12753: [Type6040]
+}
+
+type Type6040 {
+  field752: String
+  field146: [Type6041]
+}
+
+type Type6041 {
+  field427: Enum1367
+  field248: Int
+  field1655: String
+  field4608: [String]
+  field1243: Enum1366
+  field405: String
+  field12754: Boolean
+}
+
+enum Enum1366 {
+  VALUE_4921
+  VALUE_4922
+  VALUE_4923
+}
+
+enum Enum1367 {
+  VALUE_4924
+  VALUE_4925
+  VALUE_4926
 }

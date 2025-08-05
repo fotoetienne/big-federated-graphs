@@ -1,157 +1,189 @@
-type Mutation {
-  """
-  This is an anonymized description
-  """
-  field20350(
-  arg60: Input4177): Type9207
-  """
-  This is an anonymized description
-  """
-  field20351(
-  arg60: Input4179): Type9209
-  """
-  This is an anonymized description
-  """
-  field20352(
-  arg60: Input4179): Type9210
+type Type9334 {
+  field3: Scalar13!
+  field685: Enum550!
+  field55: Scalar15
+  field686: Boolean
+  field687: Boolean
+  field688: Boolean
 }
 
-type Subscription {
+type Type9335 {
+  field3: Scalar13!
+  field686: Boolean
+  field687: Boolean
+  field688: Boolean
+}
+
+union Union466 = Type9334 | Type9335
+
+type Type9336 {
+  field3: Scalar13!
+  field685: Enum550!
+  field55: Scalar15
+}
+
+type Type9337 {
+  field3: Scalar13!
+}
+
+type Type9338 {
+  field689: Boolean
+}
+
+union Union467 = Type9336 | Type9337 | Type9338
+
+type Type9339 {
+  field20482: Type9342!
+  field4550: Union466!
+}
+
+type Type9340 {
+  field20482: Type9342!
+  field4550: Union466!
+  field20483: Type9342!
+  field4551: Union467!
+}
+
+type Type9341 {
+  field603: Type9342
+  field602: Type9342
+}
+
+type Type9342 {
+  field3: Scalar13!
+  field67: Enum550
+  field55: Scalar15!
+}
+
+"""
+This is an anonymized description
+"""
+type Type9343 {
   """
   This is an anonymized description
   """
-  field20353(
-  arg60: Input4178): Type9208
+  field20484: Type9341
   """
   This is an anonymized description
   """
-  field20354(
-  arg60: Input4181): Type9211
+  field20485: Type9339
+  """
+  This is an anonymized description
+  """
+  field415: Type9342
+  """
+  This is an anonymized description
+  """
+  field20486: Type9342
+  """
+  This is an anonymized description
+  """
+  field20487: Type9342
+  """
+  This is an anonymized description
+  """
+  field20488: Type9342
+  """
+  This is an anonymized description
+  """
+  field20489: Type9342
+  """
+  This is an anonymized description
+  """
+  field20490: Type9342
+  """
+  This is an anonymized description
+  """
+  field4692: Type9340
+  """
+  This is an anonymized description
+  """
+  field20491: Type9345
+  """
+  This is an anonymized description
+  """
+  field20492: Type9344
 }
 
-type Type9206 {
-  field279: String
+type Type9344 {
+  field20493: Type9342
+  field20494: Type9342
+  field20495: Type9342
+  field20496: Type9342
+  field20497: Type9342
+  field20498: Type9342
 }
 
-type Type1284 @key(fields: "field2") @extends {
+type Type9345 {
+  field20493: Type9342
+  field20494: Type9342
+  field20495: Type9342
+}
+
+interface Interface397 implements Interface26 {
   field2: ID! @external
-  field20355(arg1696: String!): Type9206
+  """
+  This is an anonymized description
+  """
+  field20499: Type9343
 }
 
-enum Enum2205 {
-  VALUE_7484
-  VALUE_7485
-  VALUE_6356
+interface Interface398 implements Interface26 @key(fields: "field2") {
+  field2: ID! @external
+  field20500: Enum2236
 }
 
-enum Enum2206 {
-  VALUE_7486
-  VALUE_7487
+enum Enum2236 {
+  VALUE_7146
+  VALUE_1126
+  VALUE_7147
+  VALUE_1252
+  VALUE_154
 }
 
-enum Enum2207 {
-  VALUE_7488
-  VALUE_7489
-  VALUE_1182
+directive @directive1(arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+extend interface Interface26 @extends {
+  field2: ID! @external
 }
 
-enum Enum2208 {
-  VALUE_7490
-  VALUE_7491
-  VALUE_7492
-  VALUE_7493
-  VALUE_7494
-  VALUE_7495
+type Type136 implements Interface397 & Interface399 & Interface398 & Interface26 @extends @key(fields: "field2") @directive1(arg47: "anonymous-string") {
+  field2: ID! @external
+  field20499: Type9343
+  field20501: [ID!]
+  field20500: Enum2236
 }
 
-input Input4173 {
-  inputField7510: Float!
-  inputField7511: String!
-  inputField3329: String!
-  inputField7512: [String]!
-  inputField7513: String!
+type Type140 implements Interface397 & Interface399 & Interface398 & Interface26 @extends @key(fields: "field2") @directive1(arg47: "anonymous-string") {
+  field2: ID! @external
+  field20499: Type9343
+  field20501: [ID!]
+  field20500: Enum2236
 }
 
-input Input4174 {
-  inputField7514: String!
-  inputField7515: String
-  inputField7516: String
-  inputField7517: Enum2208!
-  inputField7518: Input4173
+type Type137 implements Interface397 & Interface399 & Interface26 @extends @key(fields: "field2") @directive1(arg47: "anonymous-string") {
+  field2: ID! @external
+  field20499: Type9343
+  field20501: [ID!]
 }
 
-input Input4175 {
-  inputField4460: ID!
-  inputField157: Enum2207!
-  inputField7519: String!
-  inputField4466: String
-  inputField1281: String
-  inputField7520: String
-  inputField7521: Input4174
+type Type138 implements Interface397 & Interface399 & Interface26 @extends @key(fields: "field2") @directive1(arg47: "anonymous-string") {
+  field2: ID! @external
+  field20499: Type9343
+  field20501: [ID!]
 }
 
-input Input4176 {
-  inputField4460: ID!
-  inputField157: Enum2207!
-  inputField7522: String!
-  inputField4467: String!
-  inputField7523: String
-  inputField1281: String
-  inputField7520: String
-  inputField7521: Input4174
+type Type139 implements Interface399 & Interface26 @extends @key(fields: "field2") @directive1(arg47: "anonymous-string") {
+  field2: ID! @external
+  field20501: [ID!]
 }
 
-input Input4177 {
-  inputField1273: Enum2206!
-  inputField7524: Boolean!
-  inputField7525: Input4176
-  inputField7526: Input4175
-}
-
-type Type9207 {
-  field1559: ID!
-}
-
-input Input4178 {
-  inputField2229: ID!
-}
-
-type Type9208 {
-  field58: String!
-  field5944: ID
-  field20356: String
-  field12092: String
-}
-
-input Input4179 {
-  inputField1273: Enum2205!
-  inputField7527: String
-  inputField634: ID
-  inputField7528: [String]
-  inputField7529: Input4180
-}
-
-type Type9209 {
-  field1559: ID!
-}
-
-input Input4180 {
-  inputField130: ID!
-  inputField5447: String!
-  inputField7530: String
-}
-
-type Type9210 {
-  field1559: ID!
-}
-
-input Input4181 {
-  inputField2229: ID!
-}
-
-type Type9211 {
-  field58: String!
-  field4992: ID
-  field12558: String
-  field12092: String
+interface Interface399 implements Interface26 {
+  field2: ID! @external
+  """
+  This is an anonymized description
+  """
+  field20501: [ID!]
 }

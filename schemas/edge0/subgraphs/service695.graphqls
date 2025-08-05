@@ -1,102 +1,174 @@
-type Mutation @extends {
-  field32635(arg1: Input7708!): Type16275!
-}
+scalar Scalar1
 
-type Type122 {
-  field269: String
-  field270: Boolean!
-  field271: Boolean!
-  field272: String
-}
+scalar Int
+
+scalar String
+
+scalar Boolean
+
+directive @extends on OBJECT | INTERFACE
+
+directive @key(fields: String) on OBJECT | INTERFACE
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
 
 type Query @extends {
-  field32636(arg33: ID!): Type3053
-  field32637(arg1: Input48!): Type16277!
+  field32650(arg1670: [Scalar1!]!): [Union979] @directive1(arg47: "anonymous-string")
+  field32651(arg872: [Input7797]!, arg1843: Int!, arg2749: Boolean!): Type16738 @directive1(arg47: "anonymous-string")
+  field32652(arg872: [Input7797]!, arg1843: Int!): Type16739 @directive1(arg47: "anonymous-string")
+  field32653(arg29: Scalar1!): [Type2219] @directive1(arg47: "anonymous-string")
+  field32654(arg211: [Scalar1!]!): [Type2220] @directive1(arg47: "anonymous-string")
+  field32655(arg1670: [Scalar1!]!): [Type2220] @directive1(arg47: "anonymous-string")
+  field32656(arg2750: [Scalar1!]!): [Type2220] @directive1(arg47: "anonymous-string")
+  field32657(arg2600: Scalar1!, arg2751: String): [Type16741] @directive1(arg47: "anonymous-string")
 }
 
-type Type16275 {
-  field275: Type3053
+type Mutation @extends {
+  field32658(arg2752: [Input7799]): Type16742! @directive1(arg47: "anonymous-string")
+  field32659(arg2600: Scalar1!, arg2753: [Input7801!]!): Scalar1 @directive1(arg47: "anonymous-string")
+  field32660(arg1670: [Scalar1]): Type16743 @directive1(arg47: "anonymous-string")
+  field32661(arg29: Scalar1!, arg2754: Scalar1, arg50: Scalar1): Type16742 @directive1(arg47: "anonymous-string")
+  field32662(arg2755: Input7798!): Type2219 @directive1(arg47: "anonymous-string")
 }
 
-type Type16276 {
-  field24037: String
-  field24038: String
-  field24039: String
+input Input7797 {
+  inputField381: Enum3989
+  inputField11190: String
 }
 
-type Type3053 @key(fields: "field255") {
-  field252: Float!
-  field253: String
-  field1421: Type16276
-  field254: ID
-  field255: ID!
-  field256: String!
-  field257: String!
-  field258: ID
-  field259: ID!
-  field260: Enum3924!
-  field44: String
+input Input7798 {
+  inputField732: Scalar1
+  inputField64: Input7800!
+  inputField2765: [Input7800]
+  inputField771: String
+  inputField11191: String
+  inputField11192: Enum3990
 }
 
-type Type16277 {
-  field36: [Type16278!]
-  field37: Type122!
+input Input7799 {
+  inputField732: Scalar1
+  inputField11193: Scalar1
+  inputField64: Input7800!
+  inputField2765: [Input7800]
+  inputField187: Scalar1
+  inputField129: Scalar1
+  inputField771: String
+  inputField11191: String
+  inputField11192: Enum3990
 }
 
-type Type16278 {
-  field41: String
-  field40: Type3053!
+enum Enum3989 {
+  VALUE_1032
+  VALUE_11183
+  VALUE_347
+  VALUE_314
 }
 
-enum Enum31 {
-  VALUE_201
-  VALUE_202
+union Union979 = Type2219 | Type2220
+
+type Type16738 @directive1(arg47: "anonymous-string") {
+  field32663: Int
+  field28157: [Union979]
 }
 
-enum Enum3924 {
-  VALUE_199
-  VALUE_151
-  VALUE_158
-  VALUE_152
-  VALUE_149
+type Type16739 @directive1(arg47: "anonymous-string") {
+  field32663: Int
+  field28157: [Type2219]
 }
 
-input Input48 {
-  inputField106: String!
-  inputField107: Boolean! = false
+type Type2219 @key(fields: "field1971") @directive1(arg47: "anonymous-string") {
+  field1971: Scalar1!
+  field11: Type16740!
+  field3229: [Type16740]
+  field5762: String
+  field32664: String
+  field3230: [Type16741]
+  field32665: [Type2221]
+  field32666: Enum3990
+  field321: String
+  field265: Scalar1
+  field294: String
+  field266: Scalar1
 }
 
-input Input49 {
-  inputField7: String!
-  "This is an anonymized description"
-  inputField108: Enum31!
+type Type2220 @key(fields: "field1971") @directive1(arg47: "anonymous-string") {
+  field1971: Scalar1!
+  field32667: Scalar1!
+  field11: Type16740!
+  field3017: Scalar1
+  field109: Scalar1!
+  field3229: [Type16740]
+  field3230(arg2756: String): [Type16741]
+  field5762: String
+  field32664: String
+  field32666: Enum3990
+  field321: String
+  field265: Scalar1
+  field294: String
+  field266: Scalar1
 }
 
-input Input50 {
-  "This is an anonymized description"
-  inputField109: String
-  "This is an anonymized description"
-  inputField110: Int!
-  "This is an anonymized description"
-  inputField111: Int!
-  "This is an anonymized description"
-  inputField112: Int!
+enum Enum3990 {
+  VALUE_11184
+  VALUE_999
 }
 
-input Input7708 {
-  inputField113: String
-  inputField103: String
-  "This is an anonymized description"
-  inputField104: String
-  inputField114: String
-  "This is an anonymized description"
-  inputField115: Input49
-  "This is an anonymized description"
-  inputField116: Input50
-  "This is an anonymized description"
-  inputField117: String
-  "This is an anonymized description"
-  inputField118: String
-  "This is an anonymized description"
-  inputField119: String
+type Type2221 @key(fields: "field1971") @directive1(arg47: "anonymous-string") {
+  field1971: Scalar1!
+  field3017: Scalar1
+  field109: Scalar1!
+  field9934: String
+  field11: Type16740
+  field5762: String
+}
+
+input Input7800 {
+  inputField2283: String
+  inputField2284: String
+  inputField10440: String
+}
+
+type Type16740 @directive1(arg47: "anonymous-string") {
+  field3446: String
+  field3447: String
+  field30537: String
+}
+
+input Input7801 {
+  inputField64: Input7800
+  inputField11194: String!
+}
+
+type Type16741 @directive1(arg47: "anonymous-string") {
+  field11: Type16740
+  field32668: String!
+}
+
+type Type16742 @directive1(arg47: "anonymous-string") {
+  field32669: [Type2220]
+  field32670: [Type16745]
+}
+
+type Type16743 @directive1(arg47: "anonymous-string") {
+  field32669: [Scalar1]
+  field32670: [Type16744]
+}
+
+type Type16744 @directive1(arg47: "anonymous-string") {
+  field1971: Scalar1
+  field730: String
+}
+
+type Type16745 @directive1(arg47: "anonymous-string") {
+  field32667: Scalar1
+  field11: Type16740
+  field3229: [Type16740]
+  field109: Scalar1
+  field3017: Scalar1
+  field730: String
 }

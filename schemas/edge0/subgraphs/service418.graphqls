@@ -1,25 +1,24 @@
-scalar Scalar14
-
-type Type32 @key(fields: "field107") @extends {
-  field107: Int! @external
-  field22162(arg352: String): [Type10051]
-}
-
 type Query @extends {
-  field22163(arg12: Int): [Type10051]
-  field22164(arg352: String): [Type10052]
+  field22714(arg1588: ID!): Type2414
 }
 
-type Type10051 {
-  field22165: String
-  field2517: String
-  field21805: Boolean
-  field22166: Scalar14
+type Mutation @extends {
+  field22715(arg20: Input4536): Type2414
+  field22716(arg1588: ID!, arg1867: Int!, arg1868: Int!): Type2414
+  field22717(arg1588: ID!, arg1869: Int!): Type2414
 }
 
-type Type10052 {
-  field22165: String
-  field120: Type32
-  field21805: Boolean
-  field22166: Scalar14
+type Type2414 @key(fields: "field5306") {
+  field5306: ID!
+  field22718: String
+  field10989: Float!
+  field14532: Int!
+  field22719: Int!
+  field22720: Int!
+}
+
+input Input4536 {
+  inputField8055: ID!
+  inputField8056: String!
+  inputField3852: Float!
 }

@@ -1,15 +1,120 @@
 type Query {
-  field22873(arg12: Int!): [Type10479!]!
+  field23358(arg23: ID!): Type2897
 }
 
-type Type10479 {
-  field16745: ID
-  field22874: String
-  field58: String
-  field22875: String
-  field22876: String
-  field22877: String
-  field5664: Scalar14
-  field5665: Scalar14
-  field5659: String
+type Mutation {
+  field23359(arg20: Input4806!): [Type2897!]
+  field23360: Type10611
+  field23361(arg20: Input4807!): Type10610
+}
+
+"""
+This is an anonymized description
+"""
+type Type29 @key(fields: "field109") @extends {
+  field109: Int! @external
+}
+
+"""
+This is an anonymized description
+"""
+type Type26 @key(fields: "field132") @extends {
+  field132: ID! @external
+}
+
+enum Enum2632 {
+  VALUE_4297
+  VALUE_4213
+  VALUE_8399
+  VALUE_8400
+  VALUE_2237
+  VALUE_6397
+  VALUE_8401
+  VALUE_8402
+}
+
+enum Enum2633 {
+  VALUE_995
+  VALUE_1008
+  VALUE_2838
+  VALUE_164
+}
+
+type Type10607 {
+  field128: Type26
+  field23362: Type26
+  field1786: Scalar14
+  field195: Enum2632!
+  field23363: Boolean
+  field23364: Boolean
+  field23365: Boolean
+  field16076: [Type26!]
+  field100: Enum2633
+  field23366: Boolean
+  field53: Scalar14
+  field54: Scalar14
+}
+
+enum Enum2634 {
+  VALUE_5255
+  VALUE_7002
+  VALUE_5256
+}
+
+enum Enum2635 {
+  VALUE_995
+  VALUE_986
+  VALUE_8403
+  VALUE_759
+  VALUE_5211
+  VALUE_8404
+  VALUE_165
+  VALUE_8405
+  VALUE_2387
+}
+
+type Type10608 {
+  field80: String!
+  field11: String!
+  field146: [String!]!
+}
+
+type Type2897 @key(fields: "field2") {
+  field2: ID!
+  field108: Type29!
+  field11: String
+  field198: String
+  field10268: Scalar7!
+  field13232: Scalar7!
+  field1522: Enum2634!
+  field23367: Scalar14!
+  field1786: Scalar14!
+  field22942: Scalar14!
+  field100: Enum2635!
+  field321: Type26
+  field275: [Type10607!]
+  field656: [Type10608!]!
+  field2806: [String!]!
+  field23368: [String!]!
+}
+
+input Input4806 {
+  inputField338: [ID!]!
+}
+
+type Type10609 {
+  field2027: [Type2897!]!
+}
+
+input Input4807 {
+  inputField16: ID!
+  inputField617: Scalar14
+}
+
+type Type10610 {
+  field2886: Type2897!
+}
+
+type Type10611 {
+  field787: String
 }

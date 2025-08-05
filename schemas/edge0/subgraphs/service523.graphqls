@@ -1,123 +1,76 @@
-type Type13100 {
-  field1626: [Type13101!]
+type Type2420 @key(fields: "field2") {
+  field2: ID!
+  field11: String!
+  field5777: Scalar11!
+  field6383: Type2421
+  field265: Scalar14!
+  field266: Scalar14!
+  field14221: [Type13746]
 }
 
-type Type13101 {
-  field26395: Boolean!
-  field4077: String!
-  field388: String!
-  field26396: Boolean!
-  field1155: String
-  field486: String!
+type Type2421 @key(fields: "field2") {
+  field2: ID!
+  field11: String!
 }
 
-type Type3004 @key(fields: "field255") {
-  field252: Float!
-  field253: String
-  field1420: Type13100
-  field254: ID
-  field255: ID!
-  field256: String!
-  field257: String!
-  field258: ID
-  field259: ID!
-  field260: Enum3023!
-  field44: String
-}
-
-type Type13102 {
-  field36: [Type13103!]
-  field37: Type122!
-}
-
-type Type13103 {
-  field41: String
-  field40: Type3004!
-}
-
-type Mutation @extends {
-  field26397(arg1: Input5847!): Type13104!
-}
-
-type Type122 {
-  field269: String
-  field270: Boolean!
-  field271: Boolean!
-  field272: String
+input Input6063 {
+  inputField64: String!
+  inputField2274: Scalar11!
+  inputField5030: ID!
 }
 
 type Query @extends {
-  field26398(arg33: ID!): Type3004
-  field26399(arg1: Input48!): Type13102!
+  field27098: [Type2420!]!
+  field27099(arg23: ID!): Type2420
+  field27100(arg74: String!): [Type2420!]!
+  field27101(arg74: String!): String
+  field27102(arg642: String!): String!
+  field27103(arg20: Input6065!): String
+  field27104: [Type2420!]!
+  field27105(arg20: Input6066!): String!
 }
 
-type Type13104 {
-  field275: Type3004
+type Mutation @extends {
+  field27106(arg20: Input6063!): Type2420
+  field27107(arg603: ID!, arg20: Input6063!): Type2420
+  field27108(arg603: ID!): Boolean
+  field27109(arg20: Input6064!): String
+  field27110: String
 }
 
-enum Enum3023 {
-  VALUE_199
-  VALUE_151
-  VALUE_158
-  VALUE_152
-  VALUE_149
+type Subscription {
+  field27111: Type2420
 }
 
-enum Enum31 {
-  VALUE_201
-  VALUE_202
+type Type13746 {
+  field2: ID!
+  field11: String!
+  field14222: Scalar11!
 }
 
-input Input5845 {
-  inputField3016: [Input5846!]!
+input Input6064 {
+  inputField9271: ID!
+  inputField5031: String!
+  inputField2272: ID!
 }
 
-input Input5846 {
-  inputField9044: Boolean!
-  inputField3847: String!
-  inputField677: String!
-  inputField9045: Boolean!
-  inputField4833: String
-  inputField172: String!
+input Input6065 {
+  inputField2273: ID!
+  inputField2272: ID!
+  inputField9272: ID!
+  inputField9273: String!
 }
 
-input Input48 {
-  inputField106: String!
-  inputField107: Boolean! = false
+input Input6066 {
+  inputField64: String!
+  inputField9274: String!
 }
 
-input Input49 {
-  inputField7: String!
-  "This is an anonymized description"
-  inputField108: Enum31!
-}
+directive @directive1("""
+This is an anonymized description
+"""
+arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
 
-input Input50 {
-  "This is an anonymized description"
-  inputField109: String
-  "This is an anonymized description"
-  inputField110: Int!
-  "This is an anonymized description"
-  inputField111: Int!
-  "This is an anonymized description"
-  inputField112: Int!
-}
-
-input Input5847 {
-  inputField113: String
-  inputField103: String
-  "This is an anonymized description"
-  inputField104: String
-  inputField114: String
-  inputField128: Input5845!
-  "This is an anonymized description"
-  inputField115: Input49
-  "This is an anonymized description"
-  inputField116: Input50
-  "This is an anonymized description"
-  inputField117: String
-  "This is an anonymized description"
-  inputField118: String
-  "This is an anonymized description"
-  inputField119: String
+type Type13747 @directive1(arg47: "anonymous-string") {
+  field27098: [Type2420!]!
 }

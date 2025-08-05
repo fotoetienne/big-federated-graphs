@@ -1,69 +1,101 @@
+type Type8096 {
+  field554: Float!
+  field198: String
+  field16797: Type432!
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field100: Enum1925!
+  field58: String
+}
+
+type Type8097 {
+  field176: [Type8098!]
+  field366: Type119!
+}
+
+type Type8098 {
+  field369: String
+  field177: Type8096!
+}
+
+type Type29 @extends @key(fields: "field109") {
+  field109: Int! @external
+}
+
+type Type432 {
+  field176: [Type433!]
+  field366: Type119!
+}
+
+type Type433 {
+  field369: String
+  field177: Type29!
+}
+
+type Mutation @extends {
+  field16798(arg20: Input3602!): Type8099!
+}
+
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
+}
+
 type Query @extends {
-  field16103(arg19: Enum1826, arg341: [String!], arg347: [String!]): Type7802
+  field16799(arg49: ID!): Type8096
+  field16800(arg20: Input48!): Type8097!
 }
 
-type Type32 @key(fields: "field107") @extends {
-  field107: Int! @external
-  field16103(arg19: Enum1826, arg341: [String!], arg347: [String!]): Type7802
+type Type8099 {
+  field575: Type8096
 }
 
-enum Enum1826 {
-  VALUE_1729
-  VALUE_1730
+enum Enum1925 {
+  VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
 }
 
-type Type7802 {
-  field4058: [Type7803!]
+input Input3600 {
+  inputField599: Input3601
 }
 
-type Type7803 {
-  field1491: String
-  field5: String
-  field58: String
-  field6361: String
-  field16104: [Type7804!]
+input Input3601 {
+  inputField3224: Int!
+  inputField3225: Int!
 }
 
-type Type7804 {
-  field58: String
-  field6361: String
-  field445: String
-  field16105: [Type7805!]
+input Input48 {
+  inputField113: String!
+  inputField114: Boolean! = false
 }
 
-type Type7805 {
-  field5: String
-  field1491: String
-  field253: String
-  field8776: String
-  field945: String
-  field58: String
-  field6361: String
-  field16106: [Type7806!]
+input Input50 {
+  "This is an anonymized description"
+  inputField116: String
+  "This is an anonymized description"
+  inputField117: Int!
+  "This is an anonymized description"
+  inputField118: Int!
+  "This is an anonymized description"
+  inputField119: Int!
 }
 
-type Type7806 {
-  field58: String
-  field6361: String
-  field16107: Type7808
-  field3359: [Type7809!]
-  field96: Scalar14
-  field2474: [Type7807!]
-}
-
-type Type7807 {
-  field5: String!
-  field134: String!
-}
-
-type Type7808 {
-  field10: String
-  field3361: String
-}
-
-type Type7809 {
-  field3360: String
-  field3772: String
-  field8776: String
-  field16108: String
+input Input3602 {
+  inputField120: String
+  inputField110: String
+  inputField111: String
+  inputField121: String
+  inputField135: Input3600!
+  inputField123: Input50
+  inputField125: String
+  inputField126: String
 }

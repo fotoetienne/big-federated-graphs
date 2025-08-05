@@ -1,181 +1,180 @@
-type Query {
-  field32252(arg58: String): String
-  field32253: [Type16124]!
-  field32254: String
-  field32255(arg2772: ID): Type16124
-  field32256(arg308: Int): [Type16124]!
-  field32257: Type16125
-  field32258(arg2772: ID, arg1260: ID): Type16125
-  field32259(arg1260: ID): [Type16125]!
-  field32260: [Type16125]!
-  field32261(arg1260: ID): Type16126
-  field32262(arg308: Int): [Type16126]!
-  field32263(arg2772: ID): [Type16127]!
-  field32264: [Type16127]!
-  field32265: [Type16123]!
-  field32266(arg2772: ID, arg2773: [ID]): [Type16122]!
-  field32267(arg2774: ID): Type16121
-  field32268(arg1260: ID, arg2772: ID): [Type16135]
-  field32269(arg2772: ID): [Type16135]
-  field32270(arg2775: ID): Type16136
-  field32271(arg2772: ID): [Type16139]!
-  field32272(arg2772: ID): [Type16140]!
-  field32273: [Type16137]!
+type Type16709 {
+  field1202: [Type16710!]
+  field6337: String
+  field1197: Type16711
+  field789: String
 }
 
-type Type16118 {
-  field32274: String
-  field313: Boolean
-  field32275: Int
-  field32276: Int
-  field32277: [Type16119]
+type Type16710 {
+  field6103: String!
+  field2609: Enum3987!
 }
 
-type Type16119 {
-  field32278: ID
-  field313: Boolean
-  field32279: Int
-  field32280: Int
-  field32281: [Type16120]
+type Type16711 {
+  field8924: Float
 }
 
-type Type16120 {
-  field32282: ID
-  field32283: Int
+type Type16712 {
+  field308: Int
+  field5132: Boolean
+  field5943: Type16716
 }
 
-type Type16121 {
-  field32284: [ID]
-  field1301: String
+type Type16713 {
+  field32617: String
+  field3731: Int
+  field405: Type16715
 }
 
-type Type16122 {
-  field32278: ID
-  field32285: [ID]!
+type Type16714 {
+  field7887: String
+  field11: String
 }
 
-type Type16123 {
-  field3260: Int!
-  field15669: String!
+type Type16715 {
+  field6103: String
+  field2609: String
+  field31971: [Type16717!]
 }
 
-type Type16124 {
-  field32286: ID!
-  field3260: Int!
-  field13308: String
-  field32287: Float!
-  field32288: Int!
-  field32289: [String]
-  field5040: Type16133
-  field13346: [Type16133]
-  field32290: Boolean!
-  field32291: Boolean!
-  field13312: String
-  field32292: Boolean!
+type Type16716 {
+  field21398: [Type16713!]
+  field2070: Int
+  field2: String
+  field6337: String
+  field11477: String
+  field7377: Type16718
 }
 
-type Type16125 {
-  field32293: Type16124!
-  field9529: String
-  field313: Boolean
+type Type16717 {
+  field14673: Type16714
+  field2: String
+  field80: String
 }
 
-type Type16126 {
-  field3260: Int
-  field16888: String
-  field9529: String
-  field32294: Boolean
-  field13353: Boolean
-  field32295: ID
-  field13357: [ID]
-  field13358: Type16127
+type Type16718 {
+  field32618: Int
+  field32619: Int
+  field15178: Int
 }
 
-type Type16127 {
-  field5: String
-  field13359: Type16128
-  field32296: Boolean
+type Type3132 @key(fields: "field556") {
+  field554: Float!
+  field198: String
+  field723: Type16709
+  field724: Type16712
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field100: Enum3988!
+  field58: String
 }
 
-type Type16128 {
-  field9033: [Type16129]
-  field3177: [Type16130]
-  field84: [String!]
-  field2431: [Type16131]
+type Type16719 {
+  field176: [Type16720!]
+  field366: Type119!
 }
 
-type Type16129 {
-  field134: String
+type Type16720 {
+  field369: String
+  field177: Type3132!
 }
 
-type Type16130 {
-  field134: String
+type Mutation @extends {
+  field32620(arg20: Input7795!): Type16721!
 }
 
-type Type16131 {
-  field134: String
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
 }
 
-type Type16132 {
-  field3260: Int!
-  field13345: Type16133
-  field32297: [Type16133]
+type Query @extends {
+  field32621(arg49: ID!): Type3132
+  field32622(arg20: Input48!): Type16719!
 }
 
-type Type16133 {
-  field32298: ID!
-  field3260: Int!
-  field5: String
-  field44: Int
-  field285: String
-  field279: String
-  field2432: String
-  field32299: [Type16134!]
+type Type16721 {
+  field575: Type3132
 }
 
-type Type16134 {
-  field134: String
+enum Enum3987 {
+  VALUE_5842
+  VALUE_5843
+  VALUE_1284
 }
 
-type Type16135 {
-  field32278: ID!
-  field32300: [Type16136]!
+enum Enum3988 {
+  VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
 }
 
-type Type16136 {
-  field32282: ID!
-  field32301: ID!
-  field32302: String
-  field32303: String
-  field2458: String
-  field32278: ID
-  field2624: String
+enum Enum31 {
+  VALUE_214
+  VALUE_215
 }
 
-type Type16137 {
-  field32278: ID!
-  field32285: [ID]!
-  field32304: [ID]!
-  field1491: String
-  field32305: Int!
+input Input7792 {
+  inputField2111: [Input7793!]!
+  inputField2107: String!
+  inputField2803: Input7794
+  inputField188: String!
 }
 
-type Type16138 {
-  field32282: ID!
-  field32301: ID!
+input Input7793 {
+  inputField2112: String!
+  inputField926: Enum3987!
 }
 
-type Type16139 {
-  field32286: ID!
-  field9529: ID!
-  field16888: String
-  field32306: Boolean
-  field313: Boolean
-  field32307: Boolean
-  field32308: Float!
+input Input7794 {
+  inputField2108: Float
 }
 
-type Type16140 {
-  field2453: ID
-  field32309: [Type16138]!
+input Input48 {
+  inputField113: String!
+  inputField114: Boolean! = false
+}
+
+input Input49 {
+  inputField16: String!
+  "This is an anonymized description"
+  inputField115: Enum31!
+}
+
+input Input50 {
+  "This is an anonymized description"
+  inputField116: String
+  "This is an anonymized description"
+  inputField117: Int!
+  "This is an anonymized description"
+  inputField118: Int!
+  "This is an anonymized description"
+  inputField119: Int!
+}
+
+input Input7795 {
+  inputField120: String
+  inputField110: String
+  "This is an anonymized description"
+  inputField111: String
+  inputField121: String
+  inputField135: Input7792!
+  "This is an anonymized description"
+  inputField122: Input49
+  "This is an anonymized description"
+  inputField123: Input50
+  "This is an anonymized description"
+  inputField124: String
+  "This is an anonymized description"
+  inputField125: String
+  "This is an anonymized description"
+  inputField126: String
 }

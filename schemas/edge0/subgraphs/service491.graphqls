@@ -1,78 +1,131 @@
-scalar Scalar1
+type Type32 @key(fields: "field2 field58") @extends {
+  field2: String! @external
+  field58: String @external
+}
 
-"""
+type Type31 @key(fields: "field422 { field2 field58 }") @extends {
+  field422: Type32 @external
+  field25437: Type11701 @directive1(arg47: "anonymous-string")
+}
+
+type Type11701 @directive1(arg47: "anonymous-string") {
+  field25438: Boolean
+}
+
+type Mutation @extends {
+  field25439(arg53: ID!): Type11707! @directive1(arg47: "anonymous-string")
+  field25440(arg76: Input5244!): Type11709! @directive1(arg47: "anonymous-string")
+  field25441(arg76: Input5245!): Type11708! @directive1(arg47: "anonymous-string")
+  field25442(arg76: Input5246!): Type11710! @directive1(arg47: "anonymous-string")
+}
+
+input Input5241 {
+  inputField214: [String!]!
+}
+
+type Type11702 {
+  field422: String
+  field25443: String
+  field25444: String
+}
+
+type Type11703 @directive1(arg47: "anonymous-string") {
+  field111: [Type11702!]!
+}
+
+type Query @extends {
+  field25445(arg53: Input5242): [Type32!]! @directive1(arg47: "anonymous-string") @deprecated
+  "This is an anonymized description"
+  field25446(
+  arg53: Input5242): Type11705! @directive1(arg47: "anonymous-string")
+  field25447(arg76: Input5243!): Type11706! @directive1(arg47: "anonymous-string")
+  field25448(arg76: Input5241!): Type11703 @directive1(arg47: "anonymous-string")
+}
+
+input Input5242 {
+  inputField16: ID!
+}
+
+enum Enum2878 {
+  VALUE_323
+  VALUE_324
+  VALUE_325
+}
+
+type Type11704 {
+  field883: Enum2878!
+  field654: [Type32!]!
+  field884: Type32!
+}
+
+type Type11705 @directive1(arg47: "anonymous-string") {
+  field654: [Type32!]!
+}
+
+type Type11706 @directive1(arg47: "anonymous-string") {
+  field925: [Type11704!]!
+}
+
+input Input5243 {
+  inputField57: Input5242!
+  inputField420: [Enum2878!]!
+}
+
+type Type11707 @directive1(arg47: "anonymous-string") {
+  field21: Enum2879!
+  field697: String
+}
+
+enum Enum2879 {
+  VALUE_1117
+  VALUE_1275
+}
+
+input Input5244 {
+  inputField8875: ID!
+  inputField8876: ID!
+}
+
+input Input5245 {
+  inputField8877: ID!
+  inputField8878: [ID!]!
+}
+
+type Type11708 @directive1(arg47: "anonymous-string") {
+  field21: Enum2880!
+  field697: String
+}
+
+enum Enum2880 {
+  VALUE_1117
+  VALUE_1275
+}
+
+type Type11709 @directive1(arg47: "anonymous-string") {
+  field21: Enum2879
+  field697: String
+}
+
+enum Enum2881 {
+  VALUE_1117
+  VALUE_1275
+}
+
+input Input5246 {
+  inputField57: ID!
+  inputField640: String!
+}
+
+type Type11710 @directive1(arg47: "anonymous-string") {
+  field422: String
+  field671: String
+  field21: Enum2881!
+  field697: String
+}
+
+directive @directive1("""
 This is an anonymized description
 """
-type Type32 @key(fields: "field107") @extends {
-  field107: Int! @external
-  field24982(arg2064: Boolean): [Type11578]
-}
+arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
 
-type Query {
-  field24983(arg196: [Scalar1], arg2064: Boolean): [Type11577] @deprecated(reason: "Anonymized deprecation reason")
-  field24984(arg196: [Scalar1], arg2064: Boolean): [Type11577]
-  field24985(arg196: [Scalar1!], arg2065: [Enum2825!]): [Type11576]
-}
-
-type Mutation {
-  field24986(arg2066: Input5201): [Type11576]
-}
-
-type Type11575 {
-  field450: String!
-  field134: String!
-}
-
-type Type11576 {
-  field2: ID!
-  field107: Scalar1!
-  field24987: Enum2825!
-  field24988: [String!]
-  field24989: [String!]
-  field524: [Type11575!]
-  field94: Scalar14
-  field56: String
-}
-
-input Input5201 {
-  inputField218: [Scalar1!]
-  inputField8699: Enum2825!
-  inputField8700: [String!]
-  inputField8701: [String!]
-  inputField432: [Input5202!]
-}
-
-input Input5202 {
-  inputField148: String!
-  inputField55: String!
-}
-
-"""
-This is an anonymized description
-"""
-enum Enum2825 {
-  """
-  This is an anonymized description
-  """
-  VALUE_9005
-  """
-  This is an anonymized description
-  """
-  VALUE_9006
-}
-
-type Type11577 {
-  field120: Type32
-  field24982: [Type11578]
-}
-
-type Type11578 {
-  field1527: Scalar7
-  field1246: [Enum516]
-  field24990: [Type11579]
-}
-
-type Type11579 {
-  field311: Enum517
-  field20500: Scalar14
-}
+directive @directive2 on FIELD_DEFINITION

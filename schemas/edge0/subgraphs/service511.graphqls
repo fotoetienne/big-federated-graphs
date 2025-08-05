@@ -1,175 +1,124 @@
-scalar Scalar1
+type Type12117 {
+  field6497: String
+}
 
-scalar String
+type Type3122 @key(fields: "field556") {
+  field554: Float!
+  field198: String
+  field723: Type12117
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field100: Enum3006!
+  field9175: Type12121!
+  field58: String
+}
 
-scalar Int
+type Type12118 {
+  field176: [Type12119!]
+  field366: Type119!
+}
 
-scalar Boolean
+type Type12119 {
+  field369: String
+  field177: Type3122!
+}
 
-directive @directive1("""
-This is an anonymized description
-"""
-arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+type Type12120 {
+  field17534: [String!]
+  field17535: [String!]
+  field17536: [String!]
+  field17537: [String!]
+  field17538: [String!]
+}
 
-directive @directive2 on FIELD_DEFINITION
+type Type12121 {
+  field176: [Type12122!]
+  field366: Type119!
+}
+
+type Type12122 {
+  field369: String
+  field177: Type12120!
+}
+
+type Mutation @extends {
+  field26598(arg20: Input5513!): Type12123!
+}
+
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
+}
 
 type Query @extends {
-  """
-  This is an anonymized description
-  """
-  field26091(
-  arg12: Int): Type32
+  field26599(arg49: ID!): Type3122
+  field26600(arg20: Input48!): Type12118!
 }
 
-type Type32 @extends @key(fields: "field107") @directive1(arg31: "anonymous-string") {
-  field107: Int! @external
-  "This is an anonymized description"
-  field314: Boolean @override(from: "service4")
-  "This is an anonymized description"
-  field334(
-  arg247: String): Boolean @override(from: "service4")
-  "This is an anonymized description"
-  field335(
-  arg247: String): Boolean @override(from: "service4")
-  "This is an anonymized description"
-  field336(
-  arg247: String): Boolean @override(from: "service4")
-  "This is an anonymized description"
-  field3807(
-  arg247: String!): Enum354 @override(from: "service4")
-  "This is an anonymized description"
-  field3808(
-  arg327: Boolean): Type1420 @override(from: "service4")
-  "This is an anonymized description"
-  field315(
-  arg247: String!): Type1495 @override(from: "service4")
-  "This is an anonymized description"
-  field3833(
-  arg247: String!): Type1495 @override(from: "service4")
-  "This is an anonymized description"
-  field3814(
-  arg244: Int
-  arg245: Int): [Type1495] @override(from: "service4")
-  "This is an anonymized description"
-  field3812(
-  arg244: Int
-  arg245: Int): [Type1495] @override(from: "service4")
-  field3813: Type1480 @override(from: "service4")
+type Type12123 {
+  field575: Type3122
 }
 
-type Type1495 @extends @key(fields: "field107 field10") @directive1(arg31: "anonymous-string") {
-  "This is an anonymized description"
-  field316(
-  arg244: Int
-  arg245: Int): [Type1493] @override(from: "service4")
-  "This is an anonymized description"
-  field3795: Type1493 @override(from: "service4")
-  "This is an anonymized description"
-  field3796(
-  arg325: String!): Type1493 @override(from: "service4")
-  field10: String @external
-  field107: Scalar1 @external
+enum Enum3006 {
+  VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
 }
 
-type Type1480 @directive1(arg31: "anonymous-string") {
-  field3766: Boolean
-  field3767(arg244: Int, arg245: Int): [Type1479]
-  field107: Scalar1
-  field327(arg244: Int, arg245: Int): [String]
+enum Enum31 {
+  VALUE_214
+  VALUE_215
 }
 
-type Type1479 @directive1(arg31: "anonymous-string") {
-  field3762(arg244: Int, arg245: Int): [String]
-  field251: String
-  field3763: Boolean
-  field3764: Boolean
-  field3765: Scalar14
-  field3361: String
+input Input5512 {
+  inputField186: String!
 }
 
-type Type1420 @directive1(arg31: "anonymous-string") {
-  """
-  This is an anonymized description
-  """
-  field3381: Boolean!
+input Input48 {
+  inputField113: String!
+  inputField114: Boolean! = false
+}
+
+input Input49 {
+  inputField16: String!
   "This is an anonymized description"
-  field3382(
-  arg244: Int
-  arg245: Int): [Enum517]!
-  "This is an anonymized description"
-  field3383: Boolean!
-  "This is an anonymized description"
-  field3384(
-  arg244: Int
-  arg245: Int): [Enum517]!
+  inputField115: Enum31!
 }
 
-type Type1493 @directive1(arg31: "anonymous-string") {
-  field3784(arg244: Int, arg245: Int): [String]
-  field318: String
-  field10: String
-  field3785: Type1455
-  field324: Scalar1
+input Input50 {
   "This is an anonymized description"
-  field3786(
-  arg324: Boolean): Type1493
-  field325: Scalar1
-  field321: Boolean
-  field322: Boolean
-  field320: Boolean
+  inputField116: String
   "This is an anonymized description"
-  field323: Boolean
-  field319: Boolean
-  field3787: Boolean
-  field3788: Scalar1
-  field326: Scalar1
-  field107: Scalar1
-  field327(arg244: Int, arg245: Int): [String]
-  field328(arg244: Int, arg245: Int): [Type1496]
-}
-
-type Type1455 @directive1(arg31: "anonymous-string") {
-  field3543(arg244: Int, arg245: Int): [String]
-  field3544(arg244: Int, arg245: Int): [String]
-  field3545(arg244: Int, arg245: Int): [String]
-  field3546(arg244: Int, arg245: Int): [String]
-  field3547(arg292: String!): Boolean
-  field3548(arg292: String!): Boolean
-  field3549(arg292: String!): Boolean
-  field3550(arg292: String!): Boolean
-  field3551(arg292: String!): Boolean
-  field3552(arg292: String!): Boolean
-  field3553(arg292: String!): Boolean
-  field3554(arg244: Int, arg245: Int): [String]
-  field3555(arg244: Int, arg245: Int): [String]
-}
-
-type Type1496 @directive1(arg31: "anonymous-string") {
-  field3789(arg244: Int, arg245: Int): [Scalar1]
-  field330: Scalar1
-  field3797: Boolean
-  field333: Boolean
-  field331: Boolean
-  field332: Boolean
-  field3311(arg244: Int, arg245: Int): [Type1494]
-  field3798: Boolean
-  field329: Scalar1
-  field3799: Boolean
-}
-
-type Type1494 @directive1(arg31: "anonymous-string") {
-  field3789(arg244: Int, arg245: Int): [Scalar1]
-  field3790: Boolean
-  field3791: Boolean
-  field3792: Boolean
-  field321: Boolean
-  field1154: Scalar1
-  field3793(arg244: Int, arg245: Int): [Type1431]
-  field3794(arg244: Int, arg292: String, arg245: Int): [Type1431]
-}
-
-type Type1431 @directive1(arg31: "anonymous-string") {
+  inputField117: Int!
   "This is an anonymized description"
-  field3398: String
-  field3361: String
+  inputField118: Int!
+  "This is an anonymized description"
+  inputField119: Int!
+}
+
+input Input5513 {
+  inputField120: String
+  inputField110: String
+  "This is an anonymized description"
+  inputField111: String
+  inputField121: String
+  inputField135: Input5512!
+  "This is an anonymized description"
+  inputField122: Input49
+  "This is an anonymized description"
+  inputField123: Input50
+  "This is an anonymized description"
+  inputField124: String
+  "This is an anonymized description"
+  inputField125: String
+  "This is an anonymized description"
+  inputField126: String
 }

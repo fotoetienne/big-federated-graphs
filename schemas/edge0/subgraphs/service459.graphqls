@@ -1,52 +1,47 @@
-"""
-This is an anonymized description
-"""
-type Type1906 @key(fields: "field2") @extends {
-  field2: ID! @external
-  field23457: Type10790
+type Type11007 {
+  field554: Float!
+  field198: String
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field100: Enum2721!
+  field58: String
 }
 
-"""
-This is an anonymized description
-"""
-type Type1907 @key(fields: "field2") @extends {
-  field2: ID! @external
-  field23457: Type10790
+type Type11008 {
+  field176: [Type11009!]
+  field366: Type119!
 }
 
-"""
-This is an anonymized description
-"""
-type Type1885 @key(fields: "field2") @extends {
-  field2: ID! @external
-  field23457: Type10790
+type Type11009 {
+  field369: String
+  field177: Type11007!
 }
 
-"""
-This is an anonymized description
-"""
-type Type1886 @key(fields: "field2") @extends {
-  field2: ID! @external
-  field23457: Type10790
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
 }
 
-"""
-This is an anonymized description
-"""
-type Type1884 @key(fields: "field2") @extends {
-  field2: ID! @external
-  field23457: Type10790
+type Query @extends {
+  field23990(arg49: ID!): Type11007
+  field23991(arg20: Input48!): Type11008!
 }
 
-"""
-This is an anonymized description
-"""
-type Type1897 @key(fields: "field2") @extends {
-  field2: ID! @external
-  field23457: Type10790 @deprecated(reason: "Anonymized deprecation reason")
+enum Enum2721 {
+  VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
 }
 
-type Type10790 {
-  field7577: Scalar14
-  field23458: String
+input Input48 {
+  inputField113: String!
+  inputField114: Boolean! = false
 }

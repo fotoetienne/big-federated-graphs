@@ -1,3 +1,65 @@
 type Query @extends {
-  field32830(arg58: String): String
+  field32946(arg1161: String, arg2030: ID): Type16842
+}
+
+type Type346 @extends @key(fields: "field2") {
+  field2: ID! @external
+  field1102: Interface30 @external
+  field32947: Type16842 @requires(fields: "field1102 { field1104, field1105}")
+}
+
+extend interface Interface30 @extends {
+  field1104: String @external
+  field1105: String @external
+}
+
+type Type347 implements Interface30 @extends @key(fields: "field2") {
+  field2: ID @external
+  field1104: String @external
+  field1105: String @external
+}
+
+type Type350 implements Interface30 @extends @key(fields: "field2") {
+  field2: ID @external
+  field1104: String @external
+  field1105: String @external
+}
+
+type Type16842 {
+  field5348: ID!
+  field1087: Type16845!
+  field3457: [Enum4017]
+  field2681: Type16843
+  field8448: [Type16844]
+  field10695: [Type16846]
+}
+
+enum Enum4017 {
+  VALUE_8902
+  VALUE_3575
+  VALUE_3572
+}
+
+type Type16843 {
+  field20879: String
+  field32948: String
+  field1093: String
+}
+
+type Type16844 {
+  field1087: Type16845
+  field5348: ID
+  field5349: ID
+}
+
+type Type16845 {
+  field30240: ID!
+  field14420: String
+  field32949: String
+  field32950: String
+}
+
+type Type16846 {
+  field396: String
+  field11431: String
 }

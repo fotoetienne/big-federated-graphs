@@ -1,9 +1,98 @@
-directive @key(fields: String!) repeatable on OBJECT | INTERFACE
+type Type26 @key(fields: "field132") @extends {
+  field132: ID! @external
+  """
+  This is an anonymized description
+  """
+  field30788: String! @directive1(arg47: "anonymous-string")
+}
 
-directive @extends on OBJECT | INTERFACE
+"""
+This is an anonymized description
+"""
+input Input7121 {
+  """
+  This is an anonymized description
+  """
+  inputField64: String!
+  """
+  This is an anonymized description
+  """
+  inputField62: String!
+}
 
-directive @external on OBJECT | FIELD_DEFINITION
+type Type15581 {
+  field546: Boolean!
+  field405: String
+  field6442: String
+  field1379: String
+}
 
-directive @provides(fields: String!) on FIELD_DEFINITION
+type Mutation {
+  """
+  This is an anonymized description
+  """
+  field30789(
+  arg2578: [Input7121]): Type15581! @directive1(arg47: "anonymous-string")
+}
 
-directive @requires(fields: String!) on FIELD_DEFINITION
+type Query {
+  field30790(arg963: String): Type1862 @directive1(arg47: "anonymous-string")
+}
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+"""
+This is an anonymized description
+"""
+type Type2480 @key(fields: "field109 field171") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field109: Int!
+  """
+  This is an anonymized description
+  """
+  field171: String!
+  field30791(arg2579: Input7122): Type15582 @directive1(arg47: "anonymous-string")
+}
+
+type Type29 @key(fields: "field109") @extends {
+  field109: Int! @external
+  field30792: Type2480 @directive1(arg47: "anonymous-string")
+}
+
+type Type87 @key(fields: "field171") @extends {
+  field171: String! @external
+  field30792: Type2480 @directive1(arg47: "anonymous-string")
+  field30793: Type2481 @directive1(arg47: "anonymous-string")
+}
+
+type Type2481 @key(fields: "field171") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field171: String!
+}
+
+input Input7122 {
+  inputField205: Int
+  inputField206: Int
+  inputField10526: Boolean
+}
+
+type Type15582 {
+  field152: String
+}

@@ -1,116 +1,116 @@
-"""
-This is an anonymized description
-"""
-interface Interface195 implements Interface100 @key(fields: "field2") @directive3(arg413: "anonymous-string") {
+input Input1694 {
+  inputField246: ID!
+  inputField462: [Input1695!]!
+}
+
+input Input1695 {
+  inputField2185: String
+  inputField2789: String
+  inputField3175: Enum974
+}
+
+input Input1696 {
+  inputField945: [ID!]!
+}
+
+type Type4740 @directive1(arg47: "anonymous-string") {
+  field1093: ID!
+}
+
+type Type4741 {
+  field4270: String
+  field4271: String
+  field8927: Enum974
+}
+
+enum Enum974 {
+  VALUE_863
+  VALUE_1898
+  VALUE_3849
+}
+
+type Type4742 @directive1(arg47: "anonymous-string") {
+  field1093: ID!
+  field2788: [Type4741!]!
+}
+
+type Type4743 @directive1(arg47: "anonymous-string") {
+  field8928: [Type4742!]!
+}
+
+input Input1697 {
+  inputField221: Input1699!
   """
   This is an anonymized description
   """
-  field164: String @directive3(arg413: "anonymous-string")
+  inputField2991: String!
+  inputField59: [Input1698!]!
+}
+
+input Input1698 {
+  inputField381: Enum975!
+  inputField2185: String!
   """
   This is an anonymized description
   """
-  field8407: String @directive3(arg413: "anonymous-string")
+  inputField2789: String!
+}
+
+type Type4744 @directive1(arg47: "anonymous-string") {
+  field366: Type4745!
+  field8928: [Type4742!]!
+}
+
+input Input1699 {
+  inputField225: Int!
+  inputField35: String
+}
+
+type Type4745 @directive1(arg47: "anonymous-string") {
+  field217: Int!
+  field8434: String
+  field571: Boolean
+  field570: Boolean
+}
+
+enum Enum975 {
+  VALUE_3850
+  VALUE_3851
   """
   This is an anonymized description
   """
-  field8408: String @directive3(arg413: "anonymous-string")
-  """
-  This is an anonymized description
-  """
-  field8409: String @directive3(arg413: "anonymous-string")
-  """
-  This is an anonymized description
-  """
-  field8410: [String] @directive3(arg413: "anonymous-string")
-  """
-  This is an anonymized description
-  """
-  field8411: Interface195 @directive3(arg413: "anonymous-string")
-  """
-  This is an anonymized description
-  """
-  field2: ID! @directive3(arg413: "anonymous-string")
-  """
-  This is an anonymized description
-  """
-  field8412: String @directive3(arg413: "anonymous-string")
-  """
-  This is an anonymized description
-  """
-  field8413: [Interface195] @directive3(arg413: "anonymous-string")
-  field4097: ID!
-  field4093: Type1586! @experimental
+  VALUE_3852
+  VALUE_3853
 }
 
 """
 This is an anonymized description
 """
-type Type2838 implements Interface195 & Interface100 @key(fields: "field2") @directive3(arg413: "anonymous-string") {
-  """
-  This is an anonymized description
-  """
-  field8412: String @directive3(arg413: "anonymous-string")
-  """
-  This is an anonymized description
-  """
-  field8407: String @directive3(arg413: "anonymous-string")
-  """
-  This is an anonymized description
-  """
-  field8410: [String] @directive3(arg413: "anonymous-string")
-  """
-  This is an anonymized description
-  """
-  field164: String @directive3(arg413: "anonymous-string")
-  """
-  This is an anonymized description
-  """
-  field8409: String @directive3(arg413: "anonymous-string")
-  """
-  This is an anonymized description
-  """
-  field8413: [Interface195] @directive3(arg413: "anonymous-string")
-  """
-  This is an anonymized description
-  """
-  field8411: Interface195 @directive3(arg413: "anonymous-string")
-  """
-  This is an anonymized description
-  """
-  field2: ID! @directive3(arg413: "anonymous-string")
-  """
-  This is an anonymized description
-  """
-  field8408: String @directive3(arg413: "anonymous-string")
-  field4097: ID!
-  field4093: Type1586! @experimental
+type Type1001 @key(fields: "field2") @extends {
+  field2: ID! @external
+  field2788: [Type4741!]! @directive1(arg47: "anonymous-string")
 }
 
-"This is an anonymized description"
-directive @directive3(arg413: String!) repeatable on OBJECT | FIELD_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE
-
-type Type1586 {
-  field4098: Scalar1! @experimental
-  field4099: Scalar14 @experimental
-  field4100: Scalar14 @experimental
-}
-
-input Input745 {
+type Mutation @extends {
   """
   This is an anonymized description
   """
-  inputField1677: Scalar14 @experimental
+  field8929(
+  arg76: Input1694!): Type4740! @directive1(arg47: "anonymous-string")
 }
 
-interface Interface100 {
+type Query @extends {
   """
   This is an anonymized description
   """
-  field4097: ID!
-  """
-  This is an anonymized description
-  """
-  field4093: Type1586! @experimental
+  field8930(
+  arg76: Input1696!): Type4743! @directive1(arg47: "anonymous-string")
+  field8931(arg76: Input1697!): Type4744! @directive1(arg47: "anonymous-string")
 }
 
-scalar Scalar1
+directive @directive1("""
+This is an anonymized description
+"""
+arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION

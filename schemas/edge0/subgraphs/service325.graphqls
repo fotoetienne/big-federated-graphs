@@ -1,30 +1,134 @@
-type Query {
-  field15796(arg1084: String): [Type7578] @deprecated
-  field15797(arg1: Input3362): [Type7579]
+type Query @extends {
+  field16471(arg42: ID!): Union341 @experimental
+  field16472(arg1509: String!): Union341 @experimental
+  field16473(arg1510: ID!): Union341 @experimental
 }
 
-type Type7578 {
-  field341: String
-  field15798: String
+type Mutation @extends {
+  field16474(arg316: ID!, arg1511: ID!, arg1509: String!): Union342 @experimental
+  field16475(arg316: ID!, arg1511: ID!, arg1509: String!): Union342 @experimental
 }
 
-type Type7579 {
-  field341: String @deprecated(reason: "Anonymized deprecation reason")
+union Union341 = Type7839 | Type7837
+
+type Type7837 {
+  field6278: ID
+  field12896: String
 }
 
-type Type7580 {
-  field15799: String @deprecated
-  field15800: String
+type Type7838 {
+  field2: ID!
+  field5257: ID!
 }
 
-enum Enum1789 {
-  VALUE_6248
-  VALUE_6249
-  VALUE_6250
+type Type7839 {
+  field2: ID!
+  field5257: ID!
+  field132: ID!
+  field104: Type7838!
+  field16476: Type7840
+  field16477: Union344
 }
 
-input Input3362 {
-  inputField5728: String
-  inputField5729: String
-  inputField5730: Enum1789
+type Type7840 {
+  field12896: Type7841
+}
+
+type Type7841 {
+  field16478: String
+}
+
+union Union342 = Type7842 | Type7843 | Type7844 | Type7845 | Type7846 | Type7847
+
+type Type7842 {
+  field12896: Type7841
+}
+
+interface Interface319 {
+  field1974: String
+}
+
+type Type7843 implements Interface319 {
+  field1974: String
+}
+
+type Type7844 implements Interface319 {
+  field1974: String
+}
+
+type Type7845 implements Interface319 {
+  field1974: String
+}
+
+type Type7846 implements Interface319 {
+  field1974: String
+}
+
+type Type7847 implements Interface319 {
+  field1974: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type2554 @key(fields: "field2") {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  field12896: Type7848
+}
+
+union Union343 = Type2554 | Type7849 | Type7850
+
+type Type7848 {
+  """
+  This is an anonymized description
+  """
+  field16479: String
+}
+
+type Type7849 {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+}
+
+type Type7850 {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+}
+
+type Type2434 @key(fields: "field5309 field3585") @extends {
+  """
+  This is an anonymized description
+  """
+  field5309: ID! @external
+  field3585: ID! @external
+  field5330: Union343
+}
+
+type Type2435 @key(fields: "field5309") @extends {
+  """
+  This is an anonymized description
+  """
+  field5309: ID! @external
+  field5330: Union343
+}
+
+union Union344 = Type7851
+
+type Type7851 {
+  field16480: Union345
+}
+
+union Union345 = Type7852
+
+type Type7852 {
+  field16481: Int
+  field16482: Int
+  field16483: String
 }

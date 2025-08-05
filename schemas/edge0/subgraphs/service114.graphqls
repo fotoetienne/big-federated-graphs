@@ -1,57 +1,25 @@
-type Query {
-  """
-  This is an anonymized description
-  """
-  field5705(
-  arg572: Input1019): [Type3291]
-  """
-  This is an anonymized description
-  """
-  field5706(
-  arg572: Input1019): [Type3291]
+"""
+This is an anonymized description
+"""
+scalar Scalar1
+
+type Type3584 {
+  field6364: String
+  field6365: Scalar1
+  field6366: [String]
+  field65: String
 }
 
-input Input1019 {
-  """
-  This is an anonymized description
-  """
-  inputField2111: String
-  """
-  This is an anonymized description
-  """
-  inputField2112: String
-  """
-  This is an anonymized description
-  """
-  inputField2113: Boolean
+type Query @extends {
+  field6367(arg601: [String!]!): [Type3584!]
 }
 
-enum Enum611 {
-  """
-  This is an anonymized description
-  """
-  VALUE_141
-  """
-  This is an anonymized description
-  """
-  VALUE_2614
-  """
-  This is an anonymized description
-  """
-  VALUE_2615
-  """
-  This is an anonymized description
-  """
-  VALUE_2616
+type Type1967 @extends @key(fields: "field2") {
+  field2: ID! @external
+  field6368(arg602: String): [Type3584!]
 }
 
-type Type3291 {
-  """
-  This is an anonymized description
-  """
-  field5707: String
-  """
-  This is an anonymized description
-  """
-  field5708: ID
+type Type2025 @extends @key(fields: "field2") {
+  field2: ID! @external
+  field6368(arg602: String): [Type3584!]
 }

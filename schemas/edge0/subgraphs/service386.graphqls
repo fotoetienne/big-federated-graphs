@@ -1,75 +1,29 @@
-type Mutation @extends {
-  """
-  This is an anonymized description
-  """
-  field20339(
-  arg1692: Input4171!): Type2707!
-  """
-  This is an anonymized description
-  """
-  field20340(
-  arg1692: Input4172!): Type2707!
-}
+scalar Scalar1
 
-input Input4171 {
-  inputField3079: String!
-  inputField7509: Scalar14!
-}
-
-input Input4172 {
-  inputField3079: String!
+"""
+This is an anonymized description
+"""
+type Type9333 {
+  field5303: Scalar1
+  field3: Scalar14
 }
 
 type Query @extends {
-  """
-  This is an anonymized description
-  """
-  field20341(
-  arg1693: [String] = []): [Type2707]
-  """
-  This is an anonymized description
-  """
-  field20342(
-  arg1613: String!): Type2707
-  """
-  This is an anonymized description
-  """
-  field20343(
-  arg1694: Scalar1!
-  arg1695: Scalar14!): Type9205
+  field20475(arg1700: [ID!]!): [Type9333!]
+  field20476(arg1: [ID!]!): [Type2411]
+  field20477(arg23: ID!): Type2411
+  field20478(arg63: String!): [Type2411]
+  field20479(arg29: Scalar1!): [Type2411]
 }
 
-scalar Scalar1
-
-type Type2520 @key(fields: "field2") @extends {
-  field2: Int! @external
-  field3028: String
-}
-
-type Type4 @key(fields: "field2") @extends {
-  field2: ID! @external
-  """
-  This is an anonymized description
-  """
-  field3028: String
-}
-
-type Type2707 @key(fields: "field2") {
-  field2: Scalar1
-  field44: Scalar1
-  field94: Scalar14
-  field96: Scalar14
-  field6406: String
-  field20344: Scalar14
-}
-
-type Type9205 {
-  field20345: String
-  field20346: String
-  field8427: String
-  field8425: Int
-  field4175: Scalar14
-  field20347: Int
-  field20348: Int
-  field20349: Int
+type Type2411 @key(fields: "field5303") {
+  field5303: ID!
+  field80: String
+  field1225: String
+  field67: String
+  field3: Scalar14
+  field20480: Scalar1
+  field109: Scalar1
+  field7112: Boolean
+  field20481: String
 }

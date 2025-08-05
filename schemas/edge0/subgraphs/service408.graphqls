@@ -1,24 +1,21 @@
 type Query @extends {
-  field21829(arg1547: ID!): Type2342
+  field22102(arg29: Int!, arg121: ID!): [Type9964!]
 }
 
-type Mutation @extends {
-  field21830(arg1: Input4384): Type2342
-  field21831(arg1547: ID!, arg1807: Int!, arg1808: Int!): Type2342
-  field21832(arg1547: ID!, arg1809: Int!): Type2342
+input Input4480 {
+  inputField187: Int!
+  inputField136: Int!
 }
 
-type Type2342 @key(fields: "field4981") {
-  field4981: ID!
-  field21833: String
-  field10475: Float!
-  field13903: Int!
-  field21834: Int!
-  field21835: Int!
+type Type29 @key(fields: "field109") @extends {
+  field109: Int! @external
 }
 
-input Input4384 {
-  inputField7773: ID!
-  inputField7774: String!
-  inputField3725: Float!
+type Type184 @key(fields: "field2") @extends {
+  field2: Int! @external
+}
+
+type Type9964 {
+  field108: Type29!
+  field714: Type184!
 }

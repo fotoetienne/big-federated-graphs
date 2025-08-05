@@ -1,18 +1,166 @@
-type Query {
-  field12310(arg1084: String): [Type5899]
-  field12311: [Type32]
+type Query @extends {
+  field13018(arg508: ID!): Type2296 @external
+  field13019(arg1125: String!): Type2323
+  field13020(arg23: ID!): Type2322
+  field13021(arg26: Int, arg25: String, arg28: Int, arg27: String): Type6161
+  field13022(arg26: Int, arg6: String!, arg34: Input2442, arg1126: String): [Type6164] @experimental
+  field13023: [Type6172!]
+  field13024(arg23: ID!): Type6172
 }
 
-type Type5899 {
-  field341: String
+"This is an anonymized description"
+type Type2321 @key(fields: "field5117") {
+  "This is an anonymized description"
+  field5117: ID!
+  "This is an anonymized description"
+  field5127: Type2322
 }
 
-type Type5900 {
-  field2: String
-  field279: String
+type Type2322 @key(fields: "field2") {
+  field2: ID!
+  field631: String!
+  field677: String!
+  field5213: Type2323
+  field265: Scalar14!
+  field266: Scalar14!
+  field13025: Type6160!
 }
 
-type Type32 @key(fields: "field107") @extends {
-  field107: Int @external
-  field1513: Type5900
+type Type6160 {
+  field13026: Scalar16!
+  field13027: String!
+}
+
+type Type6161 {
+  field367: Int!
+  field366: Type6162
+  field4385: [Type2322!]!
+  field176: [Type6163!]!
+}
+
+type Type6162 {
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
+  field569: String
+}
+
+type Type6163 {
+  field177: Type2322!
+  field369: String!
+}
+
+enum Enum1391 {
+  VALUE_2841
+  VALUE_4989
+}
+
+enum Enum1392 {
+  VALUE_15
+  VALUE_16
+}
+
+input Input2442 {
+  inputField33: Enum1392!
+  inputField60: Enum1391!
+}
+
+type Type6164 {
+  field2: String!
+  field677: String!
+  field269: String!
+  field1400: Scalar14!
+  field265: Scalar14!
+  field13028: String!
+}
+
+type Type2323 @key(fields: "field2") {
+  field2: ID!
+  field1810: String!
+  field11: String!
+  field133: String!
+  field1379: String!
+  field999: String
+  field13021(arg26: Int, arg25: String, arg28: Int, arg27: String, arg34: Input2442): Type6161
+  field13020(arg998: String!): Type2322
+}
+
+type Type2296 @key(fields: "field5117") @extends {
+  field5117: ID! @external
+  field13022(arg26: Int, arg6: String!, arg34: Input2442, arg1126: String): [Type6164] @experimental
+}
+
+type Type6165 {
+  field11: String!
+  field36: String!
+}
+
+type Type6166 {
+  field3519: Int!
+  field7686: Int!
+  field13029: Int!
+  field13030: Int!
+  field10447: Int!
+  field13031: Int!
+  field13032: [Type6165]
+  field13033: String
+}
+
+enum Enum1393 {
+  VALUE_4990
+  VALUE_4991
+  VALUE_4992
+  VALUE_4993
+  VALUE_4994
+  VALUE_4995
+  VALUE_4996
+  VALUE_4997
+}
+
+enum Enum1394 {
+  VALUE_4998
+  VALUE_4999
+  VALUE_5000
+}
+
+type Type6167 {
+  field100: Enum1394!
+  field152: String!
+  field9524: String
+}
+
+type Type6168 {
+  field13034: Type6167!
+  field13035: Type6167
+  field10656: Type6167!
+}
+
+type Type6169 {
+  field13036: Scalar14!
+  field13037: Type6168!
+}
+
+type Type6170 {
+  field3532: String!
+  field3533: String!
+}
+
+type Type6171 {
+  field13038: Scalar14!
+  field13039: Scalar14!
+  field13040: Int!
+}
+
+type Type6172 {
+  field2: String!
+  field5342: String!
+  field13041: String!
+  field2789: Type6166!
+  field265: Scalar14!
+  field100: Enum1393!
+  field13042: Type6169!
+  field13043: Int!
+  field13044: Scalar14!
+  field13045: Type6170!
+  field13046: Type6171!
 }

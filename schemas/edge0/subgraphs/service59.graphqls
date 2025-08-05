@@ -1,91 +1,59 @@
-type Query @extends {
-  field1990(arg199: [Enum206], arg11: [String], arg196: [Int], arg200: [String]): [Type627]
-  field1991(arg199: [Enum206], arg11: [String], arg196: [Int]): [Type627]
-  field1992: [Type29]
+directive @directive1(arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Query {
+  field2917: [Type978] @directive1(arg47: "anonymous-string")
+  field2918(arg286: [String!]!): [Type978] @directive1(arg47: "anonymous-string")
+  field2919: [Type978] @directive1(arg47: "anonymous-string")
+  field2920: [Type981!] @directive1(arg47: "anonymous-string")
+  field2921: [Type982!]
 }
 
-type Mutation @extends {
-  field1993(arg201: [Input306]): Type632
-  field1994(arg202: [Input307]): Type632
-  field1995(arg11: [String]): Type632
-  field1996(arg11: [String]): Type632
-  field1997(arg11: [String]): Type632
-  field1998(arg11: [String]): Type632
+type Mutation @directive1(arg47: "anonymous-string") {
+  field2922(arg287: ID!, arg288: ID!): Type978
 }
 
-type Subscription @extends {
-  field1999: Type628
+type Type978 @directive1(arg47: "anonymous-string") {
+  field2: ID @directive2
+  field11: String!
+  field2923: String @directive1(arg47: "anonymous-string")
+  field2924: Type979
+  field2925: Type980
+  field2926: Boolean
+  field2927: Type981
 }
 
-type Type32 @key(fields: "field107") @extends {
-  field107: Int! @external
+type Type979 {
+  field171: ID
 }
 
-type Type29 @key(fields: "field957") @extends {
-  field957: String @external
+type Type980 {
+  field2: ID
 }
 
-type Type627 {
-  field2: ID!
-  field252: Scalar13!
-  field1160: Scalar13!
-  field1466: Scalar13
-  field285: Enum206
-  field260: Enum207
-  field107: Int
-  field1512: String
-  field120: Type32
+type Type981 @directive1(arg47: "anonymous-string") {
+  field2: ID
+  field11: String
+  field2928: [Type978!]
 }
 
-type Type628 {
-  field2: ID!
-  field285: Enum206
-  field260: Enum207
-  field107: Int
-  field1512: String
+type Type982 @directive1(arg47: "anonymous-string") {
+  field2: ID @directive2
+  field11: String!
+  field2924: Type979
+  field2929: [Type983]
 }
 
-type Type629 {
-  field155: Type627
+type Type983 @directive1(arg47: "anonymous-string") {
+  field2: ID! @directive2
+  field11: String
+  field715: Type984
+  field2930: Boolean
 }
 
-type Type630 {
-  field87: String!
-}
-
-type Type631 {
-  field155: [Type627]
-}
-
-type Type632 {
-  field244: Type631
-  field245: [Type630]
-}
-
-input Input306 {
-  inputField108: Enum206
-  inputField171: Int
-  inputField672: String
-  inputField597: Scalar13!
-}
-
-input Input307 {
-  inputField7: ID!
-  inputField672: String
-}
-
-enum Enum206 {
-  VALUE_1101
-  VALUE_1102
-}
-
-"""
-This is an anonymized description
-"""
-enum Enum207 {
-  VALUE_975
-  VALUE_149
-  VALUE_1103
-  VALUE_1104
-  VALUE_199
+type Type984 {
+  field2931: String
+  field304: String
+  field303: String
 }

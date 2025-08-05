@@ -1,188 +1,134 @@
-type Query @extends {
-  field28528(arg2380: [String!]!): [Type14138!]
-  field28529(arg2380: [String!], arg2381: String, arg2382: Scalar11, arg2383: Scalar11, arg2384: String, arg2385: String, arg2386: Scalar11, arg2387: Scalar11, arg415: String, arg2388: String): [Type14138!]
-  field28530(arg2389: [String!]!): [Type14139!]
-  field28531(arg2389: [String!], arg2390: String, arg2391: String): [Type14139!]
-  field28532(arg2392: [String!]!): [Type14140!]
-  field28533(arg2392: [String!], arg2393: String, arg2381: String, arg2382: Scalar11, arg2383: Scalar11, arg2394: Scalar11, arg2395: String, arg2396: String, arg2385: String, arg2386: Scalar11, arg2397: String, arg2398: String, arg2399: String, arg53: String, arg415: String): [Type14140!]
-  field28534(arg2400: [String!]!): [Type14141!]
-  field28535(arg2401: Scalar11, arg2402: Int, arg2381: String, arg2384: String, arg2395: String, arg2403: String, arg2404: Scalar11, arg2405: String, arg2406: Int, arg2407: String, arg2400: [String!], arg429: String): [Type14141!]
+type Type409 @extends @key(fields: "field2") {
+  field2: ID @external
 }
 
-"This is an anonymized description"
-scalar Scalar1
-
-"""
-This is an anonymized description
-"""
-type Type14138 {
-  field4323: String
-  field22073: String
-  field28536: Scalar11
-  field28537: Scalar9
-  field28538: String
-  field28539: String
-  field28540: String
-  field28541: Scalar11
-  field28542: String
-  field4321: Scalar11
-  field28543: String
-  field4320: String
-  field28544: String
-  field28545: Scalar9
-  field20049: String
-  field28546: String
-  field28547: Scalar11
-  field4698: Scalar11
-  field28548: String
-  field28549: String
-  field28550: Scalar9
-  field28551: String
-  field28552: Scalar11
-  field28553: Scalar9
-  field28554: String
-  field28555: String
-  field28556: Scalar9
-  field28557: Scalar9
-  field113: String
-  field4156: String
-  field28558: String
-  field28559: Scalar11
-  field28560: String
-  field28561: String
+type Type426 @key(fields: "field1390 field1416") @extends {
+  field1390: ID! @external
+  field1416: Enum576 @external
 }
 
-"""
-This is an anonymized description
-"""
-type Type14139 {
-  field2081: Int
-  field28562: String
-  field27187: String
-  field28563: String
-  field28564: String
+type Type412 @extends @key(fields: "field1379") {
+  field1379: String @external
 }
 
-"""
-This is an anonymized description
-"""
-type Type14140 {
-  field28565: Scalar9
-  field28566: Scalar9
-  field4323: String
-  field28567: String
-  field28568: Scalar9
-  field28569: Scalar9
-  field28570: String
-  field28536: Scalar11
-  field28542: String
-  field4321: Scalar11
-  field28571: Scalar11
-  field28572: String
-  field28573: String
-  field28574: Scalar9
-  field28575: Scalar9
-  field28576: Scalar9
-  field28577: Scalar9
-  field28578: String
-  field28579: String
-  field28580: Scalar9
-  field28581: Scalar9
-  field28582: Scalar9
-  field28583: Scalar9
-  field28584: Scalar9
-  field28585: Scalar9
-  field28586: String
-  field4320: String
-  field28587: Scalar11
-  field28588: Scalar11
-  field20049: String
-  field28589: String
-  field28546: String
-  field28590: Int
-  field28591: Int
-  field28592: Float
-  field12151: String
-  field77: String
-  field28547: Scalar11
-  field20153: String
-  field4285: String
-  field4675: String
-  field28593: String
-  field28594: String
-  field28595: String
-  field486: String
-  field28596: String
-  field28597: String
-  field4156: String
-  field28598: String
-  field28599: Scalar9
-  field28600: Scalar9
+type Type424 @key(fields: "field80 field1413 field11 field1414") @extends {
+  field80: Enum581! @external
+  field1413: String! @external
+  field11: String! @external
+  field1414: String @external
 }
 
-"""
-This is an anonymized description
-"""
-type Type14141 {
-  field28601: Scalar11
-  field28602: Int
-  field28603: Scalar1
-  field28604: Int
-  field28605: String
-  field28606: String
-  field28607: String
-  field4323: String
-  field4221: Int
-  field56: String
-  field28608: Scalar1
-  field24451: Int
-  field28570: String
-  field28537: Scalar9
-  field28609: String
-  field28610: Scalar11
-  field4320: String
-  field28544: String
-  field20049: String
-  field28611: Int
-  field28612: Int
-  field27187: String
-  field22093: String
-  field28613: String
-  field28614: String
-  field28615: String
-  field28616: Scalar9
-  field28617: String
-  field28618: Scalar9
-  field28619: Int
-  field6252: String
-  field28620: Scalar11
-  field28548: String
-  field28621: Int
-  field28622: Scalar9
-  field28623: Scalar9
-  field28624: String
-  field28625: String
-  field486: String
-  field28626: String
-  field28627: Scalar9
-  field28628: Scalar9
-  field28629: Scalar1
-  field28630: String
-  field28631: Int
-  field28632: Scalar1
-  field28633: Int
-  field6253: String
-  field28634: String
-  field28635: Scalar1
-  field15825: Scalar1
-  field28636: Scalar1
-  field4156: String
-  field28637: Scalar1
-  field28638: Scalar9
-  field28639: String
-  field28640: Scalar9
-  field28641: String
-  field28642: String
-  field28643: String
-  field4148: String
+type Type14756 {
+  field2: String!
+  field245: Type3011
+}
+
+enum Enum3444 {
+  VALUE_154
+  VALUE_8022
+  VALUE_8945
+}
+
+enum Enum3445 {
+  VALUE_9943
+  VALUE_1226
+}
+
+type Type3011 implements Interface432 @extends @key(fields: "field1390 field80") {
+  field1390: ID! @external
+  field80: Enum580! @external
+  field11: String @override(from: "service430")
+  field198: String @override(from: "service430")
+  field1396: Interface430 @override(from: "service430")
+  field1391: Type409 @override(from: "service430")
+  field1392: Type424 @override(from: "service430")
+  field1393: Type426 @override(from: "service430")
+  field1394: Boolean @override(from: "service430")
+  field1395: Scalar16 @override(from: "service430")
+  field1399: [Type412!] @override(from: "service430")
+  field28945: [Interface864!]!
+}
+
+interface Interface864 {
+  field11: String!
+  field427: Enum3445!
+  field260: Enum3444!
+  field1226: Boolean!
+  field9083: String
+  field28946: String
+  field1396: Type14760
+}
+
+type Type14757 implements Interface864 {
+  field11: String!
+  field427: Enum3445!
+  field260: Enum3444!
+  field1226: Boolean!
+  field9083: String
+  field28946: String
+  field1396: Type14760
+}
+
+type Type14758 implements Interface864 {
+  field11: String!
+  field427: Enum3445!
+  field260: Enum3444!
+  field1226: Boolean!
+  field9083: String
+  field28946: String
+  field1396: Type14760
+}
+
+type Type14759 implements Interface864 {
+  field11: String!
+  field427: Enum3445!
+  field260: Enum3444!
+  field1226: Boolean!
+  field9083: String
+  field28946: String
+  field1396: Type14760
+}
+
+type Type14760 implements Interface430 {
+  field265: Scalar14 @external
+  field1400: Scalar14 @external
+  field906: Scalar14 @external
+}
+
+type Type14761 {
+  field167: Int
+  field1375: Int
+  field1376: Int
+  field1377: Int
+  field366: Type119!
+  field176: [Type14762!]
+}
+
+type Type14762 {
+  field177: Type14756
+}
+
+input Input6657 {
+  inputField337: [String] = []
+  inputField1: [Enum3444] = []
+}
+
+input Input6658 {
+  inputField60: Enum3446
+  inputField33: Enum3447
+}
+
+enum Enum3446 {
+  VALUE_1023
+  VALUE_9944
+  VALUE_9945
+}
+
+enum Enum3447 {
+  VALUE_15
+  VALUE_16
+}
+
+type Query {
+  field28947(arg8: Int = 0, arg90: Int = 0, arg33: Input6657, arg24: Input6658): Type14761
 }

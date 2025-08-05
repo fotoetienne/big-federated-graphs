@@ -1,74 +1,114 @@
 type Query {
-  field1066(arg97: ID!): Type387
-  field1067(arg10: Input137 = {}): [Type387]
-  field1068: [Type387]
+  field1752(arg169: String!): Type553
+  field1753(arg170: String!, arg8: Int!, arg90: Int!): Type558
+  field1754(arg170: String, arg8: Int!, arg90: Int!, arg24: String, arg171: String): Type556
+  field1755(arg169: String!): Type553
+  field1756(arg170: String, arg8: Int!, arg90: Int!): Type555
+  field1757(arg170: String!, arg8: Int!, arg90: Int!): Type558
+  field1758: Boolean!
 }
 
 type Mutation {
-  field1069(arg98: Input138!): Type387
-  field1070(arg99: Input139!): Type387
-  field1071(arg100: Input140!): [Type389]
+  field1759(arg169: String!): String
+  field1760(arg172: Input251!): Type553
+  field1761(arg172: Input249!): Type553
+  field1762(arg169: String!): String
+  field1763(arg172: Input251!): Type553
+  field1764(arg172: Input250!): Type553
+  field1765(arg173: Input253!): String
+  field1766(arg173: Input253!): String
+  field1767(arg169: String!): Type560
+  field1768: String
 }
 
-type Type387 {
-  field2: ID
-  field525: Enum115
-  field341: String
-  field253: String
-  field1072: Scalar13
-  field1073: String
-  field56: String
-  field748: [Type388]
-  field908: [Type389]
-  field1074: String
+type Type553 {
+  field152: String!
+  field1769: String!
+  field427: String
+  field1770: Type559
+  field1771: [Type557]
+  field1772: Scalar13!
+  field1773: Scalar13!
 }
 
-type Type388 {
-  field2: ID
-  field1075: Enum116
-  field1076: Scalar13
-  field57: String
-  field1077: String
+type Type554 {
+  field152: String!
+  field1769: String!
+  field1771: [String]
+  field1770: Type559
+  field1772: Scalar13!
+  field1773: Scalar13!
 }
 
-type Type389 {
-  field2: ID
-  field1078: String
-  field87: String
-  field1079: Scalar13
+type Type555 {
+  field1375: Int
+  field167: Int
+  field1774: Int
+  field126: Float
+  field1775: [Type553!]!
 }
 
-input Input137 {
-  inputField314: String
-  inputField123: String
+type Type556 {
+  field1375: Int
+  field167: Int
+  field1774: Int
+  field126: Float
+  field1775: [Type554!]!
 }
 
-input Input138 {
-  inputField315: Enum115 = VALUE_763
-  inputField123: String!
-  inputField103: String
-  inputField316: String
+type Type557 {
+  field1769: String
+  field1259: String
+  field1772: Scalar13
+  field1773: Scalar13
 }
 
-input Input139 {
-  inputField317: ID!
-  inputField318: Enum116!
-  inputField319: String
+type Type558 {
+  field1375: Int
+  field167: Int
+  field1774: Int
+  field126: Float
+  field1775: [Type557!]!
 }
 
-input Input140 {
-  inputField317: ID!
-  inputField248: String!
+type Type559 {
+  field1769: String!
+  field126: Float!
+  field1776: Float!
+  field1777: Float!
+  field1778: Float!
 }
 
-enum Enum115 {
-  VALUE_761
-  VALUE_762
-  VALUE_763
+type Type560 {
+  field1769: String!
+  field1770: Float!
+  field265: Scalar13!
 }
 
-enum Enum116 {
-  VALUE_764
-  VALUE_765
-  VALUE_766
+input Input249 {
+  inputField321: String!
+  inputField607: String!
+  inputField433: [String!]!
+}
+
+input Input250 {
+  inputField321: String!
+  inputField607: String
+  inputField433: [String!]!
+}
+
+input Input251 {
+  inputField321: String
+  inputField607: String!
+  inputField608: String
+  inputField433: [String!]
+}
+
+input Input252 {
+  inputField452: String!
+}
+
+input Input253 {
+  inputField452: String!
+  inputField609: String
 }

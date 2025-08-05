@@ -1,5 +1,77 @@
-type Type10005 {
-  field450: String!
-  field134: String!
-  field10171: String
+"""
+This is an anonymized description
+"""
+directive @directive1("""
+This is an anonymized description
+"""
+arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+type Type2412 @key(fields: "field5304") {
+  field5304: Int!
+  field22608: String
+  field108: Type29
+  field22609: Boolean
+  field22610: Int
+  field22611: Int
+  field22612: String
+  field22613: String
+  field22614: Scalar9
+  field22615: Scalar9
+  field22616: Int
+  field22617: Boolean
+  field22618: Int
+  field22619: String
+  field22620: Scalar9
+  field22621: String
+  field22622: Int
+  field22623: String
+  field22624: String
+  field3462: Scalar14
+  field14418: Int
+  field22625: Int
+  field22626: Int
+  field22627: Int
+  field2270: String
+  field22628: String
+  field22629: String
+  field22630: [Type2413]
+  field22631: [Type2413]
+  field7507: String
+}
+
+type Type2413 @key(fields: "field5305") {
+  field5305: Int!
+  field22632: String
+  field655: Type159
+  field22633: Scalar14
+  field22634: Int
+  field6166: String
+  field22635: String
+  field22636: String
+  field22637: String
+  field22638: String
+  field22610: Int
+  field22611: Int
+  field22639: String
+  field22640: [String]
+}
+
+"This is an anonymized description"
+scalar Scalar1
+
+type Query @extends @directive1(arg47: "anonymous-string") {
+  field22641(arg1859: [Int!]!): [Type2412]
+  field22642(arg1860: [Int!]!): [Type2413]
+  field22643(arg122: [Int!]!): [Type2412]
+  field22644(arg1861: [ID!]!): [Type2413]
+}
+
+type Type29 @extends @key(fields: "field109") {
+  field109: Int! @external
+  field22641: [Type2412!]
+}
+
+type Type159 @extends @key(fields: "field2") {
+  field2: ID! @external
+  field22642: [Type2413!]
 }

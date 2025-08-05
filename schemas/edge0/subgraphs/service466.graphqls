@@ -1,451 +1,83 @@
-directive @key(fields: String!) on OBJECT | INTERFACE
-
-directive @extends on OBJECT
-
-directive @external on FIELD_DEFINITION
-
-"""
-This is an anonymized description
-"""
-type Type11153 {
-  "This is an anonymized description"
-  field2: ID!
-  "This is an anonymized description"
-  field5035: Type2070
-  "This is an anonymized description"
-  field58: Enum2697
-  "This is an anonymized description"
-  field341: String
-  "This is an anonymized description"
-  field382: String
-  "This is an anonymized description"
-  field4141: Scalar8
-  """
-  This is an anonymized description
-  """
-  field24141: [Type11155]
-  "This is an anonymized description"
-  field94: Scalar14
-  "This is an anonymized description"
-  field95: Type29
-  "This is an anonymized description"
-  field96: Scalar14
-  "This is an anonymized description"
-  field97: Type29
-  "This is an anonymized description"
-  field24142: [Type11156] @experimental
-}
-
-"""
-This is an anonymized description
-"""
-type Type11154 {
-  "This is an anonymized description"
-  field2: ID!
-  "This is an anonymized description"
-  field23369: Int
-  "This is an anonymized description"
-  field23371: Int
-  "This is an anonymized description"
-  field24143: Int
-  "This is an anonymized description"
-  field23370: Int
-  "This is an anonymized description"
-  field24144: Int
-  "This is an anonymized description"
-  field24145: Int
-  "This is an anonymized description"
-  field24146: String
-  "This is an anonymized description"
-  field524: String @experimental
-}
-
-"""
-This is an anonymized description
-"""
-type Type11155 {
-  "This is an anonymized description"
-  field2: ID!
-  "This is an anonymized description"
-  field24147: Enum2696
-  "This is an anonymized description"
-  field24148: Type1804
-  "This is an anonymized description"
-  field188: Int
-  "This is an anonymized description"
-  field194: String
-  "This is an anonymized description"
-  field24149: Type11154
-  "This is an anonymized description"
-  field94: Scalar14
-  "This is an anonymized description"
-  field95: Type29
-  "This is an anonymized description"
-  field96: Scalar14
-  "This is an anonymized description"
-  field97: Type29
-}
-
-"""
-This is an anonymized description
-"""
-type Type11156 {
-  field24147: Enum2696
-  field1280: Int
-  field193: Type1804
-}
-
-"""
-This is an anonymized description
-"""
-enum Enum2696 {
-  "This is an anonymized description"
-  VALUE_232
-  "This is an anonymized description"
-  VALUE_8764
-  "This is an anonymized description"
-  VALUE_8765
-}
-
-"""
-This is an anonymized description
-"""
-enum Enum2697 {
-  "This is an anonymized description"
-  VALUE_1567
-  "This is an anonymized description"
-  VALUE_975
-  "This is an anonymized description"
-  VALUE_149
-  "This is an anonymized description"
-  VALUE_151
-}
-
-"""
-This is an anonymized description
-"""
-type Type29 @key(fields: "field98") @extends {
-  field98: ID! @external
-}
-
-"""
-This is an anonymized description
-"""
-type Type2070 @key(fields: "field2") @extends {
-  field2: ID! @external
-}
-
 type Mutation @extends {
-  """
-  This is an anonymized description
-  """
-  field24150(
-  "This is an anonymized description"
-  arg1: Input5011!): Type11157!
-  """
-  This is an anonymized description
-  """
-  field24151(
-  "This is an anonymized description"
-  arg1957: ID!
-  "This is an anonymized description"
-  arg1: Input5012!): Type11157!
-  """
-  This is an anonymized description
-  """
-  field24152(
-  "This is an anonymized description"
-  arg1958: [ID]!): Type11158!
-  """
-  This is an anonymized description
-  """
-  field24153(
-  """
-  This is an anonymized description
-  """
-  arg1957: ID
-  "This is an anonymized description"
-  arg1: Input5015!): Type11160!
-  """
-  This is an anonymized description
-  """
-  field24154(
-  """
-  This is an anonymized description
-  """
-  arg1957: ID
-  "This is an anonymized description"
-  arg1: [Input5015!]!): Type11161!
-  """
-  This is an anonymized description
-  """
-  field24155(
-  "This is an anonymized description"
-  arg1959: ID!
-  "This is an anonymized description"
-  arg1: Input5016!): Type11160!
-  """
-  This is an anonymized description
-  """
-  field24156(
-  "This is an anonymized description"
-  arg1960: [ID]!): Type11162!
-  """
-  This is an anonymized description
-  """
-  field24157(
-  """
-  This is an anonymized description
-  """
-  arg1957: ID!
-  "This is an anonymized description"
-  arg1961: ID!
-  "This is an anonymized description"
-  arg1962: ID!): Type11163
-  """
-  This is an anonymized description
-  """
-  field24158: Type11159
+  field24049(arg1646: Input5081!): Type11059!
 }
 
-"""
-This is an anonymized description
-"""
-input Input5011 {
-  "This is an anonymized description"
-  inputField30: ID!
-  """
-  This is an anonymized description
-  """
-  inputField135: Enum2697
-  "This is an anonymized description"
-  inputField123: String
-  "This is an anonymized description"
-  inputField620: String
-  "This is an anonymized description"
-  inputField1692: Scalar8
-}
-
-"""
-This is an anonymized description
-"""
-input Input5012 {
-  "This is an anonymized description"
-  inputField135: Enum2697
-  "This is an anonymized description"
-  inputField123: String
-  "This is an anonymized description"
-  inputField1692: Scalar8
-}
-
-"""
-This is an anonymized description
-"""
-type Type11157 {
-  "This is an anonymized description"
-  field24159: Type11153
-}
-
-"""
-This is an anonymized description
-"""
-type Type11158 {
-  "This is an anonymized description"
-  field24160: Int
-}
-
-"""
-This is an anonymized description
-"""
-type Type11159 {
-  "This is an anonymized description"
-  field24161: Int
-}
-
-"""
-This is an anonymized description
-"""
-input Input5013 {
-  "This is an anonymized description"
-  inputField8520: Int!
-  "This is an anonymized description"
-  inputField8521: Int!
-  "This is an anonymized description"
-  inputField8522: Int!
-  "This is an anonymized description"
-  inputField8523: Int!
-  "This is an anonymized description"
-  inputField8524: Int!
-  "This is an anonymized description"
-  inputField8525: Int!
-  "This is an anonymized description"
-  inputField8526: String!
-  "This is an anonymized description"
-  inputField432: String
-}
-
-"""
-This is an anonymized description
-"""
-input Input5014 {
-  "This is an anonymized description"
-  inputField8520: Int
-  "This is an anonymized description"
-  inputField8521: Int
-  "This is an anonymized description"
-  inputField8522: Int
-  "This is an anonymized description"
-  inputField8523: Int
-  "This is an anonymized description"
-  inputField8524: Int
-  "This is an anonymized description"
-  inputField8525: Int
-  "This is an anonymized description"
-  inputField8526: String
-  "This is an anonymized description"
-  inputField432: String
-}
-
-"""
-This is an anonymized description
-"""
-input Input5015 {
-  "This is an anonymized description"
-  inputField8527: Enum2696!
-  "This is an anonymized description"
-  inputField80: Int
-  "This is an anonymized description"
-  inputField8528: Input5017
-  "This is an anonymized description"
-  inputField102: String
-  "This is an anonymized description"
-  inputField8529: Input5013
-}
-
-"""
-This is an anonymized description
-"""
-input Input5016 {
-  "This is an anonymized description"
-  inputField8527: Enum2696
-  "This is an anonymized description"
-  inputField80: Int
-  "This is an anonymized description"
-  inputField8528: Input5017
-  "This is an anonymized description"
-  inputField102: String
-  "This is an anonymized description"
-  inputField8529: Input5014
-}
-
-"""
-This is an anonymized description
-"""
-input Input5017 {
-  inputField91: Scalar9
-  inputField1692: Scalar8
-}
-
-"""
-This is an anonymized description
-"""
-type Type11160 {
-  "This is an anonymized description"
-  field24162: Type11155
-}
-
-"""
-This is an anonymized description
-"""
-type Type11161 {
-  "This is an anonymized description"
-  field24163: [Type11155]
-}
-
-"""
-This is an anonymized description
-"""
-type Type11162 {
-  "This is an anonymized description"
-  field24160: Int
-}
-
-"""
-This is an anonymized description
-"""
-type Type11163 {
-  "This is an anonymized description"
-  field24164: [Type11164]
-}
-
-"""
-This is an anonymized description
-"""
-type Type11164 {
-  "This is an anonymized description"
-  field24165: ID
-  "This is an anonymized description"
-  field23369: Int
-  "This is an anonymized description"
-  field23371: Int
-  "This is an anonymized description"
-  field24143: Int
-  "This is an anonymized description"
-  field23370: Int
-  "This is an anonymized description"
-  field24144: Int
-  "This is an anonymized description"
-  field24145: Int
-  "This is an anonymized description"
-  field24146: String
-  "This is an anonymized description"
-  field524: String @experimental
+input Input5081 {
+  inputField3168: String!
+  inputField700: String!
+  inputField7367: String!
+  inputField7368: String!
 }
 
 type Query @extends {
+  field24050(arg23: String!): Type2707
   """
   This is an anonymized description
   """
-  field24166(
-  "This is an anonymized description"
-  arg7: Int = 0
-  "This is an anonymized description"
-  arg6: String
-  "This is an anonymized description"
-  arg1963: [ID]): Type11165
+  field24051(
+  arg307: String!): String
   """
   This is an anonymized description
   """
-  field24167(
-  arg4: ID!): Type11153
+  field24052(
+  arg1972: ID!): [Type2707!]!
   """
   This is an anonymized description
   """
-  field24168(
-  "This is an anonymized description"
-  arg1957: String
+  field24053(
+  arg1973: String!): [Type2707!]!
   """
   This is an anonymized description
   """
-  arg1964: Int = 0
-  """
-  This is an anonymized description
-  """
-  arg1965: Int): [Type11155]
+  field24054(
+  arg7: String!
+  arg1974: Int): [Type2707!]!
 }
 
-"""
-This is an anonymized description
-"""
-type Type11165 {
-  field36: [Type11166]
-  field37: Type122!
+scalar Scalar1
+
+type Type2707 @key(fields: "field752") {
+  field5335: Scalar1!
+  field752: String!
+  field152: String
+  field3648: String
+  field24055: Scalar1
+  field24056: Scalar1
+  field1786: Scalar11
+  field1413: String!
+  field21: String
+  field1522: String
+  field9054: Boolean!
+  field21856: Type11058
+  field128: Type11058
+  field9682: Boolean!
+  field19415: String
+  field2806: [String!]!
+  field2632: Scalar11
 }
 
-"""
-This is an anonymized description
-"""
-type Type11166 {
-  field41: String!
-  field40: Type11153
+type Type11058 {
+  field3562: String
+  field337: String
+  """
+  This is an anonymized description
+  """
+  field7992: String
+  field1226: Boolean
+}
+
+type Type5 @key(fields: "field2") @extends {
+  field2: Scalar1! @external
+  field24057: [Type2707!]
+}
+
+type Type2747 @key(fields: "field5338 field5339") @extends {
+  field5338: Scalar1 @external
+  field5339: String @external
+  field12469: Type2707
+}
+
+type Type11059 {
+  field1433: String!
+  field24058: String!
 }

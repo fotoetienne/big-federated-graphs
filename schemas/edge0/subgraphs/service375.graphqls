@@ -1,125 +1,164 @@
+type Type2136 @extends @key(fields: "field308") {
+  field308: String! @external
+  field3572: String
+}
+
+type Type3087 @key(fields: "field556") {
+  field128: Type7869!
+  field15096: Type9047!
+  field554: Float!
+  field198: String
+  field209: Type7117!
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field4111: Type9049!
+  field560: ID!
+  field100: Enum2184!
+  field58: String
+}
+
+type Type9044 {
+  field176: [Type9045!]
+  field366: Type119!
+}
+
+type Type9045 {
+  field369: String
+  field177: Type3087!
+}
+
+type Type9046 {
+  field308: String!
+  field319: Float!
+  field320: Float!
+  field108: Type29
+}
+
+type Type9047 {
+  field176: [Type9048!]
+  field366: Type119!
+}
+
+type Type9048 {
+  field369: String
+  field177: Type9046!
+}
+
+type Type29 @extends @key(fields: "field109") {
+  field109: Int! @external
+}
+
 type Mutation @extends {
-  field19542(arg1: Input4049!): Type431!
-  field19543(arg1: Input4052!): Type431!
-  field19544(arg1: Input4053!): Type431!
-  field19545(arg1: Input4055!): Type8918!
+  field20059(arg20: Input4149!): Type9051!
 }
 
-type Type8915 {
-  field252: Float!
-  field253: String
-  field254: ID
-  field255: ID!
-  field256: String!
-  field257: String!
-  field258: ID
-  field259: ID!
-  field260: Enum2117!
-  field44: String
-}
-
-type Type8916 {
-  field36: [Type8917!]
-  field37: Type122!
-}
-
-type Type8917 {
-  field41: String
-  field40: Type8915!
-}
-
-type Type122 {
-  field269: String
-  field270: Boolean!
-  field271: Boolean!
-  field272: String
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
 }
 
 type Query @extends {
-  field19546(arg33: ID!): Type8915
-  field19547(arg1: Input48!): Type8916!
+  field20060(arg49: ID!): Type3087
+  field20061(arg20: Input48!): Type9044!
 }
 
-type Type431 {
-  field263: String!
-  field260: String!
+type Type9049 {
+  field176: [Type9050!]
+  field366: Type119!
 }
 
-type Type8918 {
-  field275: Type8915
+type Type9050 {
+  field369: String
+  field177: Type2136!
 }
 
-enum Enum2117 {
-  VALUE_199
-  VALUE_151
-  VALUE_7045
-  VALUE_158
-  VALUE_152
-  VALUE_7046
-  VALUE_149
-  VALUE_1220
+type Type7117 {
+  field176: [Type7118!]
+  field366: Type119!
 }
 
-input Input4049 {
-  inputField103: String
-  inputField104: String
-  inputField105: String!
+type Type7118 {
+  field369: String
+  field177: Type29!
 }
 
-input Input4050 {
-  inputField579: Input4051
+type Type7869 {
+  field176: [Type7870!]
+  field366: Type119!
 }
 
-input Input4051 {
-  inputField170: String!
-  inputField7307: String!
-  inputField7308: String!
-  inputField531: String!
-  inputField7309: String!
-  inputField7310: Input4054!
+type Type7870 {
+  field369: String
+  field177: Type26!
 }
 
-input Input4052 {
-  inputField103: String
-  inputField104: String
-  inputField105: String!
+type Type9051 {
+  field575: Type3087
 }
 
-input Input4053 {
-  inputField103: String
-  inputField104: String
-  inputField105: String!
+type Type26 @extends @key(fields: "field132") {
+  field132: ID! @external
 }
 
-input Input4054 {
-  inputField2586: String!
-  inputField171: Float!
-  inputField5011: String!
+enum Enum2184 {
+  VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
+}
+
+enum Enum31 {
+  VALUE_214
+  VALUE_215
+}
+
+input Input4148 {
+  inputField187: Int!
 }
 
 input Input48 {
-  inputField106: String!
-  inputField107: Boolean! = false
+  inputField113: String!
+  inputField114: Boolean! = false
+}
+
+input Input49 {
+  inputField16: String!
+  "This is an anonymized description"
+  inputField115: Enum31!
 }
 
 input Input50 {
   "This is an anonymized description"
-  inputField109: String
+  inputField116: String
   "This is an anonymized description"
-  inputField110: Int!
+  inputField117: Int!
   "This is an anonymized description"
-  inputField111: Int!
+  inputField118: Int!
   "This is an anonymized description"
-  inputField112: Int!
+  inputField119: Int!
 }
 
-input Input4055 {
-  inputField113: String
-  inputField103: String
-  inputField104: String
-  inputField114: String
-  inputField128: Input4050!
-  inputField116: Input50
-  inputField118: String
-  inputField119: String
+input Input4149 {
+  inputField120: String
+  inputField110: String
+  "This is an anonymized description"
+  inputField111: String
+  inputField121: String
+  inputField135: Input4148!
+  "This is an anonymized description"
+  inputField122: Input49
+  "This is an anonymized description"
+  inputField123: Input50
+  "This is an anonymized description"
+  inputField124: String
+  "This is an anonymized description"
+  inputField125: String
+  "This is an anonymized description"
+  inputField126: String
 }

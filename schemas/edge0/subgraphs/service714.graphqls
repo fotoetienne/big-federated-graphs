@@ -1,14 +1,89 @@
+directive @directive1("""
+This is an anonymized description
+"""
+arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+"""
+This is an anonymized description
+"""
 type Query @extends {
-  field33626(arg265: String!): [Type16796!]
+  field33318(arg20: Input7979, arg8: Int, arg116: Int): Type17027 @directive1(arg47: "anonymous-string")
+  field33319(arg23: String!): Type17029 @directive1(arg47: "anonymous-string")
 }
 
-type Type16796 {
+"""
+This is an anonymized description
+"""
+type Type29 @key(fields: "field109") @extends {
+  field109: Int! @external
+  field33320: Type17027 @directive1(arg47: "anonymous-string")
+}
+
+"""
+This is an anonymized description
+"""
+input Input7979 {
+  inputField233: [Int!]
+  inputField352: [Int!]
+  inputField641: [String!]
+}
+
+type Type17027 {
+  field366: Type119
+  field176: [Type17028]
+}
+
+type Type17028 {
+  field369: String!
+  field177: Type17029
+}
+
+"""
+This is an anonymized description
+"""
+type Type17029 @directive1(arg47: "anonymous-string") {
+  "This is an anonymized description"
+  field2: ID!
+  "This is an anonymized description"
+  field21: String
+  "This is an anonymized description"
+  field883: String
+  "This is an anonymized description"
+  field109: Int @directive2
   """
   This is an anonymized description
   """
-  field10493: String
+  field1444: String
   """
   This is an anonymized description
   """
-  field5: String
+  field1445: Int
+  """
+  This is an anonymized description
+  """
+  field1446: String
+  """
+  This is an anonymized description
+  """
+  field789: String
+  """
+  This is an anonymized description
+  """
+  field1449: String
+  """
+  This is an anonymized description
+  """
+  field1447: String
+  """
+  This is an anonymized description
+  """
+  field1448: String
+  "This is an anonymized description"
+  field33321: String
+  "This is an anonymized description"
+  field1452: String
+  "This is an anonymized description"
+  field1453: String
 }

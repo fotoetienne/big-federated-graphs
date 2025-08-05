@@ -1,35 +1,63 @@
 type Query @extends {
-  field21807: [Type9741!]!
-  field21808(arg4: ID!): Type9741
+  field22066: Type9950
+}
+
+type Subscription @extends {
+  field22067: Interface409
+}
+
+type Type29 @key(fields: "field109") @extends {
+  field109: Int! @external
+  field22068: Type9950
+}
+
+type Type9950 {
+  field366: Type119!
+  field176: [Type9951]
+}
+
+type Type9951 {
+  field369: String!
+  field177: Interface409
+}
+
+interface Interface409 {
+  field108: Type29
+  field2: ID
+  field8374: String
+  field1371: Scalar13
+}
+
+type Type9952 implements Interface409 {
+  field108: Type29
+  field2: ID
+  field22069: Int
+  field8374: String
+  field1371: Scalar13
+  field198: String
+}
+
+type Type9953 implements Interface409 {
+  field108: Type29
+  field2: ID
+  field432: Float
+  field8374: String
+  field1371: Scalar13
+  field427: Enum2463
+  field682: String
+}
+
+enum Enum2463 {
+  VALUE_7824
+  VALUE_7825
 }
 
 type Mutation @extends {
-  field21808(arg1: Input4380!): Type9741!
+  field22070(arg1836: Input4469): Type9950
 }
 
-type Type9741 {
-  field2: ID!
-  field6074: Type2347!
-  field21809: Type9742!
-}
-
-type Type9742 {
-  field3128: String!
-  field3129: String!
-  field1088: String!
-}
-
-input Input4380 {
-  inputField2255: ID!
-  inputField7772: Input4381!
-}
-
-input Input4381 {
-  inputField2268: String!
-  inputField2269: String!
-  inputField214: String!
-}
-
-type Type2347 @extends @key(fields: "field2") {
-  field2: ID! @external
+input Input4469 {
+  inputField187: Int!
+  inputField7963: Int
+  inputField110: String
 }

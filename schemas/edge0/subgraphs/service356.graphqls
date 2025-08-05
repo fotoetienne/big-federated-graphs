@@ -1,71 +1,56 @@
-type Query @extends {
-  field18970(arg12: Int): Type8561
-}
-
-type Mutation @extends {
+"""
+This is an anonymized description
+"""
+type Type2953 implements Interface102 @key(fields: "field5360") @directive3(arg422: "anonymous-string") {
   """
   This is an anonymized description
   """
-  field18971(
-  arg1: Input3938!): Type8564!
+  field19508: String @directive3(arg422: "anonymous-string")
   """
   This is an anonymized description
   """
-  field18972(
-  arg1: Input3940!): Type8565!
+  field19509: [Type2953] @directive3(arg422: "anonymous-string")
   """
   This is an anonymized description
   """
-  field18973(
-  arg1: Input3939!): Type8563!
+  field19510: String @directive3(arg422: "anonymous-string")
+  """
+  This is an anonymized description
+  """
+  field5360: ID! @directive3(arg422: "anonymous-string")
+  """
+  This is an anonymized description
+  """
+  field19511: String @directive3(arg422: "anonymous-string")
+  field4407: ID!
+  field4403: Type1637! @experimental
 }
 
-type Type8561 {
-  field107: ID!
-  field18974: Scalar14
-  field18975: Scalar14
-  field11009: Boolean
-  field18976: [Type8562]
+"This is an anonymized description"
+directive @directive3(arg422: String!) repeatable on OBJECT | FIELD_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE
+
+type Type1637 {
+  field4408: Scalar1! @experimental
+  field4409: Scalar14 @experimental
+  field4410: Scalar14 @experimental
 }
 
-type Type8562 {
-  field1154: ID!
-  field15050: Scalar14
-  field18977: Scalar14
+input Input762 {
+  """
+  This is an anonymized description
+  """
+  inputField1708: Scalar14 @experimental
 }
 
-input Input3938 {
-  inputField171: ID!
-  inputField7175: Scalar14
-  inputField7176: Scalar14
+interface Interface102 {
+  """
+  This is an anonymized description
+  """
+  field4407: ID!
+  """
+  This is an anonymized description
+  """
+  field4403: Type1637! @experimental
 }
 
-input Input3939 {
-  inputField171: ID!
-  inputField7175: Scalar14
-  inputField7176: Scalar14
-  inputField7177: Boolean
-}
-
-type Type8563 {
-  field244: Boolean!
-  field87: String
-  field18978: Type8561
-}
-
-input Input3940 {
-  inputField171: ID!
-  inputField7177: Boolean!
-}
-
-type Type8564 {
-  field244: Boolean!
-  field87: String
-  field18978: Type8561
-}
-
-type Type8565 {
-  field244: Boolean!
-  field87: String
-  field18978: Type8561
-}
+scalar Scalar1

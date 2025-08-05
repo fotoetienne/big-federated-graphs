@@ -1,91 +1,159 @@
-type Query @extends {
-  field27282(arg1132: String): [Type13554]
-  field27283(arg2299: Int, arg1132: String, arg1969: String): [Type13553]
-  field27284(arg2299: Int, arg1132: String): [Type13553]
-  field27285(arg1969: String, arg1132: String): Type13555
-  field27286(arg1132: String, arg1384: String, arg965: String, arg2300: String): Type13562
-  field27287(arg783: Int): [Type13551]
-  field27288(arg783: Int, arg2301: String, arg61: String, arg62: String): Type13561
-  field27289(arg783: Int, arg2302: [String], arg61: String, arg62: String): Type13560
+type Query {
+  """
+  This is an anonymized description
+  """
+  field27808(
+  arg2301: Input6285!): Type14139
+  """
+  This is an anonymized description
+  """
+  field27809(
+  arg2301: Input6285!
+  arg26: Int
+  arg2302: Int): Type14145
 }
 
-type Type13551 {
-  field4575: Int!
-  field5865: String!
-  field27290: Int
-  field27291: Int
-  field27292: String
-  field24111: String
-  field12301: String
+"""
+This is an anonymized description
+"""
+input Input6285 {
+  inputField3663: Scalar1!
+  inputField9529: Int
+  inputField395: Input6286
+  inputField9530: Boolean
+  inputField9531: Boolean
+  inputField9532: Boolean
+  inputField9533: Boolean
+  inputField9534: Boolean
+  inputField9535: Boolean
+  inputField9536: Boolean
+  inputField9537: Boolean
 }
 
-type Type13552 {
-  field675: Int
-  field676: Int
-  field8760: String
+"""
+This is an anonymized description
+"""
+input Input6286 {
+  inputField9538: Input6287
+  inputField9539: Input6288
+  inputField233: Input6289
 }
 
-type Type13553 {
-  field5021: String
-  field2017: Int
-  field4947: String
-  field27293: String
-  field27294: String
-  field799: String
-  field20010: String
+"""
+This is an anonymized description
+"""
+input Input6287 {
+  inputField9540: Scalar1
+  inputField9541: Scalar1
+  inputField9542: Int
+  inputField827: String
+  inputField9543: Enum3249
+  inputField9544: Enum3250
 }
 
-type Type13554 {
-  field27295: Boolean!
-  field2: ID!
-  field21169: Float!
-  field8104: String!
+"""
+This is an anonymized description
+"""
+input Input6288 {
+  inputField9545: Int
 }
 
-type Type13555 {
-  field5021: String!
-  field793: String!
-  field3042: String
-  field2381: Type13556
-  field738: Type13557
+"""
+This is an anonymized description
+"""
+input Input6289 {
+  inputField9546: [Int]
 }
 
-type Type13556 {
-  field799: String
-  field20010: String
-  field27296: String
-  field27297: String
+type Type14139 {
+  field27810: Type14140
+  field27811: Type14144
 }
 
-type Type13557 {
-  field786: String!
-  field27298: Boolean
-  field27299: String
+type Type14140 {
+  field5254: String
+  field325: [Type14142]
 }
 
-type Type13558 {
-  field27300: String
-  field148: String!
-  field149: Float!
+type Type14141 {
+  field25324: Scalar1
+  field4909: Int
+  field3384: String
+  field67: String
+  field25327: Int
+  field25328: Int
+  field25329: Int
+  field6477: Boolean
+  field7658: Int
+  field5293: Int
+  field27812: Type14143
+  field25330: Scalar1
+  field25331: Boolean
+  field25332: Enum3249
+  field3648: Boolean
+  field1445: Scalar1
+  field27813: Int
+  field27814: Boolean
+  field19779: String
+  field25333: String
+  field27815: Enum3250
 }
 
-type Type13559 {
-  field450: String!
-  field6458: [Type13558]
+type Type14142 {
+  field109: Int
+  field25322: Int
+  field2768: [Type14141]
+  field4957: String
+  field25323: Int
 }
 
-type Type13560 {
-  field4575: Int!
-  field27301: [Type13559]
+type Type14143 {
+  field4964: Enum3248
 }
 
-type Type13561 {
-  field4575: Int!
-  field5865: String!
-  field27301: [Type13559]
+type Type14144 {
+  field27816: Boolean
+  field27817: Boolean
 }
 
-type Type13562 {
-  field793: String!
-  field27301: [Type13559]
+type Type14145 {
+  field176: [Type14146]
+  field366: Type14147!
 }
+
+type Type14146 {
+  field369: String!
+  field177: Type14142
+}
+
+type Type14147 {
+  field570: Boolean
+  field12804: Int
+  field1376: Int
+  field27818: Int
+}
+
+enum Enum3248 {
+  VALUE_1819
+  VALUE_1291
+  VALUE_9585
+  VALUE_9586
+  VALUE_9587
+}
+
+enum Enum3249 {
+  VALUE_894
+  VALUE_9588
+  VALUE_1126
+}
+
+enum Enum3250 {
+  VALUE_9589
+  VALUE_9590
+  VALUE_9591
+  VALUE_9592
+}
+
+scalar Scalar1
+
+scalar Scalar3

@@ -1,148 +1,123 @@
-type Query {
-  field26927(arg2265: String, arg145: Int, arg780: String): Type13361
+type Type13943 {
+  field1946: [Type13944!]
 }
 
-type Mutation {
-  field26928(arg675: String, arg2266: ID): String
-  field26929(arg746: String, arg263: [Input6001!]): [Type2423!]
+type Type13944 {
+  field27473: Boolean!
+  field330: String!
+  field677: String!
+  field27474: Boolean!
+  field1446: String
+  field789: String!
 }
 
-input Input6001 {
-  inputField2830: ID!
-  inputField103: String
-  inputField2831: String
-  inputField9263: String
+type Type3119 @key(fields: "field556") {
+  field554: Float!
+  field198: String
+  field723: Type13943
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field100: Enum3182!
+  field58: String
 }
 
-type Type13360 {
-  """
-  This is an anonymized description
-  """
-  field5: String
-  """
-  This is an anonymized description
-  """
-  field524: Type2423!
-  """
-  This is an anonymized description
-  """
-  field26930: Type2424
+type Type13945 {
+  field176: [Type13946!]
+  field366: Type119!
 }
 
-type Type13361 {
-  field37: Type122!
-  field36: [Type13362!]
-  field1086: Int
+type Type13946 {
+  field369: String
+  field177: Type3119!
 }
 
-type Type13362 {
-  field40: Type13360!
+type Mutation @extends {
+  field27475(arg20: Input6168!): Type13947!
 }
 
-"""
-This is an anonymized description
-"""
-type Type2423 implements Interface421 @key(fields: "field1099") @extends {
-  """
-  This is an anonymized description
-  """
-  field1099: ID! @external
-  """
-  This is an anonymized description
-  """
-  field1103: Boolean @override(from: "service2")
-  """
-  This is an anonymized description
-  """
-  field1104: Scalar16 @override(from: "service2")
-  """
-  This is an anonymized description
-  """
-  field5: String @override(from: "service2")
-  """
-  This is an anonymized description
-  """
-  field253: String @override(from: "service2")
-  """
-  This is an anonymized description
-  """
-  field1105: Interface419 @override(from: "service2")
-  """
-  This is an anonymized description
-  """
-  field1100: Type394 @override(from: "service2")
-  """
-  This is an anonymized description
-  """
-  field1101: Type409 @override(from: "service2")
-  """
-  This is an anonymized description
-  """
-  field1102: Type411 @override(from: "service2")
-  """
-  This is an anonymized description
-  """
-  field1108: [Type397!] @override(from: "service2")
-  field2394: [Type13364!]
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
 }
 
-type Type13363 implements Interface419 {
-  """
-  This is an anonymized description
-  """
-  field94: Scalar14
-  """
-  This is an anonymized description
-  """
-  field1109: Scalar14
-  """
-  This is an anonymized description
-  """
-  field606: Scalar14
+type Query @extends {
+  field27476(arg49: ID!): Type3119
+  field27477(arg20: Input48!): Type13945!
 }
 
-type Type13364 {
-  field2248: Enum3119
-  field2458: Enum3120
-  field2625: String
-  field2627: String
+type Type13947 {
+  field575: Type3119
 }
 
-enum Enum3119 {
-  VALUE_1245
-  VALUE_1246
-  VALUE_1247
-  VALUE_1248
+enum Enum3182 {
+  VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
 }
 
-enum Enum3120 {
-  VALUE_421
-  VALUE_422
-  VALUE_1249
+enum Enum31 {
+  VALUE_214
+  VALUE_215
 }
 
-type Type394 @extends @key(fields: "field2") {
-  field2: ID @external
+input Input6166 {
+  inputField3105: [Input6167!]!
 }
 
-type Type409 @extends @key(fields: "field285 field1122 field5 field1123") {
-  field285: Enum548! @external
-  field1122: String! @external
-  field5: String! @external
-  field1123: String @external
+input Input6167 {
+  inputField9384: Boolean!
+  inputField3983: String!
+  inputField697: String!
+  inputField9385: Boolean!
+  inputField1291: String
+  inputField188: String!
 }
 
-type Type397 @extends @key(fields: "field1088") {
-  field1088: String @external
+input Input48 {
+  inputField113: String!
+  inputField114: Boolean! = false
 }
 
-type Type411 @key(fields: "field1099 field1125") @extends {
-  field1099: ID! @external
-  field1125: Enum543 @external
+input Input49 {
+  inputField16: String!
+  "This is an anonymized description"
+  inputField115: Enum31!
 }
 
-type Type2424 @extends @key(fields: "field1099 field1125") {
-  field1099: ID! @external
-  field1125: Enum543 @external
-  field524: Interface421 @external
+input Input50 {
+  "This is an anonymized description"
+  inputField116: String
+  "This is an anonymized description"
+  inputField117: Int!
+  "This is an anonymized description"
+  inputField118: Int!
+  "This is an anonymized description"
+  inputField119: Int!
+}
+
+input Input6168 {
+  inputField120: String
+  inputField110: String
+  "This is an anonymized description"
+  inputField111: String
+  inputField121: String
+  inputField135: Input6166!
+  "This is an anonymized description"
+  inputField122: Input49
+  "This is an anonymized description"
+  inputField123: Input50
+  "This is an anonymized description"
+  inputField124: String
+  "This is an anonymized description"
+  inputField125: String
+  "This is an anonymized description"
+  inputField126: String
 }

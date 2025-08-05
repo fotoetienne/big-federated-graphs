@@ -1,765 +1,375 @@
 """
 This is an anonymized description
 """
-enum Enum3416 {
-  VALUE_2
-  VALUE_3
+enum Enum3524 {
+  VALUE_158
+  VALUE_5475
+  VALUE_10
+  VALUE_154
 }
 
-"""
-This is an anonymized description
-"""
-enum Enum3417 {
-  VALUE_22
-  VALUE_23
+extend interface Interface432 @extends {
+  """
+  This is an anonymized description
+  """
+  field1392: Type424 @deprecated(reason: "Anonymized deprecation reason")
 }
 
-"""
-This is an anonymized description
-"""
-enum Enum3418 {
-  "This is an anonymized description"
-  VALUE_3074
-  "This is an anonymized description"
-  VALUE_3081
-  "This is an anonymized description"
-  VALUE_3085
+type Type409 @key(fields: "field2") @extends {
+  field2: ID @external
 }
 
-"""
-This is an anonymized description
-"""
-enum Enum3419 {
-  """
-  This is an anonymized description
-  """
-  VALUE_228
-  """
-  This is an anonymized description
-  """
-  VALUE_229
-  """
-  This is an anonymized description
-  """
-  VALUE_2790
-  """
-  This is an anonymized description
-  """
-  VALUE_2791
-  """
-  This is an anonymized description
-  """
-  VALUE_4717
-  """
-  This is an anonymized description
-  """
-  VALUE_4716
-  """
-  This is an anonymized description
-  """
-  VALUE_3108
-  """
-  This is an anonymized description
-  """
-  VALUE_3107
+type Type893 @key(fields: "field131") @extends {
+  field131: String @external
 }
 
-"""
-This is an anonymized description
-"""
-input Input6619 {
-  """
-  This is an anonymized description
-  """
-  inputField53: String!
-  """
-  This is an anonymized description
-  """
-  inputField54: Enum3419!
-  """
-  This is an anonymized description
-  """
-  inputField533: [String!]!
-}
-
-"""
-This is an anonymized description
-"""
-input Input6620 {
-  """
-  This is an anonymized description
-  """
-  inputField56: [String!]
-  """
-  This is an anonymized description
-  """
-  inputField26: Enum3416!
-}
-
-"""
-This is an anonymized description
-"""
-input Input6621 {
-  """
-  This is an anonymized description
-  """
-  inputField1115: String! = "default"
-  """
-  This is an anonymized description
-  """
-  inputField2557: [String!] = []
-  """
-  This is an anonymized description
-  """
-  inputField54: Enum3417
-  """
-  This is an anonymized description
-  """
-  inputField52: [Input6619!]
-  """
-  This is an anonymized description
-  """
-  inputField1116: Input6620
-}
-
-"""
-This is an anonymized description
-"""
-input Input6622 {
-  """
-  This is an anonymized description
-  """
-  inputField332: Int = 0
-  """
-  This is an anonymized description
-  """
-  inputField28: String = "default"
-}
-
-interface Interface421 @extends {
-  """
-  This is an anonymized description
-  """
-  field1100: Type394
-}
-
-type Type14351 {
-  field2: ID!
-  field87: String
-}
-
-"""
-This is an anonymized description
-"""
-type Type2797 @extends @key(fields: "field2") {
+type Type910 @key(fields: "field2") @extends {
   field2: ID! @external
 }
 
-type Type2798 @key(fields: "field2") {
-  field2: ID
-  field165: String
-  field5: String
+type Type889 @key(fields: "field2") @extends {
+  field2: ID @external
+  field2772: String @external
 }
 
-type Type14352 {
-  field450: String!
-  field134: String!
+type Type14906 {
+  field80: String
+  field7461: String
+  field103: String
+  field7658: Int
+  field1769: String
 }
 
-"""
-This is an anonymized description
-"""
-type Type14353 {
-  "This is an anonymized description"
-  field2: ID!
-  """
-  This is an anonymized description
-  """
-  field5116: Type394
-  "This is an anonymized description"
-  field29092: Union762
-  "This is an anonymized description"
-  field22262: [String!]
+type Type14907 {
+  field6663: String @deprecated(reason: "Anonymized deprecation reason")
+  field29390: String @deprecated(reason: "Anonymized deprecation reason")
 }
 
-union Union762 = Type852 | Type2800
-
-type Type14354 {
-  """
-  This is an anonymized description
-  """
-  field5116: Type394
-  field2900: [Type14353!]
-  field22262: [String!]
+type Type885 @key(fields: "field11 field104 { field2 }") @extends {
+  field104: Type889! @external
+  field11: String! @external
 }
 
-enum Enum3420 {
-  VALUE_3089
-  VALUE_3090
-  VALUE_3091
-  VALUE_3092
-  VALUE_3093
-  VALUE_3094
+extend interface Interface53 @key(fields: "field103 field225 field2541 { field11 field104 { field2 } }") @extends {
+  field11: String! @external
+  field103: String @external
+  field225: Int! @external
+  field2541: Type885 @external
+  field11006: String @requires(fields: "field11 field2541 { field104 { field2772 } }") @deprecated(reason: "Anonymized deprecation reason")
+  field29391: Type14906 @requires(fields: "field11 field2541 { field104 { field2772 } }") @deprecated(reason: "Anonymized deprecation reason")
+  field29392: Type14907 @requires(fields: "field11 field2541 { field104 { field2772 } }") @deprecated(reason: "Anonymized deprecation reason")
 }
 
-enum Enum3421 {
-  VALUE_5754
-  VALUE_5755
-  VALUE_1713
+type Type816 implements Interface53 @key(fields: "field103 field225 field2541 { field11 field104 { field2 } }") @extends {
+  field11: String! @external
+  field103: String @external
+  field225: Int! @external
+  field2541: Type885 @external
+  field11006: String @requires(fields: "field11 field2541 { field104 { field2772 } }") @deprecated(reason: "Anonymized deprecation reason")
+  field29391: Type14906 @requires(fields: "field11 field2541 { field104 { field2772 } }") @deprecated(reason: "Anonymized deprecation reason")
+  field29392: Type14907 @requires(fields: "field11 field2541 { field104 { field2772 } }") @deprecated(reason: "Anonymized deprecation reason")
 }
 
-enum Enum3422 {
-  VALUE_5752
-  VALUE_5753
-  VALUE_1713
+type Type846 implements Interface53 @key(fields: "field103 field225 field2541 { field11 field104 { field2 } }") @extends {
+  field11: String! @external
+  field103: String @external
+  field225: Int! @external
+  field2541: Type885 @external
+  field11006: String @requires(fields: "field11 field2541 { field104 { field2772 } }") @deprecated(reason: "Anonymized deprecation reason")
+  field29391: Type14906 @requires(fields: "field11 field2541 { field104 { field2772 } }") @deprecated(reason: "Anonymized deprecation reason")
+  field29392: Type14907 @requires(fields: "field11 field2541 { field104 { field2772 } }") @deprecated(reason: "Anonymized deprecation reason")
 }
 
-enum Enum3423 {
-  VALUE_145
-  VALUE_3071
-  VALUE_324
-}
-
-interface Interface765 @key(fields: "field2") {
-  field2: ID
-  field165: String
-  field5: String
-  field285: Enum3420
-  field3321: String
-  field253: String
-}
-
-type Type2799 @key(fields: "field2") {
-  field2: ID
-  field29093: Interface765
-}
-
-type Type14355 {
-  """
-  This is an anonymized description
-  """
-  field1086: Int
-  """
-  This is an anonymized description
-  """
-  field37: Type122
-  """
-  This is an anonymized description
-  """
-  field36: [Type14356!]
-}
-
-type Type14356 {
-  field40: Type2799
-}
-
-type Type2800 implements Interface765 @key(fields: "field2") @key(fields: "field5") {
-  field2: ID
-  field165: String
-  field5: String
-  field285: Enum3420
-  field3321: String
-  field253: String
-}
-
-type Type2801 implements Interface765 @key(fields: "field2") {
-  field2: ID
-  field165: String
-  field5: String
-  field285: Enum3420
-  field3321: String
-  field253: String
-}
-
-type Type2802 implements Interface765 @key(fields: "field2") {
-  field2: ID
-  field165: String
-  field5: String
-  field285: Enum3420
-  field3321: String
-  field253: String
-}
-
-type Type2803 implements Interface765 @key(fields: "field2") {
-  field2: ID
-  field165: String
-  field5: String
-  field285: Enum3420
-  field3321: String
-  field253: String
-}
-
-type Type2804 implements Interface765 @key(fields: "field2") {
-  field2: ID
-  field165: String
-  field5: String
-  field285: Enum3420
-  field3321: String
-  field253: String
-}
-
-type Type2805 implements Interface765 @key(fields: "field2") {
-  field2: ID
-  field165: String
-  field5: String
-  field285: Enum3420
-  field3321: String
-  field253: String
-}
-
-interface Interface766 {
-  field2: ID!
-  field13453: ID!
-  field4031: ID
-  field7269: Enum3423
-  field10121: Boolean
-  field14680: Enum3421
-}
-
-type Type14357 {
-  """
-  This is an anonymized description
-  """
-  field1086: Int
-  """
-  This is an anonymized description
-  """
-  field37: Type122
-  """
-  This is an anonymized description
-  """
-  field445: Type2799
-  """
-  This is an anonymized description
-  """
-  field36: [Type14358!]
-}
-
-type Type14358 {
-  field40: Type14359
-}
-
-type Type14359 {
-  field2: ID!
-  field11302: Interface766
-}
-
-type Type14360 implements Interface766 {
-  field2: ID!
-  field13453: ID!
-  field4031: ID
-  field10121: Boolean
-  field14680: Enum3421
-  field7269: Enum3423
-  field7268: Type852
-}
-
-type Type14361 implements Interface766 {
-  field2: ID!
-  field13453: ID!
-  field4031: ID
-  field10121: Boolean
-  field14680: Enum3421
-  field7269: Enum3423
-  field7268: Type2799
-}
-
-type Type14362 implements Interface766 {
-  field2: ID!
-  field13453: ID!
-  field4031: ID
-  field10121: Boolean
-  field14680: Enum3421
-  field7269: Enum3423
-  field2466: String
-  field13029: String
-  field14670: [Type14352!]
-  field7268: Type2798
-}
-
-type Type394 @key(fields: "field2") {
-  """
-  This is an anonymized description
-  """
-  field2: ID
-  """
-  This is an anonymized description
-  """
-  field5: String
-  """
-  This is an anonymized description
-  """
-  field1088: String
-  """
-  This is an anonymized description
-  """
-  field8912: String @deprecated
-  """
-  This is an anonymized description
-  """
-  field559: String
-  """
-  This is an anonymized description
-  """
-  field29094: String
-  """
-  This is an anonymized description
-  """
-  field1217: Type852
-  """
-  This is an anonymized description
-  """
-  field1084: Int @deprecated(reason: "Anonymized deprecation reason")
-  """
-  This is an anonymized description
-  """
-  field29095: Int
-  """
-  This is an anonymized description
-  """
-  field29096: Int
-  """
-  This is an anonymized description
-  """
-  field29097: Int
-  """
-  This is an anonymized description
-  """
-  field29098: Type14364
-  """
-  This is an anonymized description
-  """
-  field29099: Type14365
-  """
-  This is an anonymized description
-  """
-  field29100: [Type14366!]
-  """
-  This is an anonymized description
-  """
-  field29101: [Type14366!]
-  """
-  This is an anonymized description
-  """
-  field29102: [Type14366!]
-  """
-  This is an anonymized description
-  """
-  field24690: Type394 @experimental
-  """
-  This is an anonymized description
-  """
-  field6159: Type394 @experimental
-  """
-  This is an anonymized description
-  """
-  field24692: Type394 @experimental
-  """
-  This is an anonymized description
-  """
-  field29103: Type394 @experimental
-  """
-  This is an anonymized description
-  """
-  field2737: Type14371
-  """
-  This is an anonymized description
-  """
-  field58: Enum3424
-  """
-  This is an anonymized description
-  """
-  field29104: Type14363 @experimental
-}
-
-type Type14363 {
-  """
-  This is an anonymized description
-  """
-  field29105: Boolean
-  """
-  This is an anonymized description
-  """
-  field12014: Int
-  """
-  This is an anonymized description
-  """
-  field13918: [String!]
-}
-
-enum Enum3424 {
-  VALUE_9
-  VALUE_213
-}
-
-type Type14364 {
-  field7245: Int
-  field7246: Int
-  field7247: Int
-  field7248: Int
-  field7249: Int
-  field7250: Int
-}
-
-type Type14365 {
-  field7251: Int
-  field7252: Int
-  field2710: Int
-}
-
-type Type14366 {
-  """
-  This is an anonymized description
-  """
-  field2257: Int
-  """
-  This is an anonymized description
-  """
-  field2589: Type394
-}
-
-type Type14367 {
-  """
-  This is an anonymized description
-  """
-  field9174: [Type394!]
-  """
-  This is an anonymized description
-  """
-  field427: Type14351
-  """
-  This is an anonymized description
-  """
-  field37: Type122
-}
-
-type Type14368 {
-  field40: Type394
-}
-
-type Type14369 {
-  """
-  This is an anonymized description
-  """
-  field1086: Int
-  """
-  This is an anonymized description
-  """
-  field3134: [Enum3418!]
-  """
-  This is an anonymized description
-  """
-  field37: Type122
-  """
-  This is an anonymized description
-  """
-  field36: [Type14368!]
-}
-
-input Input6623 {
-  inputField9988: [String!]
-}
-
-input Input6624 {
-  inputField9989: Input6623
-  inputField9990: Boolean
-}
-
-type Type14370 {
-  field29106: [String!]
-  field29107: Boolean
+type Type821 implements Interface53 @key(fields: "field103 field225 field2541 { field11 field104 { field2 } }") @extends {
+  field11: String! @external
+  field103: String @external
+  field225: Int! @external
+  field2541: Type885 @external
+  field11006: String @requires(fields: "field11 field2541 { field104 { field2772 } }") @deprecated(reason: "Anonymized deprecation reason")
+  field29391: Type14906 @requires(fields: "field11 field2541 { field104 { field2772 } }") @deprecated(reason: "Anonymized deprecation reason")
+  field29392: Type14907 @requires(fields: "field11 field2541 { field104 { field2772 } }") @deprecated(reason: "Anonymized deprecation reason")
 }
 
 type Query @extends {
   """
   This is an anonymized description
   """
-  field29108(
-  arg1035: [String!]): Type14354 @experimental
-  """
-  This is an anonymized description
-  """
-  field29109(
-  arg2028: String!): Type2799
-  """
-  This is an anonymized description
-  """
-  field29110(
-  arg2028: String!
-  arg2455: Input6622!): Type14357
-  """
-  This is an anonymized description
-  """
-  field29111(
-  arg2455: Input6622
-  arg1442: Input6621): Type14355
-  """
-  This is an anonymized description
-  """
-  field29112(
-  arg146: String! = "default"
-  arg1370: [Enum3418!]
-  arg2455: Input6622): Type14355
-  """
-  This is an anonymized description
-  """
-  field29113(
-  arg17: Input6623
-  arg2455: Input6622): Type14367
-  """
-  This is an anonymized description
-  """
-  field29114(
-  arg4: ID
-  arg193: [Enum3424!]): Type394
-  """
-  This is an anonymized description
-  """
-  field29115(
-  arg2455: Input6622
-  arg1442: Input6621): Type14369
-  """
-  This is an anonymized description
-  """
-  field29116(
-  arg4: ID!
-  arg2456: Boolean! = false
-  arg2455: Input6622): Type14371
-  """
-  This is an anonymized description
-  """
-  field29117(
-  arg4: ID
-  arg352: String): Type852
-  """
-  This is an anonymized description
-  """
-  field29118(
-  arg146: String! = "default"
-  arg1370: [Enum3418!] @deprecated(reason: "Anonymized deprecation reason")
-  arg2455: Input6622): Type14371
-  """
-  This is an anonymized description
-  """
-  field29119(
-  arg2455: Input6622
-  arg1442: Input6621): Type14371
+  field29393: Type14909 @deprecated
+  field29394(arg20: Input5211): Type424 @deprecated(reason: "Anonymized deprecation reason")
+  field29395(arg20: Input6832): Type2403 @deprecated(reason: "Anonymized deprecation reason")
+  field29396(arg20: Input6833): Type860 @deprecated(reason: "Anonymized deprecation reason")
+  field29397(arg20: Input6834): Type861 @deprecated(reason: "Anonymized deprecation reason")
+  "This is an anonymized description"
+  field29398: [Type14916!] @deprecated
 }
 
 type Mutation @extends {
-  """
-  This is an anonymized description
-  """
-  field29120(
-  arg1: Input6624): Type14370
+  "This is an anonymized description"
+  field29399(
+  arg2422: Input5211!
+  arg2423: String!): Union833 @deprecated(reason: "Anonymized deprecation reason")
 }
 
-type Type852 @key(fields: "field2") @key(fields: "field2517") {
-  """
-  This is an anonymized description
-  """
-  field2: ID
-  """
-  This is an anonymized description
-  """
-  field4948: String
-  """
-  This is an anonymized description
-  """
-  field2517: String
-  """
-  This is an anonymized description
-  """
-  field559: String
-  """
-  This is an anonymized description
-  """
-  field3112: String
-  """
-  This is an anonymized description
-  """
-  field3113: String
-  """
-  This is an anonymized description
-  """
-  field341: String
-  """
-  This is an anonymized description
-  """
-  field7248: Type852
-  """
-  This is an anonymized description
-  """
-  field29121: Type2797
-  """
-  This is an anonymized description
-  """
-  field7222: [Type394!]
-  """
-  This is an anonymized description
-  """
-  field29122: [Type394!]
-  """
-  This is an anonymized description
-  """
-  field29123: [Type394!]
-  """
-  This is an anonymized description
-  """
-  field7221: String
-  """
-  This is an anonymized description
-  """
-  field29124: String
-  """
-  This is an anonymized description
-  """
-  field29125: String
-  """
-  This is an anonymized description
-  """
-  field29126: Boolean
-  """
-  This is an anonymized description
-  """
-  field29127: Int
-  """
-  This is an anonymized description
-  """
-  field29128: Int
-  """
-  This is an anonymized description
-  """
+input Input5211 {
+  inputField115: Enum581!
+  inputField959: String!
+  inputField64: String!
+  inputField960: String
+}
+
+input Input6832 {
+  inputField952: Input5211!
+  inputField16: ID!
+}
+
+input Input6833 {
+  inputField952: Input5211!
+  inputField8903: String!
+  inputField8904: String!
+}
+
+input Input6834 {
+  inputField952: Input5211!
+  inputField7534: String!
+}
+
+union Union833 = Type2223 | Type14908
+
+type Type14908 {
+  field405: String
+}
+
+"""
+This is an anonymized description
+"""
+type Type14909 {
+  "This is an anonymized description"
+  field747: String
+  "This is an anonymized description"
+  field2743: String
+  "This is an anonymized description"
+  field11: String
+  "This is an anonymized description"
   field58: String
-  """
-  This is an anonymized description
-  """
-  field14537: ID
+  "This is an anonymized description"
+  field6167: Scalar14
 }
 
-type Type14371 {
-  """
-  This is an anonymized description
-  """
-  field1086: Int
-  """
-  This is an anonymized description
-  """
-  field3134: [Enum3418!]
-  """
-  This is an anonymized description
-  """
-  field29129: [String!]
-  """
-  This is an anonymized description
-  """
-  field37: Type122
-  """
-  This is an anonymized description
-  """
-  field36: [Type14372!]
+type Type2403 @key(fields: "field2 field1413 field1718") @key(fields: "field2 field80 field1413 field1718") {
+  field2: ID @deprecated(reason: "Anonymized deprecation reason")
+  field631: String @deprecated(reason: "Anonymized deprecation reason")
+  field198: String @deprecated(reason: "Anonymized deprecation reason")
+  field80: Enum581 @deprecated(reason: "Anonymized deprecation reason")
+  field1413: String @deprecated(reason: "Anonymized deprecation reason")
+  field1718: String @deprecated(reason: "Anonymized deprecation reason")
+  field100: String @deprecated(reason: "Anonymized deprecation reason")
+  field1451: Scalar14 @deprecated(reason: "Anonymized deprecation reason")
+  field554: Scalar14 @deprecated(reason: "Anonymized deprecation reason")
+  field25654: Scalar14 @deprecated(reason: "Anonymized deprecation reason")
+  field29400(arg116: Int): [Interface869!] @deprecated(reason: "Anonymized deprecation reason")
+  field152: Scalar16 @deprecated(reason: "Anonymized deprecation reason")
 }
 
-type Type14372 {
-  field40: Type852
+type Type14910 {
+  field2: ID
+  field554: Scalar14
+  field1239: Enum3525
+  field269: Type14913
+}
+
+interface Interface869 {
+  field2: ID
+  field554: Scalar14
+  field269: Type14913
+}
+
+type Type14911 implements Interface869 {
+  field2: ID
+  field554: Scalar14
+  field269: Type14913
+  field1239: Enum3525
+}
+
+type Type14912 implements Interface869 {
+  field2: ID
+  field554: Scalar14
+  field269: Type14913
+  field1369: String
+}
+
+type Type14913 {
+  "This is an anonymized description"
+  field2: ID
+  field11: String
+  field7992: String
+  field337: String
+}
+
+enum Enum3525 {
+  VALUE_9005
+  VALUE_9006
+  VALUE_9007
+  VALUE_9008
+  VALUE_763
+  VALUE_4699
+  VALUE_4376
+  VALUE_9009
+  VALUE_2004
+  VALUE_4676
+  VALUE_154
+}
+
+type Type14914 {
+  field5447: Type409
+  field25676: Type893
+}
+
+type Type424 @key(fields: "field80 field1413 field11 field1414") {
+  """
+  This is an anonymized description
+  """
+  field80: Enum581! @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field1413: String! @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field11: String! @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field1414: String @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field152: Scalar16 @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field13115: Scalar16 @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field2806: [String!] @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field22: Boolean! @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field6727: [String!] @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field25682(
+  arg24: Input6835
+  arg2424: Int): [Type2403!] @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field1807: Type14915 @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field25680: Scalar16 @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field3512: String @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field25686: [Type910!] @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field25671: Type14914 @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field25199: Type2223 @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field3526(
+  arg2088: String
+  arg2089: Enum3526 = VALUE_6876): [Type2223!] @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field29401: Type424 @deprecated(reason: "Anonymized deprecation reason")
+}
+
+enum Enum3526 {
+  VALUE_6876
+  VALUE_9001
+}
+
+type Type14915 {
+  """
+  This is an anonymized description
+  """
+  field29402: Int @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field29403: Int @deprecated(reason: "Anonymized deprecation reason")
+}
+
+type Type2223 @key(fields: "field2791 {field80 field1413 field11} field2") {
+  field2791: Type424! @deprecated(reason: "Anonymized deprecation reason")
+  field2: String! @deprecated(reason: "Anonymized deprecation reason")
+  field7687: String @deprecated(reason: "Anonymized deprecation reason")
+}
+
+input Input6835 {
+  inputField10138: Enum3528
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum3527 {
+  VALUE_3444
+  VALUE_5566
+  VALUE_10101
+  VALUE_5528
+  VALUE_10102
+  VALUE_10103
+}
+
+"""
+This is an anonymized description
+"""
+type Type14916 {
+  "This is an anonymized description"
+  field278: Enum3527
+  "This is an anonymized description"
+  field11: String
+  "This is an anonymized description"
+  field2869: [Scalar16!]
+}
+
+enum Enum3528 {
+  VALUE_780
+  VALUE_781
+}
+
+type Type860 @key(fields: "field2791 { field80 field1413 field11 field1414 } field2792 field2793") {
+  field2791: Type424! @deprecated(reason: "Anonymized deprecation reason")
+  field2792: String! @deprecated(reason: "Anonymized deprecation reason")
+  field2793: String! @deprecated(reason: "Anonymized deprecation reason")
+  field3522: [Type861!] @deprecated(reason: "Anonymized deprecation reason")
+}
+
+type Type861 @key(fields: "field2791 { field80 field1413 field11 field1414 } field2794") {
+  field2791: Type424! @deprecated(reason: "Anonymized deprecation reason")
+  field2794: String! @deprecated(reason: "Anonymized deprecation reason")
+  field405: String @deprecated(reason: "Anonymized deprecation reason")
+  "This is an anonymized description"
+  field19379: [String!] @deprecated(reason: "Anonymized deprecation reason")
+  field1744: Scalar14 @deprecated(reason: "Anonymized deprecation reason")
 }

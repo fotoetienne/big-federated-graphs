@@ -1,0 +1,62 @@
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field404(
+  arg20: Input18!): Type24
+}
+
+input Input18 {
+  inputField37: ID!
+  inputField38: ID
+  inputField39: String
+  inputField40: Input19
+}
+
+input Input19 {
+  inputField41: String!
+}
+
+enum Enum7 {
+  VALUE_26
+  VALUE_27
+  VALUE_28
+}
+
+type Type23 {
+  field308: Enum7
+  field405: String
+}
+
+type Type24 {
+  field406: ID
+  field407: ID
+  field408: [Type23]
+}
+
+type Query @extends {
+  field409: [Type25]
+}
+
+type Type25 {
+  field2: ID!
+  field11: String
+  field410: [String]
+  field411: Enum8
+  """
+  This is an anonymized description
+  """
+  field265: Scalar14
+  field412: Type26
+  field266: Scalar14
+  field413: Type26
+}
+
+enum Enum8 {
+  VALUE_29
+  VALUE_30
+}
+
+type Type26 @key(fields: "field132") @extends {
+  field132: ID! @external
+}

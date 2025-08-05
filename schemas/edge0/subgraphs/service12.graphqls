@@ -1,92 +1,132 @@
-type Mutation {
-  field14495: Type6744
-  field14496(arg1: Input2890): Type6746
-  field14497: Type6746
+type Type111 @key(fields: "field556") {
+  field554: Float!
+  field198: String
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field100: Enum30!
+  field58: String
+  field561: Type117!
 }
 
-extend type Subscription {
-  field14498(arg1369: ID!): [Union206]
+type Type112 {
+  field176: [Type113!]
+  field366: Type119!
 }
 
-type Type6744 {
-  field2: ID
-  field5: String
+type Type113 {
+  field369: String
+  field177: Type111!
 }
 
-union Union206 = Type6745
-
-type Type6745 {
-  field87: String!
-  field14499: ID!
+type Type114 {
+  field562: Boolean!
+  field560: String!
 }
 
-type Type6746 {
-  field58: Enum1586
+type Type115 {
+  field563: String!
+  field564: Type114
+  field100: String!
 }
 
-enum Enum1586 {
-  VALUE_991
-  VALUE_152
+type Type116 {
+  field565: String!
+  field566: String!
 }
 
-input Input2890 {
-  inputField5237: ID!
-  inputField4838: ID!
-  inputField248: String!
+type Type117 {
+  field176: [Type118!]
+  field366: Type119!
+}
+
+type Type118 {
+  field369: String
+  field177: Type116!
+}
+
+type Mutation @extends {
+  field567(arg20: Input47!): Type115!
+  field568(arg20: Input51!): Type120!
+}
+
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
 }
 
 type Query @extends {
-  """
-  This is an anonymized description
-  """
-  field14500(
-  arg58: String = "default"): String @experimental
-  """
-  This is an anonymized description
-  """
-  field13982: String @experimental
-  """
-  This is an anonymized description
-  """
-  field14501(
-  arg16: String!
-  arg652: String
-  arg1370: String
-  arg1371: String
-  arg511: String
-  arg5: String
-  arg7: Int = 0): [Type6748] @experimental
-  field14502(arg1372: Int): [Type6747] @experimental
+  field573(arg49: ID!): Type111
+  field574(arg20: Input48!): Type112!
 }
 
-type Type6747 {
-  field14502(arg1372: Int): [Type6747] @experimental
-  field14503(arg100: String = "default"): String @experimental
+type Type120 {
+  field575: Type111
 }
 
-type Type6748 {
-  field341: String
-  field253: String
-  field279: String
-  field5016: String @deprecated
-  field2414: String
-  field8654: String
-  field7569: String @deprecated
-  field6750: String @deprecated
-  field14504: String
-  field5779: String
-  field113: Type6749
+enum Enum30 {
+  VALUE_210
+  VALUE_211
+  VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
+  VALUE_213
 }
 
-type Type6749 {
-  field2: ID
-  field5: String
+enum Enum31 {
+  VALUE_214
+  VALUE_215
 }
 
-type Subscription {
-  field14505: Type6750
+input Input47 {
+  inputField110: String
+  inputField111: String
+  inputField112: String!
 }
 
-type Type6750 {
-  field5749: String
+input Input48 {
+  inputField113: String!
+  inputField114: Boolean! = false
+}
+
+input Input49 {
+  inputField16: String!
+  "This is an anonymized description"
+  inputField115: Enum31!
+}
+
+input Input50 {
+  "This is an anonymized description"
+  inputField116: String
+  "This is an anonymized description"
+  inputField117: Int!
+  "This is an anonymized description"
+  inputField118: Int!
+  "This is an anonymized description"
+  inputField119: Int!
+}
+
+input Input51 {
+  inputField120: String
+  inputField110: String
+  "This is an anonymized description"
+  inputField111: String
+  inputField121: String
+  "This is an anonymized description"
+  inputField122: Input49
+  "This is an anonymized description"
+  inputField123: Input50
+  "This is an anonymized description"
+  inputField124: String
+  "This is an anonymized description"
+  inputField125: String
+  "This is an anonymized description"
+  inputField126: String
 }

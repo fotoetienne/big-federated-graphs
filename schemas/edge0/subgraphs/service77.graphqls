@@ -1,23 +1,69 @@
-type Type1196 {
-  field2: ID!
-  field253: String!
-  field3032: String
-  field3033: String
-  field3034: String
+"This is an anonymized description"
+directive @directive1("""
+This is an anonymized description
+"""
+arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Type1641 @key(fields: "field2") @directive1(arg47: "anonymous-string") {
+  field2: ID! @directive2
+  field58: Int
+  field631: String
+  field4416: String
+  field215: Int
 }
 
-type Mutation @extends {
-  field3035(arg269: String!): Type1196
-  field3036(arg4: ID!, arg269: String, arg294: String): Type1196
-  field3037(arg4: ID!): ID
-  field3038(arg295: ID!, arg12: Int!): Type32
+input Input763 {
+  inputField130: String
+  inputField1709: String
+  inputField601: Int
+}
+
+input Input764 {
+  inputField16: ID!
+  inputField17: Int
+  inputField130: String
+  inputField1709: String
+  inputField601: Int
+}
+
+type Type1642 {
+  field2971: [Interface103]
+}
+
+type Type1643 implements Interface103 {
+  field677: String
+  field3648: String
+  field2768: String
+}
+
+type Type1644 implements Interface103 {
+  field677: String
+  field3648: String
+  field2768: String
+}
+
+type Type1645 implements Interface103 {
+  field677: String
+  field3648: String
+  field2768: String
+}
+
+interface Interface103 {
+  field677: String
+  field3648: String
+  field2768: String
 }
 
 type Query @extends {
-  field3039(arg4: ID!): Type1196
+  field4417(arg74: String): String @directive1(arg47: "anonymous-string")
+  field4418(arg1: [ID!]!): [Type1641] @directive1(arg47: "anonymous-string")
 }
 
-type Type32 @extends @key(fields: "field107") {
-  field107: Int! @external
-  field3039: Type1196
+type Mutation @extends {
+  field4419(arg20: Input763!): Type1641! @directive1(arg47: "anonymous-string")
+  field4420(arg20: Input764!): Type1641! @directive1(arg47: "anonymous-string")
 }
+
+union Union31 = Type1641 | Type1642

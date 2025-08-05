@@ -1,52 +1,48 @@
 type Query {
-  field3031(arg10: Input602!, arg293: Input603!): Type1193!
+  field4411(arg69: String!, arg204: String!): Type1638
 }
 
-input Input602 {
-  "This is an anonymized description"
-  inputField1271: String
-  inputField171: Int
+type Type1638 {
+  field109: ID!
+  field3636: [Type1640]
+  field4412: [Type1639]
+  field4413: [Type1640]
+  field1689: [Type1640]
 }
 
-input Input603 {
-  inputField29: String
-  inputField28: String
-  inputField211: Int
-  inputField1272: Int
+type Type1639 {
+  field11: String
+  field21: Enum442
+  field1499: String
+  field2: String
 }
 
-type Type1193 {
-  field37: Type122!
-  field36: [Type1194!]!
+enum Enum442 {
+  VALUE_1281
+  VALUE_164
+  VALUE_165
+  VALUE_1961
 }
 
-type Type1194 {
-  field41: String!
-  field40: Type1195!
+type Type1640 {
+  field130: Enum443
+  field4414: Enum445
+  field4415: Enum444
+  field102: String
 }
 
-type Type1195 {
-  field120: Type32!
-  field56: Type29!
-  field58: Enum303!
+enum Enum443 {
+  VALUE_1686
+  VALUE_1962
+  VALUE_1963
 }
 
-enum Enum303 {
-  VALUE_158
-  VALUE_1383
-  VALUE_1384
-  VALUE_1385
-  VALUE_1386
-  VALUE_777
-  VALUE_1387
-  VALUE_151
-  VALUE_1220
+enum Enum444 {
+  VALUE_1964
+  VALUE_1965
 }
 
-type Type32 @extends @key(fields: "field107") {
-  field107: Int! @external
-}
-
-type Type29 @extends @key(fields: "field98") {
-  field98: ID! @external
+enum Enum445 {
+  VALUE_1966
+  VALUE_1967
 }

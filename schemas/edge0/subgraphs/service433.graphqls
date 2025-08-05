@@ -1,40 +1,205 @@
-scalar Scalar4
-
-scalar Scalar1
-
-input Input4735 {
-  inputField8212: ID @experimental
-  inputField8213: Scalar1 @experimental
-  inputField8214: ID @experimental
-  inputField8215: [String!] @experimental
-  inputField8216: [String!] @experimental
-  inputField8217: [Input4736!] @experimental
+type Query {
+  field23252(arg278: String!, arg1903: Input4744): [Type10553] @experimental
+  field23253(arg1903: Input4744): [Type10553] @experimental
+  field23254(arg1904: Enum2620): Type10552 @experimental
+  field23255(arg1904: Enum2620): [Type10551] @experimental
+  field23256(arg17: Input4737!): [Type10550] @experimental
 }
 
-input Input4736 {
-  inputField8218: String!
-  inputField8219: String!
-  inputField55: Scalar4!
+input Input4737 {
+  inputField8266: String
+  inputField1130: Enum2618! = VALUE_8362
+  inputField399: Int! = 0
 }
 
-union Union522 = Type10408 | Type10409
+enum Enum2618 {
+  VALUE_8362
+  VALUE_3525
+}
+
+type Type10550 {
+  field23257: String
+  field23258: String
+  field23259: Int
+  field23260: Int
+}
+
+type Type10551 {
+  field10591: String
+  field2825: Int
+  field23261: Int
+  field23262: Int
+  field23263: Int
+  field2826: Int
+}
+
+type Type10552 {
+  field2825: Int
+  field23261: Int
+  field23262: Int
+  field23263: Int
+  field2826: Int
+}
 
 type Mutation {
-  """
-  This is an anonymized description
-  """
-  field22767(
-  arg187: Input4735!): Union522 @experimental
+  field23264(arg1905: Input4739): Scalar1
 }
 
-type Type10408 {
-  field2432: Type10410 @experimental
+type Type10553 {
+  field10591: String
+  field23265: String
+  field23266: String
+  field23267: Enum2620
+  field23268: String
+  field23269: String
+  field23270: String
+  field1499: Scalar14
+  field215: Int
+  field23271: [String]
+  field23272: Boolean
+  field2772: String
+  field103: String
+  field1715: String
+  field10410: String
+  field10411: String
+  field2768: String
+  field23273: Enum2621
+  field23274: [String]
+  field23275(arg1906: Input4738, arg34: Enum2619 = VALUE_8363): [Type10557]
+  field23276: Int
+  field23277: Type10554
 }
 
-type Type10409 {
-  field6262: [String!] @experimental
+input Input4738 {
+  inputField8267: Boolean! = false
+  inputField8268: [Enum2622]
 }
 
-type Type10410 {
-  field22768: Scalar4! @experimental
+type Type10554 {
+  field3519: Type10555
+  field7686: Int
+  field23278: Type10556
+  field1874: Scalar14
 }
+
+type Type10555 {
+  field11: String
+  field23279: Int
+}
+
+type Type10556 {
+  field126: Int
+  field21663: Int
+  field23280: Int
+  field23281: Int
+  field23282: Int
+}
+
+enum Enum2619 {
+  VALUE_8364
+  VALUE_8363
+  VALUE_1023
+}
+
+enum Enum2620 {
+  VALUE_337
+  VALUE_8365
+  VALUE_33
+}
+
+type Type10557 {
+  field23257: String
+  field23258: String
+  field23283: String
+  field23284: String
+  field9: Scalar14
+  field23285: Scalar14
+  field215: Int
+  field23286: Enum2622
+  field23287: String
+  field23288: Boolean
+}
+
+input Input4739 {
+  inputField8269: String
+  inputField8270: String
+  inputField8271: Enum2620 = VALUE_337
+  inputField8272: String
+  inputField8273: String
+  inputField8274: String
+  inputField373: Scalar14
+  inputField601: Int
+  inputField8275: [String]
+  inputField8276: Boolean
+  inputField1908: String
+  inputField1909: String
+  inputField981: String
+  inputField8277: String
+  inputField8278: String
+  inputField982: String
+  inputField8279: Enum2621
+  inputField8280: [String]
+  inputField8281: [Input4743]
+  inputField8282: Int
+  inputField8283: Input4740
+}
+
+input Input4740 {
+  inputField1343: Input4741
+  inputField2804: Int
+  inputField8284: Input4742
+  inputField3077: Scalar14
+}
+
+input Input4741 {
+  inputField64: String
+  inputField8285: Int
+}
+
+input Input4742 {
+  inputField8286: Int
+  inputField8287: Int
+  inputField8288: Int
+  inputField8289: Int
+  inputField8290: Int
+}
+
+enum Enum2621 {
+  VALUE_427
+  VALUE_503
+  VALUE_681
+  VALUE_4415
+  VALUE_154
+}
+
+input Input4743 {
+  inputField8291: String
+  inputField8292: String
+  inputField8293: String
+  inputField8294: String
+  inputField8295: Scalar14
+  inputField8296: Scalar14
+  inputField601: Int
+  inputField8268: Enum2622
+  inputField8297: String
+  inputField8298: Boolean
+}
+
+enum Enum2622 {
+  VALUE_8366
+  VALUE_8367
+  VALUE_8368
+  VALUE_8022
+  VALUE_337
+}
+
+input Input4744 {
+  inputField8271: Enum2620
+  inputField8279: Enum2621
+  inputField8272: String
+  inputField8299: Int
+  inputField8300: Int
+  inputField8301: Scalar14
+}
+
+scalar Scalar1

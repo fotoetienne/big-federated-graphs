@@ -1,3 +1,66 @@
-type Query @extends {
-  field13493(arg58: String): String!
+scalar Scalar1
+
+directive @directive1("""
+This is an anonymized description
+"""
+arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @directive2 on FIELD_DEFINITION
+
+type Query {
+  field14065(arg20: Input2667): [Type6616!]! @directive1(arg47: "anonymous-string")
+  field14066(arg20: Input2667): [Type6617!]! @directive1(arg47: "anonymous-string")
+  field14067(arg20: Input2668!): [String!]! @directive1(arg47: "anonymous-string")
+}
+
+enum Enum1539 {
+  VALUE_5131
+  VALUE_5130
+}
+
+input Input2667 {
+  inputField560: ID!
+  inputField4996: [Scalar1!]!
+  inputField195: Enum1539!
+  """
+  This is an anonymized description
+  """
+  inputField206: Int
+  inputField4997: Int!
+  inputField4806: Boolean = false
+  """
+  This is an anonymized description
+  """
+  inputField4998: Boolean = false
+}
+
+interface Interface267 {
+  field5269: Scalar1!
+  """
+  This is an anonymized description
+  """
+  field14068: Scalar1!
+  field668: Scalar1!
+  field395: Scalar1!
+}
+
+type Type6616 implements Interface267 {
+  field152: String!
+  field5269: Scalar1!
+  field14068: Scalar1!
+  field668: Scalar1!
+  field395: Scalar1!
+}
+
+type Type6617 implements Interface267 {
+  field14069: String!
+  field5269: Scalar1!
+  field14068: Scalar1!
+  field668: Scalar1!
+  field395: Scalar1!
+}
+
+input Input2668 {
+  inputField187: ID!
+  inputField115: String!
 }

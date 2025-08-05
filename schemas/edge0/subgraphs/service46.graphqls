@@ -1,74 +1,91 @@
-"""
-This is an anonymized description
-"""
-input Input155 {
-  inputField218: [Int!]
-  inputField335: [Int!]
-}
-
-"""
-This is an anonymized description
-"""
 type Query @extends {
-  field1147(arg1: Input155, arg101: Int, arg102: Int): Type433
-  field1148(arg103: String!, arg101: Int, arg102: Int): Type433
-  field1149(arg4: String!): Type435
+  field2310(arg214: [Enum217], arg1: [String], arg211: [Int], arg215: [String]): [Type657]
+  field2311(arg214: [Enum217], arg1: [String], arg211: [Int]): [Type657]
+  field2312: [Type26]
+}
+
+type Mutation @extends {
+  field2313(arg216: [Input314]): Type662
+  field2314(arg217: [Input315]): Type662
+  field2315(arg1: [String]): Type662
+  field2316(arg1: [String]): Type662
+  field2317(arg1: [String]): Type662
+  field2318(arg1: [String]): Type662
+}
+
+type Subscription @extends {
+  field2319: Type658
+}
+
+type Type29 @key(fields: "field109") @extends {
+  field109: Int! @external
+}
+
+type Type26 @key(fields: "field1251") @extends {
+  field1251: String @external
+}
+
+type Type657 {
+  field2: ID!
+  field554: Scalar13!
+  field1451: Scalar13!
+  field1786: Scalar13
+  field80: Enum217
+  field100: Enum218
+  field109: Int
+  field128: String
+  field108: Type29
+}
+
+type Type658 {
+  field2: ID!
+  field80: Enum217
+  field100: Enum218
+  field109: Int
+  field128: String
+}
+
+type Type659 {
+  field466: Type657
+}
+
+type Type660 {
+  field405: String!
+}
+
+type Type661 {
+  field466: [Type657]
+}
+
+type Type662 {
+  field546: Type661
+  field547: [Type660]
+}
+
+input Input314 {
+  inputField115: Enum217
+  inputField187: Int
+  inputField692: String
+  inputField617: Scalar13!
+}
+
+input Input315 {
+  inputField16: ID!
+  inputField692: String
+}
+
+enum Enum217 {
+  VALUE_1119
+  VALUE_1120
 }
 
 """
 This is an anonymized description
 """
-type Type32 @key(fields: "field107") @extends {
-  field107: Int! @external
-  field1150: Type433
-}
-
-type Type433 {
-  field37: Type122
-  field36: [Type434]
-}
-
-type Type434 {
-  field41: String!
-  field40: Type435
-}
-
-"""
-This is an anonymized description
-"""
-type Type435 {
-  "This is an anonymized description"
-  field1151: ID!
-  "This is an anonymized description"
-  field1152: String
-  "This is an anonymized description"
-  field107: Int
-  "This is an anonymized description"
-  field1153: String
-  "This is an anonymized description"
-  field1154: Int
-  "This is an anonymized description"
-  field1155: String
-  "This is an anonymized description"
-  field486: String
-  "This is an anonymized description"
-  field582: String
-  "This is an anonymized description"
-  field1156: String
-  "This is an anonymized description"
-  field1157: String
-  "This is an anonymized description"
-  field1158: String
-  "This is an anonymized description"
-  field1159: String
-  "This is an anonymized description"
-  field1160: String @deprecated(reason: "Anonymized deprecation reason")
-  "This is an anonymized description"
-  field1161: String
-  "This is an anonymized description"
-  field1162: String
-  field2: ID! @deprecated(reason: "Anonymized deprecation reason")
-  field1163: String @deprecated(reason: "Anonymized deprecation reason")
-  field1164: String @deprecated(reason: "Anonymized deprecation reason")
-  field1165: String @deprecated(reason: "Anonymized deprecation reason")
+enum Enum218 {
+  VALUE_995
+  VALUE_162
+  VALUE_1121
+  VALUE_1122
+  VALUE_212
 }

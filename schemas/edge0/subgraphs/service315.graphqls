@@ -1,147 +1,135 @@
-interface Interface300 {
-  field15377("This is an anonymized description"
-  arg37: String, "This is an anonymized description"
-  arg153: String): [Interface300]
-  field94: String
-  field56: String
-  field15378("This is an anonymized description"
-  arg37: String, "This is an anonymized description"
-  arg153: String): [Interface300]
-  field2820: [Type7334]
-  field1257: Type7337
-  field2: String!
-  field524: [Type7334]
-  field619: [Type32!]
-  field15379("This is an anonymized description"
-  arg37: String, "This is an anonymized description"
-  arg153: String): [Interface300]
-  field58: Enum1728
-  field367: [Type7334!]
-  field1272: [String!]
-  field96: String
-  field57: String
-  field44: String!
-  field1277: [Type7334!]
-}
-
-type Type7333 implements Interface300 {
-  field15380: String
-  field15377("This is an anonymized description"
-  arg37: String, "This is an anonymized description"
-  arg153: String): [Interface300]
-  field94: String
-  field56: String
-  field15378("This is an anonymized description"
-  arg37: String, "This is an anonymized description"
-  arg153: String): [Interface300]
-  field2820: [Type7334]
-  field1257: Type7337
-  field502: String
-  field2: String!
-  field524: [Type7334]
-  field619: [Type32!]
-  field15379("This is an anonymized description"
-  arg37: String, "This is an anonymized description"
-  arg153: String): [Interface300]
-  field15381: String
-  field58: Enum1728
-  field367: [Type7334!]
-  field1272: [String!]
-  field96: String
-  field57: String
-  field44: String!
-  field1277: [Type7334!]
-}
-
-type Type2176 @extends @key(fields: "field2") {
+type Type32 @extends @key(fields: "field2 field58") {
   field2: String! @external
+  field58: String! @external
 }
 
-type Type7334 {
-  field450: String
-  field134: String
+type Mutation @extends {
+  field16039(arg20: Input3322!): Type7610!
 }
 
-type Type7335 implements Interface300 {
-  field15377("This is an anonymized description"
-  arg37: String, "This is an anonymized description"
-  arg153: String): [Interface300]
-  field94: String
-  field56: String
-  field15378("This is an anonymized description"
-  arg37: String, "This is an anonymized description"
-  arg153: String): [Interface300]
-  field2820: [Type7334]
-  field1257: Type7337
-  field2: String!
-  field524: [Type7334]
-  field619: [Type32!]
-  field15379("This is an anonymized description"
-  arg37: String, "This is an anonymized description"
-  arg153: String): [Interface300]
-  field58: Enum1728
-  field367: [Type7334!]
-  field1272: [String!]
-  field96: String
-  field57: String
-  field44: String!
-  field1277: [Type7334!]
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
 }
 
-type Type7336 {
-  field450: String
-  field134: String
+type Type7603 {
+  field654: Type32
 }
 
-type Type7337 {
-  field15382: Type2176
-  field5: String
-  field1084: String
+type Type7604 {
+  field5943: Type7607
 }
 
-type Type32 @extends @key(fields: "field107") {
-  field107: Int! @external
+type Type7605 {
+  field2: String
+  field58: String
 }
 
-type Type7338 implements Interface300 {
-  field15383: [Type7333]
-  field15384: String
-  field15377("This is an anonymized description"
-  arg37: String, "This is an anonymized description"
-  arg153: String): [Interface300]
-  field94: String
-  field56: String
-  field15378("This is an anonymized description"
-  arg37: String, "This is an anonymized description"
-  arg153: String): [Interface300]
-  field2820: [Type7334]
-  field15385: String
-  field1257: Type7337
-  field2: String!
-  field524: [Type7334]
-  field619: [Type32!]
-  field15379("This is an anonymized description"
-  arg37: String, "This is an anonymized description"
-  arg153: String): [Interface300]
-  field58: Enum1728
-  field367: [Type7334!]
-  field1272: [String!]
-  field96: String
-  field57: String
-  field44: String!
-  field1277: [Type7334!]
+type Type7606 {
+  field422: Type7605
+  field885: String
+}
+
+type Type7607 {
+  field880: String
+  field8241: [Type7606!]
+}
+
+type Type3155 @key(fields: "field556") {
+  field554: Float!
+  field198: String
+  field723: Type7603
+  field724: Type7604
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field100: Enum1823!
+  field58: String
+}
+
+type Type7608 {
+  field176: [Type7609!]
+  field366: Type119!
+}
+
+type Type7609 {
+  field369: String
+  field177: Type3155!
 }
 
 type Query @extends {
-  field15386("This is an anonymized description"
-  arg37: String, "This is an anonymized description"
-  arg153: String): Interface300
+  field16040(arg49: ID!): Type3155
+  field16041(arg20: Input48!): Type7608!
 }
 
-enum Enum1728 {
-  VALUE_9
-  VALUE_213
+type Type7610 {
+  field575: Type3155
+}
+
+enum Enum1823 {
   VALUE_212
-  VALUE_904
-  VALUE_327
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
+}
+
+enum Enum31 {
+  VALUE_214
+  VALUE_215
+}
+
+input Input3320 {
+  inputField16: String!
+  inputField17: String!
+}
+
+input Input3321 {
+  inputField214: [Input3320!]!
+}
+
+input Input48 {
+  inputField113: String!
+  inputField114: Boolean! = false
+}
+
+input Input49 {
+  inputField16: String!
+  "This is an anonymized description"
+  inputField115: Enum31!
+}
+
+input Input50 {
+  "This is an anonymized description"
+  inputField116: String
+  "This is an anonymized description"
+  inputField117: Int!
+  "This is an anonymized description"
+  inputField118: Int!
+  "This is an anonymized description"
+  inputField119: Int!
+}
+
+input Input3322 {
+  inputField120: String
+  inputField110: String
+  "This is an anonymized description"
+  inputField111: String
+  inputField121: String
+  inputField135: Input3321!
+  "This is an anonymized description"
+  inputField122: Input49
+  "This is an anonymized description"
+  inputField123: Input50
+  "This is an anonymized description"
+  inputField124: String
+  "This is an anonymized description"
+  inputField125: String
+  "This is an anonymized description"
+  inputField126: String
 }

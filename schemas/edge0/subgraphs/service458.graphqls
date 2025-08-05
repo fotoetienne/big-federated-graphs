@@ -1,51 +1,42 @@
-type Type10789 {
-  field252: Float!
-  field253: String
-  field254: ID
-  field255: ID!
-  field256: String!
-  field257: String!
-  field258: ID
-  field259: ID!
-  field260: Enum2659!
-  field44: String
-}
-
-type Type4649 {
-  field263: String!
-  field260: String!
+type Query @extends {
+  field23985(arg29: Int): Type29
 }
 
 type Mutation @extends {
-  field23454(arg1: Input4978!): Type4649!
+  field23986(arg20: Input5048): Interface108
 }
 
-type Query @extends {
-  field23455(arg33: ID!): Type10789
-  field23456(arg1: Input1707!): [Type10789]
+type Type29 @key(fields: "field109") @extends {
+  field109: Int! @external
+  field23987: Type11004
 }
 
-enum Enum2659 {
-  VALUE_199
-  VALUE_151
-  VALUE_158
-  VALUE_152
-  VALUE_149
+extend type Type29 {
+  field23988: String
 }
 
-input Input4978 {
-  inputField103: String
-  inputField104: String
-  inputField333: Input4979!
-  inputField105: String!
+type Type11004 {
+  field631: String
+  field7634: String
+  field23989: [Type11005]
 }
 
-input Input4979 {
-  inputField3145: Int!
-  inputField3146: Int!
+type Type11005 {
+  field11: String
+  field5762: String
+  field11141: Int
 }
 
-input Input1707 {
-  inputField106: String!
-  inputField107: Boolean! = false
+input Input5048 {
+  inputField64: String
+  inputField110: String
+  inputField6289: String
+  inputField1775: Int
+}
+
+type Type11006 implements Interface108 {
+  field152: String
+  field4670: [Type1863]
+  field4671: String
+  field11103: ID
 }

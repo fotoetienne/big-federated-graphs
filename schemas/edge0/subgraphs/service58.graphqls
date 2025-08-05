@@ -1,33 +1,90 @@
-type Type625 {
-  field949: Enum204!
-  field87: String!
+type Mutation @extends {
+  field2914(arg20: Input426!): Type974!
 }
 
-enum Enum204 {
-  VALUE_1097
-  VALUE_1098
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
 }
 
-interface Interface39 {
-  field427: Type625
-  field58: Enum205!
+type Query @extends {
+  field2915(arg49: ID!): Type975
+  field2916(arg20: Input48!): Type976!
 }
 
-enum Enum205 {
-  VALUE_1099
-  VALUE_1100
+type Type974 {
+  field575: Type975
 }
 
-input Input305 {
-  inputField739: Int
+type Type975 {
+  field554: Float!
+  field198: String
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field100: Enum284!
+  field58: String
 }
 
-type Type626 implements Interface39 {
-  field427: Type625
-  field58: Enum205!
-  field484: Int
+type Type976 {
+  field176: [Type977!]
+  field366: Type119!
 }
 
-type Query {
-  field1989(arg197: Input305, arg198: String): Type626
+type Type977 {
+  field369: String
+  field177: Type975!
+}
+
+enum Enum284 {
+  VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
+}
+
+input Input48 {
+  inputField113: String!
+  inputField114: Boolean! = false
+}
+
+input Input50 {
+  "This is an anonymized description"
+  inputField116: String
+  "This is an anonymized description"
+  inputField117: Int!
+  "This is an anonymized description"
+  inputField118: Int!
+  "This is an anonymized description"
+  inputField119: Int!
+}
+
+input Input426 {
+  inputField120: String
+  inputField110: String
+  inputField111: String
+  inputField121: String
+  inputField135: Input428!
+  inputField123: Input50
+  inputField125: String
+  inputField126: String
+}
+
+input Input427 {
+  inputField16: String!
+}
+
+input Input428 {
+  inputField599: Input429
+}
+
+input Input429 {
+  inputField991: Input427!
+  inputField992: Input427!
 }

@@ -1,163 +1,33 @@
-type Type420 {
-  field1131: String!
-  field1132: String!
-  field576: String!
-  field1133: [Type421!]!
+type Type655 {
+  field1243: Enum215!
+  field405: String!
 }
 
-type Type421 {
-  field1134: String!
-  field154: String!
-  field1135: String!
-  field382: String!
-  field1136: Float!
-  field1137: String
+enum Enum215 {
+  VALUE_1115
+  VALUE_1116
 }
 
-type Type422 {
-  field252: Float!
-  field253: String
-  field254: ID
-  field255: ID!
-  field256: String!
-  field257: String!
-  field258: ID
-  field259: ID!
-  field260: Enum122!
-  field1138: Type426!
-  field44: String
-  field261: Type429!
+interface Interface39 {
+  field730: Type655
+  field21: Enum216!
 }
 
-type Type423 {
-  field36: [Type424!]
-  field37: Type122!
+enum Enum216 {
+  VALUE_1117
+  VALUE_1118
 }
 
-type Type424 {
-  field41: String
-  field40: Type422!
+input Input313 {
+  inputField758: Int
 }
 
-type Type425 {
-  field1139: [Type420!]!
-  field1140: String!
+type Type656 implements Interface39 {
+  field730: Type655
+  field21: Enum216!
+  field787: Int
 }
 
-type Type426 {
-  field36: [Type427!]
-  field37: Type122!
-}
-
-type Type427 {
-  field41: String
-  field40: Type425!
-}
-
-type Type428 {
-  field1141: Float!
-  field1142: String!
-  field58: Enum123!
-}
-
-type Type429 {
-  field36: [Type430!]
-  field37: Type122!
-}
-
-type Type430 {
-  field41: String
-  field40: Type428!
-}
-
-type Mutation @extends {
-  field1143(arg1: Input152!): Type431!
-  field1144(arg1: Input154!): Type432!
-}
-
-type Type122 {
-  field269: String
-  field270: Boolean!
-  field271: Boolean!
-  field272: String
-}
-
-type Query @extends {
-  field1145(arg33: ID!): Type422
-  field1146(arg1: Input48!): Type423!
-}
-
-type Type431 {
-  field263: String!
-  field260: String!
-}
-
-type Type432 {
-  field275: Type422
-}
-
-enum Enum122 {
-  VALUE_772
-  VALUE_199
-  VALUE_151
-  VALUE_773
-  VALUE_158
-  VALUE_152
-  VALUE_149
-  VALUE_774
-  VALUE_775
-}
-
-enum Enum123 {
-  VALUE_776
-  VALUE_775
-  VALUE_777
-}
-
-input Input150 {
-  inputField57: String!
-  inputField332: Float!
-  inputField108: String!
-}
-
-input Input151 {
-  inputField171: Int!
-}
-
-input Input152 {
-  inputField103: String
-  inputField104: String
-  inputField333: Input153!
-  inputField105: String!
-}
-
-input Input153 {
-  inputField334: [Input150!]!
-}
-
-input Input48 {
-  inputField106: String!
-  inputField107: Boolean! = false
-}
-
-input Input50 {
-  "This is an anonymized description"
-  inputField109: String
-  "This is an anonymized description"
-  inputField110: Int!
-  "This is an anonymized description"
-  inputField111: Int!
-  "This is an anonymized description"
-  inputField112: Int!
-}
-
-input Input154 {
-  inputField113: String
-  inputField103: String
-  inputField104: String
-  inputField114: String
-  inputField128: Input151!
-  inputField116: Input50
-  inputField118: String
-  inputField119: String
+type Query {
+  field2309(arg212: Input313, arg213: String): Type656
 }

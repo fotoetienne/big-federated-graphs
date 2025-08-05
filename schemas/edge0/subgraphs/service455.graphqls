@@ -1,83 +1,86 @@
-type Mutation @extends {
-  field23177(arg1605: Input4919!): Type10670!
+"""
+This is an anonymized description
+"""
+type Type10987 {
+  field23949: String
+  field23950: Scalar14
+  field108: Type29
+  field180: String
+  field23951: String
+  field23952: String
+  field58: String
 }
 
-input Input4919 {
-  inputField3079: String!
-  inputField680: String!
-  inputField7158: String!
-  inputField7159: String!
+type Type10988 {
+  field12311: String
+  field23953: Int
+  field12310: String
+  field23954: Int
+  field265: String
+  field321: Type26
+  field714: Type184
+  field23955: Int
+  field108: Type29
+  field655: Type159
+  field3078: Type1225
+  field266: String
+  field294: Type26
+}
+
+type Type10989 {
+  field23956: Int
+  field265: Scalar14
+  field321: Type26
+  field23957: Scalar14
+  field5276: Type2168
+  field3850: Type159
+  field23958: [Type1225!]
+  field266: String
+  field294: Type26
+}
+
+type Type10990 {
+  field23959: [Type29!]
+  field23960: [Type159!]
+  field23961: [Type26!]
+  field23962: [Type2168!]
+}
+
+union Union569 = Type29 | Type159 | Type26 | Type2168
+
+type Type159 @key(fields: "field2") @extends {
+  "This is an anonymized description"
+  field2: ID! @external
+}
+
+type Type26 @key(fields: "field132") @extends {
+  "This is an anonymized description"
+  field132: ID! @external
+}
+
+type Type29 @key(fields: "field109") @extends {
+  "This is an anonymized description"
+  field109: Int! @external
+}
+
+type Type1225 @key(fields: "field2") @extends {
+  "This is an anonymized description"
+  field2: ID! @external
+}
+
+type Type184 @extends @key(fields: "field2") {
+  "This is an anonymized description"
+  field2: Int! @external
+}
+
+type Type2168 @extends @key(fields: "field5277") {
+  "This is an anonymized description"
+  field5277: Int! @external
 }
 
 type Query @extends {
-  field23178(arg4: String!): Type2620
-  """
-  This is an anonymized description
-  """
-  field23179(
-  arg296: String!): String
-  """
-  This is an anonymized description
-  """
-  field23180(
-  arg1915: ID!): [Type2620!]!
-  """
-  This is an anonymized description
-  """
-  field23181(
-  arg1916: String!): [Type2620!]!
-  """
-  This is an anonymized description
-  """
-  field23182(
-  arg10: String!
-  arg1917: Int): [Type2620!]!
-}
-
-scalar Scalar1
-
-type Type2620 @key(fields: "field450") {
-  field5008: Scalar1!
-  field450: String!
-  field279: String
-  field3325: String
-  field23183: Scalar1
-  field23184: Scalar1
-  field1466: Scalar11
-  field1122: String!
-  field58: String
-  field1233: String
-  field8612: Boolean!
-  field20975: Type10669
-  field1512: Type10669
-  field9240: Boolean!
-  field18698: String
-  field2492: [String!]!
-  field2332: Scalar11
-}
-
-type Type10669 {
-  field3237: String
-  field1491: String
-  """
-  This is an anonymized description
-  """
-  field7549: String
-  field932: Boolean
-}
-
-type Type5 @key(fields: "field2") @extends {
-  field2: Scalar1! @external
-  field23185: [Type2620!]
-}
-
-type Type2655 @key(fields: "field5011 field5012") @extends {
-  field5011: Scalar1 @external
-  field5012: String @external
-  field11945: Type2620
-}
-
-type Type10670 {
-  field1142: String!
-  field23186: String!
+  field23963(arg1861: [String!]!): [Type10988!]
+  field23964(arg1967: [Int!]!): [Type10987!]
+  field23965(arg1968: [String!]!): [Type10989!]
+  field23966(arg116: Int!): Type10990!
 }

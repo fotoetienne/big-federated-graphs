@@ -1,20 +1,124 @@
-enum Enum3618 {
-  VALUE_804
-  VALUE_807
-  VALUE_1231
+scalar Scalar3
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field30794(
+  arg416: Int!): Type726
+  """
+  This is an anonymized description
+  """
+  field30795: Type15588
+  """
+  This is an anonymized description
+  """
+  field30796(
+  arg2580: Int!): [Type726]
+  """
+  This is an anonymized description
+  """
+  field30797: [Type725]
 }
 
-input Input6888 {
-  inputField10345: String!
-  inputField2413: [String!]!
+"""
+This is an anonymized description
+"""
+type Type726 @key(fields: "field1576") {
+  """
+  This is an anonymized description
+  """
+  field1576: Int!
+  """
+  This is an anonymized description
+  """
+  field11913(
+  arg338: [String] = []): [Type15584]
+  """
+  This is an anonymized description
+  """
+  field2788: [Type15583]
+  """
+  This is an anonymized description
+  """
+  field4379: Int
+  """
+  This is an anonymized description
+  """
+  field4377: [Int]
+  """
+  This is an anonymized description
+  """
+  field11: String!
+  """
+  This is an anonymized description
+  """
+  field21: String!
+  """
+  This is an anonymized description
+  """
+  field1563: [Type725]!
+  """
+  This is an anonymized description
+  """
+  field266: Scalar14!
+  """
+  This is an anonymized description
+  """
+  field294: String!
 }
 
-type Type14904 {
-  field1413: String!
-  field30218: String!
+type Type15583 {
+  field450: Boolean
+  field3758: String
+  field3759: [Int]
+  field3760: String
+  field2: Int
+  field3761: Int
+  field3762: [Type15586]
+  field3763: [Type15585]
+  field11: String!
+  field3764: Int
+  field449: String
+  field80: String!
 }
 
-type Mutation {
-  field30219(arg1: Input6888!): [Type14904]
-  field30220(arg1: Input6888!): [Type14904]
+type Type725 @key(fields: "field2455") {
+  """
+  This is an anonymized description
+  """
+  field11: String!
+  """
+  This is an anonymized description
+  """
+  field2455: Int!
+}
+
+type Type15584 {
+  field67: String
+  field929: [Int]
+  field209: [Type29]
+}
+
+type Type15585 {
+  field632: String
+  field36: String
+}
+
+type Type15586 {
+  field4119: [Type15585]
+}
+
+type Type29 @key(fields: "field109") @extends {
+  field109: Int! @external
+  field3726(arg337: String, arg260: String): [Type726]
+}
+
+type Type15587 {
+  field1576: Int!
+  field6882: String!
+}
+
+type Type15588 {
+  field2572: Scalar3
 }

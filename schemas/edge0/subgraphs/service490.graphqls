@@ -1,32 +1,113 @@
-type Query @extends {
+"""
+This is an anonymized description
+"""
+type Type11698 {
+  field11: String!
+  field23357: String!
+  field25430: String!
+  field25431: Int!
+  field21: Enum2876!
+  field2772: Enum2877!
+  field1259: String!
+  field321: String!
+  field372: Scalar14!
+  field294: String
+  field373: Scalar14
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum2876 {
+  VALUE_1457
+  VALUE_2838
+  VALUE_2753
+  VALUE_165
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum2877 {
+  VALUE_33
+  VALUE_31
+}
+
+"""
+This is an anonymized description
+"""
+input Input5237 {
+  inputField64: String!
+  inputField8871: String!
+  inputField8872: String!
+  inputField8873: Int!
+  inputField1908: Enum2877!
+  inputField452: String!
+}
+
+"""
+This is an anonymized description
+"""
+input Input5238 {
+  inputField8871: String!
+  inputField64: String!
+  inputField8874: Enum2876 = VALUE_2838
+}
+
+"""
+This is an anonymized description
+"""
+input Input5239 {
+  inputField8871: String!
+  inputField64: String!
+}
+
+"""
+This is an anonymized description
+"""
+input Input5240 {
+  inputField8871: String!
+  inputField149: Enum2876 = VALUE_2838
+}
+
+"""
+This is an anonymized description
+"""
+type Type11699 {
+  field25432: Type11698
+  field405: String!
+}
+
+"""
+This is an anonymized description
+"""
+type Type11700 {
+  field25432: Type11698
+  field405: String!
+}
+
+type Query {
   """
   This is an anonymized description
   """
-  field24980(
-  arg2062: String!
-  arg2063: String!): Type11573
+  field25433(
+  arg20: Input5238!): Type11698
+  """
+  This is an anonymized description
+  """
+  field25434(
+  arg20: Input5240!): [Type11698]!
 }
 
-type Type11573 {
-  field24981: String!
-  field18920: String!
-  field7765: [Type11574!]!
-  field1557: Scalar14
-  field9595: Boolean!
-}
-
-type Type11574 {
-  field81: String
-  field253: String
-  field2017: Scalar14!
-  field58: Enum2824!
-}
-
-enum Enum2824 {
-  VALUE_209
-  VALUE_328
-  VALUE_9003
-  VALUE_4073
-  VALUE_196
-  VALUE_9004
+type Mutation {
+  """
+  This is an anonymized description
+  """
+  field25435(
+  arg20: Input5237!): Type11699!
+  """
+  This is an anonymized description
+  """
+  field25436(
+  arg20: Input5239!): Type11700!
 }

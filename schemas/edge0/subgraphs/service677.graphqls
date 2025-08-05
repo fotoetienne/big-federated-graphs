@@ -1,65 +1,17 @@
+"""
+This is an anonymized description
+"""
+scalar Scalar1
+
+type Type16591 {
+  field2377: Int
+  field32471: Int
+  field32472: Scalar1
+  field32473: Scalar1
+  field15517: Scalar1
+  field32474: Scalar1
+}
+
 type Query @extends {
-  field31843(arg1132: String, arg1969: ID): Type15900
-}
-
-type Type331 @extends @key(fields: "field2") {
-  field2: ID! @external
-  field808: Interface30 @external
-  field31844: Type15900 @requires(fields: "field808 { field810, field811}")
-}
-
-interface Interface30 @extends {
-  field810: String @external
-  field811: String @external
-}
-
-type Type332 implements Interface30 @extends @key(fields: "field2") {
-  field2: ID @external
-  field810: String @external
-  field811: String @external
-}
-
-type Type335 implements Interface30 @extends @key(fields: "field2") {
-  field2: ID @external
-  field810: String @external
-  field811: String @external
-}
-
-type Type15900 {
-  field5021: ID!
-  field793: Type15903!
-  field3140: [Enum3835]
-  field2381: Type15901
-  field8005: [Type15902]
-  field10237: [Type15904]
-}
-
-enum Enum3835 {
-  VALUE_8774
-  VALUE_3638
-  VALUE_3635
-}
-
-type Type15901 {
-  field20010: String
-  field31845: String
-  field799: String
-}
-
-type Type15902 {
-  field793: Type15903
-  field5021: ID
-  field5022: ID
-}
-
-type Type15903 {
-  field29314: ID!
-  field13928: String
-  field31846: String
-  field31847: String
-}
-
-type Type15904 {
-  field76: String
-  field10896: String
+  field32475(arg2722: [Int!]!, arg2723: [Int!]): [Type16591!]
 }

@@ -1,63 +1,21 @@
-"""
-This is an anonymized description
-"""
-type Type32 @key(fields: "field107") @extends {
-  field107: Int! @external
+type Query {
+  field32544(arg23: ID!): Type2179
 }
-
-type Query @extends {
-  field32126(arg1: [Input7594]!): [Type16033]!
-}
-
-input Input7594 {
-  inputField10993: Enum3861!
-  inputField10994: String!
-}
-
-type Type16033 {
-  field32127: Enum3861!
-  field32128: String!
-  field32129: Type32!
-}
-
-enum Enum3861 {
-  VALUE_11127
-  VALUE_11128
-}
-
-scalar Scalar1
 
 type Mutation @extends {
-  field32130(arg1: Input7595): Type16034
-  field32131(arg1: Input7596): Type16035
+  field32545(arg20: Input7782): Type2179
 }
 
-input Input7595 {
-  inputField244: String!
-  inputField1472: Scalar1!
-  inputField10995: Int!
-  inputField10996: Enum3862!
+type Type2179 @key(fields: "field2") @extends {
+  field2: ID @external
+  field179: String
+  field32546: String
+  field633: String
 }
 
-input Input7596 {
-  inputField10997: Enum3863
-}
-
-type Type16034 {
-  field894: String
-}
-
-type Type16035 {
-  field894: String
-}
-
-enum Enum3862 {
-  VALUE_11129
-  VALUE_11130
-  VALUE_11131
-}
-
-enum Enum3863 {
-  VALUE_3773
-  VALUE_2052
+input Input7782 {
+  inputField16: ID
+  inputField2351: String
+  inputField11177: String
+  inputField1424: String
 }

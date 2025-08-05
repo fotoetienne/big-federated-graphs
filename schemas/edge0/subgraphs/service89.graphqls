@@ -1,69 +1,155 @@
-"This is an anonymized description"
-directive @directive1("""
-This is an anonymized description
-"""
-arg31: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
-
-directive @directive2 on FIELD_DEFINITION
-
-type Type1590 @key(fields: "field2") @directive1(arg31: "anonymous-string") {
-  field2: ID! @directive2
-  field44: Int
-  field341: String
-  field4106: String
-  field538: Int
+type Type1913 @key(fields: "field556") {
+  field554: Float!
+  field198: String
+  field555: ID
+  field556: ID!
+  field557: String!
+  field558: String!
+  field559: ID
+  field560: ID!
+  field100: Enum572!
+  field5239: Type1919!
+  field58: String
 }
 
-input Input746 {
-  inputField123: String
-  inputField1678: String
-  inputField581: Int
+type Type1914 {
+  field176: [Type1915!]
+  field366: Type119!
 }
 
-input Input747 {
-  inputField7: ID!
-  inputField8: Int
-  inputField123: String
-  inputField1678: String
-  inputField581: Int
+type Type1915 {
+  field369: String
+  field177: Type1913!
 }
 
-type Type1591 {
-  field2660: [Interface101]
+type Type1916 {
+  field422: String
+  field5240: Int
+  field5241: Int
+  field5242: String
+  field11: String!
+  field677: String!
+  field3352: String
+  field1375: Int!
+  field21: String!
+  field80: String!
 }
 
-type Type1592 implements Interface101 {
-  field388: String
-  field3325: String
-  field2454: String
+type Type1917 {
+  field563: String!
+  field100: String!
 }
 
-type Type1593 implements Interface101 {
-  field388: String
-  field3325: String
-  field2454: String
+type Type1918 {
+  field790: [String!]!
+  field3353: String
+  field5241: Int
+  field5243: String!
+  field109: Int!
+  field1446: String!
+  field789: String!
+  field5244: [Type1916!]!
+  field3354: Int
+  field5245: String!
+  field1172: String
 }
 
-type Type1594 implements Interface101 {
-  field388: String
-  field3325: String
-  field2454: String
+type Type1919 {
+  field176: [Type1920!]
+  field366: Type119!
 }
 
-interface Interface101 {
-  field388: String
-  field3325: String
-  field2454: String
-}
-
-type Query @extends {
-  field4107(arg58: String): String @directive1(arg31: "anonymous-string")
-  field4108(arg11: [ID!]!): [Type1590] @directive1(arg31: "anonymous-string")
+type Type1920 {
+  field369: String
+  field177: Type1918!
 }
 
 type Mutation @extends {
-  field4109(arg1: Input746!): Type1590! @directive1(arg31: "anonymous-string")
-  field4110(arg1: Input747!): Type1590! @directive1(arg31: "anonymous-string")
+  field5246(arg20: Input894!): Type1917!
+  field5247(arg20: Input895!): Type1921!
 }
 
-union Union31 = Type1590 | Type1591
+type Type119 {
+  field569: String
+  field570: Boolean!
+  field571: Boolean!
+  field572: String
+}
+
+type Query @extends {
+  field5248(arg49: ID!): Type1913
+  field5249(arg20: Input48!): Type1914!
+}
+
+type Type1921 {
+  field575: Type1913
+}
+
+enum Enum572 {
+  VALUE_2392
+  VALUE_212
+  VALUE_164
+  VALUE_171
+  VALUE_165
+  VALUE_162
+}
+
+enum Enum31 {
+  VALUE_214
+  VALUE_215
+}
+
+input Input893 {
+  inputField1937: Boolean!
+  inputField551: String!
+  inputField187: Int!
+  inputField1296: String!
+  inputField1938: String!
+}
+
+input Input894 {
+  inputField110: String
+  inputField111: String
+  inputField112: String!
+}
+
+input Input48 {
+  inputField113: String!
+  inputField114: Boolean! = false
+}
+
+input Input49 {
+  inputField16: String!
+  "This is an anonymized description"
+  inputField115: Enum31!
+}
+
+input Input50 {
+  "This is an anonymized description"
+  inputField116: String
+  "This is an anonymized description"
+  inputField117: Int!
+  "This is an anonymized description"
+  inputField118: Int!
+  "This is an anonymized description"
+  inputField119: Int!
+}
+
+input Input895 {
+  inputField120: String
+  inputField110: String
+  "This is an anonymized description"
+  inputField111: String
+  inputField121: String
+  inputField135: Input893!
+  "This is an anonymized description"
+  inputField122: Input49
+  "This is an anonymized description"
+  inputField123: Input50
+  "This is an anonymized description"
+  inputField124: String
+  "This is an anonymized description"
+  inputField125: String
+  "This is an anonymized description"
+  inputField126: String
+}
