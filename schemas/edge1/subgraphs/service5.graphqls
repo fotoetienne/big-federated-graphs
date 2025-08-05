@@ -1,20 +1,20 @@
 type Query @extends {
-  field571(arg20: String!, arg21: String): [Type3!]!
+  field717(arg20: String!, arg21: String): [Type3!]!
 }
 
 type Type2 {
-  field133: [Type5!]!
+  field166: [Type5!]!
 }
 
 type Type3 {
-  field43: String!
-  field572: Union1!
+  field47: String!
+  field718: Union1!
 }
 
 type Type4 {
   field2: ID!
-  field43: String
-  field111: Type5
+  field47: String
+  field122: Type5
 }
 
 type Type5 @key(fields: "field2") @extends {
@@ -22,9 +22,9 @@ type Type5 @key(fields: "field2") @extends {
 }
 
 type Type6 {
-  field573: Int!
-  field574: [Type5!]!
-  field575(arg22: String): [Type4!]!
+  field719: Int!
+  field720: [Type5!]!
+  field721(arg22: String): [Type4!]!
 }
 
 union Union1 = Type6 | Type2

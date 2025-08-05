@@ -1,13 +1,13 @@
 union Union95 = Type1265 | Type1266
 
 type Type1265 {
-  field2139: String!
-  field2140: Int @deprecated
+  field2276: String!
+  field2277: Int @deprecated
 }
 
 type Type1266 {
-  field818: Enum313
-  field365: Type33
+  field964: Enum313
+  field460: Type33
 }
 
 enum Enum313 {
@@ -18,26 +18,26 @@ enum Enum313 {
 
 type Type203 @key(fields: "field2") @extends {
   field2: ID! @external
-  field1245: String @external
-  field1244: Int! @external
-  field2141: Union95! @requires(fields: "field1245 field1244")
+  field1388: String @external
+  field1387: Int! @external
+  field2278: Union95! @requires(fields: "field1388 field1387")
 }
 
 type Mutation @extends {
-  field2142: Union96 @deprecated
+  field2279: Union96 @deprecated
 }
 
 union Union96 = Type1267 | Type1268
 
 type Type1267 {
-  field216: String!
+  field270: String!
 }
 
 type Type1268 {
-  field216: String!
+  field270: String!
 }
 
-type Type33 @key(fields: "field18 field621") @extends {
-  field621: String! @external
-  field18: ID! @external
+type Type33 @key(fields: "field19 field767") @extends {
+  field767: String! @external
+  field19: ID! @external
 }
