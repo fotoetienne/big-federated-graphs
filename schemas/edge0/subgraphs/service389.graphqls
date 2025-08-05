@@ -1,103 +1,103 @@
-type Type3249 @key(fields: "field2") {
+type Type3253 @key(fields: "field2") {
   field2: ID! @experimental
-  field405: String @experimental
-}
-
-input Input4237 {
-  inputField7594: [String!]
-  inputField7595: [String!]
-  inputField7596: Int
-  inputField7597: Int
-}
-
-input Input4238 {
-  inputField7598: String
-  inputField7599: String
-  inputField7596: Int
-  inputField7597: Int
-  inputField7600: String
-  inputField7601: String
-  inputField7602: String
-  inputField7603: String
-}
-
-type Type9348 {
-  field20511: String!
-  field546: Boolean!
-  field405: String
-}
-
-type Type9349 {
-  field20511: String!
-  field20512: [String!]!
-  field546: Boolean!
-  field405: String
-}
-
-type Type9350 {
-  field20513: String!
-  field20511: String!
-  field20514: String!
-  field20515: String
-  field20516: String
-  field20517: String
-  field21: Enum2238!
-  field16843: String!
-  field20518: String!
-  field215: String!
-  field20519: String
-  field20520: String
-  field20521: String
-  field269: String
-  field1772: String!
-  field1773: String!
-}
-
-enum Enum2238 {
-  VALUE_1281
-  VALUE_164
-  VALUE_165
-  VALUE_212
-  VALUE_1383
-  VALUE_1676
-  VALUE_7148
-  VALUE_1087
+  field418: String @experimental
 }
 
 input Input4239 {
-  inputField7604: String!
-  inputField7605: String!
-  inputField7606: String!
-  inputField7607: String
-  inputField7608: String
-  inputField7609: String
-  inputField149: Enum2238
-  inputField7602: String
-  inputField7603: String
-  inputField601: String
-  inputField7610: String
-  inputField7611: String
-  inputField7612: String
-  inputField331: String
+  inputField7598: [String!]
+  inputField7599: [String!]
+  inputField7600: Int
+  inputField7601: Int
 }
 
 input Input4240 {
-  inputField149: Enum2238
+  inputField7602: String
   inputField7603: String
-  inputField601: String
+  inputField7600: Int
+  inputField7601: Int
+  inputField7604: String
+  inputField7605: String
+  inputField7606: String
+  inputField7607: String
+}
+
+type Type9354 {
+  field20536: String!
+  field559: Boolean!
+  field418: String
+}
+
+type Type9355 {
+  field20536: String!
+  field20537: [String!]!
+  field559: Boolean!
+  field418: String
+}
+
+type Type9356 {
+  field20538: String!
+  field20536: String!
+  field20539: String!
+  field20540: String
+  field20541: String
+  field20542: String
+  field21: Enum2241!
+  field16867: String!
+  field20543: String!
+  field219: String!
+  field20544: String
+  field20545: String
+  field20546: String
+  field274: String
+  field1786: String!
+  field1787: String!
+}
+
+enum Enum2241 {
+  VALUE_1283
+  VALUE_164
+  VALUE_165
+  VALUE_212
+  VALUE_1385
+  VALUE_1680
+  VALUE_7151
+  VALUE_1089
+}
+
+input Input4241 {
+  inputField7608: String!
+  inputField7609: String!
+  inputField7610: String!
+  inputField7611: String
   inputField7612: String
   inputField7613: String
+  inputField149: Enum2241
+  inputField7606: String
+  inputField7607: String
+  inputField601: String
+  inputField7614: String
+  inputField7615: String
+  inputField7616: String
+  inputField331: String
+}
+
+input Input4242 {
+  inputField149: Enum2241
+  inputField7607: String
+  inputField601: String
+  inputField7616: String
+  inputField7617: String
 }
 
 type Query @extends {
-  field20522(arg23: ID!): Type3249 @experimental
-  field20523(arg1703: String, arg1704: String, arg1705: String, arg1706: String, arg1707: String, arg1708: String, arg272: Enum2238, arg1709: String, arg1710: String, arg1711: String, arg920: String, arg971: String): [Type9350!]! @experimental
+  field20547(arg23: ID!): Type3253 @experimental
+  field20548(arg1703: String, arg1704: String, arg1705: String, arg1706: String, arg1707: String, arg1708: String, arg272: Enum2241, arg1709: String, arg1710: String, arg1711: String, arg920: String, arg971: String): [Type9356!]! @experimental
 }
 
 type Mutation @extends {
-  field20524(arg20: Input4237!): Type9348! @experimental
-  field20525(arg20: Input4238!): Type9348! @experimental
-  field20526(arg1703: String!): Type9349! @experimental
-  field20527(arg20: Input4239!): Type9350! @experimental
-  field20528(arg1704: String!, arg20: Input4240!): Type9350! @experimental
+  field20549(arg20: Input4239!): Type9354! @experimental
+  field20550(arg20: Input4240!): Type9354! @experimental
+  field20551(arg1703: String!): Type9355! @experimental
+  field20552(arg20: Input4241!): Type9356! @experimental
+  field20553(arg1704: String!, arg20: Input4242!): Type9356! @experimental
 }

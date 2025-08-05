@@ -6,72 +6,72 @@ This is an anonymized description
 """
 arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINITION
 
-type Type2412 @key(fields: "field5304") {
-  field5304: Int!
-  field22608: String
+type Type2416 @key(fields: "field5322") {
+  field5322: Int!
+  field22635: String
   field108: Type29
-  field22609: Boolean
-  field22610: Int
-  field22611: Int
-  field22612: String
-  field22613: String
-  field22614: Scalar9
-  field22615: Scalar9
-  field22616: Int
-  field22617: Boolean
-  field22618: Int
-  field22619: String
-  field22620: Scalar9
-  field22621: String
-  field22622: Int
-  field22623: String
-  field22624: String
-  field3462: Scalar14
-  field14418: Int
-  field22625: Int
-  field22626: Int
-  field22627: Int
-  field2270: String
-  field22628: String
-  field22629: String
-  field22630: [Type2413]
-  field22631: [Type2413]
-  field7507: String
+  field22636: Boolean
+  field22637: Int
+  field22638: Int
+  field22639: String
+  field22640: String
+  field22641: Scalar9
+  field22642: Scalar9
+  field22643: Int
+  field22644: Boolean
+  field22645: Int
+  field22646: String
+  field22647: Scalar9
+  field22648: String
+  field22649: Int
+  field22650: String
+  field22651: String
+  field3480: Scalar14
+  field14445: Int
+  field22652: Int
+  field22653: Int
+  field22654: Int
+  field2284: String
+  field22655: String
+  field22656: String
+  field22657: [Type2417]
+  field22658: [Type2417]
+  field7526: String
 }
 
-type Type2413 @key(fields: "field5305") {
-  field5305: Int!
-  field22632: String
-  field655: Type159
-  field22633: Scalar14
-  field22634: Int
-  field6166: String
-  field22635: String
-  field22636: String
-  field22637: String
-  field22638: String
-  field22610: Int
-  field22611: Int
-  field22639: String
-  field22640: [String]
+type Type2417 @key(fields: "field5323") {
+  field5323: Int!
+  field22659: String
+  field668: Type159
+  field22660: Scalar14
+  field22661: Int
+  field6184: String
+  field22662: String
+  field22663: String
+  field22664: String
+  field22665: String
+  field22637: Int
+  field22638: Int
+  field22666: String
+  field22667: [String]
 }
 
 "This is an anonymized description"
 scalar Scalar1
 
 type Query @extends @directive1(arg47: "anonymous-string") {
-  field22641(arg1859: [Int!]!): [Type2412]
-  field22642(arg1860: [Int!]!): [Type2413]
-  field22643(arg122: [Int!]!): [Type2412]
-  field22644(arg1861: [ID!]!): [Type2413]
+  field22668(arg1859: [Int!]!): [Type2416]
+  field22669(arg1860: [Int!]!): [Type2417]
+  field22670(arg122: [Int!]!): [Type2416]
+  field22671(arg1861: [ID!]!): [Type2417]
 }
 
 type Type29 @extends @key(fields: "field109") {
   field109: Int! @external
-  field22641: [Type2412!]
+  field22668: [Type2416!]
 }
 
 type Type159 @extends @key(fields: "field2") {
   field2: ID! @external
-  field22642: [Type2413!]
+  field22669: [Type2417!]
 }

@@ -3,49 +3,49 @@ interface Interface204 {
   field11: String!
 }
 
-type Type2496 implements Interface204 @key(fields: "field2") {
+type Type2500 implements Interface204 @key(fields: "field2") {
   field2: ID!
   field11: String!
-  field9180: String!
-  field9181: String
+  field9207: String!
+  field9208: String
 }
 
-type Type2497 implements Interface204 @key(fields: "field2") {
+type Type2501 implements Interface204 @key(fields: "field2") {
   field2: ID!
-  field308: String!
+  field319: String!
   field11: String!
-  field67: Type2496!
-  field9182: String
+  field67: Type2500!
+  field9209: String
 }
 
-type Type2498 implements Interface204 @key(fields: "field2") {
+type Type2502 implements Interface204 @key(fields: "field2") {
   field2: ID!
   field11: String!
-  field320: Float
-  field319: Float
-  field9183: String
-  field1225: String
-  field9184: Type2497
-  field67: Type2496!
+  field331: Float
+  field330: Float
+  field9210: String
+  field1239: String
+  field9211: Type2501
+  field67: Type2500!
 }
 
-enum Enum998 {
-  VALUE_1034
-  VALUE_3923
+enum Enum1001 {
+  VALUE_1036
+  VALUE_3926
 }
 
-input Input1724 {
-  inputField854: Enum998
-  inputField3226: Int
+input Input1726 {
+  inputField854: Enum1001
+  inputField3230: Int
 }
 
 type Query @extends {
   """
   This is an anonymized description
   """
-  field9185(
+  field9212(
   arg74: String
-  arg899: [Input1724]
+  arg899: [Input1726]
   arg116: Int
   arg900: Int): [Interface204!]!
 }

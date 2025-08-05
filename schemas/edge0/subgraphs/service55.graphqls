@@ -1,5 +1,5 @@
 type Type22 @key(fields: "field2") @extends {
-  field2: Enum550! @external
+  field2: Enum553! @external
 }
 
 type Type803 @key(fields: "field2") @extends {
@@ -13,22 +13,22 @@ type Type26 @key(fields: "field132") @extends {
 type Type804 @key(fields: "field2") {
   field2: ID!
   field11: String!
-  field198: String
-  field2692: [Type22!]!
-  field2693: Type805!
-  field26: Enum252!
-  field31: Enum253!
-  field41: Enum255!
-  field2694: Enum254!
-  field2695: Type806!
-  field2696: [Interface42!]
-  field2697: [Type812!]
-  field2698: [Type809!]
-  field2699: Type813!
-  field21: Enum257!
+  field200: String
+  field2706: [Type22!]!
+  field2707: Type805!
+  field26: Enum253!
+  field31: Enum254!
+  field41: Enum256!
+  field2708: Enum255!
+  field2709: Type806!
+  field2710: [Interface42!]
+  field2711: [Type812!]
+  field2712: [Type809!]
+  field2713: Type813!
+  field21: Enum258!
   field58: Int!
   field22: Boolean!
-  field1259: Type26
+  field1273: Type26
 }
 
 type Type805 {
@@ -38,8 +38,8 @@ type Type805 {
 }
 
 type Type806 {
-  field2700: Enum256!
-  field2701: Float
+  field2714: Enum257!
+  field2715: Float
 }
 
 interface Interface42 {
@@ -48,25 +48,20 @@ interface Interface42 {
 
 type Type807 implements Interface42 {
   field11: String!
-  field2702: Int!
-  field2703: Int
+  field2716: Int!
+  field2717: Int
   field37: Scalar8!
 }
 
 type Type808 implements Interface42 {
   field11: String!
-  field2704: Int!
-  field2705: Int
-  field309: Enum251!
-}
-
-enum Enum251 {
-  VALUE_1245
-  VALUE_1246
-  VALUE_1247
+  field2718: Int!
+  field2719: Int
+  field320: Enum252!
 }
 
 enum Enum252 {
+  VALUE_1247
   VALUE_1248
   VALUE_1249
 }
@@ -77,12 +72,12 @@ enum Enum253 {
 }
 
 enum Enum254 {
-  VALUE_1126
   VALUE_1252
+  VALUE_1253
 }
 
 enum Enum255 {
-  VALUE_1253
+  VALUE_1128
   VALUE_1254
 }
 
@@ -92,29 +87,34 @@ enum Enum256 {
 }
 
 enum Enum257 {
+  VALUE_1257
+  VALUE_1258
+}
+
+enum Enum258 {
   VALUE_171
   VALUE_22
-  VALUE_759
+  VALUE_761
 }
 
 type Type809 @key(fields: "field2") {
   field2: ID!
   field11: String!
-  field2692: [Type22!]!
-  field2706: Interface43!
-  field21: Enum259!
+  field2706: [Type22!]!
+  field2720: Interface43!
+  field21: Enum260!
   field58: Int!
   field22: Boolean!
-  field1259: Type26
+  field1273: Type26
 }
 
 interface Interface43 {
-  field260: Enum258!
+  field265: Enum259!
 }
 
 type Type810 implements Interface43 {
-  field260: Enum258!
-  field2707: Type803!
+  field265: Enum259!
+  field2721: Type803!
 }
 
 type Type811 {
@@ -126,30 +126,30 @@ type Type811 {
 
 type Type812 {
   field2: ID!
-  field496: Boolean!
+  field509: Boolean!
   field145: [Type811!]
   field148: [Type811!]
 }
 
-enum Enum258 {
-  VALUE_1257
-  VALUE_1258
+enum Enum259 {
+  VALUE_1259
+  VALUE_1260
 }
 
-enum Enum259 {
+enum Enum260 {
   VALUE_171
   VALUE_22
-  VALUE_759
+  VALUE_761
 }
 
 type Type813 @key(fields: "field2") {
   field2: ID!
   field11: String!
-  field2694: Enum254!
+  field2708: Enum255!
 }
 
 type Query @extends {
-  field2708(arg1: [ID!]!): [Type804]
-  field2709(arg1: [ID!]!): [Type809]
-  field2710(arg1: [ID!]!): [Type813]
+  field2722(arg1: [ID!]!): [Type804]
+  field2723(arg1: [ID!]!): [Type809]
+  field2724(arg1: [ID!]!): [Type813]
 }

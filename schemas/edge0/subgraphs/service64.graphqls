@@ -3,13 +3,13 @@ directive @directive1(arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITIO
 directive @directive2 on FIELD_DEFINITION
 
 type Query @directive1(arg47: "anonymous-string") {
-  field3348(arg7: Input617!, arg306: Input618!): Type1240!
-  field3349(arg23: ID!): Type1242!
+  field3362(arg7: Input617!, arg306: Input618!): Type1240!
+  field3363(arg23: ID!): Type1242!
 }
 
 type Mutation @directive1(arg47: "anonymous-string") {
-  field3350(arg20: Input616!): ID
-  field3351(arg20: Input615): ID
+  field3364(arg20: Input616!): Type1247
+  field3365(arg20: Input615): Type1248
 }
 
 input Input615 {
@@ -18,8 +18,10 @@ input Input615 {
   inputField1293: String
   inputField1294: Int
   inputField1295: String
-  inputField551: String!
-  inputField331: String!
+  "This is an anonymized description"
+  inputField551: String
+  "This is an anonymized description"
+  inputField331: String
 }
 
 input Input616 {
@@ -35,7 +37,7 @@ input Input617 {
   "This is an anonymized description"
   inputField1298: String
   inputField187: Int
-  inputField437: [Enum333!]
+  inputField437: [Enum336!]
 }
 
 input Input618 {
@@ -46,92 +48,123 @@ input Input618 {
 }
 
 type Type1240 {
-  field366: Type119!
-  field176: [Type1241!]!
-  field367: Int!
+  field379: Type119!
+  field177: [Type1241!]!
+  field380: Int!
 }
 
 type Type1241 {
-  field369: String!
-  field177: Type1242!
+  field382: String!
+  field178: Type1242!
 }
 
 type Type1242 {
-  field1446: String!
+  field1460: String!
   field108: Type29!
-  field321: Type26!
-  field21: Enum333!
-  field677: String!
-  field111: [Type1243!]!
-  field3352: Scalar14!
-  field3353: String
-  field3354: Int
-  field1172: String
+  field332: Type26!
+  field21: Enum336!
+  field690: String!
+  field111: [Type1245!]!
+  field3366: Scalar14!
+  field3367: String
+  field3368: Int
+  field1186: String
   field11: String!
-  field1375: Int!
-  field265: Scalar14!
-  field3355: String
+  field1389: Int!
+  field270: Scalar14!
+  field3369: String
+  field809(arg283: [Enum330!]!): [Type1243!]!
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum330 {
+  VALUE_867
+  VALUE_1442
+  VALUE_1443
 }
 
 type Type1243 {
-  field11: String!
-  field80: Enum332!
-  field677: String!
-  field3356: String
-  field1375: Int!
-  field3352: Scalar14!
-  field793: [Type1244!]!
-}
-
-type Type1244 {
-  field80: Enum329!
-  field2548: Enum330!
-  field308: Enum331!
-  field405: String
-  field3357: String
-  field3358: [String!]!
-}
-
-enum Enum329 {
-  VALUE_1440
-  VALUE_1441
-}
-
-enum Enum330 {
-  VALUE_302
-  VALUE_301
-  VALUE_1442
+  field1798: Enum330!
+  field3370: Type1244!
+  field21: Enum331!
 }
 
 enum Enum331 {
-  VALUE_1443
+  VALUE_792
+  VALUE_790
   VALUE_1444
+  VALUE_761
+}
+
+type Type1244 {
+  field3371: Int!
+  field3372: Int!
+  field3373: String!
+  field21: String!
+}
+
+type Type1245 {
+  field11: String!
+  field80: Enum335!
+  field690: String!
+  field3374: String
+  field1389: Int!
+  field3366: Scalar14!
+  field806: [Type1246!]!
+  field809(arg283: [Enum330!]!): [Type1243!]!
+}
+
+type Type1246 {
+  field80: Enum332!
+  field2562: Enum333!
+  field319: Enum334!
+  field418: String
+  field3375: String
+  field3376: [String!]!
+}
+
+enum Enum332 {
   VALUE_1445
   VALUE_1446
+}
+
+enum Enum333 {
+  VALUE_302
+  VALUE_301
   VALUE_1447
+}
+
+enum Enum334 {
   VALUE_1448
   VALUE_1449
   VALUE_1450
   VALUE_1451
-  VALUE_154
-}
-
-enum Enum332 {
   VALUE_1452
   VALUE_1453
-  VALUE_10
-}
-
-enum Enum333 {
-  VALUE_171
   VALUE_1454
   VALUE_1455
   VALUE_1456
+  VALUE_154
+}
+
+enum Enum335 {
   VALUE_1457
-  VALUE_790
   VALUE_1458
+  VALUE_10
+}
+
+enum Enum336 {
+  VALUE_171
+  VALUE_1459
+  VALUE_1460
+  VALUE_1461
+  VALUE_1462
+  VALUE_792
+  VALUE_1444
   VALUE_164
-  VALUE_1277
+  VALUE_1279
 }
 
 type Type29 @extends @key(fields: "field109") {
@@ -140,4 +173,12 @@ type Type29 @extends @key(fields: "field109") {
 
 type Type26 @extends @key(fields: "field132") {
   field132: ID! @external
+}
+
+type Type1247 {
+  field1460: ID
+}
+
+type Type1248 {
+  field2804: ID
 }

@@ -8,40 +8,40 @@ type Type29 @extends @key(fields: "field109") {
 """
 This is an anonymized description
 """
-type Type2168 @extends @key(fields: "field5277") {
-  field5277: Int! @external
+type Type2172 @extends @key(fields: "field5295") {
+  field5295: Int! @external
 }
 
 """
 This is an anonymized description
 """
-union Union47 = Type29 | Type2168
+union Union47 = Type29 | Type2172
 
 """
 This is an anonymized description
 """
-type Type3442 {
+type Type3446 {
   """
   This is an anonymized description
   """
-  field6111: Float
-  field6112: Union47
+  field6129: Float
+  field6130: Union47
 }
 
-type Type3443 {
-  field177: Type3442
-  field369: String
+type Type3447 {
+  field178: Type3446
+  field382: String
 }
 
-type Type3444 {
-  field176: [Type3443]
-  field366: Type119
+type Type3448 {
+  field177: [Type3447]
+  field379: Type119
 }
 
 """
 This is an anonymized description
 """
-type Type3445 {
+type Type3449 {
   field11: String
   field146: [String]
 }
@@ -68,6 +68,6 @@ input Input1055 {
 This is an anonymized description
 """
 type Query @extends {
-  field6113(arg591: Input1055, arg26: Int = 0, arg25: String): Type3444!
-  field6114(arg592: String!): [Type3445]
+  field6131(arg591: Input1055, arg26: Int = 0, arg25: String): Type3448!
+  field6132(arg592: String!): [Type3449]
 }

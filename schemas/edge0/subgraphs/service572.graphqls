@@ -1,55 +1,55 @@
-type Type2001 @key(fields: "field2") {
+type Type2005 @key(fields: "field2") {
   field2: ID!
   field11: String!
 }
 
-type Type2002 @key(fields: "field2") {
+type Type2006 @key(fields: "field2") {
   field2: ID!
   field11: String!
-  field28725: String!
-  field28726: Type2001!
-}
-
-input Input6590 {
-  inputField9879: String
-}
-
-type Query @extends {
-  field28727: [Type2001!]!
-  field28728(arg20: Input6590!): [Type2002!]!
-}
-
-input Input6591 {
-  inputField64: String!
-  inputField9879: String!
-  inputField9880: String!
+  field28752: String!
+  field28753: Type2005!
 }
 
 input Input6592 {
-  inputField1075: [Input6591!]!
+  inputField9883: String
+}
+
+type Query @extends {
+  field28754: [Type2005!]!
+  field28755(arg20: Input6592!): [Type2006!]!
 }
 
 input Input6593 {
+  inputField64: String!
+  inputField9883: String!
+  inputField9884: String!
+}
+
+input Input6594 {
+  inputField1075: [Input6593!]!
+}
+
+input Input6595 {
   inputField16: ID!
   inputField64: String!
-  inputField9879: String!
-  inputField9880: String!
+  inputField9883: String!
+  inputField9884: String!
 }
 
-type Type14566 {
-  field28729: [Type2002!]!
+type Type14572 {
+  field28756: [Type2006!]!
 }
 
-type Type14567 {
-  field730: String!
+type Type14573 {
+  field743: String!
 }
 
-union Union783 = Type2002 | Type14567
+union Union783 = Type2006 | Type14573
 
-union Union784 = Type14566 | Type14567
+union Union784 = Type14572 | Type14573
 
 type Mutation @extends {
-  field28730(arg20: Input6591!): Union783!
-  field28731(arg20: Input6592!): Union784!
-  field28732(arg20: Input6593!): Union783!
+  field28757(arg20: Input6593!): Union783!
+  field28758(arg20: Input6594!): Union784!
+  field28759(arg20: Input6595!): Union783!
 }

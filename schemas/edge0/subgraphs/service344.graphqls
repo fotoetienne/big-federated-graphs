@@ -1,25 +1,25 @@
-enum Enum2037 {
-  VALUE_1117
-  VALUE_1118
-  VALUE_2057
-  VALUE_6659
+enum Enum2040 {
+  VALUE_1119
+  VALUE_1120
+  VALUE_2060
+  VALUE_6662
 }
 
 """
 This is an anonymized description
 """
-enum Enum2038 {
-  VALUE_6660
-  VALUE_6661
-  VALUE_6662
+enum Enum2041 {
   VALUE_6663
   VALUE_6664
+  VALUE_6665
+  VALUE_6666
+  VALUE_6667
 }
 
 """
 This is an anonymized description
 """
-type Type8643 {
+type Type8649 {
   """
   This is an anonymized description
   """
@@ -31,68 +31,68 @@ type Type8643 {
   """
   This is an anonymized description
   """
-  field13985: String!
+  field14012: String!
   """
   This is an anonymized description
   """
-  field198: String!
+  field200: String!
   """
   This is an anonymized description
   """
-  field17573: Enum2038
+  field17597: Enum2041
   """
   This is an anonymized description
   """
-  field17574: Int
+  field17598: Int
 }
 
 """
 This is an anonymized description
 """
-type Type8644 {
+type Type8650 {
   """
   This is an anonymized description
   """
-  field17575: Type8643!
-  field17576: Int
-  field17577: Int
-  field17578: Int
-  field17579: Int
+  field17599: Type8649!
+  field17600: Int
+  field17601: Int
+  field17602: Int
+  field17603: Int
 }
 
-type Type427 @key(fields: "field1390 field1416") @extends {
-  field1390: ID @external
-  field1416: Enum576 @external
+type Type427 @key(fields: "field1404 field1430") @extends {
+  field1404: ID @external
+  field1430: Enum579 @external
 }
 
 """
 This is an anonymized description
 """
-type Type8645 {
-  field509: Enum2560!
-  field17580: Boolean
-  field17581: Boolean
-  field11083: Boolean
-  field17582: Boolean
-  field17583: Boolean
-  field17584: Boolean
-  field17585: Boolean
-  field17586: Boolean
-  field17587: Boolean
-  field17588: Boolean @deprecated(reason: "Anonymized deprecation reason")
-  field15151: Boolean
-  field17589: Boolean @deprecated(reason: "Anonymized deprecation reason")
-  field1874: Scalar14
+type Type8651 {
+  field522: Enum2563!
+  field17604: Boolean
+  field17605: Boolean
+  field11110: Boolean
+  field17606: Boolean
+  field17607: Boolean
+  field17608: Boolean
+  field17609: Boolean
+  field17610: Boolean
+  field17611: Boolean
+  field17612: Boolean @deprecated(reason: "Anonymized deprecation reason")
+  field15175: Boolean
+  field17613: Boolean @deprecated(reason: "Anonymized deprecation reason")
+  field1888: Scalar14
 }
 
 """
 This is an anonymized description
 """
-type Type2125 @key(fields: "field5259 { field1390 field1416 }") @extends {
-  field5259: Type427 @external
-  field17590: Type8645 @external
+type Type2129 @key(fields: "field5277 { field1404 field1430 }") @extends {
+  field5277: Type427 @external
+  field17614: Type8651 @external
   """
   This is an anonymized description
   """
-  field17591: [Type8644] @requires(fields: "field17590 { field509 }")
+  field17615: [Type8650] @requires(fields: "field17614 { field522 }")
 }

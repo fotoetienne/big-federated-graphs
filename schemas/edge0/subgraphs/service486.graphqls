@@ -1,24 +1,24 @@
-type Type427 @key(fields: "field1390 field1416") @extends {
-  field1390: ID @external
-  field1416: Enum576 @external
+type Type427 @key(fields: "field1404 field1430") @extends {
+  field1404: ID @external
+  field1430: Enum579 @external
 }
 
-type Type2125 @key(fields: "field5259 { field1390 field1416 }") @extends {
-  field5259: Type427 @external
-  field17590: Type8645
+type Type2129 @key(fields: "field5277 { field1404 field1430 }") @extends {
+  field5277: Type427 @external
+  field17614: Type8651
 }
 
-type Type2126 @key(fields: "field2") @extends {
+type Type2130 @key(fields: "field2") @extends {
   field2: ID! @external
 }
 
-type Type2127 @key(fields: "field2 field5260{ field2 }") @extends {
+type Type2131 @key(fields: "field2 field5278{ field2 }") @extends {
   field2: ID! @external
-  field5260: Type2126! @external
+  field5278: Type2130! @external
   """
   This is an anonymized description
   """
-  field25314: Type11687
+  field25341: Type11693
 }
 
 """
@@ -28,71 +28,71 @@ interface Interface465 {
   """
   This is an anonymized description
   """
-  field1874: Scalar14
+  field1888: Scalar14
 }
 
 """
 This is an anonymized description
 """
-type Type8645 implements Interface465 {
+type Type8651 implements Interface465 {
   """
   This is an anonymized description
   """
-  field509: Enum2560!
+  field522: Enum2563!
   """
   This is an anonymized description
   """
-  field17580: Boolean
+  field17604: Boolean
   """
   This is an anonymized description
   """
-  field17581: Boolean
+  field17605: Boolean
   """
   This is an anonymized description
   """
-  field11083: Boolean
+  field11110: Boolean
   """
   This is an anonymized description
   """
-  field17582: Boolean
+  field17606: Boolean
   """
   This is an anonymized description
   """
-  field17583: Boolean
+  field17607: Boolean
   """
   This is an anonymized description
   """
-  field17584: Boolean
+  field17608: Boolean
   """
   This is an anonymized description
   """
-  field17585: Boolean
+  field17609: Boolean
   """
   This is an anonymized description
   """
-  field17586: Boolean
+  field17610: Boolean
   """
   This is an anonymized description
   """
-  field17587: Boolean
+  field17611: Boolean
   """
   This is an anonymized description
   """
-  field17588: Boolean @deprecated(reason: "Anonymized deprecation reason")
+  field17612: Boolean @deprecated(reason: "Anonymized deprecation reason")
   """
   This is an anonymized description
   """
-  field15151: Boolean
+  field15175: Boolean
   """
   This is an anonymized description
   """
-  field17589: Boolean @deprecated(reason: "Anonymized deprecation reason")
-  field1874: Scalar14
+  field17613: Boolean @deprecated(reason: "Anonymized deprecation reason")
+  field1888: Scalar14
 }
 
-type Type11687 {
+type Type11693 {
   """
   This is an anonymized description
   """
-  field25315: String @experimental
+  field25342: String @experimental
 }

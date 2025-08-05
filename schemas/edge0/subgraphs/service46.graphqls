@@ -1,37 +1,37 @@
 type Query @extends {
-  field2310(arg214: [Enum217], arg1: [String], arg211: [Int], arg215: [String]): [Type657]
-  field2311(arg214: [Enum217], arg1: [String], arg211: [Int]): [Type657]
-  field2312: [Type26]
+  field2324(arg214: [Enum218], arg1: [String], arg211: [Int], arg215: [String]): [Type657]
+  field2325(arg214: [Enum218], arg1: [String], arg211: [Int]): [Type657]
+  field2326: [Type26]
 }
 
 type Mutation @extends {
-  field2313(arg216: [Input314]): Type662
-  field2314(arg217: [Input315]): Type662
-  field2315(arg1: [String]): Type662
-  field2316(arg1: [String]): Type662
-  field2317(arg1: [String]): Type662
-  field2318(arg1: [String]): Type662
+  field2327(arg216: [Input314]): Type662
+  field2328(arg217: [Input315]): Type662
+  field2329(arg1: [String]): Type662
+  field2330(arg1: [String]): Type662
+  field2331(arg1: [String]): Type662
+  field2332(arg1: [String]): Type662
 }
 
 type Subscription @extends {
-  field2319: Type658
+  field2333: Type658
 }
 
 type Type29 @key(fields: "field109") @extends {
   field109: Int! @external
 }
 
-type Type26 @key(fields: "field1251") @extends {
-  field1251: String @external
+type Type26 @key(fields: "field1265") @extends {
+  field1265: String @external
 }
 
 type Type657 {
   field2: ID!
-  field554: Scalar13!
-  field1451: Scalar13!
-  field1786: Scalar13
-  field80: Enum217
-  field100: Enum218
+  field567: Scalar13!
+  field1465: Scalar13!
+  field1800: Scalar13
+  field80: Enum218
+  field100: Enum219
   field109: Int
   field128: String
   field108: Type29
@@ -39,31 +39,31 @@ type Type657 {
 
 type Type658 {
   field2: ID!
-  field80: Enum217
-  field100: Enum218
+  field80: Enum218
+  field100: Enum219
   field109: Int
   field128: String
 }
 
 type Type659 {
-  field466: Type657
+  field479: Type657
 }
 
 type Type660 {
-  field405: String!
+  field418: String!
 }
 
 type Type661 {
-  field466: [Type657]
+  field479: [Type657]
 }
 
 type Type662 {
-  field546: Type661
-  field547: [Type660]
+  field559: Type661
+  field560: [Type660]
 }
 
 input Input314 {
-  inputField115: Enum217
+  inputField115: Enum218
   inputField187: Int
   inputField692: String
   inputField617: Scalar13!
@@ -74,18 +74,18 @@ input Input315 {
   inputField692: String
 }
 
-enum Enum217 {
-  VALUE_1119
-  VALUE_1120
+enum Enum218 {
+  VALUE_1121
+  VALUE_1122
 }
 
 """
 This is an anonymized description
 """
-enum Enum218 {
-  VALUE_995
+enum Enum219 {
+  VALUE_997
   VALUE_162
-  VALUE_1121
-  VALUE_1122
+  VALUE_1123
+  VALUE_1124
   VALUE_212
 }

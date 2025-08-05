@@ -1,70 +1,70 @@
 type Query @extends {
-  field14895(arg23: ID!): Type6909
-  field14896: [Type6909]
-  field14897(arg69: ID!): Type6910
-  field14898(arg23: ID!): Type6911
-  field14899(arg69: ID!): [Type6911!]!
-  field14900(arg1377: ID!): Type6913
+  field14919(arg23: ID!): Type6915
+  field14920: [Type6915]
+  field14921(arg69: ID!): Type6916
+  field14922(arg23: ID!): Type6917
+  field14923(arg69: ID!): [Type6917!]!
+  field14924(arg1377: ID!): Type6919
 }
 
 type Mutation @extends {
-  field14901(arg20: Input2909!): Type6909
-  field14902(arg23: ID!, arg20: Input2909!): Type6909
-  field14903(arg23: ID!): Boolean
-  field14904(arg1378: ID!, arg115: String!): String
-  field14905(arg20: Input2910!): Type6911
-  field14906(arg23: ID!): Boolean
-  field14907(arg20: Input2911!): Boolean
+  field14925(arg20: Input2911!): Type6915
+  field14926(arg23: ID!, arg20: Input2911!): Type6915
+  field14927(arg23: ID!): Boolean
+  field14928(arg1378: ID!, arg115: String!): String
+  field14929(arg20: Input2912!): Type6917
+  field14930(arg23: ID!): Boolean
+  field14931(arg20: Input2913!): Boolean
 }
 
-type Type6909 {
+type Type6915 {
   field2: ID!
   field11: String
-  field265: Float
-  field14908: [Type6913!]!
-}
-
-input Input2909 {
-  inputField64: String
-}
-
-type Type6910 {
-  field2: ID!
-  field11: String
-  field6337: String
-  field265: Float
-}
-
-type Type6911 {
-  field2: ID!
-  field789: ID!
-  field11: String
-  field439: Type31
-  field14909: [Type6911!]!
-  field2796: [Type6911!]!
-  field265: Float
-}
-
-input Input2910 {
-  inputField64: String
-  inputField188: ID!
-  inputField57: String!
-  inputField5333: String
+  field270: Float
+  field14932: [Type6919!]!
 }
 
 input Input2911 {
-  inputField3975: ID!
-  inputField5334: ID!
+  inputField64: String
 }
 
-type Type6912 {
-  field243: ID!
-  field244: ID!
+type Type6916 {
+  field2: ID!
+  field11: String
+  field6355: String
+  field270: Float
 }
 
-type Type6913 {
-  field4385: [Type6911!]!
-  field176: [Type6912!]!
+type Type6917 {
+  field2: ID!
+  field802: ID!
+  field11: String
+  field452: Type31
+  field14933: [Type6917!]!
+  field2810: [Type6917!]!
+  field270: Float
+}
+
+input Input2912 {
+  inputField64: String
+  inputField188: ID!
+  inputField57: String!
+  inputField5337: String
+}
+
+input Input2913 {
+  inputField3979: ID!
+  inputField5338: ID!
+}
+
+type Type6918 {
+  field247: ID!
+  field248: ID!
+}
+
+type Type6919 {
+  field4403: [Type6917!]!
+  field177: [Type6918!]!
 }
 
 """
@@ -78,6 +78,6 @@ type Type32 @key(fields: "field2 field58") @extends {
 """
 This is an anonymized description
 """
-type Type31 @key(fields: "field422 { field2 field58 }") @extends {
-  field422: Type32 @external
+type Type31 @key(fields: "field435 { field2 field58 }") @extends {
+  field435: Type32 @external
 }

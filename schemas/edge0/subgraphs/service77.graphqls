@@ -6,12 +6,12 @@ arg47: String!) on OBJECT | INPUT_OBJECT | FIELD_DEFINITION | INPUT_FIELD_DEFINI
 
 directive @directive2 on FIELD_DEFINITION
 
-type Type1641 @key(fields: "field2") @directive1(arg47: "anonymous-string") {
+type Type1645 @key(fields: "field2") @directive1(arg47: "anonymous-string") {
   field2: ID! @directive2
   field58: Int
-  field631: String
-  field4416: String
-  field215: Int
+  field644: String
+  field4434: String
+  field219: Int
 }
 
 input Input763 {
@@ -28,42 +28,42 @@ input Input764 {
   inputField601: Int
 }
 
-type Type1642 {
-  field2971: [Interface103]
+type Type1646 {
+  field2985: [Interface103]
 }
 
-type Type1643 implements Interface103 {
-  field677: String
-  field3648: String
-  field2768: String
+type Type1647 implements Interface103 {
+  field690: String
+  field3666: String
+  field2782: String
 }
 
-type Type1644 implements Interface103 {
-  field677: String
-  field3648: String
-  field2768: String
+type Type1648 implements Interface103 {
+  field690: String
+  field3666: String
+  field2782: String
 }
 
-type Type1645 implements Interface103 {
-  field677: String
-  field3648: String
-  field2768: String
+type Type1649 implements Interface103 {
+  field690: String
+  field3666: String
+  field2782: String
 }
 
 interface Interface103 {
-  field677: String
-  field3648: String
-  field2768: String
+  field690: String
+  field3666: String
+  field2782: String
 }
 
 type Query @extends {
-  field4417(arg74: String): String @directive1(arg47: "anonymous-string")
-  field4418(arg1: [ID!]!): [Type1641] @directive1(arg47: "anonymous-string")
+  field4435(arg74: String): String @directive1(arg47: "anonymous-string")
+  field4436(arg1: [ID!]!): [Type1645] @directive1(arg47: "anonymous-string")
 }
 
 type Mutation @extends {
-  field4419(arg20: Input763!): Type1641! @directive1(arg47: "anonymous-string")
-  field4420(arg20: Input764!): Type1641! @directive1(arg47: "anonymous-string")
+  field4437(arg20: Input763!): Type1645! @directive1(arg47: "anonymous-string")
+  field4438(arg20: Input764!): Type1645! @directive1(arg47: "anonymous-string")
 }
 
-union Union31 = Type1641 | Type1642
+union Union31 = Type1645 | Type1646
