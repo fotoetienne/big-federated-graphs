@@ -1,168 +1,174 @@
-type Mutation @extends {
+extend type Mutation {
   """
   This is an anonymized description
   """
-  field141(
-  arg16: Input6!): Boolean! @experimental
+  field815(
+  arg53: Input44!): Type311
+  field816(arg53: Input45!): Type312
 }
 
-input Input6 {
-  inputField10: Enum7!
-}
-
-enum Enum7 {
+input Input44 {
+  inputField85: String!
   """
   This is an anonymized description
   """
-  VALUE_20
+  inputField86: Float!
+}
+
+input Input45 {
+  inputField85: String!
   """
   This is an anonymized description
   """
-  VALUE_21
+  inputField86: Float!
 }
 
-"""
-This is an anonymized description
-"""
-type Type14 @key(fields: "field2") @extends {
-  """
-  This is an anonymized description
-  """
-  field2: ID! @external
-  """
-  This is an anonymized description
-  """
-  field142: Type17
+type Type311 {
+  field817: String!
+  field590: Enum45!
+  field818: Enum46!
 }
 
-type Type15 @key(fields: "field2") @extends {
-  field2: ID! @external
-  """
-  This is an anonymized description
-  """
-  field142: Enum7!
+type Type312 {
+  field817: String!
+  field590: Enum45!
+  field818: Enum46!
 }
 
-"""
-This is an anonymized description
-"""
-type Type16 @key(fields: "field91") @extends {
-  field91: Int! @external
+enum Enum45 {
+  VALUE_472
+  VALUE_473
+  VALUE_474
+  VALUE_475
+  VALUE_476
 }
 
-type Type17 {
+enum Enum46 {
+  VALUE_477
+  VALUE_478
+  VALUE_479
+  VALUE_480
+}
+
+type Mutation {
+  field819(arg54: String!, arg55: String!): Type315
+  field820(arg54: String!): Type316
+  field821(arg56: ID, arg57: ID, arg58: Int!, arg59: Enum47!, arg60: String, arg61: String, arg62: String, arg63: [Input46] @deprecated, arg64: [Input47], arg65: Enum54): Type314
+  field822(arg55: String!, arg66: String, arg67: Boolean): Union4
+  field823(arg56: ID, arg57: ID, arg68: ID!): Type317
+  field824(arg55: String!, arg58: Int, arg57: ID, arg69: Int!): Type313
+}
+
+enum Enum47 {
+  VALUE_481
+  VALUE_482
+}
+
+type Type313 {
+  field289: String!
+  field814: Boolean!
+}
+
+type Type314 {
   field2: ID!
-  """
-  This is an anonymized description
-  """
-  field131: Enum8
-  """
-  This is an anonymized description
-  """
-  field143: Scalar9
-  """
-  This is an anonymized description
-  """
-  field144: Type18
-  """
-  This is an anonymized description
-  """
-  field145: Boolean
-  field146: Type19
+  field289: String!
+  field825: String
+  field826: Scalar9!
+  field827: String!
 }
 
-type Type18 {
-  field66: Enum9
-  field42: String @deprecated
-  field147: Type16
+type Type315 {
+  field814: Boolean!
 }
 
-enum Enum8 {
-  VALUE_22
-  VALUE_21
+type Type316 {
+  field814: Boolean!
+  field828: String
 }
 
-enum Enum9 {
-  VALUE_23
+type Type317 {
+  field2: ID!
+  field289: String!
 }
 
-interface Interface1 @key(fields: "field70 field148") @extends {
-  """
-  This is an anonymized description
-  """
-  field70: String! @external
-  """
-  This is an anonymized description
-  """
-  field148: String @external
-  """
-  This is an anonymized description
-  """
-  field149: Boolean! @external
-  "This is an anonymized description"
-  field12: Interface2! @external
+union Union4 = Type320 | Type318
+
+enum Enum48 {
+  VALUE_483
+  VALUE_484
+  VALUE_485
+  VALUE_486
+  VALUE_487
 }
 
-interface Interface2 {
-  field150: Scalar16!
+type Type318 {
+  field818: Enum48!
 }
 
-interface Interface3 implements Interface2 {
-  """
-  This is an anonymized description
-  """
-  field151: ID!
-  """
-  This is an anonymized description
-  """
-  field152: ID
-  """
-  This is an anonymized description
-  """
-  field153: String
-  field150: Scalar16!
+type Type319 {
+  field18: String!
+  field28: String!
 }
 
-type Type19 implements Interface1 @key(fields: "field70 field148") {
-  """
-  This is an anonymized description
-  """
-  field70: String!
-  """
-  This is an anonymized description
-  """
-  field148: String
-  """
-  This is an anonymized description
-  """
-  field149: Boolean!
-  "This is an anonymized description"
-  field12: Type20!
+enum Enum49 {
+  VALUE_488
+  VALUE_489
+  VALUE_490
+  VALUE_491
 }
 
-type Type20 implements Interface3 & Interface2 {
-  """
-  This is an anonymized description
-  """
-  field91: ID
-  """
-  This is an anonymized description
-  """
-  field151: ID!
-  """
-  This is an anonymized description
-  """
-  field154: Enum8
-  """
-  This is an anonymized description
-  """
-  field152: ID
-  """
-  This is an anonymized description
-  """
-  field153: String
-  """
-  This is an anonymized description
-  """
-  field150: Scalar16!
+enum Enum50 {
+  VALUE_492
+}
+
+type Type320 {
+  field825: String!
+  field829: String!
+  field8: Int!
+  field830: String!
+  field831: String!
+  field832: String!
+  field833: [Type319!]!
+  field834: [Enum49!]!
+  field835: Enum50!
+  field836: String!
+  field837: String
+  field838: Enum54!
+}
+
+input Input46 {
+  inputField87: String!
+  inputField88: String!
+}
+
+input Input47 {
+  inputField60: Enum51!
+  inputField88: Enum52!
+  inputField89: [Enum53]
+}
+
+enum Enum51 {
+  VALUE_493
+  VALUE_494
+}
+
+enum Enum52 {
+  VALUE_495
+  VALUE_496
+  VALUE_497
+}
+
+enum Enum53 {
+  VALUE_498
+  VALUE_499
+  VALUE_500
+  VALUE_501
+  VALUE_502
+}
+
+enum Enum54 {
+  VALUE_503
+  VALUE_504
+  VALUE_505
+  VALUE_506
 }

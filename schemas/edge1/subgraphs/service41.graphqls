@@ -1,56 +1,64 @@
-type Query {
-  field1652(arg2: [Input222!]!): [Type251]!
+extend type Query {
+  field1928(arg191: Int = 0): [Type981] @experimental
 }
 
-input Input222 {
-  inputField473: ID!
-  inputField123: Enum245
+type Type981 {
+  field1928(arg191: Int = 0): [Type981]
+  field1929(arg1: String = "default"): String
+  field581(arg192: Int = 0): Type981
 }
 
-enum Enum245 {
-  VALUE_591
-  VALUE_1328
-  VALUE_590
-  VALUE_1329
-  VALUE_1243
-  VALUE_1330
+type Query @extends {
+  field1930(arg193: ID!): Type982 @experimental
 }
 
-type Type251 @key(fields: "field2") {
-  field2: ID!
-  field1653: Type251
-  field1654: Boolean!
-  field112: Union61!
-  field1655: Boolean!
+type Mutation @extends {
+  field1931(arg193: ID!): Type982 @experimental
+  field1932(arg1: Input239): Type985 @experimental
+  field1933: Type985 @experimental
 }
 
-union Union61 = Type895 | Type897 | Type898 | Type899 | Type900 | Type901
-
-type Type895 {
-  field2: Type896!
+type Subscription @extends {
+  field1934(arg193: ID!, arg194: ID, arg195: Int): Interface55 @experimental
 }
 
-type Type896 {
-  field18: ID!
-  field1656: Enum245
+type Type982 {
+  field2: ID
+  field70: String
 }
 
-type Type897 {
-  field2: Type896!
+type Type983 {
+  field2: ID
+  field70: String
+  field590: Enum268
 }
 
-type Type898 {
-  field2: Type896!
+enum Enum268 {
+  VALUE_24
+  VALUE_1466
 }
 
-type Type899 {
-  field2: Type896!
+interface Interface55 {
+  field1935: ID
 }
 
-type Type900 {
-  field2: Type896!
+type Type984 implements Interface55 {
+  field1935: ID
+  field216: String
+  field843: ID
 }
 
-type Type901 {
-  field2: Type896!
+type Type985 {
+  field590: Enum269
+}
+
+enum Enum269 {
+  VALUE_459
+  VALUE_1467
+}
+
+input Input239 {
+  inputField595: ID!
+  inputField91: ID!
+  inputField596: String!
 }

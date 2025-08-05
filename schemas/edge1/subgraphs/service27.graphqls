@@ -1,481 +1,60 @@
-type Type27 @extends @key(fields: "field166") {
-  field166: ID! @external
-  field291: [Type28!]! @override(from: "service1")
-  """
-  This is an anonymized description
-  """
-  field453(
-  arg65: ID!): Type28 @override(from: "service1") @deprecated(reason: "Anonymized deprecation reason")
-  "This is an anonymized description"
-  field454: Type36 @override(from: "service1")
-  "This is an anonymized description"
-  field455: Type36
-  "This is an anonymized description"
-  field456: Boolean @override(from: "service1")
-  "This is an anonymized description"
-  field457: Enum153
-  field458: Scalar9 @override(from: "service1")
-  field459: Boolean @override(from: "service1")
-  field460: Enum73
-  field461: String
-}
-
-type Type28 @extends @key(fields: "field172") {
-  field172: ID! @external
-  field332: Scalar9 @override(from: "service1")
-  "This is an anonymized description"
-  field462: Boolean @override(from: "service1")
-  field463: Boolean @override(from: "service1")
-  field464: Boolean @override(from: "service1")
-  field465: Boolean @override(from: "service1")
-  """
-  This is an anonymized description
-  """
-  field466: Boolean @override(from: "service1")
-  field467: Boolean @override(from: "service1")
-  """
-  This is an anonymized description
-  """
-  field468: Boolean @override(from: "service1")
-  "This is an anonymized description"
-  field469: Boolean @override(from: "service1")
-  field470: String @override(from: "service1")
-  field155: String @override(from: "service1")
-  field471: Type384 @override(from: "service1")
-  field472: Enum152
-  """
-  This is an anonymized description
-  """
-  field473: [String] @override(from: "service1")
-  """
-  This is an anonymized description
-  """
-  field474: Type385 @override(from: "service1")
-  field475: Enum74
-  """
-  This is an anonymized description
-  """
-  field476: [Type37] @override(from: "service2")
-}
-
-type Type37 @extends @key(fields: "field2") {
-  field2: String @external
-}
-
-"""
-This is an anonymized description
-"""
-type Type384 {
-  field477: String @directive2(arg24: "anonymous-string")
-}
-
-enum Enum67 {
-  VALUE_538
-  VALUE_539
-  VALUE_437
-}
-
-"""
-This is an anonymized description
-"""
-enum Enum68 {
-  VALUE_538
-  VALUE_539
-}
-
-enum Enum69 {
-  VALUE_540
-  VALUE_541
-  VALUE_542
-}
-
-enum Enum70 {
-  VALUE_543
-  VALUE_544
-  VALUE_545
-  VALUE_546
-  VALUE_547
-  VALUE_548
-  VALUE_549
-}
-
-enum Enum71 {
-  VALUE_437
-  VALUE_550
-  VALUE_551
-  VALUE_552
-  VALUE_553
-}
-
-enum Enum72 {
-  VALUE_554
-  VALUE_555
-  VALUE_556
-  VALUE_557
-  VALUE_558
-  VALUE_559
-  VALUE_560
-  VALUE_561
-}
-
-"""
-This is an anonymized description
-"""
-enum Enum73 {
-  "This is an anonymized description"
-  VALUE_562
-  "This is an anonymized description"
-  VALUE_563
-  "This is an anonymized description"
-  VALUE_564
-  "This is an anonymized description"
-  VALUE_565
-}
-
-"This is an anonymized description"
-type Type385 {
-  "This is an anonymized description"
-  field478: Enum72
-  "This is an anonymized description"
-  field479: Enum67
-  "This is an anonymized description"
-  field480: Enum69
-  "This is an anonymized description"
-  field481: Enum70
-  "This is an anonymized description"
-  field482: Enum71
-  "This is an anonymized description"
-  field483: Enum72
-  "This is an anonymized description"
-  field484: Enum72
-  """
-  This is an anonymized description
-  """
-  field485: Enum67
-  "This is an anonymized description"
-  field486: Enum72
-  """
-  This is an anonymized description
-  """
-  field487: Enum67
-}
-
-type Type36 @key(fields: "field118") @extends {
-  field118: String! @external
-}
-
-enum Enum74 {
-  VALUE_566
-  VALUE_567
-  VALUE_568
-  VALUE_483
-}
+directive @directive7(arg30: String = "default") on ARGUMENT_DEFINITION
 
 type Mutation @extends {
-  """
-  This is an anonymized description
-  """
-  field488(
-  arg16: Input75!): Type386 @override(from: "service1")
-  """
-  This is an anonymized description
-  """
-  field489(
-  arg16: Input76!): Type388 @override(from: "service1")
-  "This is an anonymized description"
-  field490(
-  arg16: Input77!): Type390 @override(from: "service1")
-  """
-  This is an anonymized description
-  """
-  field491(
-  arg16: Input78!): Type392 @override(from: "service1")
-  """
-  This is an anonymized description
-  """
-  field492(
-  arg16: Input82!): Type394 @override(from: "service1")
-  """
-  This is an anonymized description
-  """
-  field493(
-  arg16: Input83): Type395 @override(from: "service1")
+  field1241(arg113: String, arg114: String, arg57: String): Union28
+  field1242: Union29
+  field1243: Union30
 }
 
-input Input75 {
-  "This is an anonymized description"
-  inputField6: String!
-  "This is an anonymized description"
-  inputField99: String!
-  "This is an anonymized description"
-  inputField100: Boolean!
+union Union28 = Type203 | Type532
+
+type Type532 {
+  field165: Enum160!
+  field365: Type33
 }
 
-type Type386 {
-  "This is an anonymized description"
-  field494: Type27
-  "This is an anonymized description"
-  field495: [Interface12!]
+type Type203 @key(fields: "field2") {
+  field2: ID!
+  field1244: Int!
+  field1245: String
+  field1246: Type533
+  field1247: Type533
 }
 
-type Type387 implements Interface12 {
-  "This is an anonymized description"
-  field118: Enum75!
-  "This is an anonymized description"
-  field496: Interface20
+type Type533 {
+  field260: String!
 }
 
-enum Enum75 {
-  "This is an anonymized description"
-  VALUE_569
-  "This is an anonymized description"
-  VALUE_570
-  "This is an anonymized description"
-  VALUE_571
-  "This is an anonymized description"
-  VALUE_572
-  "This is an anonymized description"
-  VALUE_524
+enum Enum160 {
+  VALUE_1249
+  VALUE_1250
+  VALUE_1251
+  VALUE_1252
+  VALUE_1253
+  VALUE_1254
 }
 
-input Input76 {
-  "This is an anonymized description"
-  inputField101: ID!
-  "This is an anonymized description"
-  inputField99: String
-  """
-  This is an anonymized description
-  """
-  inputField6: String
-  """
-  This is an anonymized description
-  """
-  inputField102: Int
-  "This is an anonymized description"
-  inputField100: Boolean
-  "This is an anonymized description"
-  inputField103: Boolean
-  "This is an anonymized description"
-  inputField104: Boolean
-  "This is an anonymized description"
-  inputField105: Scalar2
-  "This is an anonymized description"
-  inputField106: [Scalar2!]
-  "This is an anonymized description"
-  inputField107: Enum74
+type Type33 @key(fields: "field18 field621") @extends {
+  field621: String! @external
+  field18: ID! @external
 }
 
-type Type388 {
-  "This is an anonymized description"
-  field494: Type27
-  "This is an anonymized description"
-  field495: [Interface12!]
+union Union29 = Type534 | Type535
+
+type Type534 {
+  field216: String!
 }
 
-enum Enum76 {
-  "This is an anonymized description"
-  VALUE_573
-  "This is an anonymized description"
-  VALUE_574
-  "This is an anonymized description"
-  VALUE_575
-  "This is an anonymized description"
-  VALUE_576
-  """
-  This is an anonymized description
-  """
-  VALUE_577
-  "This is an anonymized description"
-  VALUE_578
-  "This is an anonymized description"
-  VALUE_579
-  "This is an anonymized description"
-  VALUE_571
-  "This is an anonymized description"
-  VALUE_524
-  "This is an anonymized description"
-  VALUE_580
+type Type535 {
+  field818: String!
 }
 
-type Type389 implements Interface12 {
-  "This is an anonymized description"
-  field118: Enum76!
-  "This is an anonymized description"
-  field496: Interface20
+union Union30 = Type536 | Type537
+
+type Type536 {
+  field216: String!
 }
 
-input Input77 {
-  "This is an anonymized description"
-  inputField101: ID!
-}
-
-type Type390 {
-  "This is an anonymized description"
-  field494: Type27
-  "This is an anonymized description"
-  field495: [Interface12!]
-}
-
-enum Enum77 {
-  "This is an anonymized description"
-  VALUE_573
-  "This is an anonymized description"
-  VALUE_574
-  "This is an anonymized description"
-  VALUE_524
-}
-
-type Type391 implements Interface12 {
-  "This is an anonymized description"
-  field118: Enum77!
-  "This is an anonymized description"
-  field496: Interface20
-}
-
-input Input78 {
-  "This is an anonymized description"
-  inputField101: ID!
-  "This is an anonymized description"
-  inputField108: Input79
-  "This is an anonymized description"
-  inputField109: Enum78
-  "This is an anonymized description"
-  inputField77: Input80
-  "This is an anonymized description"
-  inputField110: Input81
-}
-
-"This is an anonymized description"
-enum Enum78 {
-  VALUE_581
-  VALUE_582
-  VALUE_404
-}
-
-"This is an anonymized description"
-input Input79 {
-  "This is an anonymized description"
-  inputField111: Enum72
-  """
-  This is an anonymized description
-  """
-  inputField112: Enum67
-}
-
-"This is an anonymized description"
-input Input80 {
-  "This is an anonymized description"
-  inputField111: Enum72
-  "This is an anonymized description"
-  inputField112: Enum68
-  "This is an anonymized description"
-  inputField113: Enum71
-  "This is an anonymized description"
-  inputField114: Enum72
-  "This is an anonymized description"
-  inputField115: Enum69
-  "This is an anonymized description"
-  inputField116: Enum70
-}
-
-"This is an anonymized description"
-input Input81 {
-  "This is an anonymized description"
-  inputField111: Enum72
-  """
-  This is an anonymized description
-  """
-  inputField112: Enum67
-}
-
-type Type392 {
-  """
-  This is an anonymized description
-  """
-  field494: Type27
-  """
-  This is an anonymized description
-  """
-  field453: Type28
-  "This is an anonymized description"
-  field495: [Interface12!]
-}
-
-type Type393 implements Interface12 {
-  "This is an anonymized description"
-  field118: Enum79!
-  "This is an anonymized description"
-  field496: Interface20
-}
-
-enum Enum79 {
-  "This is an anonymized description"
-  VALUE_573
-  "This is an anonymized description"
-  VALUE_574
-  "This is an anonymized description"
-  VALUE_583
-}
-
-interface Interface12 {
-  field496: Interface20
-}
-
-type Type38 implements Interface20 @key(fields: "field45 field173 field175 field176 field177 { field70 field12 field174 { field45 field173 field175 } } ") @extends {
-  field45: ID! @external
-  field173: String! @external
-  field175: String! @external
-  field176: Boolean @external
-  field177: [Type34!] @external
-  field12(arg12: String): String @external
-}
-
-type Type34 @key(fields: "field70 field12 field174 { field45 field173 field175 }") @extends {
-  field70: String! @external
-  field12: String! @external
-  field174: Type35 @external
-}
-
-type Type35 @key(fields: "field45 field173 field175") @extends {
-  field45: ID! @external
-  field173: String! @external
-  field175: String! @external
-}
-
-input Input82 {
-  inputField117: ID!
-  inputField118: String! @directive2(arg24: "anonymous-string")
-}
-
-type Type394 {
-  """
-  This is an anonymized description
-  """
-  field453: Type28
-}
-
-input Input83 {
-  inputField117: ID!
-}
-
-type Type395 {
-  """
-  This is an anonymized description
-  """
-  field453: Type28
-}
-
-type Query @extends {
-  field494: Type27 @override(from: "service1")
-  field497: Type28 @override(from: "service1")
-  """
-  This is an anonymized description
-  """
-  field453(
-  arg65: ID!): Type28 @override(from: "service1")
-  field498(arg42: String!): Type396 @override(from: "service1")
-}
-
-type Type396 {
-  field499: Boolean
+type Type537 {
+  field818: String!
 }

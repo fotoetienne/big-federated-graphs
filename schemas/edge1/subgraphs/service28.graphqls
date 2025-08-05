@@ -1,153 +1,264 @@
-type Query {
+type Mutation @extends {
   """
   This is an anonymized description
   """
-  field500(
-  arg66: Input84!): Type397
+  field1248(
+  arg115: Input126!): Union33! @deprecated(reason: "Anonymized deprecation reason")
   """
   This is an anonymized description
   """
-  field501: [Type399!]
+  field1249(
+  arg115: Input127!): Union32!
   """
   This is an anonymized description
   """
-  field502(
-  arg67: Enum83!
-  arg68: Enum84 = VALUE_437): String
+  field1250(
+  arg115: [Input126!]!): [Union33!]! @deprecated(reason: "Anonymized deprecation reason")
   """
   This is an anonymized description
   """
-  field503: [Type400!]
+  field1251(
+  arg115: [Input127!]!): [Union32!]!
+}
+
+type Query @extends {
+  """
+  This is an anonymized description
+  """
+  field1252(
+  arg116: ID!): Union34
+  """
+  This is an anonymized description
+  """
+  field1253(
+  arg116: ID!): Union34
+  """
+  This is an anonymized description
+  """
+  field1254(
+  arg117: ID!): Union31
+}
+
+union Union31 = Type539 | Type542 | Type538
+
+"""
+This is an anonymized description
+"""
+type Type538 {
+  field365: Type33
+}
+
+type Type539 {
+  """
+  This is an anonymized description
+  """
+  field1255: ID!
+  """
+  This is an anonymized description
+  """
+  field1256: Scalar14! @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  field1257: Int!
+}
+
+input Input126 {
+  """
+  This is an anonymized description
+  """
+  inputField313: ID!
+  """
+  This is an anonymized description
+  """
+  inputField314: Scalar14!
+  """
+  This is an anonymized description
+  """
+  inputField315: String!
+}
+
+input Input127 {
+  """
+  This is an anonymized description
+  """
+  inputField313: ID!
+  """
+  This is an anonymized description
+  """
+  inputField314: Int!
+  """
+  This is an anonymized description
+  """
+  inputField315: String!
+}
+
+union Union32 = Type540 | Type542 | Type543
+
+union Union33 = Type541 | Type542 | Type543
+
+type Type540 {
+  """
+  This is an anonymized description
+  """
+  field1255: ID!
+  """
+  This is an anonymized description
+  """
+  field1258: Int!
+  """
+  This is an anonymized description
+  """
+  field1256: Int!
+  """
+  This is an anonymized description
+  """
+  field1259: String!
+}
+
+type Type541 {
+  """
+  This is an anonymized description
+  """
+  field1255: ID!
+  """
+  This is an anonymized description
+  """
+  field1258: Scalar14!
+  """
+  This is an anonymized description
+  """
+  field1256: Scalar14!
+  """
+  This is an anonymized description
+  """
+  field1259: String!
 }
 
 """
 This is an anonymized description
 """
-type Type397 {
-  field504: [Type398!]
-}
-
-type Type398 {
-  field7: [Interface13!]
+type Type542 {
+  field365: Type33
 }
 
 """
 This is an anonymized description
 """
-input Input84 {
-  inputField119: [Input85!]!
-  inputField120: Boolean = false
-  inputField121: Boolean = false
+type Type543 {
+  field365: Type33
+}
+
+union Union34 = Type547 | Type544 | Type545 | Type546
+
+"""
+This is an anonymized description
+"""
+type Type544 {
+  field365: Type33
 }
 
 """
 This is an anonymized description
 """
-input Input85 {
-  inputField122: Enum80!
-  inputField123: Enum81
-  inputField124: Int
-  inputField125: Enum85
+type Type545 {
+  field365: Type33
 }
 
 """
 This is an anonymized description
 """
-enum Enum80 {
-  VALUE_584
-  VALUE_585
-  VALUE_586
-  VALUE_587
-  VALUE_588 @deprecated(reason: "Anonymized deprecation reason")
-  VALUE_589
+type Type546 {
+  field365: Type33
 }
+
+type Type547 {
+  field70: ID!
+  """
+  This is an anonymized description
+  """
+  field1260: Int
+  """
+  This is an anonymized description
+  """
+  field1261(
+  arg9: Int): Type550
+  """
+  This is an anonymized description
+  """
+  field1262(
+  arg9: Int
+  arg118: Int
+  arg98: String
+  arg11: String): Type550
+  """
+  This is an anonymized description
+  """
+  field1263: Union35
+  """
+  This is an anonymized description
+  """
+  field1264(
+  arg119: Int): Union36
+  """
+  This is an anonymized description
+  """
+  field1265: Type548
+}
+
+type Type548 {
+  """
+  This is an anonymized description
+  """
+  field1266: Scalar9
+  """
+  This is an anonymized description
+  """
+  field717: Scalar9!
+}
+
+union Union35 = Type552 | Type549
+
+union Union36 = Type550 | Type549
 
 """
 This is an anonymized description
 """
-enum Enum81 {
-  VALUE_590
-  VALUE_591
+type Type549 {
+  field365: Type33
 }
 
-"""
-This is an anonymized description
-"""
-type Type399 {
-  field113: Interface13
-  field505: Enum82
-  field506: String
+type Type550 {
+  field135: Type25!
+  field128: [Type551!]!
 }
 
-"""
-This is an anonymized description
-"""
-enum Enum82 {
-  VALUE_540
-  VALUE_541
-  VALUE_542
+type Type551 {
+  field134: String!
+  field129: Type552!
 }
 
-"""
-This is an anonymized description
-"""
-enum Enum83 {
-  VALUE_581
-  VALUE_592
-  VALUE_593
-  VALUE_594
-  VALUE_404
+type Type552 {
+  """
+  This is an anonymized description
+  """
+  field38: Int!
+  """
+  This is an anonymized description
+  """
+  field152: Int!
+  field871: Type16!
+  field1258: Scalar14! @deprecated(reason: "Anonymized deprecation reason")
+  field1267: Int!
 }
 
-"""
-This is an anonymized description
-"""
-type Type400 {
-  field46: String
-  field507: Enum84
+type Type33 @key(fields: "field18 field621") @extends {
+  field621: String! @external
+  field18: ID! @external
 }
 
-"""
-This is an anonymized description
-"""
-enum Enum84 {
-  VALUE_437
-  VALUE_585
-  VALUE_595
-  VALUE_596
-  VALUE_597
+type Type16 @key(fields: "field2") @extends {
+  field2: ID! @external
 }
 
-"""
-This is an anonymized description
-"""
-enum Enum85 {
-  VALUE_598
-}
-
-"""
-This is an anonymized description
-"""
-interface Interface13 @key(fields: "field18") @extends {
-  field18: Int! @external
-}
-
-type Type49 implements Interface13 @key(fields: "field18") @extends {
-  field18: Int! @external
-}
-
-type Type48 implements Interface13 @key(fields: "field18") @extends {
-  field18: Int! @external
-}
-
-type Type47 implements Interface13 @key(fields: "field18") @extends {
-  field18: Int! @external
-}
-
-type Type46 implements Interface13 @key(fields: "field18") @extends {
-  field18: Int! @external
-}
-
-type Type45 implements Interface13 @key(fields: "field18") @extends {
-  field18: Int! @external
-}
+scalar Scalar14

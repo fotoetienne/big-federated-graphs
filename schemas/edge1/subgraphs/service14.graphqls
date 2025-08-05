@@ -1,16 +1,132 @@
-type Query {
-  field121(arg17: String): Type9
-  field122(arg17: String): Type10
+interface Interface8 {
+  """
+  This is an anonymized description
+  """
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field590: Enum44!
+  """
+  This is an anonymized description
+  """
+  field806: Scalar9!
+  """
+  This is an anonymized description
+  """
+  field73: Scalar9!
+  """
+  This is an anonymized description
+  """
+  field807: Scalar9
 }
 
-type Mutation {
-  field123(arg17: String): Type9
+type Type307 implements Interface8 {
+  field2: ID!
+  field590: Enum44!
+  field806: Scalar9!
+  field73: Scalar9!
+  """
+  This is an anonymized description
+  """
+  field369(
+  arg48: String!): String
+  field807: Scalar9
 }
 
-type Type9 {
-  field124: String
+"""
+This is an anonymized description
+"""
+enum Enum44 {
+  """
+  This is an anonymized description
+  """
+  VALUE_407
+  VALUE_461
+  """
+  This is an anonymized description
+  """
+  VALUE_462
+  """
+  This is an anonymized description
+  """
+  VALUE_26
+  VALUE_463 @deprecated(reason: "Anonymized deprecation reason")
+  VALUE_400
+  """
+  This is an anonymized description
+  """
+  VALUE_464
+  """
+  This is an anonymized description
+  """
+  VALUE_465 @deprecated(reason: "Anonymized deprecation reason")
+  """
+  This is an anonymized description
+  """
+  VALUE_466
+  """
+  This is an anonymized description
+  """
+  VALUE_467
+  """
+  This is an anonymized description
+  """
+  VALUE_468
+  """
+  This is an anonymized description
+  """
+  VALUE_469
+  """
+  This is an anonymized description
+  """
+  VALUE_470
+  VALUE_471
 }
 
-type Type10 {
-  field124: String
+type Mutation @extends {
+  field808: Type307
+}
+
+scalar Scalar13
+
+type Query @extends {
+  field809(arg31: ID!): Type307
+}
+
+input Input37 {
+  inputField35: String
+  inputField33: String
+  inputField32: Int
+  inputField34: Int
+}
+
+type Type308 {
+  field134: String!
+  field129: Type307!
+}
+
+type Type309 {
+  field126: Int!
+  field128: [Type308]
+  field135: Type25!
+}
+
+extend type Mutation {
+  field810(arg31: ID!): Type307
+  field811(arg1: Input39): Type307
+}
+
+input Input38 {
+  inputField67: String!
+}
+
+input Input39 {
+  inputField67: String!
+  inputField68: String!
+  inputField69: String!
+}
+
+extend type Query {
+  field812(arg49: Input37): Type309
 }

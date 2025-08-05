@@ -1,0 +1,168 @@
+extend interface Interface1 @key(fields: "field70 field71") @extends {
+  """
+  This is an anonymized description
+  """
+  field70: String! @external
+  """
+  This is an anonymized description
+  """
+  field71: String @external
+  """
+  This is an anonymized description
+  """
+  field72: Boolean! @external
+  "This is an anonymized description"
+  field28: Interface2! @external
+}
+
+interface Interface2 {
+  field73: Scalar16!
+}
+
+interface Interface3 implements Interface2 {
+  """
+  This is an anonymized description
+  """
+  field599: ID!
+  """
+  This is an anonymized description
+  """
+  field600: ID
+  """
+  This is an anonymized description
+  """
+  field601: String
+  field73: Scalar16!
+}
+
+type Type14 implements Interface1 @key(fields: "field70 field71") {
+  """
+  This is an anonymized description
+  """
+  field70: String!
+  """
+  This is an anonymized description
+  """
+  field71: String
+  """
+  This is an anonymized description
+  """
+  field72: Boolean!
+  "This is an anonymized description"
+  field28: Type15!
+}
+
+type Type15 implements Interface3 & Interface2 {
+  """
+  This is an anonymized description
+  """
+  field8: ID
+  """
+  This is an anonymized description
+  """
+  field599: ID!
+  """
+  This is an anonymized description
+  """
+  field602: Enum8
+  """
+  This is an anonymized description
+  """
+  field600: ID
+  """
+  This is an anonymized description
+  """
+  field601: String
+  """
+  This is an anonymized description
+  """
+  field73: Scalar16!
+}
+
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field603(
+  arg1: Input6!): Boolean! @experimental
+}
+
+input Input6 {
+  inputField26: Enum7!
+}
+
+enum Enum7 {
+  """
+  This is an anonymized description
+  """
+  VALUE_36
+  """
+  This is an anonymized description
+  """
+  VALUE_37
+}
+
+"""
+This is an anonymized description
+"""
+type Type16 @key(fields: "field2") @extends {
+  """
+  This is an anonymized description
+  """
+  field2: ID! @external
+  """
+  This is an anonymized description
+  """
+  field604: Type19
+}
+
+type Type17 @key(fields: "field2") @extends {
+  field2: ID! @external
+  """
+  This is an anonymized description
+  """
+  field604: Enum7!
+}
+
+"""
+This is an anonymized description
+"""
+type Type18 @key(fields: "field8") @extends {
+  field8: Int! @external
+}
+
+type Type19 {
+  field2: ID!
+  """
+  This is an anonymized description
+  """
+  field590: Enum8
+  """
+  This is an anonymized description
+  """
+  field605: Scalar9
+  """
+  This is an anonymized description
+  """
+  field606: Type20
+  """
+  This is an anonymized description
+  """
+  field607: Boolean
+  field608: Type14
+}
+
+type Type20 {
+  field82: Enum9
+  field43: String @deprecated
+  field609: Type18
+}
+
+enum Enum8 {
+  VALUE_38
+  VALUE_37
+}
+
+enum Enum9 {
+  VALUE_39
+}

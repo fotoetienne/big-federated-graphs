@@ -1,14 +1,197 @@
-type Type893 {
-  field1646: String!
+type Query @extends {
+  "This is an anonymized description"
+  field1911(
+  arg25: Input116): Type974 @override(from: "service63") @directive3(arg31: "anonymous-string")
+  """
+  This is an anonymized description
+  """
+  field1912(
+  arg1: Input236!
+  arg25: Input116): Type973 @directive6(arg104: ["anonymous-string"])
 }
 
-type Type894 {
-  field1647: Type893
-  field1648: String!
-  field1649: String!
-  field1650: String!
+type Mutation @extends {
+  """
+  This is an anonymized description
+  """
+  field1913(
+  arg25: Input116): Type979
+  """
+  This is an anonymized description
+  """
+  field1914(
+  arg1: Input238!
+  arg25: Input116): Type980
 }
 
-type Query {
-  field1651(arg168: String!): Type894
+type Type973 {
+  field2: ID!
+  field222: String
+  field1915: String
+  field154: String
+}
+
+input Input236 {
+  inputField593: String!
+  inputField295: Enum267!
+}
+
+"""
+This is an anonymized description
+"""
+enum Enum267 {
+  VALUE_14
+  VALUE_1393
+}
+
+"""
+This is an anonymized description
+"""
+type Type974 {
+  """
+  This is an anonymized description
+  """
+  field1916: Type978
+  """
+  This is an anonymized description
+  """
+  field1917(
+  arg1: Input237): Type977
+  """
+  This is an anonymized description
+  """
+  field19: Scalar12!
+  """
+  This is an anonymized description
+  """
+  field1918: Scalar12
+}
+
+input Input237 {
+  """
+  This is an anonymized description
+  """
+  inputField594: String
+}
+
+"""
+This is an anonymized description
+"""
+interface Interface54 {
+  """
+  This is an anonymized description
+  """
+  field106: String!
+  """
+  This is an anonymized description
+  """
+  field1919: String
+  """
+  This is an anonymized description
+  """
+  field1920: String
+  """
+  This is an anonymized description
+  """
+  field1921: String
+  """
+  This is an anonymized description
+  """
+  field1922: Boolean
+}
+
+type Type975 implements Interface54 {
+  field106: String!
+  field1919: String
+  field1920: String
+  field1921: String
+  field1922: Boolean
+  """
+  This is an anonymized description
+  """
+  field1166: String
+  """
+  This is an anonymized description
+  """
+  field1923: String
+  """
+  This is an anonymized description
+  """
+  field1924: Boolean
+  """
+  This is an anonymized description
+  """
+  field1572(
+  arg16: Enum267): String
+  """
+  This is an anonymized description
+  """
+  field1925: Boolean
+}
+
+type Type976 implements Interface54 {
+  field106: String!
+  field1919: String
+  field1920: String
+  field1921: String
+  field1922: Boolean
+  """
+  This is an anonymized description
+  """
+  field260: String
+}
+
+type Type977 {
+  """
+  This is an anonymized description
+  """
+  field1926: [Interface54!]!
+}
+
+"""
+This is an anonymized description
+"""
+type Type978 {
+  """
+  This is an anonymized description
+  """
+  field1166: String!
+  """
+  This is an anonymized description
+  """
+  field1924: Boolean!
+  """
+  This is an anonymized description
+  """
+  field1572(
+  arg16: Enum267): String
+}
+
+"""
+This is an anonymized description
+"""
+type Type979 {
+  field1927: Union26
+}
+
+type Type980 {
+  """
+  This is an anonymized description
+  """
+  field19: Scalar12 @directive2
+}
+
+input Input238 {
+  """
+  This is an anonymized description
+  """
+  inputField17: Int!
+  """
+  This is an anonymized description
+  """
+  inputField120: String
+  """
+  This is an anonymized description
+  """
+  inputField123: String
 }

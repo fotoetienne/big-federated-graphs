@@ -1,19 +1,215 @@
-type Mutation {
-  field1641(arg19: Input106): Type478! @directive5(arg94: ["anonymous-string", "anonymous-string"])
-  field1642(arg19: Input106, arg166: [Input221]): Type478! @directive5(arg94: ["anonymous-string", "anonymous-string"])
-  field1643(arg167: ID!): Union25! @directive5(arg94: ["anonymous-string", "anonymous-string", "anonymous-string"])
-  field1644(arg19: Input106): Union25! @directive5(arg94: ["anonymous-string", "anonymous-string"])
+type Mutation @extends {
+  field1876(arg178: ID!, arg179: String, arg57: String): Union64
+  field1877: String!
+  field1878(arg180: String!): Union65
+  field1879(arg180: String!): Union66
+  field1880: Type966 @directive3(arg31: "anonymous-string")
+  field1881(arg181: Enum264!): String!
+  field1882(arg182: Boolean): Type971!
+  field1883(arg183: String!): Type958! @experimental
+  field1884(arg184: String!): Type27! @experimental
+  field1885: Type955!
+  field1886(arg185: String, arg186: String): Type956!
+  field1887(arg187: Enum260!, arg188: String, arg186: String): Type957!
+  field1888(arg189: String!): Union67!
+  field1889: Union68!
+  field1890: Union63 @experimental
 }
 
-input Input221 {
-  inputField550: String
+union Union63 = Type953 | Type954
+
+type Type953 {
+  field997: Type27!
 }
 
-type Query {
-  field1645(arg19: Input106!): Type892!
+type Type954 {
+  field1557: Enum259!
+  field365: Interface20
 }
 
-type Type892 {
-  field1407: Int!
-  field1408: Int!
+enum Enum259 {
+  VALUE_1436
+  VALUE_1437
+}
+
+type Type955 {
+  field1891: String!
+  field35: String
+  field1892: String
+}
+
+type Type956 {
+  field1893: String
+  field35: String
+}
+
+type Type957 {
+  field997: Type27!
+}
+
+enum Enum260 {
+  VALUE_1438
+}
+
+type Type958 {
+  field1894: String!
+  field1895: String!
+}
+
+union Union64 = Type959 | Type961 | Type960
+
+type Type959 {
+  field818: Enum261!
+  field365: Interface20
+}
+
+type Type960 {
+  field1896: Type961! @deprecated(reason: "Anonymized deprecation reason")
+  field1897: Type533!
+  field1898: Type214
+  field1899: Boolean!
+}
+
+type Type533 {
+  field260: String!
+}
+
+enum Enum261 {
+  VALUE_1439
+  VALUE_1440
+  VALUE_1441
+  VALUE_1442 @deprecated
+  VALUE_1443
+  VALUE_1437
+  VALUE_1444
+  VALUE_1445
+  VALUE_1446
+  VALUE_1447
+  VALUE_1448
+  VALUE_1449
+  VALUE_1450
+  VALUE_1451
+  VALUE_1452
+}
+
+type Type961 {
+  field2: ID! @deprecated(reason: "Anonymized deprecation reason")
+  field1900: String! @deprecated(reason: "Anonymized deprecation reason")
+  field1901: String @deprecated(reason: "Anonymized deprecation reason")
+}
+
+extend interface Interface20 @extends {
+  field28(arg13: String): String @external
+}
+
+type Type33 implements Interface20 @key(fields: "field18 field621") @extends {
+  field18: ID! @external
+  field621: String! @external
+  field28(arg13: String): String @external
+}
+
+type Type214 @key(fields: "field2") {
+  field2: ID!
+}
+
+union Union65 = Type962 | Type963
+
+type Type962 {
+  field1902: String!
+}
+
+type Type963 {
+  field818: Enum262
+}
+
+enum Enum262 {
+  VALUE_1453
+  VALUE_1454
+}
+
+union Union66 = Type964 | Type965
+
+type Type964 {
+  field997: Type27!
+}
+
+type Type965 {
+  field1557: Enum263!
+  field365: Interface20
+}
+
+enum Enum263 {
+  VALUE_401
+  VALUE_1251
+  VALUE_1453
+}
+
+type Type27 @key(fields: "field616") @extends {
+  field616: ID! @external
+}
+
+type Type966 {
+  field1903: ID! @deprecated(reason: "Anonymized deprecation reason")
+  field1489: ID! @deprecated(reason: "Anonymized deprecation reason")
+  field599: ID!
+}
+
+enum Enum264 {
+  VALUE_1455
+  VALUE_1456
+  VALUE_1457
+  VALUE_1458
+  VALUE_1459
+  VALUE_1460
+  VALUE_1461
+  VALUE_1462
+  VALUE_1463
+  VALUE_1464
+}
+
+union Union67 = Type967 | Type968
+
+type Type967 {
+  field1904: String!
+  field1905: String!
+  field1906: Scalar9!
+}
+
+type Type968 {
+  field818: Enum265!
+}
+
+enum Enum265 {
+  VALUE_1440
+  VALUE_1437
+  VALUE_1465
+}
+
+union Union68 = Type969 | Type970
+
+type Type969 {
+  field1907: String!
+  field1906: Scalar9!
+}
+
+type Type970 {
+  field818: Enum266!
+}
+
+enum Enum266 {
+  VALUE_1440
+  VALUE_1437
+}
+
+type Type971 {
+  field997: Type27!
+}
+
+type Query @extends {
+  field1908(arg190: Int): [Type972]
+}
+
+type Type972 {
+  field1909: String
+  field1910: Scalar9
 }
